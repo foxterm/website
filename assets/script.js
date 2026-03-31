@@ -196,7 +196,7 @@ function onDocumentTouchMove(event) {
     mouse.y = event.touches[0].pageY - window.innerHeight / 2;
   }
 }
-window.addEventListener("mousemove", onMouseMove, false);
+//window.addEventListener('mousemove', onMouseMove, false);
 //window.addEventListener('touchstart', onDocumentTouchStart, false );
 //window.addEventListener('touchmove', onDocumentTouchMove, false );
 
