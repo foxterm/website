@@ -1,61 +1,122 @@
 body {
-  color: white;
-  margin: 0;
-  text-align: center;
-  background-color: black;
-  cursor: crosshair;
+    color: white;
+    margin: 0;
+    text-align: center;
+    background-color: black;
+    cursor: crosshair;
 }
 canvas {
-  display: block;
-  width: 100%;
-  height: 100%;
+    display: block;
+    width: 100%;
+    height: 100%;
 }
 p {
-  color: rgba(255,255,255, 0.5)
+    color: rgba(255, 255, 255, 0.5);
 }
 .header {
-  top: 42%;
+    top: 42%;
 }
 .header-content {
-  padding: 50px;
-  background-color: rgba(0,0,0,0.3);
-  border-radius: 10px;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
 }
 .footer {
-  bottom:3%;
+    bottom: 3%;
 }
 .description {
-  color: gray;
-  padding-top: 50px;
+    color: gray;
+    padding-top: 50px;
 }
-a, a:hover, a:visited {
-  color: white;
-  text-decoration: none;
-} 
+a,
+a:hover,
+a:visited {
+    color: white;
+    text-decoration: none;
+}
 .disable-selection {
-     -moz-user-select: none; /* Firefox */
-      -ms-user-select: none; /* Internet Explorer */
-   -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
-  -webkit-user-select: none; /* Chrome, Safari, and Opera */
-  -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer */
+    -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+    -webkit-user-select: none; /* Chrome, Safari, and Opera */
+    -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
 }
 h1::after {
-  /* content: ' 0760.cn'; */
-  font-size: 12px;
-  position:absolute;
-  top: 3px;
-  padding-left: 5px;
-  font-weight: 400;
+    /* content: ' 0760.cn'; */
+    font-size: 12px;
+    position: absolute;
+    top: 3px;
+    padding-left: 5px;
+    font-weight: 400;
 }
 h2::after {
-  content: '2';
-  font-size: 12px;
-  position:absolute;
-  top: 14px;
-  padding-left: 5px;
+    content: "2";
+    font-size: 12px;
+    position: absolute;
+    top: 14px;
+    padding-left: 5px;
 }
 
 .btn {
-  border-radius: 100px;
-  padding: 10px 25px;
+    border-radius: 100px;
+    padding: 10px 25px;
+}
+
+/* 严格上下居中 */
+.full-center {
+    height: 100vh !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+/* 漂亮：增加一点发光感和字母间距 */
+.badge-feature {
+    letter-spacing: 2px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    display: inline-block;
+    color: #00d4ff;
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    text-transform: uppercase;
+}
+/* 专业：优化标题字间距，增加一点线性渐变 */
+h1.display-3 {
+    font-weight: 800;
+    letter-spacing: -2px;
+    background: linear-gradient(to bottom, #ffffff, #cccccc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* 简洁：优化行高和色彩透明度 */
+.hero-desc {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 700px;
+    margin: 0 auto;
+}
+.hero-desc strong {
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn-cta {
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 12px 32px;
+    margin: 8px;
+    transition: all 0.3s ease;
+}
+.btn-primary {
+    background-color: #00d4ff;
+    border-color: #00d4ff;
+    color: #000;
+}
+.btn-primary:hover {
+    background-color: #00b8e6;
+    transform: translateY(-2px);
 }
