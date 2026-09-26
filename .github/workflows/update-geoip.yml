@@ -1,0 +1,48 @@
+name: Update GeoIP Database
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download GeoLite2 file
+        run: |
+          curl -L -o GeoLite2-Country.mmdb https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-Country.mmdb
+
+      - name: Check for changes
+        id: git_status
+        run: |
+          git add GeoLite2-Country.mmdb
+          if git diff --staged --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push changes
+        if: steps.git_status.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -m "chore: auto update GeoLite2-Country.mmdb $(date +'%Y-%m-%d')"
+          git push
+#
+#       - name: Create Release
+#         if: steps.git_status.outputs.changed == 'true'
+#         uses: softprops/action-gh-release@v2
+#         with:
+#           tag_name: v${{ github.run_number }}
+#           name: "GeoLite2 Update ${{ github.run_number }}"
+#           body: "Auto-updated GeoLite2-Country database from P3TERX/GeoLite.mmdb"
+#           files: GeoLite2-Country.mmdb
+#           make_latest: true
