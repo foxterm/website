@@ -1,9 +1,17 @@
 @font-face {
-  font-family: 'Fira Code';
-  src: url('./FiraCode/FiraCode-VF.woff2') format('woff2-variations'),
-       url('./FiraCode/FiraCode-VF.woff2') format('woff2');
-  font-weight: 300 700; /* 支持 300(Light) 到 700(Bold) 之间的任意字重 */
+  font-family: 'JetBrains Mono';
+  src: url('./fonts/JetBrainsMono[wght].ttf') format('truetype-variations'),
+       url('./fonts/JetBrainsMono[wght].ttf') format('truetype');
+  font-weight: 100 800;
   font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./fonts/JetBrainsMono-Italic[wght].ttf') format('truetype-variations'),
+       url('./fonts/JetBrainsMono-Italic[wght].ttf') format('truetype');
+  font-weight: 100 800;
+  font-style: italic;
   font-display: swap;
 }
 
@@ -11,5 +19,5 @@
 html,
 body,
 *{
-	font-family: 'Fira Code' !important;
+	font-family: 'JetBrains Mono' !important;
 }
