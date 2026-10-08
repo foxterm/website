@@ -1,61 +1,468 @@
-<!doctype html>
-<html lang="en-US">
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
 
 <head>
-    <meta charset="UTF-8" />
-    <title>FoxTerm - Pro Native Terminal for macOS & iOS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./assets/style.css" />
-    <link rel="icon" href="https://foxterm.app/favicon.ico" type="image/x-icon" />
-    <link rel="manifest" href="https://foxterm.app/assets/site.webmanifest" />
-    <link rel="icon" type="image/png" sizes="16x16" href="https://foxterm.app/assets/favicon-16x16.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="https://foxterm.app/assets/favicon-32x32.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="https://foxterm.app/assets/apple-touch-icon.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>FoxTerm | Universal SSH • VNC • SFTP • Docker • Podman for macOS & iOS</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="./assets/site.webmanifest" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        fox: {
+                            500: '#ff6800',
+                            600: '#e65100',
+                            700: '#c2410c',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glow-effect {
+            box-shadow: 0 0 70px -10px rgba(255, 104, 0, 0.28);
+        }
+
+        .orange-gradient-text {
+            background: linear-gradient(135deg, #FF8A00 0%, #FF3D00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* 语言控制 CSS 样式 */
+        .lang-en {
+            display: none !important;
+        }
+
+        html[data-lang="en"] .lang-zh {
+            display: none !important;
+        }
+
+        html[data-lang="en"] .lang-en {
+            display: block !important;
+        }
+
+        html[data-lang="en"] span.lang-en {
+            display: inline !important;
+        }
+
+        html[data-lang="en"] div.lang-en {
+            display: block !important;
+        }
+
+        html[data-lang="en"] flex.lang-en {
+            display: flex !important;
+        }
+    </style>
 </head>
 
-<body>
-    <div class="container-fluid fixed-top full-center disable-selection">
-        <div class="row w-100 justify-content-center">
-            <div class="col-md-10 col-lg-8 text-center">
-                <div class="badge-feature">
-                    SSH • VNC • SFTP • Docker • Podman
+<body
+    class="bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-fox-500 selection:text-white overflow-x-hidden">
+
+    <!-- Background Glow -->
+    <div
+        class="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-[900px] h-[300px] md:h-[400px] bg-fox-500/10 blur-[100px] md:blur-[130px] pointer-events-none rounded-full z-0">
+    </div>
+
+    <!-- Navigation -->
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 py-4 md:py-6 flex items-center justify-between relative z-20">
+        <div class="flex items-center space-x-2 sm:space-x-3">
+            <!-- Custom App SVG Icon -->
+            <div class="w-8 h-8 sm:w-10 sm:h-10 flex-shrink-0 flex items-center justify-center">
+                <!--<svg class="w-full h-full drop-shadow-md" viewBox="0 0 1024 1024" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M69.189189 0l221.405406 387.459459L0 691.891892z" fill="#FF7700"></path>
+                    <path d="M69.189189 0l442.810811 387.459459h-221.405405z" fill="#FF5500"></path>
+                    <path d="M954.810811 0l69.189189 691.891892-290.594595-304.432433z" fill="#FF8800"></path>
+                    <path d="M954.810811 0l-221.405406 387.459459h-221.405405z" fill="#E63500"></path>
+                    <path d="M290.594595 387.459459h221.405405v636.540541z" fill="#D62B00"></path>
+                    <path d="M512 387.459459h221.405405l290.594595 304.432433-512 332.108108z" fill="#FF5500"></path>
+                    <path d="M290.594595 387.459459L0 691.891892l512 332.108108z" fill="#FF4500"></path>
+                </svg>-->
+                <img src="./assets/apple-touch-icon.png" alt="FoxTerm Logo" class="w-full h-full drop-shadow-md">
+            </div>
+            <span class="text-lg sm:text-xl font-bold tracking-tight flex items-center gap-1.5">
+                FoxTerm
+                <span
+                    class="lang-zh text-[10px] sm:text-xs px-2 py-0.5 rounded-full bg-fox-500/10 text-fox-500 border border-fox-500/20 font-medium">橙狐终端</span>
+            </span>
+        </div>
+
+        <div class="hidden md:flex items-center space-x-8 text-sm text-zinc-400 font-medium">
+            <a href="#features" class="hover:text-fox-500 transition-colors">
+                <span class="lang-zh">核心特性</span>
+                <span class="lang-en">Features</span>
+            </a>
+            <a href="#download" class="hover:text-fox-500 transition-colors">
+                <span class="lang-zh">App Store 下载</span>
+                <span class="lang-en">Download</span>
+            </a>
+        </div>
+
+        <div class="flex items-center space-x-2 sm:space-x-4">
+            <!-- Language Toggle Switch -->
+            <button id="langToggle"
+                class="text-xs font-semibold px-2.5 py-1.5 sm:px-3 sm:py-1.5 rounded-lg border border-zinc-800 bg-zinc-900 text-zinc-300 hover:text-fox-500 hover:border-fox-500/50 transition-all flex items-center gap-1">
+                <span class="lang-zh">🌐 English</span>
+                <span class="lang-en">🌐 中文</span>
+            </button>
+            <a href="#download"
+                class="bg-fox-500 hover:bg-fox-600 text-white text-xs sm:text-sm font-semibold px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg transition-all shadow-lg shadow-fox-500/25">
+                <span class="lang-zh">获取应用</span>
+                <span class="lang-en">Get App</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-6 sm:pt-8 pb-12 sm:pb-20 text-center relative z-10">
+        <!-- Badge -->
+        <div
+            class="inline-flex items-center space-x-2 px-3 py-1 sm:px-4 sm:py-1.5 rounded-full bg-fox-500/10 border border-fox-500/20 text-fox-500 text-xs font-semibold mb-6 sm:mb-8">
+            <span class="lang-zh">🍎 macOS & iOS 通用应用 (Universal Purchase)</span>
+            <span class="lang-en">🍎 Universal Purchase for macOS & iOS</span>
+        </div>
+
+        <h1 class="text-3xl sm:text-5xl md:text-7xl font-extrabold tracking-tight mb-4 sm:mb-6 leading-tight">
+            <span class="lang-zh">掌控云端与集群，<br />尽在 <span class="orange-gradient-text">橙狐终端 FoxTerm</span></span>
+            <span class="lang-en">Master Infrastructure,<br />Seamlessly with <span
+                    class="orange-gradient-text">FoxTerm</span></span>
+        </h1>
+
+        <!-- Feature Tags -->
+        <div
+            class="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 md:gap-3 mb-6 sm:mb-8 text-xs sm:text-sm font-mono text-zinc-300">
+            <span class="px-2.5 py-1 rounded-md bg-zinc-900 border border-zinc-800 text-fox-500 font-bold">SSH</span>
+            <span class="text-zinc-700">•</span>
+            <span class="px-2.5 py-1 rounded-md bg-zinc-900 border border-zinc-800 text-fox-500 font-bold">VNC</span>
+            <span class="text-zinc-700">•</span>
+            <span class="px-2.5 py-1 rounded-md bg-zinc-900 border border-zinc-800 text-fox-500 font-bold">SFTP</span>
+            <span class="text-zinc-700">•</span>
+            <span class="px-2.5 py-1 rounded-md bg-zinc-900 border border-zinc-800 text-fox-500 font-bold">Docker</span>
+            <span class="text-zinc-700">•</span>
+            <span class="px-2.5 py-1 rounded-md bg-zinc-900 border border-zinc-800 text-fox-500 font-bold">Podman</span>
+        </div>
+
+        <p class="text-sm sm:text-lg text-zinc-400 max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed px-2">
+            <span class="lang-zh">告别工具割裂，橙狐终端将远控、双栏传输、低延迟桌面与容器云原生监控完美融合。极致性能，优雅随行。</span>
+            <span class="lang-en">Ditch fragmented workflows. FoxTerm combines remote SSH, dual-pane SFTP, low-latency
+                VNC, and container management into a singular, breathtaking client.</span>
+        </p>
+
+        <!-- Single App Store Download CTA Button -->
+        <div class="flex items-center justify-center mb-10 sm:mb-16">
+            <a href="#download"
+                class="bg-fox-500 hover:bg-fox-600 text-white font-semibold px-6 sm:px-10 py-3.5 sm:py-4 rounded-xl transition-all shadow-xl shadow-fox-500/30 flex items-center space-x-3 text-base sm:text-lg">
+                <!-- Corrected Apple Logo SVG (完整的 Apple Icon 路径，无裁剪) -->
+                <svg class="w-6 h-6 sm:w-7 sm:h-7 fill-current flex-shrink-0" viewBox="0 0 1024 1024"
+                    xml:space="preserve">
+                    <path
+                        d="M747.4 535.7c-0.4-68.2 30.5-119.6 92.9-157.5-34.9-50-87.7-77.5-157.3-82.8-65.9-5.2-138 38.4-164.4 38.4-27.9 0-91.7-36.6-141.9-36.6C273.1 298.8 163 379.8 163 544.6c0 48.7 8.9 99 26.7 150.8 23.8 68.2 109.6 235.3 199.1 232.6 46.8-1.1 79.9-33.2 140.8-33.2 59.1 0 89.7 33.2 141.9 33.2 90.3-1.3 167.9-153.2 190.5-221.6-121.1-57.1-114.6-167.2-114.6-170.7z">
+                    </path>
+                    <path
+                        d="M642.3 230.7c50.7-60.2 46.1-115 44.6-134.7-44.8 2.6-96.6 30.5-126.1 64.8-32.5 36.8-51.6 82.3-47.5 133.6 48.4 3.7 92.6-21.2 129-63.7z">
+                    </path>
+                </svg>
+
+                <div class="text-left">
+                    <div class="text-[10px] sm:text-xs opacity-80 uppercase tracking-wider font-sans">App Store</div>
+                    <div class="font-bold leading-tight">
+                        <span class="lang-zh">下载 Mac / iOS 版</span>
+                        <span class="lang-en">Download for Mac & iOS</span>
+                    </div>
                 </div>
-                <h1 class="display-3 mb-4">
-                    <strong>FoxTerm</strong>
-                </h1>
-                <p class="hero-desc">
-                    <strong>The Ultimate Native Workspace for Apple
-                        Ecosystem.</strong><br />
-                    Built natively for <b>macOS</b> and <b>iOS</b> to
-                    deliver peak performance. Seamlessly bridge remote
-                    terminals, graphical desktops, and containers in one
-                    secure, high-speed command center. Engineered for
-                    developers who demand perfection.
+            </a>
+        </div>
+
+        <!-- Terminal Window Mockup -->
+        <div
+            class="relative mx-auto rounded-xl sm:rounded-2xl bg-zinc-900 border border-zinc-800/80 shadow-2xl glow-effect overflow-hidden text-left font-mono text-xs sm:text-sm">
+            <div
+                class="bg-zinc-900/90 px-3 sm:px-4 py-2.5 sm:py-3 border-b border-zinc-800 flex items-center justify-between">
+                <div class="flex items-center space-x-1.5 sm:space-x-2">
+                    <span class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-red-500/80"></span>
+                    <span class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-yellow-500/80"></span>
+                    <span class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-green-500/80"></span>
+                    <span
+                        class="text-[10px] sm:text-xs text-zinc-500 ml-1 sm:ml-2 truncate max-w-[150px] sm:max-w-none">foxterm@macbook-pro:~</span>
+                </div>
+                <div class="flex items-center space-x-3 text-[10px] sm:text-xs text-zinc-400">
+                    <span class="px-2 py-0.5 rounded bg-fox-500/20 text-fox-500 font-semibold">Universal App</span>
+                </div>
+            </div>
+            <div
+                class="p-4 sm:p-6 text-zinc-300 space-y-2 sm:space-y-3 bg-zinc-950/80 leading-relaxed overflow-x-auto break-all">
+                <p class="text-zinc-500">
+                    <span class="lang-zh"># Welcome to FoxTerm (橙狐终端) v1.2.0</span>
+                    <span class="lang-en"># Welcome to FoxTerm v1.2.0</span>
                 </p>
-                <div class="mt-5">
-                    <div class="d-flex flex-wrap justify-content-center">
-                        <a href="https://apps.apple.com/us/app/foxterm/id6760452891"
-                            class="btn btn-primary btn-cta text-dark">
-                            Download on App Store
-                        </a>
-                        <a href="https://github.com/foxterm" class="btn btn-outline-light btn-cta">
-                            GitHub
-                        </a>
-                    </div>
-                    <div class="platform-tag">
-                        Optimized for Apple Silicon & iPadOS
-                    </div>
-                </div>
-                <div class="mt-4">
-                    <a href="./privacypolicy.html" class="text-white-50 text-decoration-none small opacity-50">Privacy
-                        Policy</a>
+                <p><span class="text-fox-500 font-bold">foxterm</span> connect prod-cluster --protocol=ssh
+                    --key=~/.ssh/id_ed25519</p>
+                <p class="text-emerald-400">✓ Connected to US-East High-Speed Gateway (Latency: 18ms)</p>
+                <div class="pt-2 border-t border-zinc-800/60">
+                    <p class="text-fox-500">$ podman ps && docker ps</p>
+                    <p class="text-zinc-400">CONTAINER ID IMAGE COMMAND STATUS</p>
+                    <p class="text-zinc-300">e82a910f2c01 quay.io/podman/stable "podman --version" Up 6 hours</p>
+                    <p class="text-zinc-300">41a029c8e192 docker.io/library/node "npm start" Up 4 days</p>
                 </div>
             </div>
         </div>
-    </div>
-    <script src="./assets/three.min.js"></script>
-    <script src="./assets/TweenMax.min.js"></script>
-    <script src="./assets/script.js"></script>
+    </section>
+
+    <!-- 5 Core Features Grid -->
+    <section id="features" class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20 border-t border-zinc-900">
+        <div class="text-center mb-10 sm:mb-16">
+            <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-3 sm:mb-4">
+                <span class="lang-zh">5 大核心优势，一端统揽全局</span>
+                <span class="lang-en">5 Core Powerhouse Capabilities</span>
+            </h2>
+            <p class="text-sm sm:text-base text-zinc-400 max-w-xl mx-auto px-2">
+                <span class="lang-zh">从服务器底层连通到可视化容器管理，全面契合开发者与系统管理员的极客直觉。</span>
+                <span class="lang-en">Engineered for developers and sysadmins who demand speed, aesthetics, and
+                    reliability.</span>
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            <!-- SSH (替换为精美 SVG) -->
+            <div
+                class="p-6 sm:p-8 rounded-2xl bg-zinc-900/50 border border-zinc-800/60 hover:border-fox-500/50 transition-all flex flex-col justify-between">
+                <div>
+                    <div
+                        class="w-12 h-12 rounded-xl bg-fox-500/10 border border-fox-500/20 text-fox-500 flex items-center justify-center mb-5">
+                        <svg class="w-6 h-6 stroke-current" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold mb-2">
+                        <span class="lang-zh">SSH 极速终端</span>
+                        <span class="lang-en">SSH Terminal</span>
+                    </h3>
+                    <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+                        <span class="lang-zh">支持 ED25519 密钥链、多标签分屏控制、快捷指令流与智能断线自动重连，极致响应流畅不卡顿。</span>
+                        <span class="lang-en">High-performance terminal supporting ED25519 keys, split pane views,
+                            command snippets, and resilient auto-reconnection.</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- SFTP (替换为精美 SVG) -->
+            <div
+                class="p-6 sm:p-8 rounded-2xl bg-zinc-900/50 border border-zinc-800/60 hover:border-fox-500/50 transition-all flex flex-col justify-between">
+                <div>
+                    <div
+                        class="w-12 h-12 rounded-xl bg-fox-500/10 border border-fox-500/20 text-fox-500 flex items-center justify-center mb-5">
+                        <svg class="w-6 h-6 stroke-current" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z">
+                            </path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold mb-2">
+                        <span class="lang-zh">SFTP 双栏文件流</span>
+                        <span class="lang-en">Dual-Pane SFTP</span>
+                    </h3>
+                    <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+                        <span class="lang-zh">类似 Commander 的双栏交互界面，支持拖拽秒级上传、在线文件编辑、批量权限设定与断点续传。</span>
+                        <span class="lang-en">Commander-style dual-pane interface with drag-and-drop, in-app file
+                            editor, batch permission management, and resume support.</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- VNC (替换为精美 SVG) -->
+            <div
+                class="p-6 sm:p-8 rounded-2xl bg-zinc-900/50 border border-zinc-800/60 hover:border-fox-500/50 transition-all flex flex-col justify-between">
+                <div>
+                    <div
+                        class="w-12 h-12 rounded-xl bg-fox-500/10 border border-fox-500/20 text-fox-500 flex items-center justify-center mb-5">
+                        <svg class="w-6 h-6 stroke-current" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold mb-2">
+                        <span class="lang-zh">VNC 低延迟远控</span>
+                        <span class="lang-en">Low-Latency VNC</span>
+                    </h3>
+                    <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+                        <span class="lang-zh">内置硬件加速 VNC 渲染引擎，轻松远程操作 GUI 桌面，在 iOS 设备上自动优化触控与手势映射。</span>
+                        <span class="lang-en">Hardware-accelerated VNC engine for remote GUI access, tailored for touch
+                            and trackpad gestures on iOS.</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Docker (替换为精美 SVG) -->
+            <div
+                class="p-6 sm:p-8 rounded-2xl bg-zinc-900/50 border border-zinc-800/60 hover:border-fox-500/50 transition-all flex flex-col justify-between">
+                <div>
+                    <div
+                        class="w-12 h-12 rounded-xl bg-fox-500/10 border border-fox-500/20 text-fox-500 flex items-center justify-center mb-5">
+                        <svg class="w-6 h-6 stroke-current" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                            </path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold mb-2">
+                        <span class="lang-zh">Docker 容器监控</span>
+                        <span class="lang-en">Docker Management</span>
+                    </h3>
+                    <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+                        <span class="lang-zh">图形化直观掌控 Docker 实例、镜像与数据卷，实时流式查阅日志、容器 Shell 嵌入与集群健康监控。</span>
+                        <span class="lang-en">Visual dashboard for Docker instances, images, and volumes. Real-time
+                            streaming logs and one-click container Exec.</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Podman (替换为精美 SVG) -->
+            <div
+                class="p-6 sm:p-8 rounded-2xl bg-zinc-900/50 border border-zinc-800/60 hover:border-fox-500/50 transition-all flex flex-col justify-between">
+                <div>
+                    <div
+                        class="w-12 h-12 rounded-xl bg-fox-500/10 border border-fox-500/20 text-fox-500 flex items-center justify-center mb-5">
+                        <svg class="w-6 h-6 stroke-current" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold mb-2">
+                        <span class="lang-zh">Podman 无根容器</span>
+                        <span class="lang-en">Podman Integration</span>
+                    </h3>
+                    <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+                        <span class="lang-zh">原生支持 Rootless 无根安全容器引擎，全面兼容 Podman CLI 逻辑，兼顾高安全性与极客灵活性。</span>
+                        <span class="lang-en">Native support for Rootless container engines. Fully compatible with
+                            Podman sockets for high-security isolation.</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Apple Universal Purchase (替换为精美 SVG) -->
+            <div
+                class="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-fox-500/10 to-zinc-900 border border-fox-500/30 flex flex-col justify-between">
+                <div>
+                    <div
+                        class="w-12 h-12 rounded-xl bg-fox-500/20 border border-fox-500/40 text-fox-500 flex items-center justify-center mb-5">
+                        <svg class="w-6 h-6 stroke-current" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold mb-2">
+                        <span class="lang-zh">通用应用 Universal App</span>
+                        <span class="lang-en">Universal Purchase</span>
+                    </h3>
+                    <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+                        <span class="lang-zh">跨端无缝体验。原生 Swift & Metal 打造，支持 iCloud 云端配置同步与 Mac/iOS 无缝接续。</span>
+                        <span class="lang-en">Cross-platform integration. Built natively with Swift & Metal, featuring
+                            iCloud config sync between Mac & iOS.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-20 text-center">
+        <div class="p-8 sm:p-12 rounded-2xl sm:rounded-3xl bg-zinc-900 border border-zinc-800 relative overflow-hidden">
+            <div
+                class="absolute -right-10 -top-10 w-48 sm:w-64 h-48 sm:h-64 bg-fox-500/20 blur-[60px] sm:blur-[80px] rounded-full pointer-events-none">
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">
+                <span class="lang-zh">从 App Store 下载 FoxTerm</span>
+                <span class="lang-en">Get FoxTerm on App Store</span>
+            </h2>
+            <p class="text-xs sm:text-base text-zinc-400 mb-6 sm:mb-8 max-w-lg mx-auto">
+                <span class="lang-zh">支持 Apple Silicon Mac (macOS 13+) 及 iPhone / iPad (iOS 16+)</span>
+                <span class="lang-en">Available on Mac App Store & iOS App Store with Universal Purchase</span>
+            </p>
+            <div class="flex justify-center">
+                <a href="https://apps.apple.com/us/app/foxterm/id6760452891" target="_blank"
+                    class="bg-fox-500 hover:bg-fox-600 text-white font-semibold px-6 sm:px-10 py-3.5 sm:py-4 rounded-xl transition-all shadow-lg shadow-fox-500/30 flex items-center space-x-3 text-sm sm:text-base">
+                    <svg class="w-6 h-6 fill-current flex-shrink-0" viewBox="0 0 1024 1024" xml:space="preserve">
+                        <path
+                            d="M747.4 535.7c-0.4-68.2 30.5-119.6 92.9-157.5-34.9-50-87.7-77.5-157.3-82.8-65.9-5.2-138 38.4-164.4 38.4-27.9 0-91.7-36.6-141.9-36.6C273.1 298.8 163 379.8 163 544.6c0 48.7 8.9 99 26.7 150.8 23.8 68.2 109.6 235.3 199.1 232.6 46.8-1.1 79.9-33.2 140.8-33.2 59.1 0 89.7 33.2 141.9 33.2 90.3-1.3 167.9-153.2 190.5-221.6-121.1-57.1-114.6-167.2-114.6-170.7z">
+                        </path>
+                        <path
+                            d="M642.3 230.7c50.7-60.2 46.1-115 44.6-134.7-44.8 2.6-96.6 30.5-126.1 64.8-32.5 36.8-51.6 82.3-47.5 133.6 48.4 3.7 92.6-21.2 129-63.7z">
+                        </path>
+                    </svg>
+                    <span>
+                        <span class="lang-zh">前往 App Store 下载</span>
+                        <span class="lang-en">Get it on the App Store</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="max-w-7xl mx-auto px-6 py-8 border-t border-zinc-900 text-center text-xs text-zinc-500">
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3">
+            <p>© 2026 FoxTerm. Hosted on GitHub.</p>
+            <span class="hidden sm:inline text-zinc-800">|</span>
+            <a class="lang-zh inline-flex items-center gap-1 text-zinc-500 hover:text-fox-500 transition-colors" href="https://beian.miit.gov.cn" target="_blank" rel="noopener noreferrer">
+                <svg class="w-3.5 h-3.5 opacity-70" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                <span>蜀ICP备2024075062号</span>
+            </a>
+        </div>
+    </footer>
+
+
+
+    <!-- i18n & Automatic Language Switcher Script -->
+    <script>
+        const btn = document.getElementById('langToggle');
+
+        // 自动探测浏览器默认语言
+        function detectUserLanguage() {
+            const userLang = navigator.language || navigator.userLanguage || 'zh';
+            return userLang.toLowerCase().startsWith('zh') ? 'zh' : 'en';
+        }
+
+        let currentLang = detectUserLanguage();
+
+        // 切换语言逻辑
+        function updateLanguage(lang) {
+            currentLang = lang;
+            if (currentLang === 'en') {
+                document.documentElement.setAttribute('data-lang', 'en');
+                document.documentElement.setAttribute('lang', 'en');
+            } else {
+                document.documentElement.removeAttribute('data-lang');
+                document.documentElement.setAttribute('lang', 'zh-CN');
+            }
+        }
+
+        // 初始化语言
+        updateLanguage(currentLang);
+
+        // 点击手动切换语言
+        btn.addEventListener('click', () => {
+            const nextLang = currentLang === 'zh' ? 'en' : 'zh';
+            updateLanguage(nextLang);
+        });
+    </script>
 </body>
 
 </html>
