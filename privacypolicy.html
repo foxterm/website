@@ -280,9 +280,22 @@
         </div>
     </footer>
     <script>
-            (function () {
+            (async function () {
                 const hostname = window.location.hostname;
                 const isCnDomain = hostname.endsWith('.cn');
+                if (!isCnDomain) {
+                    try {
+                        const res = await fetch('https://receipt.foxterm.app/ipcountry');
+                        const data = await res.json();
+                        if (data && data.country === 'CN') {
+                            const targetHost = window.location.hostname.replace(/\.app$/, '.cn');
+                            window.location.href = `${window.location.protocol}//${targetHost}`;
+                            return;
+                        }
+                    } catch (err) {
+
+                    }
+                }
 
                 // 1. 动态判断托管平台
                 const hostInfoElem = document.getElementById('host-info');
