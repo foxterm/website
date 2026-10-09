@@ -33,32 +33,11 @@ body,
 :root {
     --brand-glow: rgba(255, 85, 0, 0.35);
 }
-
-.logo-header-wrapper {
-    position: relative;
-    width: 88px;
-    height: 88px;
-    margin: 0 auto 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* 给 Icon 强行绑定 FoxTermFont 字体与图标字符 */
+.fox-logo-icon {
+    font-family: 'FoxTermFont' !important;
 }
 
-.fox-logo-font {
-    font-family: 'FoxTermFont', sans-serif;
-    line-height: 1;
-    display: inline-block;
-    user-select: none;
-    filter: drop-shadow(0 8px 20px var(--brand-glow));
-    transform: translateZ(0);
-    will-change: transform;
-    transition: transform 0.3s ease;
-}
-
-.fox-logo-font::before {
+.fox-logo-icon::before {
     content: '\e000';
-}
-
-.fox-logo-font:hover {
-    transform: scale(1.05) translateZ(0);
 }
