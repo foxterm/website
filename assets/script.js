@@ -1,25 +1,28 @@
 (function () {
   const hostname = window.location.hostname;
   const isCnDomain = hostname.endsWith('.cn');
-  // 1. 动态判断托管平台
+
+  // 1. 动态判断托管平台与 ICP 备案信息
   const hostInfoElem = document.getElementById('host-info');
   if (hostInfoElem) {
     hostInfoElem.textContent = isCnDomain ? 'Hosted on Tencent COS.' : 'Hosted on Cloudflare Pages.';
   }
 
-  // 2. 动态控制 ICP 备案号的显示
   const beianInfo = document.getElementById('beian-info');
-
-  if (!isCnDomain) {
-    if (beianInfo) beianInfo.style.display = 'none';
+  if (!isCnDomain && beianInfo) {
+    beianInfo.style.display = 'none';
   }
 
-  // 3. 语言切换逻辑
+  // 2. 语言切换与 URL/SEO 匹配逻辑
   const btn = document.getElementById('langToggle');
 
-  let currentLang = isCnDomain ? 'zh' : 'en';
+  // 优先读取 URL 参数 ?lang=zh / ?lang=en，其次读取本地缓存，最后按域名/浏览器默认判断
+  const urlParams = new URLSearchParams(window.location.search);
+  const urlLang = urlParams.get('lang');
 
-  function updateLanguage(lang) {
+  let currentLang = urlLang || localStorage.getItem('foxterm_lang') || (isCnDomain ? 'zh' : 'en');
+
+  function updateLanguage(lang, updateUrl = false) {
     currentLang = lang;
     if (currentLang === 'en') {
       document.documentElement.setAttribute('data-lang', 'en');
@@ -28,14 +31,28 @@
       document.documentElement.removeAttribute('data-lang');
       document.documentElement.setAttribute('lang', 'zh-CN');
     }
+
+    localStorage.setItem('foxterm_lang', currentLang);
+
+    // 如果是用户点击切换，更新 URL 参数，便于分享与 Google 检索
+    if (updateUrl) {
+      const newUrl = new URL(window.location.href);
+      if (currentLang === 'zh') {
+        newUrl.searchParams.set('lang', 'zh');
+      } else {
+        newUrl.searchParams.delete('lang');
+      }
+      window.history.pushState({}, '', newUrl);
+    }
   }
 
-  updateLanguage(currentLang);
+  // 初始化设置语言
+  updateLanguage(currentLang, false);
 
   if (btn) {
     btn.addEventListener('click', () => {
       const nextLang = currentLang === 'zh' ? 'en' : 'zh';
-      updateLanguage(nextLang);
+      updateLanguage(nextLang, true);
     });
   }
 })();
