@@ -3,12 +3,9 @@ const path = require('path');
 const { minify } = require('html-minifier-terser');
 const CleanCSS = require('clean-css');
 
-const cleanCssInstance = new CleanCSS({
-  level: 2,
-  inline: false,
-});
+// inline: false 保留 @import url(...)
+const cleanCssInstance = new CleanCSS({ level: 2, inline: false });
 
-// 排除开发源码、配置文件和私有数据库，只将公开网页资源打包至 dist
 const IGNORE_LIST = [
   'node_modules',
   '.git',
@@ -20,7 +17,8 @@ const IGNORE_LIST = [
   'yarn.lock',
   'package-lock.json',
   'README.md',
-  'LICENSE'
+  'LICENSE',
+  'GeoLite2-Country.mmdb'
 ];
 
 async function processDir(srcDir, destDir) {
@@ -39,7 +37,7 @@ async function processDir(srcDir, destDir) {
     if (entry.isDirectory()) {
       await processDir(srcPath, destPath);
     }
-    // 1. 压缩 HTML（压成单行，清除注释）
+    // 1. 处理 HTML（包含内联 CSS、JS 和 application/ld+json 压缩）
     else if (entry.isFile() && entry.name.endsWith('.html')) {
       const content = fs.readFileSync(srcPath, 'utf8');
       const minified = await minify(content, {
@@ -47,18 +45,19 @@ async function processDir(srcDir, destDir) {
         removeComments: true,
         minifyCSS: true,
         minifyJS: true,
+        processScripts: ['application/ld+json']
       });
       fs.writeFileSync(destPath, minified, 'utf8');
       console.log(`[HTML 压缩] ${srcPath} -> ${destPath}`);
     }
-    // 2. 压缩独立的 .css 文件
+    // 2. 处理独立 CSS
     else if (entry.isFile() && entry.name.endsWith('.css')) {
       const content = fs.readFileSync(srcPath, 'utf8');
       const minified = cleanCssInstance.minify(content).styles;
       fs.writeFileSync(destPath, minified, 'utf8');
       console.log(`[CSS  压缩] ${srcPath} -> ${destPath}`);
     }
-    // 3. 复制静态资源（assets、images、robots.txt、sitemap.xml、favicon.ico 等）
+    // 3. 复制静态资源
     else if (entry.isFile()) {
       fs.copyFileSync(srcPath, destPath);
       console.log(`[静态复制] ${srcPath} -> ${destPath}`);
@@ -66,12 +65,11 @@ async function processDir(srcDir, destDir) {
   }
 }
 
-// 每次构建前先清空旧的 dist
 if (fs.existsSync('./dist')) {
   fs.rmSync('./dist', { recursive: true, force: true });
 }
 
 console.log('开始打包压缩...');
 processDir('.', './dist')
-  .then(() => console.log('🎉 构建完成！精简版网页产物已生成至 dist 目录。'))
+  .then(() => console.log('🎉 构建完成！LD+JSON 已成功压缩为单行。'))
   .catch((err) => console.error('构建失败:', err));
