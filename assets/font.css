@@ -16,9 +16,50 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'FoxTermFont';
+    src: url('./fonts/FoxTerm.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 html,
 body,
 * {
     font-family: 'JetBrains Mono', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+
+:root {
+    --brand-glow: rgba(255, 85, 0, 0.35);
+}
+
+.logo-header-wrapper {
+    position: relative;
+    width: 88px;
+    height: 88px;
+    margin: 0 auto 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fox-logo-font {
+    font-family: 'FoxTermFont', sans-serif;
+    font-size: 80px;
+    line-height: 1;
+    display: inline-block;
+    user-select: none;
+    filter: drop-shadow(0 8px 20px var(--brand-glow));
+    transform: translateZ(0);
+    will-change: transform;
+    transition: transform 0.3s ease;
+}
+
+.fox-logo-font::before {
+    content: '\e000';
+}
+
+.fox-logo-font:hover {
+    transform: scale(1.05) translateZ(0);
 }
