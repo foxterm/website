@@ -302,12 +302,7 @@
                 // 3. 语言切换逻辑
                 const btn = document.getElementById('langToggle');
 
-                function detectUserLanguage() {
-                    const userLang = navigator.language || navigator.userLanguage || 'en';
-                    return userLang.toLowerCase().startsWith('zh') ? 'zh' : 'en';
-                }
-
-                let currentLang = detectUserLanguage();
+                let currentLang = isCnDomain ? 'zh' : 'en';
 
                 function updateLanguage(lang) {
                     currentLang = lang;
