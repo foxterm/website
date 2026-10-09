@@ -3,7 +3,9 @@ const path = require('path');
 const { minify } = require('html-minifier-terser');
 const CleanCSS = require('clean-css');
 
-const cleanCssInstance = new CleanCSS({ level: 2 });
+const cleanCssInstance = new CleanCSS({
+  level: 2, inline: false
+});
 
 // 排除开发源码、配置文件和私有数据库，只将公开网页资源打包至 dist
 const IGNORE_LIST = [
