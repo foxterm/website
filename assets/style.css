@@ -1,145 +1,41 @@
-@import url(./bootstrap.css);
 @import url(./font.css);
 
-body {
-    color: white;
-    margin: 0;
-    text-align: center;
-    background-color: black;
+.glow-effect {
+    box-shadow: 0 0 70px -10px rgba(255, 104, 0, 0.28);
 }
 
-canvas {
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-p {
-    color: rgba(255, 255, 255, 0.5);
-}
-
-.header {
-    top: 42%;
-}
-
-.header-content {
-    padding: 50px;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-}
-
-.footer {
-    bottom: 3%;
-}
-
-.description {
-    color: gray;
-    padding-top: 50px;
-}
-
-a,
-a:hover,
-a:visited {
-    color: white;
-    text-decoration: none;
-}
-
-.disable-selection {
-    -moz-user-select: none;
-    /* Firefox */
-    -ms-user-select: none;
-    /* Internet Explorer */
-    -khtml-user-select: none;
-    /* KHTML browsers (e.g. Konqueror) */
-    -webkit-user-select: none;
-    /* Chrome, Safari, and Opera */
-    -webkit-touch-callout: none;
-    /* Disable Android and iOS callouts*/
-}
-
-h1::after {
-    /* content: ' 0760.cn'; */
-    font-size: 12px;
-    position: absolute;
-    top: 3px;
-    padding-left: 5px;
-    font-weight: 400;
-}
-
-h2::after {
-    content: "2";
-    font-size: 12px;
-    position: absolute;
-    top: 14px;
-    padding-left: 5px;
-}
-
-.btn {
-    border-radius: 100px;
-    padding: 10px 25px;
-}
-
-/* 严格上下居中 */
-.full-center {
-    height: 100vh !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-}
-
-/* 漂亮：增加一点发光感和字母间距 */
-.badge-feature {
-    letter-spacing: 2px;
-    background: rgba(255, 255, 255, 0.05);
-    padding: 6px 16px;
-    border-radius: 50px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    margin-bottom: 2rem;
-    display: inline-block;
-    color: #00d4ff;
-    border: 1px solid rgba(0, 212, 255, 0.2);
-    text-transform: uppercase;
-}
-
-/* 专业：优化标题字间距，增加一点线性渐变 */
-h1.display-3 {
-    font-weight: 800;
-    letter-spacing: -2px;
-    background: linear-gradient(to bottom, #ffffff, #cccccc);
+.orange-gradient-text {
+    background: linear-gradient(135deg, #FF8A00 0%, #FF3D00 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-/* 简洁：优化行高和色彩透明度 */
-.hero-desc {
-    font-size: 1.25rem;
-    line-height: 1.6;
-    color: rgba(255, 255, 255, 0.7);
-    max-width: 700px;
-    margin: 0 auto;
+/* 语言控制 CSS 样式 */
+.lang-en {
+    display: none !important;
 }
 
-.hero-desc strong {
-    color: #fff;
-    font-weight: 600;
+html[data-lang="en"] .lang-zh {
+    display: none !important;
 }
 
-.btn-cta {
-    font-weight: 600;
-    border-radius: 8px;
-    padding: 12px 32px;
-    margin: 8px;
-    transition: all 0.3s ease;
+html[data-lang="en"] .lang-en {
+    display: block !important;
 }
 
-.btn-primary {
-    background-color: #00d4ff;
-    border-color: #00d4ff;
-    color: #000;
+html[data-lang="en"] span.lang-en {
+    display: inline !important;
 }
 
-.btn-primary:hover {
-    background-color: #00b8e6;
-    transform: translateY(-2px);
+html[data-lang="en"] div.lang-en {
+    display: block !important;
+}
+
+html[data-lang="en"] flex.lang-en {
+    display: flex !important;
+}
+
+.bg-code-grid {
+    background-image: url("data:image/svg+xml,%3Csvg width='120' height='60' viewBox='0 0 120 60' xmlns='http://www.w3.org/2000/svg'%3E%3Ctext x='0' y='15' fill='%23ff6800' font-family='monospace' font-size='13' letter-spacing='3'%3E0 1 0 0 1 1 0 1%3E%3C/text%3E%3Ctext x='0' y='35' fill='%23ff6800' font-family='monospace' font-size='13' letter-spacing='3'%3E1 0 1 1 0 0 1 0%3E%3C/text%3E%3Ctext x='0' y='55' fill='%23ff6800' font-family='monospace' font-size='13' letter-spacing='3'%3E0 0 1 0 1 0 1 1%3E%3C/text%3E%3C/svg%3E");
+    background-repeat: repeat;
 }
