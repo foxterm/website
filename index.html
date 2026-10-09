@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/tailwindcss.js"></script>
     <script>
         tailwind.config = {
             darkMode: 'class',
@@ -68,10 +68,18 @@
 <body
     class="bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-fox-500 selection:text-white overflow-x-hidden">
 
-    <!-- Background Glow -->
-    <div
-        class="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-[900px] h-[300px] md:h-[400px] bg-fox-500/10 blur-[100px] md:blur-[130px] pointer-events-none rounded-full z-0">
+    <!-- Background Glow + Feathered Full-Width Code Stream -->
+    <div class="fixed inset-0 w-full h-full pointer-events-none z-0 overflow-hidden">
+        <div
+            class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1000px] h-[500px] bg-fox-500/15 blur-[120px] md:blur-[150px] rounded-full">
+        </div>
+        <div
+            class="absolute inset-0 w-full h-full [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_80%)] [-webkit-mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_80%)]">
+            <canvas id="codeStreamCanvas" class="w-full h-full opacity-15"></canvas>
+        </div>
     </div>
+
+
 
     <!-- Navigation -->
     <nav class="max-w-7xl mx-auto px-4 sm:px-6 py-4 md:py-6 flex items-center justify-between relative z-20">
@@ -445,6 +453,51 @@
             const nextLang = currentLang === 'zh' ? 'en' : 'zh';
             updateLanguage(nextLang);
         });
+        // 代码流背景绘制脚本
+        const canvas = document.getElementById('codeStreamCanvas');
+        if (canvas) {
+            const ctx = canvas.getContext('2d');
+
+            function resizeCanvas() {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            }
+            resizeCanvas();
+            window.addEventListener('resize', resizeCanvas);
+
+            const chars = '01';
+            const fontSize = 14;
+            let columns = Math.floor(canvas.width / fontSize);
+            let drops = Array(columns).fill(1);
+
+            // 窗口大小变动时重新计算列数
+            window.addEventListener('resize', () => {
+                columns = Math.floor(canvas.width / fontSize);
+                drops = Array(columns).fill(1);
+            });
+
+            function drawCodeStream() {
+                // 使用半透明黑色拖尾，保持背景透亮
+                ctx.fillStyle = 'rgba(9, 9, 11, 0.1)';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+                ctx.fillStyle = '#ff6800'; // 橙狐主题色
+                ctx.font = `${fontSize}px monospace`;
+
+                for (let i = 0; i < drops.length; i++) {
+                    const text = chars.charAt(Math.floor(Math.random() * chars.length));
+                    ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+
+                    if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                        drops[i] = 0;
+                    }
+                    drops[i]++;
+                }
+            }
+
+            setInterval(drawCodeStream, 40);
+        }
+
     </script>
 </body>
 
