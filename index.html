@@ -692,14 +692,15 @@
     <!-- Footer -->
     <footer class="max-w-7xl mx-auto px-6 py-8 border-t border-zinc-900 text-center text-xs text-zinc-500">
         <div class="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3">
-            <p>© 2026 FoxTerm. Hosted on Cloudflare.</p>
+            <p>© 2026 FoxTerm. <span id="host-info">Hosted on Cloudflare Pages.</span></p>
             <span class="hidden sm:inline text-zinc-800">|</span>
             <a href="./privacypolicy.html" class="hover:text-fox-500 transition-colors">
                 <span class="lang-zh">隐私条款</span>
                 <span class="lang-en">Privacy Policy</span>
             </a>
-            <span class="hidden sm:inline text-zinc-800">|</span>
-            <a class="lang-zh inline-flex items-center gap-1 text-zinc-500 hover:text-fox-500 transition-colors"
+            <span id="beian-sep" class="hidden sm:inline text-zinc-800">|</span>
+            <a id="beian-info"
+                class="inline-flex items-center gap-1 text-zinc-500 hover:text-fox-500 transition-colors"
                 href="https://beian.miit.gov.cn" target="_blank" rel="noopener noreferrer">
                 <svg class="w-3.5 h-3.5 opacity-70" fill="none" stroke="currentColor" stroke-width="2"
                     viewBox="0 0 24 24">
@@ -710,35 +711,57 @@
             </a>
         </div>
     </footer>
-
     <!-- i18n & Default English Language Switcher Script -->
     <script>
-        const btn = document.getElementById('langToggle');
+            (function () {
+                const hostname = window.location.hostname;
+                const isCnDomain = hostname.endsWith('.cn');
 
-        function detectUserLanguage() {
-            const userLang = navigator.language || navigator.userLanguage || 'en';
-            return userLang.toLowerCase().startsWith('zh') ? 'zh' : 'en';
-        }
+                // 1. 动态判断托管平台
+                const hostInfoElem = document.getElementById('host-info');
+                if (hostInfoElem) {
+                    hostInfoElem.textContent = isCnDomain ? 'Hosted on Tencent COS.' : 'Hosted on Cloudflare Pages.';
+                }
 
-        let currentLang = detectUserLanguage();
+                // 2. 动态控制 ICP 备案号及分隔符的显示
+                const beianSep = document.getElementById('beian-sep');
+                const beianInfo = document.getElementById('beian-info');
 
-        function updateLanguage(lang) {
-            currentLang = lang;
-            if (currentLang === 'en') {
-                document.documentElement.setAttribute('data-lang', 'en');
-                document.documentElement.setAttribute('lang', 'en');
-            } else {
-                document.documentElement.removeAttribute('data-lang');
-                document.documentElement.setAttribute('lang', 'zh-CN');
-            }
-        }
+                if (!isCnDomain) {
+                    if (beianSep) beianSep.style.display = 'none';
+                    if (beianInfo) beianInfo.style.display = 'none';
+                }
 
-        updateLanguage(currentLang);
+                // 3. 语言切换逻辑
+                const btn = document.getElementById('langToggle');
 
-        btn.addEventListener('click', () => {
-            const nextLang = currentLang === 'zh' ? 'en' : 'zh';
-            updateLanguage(nextLang);
-        });
+                function detectUserLanguage() {
+                    const userLang = navigator.language || navigator.userLanguage || 'en';
+                    return userLang.toLowerCase().startsWith('zh') ? 'zh' : 'en';
+                }
+
+                let currentLang = detectUserLanguage();
+
+                function updateLanguage(lang) {
+                    currentLang = lang;
+                    if (currentLang === 'en') {
+                        document.documentElement.setAttribute('data-lang', 'en');
+                        document.documentElement.setAttribute('lang', 'en');
+                    } else {
+                        document.documentElement.removeAttribute('data-lang');
+                        document.documentElement.setAttribute('lang', 'zh-CN');
+                    }
+                }
+
+                updateLanguage(currentLang);
+
+                if (btn) {
+                    btn.addEventListener('click', () => {
+                        const nextLang = currentLang === 'zh' ? 'en' : 'zh';
+                        updateLanguage(nextLang);
+                    });
+                }
+            })();
     </script>
 </body>
 
