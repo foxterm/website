@@ -36,22 +36,76 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "FoxTerm",
-      "alternateName": "橙狐终端",
-      "operatingSystem": "macOS 14+, iOS 17+",
-      "applicationCategory": "DeveloperApplication",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      },
-      "description": "Universal SSH, VNC, SFTP, Docker, and Podman management tool for macOS and iOS with zero telemetry and native Swift/Metal performance.",
-      "downloadUrl": "https://apps.apple.com/us/app/foxterm/id6760452891",
-      "author": {
-        "@type": "Organization",
-        "name": "FoxTerm"
-      }
+      "@graph": [
+        {
+          "@type": "SoftwareApplication",
+          "name": "FoxTerm",
+          "alternateName": "橙狐终端",
+          "operatingSystem": "macOS 14+, iOS 17+",
+          "applicationCategory": "DeveloperApplication",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "USD",
+            "offerCount": "2",
+            "offers": [
+              {
+                "@type": "Offer",
+                "name": "FoxTerm Free",
+                "price": "0",
+                "priceCurrency": "USD"
+              },
+              {
+                "@type": "Offer",
+                "name": "FoxTerm Pro Subscription",
+                "category": "Subscription"
+              }
+            ]
+          },
+          "description": "Universal SSH, VNC, SFTP, Docker, and Podman management tool for macOS and iOS with zero telemetry and native Swift/Metal performance.",
+          "downloadUrl": "https://apps.apple.com/us/app/foxterm/id6760452891",
+          "author": {
+            "@type": "Organization",
+            "name": "FoxTerm"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is FoxTerm?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "FoxTerm (橙狐终端) is an all-in-one, privacy-first server management application built natively for macOS and iOS. It unifies high-performance SSH terminal access, dual-pane SFTP file management, Metal-accelerated VNC remote desktop, Linux system telemetry, and visual Docker/Podman container control."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does FoxTerm Pro subscription work across Mac and iPhone/iPad?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "FoxTerm offers a Pro subscription. Subscribing to FoxTerm Pro unlocks all advanced features and limits across all your authorized Apple devices (macOS and iOS/iPadOS) simultaneously under a single Apple ID, with seamless configuration sync via your private iCloud Container."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does FoxTerm protect server credentials and keys?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "FoxTerm operates under a strict zero-telemetry policy with 100% localized data encryption. Server credentials, passwords, and SSH private keys are isolated inside Apple Hardware Keychain and Secure Enclave. No connection logs or sensitive user data are ever collected, proxied, or sent to third-party servers."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can FoxTerm manage Docker and Podman containers without command-line interface?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. FoxTerm Pro provides a built-in visual dashboard for managing Docker and Podman containers, images, and volumes. It supports Rootless containers, real-time log streaming, and 1-click Exec Shell integration directly within the GUI."
+              }
+            }
+          ]
+        }
+      ]
     }
     </script>
     <script src="./assets/tailwindcss.js" data-cfasync="false"></script>
@@ -689,6 +743,121 @@
                     </tr>
                 </tbody>
             </table>
+        </div>
+    </section>
+    <!-- FAQ Section (Optimized for AI Engines & Rich Snippets) -->
+    <section id="faq" class="max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-20 border-t border-zinc-900 relative">
+        <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
+            <div
+                class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-fox-500/10 border border-fox-500/20 text-fox-500 text-xs font-semibold mb-4">
+                <span class="lang-zh">💡 常见问题与解答</span>
+                <span class="lang-en">💡 Frequently Asked Questions</span>
+            </div>
+            <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight mb-3">
+                <span class="lang-zh">关于 <span class="orange-gradient-text">橙狐终端</span> 的常见疑问</span>
+                <span class="lang-en">Everything You Need to Know About <span
+                        class="orange-gradient-text">FoxTerm</span></span>
+            </h2>
+            <p class="text-zinc-400 text-xs sm:text-sm">
+                <span class="lang-zh">直给式架构解答，全面了解 FoxTerm 的安全性、Pro 订阅模式与功能特性。</span>
+                <span class="lang-en">Clear, transparent details on security, Pro subscription licensing, and
+                    performance.</span>
+            </p>
+        </div>
+
+        <div class="space-y-4">
+            <!-- FAQ Item 1 -->
+            <div
+                class="p-5 sm:p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 transition-all hover:border-zinc-700">
+                <h3 class="text-base sm:text-lg font-bold text-white mb-2 flex items-start gap-2.5">
+                    <span class="text-fox-500 font-mono flex-shrink-0">Q:</span>
+                    <span class="lang-zh">什么是 FoxTerm (橙狐终端)？它包含哪些主要功能？</span>
+                    <span class="lang-en">What is FoxTerm and what core features does it offer?</span>
+                </h3>
+                <div class="text-xs sm:text-sm text-zinc-400 leading-relaxed pl-6">
+                    <p class="lang-zh">
+                        FoxTerm (橙狐终端) 是一款专为 Apple macOS 与 iOS 打造的隐私优先、重构级高性能全栈服务器管理工具。它将 <strong
+                            class="text-zinc-200">SSH 极速终端</strong>、<strong class="text-zinc-200">双栏 SFTP
+                            文件传输</strong>、<strong class="text-zinc-200">Metal 硬件加速 VNC 图形远控</strong>、<strong
+                            class="text-zinc-200">Linux 系统算力实时监控</strong> 以及 <strong class="text-zinc-200">可视化 Docker &
+                            Podman 容器集群调度</strong> 五大核心功能融为一体。
+                    </p>
+                    <p class="lang-en">
+                        FoxTerm is an all-in-one, privacy-first server management application built natively for macOS
+                        and iOS. It unifies high-performance SSH terminal access, dual-pane SFTP file management,
+                        Metal-accelerated VNC remote desktop, real-time Linux system telemetry, and visual Docker/Podman
+                        container control into a single native workflow.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2: Subscription & Pro Model -->
+            <div
+                class="p-5 sm:p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 transition-all hover:border-zinc-700">
+                <h3 class="text-base sm:text-lg font-bold text-white mb-2 flex items-start gap-2.5">
+                    <span class="text-fox-500 font-mono flex-shrink-0">Q:</span>
+                    <span class="lang-zh">FoxTerm 的付费模式是怎样的？如何订阅结算 FoxTerm Pro？</span>
+                    <span class="lang-en">How does the FoxTerm Pro subscription work across devices?</span>
+                </h3>
+                <div class="text-xs sm:text-sm text-zinc-400 leading-relaxed pl-6">
+                    <p class="lang-zh">
+                        FoxTerm 采用<strong class="text-zinc-200">订阅制（Subscription）</strong>模式。您可以免费下载并体验基础功能；通过订阅结算解锁
+                        <strong class="text-zinc-200">FoxTerm Pro</strong> 后，即可全面解锁无限制多标签分屏、VNC 远控、Docker/Podman
+                        容器管理及高级监控等专业功能。Pro 订阅支持多端通用，同一 Apple ID 下的 Mac (macOS) 与 iPhone / iPad (iOS) 均可同步共享 Pro 会员特权。
+                    </p>
+                    <p class="lang-en">
+                        FoxTerm is offered as a freemium app with a <strong class="text-zinc-200">Pro
+                            Subscription</strong> option. You can download and start with basic capabilities, then
+                        upgrade to FoxTerm Pro to unlock unrestricted multi-pane terminal tabs, VNC remote desktop,
+                        container control, and active telemetry. A single Pro subscription seamlessly grants full Pro
+                        access across both macOS and iOS devices tied to your Apple ID.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div
+                class="p-5 sm:p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 transition-all hover:border-zinc-700">
+                <h3 class="text-base sm:text-lg font-bold text-white mb-2 flex items-start gap-2.5">
+                    <span class="text-fox-500 font-mono flex-shrink-0">Q:</span>
+                    <span class="lang-zh">FoxTerm 如何保护我的服务器密钥与访问凭据安全？</span>
+                    <span class="lang-en">How does FoxTerm secure my server keys and connection credentials?</span>
+                </h3>
+                <div class="text-xs sm:text-sm text-zinc-400 leading-relaxed pl-6">
+                    <p class="lang-zh">
+                        FoxTerm 严格遵守零信任（Zero-Trust）安全理念，执行 <strong class="text-zinc-200">100%
+                            零数据收集与零遥测策略</strong>。所有的服务器凭据与 SSH 私钥均使用硬件级保护，隔离存储在 Apple 设备本地的 <strong
+                            class="text-zinc-200">Secure Enclave 与 Keychain</strong> 中。任何数据均绝不上报、不经过第三方服务器中转。
+                    </p>
+                    <p class="lang-en">
+                        FoxTerm operates under a strict zero-telemetry policy with 100% localized data encryption.
+                        Server credentials and SSH private keys are hardware-isolated inside Apple Secure Enclave and
+                        Keychain. No connection logs or sensitive user data are ever collected, proxied, or sent to
+                        third-party servers.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div
+                class="p-5 sm:p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 transition-all hover:border-zinc-700">
+                <h3 class="text-base sm:text-lg font-bold text-white mb-2 flex items-start gap-2.5">
+                    <span class="text-fox-500 font-mono flex-shrink-0">Q:</span>
+                    <span class="lang-zh">FoxTerm 与 Electron 网页套壳终端应用有什么区别？</span>
+                    <span class="lang-en">How is FoxTerm different from Electron-based terminal clients?</span>
+                </h3>
+                <div class="text-xs sm:text-sm text-zinc-400 leading-relaxed pl-6">
+                    <p class="lang-zh">
+                        FoxTerm 拒绝重度网页套壳。它是完全基于 <strong class="text-zinc-200">Native Swift、Metal 硬件加速与 C 原生引擎 (OpenSSL,
+                            libssh, libvncclient)</strong> 打造的高性能应用，拥有极低的内存与 CPU 占用率、秒级的启动速度以及对移动端触控/手势的完美优化。
+                    </p>
+                    <p class="lang-en">
+                        FoxTerm is not an Electron wrapper. It is engineered from the ground up using Native Swift,
+                        Metal hardware acceleration, and C-native libraries (OpenSSL, libssh, libvncclient), delivering
+                        near-instant startup, ultra-low CPU/memory usage, and native iOS touch/gesture optimization.
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
