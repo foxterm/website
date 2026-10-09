@@ -1,23 +1,24 @@
 @font-face {
-  font-family: 'JetBrains Mono';
-  src: url('./fonts/JetBrainsMono[wght].ttf') format('truetype-variations'),
-       url('./fonts/JetBrainsMono[wght].ttf') format('truetype');
-  font-weight: 100 800;
-  font-style: normal;
-  font-display: swap;
+    font-family: 'JetBrains Mono';
+    src: url('./fonts/JetBrainsMono[wght].ttf') format('truetype-variations'),
+        url('./fonts/JetBrainsMono[wght].ttf') format('truetype');
+    font-weight: 100 800;
+    font-style: normal;
+    font-display: swap;
 }
+
 @font-face {
-  font-family: 'JetBrains Mono';
-  src: url('./fonts/JetBrainsMono-Italic[wght].ttf') format('truetype-variations'),
-       url('./fonts/JetBrainsMono-Italic[wght].ttf') format('truetype');
-  font-weight: 100 800;
-  font-style: italic;
-  font-display: swap;
+    font-family: 'JetBrains Mono';
+    src: url('./fonts/JetBrainsMono-Italic[wght].ttf') format('truetype-variations'),
+        url('./fonts/JetBrainsMono-Italic[wght].ttf') format('truetype');
+    font-weight: 100 800;
+    font-style: italic;
+    font-display: swap;
 }
 
 
 html,
 body,
-*{
-	font-family: 'JetBrains Mono' !important;
+* {
+    font-family: 'JetBrains Mono', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
 }
