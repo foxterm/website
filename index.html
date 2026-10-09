@@ -110,13 +110,13 @@
             <span class="text-zinc-700">•</span>
             <span class="px-2.5 py-1 rounded-md bg-zinc-900 border border-zinc-800 text-fox-500 font-bold">Podman</span>
         </div>
-
-        <p class="text-sm sm:text-lg text-zinc-400 max-w-2xl mx-auto mb-8 sm:mb-10 leading-relaxed px-2">
-            <span class="lang-zh">告别工具割裂，橙狐终端将远控、双栏传输、低延迟桌面与容器云原生监控完美融合。极致性能，优雅随行。</span>
-            <span class="lang-en">Ditch fragmented workflows. FoxTerm combines remote SSH, dual-pane SFTP, low-latency
-                VNC, and container management into a singular, breathtaking client.</span>
+        <p class="text-sm sm:text-lg text-zinc-300 max-w-3xl mx-auto mb-8 sm:mb-10 leading-relaxed px-2 font-medium">
+            <span class="lang-zh">彻底终结工具割裂。橙狐终端以重构级性能，将远程 SSH、双栏 SFTP、低延迟 VNC、云原生容器与<span
+                    class="text-fox-500 font-bold"> Linux 系统实时状态监控</span>完美融于一体。掌控全栈集群，只在指尖一步到位。</span>
+            <span class="lang-en">Redefine your infrastructure control. FoxTerm unifies high-performance SSH, dual-pane
+                SFTP, hardware-accelerated VNC, container management, and <span class="text-fox-500 font-bold">real-time
+                    Linux system metrics</span> into a single, uncompromised powerhouse.</span>
         </p>
-
         <!-- Single App Store Download CTA Button -->
         <div class="flex items-center justify-center mb-10 sm:mb-16">
             <a href="#download"
@@ -163,14 +163,14 @@
                     <span class="lang-zh"># Welcome to FoxTerm (橙狐终端) v1.2.0</span>
                     <span class="lang-en"># Welcome to FoxTerm v1.2.0</span>
                 </p>
-                <p><span class="text-fox-500 font-bold">foxterm</span> connect prod-cluster --protocol=ssh
+                <p><span class="text-fox-500 font-bold">foxterm</span> connect prod-gpu-cluster --protocol=ssh
                     --key=~/.ssh/id_ed25519</p>
-                <p class="text-emerald-400">✓ Connected to US-East High-Speed Gateway (Latency: 18ms)</p>
+                <p class="text-emerald-400">✓ Connected to US-East Gateway (Latency: 18ms) | GPU: NVIDIA A100-80GB (24%
+                    Load)</p>
                 <div class="pt-2 border-t border-zinc-800/60">
-                    <p class="text-fox-500">$ podman ps && docker ps</p>
-                    <p class="text-zinc-400">CONTAINER ID IMAGE COMMAND STATUS</p>
-                    <p class="text-zinc-300">e82a910f2c01 quay.io/podman/stable "podman --version" Up 6 hours</p>
-                    <p class="text-zinc-300">41a029c8e192 docker.io/library/node "npm start" Up 4 days</p>
+                    <p class="text-fox-500">$ foxterm stats --live</p>
+                    <p class="text-zinc-400">CPU: 12.4% | RAM: 32.1/128 GB | DISK: 412/2000 GB | NET: 🚀 1.2 GB/s</p>
+                    <p class="text-zinc-300">CONTAINER: 14 Running | PODMAN: Rootless Active | VNC Engine: Ready</p>
                 </div>
             </div>
         </div>
@@ -178,19 +178,8 @@
 
     <!-- 5 Core Features Grid -->
     <section id="features" class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20 border-t border-zinc-900">
-        <div class="text-center mb-10 sm:mb-16">
-            <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-3 sm:mb-4">
-                <span class="lang-zh">5 大核心优势，一端统揽全局</span>
-                <span class="lang-en">5 Core Powerhouse Capabilities</span>
-            </h2>
-            <p class="text-sm sm:text-base text-zinc-400 max-w-xl mx-auto px-2">
-                <span class="lang-zh">从服务器底层连通到可视化容器管理，全面契合开发者与系统管理员的极客直觉。</span>
-                <span class="lang-en">Engineered for developers and sysadmins who demand speed, aesthetics, and
-                    reliability.</span>
-            </p>
-        </div>
-
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+            <!-- 1. SSH 终端 -->
             <div
                 class="p-6 sm:p-8 rounded-2xl bg-zinc-900/50 border border-zinc-800/60 hover:border-fox-500/50 transition-all flex flex-col justify-between">
                 <div>
@@ -206,12 +195,37 @@
                         <span class="lang-en">SSH Terminal</span>
                     </h3>
                     <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
-                        <span class="lang-zh">支持 ED25519 密钥链、多标签分屏控制、快捷指令流与智能断线自动重连，极致响应流畅不卡顿。</span>
-                        <span class="lang-en">High-performance terminal supporting ED25519 keys, split pane views,
-                            command snippets, and resilient auto-reconnection.</span>
+                        <span class="lang-zh">支持 Ed25519 密钥链、多标签分屏、指令随手记与智能断线无感重连，毫秒级响应，极致流畅。</span>
+                        <span class="lang-en">High-performance terminal supporting Ed25519 keys, split panes, command
+                            snippets, and instant auto-reconnection.</span>
                     </p>
                 </div>
             </div>
+
+            <!-- 2. Linux 全维度监控 (新增&重磅) -->
+            <div
+                class="p-6 sm:p-8 rounded-2xl bg-zinc-900/50 border border-zinc-800/60 hover:border-fox-500/50 transition-all flex flex-col justify-between">
+                <div>
+                    <div
+                        class="w-12 h-12 rounded-xl bg-fox-500/10 border border-fox-500/20 text-fox-500 flex items-center justify-center mb-5">
+                        <svg class="w-6 h-6 stroke-current" fill="none" stroke-width="2" viewBox="0 0 24 24"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold mb-2">
+                        <span class="lang-zh">Linux 算力全维监控</span>
+                        <span class="lang-en">Real-Time Linux Metrics</span>
+                    </h3>
+                    <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+                        <span class="lang-zh">实时可视化追踪 CPU 占用、内存分配、网络IO、磁盘读写、系统负载以及 GPU 显存与算力使用率，掌控硬件健康。</span>
+                        <span class="lang-en">Real-time telemetry for CPU, Memory, Disk, Network IO, System Load, and
+                            GPU/VRAM utilization at a glance.</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- 3. SFTP 双栏文件流 -->
             <div
                 class="p-6 sm:p-8 rounded-2xl bg-zinc-900/50 border border-zinc-800/60 hover:border-fox-500/50 transition-all flex flex-col justify-between">
                 <div>
@@ -224,16 +238,18 @@
                         </svg>
                     </div>
                     <h3 class="text-lg sm:text-xl font-bold mb-2">
-                        <span class="lang-zh">SFTP 双栏文件流</span>
-                        <span class="lang-en">Dual-Pane SFTP</span>
+                        <span class="lang-zh">SFTP 双栏高速文件传输</span>
+                        <span class="lang-en">Dual-Pane SFTP Engine</span>
                     </h3>
                     <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
-                        <span class="lang-zh">类似 Commander 的双栏交互界面，支持拖拽秒级上传、在线文件编辑、批量权限设定与断点续传。</span>
-                        <span class="lang-en">Commander-style dual-pane interface with drag-and-drop, in-app file
-                            editor, batch permission management, and resume support.</span>
+                        <span class="lang-zh">经典双栏高效交互，支持跨端拖拽秒传、内置轻量编辑器、批量权限更迭与断点续传。</span>
+                        <span class="lang-en">Commander-style dual-pane UI with instant drag-and-drop, in-app file
+                            editing, batch permissions, and resume.</span>
                     </p>
                 </div>
             </div>
+
+            <!-- 4. VNC 远控 -->
             <div
                 class="p-6 sm:p-8 rounded-2xl bg-zinc-900/50 border border-zinc-800/60 hover:border-fox-500/50 transition-all flex flex-col justify-between">
                 <div>
@@ -247,16 +263,18 @@
                         </svg>
                     </div>
                     <h3 class="text-lg sm:text-xl font-bold mb-2">
-                        <span class="lang-zh">VNC 低延迟远控</span>
-                        <span class="lang-en">Low-Latency VNC</span>
+                        <span class="lang-zh">VNC 低延迟图形远控</span>
+                        <span class="lang-en">Hardware-Accelerated VNC</span>
                     </h3>
                     <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
-                        <span class="lang-zh">内置硬件加速 VNC 渲染引擎，轻松远程操作 GUI 桌面，在 iOS 设备上自动优化触控与手势映射。</span>
-                        <span class="lang-en">Hardware-accelerated VNC engine for remote GUI access, tailored for touch
-                            and trackpad gestures on iOS.</span>
+                        <span class="lang-zh">内置 Metal 硬件加速渲染引擎，高帧率掌控远程 GUI 桌面，为 iOS 触控与手势映射深度优化。</span>
+                        <span class="lang-en">Metal-accelerated VNC engine for smooth remote desktop access, specially
+                            tuned for touch & gestures on iOS.</span>
                     </p>
                 </div>
             </div>
+
+            <!-- 5. Docker & Podman 容器云原生 -->
             <div
                 class="p-6 sm:p-8 rounded-2xl bg-zinc-900/50 border border-zinc-800/60 hover:border-fox-500/50 transition-all flex flex-col justify-between">
                 <div>
@@ -272,37 +290,18 @@
                         </svg>
                     </div>
                     <h3 class="text-lg sm:text-xl font-bold mb-2">
-                        <span class="lang-zh">Docker 容器监控</span>
-                        <span class="lang-en">Docker Management</span>
+                        <span class="lang-zh">Docker & Podman 容器集群</span>
+                        <span class="lang-en">Docker & Podman Management</span>
                     </h3>
                     <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
-                        <span class="lang-zh">图形化直观掌控 Docker 实例、镜像与数据卷，实时流式查阅日志、容器 Shell 嵌入与集群健康监控。</span>
-                        <span class="lang-en">Visual dashboard for Docker instances, images, and volumes. Real-time
-                            streaming logs and one-click container Exec.</span>
+                        <span class="lang-zh">图形化全掌控！原生兼容 Rootless 无根架构，支持容器实例/镜像管理、实时流式日志与一键 Exec Shell 嵌入。</span>
+                        <span class="lang-en">Visual dashboard for containers, images, and volumes. Supports Rootless
+                            runtime, streaming logs, and 1-click Exec.</span>
                     </p>
                 </div>
             </div>
-            <div
-                class="p-6 sm:p-8 rounded-2xl bg-zinc-900/50 border border-zinc-800/60 hover:border-fox-500/50 transition-all flex flex-col justify-between">
-                <div>
-                    <div
-                        class="w-12 h-12 rounded-xl bg-fox-500/10 border border-fox-500/20 text-fox-500 flex items-center justify-center mb-5">
-                        <svg class="w-6 h-6 stroke-current" fill="none" stroke-width="2" viewBox="0 0 24 24"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                        </svg>
-                    </div>
-                    <h3 class="text-lg sm:text-xl font-bold mb-2">
-                        <span class="lang-zh">Podman 无根容器</span>
-                        <span class="lang-en">Podman Integration</span>
-                    </h3>
-                    <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
-                        <span class="lang-zh">原生支持 Rootless 无根安全容器引擎，全面兼容 Podman CLI 逻辑，兼顾高安全性与极客灵活性。</span>
-                        <span class="lang-en">Native support for Rootless container engines. Fully compatible with
-                            Podman sockets for high-security isolation.</span>
-                    </p>
-                </div>
-            </div>
+
+            <!-- 6. 通用应用 Universal Purchase -->
             <div
                 class="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-fox-500/10 to-zinc-900 border border-fox-500/30 flex flex-col justify-between">
                 <div>
