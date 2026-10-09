@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png" />
-    <link rel="stylesheet" href="./assets/font.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <script src="./assets/tailwindcss.js"></script>
     <script>
         tailwind.config = {
@@ -28,60 +28,20 @@
             }
         }
     </script>
-    <style>
-        .glow-effect {
-            box-shadow: 0 0 70px -10px rgba(255, 104, 0, 0.28);
-        }
-
-        .orange-gradient-text {
-            background: linear-gradient(135deg, #FF8A00 0%, #FF3D00 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        /* 语言控制 CSS 样式 */
-        .lang-en {
-            display: none !important;
-        }
-
-        html[data-lang="en"] .lang-zh {
-            display: none !important;
-        }
-
-        html[data-lang="en"] .lang-en {
-            display: block !important;
-        }
-
-        html[data-lang="en"] span.lang-en {
-            display: inline !important;
-        }
-
-        html[data-lang="en"] div.lang-en {
-            display: block !important;
-        }
-
-        html[data-lang="en"] flex.lang-en {
-            display: flex !important;
-        }
-    </style>
 </head>
 
 <body
     class="bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-fox-500 selection:text-white overflow-x-hidden">
 
-    <!-- Background Glow + Feathered Full-Width Code Stream -->
+    <!-- Background -->
     <div class="fixed inset-0 w-full h-full pointer-events-none z-0 overflow-hidden">
         <div
-            class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1000px] h-[500px] bg-fox-500/15 blur-[120px] md:blur-[150px] rounded-full">
+            class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1000px] h-[500px] bg-fox-500/15 blur-[120px] md:blur-[150px] rounded-full z-0">
         </div>
         <div
-            class="absolute inset-0 w-full h-full [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_80%)] [-webkit-mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_80%)]">
-            <canvas id="codeStreamCanvas" class="w-full h-full opacity-15"></canvas>
+            class="absolute inset-0 w-full h-full opacity-20 bg-code-grid [mask-image:radial-gradient(ellipse_at_center,black_20%,transparent_80%)] [-webkit-mask-image:radial-gradient(ellipse_at_center,black_20%,transparent_80%)]">
         </div>
     </div>
-
-
-
     <!-- Navigation -->
     <nav class="max-w-7xl mx-auto px-4 sm:px-6 py-4 md:py-6 flex items-center justify-between relative z-20">
         <div class="flex items-center space-x-2 sm:space-x-3">
@@ -454,47 +414,6 @@
             const nextLang = currentLang === 'zh' ? 'en' : 'zh';
             updateLanguage(nextLang);
         });
-        const canvas = document.getElementById('codeStreamCanvas');
-        if (canvas) {
-            const ctx = canvas.getContext('2d');
-
-            function resizeCanvas() {
-                canvas.width = window.innerWidth;
-                canvas.height = window.innerHeight;
-            }
-            resizeCanvas();
-            window.addEventListener('resize', resizeCanvas);
-
-            const chars = '01';
-            const fontSize = 14;
-            let columns = Math.floor(canvas.width / fontSize);
-            let drops = Array(columns).fill(1);
-            window.addEventListener('resize', () => {
-                columns = Math.floor(canvas.width / fontSize);
-                drops = Array(columns).fill(1);
-            });
-
-            function drawCodeStream() {
-                ctx.fillStyle = 'rgba(9, 9, 11, 0.1)';
-                ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-                ctx.fillStyle = '#ff6800';
-                ctx.font = `${fontSize}px monospace`;
-
-                for (let i = 0; i < drops.length; i++) {
-                    const text = chars.charAt(Math.floor(Math.random() * chars.length));
-                    ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-
-                    if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
-                        drops[i] = 0;
-                    }
-                    drops[i]++;
-                }
-            }
-
-            setInterval(drawCodeStream, 40);
-        }
-
     </script>
 </body>
 
