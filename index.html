@@ -478,7 +478,7 @@
                     </div>
                 </div>
 
-                <!-- Right Column: Logo Font Icon Display with CAD Blueprint -->
+                <!-- Right Column: Logo Font Icon Display with Blueprint & Downloads -->
                 <div class="lg:col-span-5 flex justify-center items-stretch min-h-[420px]">
                     <div class="w-full h-full relative flex items-center justify-center">
                         <!-- Ambient Glow -->
@@ -495,33 +495,31 @@
 
                             <!-- 2. Geometry Blueprint Overlay (几何辅助线) -->
                             <svg class="absolute inset-0 w-full h-full pointer-events-none stroke-fox-500/30 group-hover:stroke-fox-500/60 transition-colors duration-500"
-                                xmlns="http://www.w3.org/2000/svg">
+                                viewBox="0 0 100 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
                                 <!-- 十字中心参考线 -->
-                                <line x1="50%" y1="0" x2="50%" y2="100%" stroke-dasharray="4 4" stroke-width="1" />
-                                <line x1="0" y1="50%" x2="100%" y2="50%" stroke-dasharray="4 4" stroke-width="1" />
+                                <line x1="50" y1="0" x2="50" y2="100" stroke-dasharray="2 2" stroke-width="0.5" />
+                                <line x1="0" y1="50" x2="100" y2="50" stroke-dasharray="2 2" stroke-width="0.5" />
 
                                 <!-- 外围几何包围弧线与同心圆 -->
-                                <circle cx="50%" cy="50%" r="35%" stroke-dasharray="2 4" stroke-width="1"
-                                    class="opacity-40" />
-                                <circle cx="50%" cy="50%" r="48%" stroke-dasharray="6 6" stroke-width="1"
-                                    class="opacity-20" />
+                                <circle cx="50" cy="50" r="35" stroke-dasharray="1 2" stroke-width="0.5"
+                                    class="opacity-40" fill="none" />
+                                <circle cx="50" cy="50" r="46" stroke-dasharray="3 3" stroke-width="0.5"
+                                    class="opacity-20" fill="none" />
 
                                 <!-- 顶部与底部的坐标对齐切线 -->
-                                <line x1="15%" y1="22%" x2="85%" y2="22%" stroke-dasharray="2 2" stroke-width="1"
+                                <line x1="15" y1="22" x2="85" y2="22" stroke-dasharray="1 1" stroke-width="0.5"
                                     class="opacity-50" />
-                                <line x1="15%" y1="78%" x2="85%" y2="78%" stroke-dasharray="2 2" stroke-width="1"
+                                <line x1="15" y1="78" x2="85" y2="78" stroke-dasharray="1 1" stroke-width="0.5"
                                     class="opacity-50" />
 
-                                <!-- 四角 L 型标尺记号 -->
-                                <path d="M 20 35 L 20 20 L 35 20" fill="none" stroke-width="1.5"
-                                    class="stroke-fox-500/60" />
-                                <path d="M calc(100% - 20px) 35 L calc(100% - 20px) 20 L calc(100% - 35px) 20"
-                                    fill="none" stroke-width="1.5" class="stroke-fox-500/60" />
-                                <path d="M 20 calc(100% - 35px) L 20 calc(100% - 20px) L 35 calc(100% - 20px)"
-                                    fill="none" stroke-width="1.5" class="stroke-fox-500/60" />
-                                <path
-                                    d="M calc(100% - 20px) calc(100% - 35px) L calc(100% - 20px) calc(100% - 20px) L calc(100% - 35px) calc(100% - 20px)"
-                                    fill="none" stroke-width="1.5" class="stroke-fox-500/60" />
+                                <!-- 四角 L 型标尺记号 (左上、右上、左下、右下) -->
+                                <path d="M 4 8 L 4 4 L 8 4" fill="none" stroke-width="0.8" class="stroke-fox-500/80" />
+                                <path d="M 96 8 L 96 4 L 92 4" fill="none" stroke-width="0.8"
+                                    class="stroke-fox-500/80" />
+                                <path d="M 4 92 L 4 96 L 8 96" fill="none" stroke-width="0.8"
+                                    class="stroke-fox-500/80" />
+                                <path d="M 96 92 L 96 96 L 92 96" fill="none" stroke-width="0.8"
+                                    class="stroke-fox-500/80" />
                             </svg>
 
                             <!-- Top Specs Bar -->
@@ -548,25 +546,36 @@
                                 </div>
                             </div>
 
-                            <!-- Bottom Badge -->
-                            <div class="z-10 w-full flex justify-between items-center">
-                                <div
-                                    class="text-[10px] font-mono text-fox-500/70 border border-fox-500/20 px-3 py-1 rounded-full bg-fox-500/10 backdrop-blur-md">
-                                    <span class="lang-zh">图标类型：TFF 图标字体</span>
-                                    <span class="lang-en">TYPE: ICON FONT</span>
+                            <!-- Bottom Badge with Multi-language Download Links -->
+                            <div class="z-10 w-full flex flex-wrap justify-between items-center gap-2">
+                                <div class="flex items-center gap-2">
+                                    <div
+                                        class="text-[10px] font-mono text-fox-500/70 border border-fox-500/20 px-3 py-1 rounded-full bg-fox-500/10 backdrop-blur-md">
+                                        <span class="lang-zh">图标类型：TFF 图标字体</span>
+                                        <span class="lang-en">TYPE: ICON FONT</span>
+                                    </div>
                                 </div>
-                                <div class="text-[10px] font-mono text-zinc-600 hidden sm:block">
-                                    X:512 Y:512 R:48°
+                                <div class="flex items-center gap-1.5 font-mono text-[10px]">
+                                    <a href="./assets/fonts/FoxTerm.ttf" download="FoxTerm.ttf"
+                                        class="px-2.5 py-1 rounded-md bg-zinc-900/80 hover:bg-fox-500 hover:text-white border border-zinc-700 hover:border-fox-500 text-zinc-300 transition-colors flex items-center gap-1">
+                                        <span class="lang-zh">⬇ TTF (\e000)</span>
+                                        <span class="lang-en">⬇ TTF (\e000)</span>
+                                    </a>
+                                    <a href="./assets/FoxTerm.svg" download="FoxTerm.svg"
+                                        class="px-2.5 py-1 rounded-md bg-zinc-900/80 hover:bg-fox-500 hover:text-white border border-zinc-700 hover:border-fox-500 text-zinc-300 transition-colors flex items-center gap-1">
+                                        <span class="lang-zh">⬇ SVG 矢量</span>
+                                        <span class="lang-en">⬇ SVG Vector</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-
             </div>
         </div>
     </section>
+
 
     <!-- Security & Privacy Section (硬核安全与隐私) -->
     <section id="security" class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20 border-t border-zinc-900 relative">
