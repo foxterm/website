@@ -3,10 +3,10 @@
   const isCnDomain = hostname.endsWith('.cn');
 
   // 1. 动态判断托管平台与 ICP 备案信息
-  const hostInfoElem = document.getElementById('host-info');
-  if (hostInfoElem) {
-    hostInfoElem.textContent = isCnDomain ? 'Hosted on Tencent Makers.' : 'Hosted on Cloudflare Workers.';
-  }
+  // const hostInfoElem = document.getElementById('host-info');
+  // if (hostInfoElem) {
+  //   hostInfoElem.textContent = isCnDomain ? 'Hosted on Tencent Makers.' : 'Hosted on Cloudflare Workers.';
+  // }
 
   const beianInfo = document.getElementById('beian-info');
   if (!isCnDomain && beianInfo) {
