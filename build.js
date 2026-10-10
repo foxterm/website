@@ -2,8 +2,8 @@ const fs = require('fs');
 const path = require('path');
 const { minify } = require('html-minifier-terser');
 const CleanCSS = require('clean-css');
+const { minify: terserMinify } = require('terser');
 
-// inline: false 保留 @import url(...)
 const cleanCssInstance = new CleanCSS({ level: 2, inline: false });
 
 const IGNORE_LIST = [
@@ -37,7 +37,7 @@ async function processDir(srcDir, destDir) {
     if (entry.isDirectory()) {
       await processDir(srcPath, destPath);
     }
-    // 1. 处理 HTML（包含内联 CSS、JS 和 application/ld+json 压缩）
+    // 1. 处理 HTML
     else if (entry.isFile() && entry.name.endsWith('.html')) {
       const content = fs.readFileSync(srcPath, 'utf8');
       const minified = await minify(content, {
@@ -57,7 +57,17 @@ async function processDir(srcDir, destDir) {
       fs.writeFileSync(destPath, minified, 'utf8');
       console.log(`[CSS  压缩] ${srcPath} -> ${destPath}`);
     }
-    // 3. 复制静态资源
+    // 3. 新增：处理独立 JS 文件
+    else if (entry.isFile() && entry.name.endsWith('.js')) {
+      const content = fs.readFileSync(srcPath, 'utf8');
+      const minifiedResult = await terserMinify(content);
+      if (minifiedResult.error) {
+        throw minifiedResult.error;
+      }
+      fs.writeFileSync(destPath, minifiedResult.code, 'utf8');
+      console.log(`[JS   压缩] ${srcPath} -> ${destPath}`);
+    }
+    // 4. 复制其他静态资源
     else if (entry.isFile()) {
       fs.copyFileSync(srcPath, destPath);
       console.log(`[静态复制] ${srcPath} -> ${destPath}`);
@@ -71,5 +81,5 @@ if (fs.existsSync('./dist')) {
 
 console.log('开始打包压缩...');
 processDir('.', './dist')
-  .then(() => console.log('🎉 构建完成！LD+JSON 已成功压缩为单行。'))
+  .then(() => console.log('🎉 构建完成！所有 HTML、CSS、JS 及 LD+JSON 已成功压缩。'))
   .catch((err) => console.error('构建失败:', err));
