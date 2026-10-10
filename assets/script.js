@@ -5,7 +5,7 @@
   // 1. 动态判断托管平台与 ICP 备案信息
   const hostInfoElem = document.getElementById('host-info');
   if (hostInfoElem) {
-    hostInfoElem.textContent = isCnDomain ? 'Hosted on Tencent COS.' : 'Hosted on Cloudflare Pages.';
+    hostInfoElem.textContent = isCnDomain ? 'Hosted on Tencent Makers.' : 'Hosted on Cloudflare Workers.';
   }
 
   const beianInfo = document.getElementById('beian-info');
