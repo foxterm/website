@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="zh-Hans" class="dark scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- SEO Primary Meta Tags - Chinese -->
+    <title>隐私政策 - 橙狐终端 FoxTerm</title>
+    <meta name="description"
+        content="橙狐终端 (FoxTerm) 隐私政策。了解我们如何通过零遥测策略、本地加密、Apple Secure Enclave 密钥存储和完全的数据自主保护您的隐私。">
+    <meta name="keywords"
+        content="橙狐终端隐私, FoxTerm隐私政策, 零遥测, SSH安全, 数据保护, Secure Enclave加密">
+    <meta name="author" content="FoxTerm">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="baidu-site-verification" content="">
+    <meta name="language" content="zh-CN">
+    <meta name="revisit-after" content="30 days">
+
+    <!-- Canonical & Alternate Hreflang Tags -->
+    <link rel="canonical" href="https://foxterm.app/zh/privacy" />
+    <link rel="alternate" hreflang="en" href="https://foxterm.app/privacy" />
+    <link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/privacy" />
+    <link rel="alternate" hreflang="x-default" href="https://foxterm.app/privacy" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:title" content="隐私政策 - 橙狐终端 FoxTerm">
+    <meta property="og:description"
+        content="零遥测、本地加密、服务器管理完全数据主权。">
+    <meta property="og:url" content="https://foxterm.app/zh/privacy">
+    <meta property="og:site_name" content="橙狐终端 FoxTerm">
+    <meta property="og:image" content="https://foxterm.app/assets/apple-touch-icon.png">
+
+    <!-- Favicons & Manifest -->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="../assets/site.webmanifest" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
+    <link rel="stylesheet" href="../assets/privacypolicy.css" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "隐私政策 - 橙狐终端 FoxTerm",
+      "url": "https://foxterm.app/zh/privacy",
+      "inLanguage": "zh-CN",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "橙狐终端 FoxTerm",
+        "url": "https://foxterm.app/zh/"
+      },
+      "description": "橙狐终端 (FoxTerm) 隐私政策，概述零遥测保护、本地加密和完整用户数据主权。",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "首页",
+            "item": "https://foxterm.app/zh/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "隐私政策",
+            "item": "https://foxterm.app/zh/privacy"
+          }
+        ]
+      }
+    }
+    </script>
+    <script src="../assets/tailwindcss.js" data-cfasync="false"></script>
+    <script data-cfasync="false">
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        fox: {
+                            400: '#ff8000',
+                            500: '#ff5e00',
+                            600: '#e03e00',
+                            700: '#c42a00',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body
+    class="bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-fox-500 selection:text-white overflow-x-hidden">
+    <!-- Ambient Background -->
+    <div class="fixed inset-0 w-full h-full pointer-events-none z-0 overflow-hidden">
+        <div
+            class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1200px] h-[600px] bg-fox-500/10 blur-[180px] rounded-full z-0">
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 w-full bg-zinc-950/60 backdrop-blur-xl border-b border-white/[0.06]">
+        <nav class="max-w-4xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between relative z-20">
+            <a href="/zh/" class="flex items-center space-x-3 group focus:outline-none">
+                <div class="relative flex-shrink-0 flex items-center justify-center cursor-default">
+                    <span
+                        class="fox-logo-icon text-xl text-fox-500 transition-all duration-300 group-hover:drop-shadow-[0_0_8px_rgba(255,104,0,0.6)]"></span>
+                </div>
+                <span
+                    class="text-base font-bold tracking-tight text-white flex items-center gap-1.5 group-hover:text-fox-400 transition-colors">
+                    FoxTerm <span class="text-xs font-normal text-zinc-500 hidden sm:inline">/ 橙狐终端</span>
+                </span>
+            </a>
+            <div class="flex items-center space-x-3">
+                <a href="/privacy"
+                    class="h-8 px-3 text-[11px] font-medium rounded-lg border border-white/10 bg-white/[0.03] hover:bg-white/10 text-zinc-300 hover:text-white transition-all duration-200 flex items-center justify-center gap-1.5 backdrop-blur-md active:scale-95">
+                    English
+                </a>
+                <a href="/zh/"
+                    class="h-8 px-3.5 text-[11px] font-semibold rounded-lg bg-fox-500 hover:bg-fox-600 border border-fox-400/30 text-white transition-all duration-200 flex items-center justify-center shadow-[0_0_15px_rgba(255,94,0,0.25)] active:scale-95 backdrop-blur-md">
+                    返回首页
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Privacy Policy Content -->
+    <main class="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+        <div class="mb-10">
+            <div
+                class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-fox-500/10 border border-fox-500/20 text-fox-500 text-xs font-mono font-medium mb-6">
+                法律文档
+            </div>
+            <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-4 text-white">隐私政策</h1>
+            <p class="text-zinc-400 text-sm">最后更新：2026年10月</p>
+        </div>
+
+        <div class="prose prose-invert max-w-none space-y-8 text-zinc-300 text-sm sm:text-base leading-relaxed">
+            <div class="p-6 rounded-2xl bg-fox-500/10 border border-fox-500/20">
+                <h2 class="text-lg font-bold text-fox-400 mb-3 mt-0">我们的承诺：零遥测 (Zero Telemetry)</h2>
+                <p class="m-0 text-zinc-300">
+                    橙狐终端 (FoxTerm) 基于一个核心原则构建：您的服务器基础设施、凭据和工作流完全属于您。我们执行严格的<strong>零遥测策略</strong>，不会在外部服务器上收集、传输或存储您的任何操作数据。
+                </p>
+            </div>
+
+            <section>
+                <h2 class="text-xl font-bold text-white mb-4 mt-8">1. 我们收集的数据</h2>
+                <p>橙狐终端完全不收集任何遥测数据。具体而言：</p>
+                <ul class="list-disc pl-6 space-y-2 text-zinc-400">
+                    <li>不包含任何分析、使用追踪或行为监控代码</li>
+                    <li>默认情况下不会向第三方服务器发送崩溃报告</li>
+                    <li>不记录任何连接日志、命令历史或会话元数据</li>
+                    <li>不传输任何 IP 地址、主机名或服务器指纹</li>
+                    <li>SSH 密钥、密码和身份验证凭据永远不会离开您的设备</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold text-white mb-4 mt-8">2. 本地数据存储与加密</h2>
+                <p>所有敏感数据仅使用 Apple 原生安全框架存储在您的设备上：</p>
+                <ul class="list-disc pl-6 space-y-2 text-zinc-400">
+                    <li><strong class="text-zinc-200">Secure Enclave 硬件保护：</strong>SSH 私钥在支持的设备上由 Secure Enclave 硬件加密保护
+                    </li>
+                    <li><strong class="text-zinc-200">钥匙串隔离：</strong>凭据和密码存储在您本地的 iCloud Keychain 中，通过 Apple 硬件加密
+                    </li>
+                    <li><strong class="text-zinc-200">本地配置：</strong>连接配置文件和设置存储在您的设备本地；iCloud 同步仅通过您的私有 iCloud Container 进行，由 Apple
+                        端到端加密</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold text-white mb-4 mt-8">3. 网络通信</h2>
+                <p>橙狐终端仅与您明确配置的服务器建立直接的点对点连接：</p>
+                <ul class="list-disc pl-6 space-y-2 text-zinc-400">
+                    <li>所有连接（SSH、VNC、SFTP、Docker/Podman）均从您的设备直接连接到您的服务器
+                    </li>
+                    <li>我们不为您的流量运营代理服务器、中继或中间服务</li>
+                    <li>App Store 交易完全由 Apple 处理；我们不接收或存储支付信息</li>
+                    <li>应用程序中未嵌入任何第三方分析 SDK</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold text-white mb-4 mt-8">4. iCloud 同步</h2>
+                <p>当您启用 iCloud 配置同步时：</p>
+                <ul class="list-disc pl-6 space-y-2 text-zinc-400">
+                    <li>同步数据仅存储在您的个人 iCloud 账户中，不在我们的服务器上</li>
+                    <li>同步传输完全由 Apple 的 CloudKit 基础设施管理和加密</li>
+                    <li>私钥<strong>永远不会</strong>通过 iCloud 同步；它们始终隔离在每台设备的 Secure Enclave 中</li>
+                    <li>您可以随时通过应用设置或系统 iCloud 偏好设置禁用 iCloud 同步</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold text-white mb-4 mt-8">5. App Store 收据验证</h2>
+                <p>对于 Pro 订阅状态验证，橙狐终端可能与 Apple App Store 服务器通信以验证您的订阅权限。此通信：</p>
+                <ul class="list-disc pl-6 space-y-2 text-zinc-400">
+                    <li>通过标准 Apple StoreKit API 处理</li>
+                    <li>仅包含您的 Apple 交易收据标识符</li>
+                    <li>不包含任何您的服务器数据、凭据或使用信息</li>
+                    <li>在您的设备和 Apple 之间直接处理；FoxTerm 后端服务器不记录或存储这些请求</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold text-white mb-4 mt-8">6. 第三方服务</h2>
+                <p>橙狐终端不集成任何第三方分析、广告或数据收集服务。与之交互的唯一外部服务是：</p>
+                <ul class="list-disc pl-6 space-y-2 text-zinc-400">
+                    <li>Apple App Store 和 CloudKit 服务（受 Apple 隐私政策约束）</li>
+                    <li>您明确配置并直接连接的 SSH、VNC、SFTP、Docker/Podman 服务器</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold text-white mb-4 mt-8">7. 儿童隐私</h2>
+                <p>橙狐终端不会故意收集 13 岁以下（或您所在司法管辖区适用年龄）儿童的任何个人信息。该应用是专为技术专业人员设计的专业开发者工具。</p>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold text-white mb-4 mt-8">8. 本政策的变更</h2>
+                <p>我们可能会不时更新本隐私政策，以反映我们的实践或法律要求的变化。任何更改都将发布在此页面上，并附更新的修订日期。我们建议您定期查阅本政策。</p>
+            </section>
+
+            <section>
+                <h2 class="text-xl font-bold text-white mb-4 mt-8">9. 联系我们</h2>
+                <p>如果您对本隐私政策或我们的数据实践有任何问题或疑虑，请通过 <a href="mailto:admin@foxterm.app"
+                        class="text-fox-400 hover:text-fox-300 no-underline">admin@foxterm.app</a> 联系我们。</p>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="max-w-4xl mx-auto px-6 py-8 border-t border-zinc-900 text-center text-xs text-zinc-500">
+        <div class="flex flex-col items-center justify-center gap-2.5">
+            <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+                <p>&copy; 2026 FoxTerm.</p>
+                <span class="hidden sm:inline text-zinc-800">|</span>
+                <a href="/zh/" class="no-underline hover:text-fox-500 transition-colors">首页</a>
+                <span class="hidden sm:inline text-zinc-800">|</span>
+                <a href="/zh/terms" class="no-underline hover:text-fox-500 transition-colors">服务协议</a>
+                <span class="hidden sm:inline text-zinc-800">|</span>
+                <a href="/" class="no-underline hover:text-fox-500 transition-colors">English</a>
+            </div>
+
+            <!-- ICP 备案号 -->
+            <a id="beian-info" class="no-underline inline-flex items-center gap-1 hover:text-fox-500 transition-colors"
+                href="https://beian.miit.gov.cn" target="_blank" rel="noopener noreferrer">
+                <svg class="w-3.5 h-3.5 opacity-70" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                <span>蜀ICP备2024075062号</span>
+            </a>
+
+            <span class="text-[11px] text-zinc-600">
+                大陆镜像: <a href="https://foxterm.cn" class="no-underline hover:text-zinc-400">foxterm.cn</a> |
+                国际官网: <a href="https://foxterm.app" class="no-underline hover:text-zinc-400">foxterm.app</a>
+            </span>
+        </div>
+    </footer>
+
+    <script src="../assets/script.js"></script>
+</body>
+
+</html>

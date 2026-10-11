@@ -1,2 +1,11 @@
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemap location
+Sitemap: https://foxterm.app/sitemap.xml
+
+# Block unnecessary directories
+Disallow: /assets/
+Disallow: /*.json
+Disallow: /*.js$
+Disallow: /*.css$
