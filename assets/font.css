@@ -40,10 +40,15 @@ body,
 }
 
 
+.is-cn,
 .is-intl {
     display: none;
 }
 
-.is-cn {
-    display: none;
+html.is-cn .is-cn {
+    display: inline-flex;
+}
+
+html.is-intl .is-intl {
+    display: inline-block;
 }
