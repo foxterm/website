@@ -38,3 +38,13 @@ body,
 .fox-logo-icon::before {
     content: '\e000';
 }
+
+
+/* 默认让国际版和国内版的局部标记隐藏 */
+.is-intl {
+    display: none;
+}
+
+.is-cn {
+    display: none;
+}
