@@ -38,3 +38,13 @@ body,
 .fox-logo-icon::before {
     content: '\e000';
 }
+
+/* 非大陆域名 */
+html.is-intl {
+    display: inline-block;
+}
+
+/* 大陆 .cn 域名：备案信息默认显示；如需定制其它“仅大陆可见”的内容，用 .is-cn 选择器 */
+html.is-cn {
+    display: inline-block;
+}
