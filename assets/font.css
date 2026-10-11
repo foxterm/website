@@ -42,9 +42,9 @@ body,
 
 /* 默认让国际版和国内版的局部标记隐藏 */
 .is-intl {
-    display: none;
+    display: none !important;
 }
 
 .is-cn {
-    display: none;
+    display: none !important;
 }
