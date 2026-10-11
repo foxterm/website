@@ -242,10 +242,9 @@
                     中文
                 </a>
 
-                <a href="#download"
-                    class="relative h-8 px-3.5 text-[11px] font-semibold rounded-lg bg-fox-500 hover:bg-fox-600 border border-fox-400/30 text-white transition-all duration-200 flex items-center justify-center shadow-[0_0_15px_rgba(255,94,0,0.25)] hover:shadow-[0_0_20px_rgba(255,94,0,0.4)] active:scale-95 overflow-hidden backdrop-blur-md">
+                <a href="#download" class="relative h-8 px-3.5 text-[11px] font-bold rounded-lg bg-fox-500 hover:bg-fox-600 border border-fox-400/30 text-white transition-all duration-200 flex items-center justify-center shadow-[0_0_15px_rgba(255,94,0,0.25)] hover:shadow-[0_0_20px_rgba(255,94,0,0.4)] active:scale-95 overflow-hidden backdrop-blur-md">
                     <div class="absolute inset-x-0 top-0 h-px bg-white/30 pointer-events-none"></div>
-                    <span class="relative z-10">Get App</span>
+                    <span class="relative z-10 drop-shadow-[0_1px_1px_rgba(0,0,0,0.5)]">Get App</span>
                 </a>
             </div>
 
@@ -309,13 +308,11 @@
 
             <!-- CTA Button -->
             <div class="flex items-center justify-center mb-10 sm:mb-16">
-                <a href="#download"
-                    class="bg-fox-500 hover:bg-fox-600 text-white font-semibold px-7 py-3.5 rounded-xl transition-all shadow-lg shadow-fox-500/25 flex items-center space-x-3 text-sm sm:text-base">
-                    <img src="./assets/apple.svg" alt="Download on Apple App Store"
-                        class="w-10 h-10 flex-shrink-0 brightness-0 invert object-contain" />
+                <a href="#download" class="bg-fox-500 hover:bg-fox-600 text-white font-semibold px-7 py-3.5 rounded-xl transition-all shadow-lg shadow-fox-500/25 flex items-center space-x-3 text-sm sm:text-base">
+                    <img src="./assets/apple.svg" alt="Download on Apple App Store" class="w-10 h-10 flex-shrink-0 brightness-0 invert object-contain" />
                     <div class="text-left leading-tight">
-                        <div class="text-[10px] opacity-75 font-mono uppercase tracking-wider">App Store Universal</div>
-                        <div class="font-bold">Download for macOS & iOS</div>
+                        <div class="text-[10px] font-mono uppercase tracking-wider text-white drop-shadow-[0_1px_1px_rgba(0,0,0,0.5)]">App Store Universal</div>
+                        <div class="font-bold text-white drop-shadow-[0_1px_1px_rgba(0,0,0,0.5)]">Download for macOS & iOS</div>
                     </div>
                 </a>
 
@@ -895,11 +892,13 @@
                         class="bg-fox-500 hover:bg-fox-600 text-white font-semibold px-7 py-4 rounded-xl transition-all shadow-lg shadow-fox-500/25 flex items-center space-x-3 text-sm sm:text-base">
                         <img src="./assets/apple.svg" alt="Download on App Store"
                             class="w-6 h-6 flex-shrink-0 brightness-0 invert object-contain" />
-                        <span>Get it on the App Store</span>
+                        <!-- 修复：加上文字阴影，保留品牌橙色背景同时通过对比度检测 -->
+                        <span class="drop-shadow-[0_1px_1px_rgba(0,0,0,0.5)]">Get it on the App Store</span>
                     </a>
                 </div>
             </div>
         </section>
+
     </main>
     <!-- Footer -->
     <footer class="max-w-7xl mx-auto px-6 py-8 border-t border-zinc-900 text-center text-xs text-zinc-500">
