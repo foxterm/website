@@ -8,7 +8,7 @@
   //   hostInfoElem.textContent = isCnDomain ? 'Hosted on Tencent Makers.' : 'Hosted on Cloudflare Workers.';
   // }
   var root = document.documentElement;
-  root.className += isCnDomain ? ' is-cn' : ' is-intl';
+  root.classList.add(isCnDomain ? 'is-cn' : 'is-intl');
 
   root.style.display = 'inline-block';
   //
