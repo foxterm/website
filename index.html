@@ -1045,7 +1045,7 @@
     <footer class="max-w-7xl mx-auto px-6 py-8 border-t border-zinc-900 text-center text-xs text-zinc-500">
         <div class="flex flex-col items-center justify-center gap-2.5">
             <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
-                <p>&copy; 2026 FoxTerm. <span id="host-info">Hosted on Tencent Makers.</span></p>
+                <p>&copy; 2026 FoxTerm. <span id="host-info">Hosted on Cloudflare Workers.</span></p>
                 <span class="hidden sm:inline text-zinc-800">|</span>
                 <a href="./privacy" class="hover:text-fox-500 transition-colors">
                     <span class="lang-zh">隐私条款</span>
@@ -1057,9 +1057,11 @@
                     <span class="lang-en">Terms of Service</span>
                 </a>
             </div>
-            <div>
-                <a id="beian-info"
-                    class="inline-flex items-center gap-1 text-zinc-500 hover:text-fox-500 transition-colors"
+
+            <!-- 镜像与备案信息 -->
+            <div class="flex flex-wrap items-center justify-center gap-2 text-zinc-500">
+                <!-- ICP 备案号（仅在 .cn 域名下显示，非 .cn 域名的 JS 会将其 display 设为 none） -->
+                <a id="beian-info" class="inline-flex items-center gap-1 hover:text-fox-500 transition-colors"
                     href="https://beian.miit.gov.cn" target="_blank" rel="noopener noreferrer">
                     <svg class="w-3.5 h-3.5 opacity-70" fill="none" stroke="currentColor" stroke-width="2"
                         viewBox="0 0 24 24">
@@ -1068,6 +1070,18 @@
                     </svg>
                     <span>蜀ICP备2024075062号</span>
                 </a>
+
+                <span class="hidden sm:inline text-zinc-800 beian-divider">|</span>
+
+                <!-- 镜像站点说明提示 -->
+                <span class="text-[11px] text-zinc-600">
+                    <span class="lang-zh">大陆镜像: <a href="https://foxterm.cn"
+                            class="hover:text-zinc-400 underline">foxterm.cn</a> | 国际官网: <a href="https://foxterm.app"
+                            class="hover:text-zinc-400 underline">foxterm.app</a></span>
+                    <span class="lang-en">CN Mirror: <a href="https://foxterm.cn"
+                            class="hover:text-zinc-400 underline">foxterm.cn</a> | Global: <a href="https://foxterm.app"
+                            class="hover:text-zinc-400 underline">foxterm.app</a></span>
+                </span>
             </div>
         </div>
     </footer>
