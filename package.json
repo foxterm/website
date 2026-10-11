@@ -1,10 +1,15 @@
 {
   "scripts": {
-    "build": "node build.js"
+    "build": "node build.js",
+    "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./assets/tailwind.min.css --minify"
   },
   "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "autoprefixer": "^10.6.1",
     "clean-css": "^5.3.3",
     "html-minifier-terser": "^7.2.0",
+    "postcss": "^8.5.29",
+    "tailwindcss": "^4.3.3",
     "terser": "^5.51.2"
   }
 }
