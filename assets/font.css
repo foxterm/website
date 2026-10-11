@@ -39,12 +39,11 @@ body,
     content: '\e000';
 }
 
-/* 非大陆域名 */
+
 .is-intl {
     display: none;
 }
 
-/* 大陆 .cn 域名：备案信息默认显示；如需定制其它“仅大陆可见”的内容，用 .is-cn 选择器 */
 .is-cn {
     display: none;
 }
