@@ -11,7 +11,7 @@
         <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/"/>
     </url>
-    
+
     <!-- Chinese Home Page -->
     <url>
         <loc>https://foxterm.app/zh/</loc>
@@ -22,7 +22,7 @@
         <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/"/>
     </url>
-    
+
     <!-- English Privacy Policy -->
     <url>
         <loc>https://foxterm.app/privacy</loc>
@@ -33,7 +33,7 @@
         <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/privacy"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/privacy"/>
     </url>
-    
+
     <!-- Chinese Privacy Policy -->
     <url>
         <loc>https://foxterm.app/zh/privacy</loc>
@@ -44,7 +44,7 @@
         <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/privacy"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/privacy"/>
     </url>
-    
+
     <!-- English Terms of Service -->
     <url>
         <loc>https://foxterm.app/terms</loc>
@@ -55,7 +55,7 @@
         <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/terms"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/terms"/>
     </url>
-    
+
     <!-- Chinese Terms of Service -->
     <url>
         <loc>https://foxterm.app/zh/terms</loc>
