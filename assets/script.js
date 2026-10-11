@@ -1,52 +1,57 @@
-
 (function () {
+  const hostname = window.location.hostname;
+  const isCnDomain = hostname.endsWith('.cn');
+
+  // 1. 动态判断托管平台与 ICP 备案信息
+  // const hostInfoElem = document.getElementById('host-info');
+  // if (hostInfoElem) {
+  //   hostInfoElem.textContent = isCnDomain ? 'Hosted on Tencent Makers.' : 'Hosted on Cloudflare Workers.';
+  // }
   var root = document.documentElement;
-  var hostname = window.location.hostname;
-  var isCnDomain = /\.cn$/i.test(window.location.hostname);
-  document.documentElement.classList.add(isCnDomain ? 'is-cn' : 'is-intl');
+  root.className += isCnDomain ? ' is-cn' : ' is-intl';
 
-  var isZhPage = (root.getAttribute('lang') || 'en').toLowerCase().indexOf('zh') === 0;
-  var params = new URLSearchParams(window.location.search);
-  var forcedLang = params.get('lang');            // ?lang=en / ?lang=zh 显式指定
-  var savedLang = null;
-  try { savedLang = localStorage.getItem('foxterm_lang'); } catch (e) { }
-
-  function remember(lang) { try { localStorage.setItem('foxterm_lang', lang); } catch (e) { } }
-
-  // 1) .cn 域名：英文页面默认跳转到对应中文页面；用户显式选择英文时不跳转
-  if (isCnDomain && !isZhPage) {
-    if (forcedLang === 'en' || savedLang === 'en') {
-      remember('en');
-    } else {
-      var path = window.location.pathname;
-      var zhPath = (path === '/' || path === '/index.html') ? '/zh/' : '/zh' + path;
-      window.location.replace(zhPath + window.location.hash);
-      return;
-    }
-  }
-
-  // 2) 非 .cn 域名：清掉多余的 ?lang 参数，保持 URL 干净
-  if (!isCnDomain && forcedLang) {
-    try {
-      var u = new URL(window.location.href);
-      u.searchParams.delete('lang');
-      window.history.replaceState({}, '', u.pathname + u.search + u.hash);
-    } catch (e) { }
-  }
-
-  // 3) 手动切换语言：记住用户选择，避免下次访问被自动跳转覆盖
-  function bindSwitch() {
-    var items = document.querySelectorAll('.lang-switch');
-    for (var i = 0; i < items.length; i++) {
-      items[i].addEventListener('click', function () {
-        var lang = this.getAttribute('data-lang');
-        if (lang) remember(lang);
-      });
-    }
-  }
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', bindSwitch);
-  } else {
-    bindSwitch();
-  }
+  root.style.display = 'inline-block';
+  //
+  //   // 2. 语言切换与 URL/SEO 匹配逻辑
+  //   const btn = document.getElementById('langToggle');
+  //
+  //   // 优先读取 URL 参数 ?lang=zh / ?lang=en，其次读取本地缓存，最后按域名/浏览器默认判断
+  //   const urlParams = new URLSearchParams(window.location.search);
+  //   const urlLang = urlParams.get('lang');
+  //
+  //   let currentLang = urlLang || localStorage.getItem('foxterm_lang') || (isCnDomain ? 'zh' : 'en');
+  //
+  //   function updateLanguage(lang, updateUrl = false) {
+  //     currentLang = lang;
+  //     if (currentLang === 'en') {
+  //       document.documentElement.setAttribute('data-lang', 'en');
+  //       document.documentElement.setAttribute('lang', 'en');
+  //     } else {
+  //       document.documentElement.removeAttribute('data-lang');
+  //       document.documentElement.setAttribute('lang', 'zh-CN');
+  //     }
+  //
+  //     localStorage.setItem('foxterm_lang', currentLang);
+  //
+  //     // 如果是用户点击切换，更新 URL 参数，便于分享与 Google 检索
+  //     if (updateUrl) {
+  //       const newUrl = new URL(window.location.href);
+  //       if (currentLang === 'zh') {
+  //         newUrl.searchParams.set('lang', 'zh');
+  //       } else {
+  //         newUrl.searchParams.delete('lang');
+  //       }
+  //       window.history.pushState({}, '', newUrl);
+  //     }
+  //   }
+  //
+  //   // 初始化设置语言
+  //   updateLanguage(currentLang, false);
+  //
+  //   if (btn) {
+  //     btn.addEventListener('click', () => {
+  //       const nextLang = currentLang === 'zh' ? 'en' : 'zh';
+  //       updateLanguage(nextLang, true);
+  //     });
+  //   }
 })();
