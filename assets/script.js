@@ -9,7 +9,6 @@
   // }
   var root = document.documentElement;
   root.classList.add(isCnDomain ? 'is-cn' : 'is-intl');
-
   root.style.display = 'inline-block';
   //
   //   // 2. 语言切换与 URL/SEO 匹配逻辑
