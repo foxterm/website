@@ -1,4 +1,32 @@
+@import url(./tailwind.min.css);
 @import url(./font.css);
+
+@font-face {
+    font-family: 'FoxTermFont';
+    src: url('./fonts/FoxTerm.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.fox-logo-icon {
+    font-family: 'FoxTermFont' !important;
+}
+
+.fox-logo-icon::before {
+    content: '\e000';
+}
+
+
+/* 默认让国际版和国内版的局部标记隐藏 */
+.is-intl {
+    display: none !important;
+}
+
+.is-cn {
+    display: none !important;
+}
+
 .glow-effect {
     box-shadow: 0 0 70px -10px rgba(255, 104, 0, 0.28);
 }
