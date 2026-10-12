@@ -266,31 +266,20 @@
             </div>
 
             <!-- App Logo Icon -->
-            <!-- App Logo Icon -->
-            <div class="relative w-24 h-24 sm:w-28 sm:h-28 mx-auto mb-6 flex items-center justify-center group cursor-default">
-                <!-- 1. 弥散光：平时为暗橙，Hover 时切换为 Pro 香槟金微光 -->
-                <div class="absolute inset-0 rounded-[22.5%] bg-fox-500/20 group-hover:bg-[#d9c09a]/30 blur-xl opacity-40 transition-all duration-300 ease-out group-hover:opacity-100 transform-gpu pointer-events-none"></div>
-
-                <!-- 2. 主卡片底座：Hover 时边框平滑变成钛金/香槟金质感 -->
-                <div class="relative w-full h-full rounded-[22.5%] bg-gradient-to-b from-zinc-800/90 to-zinc-900/90 border border-white/10 group-hover:border-[#d9c09a]/60 shadow-xl shadow-black/40 group-hover:shadow-[0_0_24px_rgba(217,192,154,0.3)] backdrop-blur-xl flex items-center justify-center transition-all duration-300 ease-out transform-gpu overflow-hidden">
-
-                    <!-- 顶部玻璃高光线条 -->
-                    <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/25 to-transparent pointer-events-none"></div>
-
-                    <!-- 3. Logo 图标 -->
-                    <span class="fox-logo-icon text-5xl sm:text-6xl text-fox-500 transition-all duration-300 ease-out drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] group-hover:drop-shadow-[0_0_16px_rgba(217,192,154,0.5)] transform-gpu"></span>
-
-                    <!-- 4. PRO 标识：完全 1:1 还原 Swift 代码的 VStack + HStack + Spacer 布局 -->
-                    <div class="absolute inset-0 flex flex-col pt-[9%] pr-[10%] items-end opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                        <span class="text-[9px] sm:text-[10px] font-semibold tracking-[0.8px] font-mono bg-gradient-to-b from-[#d9c09a] to-[#d9c09a]/70 bg-clip-text text-transparent">
-                            PRO
-                        </span>
+            <div
+                class="relative w-24 h-24 sm:w-28 sm:h-28 mx-auto mb-6 flex items-center justify-center group cursor-default">
+                <div
+                    class="absolute inset-0 rounded-[22.5%] bg-fox-500/20 blur-xl opacity-40 transition-opacity duration-300 ease-out group-hover:opacity-100 transform-gpu pointer-events-none">
+                </div>
+                <div
+                    class="relative w-full h-full rounded-[22.5%] bg-gradient-to-b from-zinc-800/90 to-zinc-900/90 border border-white/10 shadow-xl shadow-black/40 backdrop-blur-xl flex items-center justify-center transition-all duration-300 ease-out group-hover:border-fox-500/50 group-hover:shadow-[0_0_24px_rgba(255,104,0,0.4)] transform-gpu overflow-hidden">
+                    <div
+                        class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/25 to-transparent pointer-events-none">
                     </div>
+                    <span
+                        class="fox-logo-icon text-5xl sm:text-6xl text-fox-500 transition-all duration-300 ease-out drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] group-hover:drop-shadow-[0_0_16px_rgba(255,104,0,0.6)] transform-gpu"></span>
                 </div>
             </div>
-
-
-
 
             <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-4 sm:mb-6 leading-[1.15]">
                 Master Your Infrastructure,<br />Seamlessly with <span class="orange-gradient-text">FoxTerm</span>
