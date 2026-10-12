@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
-    <!-- ============ Home Pages (10 languages) ============ -->
-    <!-- English Home -->
     <url>
         <loc>https://foxterm.app/</loc>
         <lastmod>2026-10-12</lastmod>
@@ -21,7 +19,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/"/>
     </url>
 
-    <!-- 简体中文 Home -->
     <url>
         <loc>https://foxterm.app/zh/</loc>
         <lastmod>2026-10-12</lastmod>
@@ -40,7 +37,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/"/>
     </url>
 
-    <!-- 繁體中文 Home -->
     <url>
         <loc>https://foxterm.app/zh-tw/</loc>
         <lastmod>2026-10-12</lastmod>
@@ -59,7 +55,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/"/>
     </url>
 
-    <!-- 日本語 Home -->
     <url>
         <loc>https://foxterm.app/ja/</loc>
         <lastmod>2026-10-12</lastmod>
@@ -78,7 +73,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/"/>
     </url>
 
-    <!-- Deutsch Home -->
     <url>
         <loc>https://foxterm.app/de/</loc>
         <lastmod>2026-10-12</lastmod>
@@ -97,7 +91,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/"/>
     </url>
 
-    <!-- Русский Home -->
     <url>
         <loc>https://foxterm.app/ru/</loc>
         <lastmod>2026-10-12</lastmod>
@@ -116,7 +109,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/"/>
     </url>
 
-    <!-- Español Home -->
     <url>
         <loc>https://foxterm.app/es/</loc>
         <lastmod>2026-10-12</lastmod>
@@ -135,7 +127,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/"/>
     </url>
 
-    <!-- Français Home -->
     <url>
         <loc>https://foxterm.app/fr/</loc>
         <lastmod>2026-10-12</lastmod>
@@ -154,7 +145,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/"/>
     </url>
 
-    <!-- 한국어 Home -->
     <url>
         <loc>https://foxterm.app/ko/</loc>
         <lastmod>2026-10-12</lastmod>
@@ -173,7 +163,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/"/>
     </url>
 
-    <!-- Português (Brasil) Home -->
     <url>
         <loc>https://foxterm.app/pt-br/</loc>
         <lastmod>2026-10-12</lastmod>
@@ -192,8 +181,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/"/>
     </url>
 
-    <!-- ============ Contact Pages (10 languages) ============ -->
-    <!-- English Contact -->
     <url>
         <loc>https://foxterm.app/contact</loc>
         <lastmod>2026-10-12</lastmod>
@@ -212,7 +199,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/contact"/>
     </url>
 
-    <!-- 简体中文 Contact -->
     <url>
         <loc>https://foxterm.app/zh/contact</loc>
         <lastmod>2026-10-12</lastmod>
@@ -231,7 +217,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/contact"/>
     </url>
 
-    <!-- 繁體中文 Contact -->
     <url>
         <loc>https://foxterm.app/zh-tw/contact</loc>
         <lastmod>2026-10-12</lastmod>
@@ -250,7 +235,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/contact"/>
     </url>
 
-    <!-- 日本語 Contact -->
     <url>
         <loc>https://foxterm.app/ja/contact</loc>
         <lastmod>2026-10-12</lastmod>
@@ -269,7 +253,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/contact"/>
     </url>
 
-    <!-- Deutsch Contact -->
     <url>
         <loc>https://foxterm.app/de/contact</loc>
         <lastmod>2026-10-12</lastmod>
@@ -288,7 +271,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/contact"/>
     </url>
 
-    <!-- Русский Contact -->
     <url>
         <loc>https://foxterm.app/ru/contact</loc>
         <lastmod>2026-10-12</lastmod>
@@ -307,7 +289,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/contact"/>
     </url>
 
-    <!-- Español Contact -->
     <url>
         <loc>https://foxterm.app/es/contact</loc>
         <lastmod>2026-10-12</lastmod>
@@ -326,7 +307,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/contact"/>
     </url>
 
-    <!-- Français Contact -->
     <url>
         <loc>https://foxterm.app/fr/contact</loc>
         <lastmod>2026-10-12</lastmod>
@@ -345,7 +325,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/contact"/>
     </url>
 
-    <!-- 한국어 Contact -->
     <url>
         <loc>https://foxterm.app/ko/contact</loc>
         <lastmod>2026-10-12</lastmod>
@@ -364,7 +343,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/contact"/>
     </url>
 
-    <!-- Português (Brasil) Contact -->
     <url>
         <loc>https://foxterm.app/pt-br/contact</loc>
         <lastmod>2026-10-12</lastmod>
@@ -383,8 +361,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/contact"/>
     </url>
 
-    <!-- ============ Privacy Pages (10 languages) ============ -->
-    <!-- English Privacy -->
     <url>
         <loc>https://foxterm.app/privacy</loc>
         <lastmod>2026-10-11</lastmod>
@@ -403,7 +379,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/privacy"/>
     </url>
 
-    <!-- 简体中文 Privacy -->
     <url>
         <loc>https://foxterm.app/zh/privacy</loc>
         <lastmod>2026-10-11</lastmod>
@@ -422,7 +397,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/privacy"/>
     </url>
 
-    <!-- 繁體中文 Privacy -->
     <url>
         <loc>https://foxterm.app/zh-tw/privacy</loc>
         <lastmod>2026-10-11</lastmod>
@@ -441,7 +415,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/privacy"/>
     </url>
 
-    <!-- 日本語 Privacy -->
     <url>
         <loc>https://foxterm.app/ja/privacy</loc>
         <lastmod>2026-10-11</lastmod>
@@ -460,7 +433,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/privacy"/>
     </url>
 
-    <!-- Deutsch Privacy -->
     <url>
         <loc>https://foxterm.app/de/privacy</loc>
         <lastmod>2026-10-11</lastmod>
@@ -479,7 +451,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/privacy"/>
     </url>
 
-    <!-- Русский Privacy -->
     <url>
         <loc>https://foxterm.app/ru/privacy</loc>
         <lastmod>2026-10-11</lastmod>
@@ -498,7 +469,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/privacy"/>
     </url>
 
-    <!-- Español Privacy -->
     <url>
         <loc>https://foxterm.app/es/privacy</loc>
         <lastmod>2026-10-11</lastmod>
@@ -517,7 +487,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/privacy"/>
     </url>
 
-    <!-- Français Privacy -->
     <url>
         <loc>https://foxterm.app/fr/privacy</loc>
         <lastmod>2026-10-11</lastmod>
@@ -536,7 +505,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/privacy"/>
     </url>
 
-    <!-- 한국어 Privacy -->
     <url>
         <loc>https://foxterm.app/ko/privacy</loc>
         <lastmod>2026-10-11</lastmod>
@@ -555,7 +523,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/privacy"/>
     </url>
 
-    <!-- Português (Brasil) Privacy -->
     <url>
         <loc>https://foxterm.app/pt-br/privacy</loc>
         <lastmod>2026-10-11</lastmod>
@@ -574,8 +541,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/privacy"/>
     </url>
 
-    <!-- ============ Terms Pages (10 languages) ============ -->
-    <!-- English Terms -->
     <url>
         <loc>https://foxterm.app/terms</loc>
         <lastmod>2026-10-11</lastmod>
@@ -594,7 +559,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/terms"/>
     </url>
 
-    <!-- 简体中文 Terms -->
     <url>
         <loc>https://foxterm.app/zh/terms</loc>
         <lastmod>2026-10-11</lastmod>
@@ -613,7 +577,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/terms"/>
     </url>
 
-    <!-- 繁體中文 Terms -->
     <url>
         <loc>https://foxterm.app/zh-tw/terms</loc>
         <lastmod>2026-10-11</lastmod>
@@ -632,7 +595,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/terms"/>
     </url>
 
-    <!-- 日本語 Terms -->
     <url>
         <loc>https://foxterm.app/ja/terms</loc>
         <lastmod>2026-10-11</lastmod>
@@ -651,7 +613,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/terms"/>
     </url>
 
-    <!-- Deutsch Terms -->
     <url>
         <loc>https://foxterm.app/de/terms</loc>
         <lastmod>2026-10-11</lastmod>
@@ -670,7 +631,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/terms"/>
     </url>
 
-    <!-- Русский Terms -->
     <url>
         <loc>https://foxterm.app/ru/terms</loc>
         <lastmod>2026-10-11</lastmod>
@@ -689,7 +649,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/terms"/>
     </url>
 
-    <!-- Español Terms -->
     <url>
         <loc>https://foxterm.app/es/terms</loc>
         <lastmod>2026-10-11</lastmod>
@@ -708,7 +667,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/terms"/>
     </url>
 
-    <!-- Français Terms -->
     <url>
         <loc>https://foxterm.app/fr/terms</loc>
         <lastmod>2026-10-11</lastmod>
@@ -727,7 +685,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/terms"/>
     </url>
 
-    <!-- 한국어 Terms -->
     <url>
         <loc>https://foxterm.app/ko/terms</loc>
         <lastmod>2026-10-11</lastmod>
@@ -746,7 +703,6 @@
         <xhtml:link rel="alternate" hreflang="x-default" href="https://foxterm.app/terms"/>
     </url>
 
-    <!-- Português (Brasil) Terms -->
     <url>
         <loc>https://foxterm.app/pt-br/terms</loc>
         <lastmod>2026-10-11</lastmod>
