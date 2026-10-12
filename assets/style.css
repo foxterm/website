@@ -1,5 +1,3 @@
-@import url(./tailwind.min.css);
-
 @font-face {
     font-family: 'FoxTermFont';
     src: url('./fonts/FoxTerm.ttf') format('truetype');
