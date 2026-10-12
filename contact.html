@@ -81,11 +81,12 @@
 <body
     class="bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-fox-500 selection:text-white overflow-x-hidden">
     <!-- Ambient Background Lighting -->
-    <div class="fixed inset-0 w-full h-full pointer-events-none z-0 overflow-hidden">
+    <div class="fixed inset-0 w-full h-full pointer-events-none z-0">
         <div
-            class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1200px] h-[600px] bg-fox-500/15 blur-[140px] md:blur-[180px] rounded-full z-0">
+            class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1200px] h-[600px] bg-fox-500/15 blur-[140px] md:blur-[180px] rounded-full z-0 transform-gpu translate-z-0">
         </div>
-        <div class="absolute top-1/3 -right-20 w-[400px] h-[400px] bg-fox-500/10 blur-[150px] rounded-full z-0">
+        <div
+            class="absolute top-1/3 -right-20 w-[400px] h-[400px] bg-fox-500/10 blur-[150px] rounded-full z-0 transform-gpu translate-z-0">
         </div>
         <div
             class="absolute inset-0 w-full h-full opacity-20 bg-code-grid [mask-image:radial-gradient(ellipse_at_center,black_20%,transparent_80%)] [-webkit-mask-image:radial-gradient(ellipse_at_center,black_20%,transparent_80%)]">
@@ -131,32 +132,46 @@
                 Direct Line to the <br /><span class="orange-gradient-text">Core Architect</span>
             </h1>
             <p class="text-zinc-400 text-sm sm:text-base leading-relaxed">
-                FoxTerm is independently engineered with uncompromised precision. No corporate bureaucracy, no AI support bots, no canned templates.
+                FoxTerm is independently engineered with uncompromised precision. No corporate bureaucracy, no AI
+                support bots, no canned templates.
             </p>
         </div>
 
         <!-- Support Card -->
-        <div class="p-6 sm:p-10 rounded-3xl bg-zinc-900/50 border border-zinc-800 backdrop-blur-xl relative overflow-hidden mb-12 shadow-2xl">
-            <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-fox-500/10 blur-[90px] rounded-full pointer-events-none"></div>
+        <div
+            class="p-6 sm:p-10 rounded-3xl bg-zinc-900/50 border border-zinc-800 backdrop-blur-xl relative overflow-hidden mb-12 shadow-2xl">
+            <div
+                class="absolute -right-10 -bottom-10 w-64 h-64 bg-fox-500/10 blur-[90px] rounded-full pointer-events-none">
+            </div>
 
             <p class="text-zinc-300 text-sm sm:text-base leading-relaxed mb-8">
-                Every line of code is crafted by an independent engineer, and every email goes straight to the developer behind the engine. Got a bug report, performance insight, or an ambitious feature request? Drop a message directly.
+                Every line of code is crafted by an independent engineer, and every email goes straight to the developer
+                behind the engine. Got a bug report, performance insight, or an ambitious feature request? Drop a
+                message directly.
             </p>
 
             <!-- Interactive Email Box (Fixed & Upgraded) -->
-            <div class="p-6 sm:p-8 rounded-2xl bg-zinc-950/90 border border-zinc-800/80 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 shadow-2xl relative overflow-hidden group">
-                <div class="absolute -right-12 -top-12 w-40 h-40 bg-fox-500/10 blur-2xl rounded-full pointer-events-none"></div>
+            <div
+                class="p-6 sm:p-8 rounded-2xl bg-zinc-950/90 border border-zinc-800/80 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 shadow-2xl relative overflow-hidden group">
+                <div
+                    class="absolute -right-12 -top-12 w-40 h-40 bg-fox-500/10 blur-2xl rounded-full pointer-events-none">
+                </div>
 
                 <div class="flex items-center space-x-4 relative z-10">
-                    <div class="w-12 h-12 rounded-xl bg-fox-500/10 border border-fox-500/25 flex items-center justify-center text-fox-500 flex-shrink-0 shadow-[0_0_15px_rgba(255,104,0,0.15)]">
-                        <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                    <div
+                        class="w-12 h-12 rounded-xl bg-fox-500/10 border border-fox-500/25 flex items-center justify-center text-fox-500 flex-shrink-0 shadow-[0_0_15px_rgba(255,104,0,0.15)]">
+                        <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8"
+                            viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"></path>
+                                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75">
+                            </path>
                         </svg>
                     </div>
                     <div class="flex flex-col justify-center">
-                        <span class="text-[11px] font-mono text-zinc-500 uppercase tracking-widest mb-1">Support & Developer Inquiry</span>
-                        <a href="mailto:support@foxterm.app" class="text-lg sm:text-xl font-mono font-bold text-white hover:text-fox-400 transition-colors tracking-tight">
+                        <span class="text-[11px] font-mono text-zinc-500 uppercase tracking-widest mb-1">Support &
+                            Developer Inquiry</span>
+                        <a href="mailto:support@foxterm.app"
+                            class="text-lg sm:text-xl font-mono font-bold text-white hover:text-fox-400 transition-colors tracking-tight">
                             support@foxterm.app
                         </a>
                     </div>
@@ -165,8 +180,10 @@
                 <a href="mailto:support@foxterm.app"
                     class="relative z-10 shrink-0 w-full md:w-auto px-6 py-3 rounded-xl bg-fox-500 hover:bg-fox-600 border border-fox-400/30 text-white font-semibold text-xs sm:text-sm transition-all duration-300 shadow-[0_0_20px_rgba(255,94,0,0.3)] hover:shadow-[0_0_28px_rgba(255,94,0,0.5)] active:scale-95 flex items-center justify-center gap-2 group/btn">
                     <span>Send Email</span>
-                    <svg class="w-4 h-4 shrink-0 transition-transform duration-300 group-hover/btn:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+                    <svg class="w-4 h-4 shrink-0 transition-transform duration-300 group-hover/btn:translate-x-1"
+                        fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3">
+                        </path>
                     </svg>
                 </a>
             </div>
@@ -177,19 +194,22 @@
             <div class="p-5 rounded-2xl bg-zinc-900/30 border border-zinc-800/60">
                 <div class="text-fox-500 font-mono font-bold text-xs mb-2">01 / BUG REPORTS</div>
                 <p class="text-xs text-zinc-400 leading-relaxed">
-                    Include your macOS / iOS system version, connection protocol (SSH, SFTP, VNC, Docker), and steps to reproduce.
+                    Include your macOS / iOS system version, connection protocol (SSH, SFTP, VNC, Docker), and steps to
+                    reproduce.
                 </p>
             </div>
             <div class="p-5 rounded-2xl bg-zinc-900/30 border border-zinc-800/60">
                 <div class="text-fox-500 font-mono font-bold text-xs mb-2">02 / FEATURE REQUESTS</div>
                 <p class="text-xs text-zinc-400 leading-relaxed">
-                    Have an idea for terminal emulation, custom fonts, or container tools? We prioritize geek-driven workflows.
+                    Have an idea for terminal emulation, custom fonts, or container tools? We prioritize geek-driven
+                    workflows.
                 </p>
             </div>
             <div class="p-5 rounded-2xl bg-zinc-900/30 border border-zinc-800/60">
                 <div class="text-fox-500 font-mono font-bold text-xs mb-2">03 / BILLING & PRO</div>
                 <p class="text-xs text-zinc-400 leading-relaxed">
-                    Need help with Apple ID Universal Purchase or Pro node limit verification? Reaching out with your receipt ID helps.
+                    Need help with Apple ID Universal Purchase or Pro node limit verification? Reaching out with your
+                    receipt ID helps.
                 </p>
             </div>
         </div>
