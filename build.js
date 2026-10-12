@@ -18,27 +18,9 @@ const IGNORE_LIST = [
   'package-lock.json',
   'README.md',
   'LICENSE',
-  'GeoLite2-Country.mmdb',
   'input.css'
 ];
-// 递归拷贝文件夹的辅助函数
-function copyDir(src, dest) {
-  if (!fs.existsSync(dest)) {
-    fs.mkdirSync(dest, { recursive: true });
-  }
-  const entries = fs.readdirSync(src, { withFileTypes: true });
 
-  for (const entry of entries) {
-    const srcPath = path.join(src, entry.name);
-    const destPath = path.join(dest, entry.name);
-
-    if (entry.isDirectory()) {
-      copyDir(srcPath, destPath);
-    } else {
-      fs.copyFileSync(srcPath, destPath);
-    }
-  }
-}
 async function processDir(srcDir, destDir) {
   if (!fs.existsSync(destDir)) {
     fs.mkdirSync(destDir, { recursive: true });
@@ -75,7 +57,7 @@ async function processDir(srcDir, destDir) {
       fs.writeFileSync(destPath, minified, 'utf8');
       console.log(`[CSS  压缩] ${srcPath} -> ${destPath}`);
     }
-    // 3. 新增：处理独立 JS 文件
+    // 3. 处理独立 JS 文件
     else if (entry.isFile() && entry.name.endsWith('.js')) {
       const content = fs.readFileSync(srcPath, 'utf8');
       const minifiedResult = await terserMinify(content);
@@ -93,17 +75,34 @@ async function processDir(srcDir, destDir) {
   }
 }
 
-if (fs.existsSync('./dist')) {
-  fs.rmSync('./dist', { recursive: true, force: true });
+async function build() {
+  if (fs.existsSync('./dist')) {
+    fs.rmSync('./dist', { recursive: true, force: true });
+  }
+
+  console.log('开始打包压缩...');
+
+  // 1. 处理 ./src 目录
+  await processDir('./src', './dist');
+
+  // 2. 处理 ./assets 目录（自动压缩 CSS/JS）
+  if (fs.existsSync('./assets')) {
+    await processDir('./assets', './dist/assets');
+    console.log('[目录处理] ./assets -> ./dist/assets (已包含 CSS/JS 压缩)');
+  }
+
+  // 3. 复制根目录下的 GeoLite2-Country.mmdb 到 ./dist 根目录
+  const mmdbSource = './GeoLite2-Country.mmdb';
+  const mmdbDest = './dist/GeoLite2-Country.mmdb';
+  if (fs.existsSync(mmdbSource)) {
+    fs.copyFileSync(mmdbSource, mmdbDest);
+    console.log(`[文件复制] ${mmdbSource} -> ${mmdbDest}`);
+  }
+
+  console.log('🎉 构建完成！所有资源已成功处理。');
 }
 
-console.log('开始打包压缩...');
-
-processDir('./src', './dist')
-  .then(() => console.log('🎉 构建完成！所有 HTML、CSS、JS 及 LD+JSON 已成功压缩。'))
-  .catch((err) => console.error('构建失败:', err));
-
-if (fs.existsSync('./assets')) {
-    copyDir('./assets', './dist/assets');
-    console.log('[目录拷贝] ./assets -> ./dist/assets');
-}
+build().catch((err) => {
+  console.error('构建失败:', err);
+  process.exit(1);
+});
