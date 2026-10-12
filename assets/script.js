@@ -4,6 +4,9 @@
   const elements = document.querySelectorAll(isCnDomain ? '.is-cn' : '.is-intl');
   elements.forEach(el => el.style.setProperty('display', 'inline-flex', 'important'));
 
+  if (!isCnDomain) {
+    return
+  }
   const pathname = window.location.pathname;
   const userLangMemory = localStorage.getItem('user-lang');
 
