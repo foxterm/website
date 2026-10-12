@@ -143,28 +143,30 @@
                 <strong>您的每一封邮件，都将由负责底层架构与 Swift/Metal 核心调优的开发者亲自阅读并回复。</strong> 无论是 Bug 反馈、性能调优建议，还是极客功能设想，随时来信，我们用代码和速度说话。
             </p>
 
-            <!-- Interactive Email Box -->
-            <div class="p-5 sm:p-6 rounded-2xl bg-zinc-950/80 border border-zinc-800/80 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5">
-                <div class="flex items-center space-x-4">
-                    <div class="w-12 h-12 rounded-xl bg-fox-500/15 border border-fox-500/30 flex items-center justify-center text-fox-500 flex-shrink-0">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <!-- Interactive Email Box (Fixed & Upgraded) -->
+            <div class="p-6 sm:p-8 rounded-2xl bg-zinc-950/90 border border-zinc-800/80 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 shadow-2xl relative overflow-hidden group">
+                <div class="absolute -right-12 -top-12 w-40 h-40 bg-fox-500/10 blur-2xl rounded-full pointer-events-none"></div>
+
+                <div class="flex items-center space-x-4 relative z-10">
+                    <div class="w-12 h-12 rounded-xl bg-fox-500/10 border border-fox-500/25 flex items-center justify-center text-fox-500 flex-shrink-0 shadow-[0_0_15px_rgba(255,104,0,0.15)]">
+                        <svg class="w-6 h-6 shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 002-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"></path>
                         </svg>
                     </div>
-                    <div>
-                        <div class="text-[10px] font-mono text-zinc-500 uppercase tracking-wider mb-0.5">官方技术支持与开发者邮箱</div>
-                        <a href="mailto:support@foxterm.app" class="text-lg sm:text-xl font-mono font-bold text-white hover:text-fox-400 transition-colors">
+                    <div class="flex flex-col justify-center">
+                        <span class="text-[11px] font-mono text-zinc-500 uppercase tracking-widest mb-1">官方技术支持与开发者邮箱</span>
+                        <a href="mailto:support@foxterm.app" class="text-lg sm:text-xl font-mono font-bold text-white hover:text-fox-400 transition-colors tracking-tight">
                             support@foxterm.app
                         </a>
                     </div>
                 </div>
 
                 <a href="mailto:support@foxterm.app"
-                    class="w-full sm:w-auto px-6 py-3 rounded-xl bg-fox-500 hover:bg-fox-600 text-white font-semibold text-xs transition-all shadow-lg shadow-fox-500/25 active:scale-95 text-center flex items-center justify-center gap-2">
+                    class="relative z-10 shrink-0 w-full md:w-auto px-6 py-3 rounded-xl bg-fox-500 hover:bg-fox-600 border border-fox-400/30 text-white font-semibold text-xs sm:text-sm transition-all duration-300 shadow-[0_0_20px_rgba(255,94,0,0.3)] hover:shadow-[0_0_28px_rgba(255,94,0,0.5)] active:scale-95 flex items-center justify-center gap-2 group/btn">
                     <span>发送邮件</span>
-                    <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    <svg class="w-4 h-4 shrink-0 transition-transform duration-300 group-hover/btn:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
                     </svg>
                 </a>
             </div>
@@ -207,10 +209,7 @@
                 <span class="hidden sm:inline text-zinc-800">|</span>
                 <a href="/contact" class="no-underline hover:text-fox-500 transition-colors">English</a>
             </div>
-
-            <!-- 镜像站点说明提示 -->
             <div class="flex flex-wrap items-center justify-center gap-2 text-zinc-500">
-                <!-- ICP 备案号 -->
                 <a class="is-cn no-underline inline-flex items-center gap-1 hover:text-fox-500 transition-colors"
                     href="https://beian.miit.gov.cn" target="_blank" rel="noopener noreferrer">
                     <svg class="w-3.5 h-3.5 opacity-70" fill="none" stroke="currentColor" stroke-width="2"
