@@ -99,11 +99,11 @@ if (fs.existsSync('./dist')) {
 
 console.log('开始打包压缩...');
 
-if (fs.existsSync('./assets')) {
-    copyDir('./assets', './dist/assets');
-    console.log('[目录拷贝] ./assets -> ./dist/assets');
-  }
-
 processDir('./src', './dist')
   .then(() => console.log('🎉 构建完成！所有 HTML、CSS、JS 及 LD+JSON 已成功压缩。'))
   .catch((err) => console.error('构建失败:', err));
+
+if (fs.existsSync('./assets')) {
+    copyDir('./assets', './dist/assets');
+    console.log('[目录拷贝] ./assets -> ./dist/assets');
+}
