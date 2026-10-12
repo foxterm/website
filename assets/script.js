@@ -4,7 +4,7 @@
   const elements = document.querySelectorAll(isCnDomain ? '.is-cn' : '.is-intl');
   elements.forEach(el => el.style.setProperty('display', 'inline-flex', 'important'));
   const userLangMemory = localStorage.getItem('user-lang');
-  if (!userLangMemory && isCnDomain && !window.location.pathname.startsWith('/zh')) {
+  if ((!userLangMemory || userLangMemory === 'zh') && isCnDomain && !window.location.pathname.startsWith('/zh')) {
     localStorage.setItem('user-lang', 'zh');
     window.location.href = '/zh/';
     return;
