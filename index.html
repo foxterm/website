@@ -265,28 +265,29 @@
                 Native Apple Ecosystem · Built for Developers
             </div>
 
-            <!-- App Logo Icon with Pro & Hover Effects -->
+            <!-- App Logo Icon -->
             <div class="relative w-24 h-24 sm:w-28 sm:h-28 mx-auto mb-6 flex items-center justify-center group cursor-default">
-                <!-- 1. 弥散光特效：对应 SwiftUI 中的 blur 效果 -->
-                <div class="absolute inset-0 rounded-[22.5%] bg-fox-500/20 group-hover:bg-[#d9c09a]/30 blur-xl opacity-40 transition-all duration-300 ease-out group-hover:opacity-100 transform-gpu pointer-events-none"></div>
+                <!-- 1. 弥散光：平时为原本橙光，Hover 时变为 Pro 香槟金微光 -->
+                <div class="absolute inset-0 rounded-[22.5%] bg-fox-500/20 group-hover:bg-[#d9c09a]/35 blur-xl opacity-40 transition-all duration-300 ease-out group-hover:opacity-100 transform-gpu pointer-events-none"></div>
 
-                <!-- 2. 主卡片底座与边框 -->
-                <div class="relative w-full h-full rounded-[22.5%] bg-gradient-to-br from-zinc-800/90 to-zinc-900/90 border border-white/10 shadow-xl shadow-black/40 backdrop-blur-xl flex items-center justify-center transition-all duration-300 ease-out group-hover:border-[#d9c09a]/50 group-hover:shadow-[0_0_24px_rgba(217,192,154,0.35)] transform-gpu overflow-hidden">
+                <!-- 2. 主卡片底座：Hover 时边框与阴影平滑切换为 Pro 香槟金质感 -->
+                <div class="relative w-full h-full rounded-[22.5%] bg-gradient-to-b from-zinc-800/90 to-zinc-900/90 border border-white/10 group-hover:border-[#d9c09a]/60 shadow-xl shadow-black/40 group-hover:shadow-[0_0_24px_rgba(217,192,154,0.35)] backdrop-blur-xl flex items-center justify-center transition-all duration-300 ease-out transform-gpu overflow-hidden">
 
-                    <!-- 顶部高光线条 -->
+                    <!-- 顶部玻璃高光线条 -->
                     <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/25 to-transparent pointer-events-none"></div>
 
-                    <!-- Logo 图标 -->
-                    <span class="fox-logo-icon text-5xl sm:text-6xl text-fox-500 group-hover:text-[#e6d0aa] transition-all duration-300 ease-out drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] group-hover:drop-shadow-[0_0_16px_rgba(217,192,154,0.5)] transform-gpu"></span>
+                    <!-- 3. Logo 图标：Hover 时带上 Pro 香槟金微弱发光 -->
+                    <span class="fox-logo-icon text-5xl sm:text-6xl text-fox-500 transition-all duration-300 ease-out drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] group-hover:drop-shadow-[0_0_16px_rgba(217,192,154,0.6)] transform-gpu"></span>
 
-                    <!-- 3. Pro 专属点缀：右上角极纤细、无框、低调尊贵的 PRO 标识（鼠标悬停时显现或高亮） -->
-                    <div class="absolute top-0 right-0 pt-[9%] pr-[10%] opacity-85 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-                        <span class="text-[9px] sm:text-[10px] font-semibold tracking-[0.8px] bg-gradient-to-b from-[#d9c09a] to-[#d9c09a]/70 bg-clip-text text-transparent">
+                    <!-- 4. Pro 角标：平时透明（opacity-0），鼠标 Hover 时淡入显示（group-hover:opacity-100） -->
+                    <div class="absolute top-0 right-0 pt-[9%] pr-[10%] opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+                        <span class="text-[9px] sm:text-[10px] font-semibold tracking-[0.8px] font-mono bg-gradient-to-b from-[#d9c09a] to-[#d9c09a]/70 bg-clip-text text-transparent">
                             PRO
                         </span>
                     </div>
                 </div>
             </div>
+
 
 
             <h1 class="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-4 sm:mb-6 leading-[1.15]">
