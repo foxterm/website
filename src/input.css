@@ -1,6 +1,6 @@
 @import "tailwindcss";
-@source "../*.html";
-@source "../zh/*.html";
+@source "./*.html";
+@source "./*/*.html";
 @theme {
     --color-fox-400: #ff8000;
     --color-fox-500: #ff5e00;

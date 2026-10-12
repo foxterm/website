@@ -18,9 +18,27 @@ const IGNORE_LIST = [
   'package-lock.json',
   'README.md',
   'LICENSE',
-  'GeoLite2-Country.mmdb'
+  'GeoLite2-Country.mmdb',
+  'input.css'
 ];
+// 递归拷贝文件夹的辅助函数
+function copyDir(src, dest) {
+  if (!fs.existsSync(dest)) {
+    fs.mkdirSync(dest, { recursive: true });
+  }
+  const entries = fs.readdirSync(src, { withFileTypes: true });
 
+  for (const entry of entries) {
+    const srcPath = path.join(src, entry.name);
+    const destPath = path.join(dest, entry.name);
+
+    if (entry.isDirectory()) {
+      copyDir(srcPath, destPath);
+    } else {
+      fs.copyFileSync(srcPath, destPath);
+    }
+  }
+}
 async function processDir(srcDir, destDir) {
   if (!fs.existsSync(destDir)) {
     fs.mkdirSync(destDir, { recursive: true });
@@ -80,6 +98,12 @@ if (fs.existsSync('./dist')) {
 }
 
 console.log('开始打包压缩...');
-processDir('.', './dist')
+
+if (fs.existsSync('./assets')) {
+    copyDir('./assets', './dist/assets');
+    console.log('[目录拷贝] ./assets -> ./dist/assets');
+  }
+
+processDir('./src', './dist')
   .then(() => console.log('🎉 构建完成！所有 HTML、CSS、JS 及 LD+JSON 已成功压缩。'))
   .catch((err) => console.error('构建失败:', err));
