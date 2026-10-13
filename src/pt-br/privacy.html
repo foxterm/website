@@ -1,315 +1,616 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR" class="dark scroll-smooth">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- SEO Primary Meta Tags - Portuguese (Brazil) -->
-    <title>Política de Privacidade - FoxTerm | App de Terminal com Foco em Privacidade</title>
-    <meta name="description"
-        content="Política de Privacidade do FoxTerm. Entenda como protegemos seus dados com política de zero telemetria, criptografia local, armazenamento de chaves no Apple Secure Enclave e soberania total dos dados.">
-    <meta name="keywords"
-        content="privacidade FoxTerm, zero telemetria, privacidade de terminal, segurança SSH, proteção de dados, criptografia Secure Enclave">
-    <meta name="author" content="FoxTerm">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="googlebot" content="index, follow">
-    <meta name="language" content="Português (Brasil)">
-    <meta name="revisit-after" content="30 days">
+    <title>
+      Política de Privacidade - FoxTerm | App de Terminal com Foco em
+      Privacidade
+    </title>
+    <meta
+      name="description"
+      content="Política de Privacidade do FoxTerm. Entenda como protegemos seus dados com política de zero telemetria, criptografia local, armazenamento de chaves no Apple Secure Enclave e soberania total dos dados."
+    />
+    <meta
+      name="keywords"
+      content="privacidade FoxTerm, zero telemetria, privacidade de terminal, segurança SSH, proteção de dados, criptografia Secure Enclave"
+    />
+    <meta name="author" content="FoxTerm" />
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="language" content="Português (Brasil)" />
+    <meta name="revisit-after" content="30 days" />
 
     <!-- Canonical & Alternate Hreflang Tags -->
     <link rel="canonical" href="https://foxterm.app/pt-br/privacy" />
     <link rel="alternate" hreflang="en" href="https://foxterm.app/privacy" />
-    <link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/privacy" />
-    <link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/privacy" />
+    <link
+      rel="alternate"
+      hreflang="zh-Hans"
+      href="https://foxterm.app/zh/privacy"
+    />
+    <link
+      rel="alternate"
+      hreflang="zh-Hant"
+      href="https://foxterm.app/zh-hant/privacy"
+    />
     <link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/privacy" />
     <link rel="alternate" hreflang="de" href="https://foxterm.app/de/privacy" />
     <link rel="alternate" hreflang="ru" href="https://foxterm.app/ru/privacy" />
     <link rel="alternate" hreflang="es" href="https://foxterm.app/es/privacy" />
     <link rel="alternate" hreflang="fr" href="https://foxterm.app/fr/privacy" />
     <link rel="alternate" hreflang="ko" href="https://foxterm.app/ko/privacy" />
-    <link rel="alternate" hreflang="pt-BR" href="https://foxterm.app/pt-br/privacy" />
-    <link rel="alternate" hreflang="x-default" href="https://foxterm.app/privacy" />
+    <link
+      rel="alternate"
+      hreflang="pt-BR"
+      href="https://foxterm.app/pt-br/privacy"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://foxterm.app/privacy"
+    />
 
     <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="pt_BR">
-    <meta property="og:locale:alternate" content="en_US, zh_CN, zh_TW, ja_JP, de_DE, ru_RU, es_ES, fr_FR, ko_KR">
-    <meta property="og:title" content="Política de Privacidade - FoxTerm">
-    <meta property="og:description"
-        content="Zero telemetria, criptografia local, soberania total dos dados para o gerenciamento dos seus servidores.">
-    <meta property="og:url" content="https://foxterm.app/pt-br/privacy">
-    <meta property="og:site_name" content="FoxTerm">
-    <meta property="og:image" content="https://foxterm.app/assets/apple-touch-icon.png">
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta
+      property="og:locale:alternate"
+      content="en_US, zh_CN, zh_TW, ja_JP, de_DE, ru_RU, es_ES, fr_FR, ko_KR"
+    />
+    <meta property="og:title" content="Política de Privacidade - FoxTerm" />
+    <meta
+      property="og:description"
+      content="Zero telemetria, criptografia local, soberania total dos dados para o gerenciamento dos seus servidores."
+    />
+    <meta property="og:url" content="https://foxterm.app/pt-br/privacy" />
+    <meta property="og:site_name" content="FoxTerm" />
+    <meta
+      property="og:image"
+      content="https://foxterm.app/assets/apple-touch-icon.png"
+    />
 
     <!-- Favicons & Manifest -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="manifest" href="/assets/site.webmanifest" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
-    <link rel="stylesheet" href="/assets/tailwind.min.css">
-    <link rel="stylesheet" href="/assets/style.css">
-
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/apple-touch-icon.png"
+    />
+    <link rel="stylesheet" href="/assets/tailwind.min.css" />
+    <link rel="stylesheet" href="/assets/style.css" />
 
     <!-- Structured Data -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Política de Privacidade - FoxTerm",
-      "url": "https://foxterm.app/pt-br/privacy",
-      "inLanguage": "pt-BR",
-      "isPartOf": {
-        "@type": "WebSite",
-        "name": "FoxTerm",
-        "url": "https://foxterm.app/pt-br/"
-      },
-      "description": "Política de Privacidade do FoxTerm: proteção com zero telemetria, criptografia local e soberania total dos dados do usuário.",
-      "breadcrumb": {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Início",
-            "item": "https://foxterm.app/pt-br/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Política de Privacidade",
-            "item": "https://foxterm.app/pt-br/privacy"
-          }
-        ]
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Política de Privacidade - FoxTerm",
+        "url": "https://foxterm.app/pt-br/privacy",
+        "inLanguage": "pt-BR",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "FoxTerm",
+          "url": "https://foxterm.app/pt-br/"
+        },
+        "description": "Política de Privacidade do FoxTerm: proteção com zero telemetria, criptografia local e soberania total dos dados do usuário.",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Início",
+              "item": "https://foxterm.app/pt-br/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Política de Privacidade",
+              "item": "https://foxterm.app/pt-br/privacy"
+            }
+          ]
+        }
       }
-    }
     </script>
-</head>
+  </head>
 
-<body
-    class="bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-fox-500 selection:text-white overflow-x-hidden">
+  <body
+    class="bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-fox-500 selection:text-white overflow-x-hidden"
+  >
     <!-- Ambient Background -->
     <div class="fixed inset-0 w-full h-full pointer-events-none z-0">
-        <div
-            class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1200px] h-[600px] bg-fox-500/15 blur-[140px] md:blur-[180px] rounded-full z-0 transform-gpu translate-z-0">
-        </div>
-        <div
-            class="absolute top-1/3 -right-20 w-[400px] h-[400px] bg-fox-500/10 blur-[150px] rounded-full z-0 transform-gpu translate-z-0">
-        </div>
-        <div
-            class="absolute inset-0 w-full h-full opacity-20 bg-code-grid [mask-image:radial-gradient(ellipse_at_center,black_20%,transparent_80%)] [-webkit-mask-image:radial-gradient(ellipse_at_center,black_20%,transparent_80%)]">
-        </div>
+      <div
+        class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1200px] h-[600px] bg-fox-500/15 blur-[140px] md:blur-[180px] rounded-full z-0 transform-gpu translate-z-0"
+      ></div>
+      <div
+        class="absolute top-1/3 -right-20 w-[400px] h-[400px] bg-fox-500/10 blur-[150px] rounded-full z-0 transform-gpu translate-z-0"
+      ></div>
+      <div
+        class="absolute inset-0 w-full h-full opacity-20 bg-code-grid [mask-image:radial-gradient(ellipse_at_center,black_20%,transparent_80%)] [-webkit-mask-image:radial-gradient(ellipse_at_center,black_20%,transparent_80%)]"
+      ></div>
     </div>
 
     <!-- Navigation -->
-    <header class="sticky top-0 z-50 w-full bg-zinc-950/60 backdrop-blur-xl border-b border-white/[0.06]">
-        <nav class="max-w-4xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between relative z-20">
-            <a href="/pt-br/" class="flex items-center space-x-3 group focus:outline-none">
-                <div class="relative flex-shrink-0 flex items-center justify-center cursor-default">
-                    <span
-                        class="fox-logo-icon text-xl text-fox-500 transition-all duration-300 group-hover:drop-shadow-[0_0_8px_rgba(255,104,0,0.6)]"></span>
-                </div>
-                <span
-                    class="text-base font-bold tracking-tight text-white flex items-center gap-1.5 group-hover:text-fox-400 transition-colors">
-                    FoxTerm
-                </span>
-            </a>
-            <div class="flex items-center space-x-3">
-                <div class="lang-switcher">
-                    <details class="lang-dd">
-                        <summary class="lang-dd-btn" aria-label="Idioma">
-                            <svg class="lang-dd-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                                <circle cx="12" cy="12" r="9"></circle>
-                                <path stroke-linecap="round" d="M3.6 9h16.8M3.6 15h16.8M12 3a13.5 13.5 0 0 1 0 18a13.5 13.5 0 0 1 0-18"></path>
-                            </svg>
-                            <span class="lang-dd-current">Português (Brasil)</span>
-                            <span class="lang-dd-caret" aria-hidden="true"></span>
-                        </summary>
-                        <ul class="lang-dd-menu">
-                            <li><a class="lang-dd-item" href="/privacy" lang="en" hreflang="en">English</a></li>
-                            <li><a class="lang-dd-item" href="/zh/privacy" lang="zh-Hans" hreflang="zh-Hans">简体中文</a></li>
-                            <li><a class="lang-dd-item" href="/zh-hant/privacy" lang="zh-Hant" hreflang="zh-Hant">繁體中文</a></li>
-                            <li><a class="lang-dd-item" href="/ja/privacy" lang="ja" hreflang="ja">日本語</a></li>
-                            <li><a class="lang-dd-item" href="/de/privacy" lang="de" hreflang="de">Deutsch</a></li>
-                            <li><a class="lang-dd-item" href="/ru/privacy" lang="ru" hreflang="ru">Русский</a></li>
-                            <li><a class="lang-dd-item" href="/es/privacy" lang="es" hreflang="es">Español</a></li>
-                            <li><a class="lang-dd-item" href="/fr/privacy" lang="fr" hreflang="fr">Français</a></li>
-                            <li><a class="lang-dd-item" href="/ko/privacy" lang="ko" hreflang="ko">한국어</a></li>
-                            <li><span class="lang-dd-item lang-dd-active" aria-current="true">Português (Brasil)</span></li>
-                        </ul>
-                    </details>
-                </div>
-                <a href="/pt-br/"
-                    class="h-8 px-3.5 text-[11px] font-semibold rounded-lg bg-fox-500 hover:bg-fox-600 border border-fox-400/30 text-white transition-all duration-200 flex items-center justify-center shadow-[0_0_15px_rgba(255,94,0,0.25)] active:scale-95 backdrop-blur-md">
-                    Voltar ao Início
-                </a>
-            </div>
-        </nav>
+    <header
+      class="sticky top-0 z-50 w-full bg-zinc-950/60 backdrop-blur-xl border-b border-white/[0.06]"
+    >
+      <nav
+        class="max-w-4xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between relative z-20"
+      >
+        <a
+          href="/pt-br/"
+          class="flex items-center space-x-3 group focus:outline-none"
+        >
+          <div
+            class="relative flex-shrink-0 flex items-center justify-center cursor-default"
+          >
+            <span
+              class="fox-logo-icon text-xl text-fox-500 transition-all duration-300 group-hover:drop-shadow-[0_0_8px_rgba(255,104,0,0.6)]"
+            ></span>
+          </div>
+          <span
+            class="text-base font-bold tracking-tight text-white flex items-center gap-1.5 group-hover:text-fox-400 transition-colors"
+          >
+            FoxTerm
+          </span>
+        </a>
+        <div class="flex items-center space-x-3">
+          <div class="lang-switcher">
+            <details class="lang-dd">
+              <summary class="lang-dd-btn" aria-label="Idioma">
+                <svg
+                  class="lang-dd-globe"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="9"></circle>
+                  <path
+                    stroke-linecap="round"
+                    d="M3.6 9h16.8M3.6 15h16.8M12 3a13.5 13.5 0 0 1 0 18a13.5 13.5 0 0 1 0-18"
+                  ></path>
+                </svg>
+                <span class="lang-dd-current">Português (Brasil)</span>
+                <span class="lang-dd-caret" aria-hidden="true"></span>
+              </summary>
+              <ul class="lang-dd-menu">
+                <li>
+                  <a
+                    class="lang-dd-item"
+                    href="/privacy"
+                    lang="en"
+                    hreflang="en"
+                    >English</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="lang-dd-item"
+                    href="/zh/privacy"
+                    lang="zh-Hans"
+                    hreflang="zh-Hans"
+                    >简体中文</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="lang-dd-item"
+                    href="/zh-hant/privacy"
+                    lang="zh-Hant"
+                    hreflang="zh-Hant"
+                    >繁體中文</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="lang-dd-item"
+                    href="/ja/privacy"
+                    lang="ja"
+                    hreflang="ja"
+                    >日本語</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="lang-dd-item"
+                    href="/de/privacy"
+                    lang="de"
+                    hreflang="de"
+                    >Deutsch</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="lang-dd-item"
+                    href="/ru/privacy"
+                    lang="ru"
+                    hreflang="ru"
+                    >Русский</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="lang-dd-item"
+                    href="/es/privacy"
+                    lang="es"
+                    hreflang="es"
+                    >Español</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="lang-dd-item"
+                    href="/fr/privacy"
+                    lang="fr"
+                    hreflang="fr"
+                    >Français</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="lang-dd-item"
+                    href="/ko/privacy"
+                    lang="ko"
+                    hreflang="ko"
+                    >한국어</a
+                  >
+                </li>
+                <li>
+                  <span class="lang-dd-item lang-dd-active" aria-current="true"
+                    >Português (Brasil)</span
+                  >
+                </li>
+              </ul>
+            </details>
+          </div>
+          <a
+            href="/pt-br/"
+            class="h-8 px-3.5 text-[11px] font-semibold rounded-lg bg-fox-500 hover:bg-fox-600 border border-fox-400/30 text-white transition-all duration-200 flex items-center justify-center shadow-[0_0_15px_rgba(255,94,0,0.25)] active:scale-95 backdrop-blur-md"
+          >
+            Voltar ao Início
+          </a>
+        </div>
+      </nav>
     </header>
 
     <!-- Privacy Policy Content -->
     <main class="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
-        <div class="mb-10">
-            <div
-                class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-fox-500/10 border border-fox-500/20 text-fox-500 text-xs font-mono font-medium mb-6">
-                Documento Legal
-            </div>
-            <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-4 text-white">Política de Privacidade</h1>
-            <p class="text-zinc-400 text-sm">Última atualização: outubro de 2026</p>
+      <div class="mb-10">
+        <div
+          class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-fox-500/10 border border-fox-500/20 text-fox-500 text-xs font-mono font-medium mb-6"
+        >
+          Documento Legal
+        </div>
+        <h1
+          class="text-3xl sm:text-4xl font-extrabold tracking-tight mb-4 text-white"
+        >
+          Política de Privacidade
+        </h1>
+        <p class="text-zinc-400 text-sm">Última atualização: outubro de 2026</p>
+      </div>
+
+      <div
+        class="prose prose-invert max-w-none space-y-8 text-zinc-300 text-sm sm:text-base leading-relaxed"
+      >
+        <div class="p-6 rounded-2xl bg-fox-500/10 border border-fox-500/20">
+          <h2 class="text-lg font-bold text-fox-400 mb-3 mt-0">
+            Nosso Compromisso: Zero Telemetria
+          </h2>
+          <p class="m-0 text-zinc-300">
+            O FoxTerm é construído sobre o princípio de que sua infraestrutura
+            de servidores, credenciais e fluxos de trabalho pertencem
+            exclusivamente a você. Operamos sob uma
+            <strong>política rigorosa de zero telemetria</strong> e não
+            coletamos, transmitimos ou armazenamos nenhum dos seus dados
+            operacionais em servidores externos.
+          </p>
         </div>
 
-        <div class="prose prose-invert max-w-none space-y-8 text-zinc-300 text-sm sm:text-base leading-relaxed">
-            <div class="p-6 rounded-2xl bg-fox-500/10 border border-fox-500/20">
-                <h2 class="text-lg font-bold text-fox-400 mb-3 mt-0">Nosso Compromisso: Zero Telemetria</h2>
-                <p class="m-0 text-zinc-300">
-                    O FoxTerm é construído sobre o princípio de que sua infraestrutura de servidores, credenciais e
-                    fluxos de trabalho pertencem exclusivamente a você. Operamos sob uma <strong>política rigorosa de
-                        zero telemetria</strong> e não coletamos, transmitimos ou armazenamos nenhum dos seus dados
-                    operacionais em servidores externos.
-                </p>
-            </div>
+        <section>
+          <h2 class="text-xl font-bold text-white mb-4 mt-8">
+            1. Dados que Coletamos
+          </h2>
+          <p>
+            O FoxTerm não coleta absolutamente nenhum dado de telemetria.
+            Especificamente:
+          </p>
+          <ul class="list-disc pl-6 space-y-2 text-zinc-400">
+            <li>
+              Nenhuma análise, rastreio de uso ou monitoramento de comportamento
+            </li>
+            <li>
+              Nenhum relatório de falhas enviado a servidores de terceiros por
+              padrão
+            </li>
+            <li>
+              Nenhum registro de conexão, histórico de comandos ou metadados de
+              sessão
+            </li>
+            <li>
+              Nenhum endereço IP, nome de host ou impressão digital de servidor
+              transmitido
+            </li>
+            <li>
+              Nenhuma chave SSH, senha ou credencial de autenticação sai do seu
+              dispositivo
+            </li>
+          </ul>
+        </section>
 
-            <section>
-                <h2 class="text-xl font-bold text-white mb-4 mt-8">1. Dados que Coletamos</h2>
-                <p>O FoxTerm não coleta absolutamente nenhum dado de telemetria. Especificamente:</p>
-                <ul class="list-disc pl-6 space-y-2 text-zinc-400">
-                    <li>Nenhuma análise, rastreio de uso ou monitoramento de comportamento</li>
-                    <li>Nenhum relatório de falhas enviado a servidores de terceiros por padrão</li>
-                    <li>Nenhum registro de conexão, histórico de comandos ou metadados de sessão</li>
-                    <li>Nenhum endereço IP, nome de host ou impressão digital de servidor transmitido</li>
-                    <li>Nenhuma chave SSH, senha ou credencial de autenticação sai do seu dispositivo</li>
-                </ul>
-            </section>
+        <section>
+          <h2 class="text-xl font-bold text-white mb-4 mt-8">
+            2. Armazenamento Local e Criptografia de Dados
+          </h2>
+          <p>
+            Todos os dados sensíveis são armazenados exclusivamente no seu
+            dispositivo usando as estruturas de segurança nativas da Apple:
+          </p>
+          <ul class="list-disc pl-6 space-y-2 text-zinc-400">
+            <li>
+              <strong class="text-zinc-200">Proteção do Secure Enclave:</strong>
+              as chaves privadas SSH são criptografadas e protegidas pelo
+              hardware Secure Enclave do seu dispositivo, quando disponível
+            </li>
+            <li>
+              <strong class="text-zinc-200">Isolamento do Keychain:</strong>
+              credenciais e senhas são armazenadas no seu iCloud Keychain local,
+              criptografadas com a criptografia de hardware da Apple
+            </li>
+            <li>
+              <strong class="text-zinc-200">Configuração Local:</strong> perfis
+              de conexão e ajustes ficam armazenados localmente no seu
+              dispositivo; a sincronização pelo iCloud ocorre apenas pelo seu
+              contêiner privado do iCloud, com criptografia de ponta a ponta da
+              Apple
+            </li>
+          </ul>
+        </section>
 
-            <section>
-                <h2 class="text-xl font-bold text-white mb-4 mt-8">2. Armazenamento Local e Criptografia de Dados</h2>
-                <p>Todos os dados sensíveis são armazenados exclusivamente no seu dispositivo usando as estruturas de segurança nativas da Apple:</p>
-                <ul class="list-disc pl-6 space-y-2 text-zinc-400">
-                    <li><strong class="text-zinc-200">Proteção do Secure Enclave:</strong> as chaves privadas SSH são
-                        criptografadas e protegidas pelo hardware Secure Enclave do seu dispositivo, quando
-                        disponível</li>
-                    <li><strong class="text-zinc-200">Isolamento do Keychain:</strong> credenciais e senhas são
-                        armazenadas no seu iCloud Keychain local, criptografadas com a criptografia de hardware da
-                        Apple</li>
-                    <li><strong class="text-zinc-200">Configuração Local:</strong> perfis de conexão e ajustes ficam
-                        armazenados localmente no seu dispositivo; a sincronização pelo iCloud ocorre apenas pelo seu
-                        contêiner privado do iCloud, com criptografia de ponta a ponta da Apple</li>
-                </ul>
-            </section>
+        <section>
+          <h2 class="text-xl font-bold text-white mb-4 mt-8">
+            3. Comunicações de Rede
+          </h2>
+          <p>
+            O FoxTerm estabelece conexões ponto a ponto diretas exclusivamente
+            com os servidores que você configura explicitamente:
+          </p>
+          <ul class="list-disc pl-6 space-y-2 text-zinc-400">
+            <li>
+              Todas as conexões (SSH, VNC, SFTP, Docker/Podman) vão diretamente
+              do seu dispositivo para os seus servidores
+            </li>
+            <li>
+              Não operamos servidores proxy, relays ou serviços intermediários
+              para o seu tráfego
+            </li>
+            <li>
+              Transações da App Store são processadas integralmente pela Apple;
+              não recebemos nem armazenamos informações de pagamento
+            </li>
+            <li>
+              Nenhum SDK de análise de terceiros está embutido no aplicativo
+            </li>
+          </ul>
+        </section>
 
-            <section>
-                <h2 class="text-xl font-bold text-white mb-4 mt-8">3. Comunicações de Rede</h2>
-                <p>O FoxTerm estabelece conexões ponto a ponto diretas exclusivamente com os servidores que você
-                    configura explicitamente:</p>
-                <ul class="list-disc pl-6 space-y-2 text-zinc-400">
-                    <li>Todas as conexões (SSH, VNC, SFTP, Docker/Podman) vão diretamente do seu dispositivo para os
-                        seus servidores</li>
-                    <li>Não operamos servidores proxy, relays ou serviços intermediários para o seu tráfego</li>
-                    <li>Transações da App Store são processadas integralmente pela Apple; não recebemos nem
-                        armazenamos informações de pagamento</li>
-                    <li>Nenhum SDK de análise de terceiros está embutido no aplicativo</li>
-                </ul>
-            </section>
+        <section>
+          <h2 class="text-xl font-bold text-white mb-4 mt-8">
+            4. Sincronização do iCloud
+          </h2>
+          <p>Quando você ativa a sincronização de configurações pelo iCloud:</p>
+          <ul class="list-disc pl-6 space-y-2 text-zinc-400">
+            <li>
+              Os dados sincronizados ficam armazenados exclusivamente na sua
+              conta pessoal do iCloud, não nos nossos servidores
+            </li>
+            <li>
+              O transporte da sincronização é gerenciado e criptografado
+              integralmente pela infraestrutura CloudKit da Apple
+            </li>
+            <li>
+              Chaves privadas <strong>nunca</strong> são sincronizadas pelo
+              iCloud; permanecem isoladas no Secure Enclave de cada dispositivo
+            </li>
+            <li>
+              Você pode desativar a sincronização do iCloud a qualquer momento
+              nos ajustes do app ou nas preferências de iCloud do sistema
+            </li>
+          </ul>
+        </section>
 
-            <section>
-                <h2 class="text-xl font-bold text-white mb-4 mt-8">4. Sincronização do iCloud</h2>
-                <p>Quando você ativa a sincronização de configurações pelo iCloud:</p>
-                <ul class="list-disc pl-6 space-y-2 text-zinc-400">
-                    <li>Os dados sincronizados ficam armazenados exclusivamente na sua conta pessoal do iCloud, não nos
-                        nossos servidores</li>
-                    <li>O transporte da sincronização é gerenciado e criptografado integralmente pela infraestrutura
-                        CloudKit da Apple</li>
-                    <li>Chaves privadas <strong>nunca</strong> são sincronizadas pelo iCloud; permanecem isoladas no
-                        Secure Enclave de cada dispositivo</li>
-                    <li>Você pode desativar a sincronização do iCloud a qualquer momento nos ajustes do app ou nas
-                        preferências de iCloud do sistema</li>
-                </ul>
-            </section>
+        <section>
+          <h2 class="text-xl font-bold text-white mb-4 mt-8">
+            5. Validação de Recibo da App Store
+          </h2>
+          <p>
+            Para verificar o status da assinatura Pro, o FoxTerm pode se
+            comunicar com os servidores da App Store da Apple para validar seu
+            direito à assinatura. Essa comunicação:
+          </p>
+          <ul class="list-disc pl-6 space-y-2 text-zinc-400">
+            <li>É feita por meio das APIs padrão do StoreKit da Apple</li>
+            <li>
+              Contém apenas os identificadores do recibo da sua transação Apple
+            </li>
+            <li>
+              Não inclui nenhum dado dos seus servidores, credenciais ou
+              informações de uso
+            </li>
+            <li>
+              É processada diretamente entre o seu dispositivo e a Apple; os
+              servidores de backend do FoxTerm não registram nem armazenam essas
+              solicitações
+            </li>
+          </ul>
+        </section>
 
-            <section>
-                <h2 class="text-xl font-bold text-white mb-4 mt-8">5. Validação de Recibo da App Store</h2>
-                <p>Para verificar o status da assinatura Pro, o FoxTerm pode se comunicar com os servidores da App
-                    Store da Apple para validar seu direito à assinatura. Essa comunicação:</p>
-                <ul class="list-disc pl-6 space-y-2 text-zinc-400">
-                    <li>É feita por meio das APIs padrão do StoreKit da Apple</li>
-                    <li>Contém apenas os identificadores do recibo da sua transação Apple</li>
-                    <li>Não inclui nenhum dado dos seus servidores, credenciais ou informações de uso</li>
-                    <li>É processada diretamente entre o seu dispositivo e a Apple; os servidores de backend do
-                        FoxTerm não registram nem armazenam essas solicitações</li>
-                </ul>
-            </section>
+        <section>
+          <h2 class="text-xl font-bold text-white mb-4 mt-8">
+            6. Serviços de Terceiros
+          </h2>
+          <p>
+            O FoxTerm não se integra a nenhum serviço de análise, publicidade ou
+            coleta de dados de terceiros. Os únicos serviços externos com os
+            quais interagimos são:
+          </p>
+          <ul class="list-disc pl-6 space-y-2 text-zinc-400">
+            <li>
+              Serviços da Apple App Store e CloudKit (regidos pela Política de
+              Privacidade da Apple)
+            </li>
+            <li>
+              Servidores SSH, VNC, SFTP, Docker/Podman que você configura
+              explicitamente e acessa diretamente
+            </li>
+          </ul>
+        </section>
 
-            <section>
-                <h2 class="text-xl font-bold text-white mb-4 mt-8">6. Serviços de Terceiros</h2>
-                <p>O FoxTerm não se integra a nenhum serviço de análise, publicidade ou coleta de dados de terceiros.
-                    Os únicos serviços externos com os quais interagimos são:</p>
-                <ul class="list-disc pl-6 space-y-2 text-zinc-400">
-                    <li>Serviços da Apple App Store e CloudKit (regidos pela Política de Privacidade da Apple)</li>
-                    <li>Servidores SSH, VNC, SFTP, Docker/Podman que você configura explicitamente e acessa
-                        diretamente</li>
-                </ul>
-            </section>
+        <section>
+          <h2 class="text-xl font-bold text-white mb-4 mt-8">
+            7. Privacidade de Crianças
+          </h2>
+          <p>
+            O FoxTerm não coleta conscientemente nenhuma informação pessoal de
+            menores de 13 anos (ou da idade aplicável na sua jurisdição). O
+            aplicativo é uma ferramenta profissional para desenvolvedores,
+            projetada para uso por profissionais técnicos.
+          </p>
+        </section>
 
-            <section>
-                <h2 class="text-xl font-bold text-white mb-4 mt-8">7. Privacidade de Crianças</h2>
-                <p>O FoxTerm não coleta conscientemente nenhuma informação pessoal de menores de 13 anos (ou da idade
-                    aplicável na sua jurisdição). O aplicativo é uma ferramenta profissional para desenvolvedores,
-                    projetada para uso por profissionais técnicos.</p>
-            </section>
+        <section>
+          <h2 class="text-xl font-bold text-white mb-4 mt-8">
+            8. Alterações nesta Política
+          </h2>
+          <p>
+            Podemos atualizar esta Política de Privacidade periodicamente para
+            refletir mudanças nas nossas práticas ou em exigências legais.
+            Quaisquer alterações serão publicadas nesta página com uma data de
+            revisão atualizada. Recomendamos revisar esta política
+            periodicamente.
+          </p>
+        </section>
 
-            <section>
-                <h2 class="text-xl font-bold text-white mb-4 mt-8">8. Alterações nesta Política</h2>
-                <p>Podemos atualizar esta Política de Privacidade periodicamente para refletir mudanças nas nossas
-                    práticas ou em exigências legais. Quaisquer alterações serão publicadas nesta página com uma data de
-                    revisão atualizada. Recomendamos revisar esta política periodicamente.</p>
-            </section>
-
-            <section>
-                <h2 class="text-xl font-bold text-white mb-4 mt-8">9. Fale Conosco</h2>
-                <p>Se você tiver dúvidas ou preocupações sobre esta Política de Privacidade ou sobre nossas práticas de
-                    dados, entre em contato pelo e-mail <a href="mailto:admin@foxterm.app"
-                        class="text-fox-400 hover:text-fox-300 no-underline">admin@foxterm.app</a>.</p>
-            </section>
-        </div>
+        <section>
+          <h2 class="text-xl font-bold text-white mb-4 mt-8">
+            9. Fale Conosco
+          </h2>
+          <p>
+            Se você tiver dúvidas ou preocupações sobre esta Política de
+            Privacidade ou sobre nossas práticas de dados, entre em contato pelo
+            e-mail
+            <a
+              href="mailto:admin@foxterm.app"
+              class="text-fox-400 hover:text-fox-300 no-underline"
+              >admin@foxterm.app</a
+            >.
+          </p>
+        </section>
+      </div>
     </main>
 
     <!-- Footer -->
-    <footer class="max-w-4xl mx-auto px-6 py-8 border-t border-zinc-900 text-center text-xs text-zinc-500">
-        <div class="flex flex-col items-center justify-center gap-2.5">
-            <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
-                <p>&copy; 2026 FoxTerm. <span id="host-info">Hosted on Tencent Makers.</span></p>
-                <span class="hidden sm:inline text-zinc-800">|</span>
-                <a href="/pt-br/" class="no-underline hover:text-fox-500 transition-colors">Início</a>
-                <span class="hidden sm:inline text-zinc-800">|</span>
-                <a href="/pt-br/contact" class="no-underline hover:text-fox-500 transition-colors">Fale Conosco</a>
-                <span class="hidden sm:inline text-zinc-800">|</span>
-                <a href="/pt-br/terms" class="no-underline hover:text-fox-500 transition-colors">Termos de Serviço</a>
-                <span class="hidden sm:inline text-zinc-800">|</span>
-                <a href="https://github.com/foxterm" target="_blank" rel="noopener noreferrer" class="no-underline hover:text-fox-500 transition-colors">GitHub</a>
-            </div>
-            <!-- Mirror Sites Info -->
-            <div class="flex flex-wrap items-center justify-center gap-2 text-zinc-500">
-                <!-- ICP 备案号 -->
-                <a class="is-cn no-underline inline-flex items-center gap-1 hover:text-fox-500 transition-colors"
-                    href="https://beian.miit.gov.cn" target="_blank" rel="noopener noreferrer">
-                    <svg class="w-3.5 h-3.5 opacity-70" fill="none" stroke="currentColor" stroke-width="2"
-                        viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                    </svg>
-                    <span>蜀ICP备2024075062号</span>
-                </a>
-                <span class="sm:inline text-zinc-800 is-cn">|</span>
-                <span class="text-[11px] text-zinc-600">
-                    Espelho CN: <a href="https://foxterm.cn" class="no-underline hover:text-zinc-400">foxterm.cn</a> |
-                    Global: <a href="https://foxterm.app" class="no-underline hover:text-zinc-400">foxterm.app</a>
-                </span>
-            </div>
+    <footer
+      class="max-w-4xl mx-auto px-6 py-8 border-t border-zinc-900 text-center text-xs text-zinc-500"
+    >
+      <div class="flex flex-col items-center justify-center gap-2.5">
+        <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+          <p>
+            &copy; 2026 FoxTerm.
+            <span id="host-info">Hosted on Tencent Makers.</span>
+          </p>
+          <span class="hidden sm:inline text-zinc-800">|</span>
+          <a
+            href="/pt-br/"
+            class="no-underline hover:text-fox-500 transition-colors"
+            >Início</a
+          >
+          <span class="hidden sm:inline text-zinc-800">|</span>
+          <a
+            href="/pt-br/contact"
+            class="no-underline hover:text-fox-500 transition-colors"
+            >Fale Conosco</a
+          >
+          <span class="hidden sm:inline text-zinc-800">|</span>
+          <a
+            href="/pt-br/terms"
+            class="no-underline hover:text-fox-500 transition-colors"
+            >Termos de Serviço</a
+          >
+          <span class="hidden sm:inline text-zinc-800">|</span>
+          <a
+            href="https://github.com/foxterm"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="no-underline hover:text-fox-500 transition-colors"
+            >GitHub</a
+          >
         </div>
+        <!-- Mirror Sites Info -->
+        <div
+          class="flex flex-wrap items-center justify-center gap-2 text-zinc-500"
+        >
+          <!-- ICP 备案号 -->
+          <a
+            class="is-cn no-underline inline-flex items-center gap-1 hover:text-fox-500 transition-colors"
+            href="https://beian.miit.gov.cn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              class="w-3.5 h-3.5 opacity-70"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
+              ></path>
+            </svg>
+            <span>蜀ICP备2024075062号</span>
+          </a>
+          <span class="sm:inline text-zinc-800 is-cn">|</span>
+          <span class="text-[11px] text-zinc-600">
+            Espelho CN:
+            <a
+              href="https://foxterm.cn"
+              class="no-underline hover:text-zinc-400"
+              >foxterm.cn</a
+            >
+            | Global:
+            <a
+              href="https://foxterm.app"
+              class="no-underline hover:text-zinc-400"
+              >foxterm.app</a
+            >
+          </span>
+        </div>
+      </div>
     </footer>
 
     <script src="/assets/script.js"></script>
-</body>
-
+  </body>
 </html>

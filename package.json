@@ -1,7 +1,8 @@
 {
   "scripts": {
     "build": "node build.js",
-    "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./assets/tailwind.min.css --minify"
+    "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./assets/tailwind.min.css --minify",
+    "prettier": "prettier . --write"
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4.3.3",
@@ -9,6 +10,7 @@
     "clean-css": "^5.3.3",
     "html-minifier-terser": "^7.2.0",
     "postcss": "^8.5.29",
+    "prettier": "^3.9.10",
     "tailwindcss": "^4.3.3",
     "terser": "^5.51.2"
   }

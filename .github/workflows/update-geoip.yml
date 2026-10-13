@@ -36,6 +36,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git commit -m "chore: auto update GeoLite2-Country.mmdb $(date +'%Y-%m-%d')"
           git push
+
 #
 #       - name: Create Release
 #         if: steps.git_status.outputs.changed == 'true'
