@@ -11,7 +11,7 @@
     </title>
     <meta
       name="description"
-      content="FoxTerm は、プライバシーを最重視した高性能な macOS / iOS 向けターミナルアプリです。超高速 SSH、2ペイン SFTP、Metal 加速 VNC、リアルタイムな Linux テレメトリ、Docker / Podman の視覚的な管理を備えています。テレメトリはゼロ。Universal Purchase 対応。"
+      content="FoxTerm は、プライバシーを最重視した高性能な macOS / iOS 向けターミナルアプリです。超高速 SSH、SFTP、Metal 加速 VNC、リアルタイムな Linux テレメトリ、Docker / Podman の視覚的な管理を備えています。テレメトリはゼロ。Universal Purchase 対応。"
     />
     <meta
       name="keywords"
@@ -61,7 +61,7 @@
     />
     <meta
       property="og:description"
-      content="インフラの制御を再定義する。FoxTerm は SSH、2ペイン SFTP、VNC、コンテナ管理をテレメトリゼロでひとつに統合。ネイティブ Swift & Metal の性能。"
+      content="インフラの制御を再定義する。FoxTerm は SSH、SFTP、VNC、コンテナ管理をテレメトリゼロでひとつに統合。ネイティブ Swift & Metal の性能。"
     />
     <meta property="og:url" content="https://foxterm.app/ja/" />
     <meta property="og:site_name" content="FoxTerm" />
@@ -149,7 +149,7 @@
             },
             "description": "macOS と iOS 向けのユニバーサル SSH、VNC、SFTP、Docker、Podman 管理アプリ。テレメトリゼロ、ネイティブ Swift / Metal 性能。",
             "downloadUrl": "https://apps.apple.com/us/app/foxterm/id6760452891",
-            "featureList": "高速 SSH ターミナル, 2ペイン SFTP ファイルマネージャー, Metal 加速 VNC リモートデスクトップ, リアルタイムシステムテレメトリ監視, Docker & Podman コンテナ管理, macOS / iOS 向け Universal Purchase, テレメトリゼロのプライバシー保護, Apple Secure Enclave による鍵保護",
+            "featureList": "高速 SSH ターミナル, SFTP ファイルマネージャー, Metal 加速 VNC リモートデスクトップ, リアルタイムシステムテレメトリ監視, Docker & Podman コンテナ管理, macOS / iOS 向け Universal Purchase, テレメトリゼロのプライバシー保護, Apple Secure Enclave による鍵保護",
             "screenshot": "https://foxterm.app/assets/og-image.png",
             "softwareVersion": "1.2.0",
             "author": {
@@ -218,7 +218,7 @@
                 "name": "FoxTerm とは何ですか？",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "FoxTerm は、macOS と iOS のためにネイティブに構築された、オールインワンでプライバシー重視のサーバー管理アプリです。高性能な SSH ターミナルアクセス、2ペイン SFTP ファイル管理、Metal 加速 VNC リモートデスクトップ、Linux システムテレメトリ、視覚的な Docker / Podman コンテナ制御をひとつに統合します。"
+                  "text": "FoxTerm は、macOS と iOS のためにネイティブに構築された、オールインワンでプライバシー重視のサーバー管理アプリです。高性能な SSH ターミナルアクセス、SFTP ファイル管理、Metal 加速 VNC リモートデスクトップ、Linux システムテレメトリ、視覚的な Docker / Podman コンテナ制御をひとつに統合します。"
                 }
               },
               {
@@ -489,8 +489,7 @@
         <p
           class="text-base sm:text-lg md:text-xl text-zinc-300 mb-8 sm:mb-10 max-w-2xl mx-auto leading-relaxed"
         >
-          現代の開発者のために作られた、高性能なネイティブターミナル。SSH、2ペイン
-          SFTP、 Metal 加速
+          現代の開発者のために作られた、高性能なネイティブターミナル。SSH、SFTP、Metal 加速
           VNC、コンテナ管理、リアルタイムのシステム監視——リモートワークフローのすべてを、起動した瞬間から使えるひとつのツールに。
         </p>
 
@@ -1044,7 +1043,7 @@
             </div>
           </div>
 
-          <!-- 3. SFTP Dual-Pane -->
+          <!-- 3. SFTP File Transfer -->
           <div
             class="p-6 sm:p-8 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 hover:border-fox-500/40 transition-all flex flex-col justify-between"
           >
@@ -1054,9 +1053,9 @@
               >
                 SFTP
               </div>
-              <h3 class="text-lg font-bold mb-2 text-white">2ペイン SFTP</h3>
+              <h3 class="text-lg font-bold mb-2 text-white">SFTP ファイル転送</h3>
               <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
-                コマンダー式の2ペインで、ドラッグ＆ドロップのファイル転送、アプリ内エディタ、権限制御を備えています。
+                ドラッグ＆ドロップのファイル転送、アプリ内エディタ、権限制御を備えています。
               </p>
             </div>
           </div>
@@ -1243,7 +1242,7 @@
                   >SSH ターミナル アクセス</strong
                 >、
                 <strong class="text-zinc-200"
-                  >2ペインの SFTP ファイル管理</strong
+                  >SFTP ファイル管理</strong
                 >、<strong class="text-zinc-200"
                   >Metal 加速の VNC リモートデスクトップ</strong
                 >、<strong class="text-zinc-200"
@@ -1272,7 +1271,7 @@
                 無料版は機能制限デモではありません。<strong
                   class="text-zinc-200"
                   >SSH ターミナル</strong
-                >や<strong class="text-zinc-200">2ペイン SFTP</strong>、<strong
+                >や<strong class="text-zinc-200">SFTP</strong>、<strong
                   class="text-zinc-200"
                   >Metal 加速 VNC</strong
                 >、リアルタイム テレメトリ、<strong class="text-zinc-200"

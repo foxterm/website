@@ -11,7 +11,7 @@
     </title>
     <meta
       name="description"
-      content="FoxTerm은 개인 정보 보호를 최우선으로 하는 고성능 macOS 및 iOS용 터미널 앱입니다. 초고속 SSH, 분할 창 SFTP, Metal 가속 VNC, 실시간 Linux 원격 측정, 시각적 Docker/Podman 관리를 제공합니다. 텔레메트리는 제로. Universal Purchase 지원."
+      content="FoxTerm은 개인 정보 보호를 최우선으로 하는 고성능 macOS 및 iOS용 터미널 앱입니다. 초고속 SSH, SFTP, Metal 가속 VNC, 실시간 Linux 원격 측정, 시각적 Docker/Podman 관리를 제공합니다. 텔레메트리는 제로. Universal Purchase 지원."
     />
     <meta
       name="keywords"
@@ -61,7 +61,7 @@
     />
     <meta
       property="og:description"
-      content="인프라 제어를 재정의하세요. FoxTerm이 SSH, 분할 창 SFTP, VNC, 컨테이너 관리를 제로 텔레메트리로 하나에 통합합니다. 네이티브 Swift & Metal 성능."
+      content="인프라 제어를 재정의하세요. FoxTerm이 SSH, SFTP, VNC, 컨테이너 관리를 제로 텔레메트리로 하나에 통합합니다. 네이티브 Swift & Metal 성능."
     />
     <meta property="og:url" content="https://foxterm.app/ko/" />
     <meta property="og:site_name" content="FoxTerm" />
@@ -149,7 +149,7 @@
             },
             "description": "macOS 및 iOS용 유니버설 SSH, VNC, SFTP, Docker, Podman 관리 앱. 제로 텔레메트리와 네이티브 Swift/Metal 성능.",
             "downloadUrl": "https://apps.apple.com/us/app/foxterm/id6760452891",
-            "featureList": "고성능 SSH 터미널, 분할 창 SFTP 파일 관리자, Metal 가속 VNC 원격 데스크톱, 실시간 시스템 원격 측정 모니터링, Docker & Podman 컨테이너 관리, macOS 및 iOS용 Universal Purchase, 제로 텔레메트리 개인 정보 보호, Apple Secure Enclave 키 보호",
+            "featureList": "고성능 SSH 터미널, SFTP 파일 관리자, Metal 가속 VNC 원격 데스크톱, 실시간 시스템 원격 측정 모니터링, Docker & Podman 컨테이너 관리, macOS 및 iOS용 Universal Purchase, 제로 텔레메트리 개인 정보 보호, Apple Secure Enclave 키 보호",
             "screenshot": "https://foxterm.app/assets/og-image.png",
             "softwareVersion": "1.2.0",
             "author": {
@@ -218,7 +218,7 @@
                 "name": "FoxTerm이란 무엇인가요?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "FoxTerm은 macOS와 iOS를 위해 네이티브로 구축된 올인원의 개인 정보 보호 우선 서버 관리 애플리케이션입니다. 고성능 SSH 터미널 접속, 분할 창 SFTP 파일 관리, Metal 가속 VNC 원격 데스크톱, Linux 시스템 원격 측정, 시각적 Docker/Podman 컨테이너 제어를 하나로 통합합니다."
+                  "text": "FoxTerm은 macOS와 iOS를 위해 네이티브로 구축된 올인원의 개인 정보 보호 우선 서버 관리 애플리케이션입니다. 고성능 SSH 터미널 접속, SFTP 파일 관리, Metal 가속 VNC 원격 데스크톱, Linux 시스템 원격 측정, 시각적 Docker/Podman 컨테이너 제어를 하나로 통합합니다."
                 }
               },
               {
@@ -489,7 +489,7 @@
         <p
           class="text-base sm:text-lg md:text-xl text-zinc-300 mb-8 sm:mb-10 max-w-2xl mx-auto leading-relaxed"
         >
-          현대 개발자를 위해 만들어진 고성능 네이티브 터미널. SSH, 분할 창 SFTP,
+          현대 개발자를 위해 만들어진 고성능 네이티브 터미널. SSH, SFTP,
           Metal 가속 VNC, 컨테이너 관리, 실시간 시스템 모니터링 — 원격 워크플로
           전체를 하나의 도구로, 열자마자 바로 사용할 수 있습니다.
         </p>
@@ -1044,7 +1044,7 @@
             </div>
           </div>
 
-          <!-- 3. SFTP Dual-Pane -->
+          <!-- 3. SFTP File Transfer -->
           <div
             class="p-6 sm:p-8 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 hover:border-fox-500/40 transition-all flex flex-col justify-between"
           >
@@ -1054,9 +1054,9 @@
               >
                 SFTP
               </div>
-              <h3 class="text-lg font-bold mb-2 text-white">분할 창 SFTP</h3>
+              <h3 class="text-lg font-bold mb-2 text-white">SFTP 파일 전송</h3>
               <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
-                커맨더 스타일의 듀얼 페인으로 드래그 앤 드롭 파일 전송, 앱 내
+                드래그 앤 드롭 파일 전송, 앱 내
                 편집기, 권한 제어를 제공합니다.
               </p>
             </div>
@@ -1234,7 +1234,7 @@
                 FoxTerm은 macOS와 iOS를 위해 네이티브로 구축된 올인원의 개인
                 정보 보호 우선 서버 관리 앱입니다. 고성능
                 <strong class="text-zinc-200">SSH 터미널 접속</strong>,
-                <strong class="text-zinc-200">분할 창 SFTP 파일 관리</strong>,
+                <strong class="text-zinc-200">SFTP 파일 관리</strong>,
                 <strong class="text-zinc-200"
                   >Metal 가속 VNC 원격 데스크톱</strong
                 >,
@@ -1262,7 +1262,7 @@
               <p>
                 무료 버전은 기능을 제한한 데모가 아닙니다.
                 <strong class="text-zinc-200">SSH 터미널</strong>과
-                <strong class="text-zinc-200">듀얼 페인 SFTP</strong>부터
+                <strong class="text-zinc-200">SFTP</strong>부터
                 <strong class="text-zinc-200">Metal 가속 VNC</strong>, 실시간
                 원격 측정,
                 <strong class="text-zinc-200">Docker &amp; Podman</strong>
