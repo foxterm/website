@@ -21,7 +21,7 @@
   }
 
   // 2. 如果当前已经在多语言子目录下（比如通过搜索引擎直达 /ja/ 或 /zh-hant/），也直接退出
-  const isLangPath = /^\/(zh|zh-hant|ja|de|ru|es|fr|ko|pt-br)(\/|$)/i.test(
+  const isLangPath = /^\/(zh-hans|zh-hant|ja|de|ru|es|fr|ko|pt-br)(\/|$)/i.test(
     pathname,
   );
   if (isLangPath) {
@@ -48,7 +48,7 @@
     targetPath = "/zh-hant/";
   } else if (navLang.startsWith("zh")) {
     targetLang = "zh-Hans";
-    targetPath = "/zh/";
+    targetPath = "/zh-hans/";
   } else if (navLang.startsWith("ja")) {
     targetLang = "ja";
     targetPath = "/ja/";

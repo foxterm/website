@@ -7,7 +7,7 @@
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/"/>
@@ -20,12 +20,12 @@
     </url>
 
     <url>
-        <loc>https://foxterm.app/zh/</loc>
+        <loc>https://foxterm.app/zh-hans/</loc>
         <lastmod>2026-10-12</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/"/>
@@ -43,7 +43,7 @@
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/"/>
@@ -61,7 +61,7 @@
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/"/>
@@ -79,7 +79,7 @@
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/"/>
@@ -97,7 +97,7 @@
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/"/>
@@ -115,7 +115,7 @@
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/"/>
@@ -133,7 +133,7 @@
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/"/>
@@ -151,7 +151,7 @@
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/"/>
@@ -169,7 +169,7 @@
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/"/>
@@ -187,7 +187,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/contact"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/contact"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/contact"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/contact"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/contact"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/contact"/>
@@ -200,12 +200,12 @@
     </url>
 
     <url>
-        <loc>https://foxterm.app/zh/contact</loc>
+        <loc>https://foxterm.app/zh-hans/contact</loc>
         <lastmod>2026-10-12</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/contact"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/contact"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/contact"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/contact"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/contact"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/contact"/>
@@ -223,7 +223,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/contact"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/contact"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/contact"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/contact"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/contact"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/contact"/>
@@ -241,7 +241,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/contact"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/contact"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/contact"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/contact"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/contact"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/contact"/>
@@ -259,7 +259,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/contact"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/contact"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/contact"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/contact"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/contact"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/contact"/>
@@ -277,7 +277,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/contact"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/contact"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/contact"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/contact"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/contact"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/contact"/>
@@ -295,7 +295,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/contact"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/contact"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/contact"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/contact"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/contact"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/contact"/>
@@ -313,7 +313,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/contact"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/contact"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/contact"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/contact"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/contact"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/contact"/>
@@ -331,7 +331,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/contact"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/contact"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/contact"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/contact"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/contact"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/contact"/>
@@ -349,7 +349,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/contact"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/contact"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/contact"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/contact"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/contact"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/contact"/>
@@ -367,7 +367,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/privacy"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/privacy"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/privacy"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/privacy"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/privacy"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/privacy"/>
@@ -380,12 +380,12 @@
     </url>
 
     <url>
-        <loc>https://foxterm.app/zh/privacy</loc>
+        <loc>https://foxterm.app/zh-hans/privacy</loc>
         <lastmod>2026-10-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/privacy"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/privacy"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/privacy"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/privacy"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/privacy"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/privacy"/>
@@ -403,7 +403,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/privacy"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/privacy"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/privacy"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/privacy"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/privacy"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/privacy"/>
@@ -421,7 +421,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/privacy"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/privacy"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/privacy"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/privacy"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/privacy"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/privacy"/>
@@ -439,7 +439,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/privacy"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/privacy"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/privacy"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/privacy"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/privacy"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/privacy"/>
@@ -457,7 +457,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/privacy"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/privacy"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/privacy"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/privacy"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/privacy"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/privacy"/>
@@ -475,7 +475,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/privacy"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/privacy"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/privacy"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/privacy"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/privacy"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/privacy"/>
@@ -493,7 +493,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/privacy"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/privacy"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/privacy"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/privacy"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/privacy"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/privacy"/>
@@ -511,7 +511,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/privacy"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/privacy"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/privacy"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/privacy"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/privacy"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/privacy"/>
@@ -529,7 +529,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/privacy"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/privacy"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/privacy"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/privacy"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/privacy"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/privacy"/>
@@ -547,7 +547,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/terms"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/terms"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/terms"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/terms"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/terms"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/terms"/>
@@ -560,12 +560,12 @@
     </url>
 
     <url>
-        <loc>https://foxterm.app/zh/terms</loc>
+        <loc>https://foxterm.app/zh-hans/terms</loc>
         <lastmod>2026-10-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/terms"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/terms"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/terms"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/terms"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/terms"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/terms"/>
@@ -583,7 +583,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/terms"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/terms"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/terms"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/terms"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/terms"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/terms"/>
@@ -601,7 +601,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/terms"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/terms"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/terms"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/terms"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/terms"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/terms"/>
@@ -619,7 +619,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/terms"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/terms"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/terms"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/terms"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/terms"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/terms"/>
@@ -637,7 +637,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/terms"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/terms"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/terms"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/terms"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/terms"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/terms"/>
@@ -655,7 +655,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/terms"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/terms"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/terms"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/terms"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/terms"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/terms"/>
@@ -673,7 +673,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/terms"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/terms"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/terms"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/terms"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/terms"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/terms"/>
@@ -691,7 +691,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/terms"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/terms"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/terms"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/terms"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/terms"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/terms"/>
@@ -709,7 +709,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
         <xhtml:link rel="alternate" hreflang="en" href="https://foxterm.app/terms"/>
-        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh/terms"/>
+        <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://foxterm.app/zh-hans/terms"/>
         <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://foxterm.app/zh-hant/terms"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/terms"/>
         <xhtml:link rel="alternate" hreflang="de" href="https://foxterm.app/de/terms"/>
