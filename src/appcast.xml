@@ -9,7 +9,7 @@
             <sparkle:version>2022610151910</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/foxterm/FoxTerm/releases/latest/download/FoxTerm-1.0.0.dmg" length="28458033" type="application/octet-stream" sparkle:edSignature="mbkywjRTXaQ7cQAk3ZzQSwLTe55C2QPsEXIpQExC63EKnDUTcJn9YzpPZB90i2IiQ7tWICqGpJ995Cw4HGNoCg=="/>
+            <enclosure url="https://github.com/foxterm/FoxTerm/releases/latest/download/FoxTerm-1.0.0.dmg" length="28464904" type="application/octet-stream" sparkle:edSignature="kTgeb+1flEiuNiia2mKU1K8Q0qSar6HssZmL0uXHPfpCcIHCUbHFaPZy+Sh1f2pqV3veIEda+fKl02Jo4KJQDA=="/>
         </item>
     </channel>
 </rss>
