@@ -270,3 +270,17 @@ a.lang-dd-item:hover {
     margin-left: auto;
   }
 }
+
+/* 全局光标：正文一律保持默认箭头，可点击元素（链接/按钮）保留小手 */
+body {
+  cursor: default;
+}
+
+a[href],
+button,
+[role="button"],
+input[type="submit"],
+input[type="button"],
+.cursor-pointer {
+  cursor: pointer;
+}
