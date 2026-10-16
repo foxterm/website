@@ -171,15 +171,15 @@
 
 /* FoxTerm terminal window mockup — 4-tab switching */
 (function () {
-  var root = document.getElementById("ft-mockup");
+  const root = document.getElementById("ft-mockup");
   if (!root) return;
-  var tabs = root.querySelectorAll("[data-ft-tab]");
-  var panels = root.querySelectorAll("[data-ft-panel]");
-  var bars = root.querySelectorAll("[data-ft-bar]");
-  var titleEl = document.getElementById("ft-win-title");
+  const tabs = root.querySelectorAll("[data-ft-tab]");
+  const panels = root.querySelectorAll("[data-ft-panel]");
+  const bars = root.querySelectorAll("[data-ft-bar]");
+  const titleEl = document.getElementById("ft-win-title");
   function activate(name) {
     tabs.forEach(function (t) {
-      var on = t.getAttribute("data-ft-tab") === name;
+      const on = t.getAttribute("data-ft-tab") === name;
       t.classList.toggle("ft-tab-active", on);
       t.classList.toggle("ft-tab-idle", !on);
     });
