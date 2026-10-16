@@ -270,6 +270,38 @@
                   "@type": "Answer",
                   "text": "FoxTerm은 Electron 래퍼가 아닙니다. 네이티브 Swift, Metal 하드웨어 가속, C 네이티브 라이브러리(OpenSSL, libssh, libvncclient)를 사용해 처음부터 설계되어 거의 즉시 시작, 초저자원 사용, iOS 네이티브 최적화를 제공합니다."
                 }
+              },
+              {
+                "@type": "Question",
+                "name": "어떤 플랫폼 및 운영체제를 지원하나요?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "FoxTerm은 Apple 플랫폼을 위해 네이티브로 구축되었습니다. macOS 14.0 이상 및 iOS/iPadOS 17.0 이상에서 실행되며, iPhone과 iPad를 포함하고, 하나의 Universal Purchase로 모든 디바이스를 잠금 해제합니다. Windows, Android 또는 Linux 데스크톱 빌드는 없습니다."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "어떤 프로토콜과 인증 방식을 지원하나요?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "FoxTerm은 SSH, SFTP 및 VNC 연결을 지원하고, SSH를 통해 Docker 및 Podman 엔진을 관리합니다. Ed25519와 같은 최신 암호화 및 키 타입, 분할 패널 터미널 세션, 명령 스니펫, 드래그 앤 드롭 SFTP 전송, 컨테이너·이미지·볼륨의 시각적 관리를 제공합니다."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "FoxTerm이 데이터를 수집하거나 내 연결을 서버를 통해 라우팅하나요?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "아니요. FoxTerm은 사용자 디바이스에서 직접 자체 서버로 연결하며 트래픽을 프록시하지 않습니다. 엄격한 제로 텔레메트리 정책을 시행합니다 — 분석, 활동 추적 또는 연결 로그가 없습니다. 자격 증명과 개인 키는 디바이스에서 암호화되어 Apple Keychain 및 Secure Enclave 내에 격리됩니다."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "macOS에서 Pro를 어떻게 받고, iOS 활성화는 어떻게 작동하나요?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "macOS에서 Pro를 받는 방법은 두 가지입니다. Mac App Store 에디션은 Apple이 청구하는 월간 또는 연간 구독이며, Apple ID 구독 설정에서 관리 또는 취소할 수 있고, 갱신 및 환불은 Apple에서 처리합니다. 공인 에디션은 pay.foxterm.app에서 구매한 활성화 코드로 잠금 해제하는 직접 서명된 macOS 빌드입니다. 어떤 Mac 에디션을 선택하든 iOS 앱은 자동으로 활성화되며, iOS 앱 자체는 App Store에서 무료입니다."
+                }
               }
             ]
           }
@@ -476,9 +508,7 @@
           class="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-4 sm:mb-6 leading-[1.15]"
         >
           인프라를 완벽하게 다루세요
-          <span class="orange-gradient-text"
-            >FoxTerm</span
-          >
+          <span class="orange-gradient-text">FoxTerm</span>
         </h1>
 
         <!-- Feature Tags -->
@@ -514,8 +544,8 @@
         <p
           class="text-base sm:text-lg md:text-xl text-zinc-300 mb-8 sm:mb-10 max-w-2xl mx-auto leading-relaxed"
         >
-          macOS와 iOS를 위한 올인원 네이티브 터미널. SSH, SFTP, Metal
-          가속 VNC, 실시간 Linux 모니터링, 시각적 Docker/Podman 관리까지 — 안전하고
+          macOS와 iOS를 위한 올인원 네이티브 터미널. SSH, SFTP, Metal 가속 VNC,
+          실시간 Linux 모니터링, 시각적 Docker/Podman 관리까지 — 안전하고
           번개처럼 빠르며, 실행하는 순간 바로 쓸 수 있습니다.
         </p>
 
@@ -2099,7 +2129,9 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
       </section>
 
       <!-- Trust / Key Numbers Band -->
-      <section class="max-w-6xl mx-auto px-4 sm:px-6 pb-4 sm:pb-6 relative z-10">
+      <section
+        class="max-w-6xl mx-auto px-4 sm:px-6 pb-4 sm:pb-6 relative z-10"
+      >
         <div
           class="grid grid-cols-2 lg:grid-cols-4 gap-px overflow-hidden rounded-2xl border border-zinc-800/80 bg-zinc-800/60"
         >
@@ -2731,8 +2763,8 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
             하나의 툴킷
           </h2>
           <p class="text-zinc-400 text-sm sm:text-base">
-            대기 중인 운영 장애 대응부터 주말의 홈랩 실험까지, FoxTerm은
-            머신을 다루는 방식에 맞춰 적응합니다.
+            대기 중인 운영 장애 대응부터 주말의 홈랩 실험까지, FoxTerm은 머신을
+            다루는 방식에 맞춰 적응합니다.
           </p>
         </div>
 
@@ -2804,8 +2836,8 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
               모바일 우선 관리자
             </h3>
             <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
-              네이티브 터치, 제스처, 단축키로 iPhone이나 iPad에서 전체
-              터미널을 조작하고 파일을 옮기며 컨테이너를 재시작하세요.
+              네이티브 터치, 제스처, 단축키로 iPhone이나 iPad에서 전체 터미널을
+              조작하고 파일을 옮기며 컨테이너를 재시작하세요.
             </p>
           </div>
         </div>
@@ -2904,9 +2936,9 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
             <span class="orange-gradient-text">Pro는 상한만 풀어줄 뿐.</span>
           </h2>
           <p class="text-zinc-400 text-sm sm:text-base">
-            Free는 SSH, SFTP, VNC, 실시간 텔레메트리, 컨테이너까지 모든
-            기능을 제공하며, 오직 노드 수에만 상한이 있습니다. Pro는 더 큰
-            플릿을 위해 그 상한을 풀어, 모든 기기에서 사용할 수 있습니다.
+            Free는 SSH, SFTP, VNC, 실시간 텔레메트리, 컨테이너까지 모든 기능을
+            제공하며, 오직 노드 수에만 상한이 있습니다. Pro는 더 큰 플릿을 위해
+            그 상한을 풀어, 모든 기기에서 사용할 수 있습니다.
           </p>
         </div>
 
@@ -2925,29 +2957,26 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
             <div class="flex items-baseline gap-2 mb-1">
               <span class="text-4xl font-extrabold text-white">$0</span>
             </div>
-            <p class="text-xs text-zinc-400 mb-6">
-              모든 기능, 노드 수만 제한
-            </p>
+            <p class="text-xs text-zinc-400 mb-6">모든 기능, 노드 수만 제한</p>
             <ul class="space-y-3 text-xs sm:text-sm text-zinc-300 mb-8 flex-1">
               <li class="flex items-start gap-2.5">
                 <span class="text-emerald-400 mt-0.5">✓</span>분할 패인, 탭,
                 스니펫을 갖춘 완전한 SSH 터미널
               </li>
               <li class="flex items-start gap-2.5">
-                <span class="text-emerald-400 mt-0.5">✓</span>SFTP 전송,
-                Metal VNC, 실시간 텔레메트리
+                <span class="text-emerald-400 mt-0.5">✓</span>SFTP 전송, Metal
+                VNC, 실시간 텔레메트리
               </li>
               <li class="flex items-start gap-2.5">
                 <span class="text-emerald-400 mt-0.5">✓</span>시각적 Docker
                 &amp; Podman 관리
               </li>
               <li class="flex items-start gap-2.5">
-                <span class="text-emerald-400 mt-0.5">✓</span>Secure Enclave
-                키, 제로 텔레메트리, iCloud 동기화
+                <span class="text-emerald-400 mt-0.5">✓</span>Secure Enclave 키,
+                제로 텔레메트리, iCloud 동기화
               </li>
               <li class="flex items-start gap-2.5">
-                <span class="text-amber-400 mt-0.5">~</span>노드(서버) 수
-                상한
+                <span class="text-amber-400 mt-0.5">~</span>노드(서버) 수 상한
               </li>
             </ul>
             <a
@@ -2983,10 +3012,12 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
             <p class="text-xs text-zinc-400 mb-6">
               Free의 모든 기능, 노드 상한 해제
             </p>
-            <ul class="space-y-3 text-xs sm:text-sm text-zinc-300 mb-8 flex-1 relative">
+            <ul
+              class="space-y-3 text-xs sm:text-sm text-zinc-300 mb-8 flex-1 relative"
+            >
               <li class="flex items-start gap-2.5">
-                <span class="text-emerald-400 mt-0.5">✓</span>Free 빌드의
-                모든 기능
+                <span class="text-emerald-400 mt-0.5">✓</span>Free 빌드의 모든
+                기능
               </li>
               <li class="flex items-start gap-2.5">
                 <span class="text-emerald-400 mt-0.5">✓</span>성장하는 플릿을
@@ -2997,12 +3028,12 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
                 macOS + iOS/iPadOS에서 범용
               </li>
               <li class="flex items-start gap-2.5">
-                <span class="text-emerald-400 mt-0.5">✓</span>향후 모든 Pro
-                기능 업데이트
+                <span class="text-emerald-400 mt-0.5">✓</span>향후 모든 Pro 기능
+                업데이트
               </li>
               <li class="flex items-start gap-2.5">
-                <span class="text-emerald-400 mt-0.5">✓</span>개발자에게
-                직접 받는 우선 지원
+                <span class="text-emerald-400 mt-0.5">✓</span>개발자에게 직접
+                받는 우선 지원
               </li>
             </ul>
             <a
@@ -3021,8 +3052,8 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
               macOS에서 Pro를 해제하는 두 가지 방법
             </h3>
             <p class="text-xs sm:text-sm text-zinc-400">
-              두 Mac 에디션 모두 iOS 앱을 자동으로 활성화합니다 — Pro를
-              한 번 구매하면 Mac, iPhone, iPad에서 함께 사용하세요.
+              두 Mac 에디션 모두 iOS 앱을 자동으로 활성화합니다 — Pro를 한 번
+              구매하면 Mac, iPhone, iPad에서 함께 사용하세요.
             </p>
           </div>
 
@@ -3039,10 +3070,12 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
               <h4 class="text-base font-bold text-white mb-4">
                 Mac App Store 에디션
               </h4>
-              <ul class="space-y-2.5 text-xs sm:text-sm text-zinc-300 mb-7 flex-1">
+              <ul
+                class="space-y-2.5 text-xs sm:text-sm text-zinc-300 mb-7 flex-1"
+              >
                 <li class="flex items-start gap-2.5">
-                  <span class="text-emerald-400 mt-0.5">✓</span>Apple이
-                  청구하는 월간 또는 연간 구독
+                  <span class="text-emerald-400 mt-0.5">✓</span>Apple이 청구하는
+                  월간 또는 연간 구독
                 </li>
                 <li class="flex items-start gap-2.5">
                   <span class="text-emerald-400 mt-0.5">✓</span>Universal
@@ -3078,18 +3111,20 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
               <h4 class="text-base font-bold text-white mb-4 relative">
                 macOS 공증 버전
               </h4>
-              <ul class="space-y-2.5 text-xs sm:text-sm text-zinc-300 mb-7 flex-1 relative">
+              <ul
+                class="space-y-2.5 text-xs sm:text-sm text-zinc-300 mb-7 flex-1 relative"
+              >
                 <li class="flex items-start gap-2.5">
-                  <span class="text-emerald-400 mt-0.5">✓</span>직접 설치,
-                  서명 및 공증된 macOS 빌드 — App Store 불필요
+                  <span class="text-emerald-400 mt-0.5">✓</span>직접 설치, 서명
+                  및 공증된 macOS 빌드 — App Store 불필요
                 </li>
                 <li class="flex items-start gap-2.5">
-                  <span class="text-emerald-400 mt-0.5">✓</span>pay.foxterm.app에서
-                  직접 구매한 활성화 코드로 해제
+                  <span class="text-emerald-400 mt-0.5">✓</span
+                  >pay.foxterm.app에서 직접 구매한 활성화 코드로 해제
                 </li>
                 <li class="flex items-start gap-2.5">
-                  <span class="text-emerald-400 mt-0.5">✓</span>코드로 iOS
-                  앱도 자동 활성화
+                  <span class="text-emerald-400 mt-0.5">✓</span>코드로 iOS 앱도
+                  자동 활성화
                 </li>
               </ul>
               <a
@@ -3103,10 +3138,12 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
             </div>
           </div>
 
-          <p class="text-center text-[11px] sm:text-xs text-zinc-500 mt-6 max-w-2xl mx-auto">
+          <p
+            class="text-center text-[11px] sm:text-xs text-zinc-500 mt-6 max-w-2xl mx-auto"
+          >
             iOS 앱은 App Store에서 무료이며, 두 Mac 에디션 중 어느 하나에서
-            Pro가 활성화되면 자동으로 잠금이 해제됩니다. 연결 프로필과
-            설정은 비공개 iCloud 컨테이너를 통해 기기 간에 동기화됩니다.
+            Pro가 활성화되면 자동으로 잠금이 해제됩니다. 연결 프로필과 설정은
+            비공개 iCloud 컨테이너를 통해 기기 간에 동기화됩니다.
           </p>
         </div>
       </section>
@@ -3248,12 +3285,11 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
             </h3>
             <div class="text-xs sm:text-sm text-zinc-400 leading-relaxed pl-6">
               <p>
-                FoxTerm은 Apple 플랫폼을 위해 네이티브로 제작되었습니다.
-                macOS 14.0 이상 및 iOS/iPadOS 17.0 이상에서 실행되며
-                iPhone과 iPad를 포함하고, 하나의 Universal Purchase로 모든
-                기기를 해제합니다. Windows, Android, Linux 데스크톱 빌드는
-                없습니다 — FoxTerm은 오직 네이티브 Apple 스택만을 위해
-                설계되었습니다.
+                FoxTerm은 Apple 플랫폼을 위해 네이티브로 제작되었습니다. macOS
+                14.0 이상 및 iOS/iPadOS 17.0 이상에서 실행되며 iPhone과 iPad를
+                포함하고, 하나의 Universal Purchase로 모든 기기를 해제합니다.
+                Windows, Android, Linux 데스크톱 빌드는 없습니다 — FoxTerm은
+                오직 네이티브 Apple 스택만을 위해 설계되었습니다.
               </p>
             </div>
           </div>
@@ -3270,10 +3306,10 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
             </h3>
             <div class="text-xs sm:text-sm text-zinc-400 leading-relaxed pl-6">
               <p>
-                FoxTerm은 SSH, SFTP, VNC 연결을 지원하고, SSH를 통해 Docker
-                및 Podman 엔진을 관리합니다. Ed25519 같은 최신 암호와 키
-                형식, 분할 패인 터미널 세션, 명령 스니펫, 드래그 앤 드롭 SFTP
-                전송, 컨테이너·이미지·볼륨의 시각적 관리를 제공합니다.
+                FoxTerm은 SSH, SFTP, VNC 연결을 지원하고, SSH를 통해 Docker 및
+                Podman 엔진을 관리합니다. Ed25519 같은 최신 암호와 키 형식, 분할
+                패인 터미널 세션, 명령 스니펫, 드래그 앤 드롭 SFTP 전송,
+                컨테이너·이미지·볼륨의 시각적 관리를 제공합니다.
               </p>
             </div>
           </div>
@@ -3291,10 +3327,10 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
             <div class="text-xs sm:text-sm text-zinc-400 leading-relaxed pl-6">
               <p>
                 아니요. FoxTerm은 기기에서 직접 사용자의 서버로 연결하며
-                트래픽을 우회하지 않습니다. 분석, 활동 추적, 연결 로그가
-                없는 엄격한 제로 텔레메트리 정책을 적용합니다. 자격 증명과
-                개인 키는 기기 내에서 암호화되어 Apple Keychain과 Secure
-                Enclave 안에 격리됩니다.
+                트래픽을 우회하지 않습니다. 분석, 활동 추적, 연결 로그가 없는
+                엄격한 제로 텔레메트리 정책을 적용합니다. 자격 증명과 개인 키는
+                기기 내에서 암호화되어 Apple Keychain과 Secure Enclave 안에
+                격리됩니다.
               </p>
             </div>
           </div>
@@ -3312,14 +3348,13 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
             <div class="text-xs sm:text-sm text-zinc-400 leading-relaxed pl-6">
               <p>
                 macOS에서 Pro를 받는 방법은 두 가지입니다.
-                <strong class="text-zinc-200">Mac App Store 에디션</strong
-                >은 Apple이 청구하는 월간 또는 연간 구독으로, Apple ID 구독
-                설정에서 관리하거나 취소할 수 있으며 갱신과 환불은 Apple이
-                처리합니다. <strong class="text-zinc-200">공증 버전</strong
-                >은 직접 설치되는 서명된 macOS 빌드로, pay.foxterm.app에서
-                구매한 활성화 코드로 해제합니다. 어떤 Mac 에디션을 선택하든
-                iOS 앱은 자동으로 활성화되며, iOS 앱 자체는 App Store에서
-                무료입니다.
+                <strong class="text-zinc-200">Mac App Store 에디션</strong>은
+                Apple이 청구하는 월간 또는 연간 구독으로, Apple ID 구독 설정에서
+                관리하거나 취소할 수 있으며 갱신과 환불은 Apple이 처리합니다.
+                <strong class="text-zinc-200">공증 버전</strong>은 직접 설치되는
+                서명된 macOS 빌드로, pay.foxterm.app에서 구매한 활성화 코드로
+                해제합니다. 어떤 Mac 에디션을 선택하든 iOS 앱은 자동으로
+                활성화되며, iOS 앱 자체는 App Store에서 무료입니다.
               </p>
             </div>
           </div>
@@ -3343,8 +3378,8 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
           <p
             class="text-xs sm:text-base text-zinc-400 mb-6 sm:mb-8 max-w-lg mx-auto"
           >
-            Mac · iPhone · iPad — 모든 기능을 무료로 시작하고, Pro를
-            구매하면 모든 기기에서 함께 잠금이 해제됩니다.
+            Mac · iPhone · iPad — 모든 기능을 무료로 시작하고, Pro를 구매하면
+            모든 기기에서 함께 잠금이 해제됩니다.
           </p>
           <div
             class="flex flex-col sm:flex-row items-center justify-center gap-3"
@@ -3385,7 +3420,9 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
             </a>
           </div>
 
-          <p class="text-center text-[11px] text-zinc-500 mt-4 max-w-xl mx-auto">
+          <p
+            class="text-center text-[11px] text-zinc-500 mt-4 max-w-xl mx-auto"
+          >
             공증된 빌드는 서명·공증되어 App Store 외부에서 직접 설치됩니다 —
             <a
               href="https://pay.foxterm.app/"
