@@ -187,30 +187,42 @@
               {
                 "@type": "ListItem",
                 "position": 2,
-                "name": "Arquitetura",
-                "item": "https://foxterm.app/pt-br/#architecture"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "Segurança",
-                "item": "https://foxterm.app/pt-br/#security"
-              },
-              {
-                "@type": "ListItem",
-                "position": 4,
                 "name": "Recursos",
                 "item": "https://foxterm.app/pt-br/#features"
               },
               {
                 "@type": "ListItem",
+                "position": 3,
+                "name": "Casos de uso",
+                "item": "https://foxterm.app/pt-br/#use-cases"
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Arquitetura",
+                "item": "https://foxterm.app/pt-br/#architecture"
+              },
+              {
+                "@type": "ListItem",
                 "position": 5,
+                "name": "Segurança",
+                "item": "https://foxterm.app/pt-br/#security"
+              },
+              {
+                "@type": "ListItem",
+                "position": 6,
+                "name": "Preços",
+                "item": "https://foxterm.app/pt-br/#pricing"
+              },
+              {
+                "@type": "ListItem",
+                "position": 7,
                 "name": "Perguntas Frequentes",
                 "item": "https://foxterm.app/pt-br/#faq"
               },
               {
                 "@type": "ListItem",
-                "position": 6,
+                "position": 8,
                 "name": "Baixar",
                 "item": "https://foxterm.app/pt-br/#download"
               }
@@ -257,6 +269,38 @@
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "O FoxTerm não é um wrapper de Electron. Ele é projetado do zero com Swift nativo, aceleração de hardware Metal e bibliotecas nativas em C (OpenSSL, libssh, libvncclient), entregando inicialização quase instantânea, consumo ultrabaixo de recursos e otimização nativa para iOS."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Quais plataformas e sistemas operacionais são suportados?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "O FoxTerm é construído nativamente para plataformas Apple: macOS 14.0 ou superior e iOS/iPadOS 17.0 ou superior, incluindo iPhone e iPad. Um único Universal Purchase desbloqueia o app em todos os dispositivos. Não há build para Windows, Android ou Linux desktop."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Quais protocolos e métodos de autenticação são suportados?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "O FoxTerm suporta SSH, SFTP e conexões VNC, e gerencia engines Docker e Podman via SSH. Inclui cifras modernas e tipos de chave como Ed25519, sessões de terminal com painéis divididos, snippets de comandos, transferências SFTP por arrastar e soltar e gerenciamento visual de contêineres, imagens e volumes."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "O FoxTerm coleta dados ou roteia minhas conexões pelos seus servidores?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Não. O FoxTerm conecta diretamente do seu dispositivo aos seus próprios servidores e nunca faz proxy do tráfego. Aplica uma política rigorosa de zero telemetria sem análises, rastreamento de atividade ou registros de conexão. Credenciais e chaves são criptografadas no dispositivo e isoladas no Apple Keychain e Secure Enclave."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Como obtenho o Pro no macOS e como funciona a ativação no iOS?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Existem duas formas de obter o Pro no macOS. A edição Mac App Store é uma assinatura mensal ou anual cobrada pela Apple, gerenciada nas configurações de assinatura do seu Apple ID, com renovações e reembolsos tratados pela Apple. A edição notarizada é uma build direta e assinada para macOS desbloqueada com um código de ativação comprado em pay.foxterm.app. Qualquer que seja a edição para Mac escolhida, o app iOS é ativado automaticamente; o app iOS em si é grátis na App Store."
                 }
               }
             ]
