@@ -270,6 +270,38 @@
                   "@type": "Answer",
                   "text": "FoxTerm は Electron のラッパーではありません。ネイティブ Swift、Metal のハードウェア加速、C ネイティブのライブラリ（OpenSSL、libssh、libvncclient）を使ってゼロから設計されており、瞬時に近い起動、極めて低いリソース使用、iOS 向けのネイティブ最適化を実現しています。"
                 }
+              },
+              {
+                "@type": "Question",
+                "name": "どのプラットフォームに対応していますか？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "FoxTerm は Apple プラットフォームのためにネイティブに構築されています。macOS 14.0 以降、iOS/iPadOS 17.0 以降で動作し、iPhone と iPad に対応、ひとつの Universal Purchase ですべてのデバイスがアンロックされます。Windows、Android、Linux デスクトップ版はありません。"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "どのプロトコルと認証方式に対応していますか？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "FoxTerm は SSH、SFTP、VNC 接続に対応し、SSH 経由で Docker と Podman エンジンを管理します。Ed25519 などの最新の暗号と鍵タイプ、分割ペーターミナルセッション、コマンドスニペット、ドラッグ＆ドロップ SFTP 転送、コンテナ・イメージ・ボリュームの視覚的管理を搭載しています。"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "FoxTerm はデータを収集したり、接続をサーバー経由でルーティングしたりしますか？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "いいえ。FoxTerm はデバイスから直接サーバーに接続し、トラフィックをプロキシすることはありません。厳格なテレメトリゼロのポリシーを適用し、分析、アクティビティ追跡、接続ログは一切ありません。認証情報と秘密鍵はデバイス上で暗号化され、Apple Keychain と Secure Enclave 内に隔離されています。"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "macOS で Pro を入手するにはどうすればよいですか？iOS のアクティベーションはどのように機能しますか？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "macOS で Pro を入手するには2つの方法があります。Mac App Store エディションは、Apple 経由の月額または年額のサブスクリプションです。Apple ID のサブスクリプション設定で管理・キャンセルでき、更新と返金は Apple が処理します。公認版は、pay.foxterm.app で購入したアクティベーションコードでアンロックする、直接配布の署名済み macOS ビルドです。どちらの Mac エディションを選んでも、iOS アプリは自動的にアクティベートされます。iOS アプリ自体は App Store で無料です。"
+                }
               }
             ]
           }
