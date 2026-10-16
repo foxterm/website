@@ -9,9 +9,9 @@
             <sparkle:version>2022610170059</sparkle:version>
             <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/foxterm/FoxTerm/releases/latest/download/FoxTerm-1.0.1.dmg" length="28477492" type="application/octet-stream" sparkle:edSignature="6hp4D+ftBPL7/KRlDMBisrUl1WUUgqsS3XvreXUd5dvzCeWI2Tq/qLzKrjZitMh9MFq/XmAkNT0l9vCpkYOeAA=="/>
+            <enclosure url="https://github.com/foxterm/FoxTerm/releases/download/v1.0.1/FoxTerm-1.0.1.dmg" length="28477492" type="application/octet-stream" sparkle:edSignature="6hp4D+ftBPL7/KRlDMBisrUl1WUUgqsS3XvreXUd5dvzCeWI2Tq/qLzKrjZitMh9MFq/XmAkNT0l9vCpkYOeAA=="/>
             <sparkle:deltas>
-                <enclosure url="https://github.com/foxterm/FoxTerm/releases/latest/download/FoxTerm2022610170059-2022610151910.delta" sparkle:deltaFrom="2022610151910" length="1045310" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="975840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="g8n4uYltrre9vgNhPYyRt0uHagw68S/K7DFuK32S10qdkF/tr7VfnkjCV5cx7NpRcQw4Qv2ZmZFgQhzQH0VaBA=="/>
+                <enclosure url="https://github.com/foxterm/FoxTerm/releases/download/v1.0.1/FoxTerm2022610170059-2022610151910.delta" sparkle:deltaFrom="2022610151910" length="1045310" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="975840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="g8n4uYltrre9vgNhPYyRt0uHagw68S/K7DFuK32S10qdkF/tr7VfnkjCV5cx7NpRcQw4Qv2ZmZFgQhzQH0VaBA=="/>
             </sparkle:deltas>
         </item>
         <item>
@@ -21,7 +21,7 @@
             <sparkle:version>2022610151910</sparkle:version>
             <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/foxterm/FoxTerm/releases/latest/download/FoxTerm-1.0.0.dmg" length="28464904" type="application/octet-stream" sparkle:edSignature="kTgeb+1flEiuNiia2mKU1K8Q0qSar6HssZmL0uXHPfpCcIHCUbHFaPZy+Sh1f2pqV3veIEda+fKl02Jo4KJQDA=="/>
+            <enclosure url="https://github.com/foxterm/FoxTerm/releases/download/v1.0.0/FoxTerm-1.0.0.dmg" length="28464904" type="application/octet-stream" sparkle:edSignature="kTgeb+1flEiuNiia2mKU1K8Q0qSar6HssZmL0uXHPfpCcIHCUbHFaPZy+Sh1f2pqV3veIEda+fKl02Jo4KJQDA=="/>
         </item>
     </channel>
 </rss>
