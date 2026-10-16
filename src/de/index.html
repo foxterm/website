@@ -130,7 +130,7 @@
             "offers": {
               "@type": "AggregateOffer",
               "priceCurrency": "USD",
-              "offerCount": "2",
+              "offerCount": "3",
               "offers": [
                 {
                   "@type": "Offer",
@@ -141,9 +141,15 @@
                 },
                 {
                   "@type": "Offer",
-                  "name": "FoxTerm Pro-Abo",
+                  "name": "FoxTerm Pro — Mac App Store Subscription",
                   "category": "Subscription",
-                  "description": "Unbegrenzte Nodes; identischer Funktionsumfang wie die kostenlose Version"
+                  "description": "Monatliches oder jährliches Abo, abgerechnet von Apple; unbegrenzte Nodes; Universal Purchase aktiviert die iOS-App automatisch"
+                },
+                {
+                  "@type": "Offer",
+                  "name": "FoxTerm Pro — Notarized Edition (Activation Code)",
+                  "category": "DirectLicense",
+                  "description": "Direkter, signierter und notarisierter macOS-Build, freigeschaltet mit einem Aktivierungscode von pay.foxterm.app; unbegrenzte Nodes; der Code aktiviert auch die iOS-App automatisch"
                 }
               ]
             },
@@ -181,30 +187,42 @@
               {
                 "@type": "ListItem",
                 "position": 2,
-                "name": "Architektur",
-                "item": "https://foxterm.app/de/#architecture"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "Sicherheit",
-                "item": "https://foxterm.app/de/#security"
-              },
-              {
-                "@type": "ListItem",
-                "position": 4,
                 "name": "Funktionen",
                 "item": "https://foxterm.app/de/#features"
               },
               {
                 "@type": "ListItem",
+                "position": 3,
+                "name": "Einsatzbereiche",
+                "item": "https://foxterm.app/de/#use-cases"
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Architektur",
+                "item": "https://foxterm.app/de/#architecture"
+              },
+              {
+                "@type": "ListItem",
                 "position": 5,
+                "name": "Sicherheit",
+                "item": "https://foxterm.app/de/#security"
+              },
+              {
+                "@type": "ListItem",
+                "position": 6,
+                "name": "Preise",
+                "item": "https://foxterm.app/de/#pricing"
+              },
+              {
+                "@type": "ListItem",
+                "position": 7,
                 "name": "FAQ",
                 "item": "https://foxterm.app/de/#faq"
               },
               {
                 "@type": "ListItem",
-                "position": 6,
+                "position": 8,
                 "name": "Download",
                 "item": "https://foxterm.app/de/#download"
               }
@@ -251,6 +269,38 @@
                 "acceptedAnswer": {
                   "@type": "Answer",
                   "text": "FoxTerm ist kein Electron-Wrapper. Es wurde von Grund auf mit Nativem Swift, Metal-Hardwarebeschleunigung und C-nativen Bibliotheken (OpenSSL, libssh, libvncclient) entwickelt und bietet nahezu sofortigen Start, extrem geringen Ressourcenverbrauch und native iOS-Optimierung."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Welche Plattformen und Betriebssysteme werden unterstützt?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "FoxTerm ist nativ für Apple-Plattformen entwickelt: macOS 14.0 oder neuer sowie iOS/iPadOS 17.0 oder neuer, inklusive iPhone und iPad. Ein einziges Universal Purchase schaltet die App auf jedem Gerät frei. Es gibt keinen Windows-, Android- oder Linux-Desktop-Build."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Welche Protokolle und Authentifizierungsmethoden werden unterstützt?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "FoxTerm unterstützt SSH-, SFTP- und VNC-Verbindungen und verwaltet Docker- und Podman-Engines über SSH. Es beherrscht moderne Chiffren und Schlüsseltypen wie Ed25519, Split-Pane-Terminal-Sitzungen, Befehls-Snippets, Drag-and-Drop-SFTP-Übertragungen sowie die visuelle Verwaltung von Containern, Images und Volumes."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Erhebt FoxTerm Daten oder leitet meine Verbindungen über seine Server?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Nein. FoxTerm verbindet sich direkt von deinem Gerät mit deinen eigenen Servern und leitet keinen Datenverkehr weiter. Es erzwingt eine strikte Null-Telemetrie-Richtlinie ohne Analysen, Aktivitätsverfolgung oder Verbindungs-Logs. Zugangsdaten und Schlüssel werden auf dem Gerät verschlüsselt und in Apples Keychain und Secure Enclave isoliert."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Wie erhalte ich Pro auf macOS und wie funktioniert die iOS-Aktivierung?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Es gibt zwei Wege, Pro auf macOS zu erhalten. Die Mac App Store Edition ist ein monatliches oder jährliches Abo, das von Apple abgerechnet wird; verwalten oder kündigen in deinen Apple-ID-Abo-Einstellungen, Verlängerungen und Erstattungen übernimmt Apple. Die Notarized Edition ist ein direkter, signierter macOS-Build, den du mit einem Aktivierungscode freischaltest, den du bei pay.foxterm.app erwirbst. Welche Mac-Edition du auch wählst, die iOS-App wird automatisch aktiviert; die iOS-App selbst ist im App Store kostenlos."
                 }
               }
             ]
@@ -308,11 +358,17 @@
           <a href="#features" class="hover:text-white transition-colors"
             >Funktionen</a
           >
+          <a href="#use-cases" class="hover:text-white transition-colors"
+            >Einsatzbereiche</a
+          >
           <a href="#architecture" class="hover:text-white transition-colors"
             >Architektur</a
           >
           <a href="#security" class="hover:text-white transition-colors"
             >Sicherheit</a
+          >
+          <a href="#pricing" class="hover:text-white transition-colors"
+            >Preise</a
           >
           <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
         </div>
@@ -406,15 +462,6 @@
           </div>
 
           <a
-            href="https://pay.foxterm.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="relative h-8 px-3.5 text-[11px] font-semibold rounded-lg bg-transparent border border-fox-500/50 text-fox-500 hover:bg-fox-500/10 transition-all duration-200 hidden md:flex items-center justify-center"
-          >
-            Pro kaufen
-          </a>
-
-          <a
             href="#download"
             class="relative h-8 px-3.5 text-[11px] font-semibold rounded-lg bg-fox-500 hover:bg-fox-600 border border-fox-400/30 text-white transition-all duration-200 flex items-center justify-center shadow-[0_0_15px_rgba(255,94,0,0.25)] hover:shadow-[0_0_20px_rgba(255,94,0,0.4)] active:scale-95 overflow-hidden backdrop-blur-md"
           >
@@ -435,7 +482,7 @@
         <div
           class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-fox-500/10 border border-fox-500/20 text-fox-500 text-xs font-mono font-medium mb-6 sm:mb-8"
         >
-          Natives Apple-Ökosystem · Für Entwickler gemacht
+          100&nbsp;% nativ für Apple-Plattformen · Keine Telemetrie · Universal&nbsp;Purchase
         </div>
 
         <!-- App Logo Icon -->
@@ -460,7 +507,7 @@
         <h1
           class="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-4 sm:mb-6 leading-[1.15]"
         >
-          Deine Infrastruktur, mühelos im Griff — mit
+          Deine Infrastruktur, fest im Griff — mit
           <span class="orange-gradient-text">FoxTerm</span>
         </h1>
 
@@ -497,10 +544,10 @@
         <p
           class="text-base sm:text-lg md:text-xl text-zinc-300 mb-8 sm:mb-10 max-w-2xl mx-auto leading-relaxed"
         >
-          Ein hochperformantes natives Terminal für moderne Entwickler. SSH,
-          SFTP, Metal-beschleunigtes VNC, Container-Verwaltung und
-          Echtzeit-Systemüberwachung — ein Werkzeug für deinen gesamten
-          Remote-Workflow, bereit in dem Moment, in dem du es öffnest.
+          Das native All-in-One-Terminal für macOS und iOS. SSH, SFTP,
+          Metal-beschleunigtes VNC, Echtzeit-Überwachung von Linux und
+          visuelle Docker/Podman-Verwaltung — sicher, blitzschnell und bereit
+          in dem Moment, in dem du es öffnest.
         </p>
 
         <!-- CTA Button -->
@@ -2084,6 +2131,62 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
         </div>
       </section>
 
+      <!-- Trust / Key Numbers Band -->
+      <section class="max-w-6xl mx-auto px-4 sm:px-6 pb-4 sm:pb-6 relative z-10">
+        <div
+          class="grid grid-cols-2 lg:grid-cols-4 gap-px overflow-hidden rounded-2xl border border-zinc-800/80 bg-zinc-800/60"
+        >
+          <div class="bg-zinc-950/80 px-4 py-6 sm:py-7 text-center">
+            <div
+              class="text-2xl sm:text-3xl font-extrabold font-mono orange-gradient-text"
+            >
+              4-in-1
+            </div>
+            <div
+              class="mt-1.5 text-[11px] sm:text-xs text-zinc-400 leading-snug"
+            >
+              SSH · SFTP · VNC &amp; Container in einem einzigen Fenster
+            </div>
+          </div>
+          <div class="bg-zinc-950/80 px-4 py-6 sm:py-7 text-center">
+            <div
+              class="text-2xl sm:text-3xl font-extrabold font-mono orange-gradient-text"
+            >
+              100%
+            </div>
+            <div
+              class="mt-1.5 text-[11px] sm:text-xs text-zinc-400 leading-snug"
+            >
+              Zugangsdaten &amp; Schlüssel bleiben auf deinem Gerät
+            </div>
+          </div>
+          <div class="bg-zinc-950/80 px-4 py-6 sm:py-7 text-center">
+            <div
+              class="text-2xl sm:text-3xl font-extrabold font-mono orange-gradient-text"
+            >
+              0
+            </div>
+            <div
+              class="mt-1.5 text-[11px] sm:text-xs text-zinc-400 leading-snug"
+            >
+              Telemetrie, Analysen oder Tracker von Drittanbietern
+            </div>
+          </div>
+          <div class="bg-zinc-950/80 px-4 py-6 sm:py-7 text-center">
+            <div
+              class="text-2xl sm:text-3xl font-extrabold font-mono orange-gradient-text"
+            >
+              1
+            </div>
+            <div
+              class="mt-1.5 text-[11px] sm:text-xs text-zinc-400 leading-snug"
+            >
+              Eine Apple-ID schaltet Mac, iPhone &amp; iPad frei
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Architecture & Design Section -->
       <section
         id="architecture"
@@ -2666,6 +2769,107 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
         </div>
       </section>
 
+      <!-- Use Cases / Who It's For -->
+      <section
+        id="use-cases"
+        class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20 border-t border-zinc-900"
+      >
+        <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <div
+            class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-fox-500/10 border border-fox-500/20 text-fox-500 text-xs font-mono font-medium mb-4"
+          >
+            Gemacht für deine Arbeitsweise
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight mb-4">
+            Ein Werkzeugkasten für jeden
+            <span class="orange-gradient-text">Remote-Workflow</span>
+          </h2>
+          <p class="text-zinc-400 text-sm sm:text-base">
+            Vom On-Call-Einsatz in der Produktion bis zum Tüfteln am Wochenende
+            im Homelab — FoxTerm passt sich deiner Art an, Maschinen zu
+            verwalten.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- SRE / DevOps -->
+          <div
+            class="p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 hover:border-fox-500/40 transition-all flex flex-col"
+          >
+            <div
+              class="w-10 h-10 rounded-xl bg-fox-500/10 text-fox-500 flex items-center justify-center mb-5 font-mono text-xs font-bold"
+            >
+              OPS
+            </div>
+            <h3 class="text-base font-bold mb-2 text-white">
+              SRE &amp; DevOps On-Call
+            </h3>
+            <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+              Öffne eine Sitzung in Sekunden, verfolge Container-Logs und lese
+              Live-Werte für CPU, Arbeitsspeicher und Disk-I/O, bevor aus einer
+              Kleinigkeit ein Ausfall wird.
+            </p>
+          </div>
+
+          <!-- Homelab -->
+          <div
+            class="p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 hover:border-fox-500/40 transition-all flex flex-col"
+          >
+            <div
+              class="w-10 h-10 rounded-xl bg-fox-500/10 text-fox-500 flex items-center justify-center mb-5 font-mono text-xs font-bold"
+            >
+              LAB
+            </div>
+            <h3 class="text-base font-bold mb-2 text-white">
+              Homelab &amp; Self-Hoster
+            </h3>
+            <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+              Betreibe Router, NAS-Geräte und Docker/Podman-Stacks von deinem
+              Mac oder Telefon aus — kein Jump-Host, kein Cloud-Gateway, kein
+              Mittelsmann.
+            </p>
+          </div>
+
+          <!-- Network / Edge -->
+          <div
+            class="p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 hover:border-fox-500/40 transition-all flex flex-col"
+          >
+            <div
+              class="w-10 h-10 rounded-xl bg-fox-500/10 text-fox-500 flex items-center justify-center mb-5 font-mono text-xs font-bold"
+            >
+              NET
+            </div>
+            <h3 class="text-base font-bold mb-2 text-white">
+              Netzwerk- &amp; Edge-Ingenieure
+            </h3>
+            <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+              Erreiche OpenWrt-, IoT- und Remote-Edge-Geräte über SSH, SFTP und
+              flüssiges Metal-VNC — selbst über eine unzuverlässige
+              Mobilfunkverbindung.
+            </p>
+          </div>
+
+          <!-- Mobile-first -->
+          <div
+            class="p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 hover:border-fox-500/40 transition-all flex flex-col"
+          >
+            <div
+              class="w-10 h-10 rounded-xl bg-fox-500/10 text-fox-500 flex items-center justify-center mb-5 font-mono text-xs font-bold"
+            >
+              MOB
+            </div>
+            <h3 class="text-base font-bold mb-2 text-white">
+              Mobile-First-Admins
+            </h3>
+            <p class="text-zinc-400 text-xs sm:text-sm leading-relaxed">
+              Steuere ein vollwertiges Terminal, übertrage Dateien und starte
+              einen Container neu vom iPhone oder iPad aus — mit nativem Touch,
+              Gesten und Shortcuts.
+            </p>
+          </div>
+        </div>
+      </section>
+
       <!-- Comparison Matrix Section -->
       <section
         class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20 border-t border-zinc-900"
@@ -2751,6 +2955,232 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
               </tr>
             </tbody>
           </table>
+        </div>
+      </section>
+
+      <!-- Pricing / Free vs Pro -->
+      <section
+        id="pricing"
+        class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20 border-t border-zinc-900"
+      >
+        <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <div
+            class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-fox-500/10 border border-fox-500/20 text-fox-500 text-xs font-mono font-medium mb-4"
+          >
+            Einfache, ehrliche Preise
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight mb-4">
+            Jede Funktion ist kostenlos.
+            <span class="orange-gradient-text">Pro hebt nur das Limit auf.</span>
+          </h2>
+          <p class="text-zinc-400 text-sm sm:text-base">
+            Free umfasst jede Fähigkeit — SSH, SFTP, VNC, Live-Telemetrie und
+            Container — einzig die Anzahl der Nodes ist begrenzt. Pro hebt
+            dieses Limit für größere Flotten auf, geräteübergreifend auf all
+            deinen Geräten.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          <!-- Free -->
+          <div
+            class="p-8 rounded-3xl bg-zinc-900/40 border border-zinc-800/80 flex flex-col"
+          >
+            <div class="flex items-center justify-between mb-6">
+              <h3 class="text-lg font-bold text-white">Free</h3>
+              <span
+                class="text-[10px] font-mono px-2.5 py-1 rounded-full bg-zinc-800 text-zinc-300 border border-zinc-700"
+                >Keine Kreditkarte nötig</span
+              >
+            </div>
+            <div class="flex items-baseline gap-2 mb-1">
+              <span class="text-4xl font-extrabold text-white">$0</span>
+            </div>
+            <p class="text-xs text-zinc-400 mb-6">
+              Jede Funktion, mit begrenzter Anzahl an Nodes
+            </p>
+            <ul class="space-y-3 text-xs sm:text-sm text-zinc-300 mb-8 flex-1">
+              <li class="flex items-start gap-2.5">
+                <span class="text-emerald-400 mt-0.5">✓</span>Vollwertiges
+                SSH-Terminal mit Split-Panes, Tabs und Snippets
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-emerald-400 mt-0.5">✓</span>SFTP-Übertragungen,
+                Metal-VNC und Echtzeit-Telemetrie
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-emerald-400 mt-0.5">✓</span>Visuelle Docker
+                &amp; Podman-Verwaltung
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-emerald-400 mt-0.5">✓</span>Secure-Enclave
+                Keys, keine Telemetrie, iCloud-Sync
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-amber-400 mt-0.5">~</span>Begrenzte Anzahl an
+                Nodes (Servern)
+              </li>
+            </ul>
+            <a
+              href="https://apps.apple.com/us/app/foxterm/id6760452891"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="block text-center px-6 py-3.5 rounded-xl bg-zinc-800/60 hover:bg-zinc-700/80 border border-zinc-700 hover:border-fox-500/50 text-zinc-100 hover:text-white font-semibold text-sm transition-all"
+            >
+              Kostenlos laden
+            </a>
+          </div>
+
+          <!-- Pro (highlighted) -->
+          <div
+            class="relative p-8 rounded-3xl bg-zinc-900/70 border border-fox-500/40 shadow-[0_0_50px_-18px_rgba(255,104,0,0.45)] flex flex-col overflow-hidden"
+          >
+            <div
+              class="absolute -right-12 -top-12 w-44 h-44 bg-fox-500/15 blur-3xl rounded-full pointer-events-none"
+            ></div>
+            <div class="flex items-center justify-between mb-6 relative">
+              <h3 class="text-lg font-bold text-white">FoxTerm Pro</h3>
+              <span
+                class="text-[10px] font-mono px-2.5 py-1 rounded-full bg-fox-500/15 text-fox-400 border border-fox-500/30"
+                >Empfohlen</span
+              >
+            </div>
+            <div class="flex items-baseline gap-2 mb-1 relative">
+              <span class="text-4xl font-extrabold orange-gradient-text"
+                >Unbegrenzte</span
+              >
+              <span class="text-sm text-zinc-400 font-medium">Nodes</span>
+            </div>
+            <p class="text-xs text-zinc-400 mb-6">
+              Alles aus Free, ohne Node-Limit
+            </p>
+            <ul class="space-y-3 text-xs sm:text-sm text-zinc-300 mb-8 flex-1 relative">
+              <li class="flex items-start gap-2.5">
+                <span class="text-emerald-400 mt-0.5">✓</span>Jede Funktion der
+                Free-Version
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-emerald-400 mt-0.5">✓</span>Unbegrenzte Nodes
+                (Server) für wachsende Flotten
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-emerald-400 mt-0.5">✓</span>Universell auf
+                macOS + iOS/iPadOS mit einer Apple-ID
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-emerald-400 mt-0.5">✓</span>Alle zukünftigen
+                Pro-Erweiterungen
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="text-emerald-400 mt-0.5">✓</span>Priorisierter
+                Support, direkt vom Entwickler
+              </li>
+            </ul>
+            <a
+              href="#pricing-options"
+              class="relative block text-center px-6 py-3.5 rounded-xl bg-fox-500 hover:bg-fox-600 text-white font-semibold text-sm transition-all shadow-lg shadow-fox-500/25"
+            >
+              So holst du dir Pro
+            </a>
+          </div>
+        </div>
+
+        <!-- Two Pro Purchase Channels -->
+        <div id="pricing-options" class="max-w-4xl mx-auto mt-10 sm:mt-12">
+          <div class="text-center mb-8">
+            <h3 class="text-lg sm:text-xl font-bold text-white mb-2">
+              Zwei Wege, Pro auf macOS freizuschalten
+            </h3>
+            <p class="text-xs sm:text-sm text-zinc-400">
+              Beide Mac-Editionen aktivieren die iOS-App automatisch — hol dir
+              Pro einmal und nutze es auf Mac, iPhone und iPad.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Channel 1: Mac App Store -->
+            <div
+              class="p-6 sm:p-7 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 flex flex-col"
+            >
+              <div
+                class="text-[10px] font-mono uppercase tracking-widest text-fox-500 mb-2"
+              >
+                Option 1 · Subscription
+              </div>
+              <h4 class="text-base font-bold text-white mb-4">
+                Mac App Store Edition
+              </h4>
+              <ul class="space-y-2.5 text-xs sm:text-sm text-zinc-300 mb-7 flex-1">
+                <li class="flex items-start gap-2.5">
+                  <span class="text-emerald-400 mt-0.5">✓</span>Monatliches oder
+                  jährliches Abo, abgerechnet von Apple
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-emerald-400 mt-0.5">✓</span>Universal
+                  Purchase — aktiviert macOS und iOS automatisch
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-emerald-400 mt-0.5">✓</span>Jederzeit
+                  kündbar; Verlängerungen und Erstattungen übernimmt Apple
+                </li>
+              </ul>
+              <a
+                href="https://apps.apple.com/us/app/foxterm/id6760452891"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block text-center px-6 py-3 rounded-xl bg-zinc-800/60 hover:bg-zinc-700/80 border border-zinc-700 hover:border-fox-500/50 text-zinc-100 hover:text-white font-semibold text-sm transition-all"
+              >
+                Im App Store ansehen
+              </a>
+            </div>
+
+            <!-- Channel 2: Notarized Edition -->
+            <div
+              class="relative p-6 sm:p-7 rounded-2xl bg-zinc-900/60 border border-fox-500/30 flex flex-col overflow-hidden"
+            >
+              <div
+                class="absolute -right-10 -top-10 w-36 h-36 bg-fox-500/10 blur-3xl rounded-full pointer-events-none"
+              ></div>
+              <div
+                class="text-[10px] font-mono uppercase tracking-widest text-fox-500 mb-2 relative"
+              >
+                Option 2 · Activation code
+              </div>
+              <h4 class="text-base font-bold text-white mb-4 relative">
+                Notarized Edition for macOS
+              </h4>
+              <ul class="space-y-2.5 text-xs sm:text-sm text-zinc-300 mb-7 flex-1 relative">
+                <li class="flex items-start gap-2.5">
+                  <span class="text-emerald-400 mt-0.5">✓</span>Direkter,
+                  signierter und notarisierter macOS-Build — kein App Store
+                  nötig
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-emerald-400 mt-0.5">✓</span>Freischaltung mit
+                  einem Aktivierungscode, direkt bei pay.foxterm.app erworben
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-emerald-400 mt-0.5">✓</span>Dein Code aktiviert
+                  auch die iOS-App automatisch
+                </li>
+              </ul>
+              <a
+                href="https://pay.foxterm.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="relative block text-center px-6 py-3 rounded-xl bg-fox-500 hover:bg-fox-600 text-white font-semibold text-sm transition-all shadow-lg shadow-fox-500/25"
+              >
+                Aktivierungscode erwerben
+              </a>
+            </div>
+          </div>
+
+          <p class="text-center text-[11px] sm:text-xs text-zinc-500 mt-6 max-w-2xl mx-auto">
+            Die iOS-App ist im App Store kostenlos und schaltet sich selbst
+            frei, sobald Pro auf einer der beiden Mac-Editionen aktiv ist.
+            Verbindungsprofile und Konfiguration werden geräteübergreifend über
+            deinen privaten iCloud-Container synchronisiert.
+          </p>
         </div>
       </section>
 
@@ -2887,6 +3317,104 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
               </p>
             </div>
           </div>
+
+          <!-- FAQ Item 5 -->
+          <div
+            class="p-5 sm:p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 transition-all hover:border-zinc-700"
+          >
+            <h3
+              class="text-base sm:text-lg font-bold text-white mb-2 flex items-start gap-2.5"
+            >
+              <span class="text-fox-500 font-mono flex-shrink-0">Q:</span>
+              Welche Plattformen und Betriebssysteme werden unterstützt?
+            </h3>
+            <div class="text-xs sm:text-sm text-zinc-400 leading-relaxed pl-6">
+              <p>
+                FoxTerm ist nativ für Apple-Plattformen entwickelt: Es läuft auf
+                macOS&nbsp;14.0 oder neuer sowie iOS/iPadOS&nbsp;17.0 oder
+                neuer, inklusive iPhone und iPad, wobei ein einziges
+                Universal&nbsp;Purchase jedes Gerät freischaltet. Es gibt keinen
+                Windows-, Android- oder Linux-Desktop-Build — FoxTerm ist
+                ausschließlich für den nativen Apple-Stack konstruiert.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 6 -->
+          <div
+            class="p-5 sm:p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 transition-all hover:border-zinc-700"
+          >
+            <h3
+              class="text-base sm:text-lg font-bold text-white mb-2 flex items-start gap-2.5"
+            >
+              <span class="text-fox-500 font-mono flex-shrink-0">Q:</span>
+              Welche Protokolle und Authentifizierungsmethoden werden
+              unterstützt?
+            </h3>
+            <div class="text-xs sm:text-sm text-zinc-400 leading-relaxed pl-6">
+              <p>
+                FoxTerm unterstützt SSH-, SFTP- und VNC-Verbindungen und
+                verwaltet Docker- und Podman-Engines über SSH. Es bringt
+                moderne Chiffren und Schlüsseltypen wie Ed25519 mit,
+                Split-Pane-Terminal-Sitzungen, Befehls-Snippets,
+                Drag-&amp;-Drop-SFTP-Übertragungen sowie die visuelle
+                Verwaltung von Containern, Images und Volumes.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 7 -->
+          <div
+            class="p-5 sm:p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 transition-all hover:border-zinc-700"
+          >
+            <h3
+              class="text-base sm:text-lg font-bold text-white mb-2 flex items-start gap-2.5"
+            >
+              <span class="text-fox-500 font-mono flex-shrink-0">Q:</span>
+              Erhebt FoxTerm Daten oder leitet meine Verbindungen über seine
+              Server?
+            </h3>
+            <div class="text-xs sm:text-sm text-zinc-400 leading-relaxed pl-6">
+              <p>
+                Nein. FoxTerm verbindet sich direkt von deinem Gerät mit deinen
+                eigenen Servern und leitet deinen Datenverkehr niemals weiter.
+                Es erzwingt eine strikte Null-Telemetrie-Richtlinie — keine
+                Analysen, keine Aktivitätsverfolgung und keine
+                Verbindungs-Logs. Zugangsdaten und Private-Keys werden auf dem
+                Gerät verschlüsselt und in Apples Keychain und Secure Enclave
+                isoliert.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ Item 8 -->
+          <div
+            class="p-5 sm:p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800/80 transition-all hover:border-zinc-700"
+          >
+            <h3
+              class="text-base sm:text-lg font-bold text-white mb-2 flex items-start gap-2.5"
+            >
+              <span class="text-fox-500 font-mono flex-shrink-0">Q:</span>
+              Wie erhalte ich Pro auf macOS und wie funktioniert die
+              iOS-Aktivierung?
+            </h3>
+            <div class="text-xs sm:text-sm text-zinc-400 leading-relaxed pl-6">
+              <p>
+                Es gibt zwei Wege, Pro auf macOS zu erhalten. Die
+                <strong class="text-zinc-200">Mac App Store Edition</strong> ist
+                ein monatliches oder jährliches Abo, das von Apple abgerechnet
+                wird — verwalte oder kündige es in deinen
+                Apple-ID-Abo-Einstellungen, Verlängerungen und Erstattungen
+                übernimmt Apple. Die
+                <strong class="text-zinc-200">Notarized Edition</strong> ist ein
+                direkter, signierter macOS-Build, den du mit einem
+                Aktivierungscode freischaltest, den du bei pay.foxterm.app
+                erwirbst. Welche Mac-Edition du auch wählst, die iOS-App wird
+                automatisch aktiviert; die iOS-App selbst ist im App Store
+                kostenlos.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -2902,13 +3430,13 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
             class="absolute -right-10 -top-10 w-48 sm:w-64 h-48 sm:h-64 bg-fox-500/20 blur-[60px] sm:blur-[80px] rounded-full pointer-events-none"
           ></div>
           <h2 class="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4">
-            FoxTerm laden
+            FoxTerm laden und in Sekunden verbinden
           </h2>
           <p
             class="text-xs sm:text-base text-zinc-400 mb-6 sm:mb-8 max-w-lg mx-auto"
           >
-            Mac · iPhone · iPad. Ein Download für alle Plattformen — kostenlos
-            nutzbar.
+            Mac · iPhone · iPad — jede Funktion ist kostenlos zum Start, und Pro
+            gilt geräteübergreifend auf all deinen Geräten.
           </p>
           <div
             class="flex flex-col sm:flex-row items-center justify-center gap-3"
@@ -2945,8 +3473,68 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
                   d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
                 />
               </svg>
-              <span>Faire Edition (macOS)</span>
+              <span>Notarisierte Edition für macOS</span>
             </a>
+          </div>
+
+          <p class="text-center text-[11px] text-zinc-500 mt-4 max-w-xl mx-auto">
+            Der notarisierte Build ist signiert, notarisiert und installiert
+            sich direkt außerhalb des App Store — schalte Pro mit einem
+            Aktivierungscode von
+            <a
+              href="https://pay.foxterm.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-fox-500 hover:underline"
+              >pay.foxterm.app</a
+            >frei. Welche Mac-Edition du auch wählst, die iOS-App wird
+            automatisch aktiviert.
+          </p>
+
+          <!-- System Requirements -->
+          <div
+            class="mt-8 sm:mt-10 pt-6 sm:pt-8 border-t border-zinc-800/80 grid grid-cols-2 lg:grid-cols-4 gap-4 text-left"
+          >
+            <div>
+              <div
+                class="text-[10px] font-mono uppercase tracking-widest text-zinc-500 mb-1"
+              >
+                macOS
+              </div>
+              <div class="text-xs sm:text-sm text-zinc-300 font-medium">
+                14.0 Sonoma oder neuer
+              </div>
+            </div>
+            <div>
+              <div
+                class="text-[10px] font-mono uppercase tracking-widest text-zinc-500 mb-1"
+              >
+                iOS / iPadOS
+              </div>
+              <div class="text-xs sm:text-sm text-zinc-300 font-medium">
+                17.0 oder neuer
+              </div>
+            </div>
+            <div>
+              <div
+                class="text-[10px] font-mono uppercase tracking-widest text-zinc-500 mb-1"
+              >
+                Licensing
+              </div>
+              <div class="text-xs sm:text-sm text-zinc-300 font-medium">
+                App Store oder Aktivierungscode
+              </div>
+            </div>
+            <div>
+              <div
+                class="text-[10px] font-mono uppercase tracking-widest text-zinc-500 mb-1"
+              >
+                Trust
+              </div>
+              <div class="text-xs sm:text-sm text-zinc-300 font-medium">
+                Notarisiert, signiert &amp; sandbox-isoliert
+              </div>
+            </div>
           </div>
         </div>
       </section>

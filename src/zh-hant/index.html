@@ -127,7 +127,7 @@
             "offers": {
               "@type": "AggregateOffer",
               "priceCurrency": "USD",
-              "offerCount": "2",
+              "offerCount": "3",
               "offers": [
                 {
                   "@type": "Offer",
@@ -141,6 +141,12 @@
                   "name": "FoxTerm Pro 訂閱",
                   "category": "Subscription",
                   "description": "節點數量不限，功能集與免費版完全一致"
+                },
+                {
+                  "@type": "Offer",
+                  "name": "FoxTerm Pro — 公證版（啟用碼）",
+                  "category": "DirectLicense",
+                  "description": "直接散佈的已簽署、已公證 macOS 建構，透過在 pay.foxterm.app 購買的啟用碼解鎖；節點數量不限；該啟用碼同樣自動啟用 iOS app"
                 }
               ]
             },
@@ -178,30 +184,42 @@
               {
                 "@type": "ListItem",
                 "position": 2,
-                "name": "架構",
-                "item": "https://foxterm.app/zh-hant/#architecture"
-              },
-              {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "安全",
-                "item": "https://foxterm.app/zh-hant/#security"
-              },
-              {
-                "@type": "ListItem",
-                "position": 4,
                 "name": "功能",
                 "item": "https://foxterm.app/zh-hant/#features"
               },
               {
                 "@type": "ListItem",
+                "position": 3,
+                "name": "使用情境",
+                "item": "https://foxterm.app/zh-hant/#use-cases"
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "架構",
+                "item": "https://foxterm.app/zh-hant/#architecture"
+              },
+              {
+                "@type": "ListItem",
                 "position": 5,
+                "name": "安全",
+                "item": "https://foxterm.app/zh-hant/#security"
+              },
+              {
+                "@type": "ListItem",
+                "position": 6,
+                "name": "定價",
+                "item": "https://foxterm.app/zh-hant/#pricing"
+              },
+              {
+                "@type": "ListItem",
+                "position": 7,
                 "name": "常見問題",
                 "item": "https://foxterm.app/zh-hant/#faq"
               },
               {
                 "@type": "ListItem",
-                "position": 6,
+                "position": 8,
                 "name": "下載",
                 "item": "https://foxterm.app/zh-hant/#download"
               }
@@ -3028,7 +3046,7 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
               <ul class="space-y-2.5 text-xs sm:text-sm text-zinc-300 mb-7 flex-1 relative">
                 <li class="flex items-start gap-2.5">
                   <span class="text-emerald-400 mt-0.5">✓</span>直接散佈的已簽署、
-                  已公证 macOS 建構——無需 App Store
+                  已公證 macOS 建構——無需 App Store
                 </li>
                 <li class="flex items-start gap-2.5">
                   <span class="text-emerald-400 mt-0.5">✓</span>使用在
@@ -3251,7 +3269,7 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
                 <strong class="text-zinc-200">Mac App Store 版</strong>是由
                 Apple 按月或按年扣費的訂閱——可在 Apple ID
                 訂閱設定中管理或取消，續訂與退款由 Apple 處理。
-                <strong class="text-zinc-200">公证版</strong>
+                <strong class="text-zinc-200">公證版</strong>
                 是直接散佈的已簽署 macOS 建構，透過在
                 pay.foxterm.app 購買的啟用碼解鎖。無論選擇哪種 Mac
                 版本，iOS app 都會自動啟用；iOS app 本身可在 App Store
@@ -3316,8 +3334,67 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
                   d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
                 />
               </svg>
-              <span>公正版下載（macOS）</span>
+              <span>公證版下載（macOS）</span>
             </a>
+          </div>
+
+          <p class="text-center text-[11px] text-zinc-500 mt-4 max-w-xl mx-auto">
+            公證版建構已簽署、已公證，可在 App Store
+            之外直接安裝——前往
+            <a
+              href="https://pay.foxterm.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-fox-500 hover:underline"
+              >pay.foxterm.app</a
+            > 取得啟用碼解鎖 Pro。無論選擇哪種 Mac
+            版本，iOS app 都會自動啟用。
+          </p>
+
+          <!-- System Requirements -->
+          <div
+            class="mt-8 sm:mt-10 pt-6 sm:pt-8 border-t border-zinc-800/80 grid grid-cols-2 lg:grid-cols-4 gap-4 text-left"
+          >
+            <div>
+              <div
+                class="text-[10px] font-mono uppercase tracking-widest text-zinc-500 mb-1"
+              >
+                macOS
+              </div>
+              <div class="text-xs sm:text-sm text-zinc-300 font-medium">
+                14.0 Sonoma 及以上
+              </div>
+            </div>
+            <div>
+              <div
+                class="text-[10px] font-mono uppercase tracking-widest text-zinc-500 mb-1"
+              >
+                iOS / iPadOS
+              </div>
+              <div class="text-xs sm:text-sm text-zinc-300 font-medium">
+                17.0 及以上
+              </div>
+            </div>
+            <div>
+              <div
+                class="text-[10px] font-mono uppercase tracking-widest text-zinc-500 mb-1"
+              >
+                Licensing
+              </div>
+              <div class="text-xs sm:text-sm text-zinc-300 font-medium">
+                App Store 或啟用碼授權
+              </div>
+            </div>
+            <div>
+              <div
+                class="text-[10px] font-mono uppercase tracking-widest text-zinc-500 mb-1"
+              >
+                Trust
+              </div>
+              <div class="text-xs sm:text-sm text-zinc-300 font-medium">
+                已公證、已簽署、沙盒執行
+              </div>
+            </div>
           </div>
         </div>
       </section>
