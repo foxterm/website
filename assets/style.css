@@ -284,3 +284,49 @@ input[type="button"],
 .cursor-pointer {
   cursor: pointer;
 }
+
+
+/* ===== Terminal Mockup Tabs & Panels ===== */
+.ft-panel {
+  display: none;
+}
+.ft-panel-active {
+  display: block;
+}
+.ft-bar {
+  display: none;
+}
+.ft-bar-active {
+  display: flex;
+}
+.ft-tab {
+  padding: 7px 13px;
+  border-radius: 8px 8px 0 0;
+  font-size: 11px;
+  line-height: 1.2;
+  white-space: nowrap;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-bottom: none;
+  transition:
+    color 0.15s ease,
+    background-color 0.15s ease;
+}
+.ft-tab-active {
+  background: #09090b;
+  border-color: #27272a;
+  color: #ff8000;
+  font-weight: 700;
+}
+.ft-tab-idle {
+  color: #71717a;
+}
+.ft-tab-idle:hover {
+  color: #a1a1aa;
+}
+@media (max-width: 640px) {
+  .ft-tab {
+    padding: 6px 9px;
+    font-size: 10px;
+  }
+}

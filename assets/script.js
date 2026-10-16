@@ -168,3 +168,45 @@
 
   box.hidden = false;
 })();
+
+/* FoxTerm terminal window mockup — 4-tab switching */
+(function () {
+  var root = document.getElementById("ft-mockup");
+  if (!root) return;
+  var tabs = root.querySelectorAll("[data-ft-tab]");
+  var panels = root.querySelectorAll("[data-ft-panel]");
+  var bars = root.querySelectorAll("[data-ft-bar]");
+  var titleEl = document.getElementById("ft-win-title");
+  function activate(name) {
+    tabs.forEach(function (t) {
+      var on = t.getAttribute("data-ft-tab") === name;
+      t.classList.toggle("ft-tab-active", on);
+      t.classList.toggle("ft-tab-idle", !on);
+    });
+    panels.forEach(function (p) {
+      p.classList.toggle(
+        "ft-panel-active",
+        p.getAttribute("data-ft-panel") === name,
+      );
+    });
+    bars.forEach(function (b) {
+      b.classList.toggle(
+        "ft-bar-active",
+        b.getAttribute("data-ft-bar") === name,
+      );
+    });
+    if (titleEl) {
+      tabs.forEach(function (t) {
+        if (t.getAttribute("data-ft-tab") === name) {
+          titleEl.textContent = t.getAttribute("data-ft-title");
+        }
+      });
+    }
+  }
+  tabs.forEach(function (t) {
+    t.addEventListener("click", function () {
+      activate(t.getAttribute("data-ft-tab"));
+    });
+  });
+  activate("ssh");
+})();

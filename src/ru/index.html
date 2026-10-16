@@ -527,6 +527,7 @@
 
         <!-- Terminal Window Mockup -->
         <div
+          id="ft-mockup"
           class="relative mx-auto max-w-5xl rounded-xl sm:rounded-2xl bg-zinc-900/90 border border-zinc-800 shadow-[0_0_0_1px_rgba(255,94,0,0.04),0_24px_70px_-20px_rgba(0,0,0,0.9),0_0_50px_-15px_rgba(255,94,0,0.18)] overflow-hidden text-left font-mono text-xs sm:text-sm"
         >
           <!-- Window Title Bar -->
@@ -543,7 +544,7 @@
                 class="fox-logo-icon text-sm text-fox-500 flex-shrink-0"
                 aria-hidden="true"
               ></span>
-              <span class="text-xs text-zinc-500 truncate"
+              <span id="ft-win-title" class="text-xs text-zinc-500 truncate"
                 >foxterm — root@GL-BE3600 — SSH</span
               >
             </div>
@@ -562,217 +563,1422 @@
 
           <!-- Tool Tabs -->
           <div
-            class="flex items-end gap-1 px-3 sm:px-4 pt-2 bg-zinc-900/70 border-b border-zinc-800/80 text-[11px] sm:text-xs"
+            class="flex items-end gap-1 px-3 sm:px-4 pt-2 bg-zinc-900/70 border-b border-zinc-800/80"
           >
-            <span
-              class="px-3 py-1.5 rounded-t-lg bg-zinc-950 border border-zinc-800 border-b-0 text-fox-400 font-bold"
-              >SSH</span
+            <button
+              type="button"
+              data-ft-tab="ssh"
+              data-ft-title="foxterm — root@GL-BE3600 — SSH"
+              class="ft-tab ft-tab-active"
             >
-            <span
-              class="px-3 py-1.5 text-zinc-600 transition-colors cursor-default"
-              >SFTP</span
+              SSH
+            </button>
+            <button
+              type="button"
+              data-ft-tab="sftp"
+              data-ft-title="foxterm — 192.168.8.1 — SFTP"
+              class="ft-tab ft-tab-idle"
             >
-            <span
-              class="px-3 py-1.5 text-zinc-600 transition-colors cursor-default"
-              >VNC</span
+              SFTP
+            </button>
+            <button
+              type="button"
+              data-ft-tab="vnc"
+              data-ft-title="foxterm — ubuntu-focal-g3 — VNC"
+              class="ft-tab ft-tab-idle"
             >
-            <span
-              class="px-3 py-1.5 text-zinc-600 transition-colors cursor-default"
-              >Docker</span
+              VNC
+            </button>
+            <button
+              type="button"
+              data-ft-tab="docker"
+              data-ft-title="foxterm — Ubuntu 24.04 — Docker"
+              class="ft-tab ft-tab-idle"
             >
+              Docker
+            </button>
             <span
               class="ml-auto pb-1.5 pr-1 hidden sm:inline text-[10px] text-zinc-600"
               >4 инструмента · 1 окно</span
             >
           </div>
 
-          <!-- Terminal + Telemetry Body -->
-          <div class="grid lg:grid-cols-[minmax(0,1fr)_280px] bg-zinc-950/90">
-            <!-- Terminal Output -->
-            <div
-              class="relative p-4 sm:p-6 space-y-1.5 leading-relaxed overflow-x-auto"
-            >
+          <!-- ===== SSH Panel ===== -->
+          <div data-ft-panel="ssh" class="ft-panel ft-panel-active">
+            <div class="grid lg:grid-cols-[minmax(0,1fr)_280px] bg-zinc-950/90">
+              <!-- Terminal Output -->
               <div
-                class="absolute inset-0 bg-code-grid opacity-[0.07] pointer-events-none"
-              ></div>
-              <div class="relative z-10 space-y-1.5">
-                <p class="text-zinc-600">
-                  <span class="text-zinc-700">[12:42:12]</span> Подключение к
-                  <span class="text-sky-400">192.168.8.1:22</span>
-                  (GL-BE3600)…
-                </p>
-                <p class="text-zinc-500">
-                  <span class="text-zinc-700">[12:42:12]</span>
-                  <span class="text-emerald-400">✓</span> Аутентифицирован как
-                  <span class="text-emerald-400">root</span> · ed25519 · Ключ
-                  хоста подтверждён
-                </p>
-                <p class="text-zinc-500 pt-1">
-                  BusyBox v1.36.1 (2026-10-15 12:42:12 UTC) built-in shell (ash)
-                </p>
-                <p class="text-zinc-400">
-                  For those about to rock...
-                  <span class="text-zinc-200">OpenWrt 23.05-SNAPSHOT</span>,
-                  r0-3681c2a49
-                </p>
-                <div class="grid grid-cols-2 gap-x-6 gap-y-1 pt-2 pb-1">
-                  <p class="text-zinc-300">
-                    <span class="text-zinc-600">Имя хоста</span> GL-BE3600
-                  </p>
-                  <p class="text-zinc-300">
-                    <span class="text-zinc-600">Аптайм</span> 14d 3h 12m
-                  </p>
-                  <p class="text-zinc-300">
-                    <span class="text-zinc-600">Модель</span> GL.iNet BE3600
-                  </p>
-                  <p class="text-zinc-300">
-                    <span class="text-zinc-600">Память</span> 933 MB · 42.67%
-                  </p>
-                  <p class="text-zinc-300">
-                    <span class="text-zinc-600">Ядро</span> 6.1.112
-                  </p>
-                  <p class="text-zinc-300">
-                    <span class="text-zinc-600">Нагрузка</span> 0.28 0.31 0.24
-                  </p>
-                </div>
-                <p class="pt-1">
-                  <span class="text-emerald-400">root</span
-                  ><span class="text-zinc-500">@</span
-                  ><span class="text-sky-400">GL-BE3600</span
-                  ><span class="text-zinc-500">:~#</span>
-                  <span
-                    class="inline-block w-2 h-4 bg-fox-500 animate-pulse align-middle"
-                  ></span>
-                </p>
-              </div>
-            </div>
-
-            <!-- Live Telemetry Panel -->
-            <div
-              class="hidden lg:block border-l border-zinc-800/60 bg-zinc-900/40 p-4 sm:p-5 text-zinc-300"
-            >
-              <div class="flex items-center justify-between mb-4">
-                <span
-                  class="text-[10px] font-bold tracking-[0.18em] text-zinc-500 uppercase"
-                  >Телеметрия системы</span
-                >
-                <span
-                  class="inline-flex items-center gap-1.5 text-[10px] font-semibold text-emerald-400"
-                >
-                  <span
-                    class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"
-                  ></span
-                  >LIVE
-                </span>
-              </div>
-              <div class="space-y-4">
-                <div>
-                  <div class="flex items-baseline justify-between mb-1.5">
-                    <span
-                      class="text-[11px] text-zinc-400 font-semibold tracking-wider"
-                      >CPU</span
-                    >
-                    <span class="text-[11px] text-zinc-100 font-bold"
-                      >9.96%</span
-                    >
-                  </div>
-                  <div class="h-1 rounded-full bg-zinc-800/80 overflow-hidden">
-                    <div
-                      class="h-full rounded-full bg-gradient-to-r from-fox-600 to-fox-400 w-[10%]"
-                    ></div>
-                  </div>
-                </div>
-                <div>
-                  <div class="flex items-baseline justify-between mb-1.5">
-                    <span
-                      class="text-[11px] text-zinc-400 font-semibold tracking-wider"
-                      >RAM</span
-                    >
-                    <span class="text-[11px] text-zinc-100 font-bold"
-                      >42.67%
-                      <span class="text-zinc-500 font-normal"
-                        >· 933 MB</span
-                      ></span
-                    >
-                  </div>
-                  <div class="h-1 rounded-full bg-zinc-800/80 overflow-hidden">
-                    <div
-                      class="h-full rounded-full bg-gradient-to-r from-fox-600 to-fox-400 w-[43%]"
-                    ></div>
-                  </div>
-                </div>
-                <div>
-                  <div class="flex items-baseline justify-between mb-1.5">
-                    <span
-                      class="text-[11px] text-zinc-400 font-semibold tracking-wider"
-                      >TEMP</span
-                    >
-                    <span class="text-[11px] text-zinc-100 font-bold"
-                      >72°C</span
-                    >
-                  </div>
-                  <div class="h-1 rounded-full bg-zinc-800/80 overflow-hidden">
-                    <div
-                      class="h-full rounded-full bg-gradient-to-r from-fox-600 to-fox-400 w-[72%]"
-                    ></div>
-                  </div>
-                </div>
-                <div>
-                  <div
-                    class="text-[11px] text-zinc-400 font-semibold tracking-wider mb-1.5"
-                  >
-                    NET
-                  </div>
-                  <div class="flex items-center justify-between text-[11px]">
-                    <span class="text-zinc-500">TX</span>
-                    <span class="text-emerald-400 font-semibold"
-                      >↑ 2.65 MB/s</span
-                    >
-                  </div>
-                  <div
-                    class="flex items-center justify-between text-[11px] mt-1"
-                  >
-                    <span class="text-zinc-500">RX</span>
-                    <span class="text-fox-400 font-semibold">↓ 2.59 MB/s</span>
-                  </div>
-                </div>
-                <div>
-                  <div class="flex items-baseline justify-between mb-1.5">
-                    <span
-                      class="text-[11px] text-zinc-400 font-semibold tracking-wider"
-                      >Диск</span
-                    >
-                    <span class="text-[11px] text-zinc-100 font-bold"
-                      >70 MB
-                      <span class="text-zinc-500 font-normal"
-                        >/ 719 MB</span
-                      ></span
-                    >
-                  </div>
-                  <div class="h-1 rounded-full bg-zinc-800/80 overflow-hidden">
-                    <div
-                      class="h-full rounded-full bg-gradient-to-r from-fox-600 to-fox-400 w-[10%]"
-                    ></div>
-                  </div>
-                </div>
+                class="relative p-4 sm:p-6 space-y-1.5 leading-relaxed overflow-x-auto"
+              >
                 <div
-                  class="flex items-center justify-between pt-1 border-t border-zinc-800/60"
-                >
+                  class="absolute inset-0 bg-code-grid opacity-[0.07] pointer-events-none"
+                ></div>
+                <div class="relative z-10 space-y-1.5">
+                  <p class="text-zinc-600">
+                    <span class="text-zinc-700">[12:42:12]</span> Подключение к
+                    <span class="text-sky-400">192.168.8.1:22</span>
+                    (GL-BE3600)…
+                  </p>
+                  <p class="text-zinc-500">
+                    <span class="text-zinc-700">[12:42:12]</span>
+                    <span class="text-emerald-400">✓</span> Аутентифицирован как
+                    <span class="text-emerald-400">root</span> · ed25519 ·
+                    Ключ хоста подтверждён
+                  </p>
+                  <p class="text-zinc-500 pt-1">
+                    BusyBox v1.36.1 (2026-10-15 12:42:12 UTC) built-in shell (ash)
+                  </p>
+                  <pre
+                    class="pt-2 text-[8px] sm:text-[9px] leading-[1.25] text-zinc-600 select-none overflow-x-auto"
+                    aria-hidden="true"
+                  >MM    $MMMMM      NM       MMMMMMMM     M      M
+  MMMMMMMMM   MMMMMMMM MMMMM MMMMM: MMMM MMMMMM'
+  MMMM= MMMMMM MMM MMMM  MMMMM  MMMM MMMMM MMMM
+  MMMM= MMMMMM  MMM MMMM        MMMM        MMMMM
+  MMMM= MMMMM    MMMMMMMM MMMM  MMMM MMMMMMMMMM
+  MMMM= MMMM  MMMMMMMM MMMM  MMMM MMMM MMMM MMMM
+  MMMM$ ,MMMMM MMMMM MMMM  MMMM MMMMMMMM MMMM MMMM
+  MMMMMMMM: MMMMMMMM M  MMMMMMMM  MMMM  MMMM
+  MMMMMM    M        M  MMMMMMMM     M      M</pre>
+                  <p class="text-zinc-400">
+                    For those about to rock...
+                    <span class="text-zinc-200">OpenWrt 23.05-SNAPSHOT</span>,
+                    r0-3681c2a49
+                  </p>
+                  <div class="grid grid-cols-2 gap-x-6 gap-y-1 pt-2 pb-1">
+                    <p class="text-zinc-300">
+                      <span class="text-zinc-600">Имя хоста</span> GL-BE3600
+                    </p>
+                    <p class="text-zinc-300">
+                      <span class="text-zinc-600">Время работы</span> 14d 3h 12m
+                    </p>
+                    <p class="text-zinc-300">
+                      <span class="text-zinc-600">Модель</span> GL.iNet BE3600
+                    </p>
+                    <p class="text-zinc-300">
+                      <span class="text-zinc-600">Память</span> 933 MB · 42.67%
+                    </p>
+                    <p class="text-zinc-300">
+                      <span class="text-zinc-600">Ядро</span> 6.1.112
+                    </p>
+                    <p class="text-zinc-300">
+                      <span class="text-zinc-600">Нагрузка</span> 0.28 0.31 0.24
+                    </p>
+                  </div>
+                  <p class="pt-1">
+                    <span class="text-emerald-400">root</span
+                    ><span class="text-zinc-500">@</span
+                    ><span class="text-sky-400">GL-BE3600</span
+                    ><span class="text-zinc-500">:~#</span>
+                    <span
+                      class="inline-block w-2 h-4 bg-fox-500 animate-pulse align-middle"
+                    ></span>
+                  </p>
+                </div>
+              </div>
+
+              <!-- Live Telemetry Panel -->
+              <div
+                class="hidden lg:block border-l border-zinc-800/60 bg-zinc-900/40 p-4 sm:p-5 text-zinc-300"
+              >
+                <div class="flex items-center justify-between mb-4">
                   <span
-                    class="text-[11px] text-zinc-400 font-semibold tracking-wider"
-                    >Время работы</span
+                    class="text-[10px] font-bold tracking-[0.18em] text-zinc-500 uppercase"
+                    >Телеметрия системы</span
                   >
-                  <span class="text-[11px] text-zinc-100 font-bold"
-                    >14d 3h 12m</span
+                  <span
+                    class="inline-flex items-center gap-1.5 text-[10px] font-semibold text-emerald-400"
                   >
+                    <span
+                      class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"
+                    ></span
+                    >LIVE
+                  </span>
+                </div>
+                <div class="space-y-4">
+                  <div>
+                    <div class="flex items-baseline justify-between mb-1.5">
+                      <span
+                        class="text-[11px] text-zinc-400 font-semibold tracking-wider"
+                        >CPU</span
+                      >
+                      <span class="text-[11px] text-zinc-100 font-bold"
+                        >9.96%</span
+                      >
+                    </div>
+                    <div class="h-1 rounded-full bg-zinc-800/80 overflow-hidden">
+                      <div
+                        class="h-full rounded-full bg-gradient-to-r from-fox-600 to-fox-400 w-[10%]"
+                      ></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex items-baseline justify-between mb-1.5">
+                      <span
+                        class="text-[11px] text-zinc-400 font-semibold tracking-wider"
+                        >RAM</span
+                      >
+                      <span class="text-[11px] text-zinc-100 font-bold"
+                        >42.67%
+                        <span class="text-zinc-500 font-normal"
+                          >· 933 MB</span
+                        ></span
+                      >
+                    </div>
+                    <div class="h-1 rounded-full bg-zinc-800/80 overflow-hidden">
+                      <div
+                        class="h-full rounded-full bg-gradient-to-r from-fox-600 to-fox-400 w-[43%]"
+                      ></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex items-baseline justify-between mb-1.5">
+                      <span
+                        class="text-[11px] text-zinc-400 font-semibold tracking-wider"
+                        >TEMP</span
+                      >
+                      <span class="text-[11px] text-zinc-100 font-bold"
+                        >72°C</span
+                      >
+                    </div>
+                    <div class="h-1 rounded-full bg-zinc-800/80 overflow-hidden">
+                      <div
+                        class="h-full rounded-full bg-gradient-to-r from-fox-600 to-fox-400 w-[72%]"
+                      ></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      class="text-[11px] text-zinc-400 font-semibold tracking-wider mb-1.5"
+                    >
+                      NET
+                    </div>
+                    <div class="flex items-center justify-between text-[11px]">
+                      <span class="text-zinc-500">TX</span>
+                      <span class="text-emerald-400 font-semibold"
+                        >↑ 2.65 MB/s</span
+                      >
+                    </div>
+                    <div
+                      class="flex items-center justify-between text-[11px] mt-1"
+                    >
+                      <span class="text-zinc-500">RX</span>
+                      <span class="text-fox-400 font-semibold">↓ 2.59 MB/s</span>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex items-baseline justify-between mb-1.5">
+                      <span
+                        class="text-[11px] text-zinc-400 font-semibold tracking-wider"
+                        >Диск</span
+                      >
+                      <span class="text-[11px] text-zinc-100 font-bold"
+                        >70 MB
+                        <span class="text-zinc-500 font-normal"
+                          >/ 719 MB</span
+                        ></span
+                      >
+                    </div>
+                    <div class="h-1 rounded-full bg-zinc-800/80 overflow-hidden">
+                      <div
+                        class="h-full rounded-full bg-gradient-to-r from-fox-600 to-fox-400 w-[10%]"
+                      ></div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center justify-between pt-1 border-t border-zinc-800/60"
+                  >
+                    <span
+                      class="text-[11px] text-zinc-400 font-semibold tracking-wider"
+                      >Время работы</span
+                    >
+                    <span class="text-[11px] text-zinc-100 font-bold"
+                      >14d 3h 12m</span
+                    >
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Connection Status Bar -->
+          <!-- ===== SFTP Panel ===== -->
+          <div data-ft-panel="sftp" class="ft-panel">
+            <div class="grid lg:grid-cols-[220px_minmax(0,1fr)] bg-zinc-950/90">
+              <!-- Nodes Sidebar -->
+              <div
+                class="hidden lg:block border-r border-zinc-800/60 bg-zinc-900/40 p-3 text-zinc-300"
+              >
+                <div class="group relative mb-3">
+                  <svg
+                    class="pointer-events-none absolute left-2.5 top-1/2 -translate-y-1/2 h-3.5 w-3.5 text-zinc-600 transition-colors group-focus-within:text-fox-400"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.3-4.3"></path>
+                  </svg>
+                  <span
+                    class="block w-full rounded-lg border border-zinc-700/60 bg-zinc-800/40 py-1.5 pl-7 pr-2 text-[11px] text-zinc-500 transition-colors focus-within:border-fox-500/50 focus-within:text-zinc-400"
+                    >Поиск серверов…</span
+                  >
+                </div>
+                <div class="mb-1 flex items-center justify-between px-2">
+                  <span
+                    class="text-[9px] font-semibold uppercase tracking-[0.16em] text-zinc-500"
+                    >Быстрое подключение</span
+                  >
+                  <svg
+                    class="h-3 w-3 text-zinc-600"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="m6 9 6 6 6-6"></path>
+                  </svg>
+                </div>
+                <div class="mb-3 space-y-0.5">
+                  <div
+                    class="group flex cursor-default items-center gap-2 rounded-md px-2 py-1.5 transition-colors hover:bg-zinc-800/60"
+                  >
+                    <span class="relative flex h-1.5 w-1.5">
+                      <span
+                        class="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-60"
+                      ></span>
+                      <span
+                        class="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-400"
+                      ></span>
+                    </span>
+                    <span
+                      class="text-[11px] text-zinc-400 transition-colors group-hover:text-zinc-200"
+                      >192.168.9.1</span
+                    >
+                    <span
+                      class="ml-auto text-[9px] font-mono text-zinc-600 transition-colors group-hover:text-fox-400/70"
+                      >OpenWrt</span
+                    >
+                  </div>
+                  <div
+                    class="group flex cursor-default items-center gap-2 rounded-md px-2 py-1.5 transition-colors hover:bg-zinc-800/60"
+                  >
+                    <span class="h-1.5 w-1.5 rounded-full bg-zinc-500"></span>
+                    <span
+                      class="text-[11px] text-zinc-400 transition-colors group-hover:text-zinc-200"
+                      >192.168.8.9</span
+                    >
+                    <span
+                      class="ml-auto text-[9px] font-mono text-zinc-600 transition-colors group-hover:text-fox-400/70"
+                      >GL.iNet</span
+                    >
+                  </div>
+                  <div
+                    class="flex cursor-default items-center gap-2 rounded-md border-l-2 border-fox-500 bg-gradient-to-r from-fox-500/15 to-transparent px-2 py-1.5 text-zinc-100"
+                  >
+                    <span
+                      class="h-1.5 w-1.5 rounded-full bg-fox-400 shadow-[0_0_6px_rgba(249,115,22,0.9)]"
+                    ></span>
+                    <span class="text-[11px] font-medium">192.168.8.1</span>
+                    <span class="ml-auto text-[9px] font-mono text-fox-400/80"
+                      >GL-BE3600</span
+                    >
+                  </div>
+                </div>
+                <div class="mb-1 px-2">
+                  <span
+                    class="text-[9px] font-semibold uppercase tracking-[0.16em] text-zinc-500"
+                    >Рабочая область</span
+                  >
+                </div>
+                <div class="space-y-0.5">
+                  <div
+                    class="flex cursor-default items-center gap-1.5 rounded-md px-2 py-1 text-zinc-500 transition-colors hover:bg-zinc-800/50 hover:text-zinc-300"
+                  >
+                    <svg
+                      class="h-3 w-3 text-zinc-600"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"
+                      ></path>
+                    </svg>
+                    <span class="text-[11px]">Разработка</span>
+                    <span
+                      class="ml-auto rounded bg-zinc-800/80 px-1 text-[9px] text-zinc-500"
+                      >12</span
+                    >
+                  </div>
+                  <div
+                    class="flex cursor-default items-center gap-1.5 rounded-md px-2 py-1 text-zinc-500 transition-colors hover:bg-zinc-800/50 hover:text-zinc-300"
+                  >
+                    <svg
+                      class="h-3 w-3 text-zinc-600"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"
+                      ></path>
+                    </svg>
+                    <span class="text-[11px]">Ноды</span>
+                    <span
+                      class="ml-auto rounded bg-zinc-800/80 px-1 text-[9px] text-zinc-500"
+                      >8</span
+                    >
+                  </div>
+                  <div
+                    class="flex cursor-default items-center gap-1.5 rounded-md px-2 py-1 text-zinc-500 transition-colors hover:bg-zinc-800/50 hover:text-zinc-300"
+                  >
+                    <svg
+                      class="h-3 w-3 text-zinc-600"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"
+                      ></path>
+                    </svg>
+                    <span class="text-[11px]">Сайт</span>
+                    <span
+                      class="ml-auto rounded bg-zinc-800/80 px-1 text-[9px] text-zinc-500"
+                      >3</span
+                    >
+                  </div>
+                  <div
+                    class="flex cursor-default items-center gap-1.5 rounded-md px-2 py-1 text-zinc-500 transition-colors hover:bg-zinc-800/50 hover:text-zinc-300"
+                  >
+                    <svg
+                      class="h-3 w-3 text-zinc-600"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"
+                      ></path>
+                    </svg>
+                    <span class="text-[11px]">Сингапур</span>
+                    <span
+                      class="ml-auto rounded bg-zinc-800/80 px-1 text-[9px] text-zinc-500"
+                      >2</span
+                    >
+                  </div>
+                  <div
+                    class="flex cursor-default items-center gap-1.5 rounded-md px-2 py-1 text-zinc-500 transition-colors hover:bg-zinc-800/50 hover:text-zinc-300"
+                  >
+                    <svg
+                      class="h-3 w-3 text-zinc-600"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"
+                      ></path>
+                    </svg>
+                    <span class="text-[11px]">Гонконг</span>
+                    <span
+                      class="ml-auto rounded bg-zinc-800/80 px-1 text-[9px] text-zinc-500"
+                      >4</span
+                    >
+                  </div>
+                  <div
+                    class="flex cursor-default items-center gap-1.5 rounded-md px-2 py-1 text-zinc-500 transition-colors hover:bg-zinc-800/50 hover:text-zinc-300"
+                  >
+                    <svg
+                      class="h-3 w-3 text-zinc-600"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"
+                      ></path>
+                    </svg>
+                    <span class="text-[11px]">Япония</span>
+                    <span
+                      class="ml-auto rounded bg-zinc-800/80 px-1 text-[9px] text-zinc-500"
+                      >1</span
+                    >
+                  </div>
+                  <div
+                    class="flex cursor-default items-center gap-1.5 rounded-md px-2 py-1 text-zinc-500 transition-colors hover:bg-zinc-800/50 hover:text-zinc-300"
+                  >
+                    <svg
+                      class="h-3 w-3 text-zinc-600"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"
+                      ></path>
+                    </svg>
+                    <span class="text-[11px]">Неизвестно</span>
+                    <span
+                      class="ml-auto rounded bg-zinc-800/80 px-1 text-[9px] text-zinc-500"
+                      >2</span
+                    >
+                  </div>
+                  <div
+                    class="flex cursor-default items-center gap-1.5 rounded-md px-2 py-1 text-zinc-500 transition-colors hover:bg-zinc-800/50 hover:text-zinc-300"
+                  >
+                    <svg
+                      class="h-3 w-3 text-zinc-600"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"
+                      ></path>
+                    </svg>
+                    <span class="text-[11px]">ЛВС</span>
+                    <span
+                      class="ml-auto rounded bg-zinc-800/80 px-1 text-[9px] text-zinc-500"
+                      >2</span
+                    >
+                  </div>
+                  <div
+                    class="flex cursor-default items-center gap-1.5 rounded-md px-2 py-1 text-zinc-500 transition-colors hover:bg-zinc-800/50 hover:text-zinc-300"
+                  >
+                    <svg
+                      class="h-3 w-3 text-zinc-600"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      aria-hidden="true"
+                    >
+                      <path
+                        d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"
+                      ></path>
+                    </svg>
+                    <span class="text-[11px]">Материковый Китай</span>
+                    <span
+                      class="ml-auto rounded bg-zinc-800/80 px-1 text-[9px] text-zinc-500"
+                      >2</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <!-- File Browser -->
+              <div class="relative p-4 sm:p-5 min-h-[340px]">
+                <div
+                  class="absolute inset-0 bg-code-grid opacity-[0.05] pointer-events-none"
+                ></div>
+                <div class="relative z-10">
+                  <div
+                    class="flex items-center gap-2 flex-wrap text-[11px] text-zinc-400 mb-3"
+                  >
+                    <span class="text-zinc-200 font-semibold">GL-BE3600</span>
+                    <span class="text-zinc-600">/</span>
+                    <span class="text-zinc-200 font-semibold">GL-BE3600</span>
+                    <span
+                      class="ml-auto inline-flex items-center gap-1 px-2 py-1 rounded-md bg-fox-500/10 border border-fox-500/25 text-fox-400"
+                      >Открыть в новом окне</span
+                    >
+                  </div>
+                  <div
+                    class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-x-4 gap-y-2 text-[11px]"
+                  >
+                    <div
+                      class="flex items-center gap-1.5 text-zinc-300 min-w-0 cursor-default"
+                    >
+                      <svg
+                        class="w-3.5 h-3.5 text-fox-500/70 flex-shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                        ></path>
+                      </svg>
+                      <span class="truncate">.ispanel_clash</span>
+                    </div>
+                    <div
+                      class="flex items-center gap-1.5 text-zinc-300 min-w-0 cursor-default"
+                    >
+                      <svg
+                        class="w-3.5 h-3.5 text-fox-500/70 flex-shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                        ></path>
+                      </svg>
+                      <span class="truncate">bin.us-is-merged</span>
+                    </div>
+                    <div
+                      class="flex items-center gap-1.5 text-zinc-300 min-w-0 cursor-default"
+                    >
+                      <svg
+                        class="w-3.5 h-3.5 text-fox-500/70 flex-shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                        ></path>
+                      </svg>
+                      <span class="truncate">boot</span>
+                    </div>
+                    <div
+                      class="flex items-center gap-1.5 text-zinc-300 min-w-0 cursor-default"
+                    >
+                      <svg
+                        class="w-3.5 h-3.5 text-fox-500/70 flex-shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                        ></path>
+                      </svg>
+                      <span class="truncate">cdrom</span>
+                    </div>
+                    <div
+                      class="flex items-center gap-1.5 text-zinc-300 min-w-0 cursor-default"
+                    >
+                      <svg
+                        class="w-3.5 h-3.5 text-fox-500/70 flex-shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                        ></path>
+                      </svg>
+                      <span class="truncate">dev</span>
+                    </div>
+                    <div
+                      class="flex items-center gap-1.5 text-zinc-300 min-w-0 cursor-default"
+                    >
+                      <svg
+                        class="w-3.5 h-3.5 text-fox-500/70 flex-shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                        ></path>
+                      </svg>
+                      <span class="truncate">etc</span>
+                    </div>
+                    <div
+                      class="flex items-center gap-1.5 text-zinc-100 min-w-0 cursor-default rounded-md bg-fox-500/10 border border-fox-500/30 px-1.5 py-0.5"
+                    >
+                      <svg
+                        class="w-3.5 h-3.5 text-fox-500 flex-shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                        ></path>
+                      </svg>
+                      <span class="truncate">home</span>
+                    </div>
+                    <div
+                      class="flex items-center gap-1.5 text-zinc-300 min-w-0 cursor-default"
+                    >
+                      <svg
+                        class="w-3.5 h-3.5 text-fox-500/70 flex-shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                        ></path>
+                      </svg>
+                      <span class="truncate">lib.us-is-merged</span>
+                    </div>
+                    <div
+                      class="flex items-center gap-1.5 text-zinc-300 min-w-0 cursor-default"
+                    >
+                      <svg
+                        class="w-3.5 h-3.5 text-fox-500/70 flex-shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                        ></path>
+                      </svg>
+                      <span class="truncate">lost+found</span>
+                    </div>
+                    <div
+                      class="flex items-center gap-1.5 text-zinc-300 min-w-0 cursor-default"
+                    >
+                      <svg
+                        class="w-3.5 h-3.5 text-fox-500/70 flex-shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                        ></path>
+                      </svg>
+                      <span class="truncate">media</span>
+                    </div>
+                    <div
+                      class="flex items-center gap-1.5 text-zinc-300 min-w-0 cursor-default"
+                    >
+                      <svg
+                        class="w-3.5 h-3.5 text-fox-500/70 flex-shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                        ></path>
+                      </svg>
+                      <span class="truncate">mnt</span>
+                    </div>
+                    <div
+                      class="flex items-center gap-1.5 text-zinc-300 min-w-0 cursor-default"
+                    >
+                      <svg
+                        class="w-3.5 h-3.5 text-fox-500/70 flex-shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                        ></path>
+                      </svg>
+                      <span class="truncate">root</span>
+                    </div>
+                    <div
+                      class="flex items-center gap-1.5 text-zinc-300 min-w-0 cursor-default"
+                    >
+                      <svg
+                        class="w-3.5 h-3.5 text-fox-500/70 flex-shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                        ></path>
+                      </svg>
+                      <span class="truncate">run</span>
+                    </div>
+                    <div
+                      class="flex items-center gap-1.5 text-zinc-300 min-w-0 cursor-default"
+                    >
+                      <svg
+                        class="w-3.5 h-3.5 text-fox-500/70 flex-shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                        ></path>
+                      </svg>
+                      <span class="truncate">sbin.us-is-merged</span>
+                    </div>
+                    <div
+                      class="flex items-center gap-1.5 text-zinc-300 min-w-0 cursor-default"
+                    >
+                      <svg
+                        class="w-3.5 h-3.5 text-fox-500/70 flex-shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                        ></path>
+                      </svg>
+                      <span class="truncate">sys</span>
+                    </div>
+                    <div
+                      class="flex items-center gap-1.5 text-zinc-300 min-w-0 cursor-default"
+                    >
+                      <svg
+                        class="w-3.5 h-3.5 text-fox-500/70 flex-shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                        ></path>
+                      </svg>
+                      <span class="truncate">tmp</span>
+                    </div>
+                    <div
+                      class="flex items-center gap-1.5 text-zinc-300 min-w-0 cursor-default"
+                    >
+                      <svg
+                        class="w-3.5 h-3.5 text-fox-500/70 flex-shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                        ></path>
+                      </svg>
+                      <span class="truncate">usr</span>
+                    </div>
+                    <div
+                      class="flex items-center gap-1.5 text-zinc-300 min-w-0 cursor-default"
+                    >
+                      <svg
+                        class="w-3.5 h-3.5 text-fox-500/70 flex-shrink-0"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"
+                        ></path>
+                      </svg>
+                      <span class="truncate">lib64</span>
+                    </div>
+                  </div>
+                  <!-- Home dir info popup -->
+                  <div
+                    class="absolute right-4 top-16 w-56 rounded-lg bg-zinc-900/95 border border-zinc-700/70 shadow-xl p-3 text-[11px] space-y-1.5 backdrop-blur"
+                  >
+                    <div class="flex items-center justify-between">
+                      <span class="text-zinc-500">Всего</span>
+                      <span class="text-zinc-100 font-semibold">4.00TB</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <span class="text-zinc-500">Свободно</span>
+                      <span class="text-zinc-100 font-semibold">3.33TB</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <span class="text-zinc-500">Доступно</span>
+                      <span class="text-zinc-100 font-semibold">3.33TB</span>
+                    </div>
+                    <div class="h-px bg-zinc-800"></div>
+                    <div class="flex items-center justify-between">
+                      <span class="text-zinc-500">Имя</span>
+                      <span class="text-zinc-100">home</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <span class="text-zinc-500">Права</span>
+                      <span class="text-zinc-100">2755 drwxr-xr-x</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <span class="text-zinc-500">UID</span>
+                      <span class="text-zinc-100">1000</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <span class="text-zinc-500">GID</span>
+                      <span class="text-zinc-100">1000</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <span class="text-zinc-500">Владелец</span>
+                      <span class="text-zinc-100">17</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <span class="text-zinc-500">Группа</span>
+                      <span class="text-zinc-100">17</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                      <span class="text-zinc-500">Время доступа</span>
+                      <span class="text-zinc-100">14.10.2026 00:26</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== VNC Panel ===== -->
+          <div data-ft-panel="vnc" class="ft-panel">
+            <div class="bg-zinc-950/95 p-3 sm:p-4">
+              <div
+                class="rounded-lg border border-zinc-700/60 bg-[#18181b] overflow-hidden"
+              >
+                <!-- Thunar window title bar -->
+                <div
+                  class="flex items-center gap-2 px-3 py-2 border-b border-zinc-700/50 bg-zinc-800/40"
+                >
+                  <span class="w-2.5 h-2.5 rounded-full bg-red-500/70"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-yellow-500/70"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-green-500/70"></span>
+                  <span class="ml-2 text-[11px] text-zinc-300"
+                    >Файловая система - Thunar</span
+                  >
+                  <span class="ml-auto text-[10px] text-zinc-600"
+                    >ubuntu-focal-g3 · Xfce</span
+                  >
+                </div>
+                <!-- menu bar -->
+                <div
+                  class="flex items-center gap-3 px-3 py-1.5 border-b border-zinc-700/50 text-[10px] text-zinc-400"
+                >
+                  <span>Файл</span><span>Правка</span><span>Вид</span
+                  ><span class="font-semibold text-zinc-200">Переход</span
+                  ><span>Закладки</span><span>Справка</span>
+                </div>
+                <div class="flex">
+                  <!-- Applications menu -->
+                  <div
+                    class="hidden lg:block w-40 flex-shrink-0 border-r border-zinc-700/50 bg-zinc-900/50 p-2 text-[10px] text-zinc-400 space-y-0.5"
+                  >
+                    <p class="font-bold text-zinc-200 mb-1.5">Приложения</p>
+                    <p>Запустить программу…</p>
+                    <p>Эмулятор терминала</p>
+                    <p class="text-zinc-200 bg-fox-500/10 rounded">Файловый менеджер</p>
+                    <p>Почтовый клиент</p>
+                    <p>Веб-браузер</p>
+                    <p>Настройки</p>
+                    <p>Стандартные</p>
+                    <p>Интернет</p>
+                    <p>Система</p>
+                    <p>О Xfce</p>
+                    <p>Выйти</p>
+                  </div>
+                  <!-- file list -->
+                  <div class="flex-1 min-w-0">
+                    <div
+                      class="grid grid-cols-[minmax(0,1.2fr)_70px_90px_100px_60px_60px] gap-2 px-3 py-1.5 border-b border-zinc-700/50 text-[9px] uppercase tracking-wider text-zinc-500"
+                    >
+                      <span>Имя</span><span>大小</span><span>Дата изменения</span
+                      ><span>Права</span><span>Владелец</span><span>Группа</span>
+                    </div>
+                    <div
+                      class="text-[10px] text-zinc-300 divide-y divide-zinc-800/40"
+                    >
+                      <div
+                        class="grid grid-cols-[minmax(0,1.2fr)_70px_90px_100px_60px_60px] gap-2 px-3 py-1"
+                      >
+                        <span>bin</span><span>4.0 KiB</span
+                        ><span>05/11/26</span><span>drwxr-xr-x</span
+                        ><span>root</span><span>root</span>
+                      </div>
+                      <div
+                        class="grid grid-cols-[minmax(0,1.2fr)_70px_90px_100px_60px_60px] gap-2 px-3 py-1"
+                      >
+                        <span>boot</span><span>4.0 KiB</span
+                        ><span>04/22/26</span><span>drwxr-xr-x</span
+                        ><span>root</span><span>root</span>
+                      </div>
+                      <div
+                        class="grid grid-cols-[minmax(0,1.2fr)_70px_90px_100px_60px_60px] gap-2 px-3 py-1"
+                      >
+                        <span>dev</span><span>340 bytes</span
+                        ><span>09/30/26</span><span>drwxr-xr-x</span
+                        ><span>root</span><span>root</span>
+                      </div>
+                      <div
+                        class="grid grid-cols-[minmax(0,1.2fr)_70px_90px_100px_60px_60px] gap-2 px-3 py-1"
+                      >
+                        <span>dockerstartup</span><span>4.0 KiB</span
+                        ><span>09/11/26</span><span>drwxr-xr-x</span
+                        ><span>root</span><span>headless</span>
+                      </div>
+                      <div
+                        class="grid grid-cols-[minmax(0,1.2fr)_70px_90px_100px_60px_60px] gap-2 px-3 py-1"
+                      >
+                        <span>etc</span><span>4.0 KiB</span
+                        ><span>09/11/26</span><span>drwxr-xr-x</span
+                        ><span>root</span><span>root</span>
+                      </div>
+                      <div
+                        class="grid grid-cols-[minmax(0,1.2fr)_70px_90px_100px_60px_60px] gap-2 px-3 py-1"
+                      >
+                        <span>home</span><span>4.0 KiB</span
+                        ><span>05/11/26</span><span>drwxr-xr-x</span
+                        ><span>root</span><span>root</span>
+                      </div>
+                      <div
+                        class="grid grid-cols-[minmax(0,1.2fr)_70px_90px_100px_60px_60px] gap-2 px-3 py-1"
+                      >
+                        <span>lib</span><span>4.0 KiB</span
+                        ><span>03/26/26</span><span>drwxr-xr-x</span
+                        ><span>root</span><span>root</span>
+                      </div>
+                      <div
+                        class="grid grid-cols-[minmax(0,1.2fr)_70px_90px_100px_60px_60px] gap-2 px-3 py-1"
+                      >
+                        <span>lib64</span><span>4.0 KiB</span
+                        ><span>03/26/26</span><span>drwxr-xr-x</span
+                        ><span>root</span><span>root</span>
+                      </div>
+                      <div
+                        class="grid grid-cols-[minmax(0,1.2fr)_70px_90px_100px_60px_60px] gap-2 px-3 py-1"
+                      >
+                        <span>media</span><span>4.0 KiB</span
+                        ><span>04/21/26</span><span>drwxr-xr-x</span
+                        ><span>root</span><span>root</span>
+                      </div>
+                      <div
+                        class="grid grid-cols-[minmax(0,1.2fr)_70px_90px_100px_60px_60px] gap-2 px-3 py-1"
+                      >
+                        <span>mnt</span><span>4.0 KiB</span
+                        ><span>04/21/26</span><span>drwxr-xr-x</span
+                        ><span>root</span><span>root</span>
+                      </div>
+                      <div
+                        class="grid grid-cols-[minmax(0,1.2fr)_70px_90px_100px_60px_60px] gap-2 px-3 py-1"
+                      >
+                        <span>opt</span><span>4.0 KiB</span
+                        ><span>09/30/26</span><span>drwxr-xr-x</span
+                        ><span>root</span><span>root</span>
+                      </div>
+                      <div
+                        class="grid grid-cols-[minmax(0,1.2fr)_70px_90px_100px_60px_60px] gap-2 px-3 py-1"
+                      >
+                        <span>proc</span><span>0 bytes</span
+                        ><span>09/30/26</span><span>dr-xr-x-x</span
+                        ><span>root</span><span>root</span>
+                      </div>
+                      <div
+                        class="grid grid-cols-[minmax(0,1.2fr)_70px_90px_100px_60px_60px] gap-2 px-3 py-1"
+                      >
+                        <span>root</span><span>4.0 KiB</span
+                        ><span>04/10/26</span><span>drwx------</span
+                        ><span>root</span><span>root</span>
+                      </div>
+                      <div
+                        class="grid grid-cols-[minmax(0,1.2fr)_70px_90px_100px_60px_60px] gap-2 px-3 py-1"
+                      >
+                        <span>run</span><span>4.0 KiB</span
+                        ><span>09/11/26</span><span>drwxr-xr-x</span
+                        ><span>root</span><span>root</span>
+                      </div>
+                      <div
+                        class="grid grid-cols-[minmax(0,1.2fr)_70px_90px_100px_60px_60px] gap-2 px-3 py-1"
+                      >
+                        <span>srv</span><span>4.0 KiB</span
+                        ><span>04/21/26</span><span>drwxr-xr-x</span
+                        ><span>root</span><span>root</span>
+                      </div>
+                      <div
+                        class="grid grid-cols-[minmax(0,1.2fr)_70px_90px_100px_60px_60px] gap-2 px-3 py-1"
+                      >
+                        <span>sys</span><span>0 bytes</span
+                        ><span>09/30/26</span><span>dr-xr-x-x</span
+                        ><span>root</span><span>root</span>
+                      </div>
+                    </div>
+                    <div
+                      class="px-3 py-1.5 border-t border-zinc-700/50 text-[10px] text-zinc-500"
+                    >
+                      20 папок | Свободно: 183,9 ГиБ
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== Docker Panel ===== -->
+          <div data-ft-panel="docker" class="ft-panel">
+            <div class="grid lg:grid-cols-[minmax(0,1fr)_280px] bg-zinc-950/90">
+              <div class="p-4 sm:p-5 space-y-4 min-w-0">
+                <!-- Stats -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-[11px]">
+                  <div
+                    class="rounded-lg bg-zinc-900/60 border border-zinc-800/80 p-2.5"
+                  >
+                    <div class="text-zinc-100 font-bold text-sm">
+                      16<span class="text-zinc-500 font-normal text-[10px]"
+                        >/16</span
+                      >
+                    </div>
+                    <div class="text-zinc-500 mt-0.5">Контейнеры</div>
+                  </div>
+                  <div
+                    class="rounded-lg bg-zinc-900/60 border border-zinc-800/80 p-2.5"
+                  >
+                    <div class="text-zinc-100 font-bold text-sm">13</div>
+                    <div class="text-zinc-500 mt-0.5">Образы</div>
+                  </div>
+                  <div
+                    class="rounded-lg bg-zinc-900/60 border border-zinc-800/80 p-2.5"
+                  >
+                    <div class="text-zinc-100 font-bold text-sm">7</div>
+                    <div class="text-zinc-500 mt-0.5">Сети</div>
+                  </div>
+                  <div
+                    class="rounded-lg bg-zinc-900/60 border border-zinc-800/80 p-2.5"
+                  >
+                    <div class="text-zinc-100 font-bold text-sm">9</div>
+                    <div class="text-zinc-500 mt-0.5">Тома</div>
+                  </div>
+                </div>
+                <!-- Engine info -->
+                <div
+                  class="flex flex-wrap gap-x-4 gap-y-1 text-[11px] text-zinc-400"
+                >
+                  <span
+                    >Движок
+                    <span class="text-zinc-200 font-semibold">29.8.1</span></span
+                  >
+                  <span class="text-zinc-600">·</span>
+                  <span
+                    >Ubuntu
+                    <span class="text-zinc-200 font-semibold"
+                      >24.04.5 LTS</span
+                    ></span
+                  >
+                  <span class="text-zinc-600">·</span>
+                  <span
+                    >Архитектура
+                    <span class="text-zinc-200 font-semibold">x86_64</span></span
+                  >
+                  <span class="text-zinc-600">·</span>
+                  <span
+                    >CPU
+                    <span class="text-zinc-200 font-semibold">8</span></span
+                  >
+                  <span class="text-zinc-600">·</span>
+                  <span
+                    >Память
+                    <span class="text-zinc-200 font-semibold">31.2 GB</span></span
+                  >
+                  <span class="text-zinc-600">·</span>
+                  <span
+                    >Драйвер хранилища
+                    <span class="text-zinc-200 font-semibold"
+                      >overlayfs</span
+                    ></span
+                  >
+                </div>
+                <!-- Container table -->
+                <div class="overflow-x-auto">
+                  <div
+                    class="text-[10px] uppercase tracking-wider text-zinc-500 mb-1.5"
+                  >
+                    Запущенные контейнеры
+                  </div>
+                  <div
+                    class="grid grid-cols-[minmax(0,1.4fr)_60px_60px_120px_95px_105px] gap-2 px-2 py-1.5 rounded-t-lg bg-zinc-900/60 border border-zinc-800 text-[9px] sm:text-[10px] text-zinc-500 font-semibold"
+                  >
+                    <span>Имя</span><span>CPU</span><span>Память</span
+                    ><span>Использование памяти</span><span>Сетевое I/O</span><span>Дисковое I/O</span>
+                  </div>
+                  <div
+                    class="divide-y divide-zinc-800/60 border border-t-0 border-zinc-800 rounded-b-lg text-[9px] sm:text-[10px] text-zinc-400"
+                  >
+                    <div
+                      class="grid grid-cols-[minmax(0,1.4fr)_60px_60px_120px_95px_105px] gap-2 px-2 py-1.5"
+                    >
+                      <span class="text-zinc-200 truncate">timemachine</span
+                      ><span>0.00%</span><span>0.65%</span
+                      ><span>15.94MB/31.21GB</span><span>68/08</span
+                      ><span>0B/418MB</span>
+                    </div>
+                    <div
+                      class="grid grid-cols-[minmax(0,1.4fr)_60px_60px_120px_95px_105px] gap-2 px-2 py-1.5"
+                    >
+                      <span class="text-zinc-200 truncate">gitea</span
+                      ><span>0.02%</span><span>0.30%</span
+                      ><span>96.18MB/31.21GB</span><span>4.55KB/128B</span
+                      ><span>0B/65.5MB</span>
+                    </div>
+                    <div
+                      class="grid grid-cols-[minmax(0,1.4fr)_60px_60px_120px_95px_105px] gap-2 px-2 py-1.5"
+                    >
+                      <span class="text-zinc-200 truncate">test-ssh-gsspi</span
+                      ><span>0.00%</span><span>0.03%</span
+                      ><span>10.59MB/31.21GB</span><span>36.1MB/776KB</span
+                      ><span>41.6MB/76.1MB</span>
+                    </div>
+                    <div
+                      class="grid grid-cols-[minmax(0,1.4fr)_60px_60px_120px_95px_105px] gap-2 px-2 py-1.5"
+                    >
+                      <span class="text-zinc-200 truncate">test-k8s-server</span
+                      ><span>0.00%</span><span>0.04%</span
+                      ><span>13.01MB/31.21GB</span><span>68KB/691KB</span
+                      ><span>44.6MB/76.1MB</span>
+                    </div>
+                    <div
+                      class="grid grid-cols-[minmax(0,1.4fr)_60px_60px_120px_95px_105px] gap-2 px-2 py-1.5"
+                    >
+                      <span class="text-zinc-200 truncate">test-ssh-k8d</span
+                      ><span>0.00%</span><span>0.08%</span
+                      ><span>25.9MB/31.21GB</span><span>36MB/76KB</span
+                      ><span>53.3MB/76.1MB</span>
+                    </div>
+                    <div
+                      class="grid grid-cols-[minmax(0,1.4fr)_60px_60px_120px_95px_105px] gap-2 px-2 py-1.5"
+                    >
+                      <span class="text-zinc-200 truncate">test-vnc-accetto</span
+                      ><span>0.02%</span><span>0.76%</span
+                      ><span>241.1MB/31.21GB</span><span>7.81MB/5.56MB</span
+                      ><span>118MB/184MB</span>
+                    </div>
+                    <div
+                      class="grid grid-cols-[minmax(0,1.4fr)_60px_60px_120px_95px_105px] gap-2 px-2 py-1.5"
+                    >
+                      <span class="text-zinc-200 truncate">test-vnc-server</span
+                      ><span>0.01%</span><span>1.12%</span
+                      ><span>355.1MB/31.21GB</span><span>19.2MB/36.8MB</span
+                      ><span>322MB/2.61GB</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Right resource monitor -->
+              <div
+                class="hidden lg:block border-l border-zinc-800/60 bg-zinc-900/40 p-4 sm:p-5 text-zinc-300"
+              >
+                <div class="flex items-center justify-between mb-4">
+                  <span
+                    class="text-[10px] font-bold tracking-[0.18em] text-zinc-500 uppercase"
+                    >Монитор ресурсов</span
+                  >
+                  <span
+                    class="inline-flex items-center gap-1.5 text-[10px] font-semibold text-emerald-400"
+                  >
+                    <span
+                      class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"
+                    ></span
+                    >LIVE
+                  </span>
+                </div>
+                <div class="space-y-4">
+                  <div>
+                    <div class="flex items-baseline justify-between mb-1.5">
+                      <span
+                        class="text-[11px] text-zinc-400 font-semibold tracking-wider"
+                        >CPU</span
+                      >
+                      <span class="text-[11px] text-zinc-100 font-bold"
+                        >16.93%</span
+                      >
+                    </div>
+                    <div class="h-1 rounded-full bg-zinc-800/80 overflow-hidden">
+                      <div
+                        class="h-full rounded-full bg-gradient-to-r from-fox-600 to-fox-400 w-[17%]"
+                      ></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex items-baseline justify-between mb-1.5">
+                      <span
+                        class="text-[11px] text-zinc-400 font-semibold tracking-wider"
+                        >RAM</span
+                      >
+                      <span class="text-[11px] text-zinc-100 font-bold"
+                        >5.85%
+                        <span class="text-zinc-500 font-normal"
+                          >· 31.2 GB</span
+                        ></span
+                      >
+                    </div>
+                    <div class="h-1 rounded-full bg-zinc-800/80 overflow-hidden">
+                      <div
+                        class="h-full rounded-full bg-gradient-to-r from-fox-600 to-fox-400 w-[6%]"
+                      ></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex items-baseline justify-between mb-1.5">
+                      <span
+                        class="text-[11px] text-zinc-400 font-semibold tracking-wider"
+                        >TEMP</span
+                      >
+                      <span class="text-[11px] text-zinc-100 font-bold"
+                        >43°C</span
+                      >
+                    </div>
+                    <div class="h-1 rounded-full bg-zinc-800/80 overflow-hidden">
+                      <div
+                        class="h-full rounded-full bg-gradient-to-r from-fox-600 to-fox-400 w-[43%]"
+                      ></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div
+                      class="text-[11px] text-zinc-400 font-semibold tracking-wider mb-1.5"
+                    >
+                      NET
+                    </div>
+                    <div class="flex items-center justify-between text-[11px]">
+                      <span class="text-zinc-500">TX</span>
+                      <span class="text-emerald-400 font-semibold"
+                        >↑ 22.72 MB/s</span
+                      >
+                    </div>
+                    <div
+                      class="flex items-center justify-between text-[11px] mt-1"
+                    >
+                      <span class="text-zinc-500">RX</span>
+                      <span class="text-fox-400 font-semibold">↓ 11.9 MB/s</span>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex items-baseline justify-between mb-1.5">
+                      <span
+                        class="text-[11px] text-zinc-400 font-semibold tracking-wider"
+                        >Диск</span
+                      >
+                      <span class="text-[11px] text-zinc-100 font-bold"
+                        >31.6 GB
+                        <span class="text-zinc-500 font-normal"
+                          >/ 122.6 GB</span
+                        ></span
+                      >
+                    </div>
+                    <div class="h-1 rounded-full bg-zinc-800/80 overflow-hidden">
+                      <div
+                        class="h-full rounded-full bg-gradient-to-r from-fox-600 to-fox-400 w-[26%]"
+                      ></div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex items-center justify-between pt-1 border-t border-zinc-800/60"
+                  >
+                    <span
+                      class="text-[11px] text-zinc-400 font-semibold tracking-wider"
+                      >Время работы</span
+                    >
+                    <span class="text-[11px] text-zinc-100 font-bold"
+                      >13d 1h 12m</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Connection Status Bars -->
           <div
-            class="flex flex-wrap items-center gap-x-4 gap-y-1 px-4 sm:px-5 py-2 bg-zinc-900/90 border-t border-zinc-800/80 text-[10px] sm:text-[11px] text-zinc-500"
+            data-ft-bar="ssh"
+            class="ft-bar ft-bar-active flex-wrap items-center gap-x-4 gap-y-1 px-4 sm:px-5 py-2 bg-zinc-900/90 border-t border-zinc-800/80 text-[10px] sm:text-[11px] text-zinc-500"
           >
             <span class="inline-flex items-center gap-1.5">
               <svg
@@ -796,6 +2002,46 @@
             <span class="hidden sm:inline">0.003 ms</span>
             <span class="ml-auto hidden md:inline text-zinc-600"
               >256-COLOR · UTF-8 · METAL RENDER</span
+            >
+          </div>
+          <div
+            data-ft-bar="sftp"
+            class="ft-bar flex-wrap items-center gap-x-4 gap-y-1 px-4 sm:px-5 py-2 bg-zinc-900/90 border-t border-zinc-800/80 text-[10px] sm:text-[11px] text-zinc-500"
+          >
+            <span class="text-zinc-400">SSH 2.0-OpenSSH_9.6p1</span>
+            <span class="hidden sm:inline">Ubuntu-3ubuntu13.19</span>
+            <span>4.75KB</span>
+            <span class="text-emerald-400/80">↓ 10.98KB</span>
+            <span class="text-fox-400/80">↑ 0.048ms</span>
+            <span class="ml-auto hidden md:inline text-zinc-600"
+              >SFTP · UTF-8 · Зашифрованный канал</span
+            >
+          </div>
+          <div
+            data-ft-bar="vnc"
+            class="ft-bar flex-wrap items-center gap-x-4 gap-y-1 px-4 sm:px-5 py-2 bg-zinc-900/90 border-t border-zinc-800/80 text-[10px] sm:text-[11px] text-zinc-500"
+          >
+            <span class="text-zinc-400">32519b5d9db21:</span>
+            <span>75.63KB</span>
+            <span class="text-emerald-400/80">840.66KiB</span>
+            <span>0.003ms</span>
+            <span class="ml-auto hidden md:inline-flex items-center gap-3">
+              <span
+                >FPS: <span class="text-zinc-200 font-semibold">40.98</span></span
+              >
+              <span class="text-zinc-400">1280 x 800</span>
+            </span>
+          </div>
+          <div
+            data-ft-bar="docker"
+            class="ft-bar flex-wrap items-center gap-x-4 gap-y-1 px-4 sm:px-5 py-2 bg-zinc-900/90 border-t border-zinc-800/80 text-[10px] sm:text-[11px] text-zinc-500"
+          >
+            <span>SSH:2.0-OpenSSH_9.6p1 Ubuntu</span>
+            <span class="text-emerald-400/80">28.53KB</span>
+            <span class="text-fox-400/80">134.66KB</span>
+            <span>0.006ms</span>
+            <span class="ml-auto hidden md:inline text-zinc-600"
+              >DOCKER · CONTAINERD · API 1.48</span
             >
           </div>
         </div>
