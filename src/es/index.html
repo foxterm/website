@@ -270,6 +270,38 @@
                   "@type": "Answer",
                   "text": "FoxTerm no es un wrapper de Electron. Está diseñado desde cero con Swift nativo, aceleración por hardware Metal y bibliotecas nativas de C (OpenSSL, libssh, libvncclient), para ofrecer un arranque casi instantáneo, un consumo de recursos muy bajo y una optimización nativa en iOS."
                 }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Qué plataformas y sistemas operativos son compatibles?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "FoxTerm está construido de forma nativa para plataformas Apple: macOS 14.0 o posterior e iOS/iPadOS 17.0 o posterior, incluyendo iPhone y iPad. Una sola Compra universal desbloquea la app en todos los dispositivos. No existe una versión para Windows, Android ni Linux."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Qué protocolos y métodos de autenticación son compatibles?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "FoxTerm soporta conexiones SSH, SFTP y VNC, y gestiona motores Docker y Podman a través de SSH. Incluye cifrados modernos y tipos de clave como Ed25519, sesiones de terminal con paneles divididos, fragmentos de comandos, transferencias SFTP con arrastrar y soltar, y gestión visual de contenedores, imágenes y volúmenes."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿FoxTerm recopila datos o enruta mis conexiones a través de sus servidores?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "No. FoxTerm se conecta directamente desde tu dispositivo a tus propios servidores y nunca proxyfica tu tráfico. Aplica una política estricta de cero telemetría, sin análisis, seguimiento de actividad ni registros de conexión. Las credenciales y claves se cifran en el dispositivo y quedan aisladas en Apple Keychain y Secure Enclave."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Cómo obtengo Pro en macOS y cómo funciona la activación en iOS?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Hay dos formas de obtener Pro en macOS. La edición Mac App Store es una suscripción mensual o anual facturada por Apple, gestionada en los ajustes de suscripción de tu Apple ID, con renovaciones y reembolsos gestionados por Apple. La edición notarizada es una compilación directa y firmada para macOS que se desbloquea con un código de activación comprado en pay.foxterm.app. Independientemente de la edición para Mac que elijas, la app de iOS se activa automáticamente; la app de iOS en sí es gratuita en el App Store."
+                }
               }
             ]
           }
