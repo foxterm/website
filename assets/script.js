@@ -9,7 +9,7 @@
   );
 })();
 
-/* ===== Language Detection Banner (JS-injected) ===== */
+/* ===== Language / Domain Detection Banner (JS-injected) ===== */
 (function () {
   const LS_KEY = "foxterm.langPrompt.dismissed";
   const SS_KEY = "foxterm.langPrompt.session";
@@ -25,16 +25,9 @@
   const hostname = window.location.hostname;
   const isCnDomain = hostname.endsWith(".cn");
 
-  const TARGETS = [
-    { path: "/zh-hant/", langs: ["zh-hant", "zh-tw", "zh-hk", "zh-mo"] },
-    { path: "/zh-hans/", langs: ["zh-hans", "zh-cn", "zh-sg", "zh-my", "zh"] },
-    { path: "/ja/", langs: ["ja"] },
-    { path: "/de/", langs: ["de"] },
-    { path: "/ru/", langs: ["ru"] },
-    { path: "/es/", langs: ["es"] },
-    { path: "/fr/", langs: ["fr"] },
-    { path: "/ko/", langs: ["ko"] },
-    { path: "/pt-br/", langs: ["pt", "pt-br", "pt-pt"] },
+  const LANG_PATHS = [
+    "/", "/zh-hans/", "/zh-hant/", "/ja/", "/de/",
+    "/ru/", "/es/", "/fr/", "/ko/", "/pt-br/",
   ];
 
   const COUNTRY_LANG = {
@@ -47,13 +40,21 @@
     FR: "/fr/",
     KR: "/ko/",
     BR: "/pt-br/", PT: "/pt-br/",
+    US: "/", GB: "/", AU: "/", CA: "/", NZ: "/", IE: "/",
   };
 
-  const CN_PROMPT_COPY = {
+  const CN_PROMPT = {
     msg: "检测到您来自中国大陆，是否访问中国大陆域名以获得更好体验？",
     go: "前往 foxterm.cn",
     dismiss: "不再提示",
     close: "关闭",
+  };
+
+  const EN_PROMPT = {
+    msg: "Your region recommends the English version. Would you like to switch?",
+    go: "Go to English version",
+    dismiss: "Don't show again",
+    close: "Close",
   };
 
   const COPY = {
@@ -123,14 +124,13 @@
   };
 
   function createBanner() {
-    const box = document.createElement("div");
+    var box = document.createElement("div");
     box.id = "lang-prompt";
     box.className = "lang-prompt";
     box.setAttribute("role", "dialog");
     box.setAttribute("aria-live", "polite");
     box.setAttribute("aria-label", "Language suggestion");
     box.hidden = true;
-
     box.innerHTML =
       '<div class="lang-prompt-card">' +
         '<span class="fox-logo-icon lang-prompt-logo" aria-hidden="true"></span>' +
@@ -145,7 +145,6 @@
           '</svg>' +
         '</button>' +
       '</div>';
-
     document.body.appendChild(box);
     return box;
   }
@@ -156,13 +155,11 @@
     var dismissEl = document.getElementById("lang-prompt-dismiss");
     var closeEl = document.getElementById("lang-prompt-close");
     if (!msgEl || !goEl || !dismissEl || !closeEl) return;
-
     msgEl.textContent = msg;
     goEl.textContent = goText;
     goEl.href = goHref;
     dismissEl.textContent = dismissText;
     closeEl.setAttribute("aria-label", closeLabel);
-
     dismissEl.addEventListener("click", function () {
       try { localStorage.setItem(LS_KEY, "1"); } catch (e) { /* ignore */ }
       box.hidden = true;
@@ -171,64 +168,40 @@
       try { sessionStorage.setItem(SS_KEY, "1"); } catch (e) { /* ignore */ }
       box.hidden = true;
     });
-
     box.hidden = false;
-  }
-
-  function pickTargetByBrowser() {
-    var locales = (navigator.languages && navigator.languages.length
-      ? navigator.languages
-      : [navigator.language]) || ["en"];
-    for (var i = 0; i < locales.length; i++) {
-      var raw = String(locales[i] || "").toLowerCase().replace(/_/g, "-");
-      for (var j = 0; j < TARGETS.length; j++) {
-        var t = TARGETS[j];
-        for (var k = 0; k < t.langs.length; k++) {
-          var code = t.langs[k];
-          if (raw === code || raw.indexOf(code + "-") === 0) return t;
-        }
-      }
-    }
-    return null;
   }
 
   function findTargetByCountry(cc) {
     var path = COUNTRY_LANG[cc];
     if (!path) return null;
-    for (var i = 0; i < TARGETS.length; i++) {
-      if (TARGETS[i].path === path) return TARGETS[i];
+    for (var i = 0; i < LANG_PATHS.length; i++) {
+      if (LANG_PATHS[i] === path) return path;
     }
     return null;
   }
 
-  function buildCnUrl() {
-    return CN_DOMAIN + window.location.pathname + window.location.search;
+  function isOnPath(path) {
+    if (path === "/") {
+      return window.location.pathname === "/" ||
+        window.location.pathname === "/index.html" ||
+        !/^\/[a-z]{2}(?:-[a-z]{2,})?\//.test(window.location.pathname);
+    }
+    return window.location.pathname.startsWith(path);
   }
 
-  function buildLangUrl(targetPath) {
+  function buildTargetUrl(targetPath) {
     var pathname = window.location.pathname;
+    var search = window.location.search;
     var match = pathname.match(/^\/([a-z]{2}(?:-[a-z]{2,})?)\//);
     var rest;
     if (match) {
       rest = pathname.slice(match[0].length);
-    } else if (pathname.charAt(0) === "/") {
-      rest = pathname.slice(1);
+    } else if (pathname === "/" || pathname === "/index.html") {
+      rest = "";
     } else {
-      rest = pathname;
+      rest = pathname.slice(1);
     }
-    return targetPath + rest + window.location.search;
-  }
-
-  function showCnPrompt(box, url) {
-    var c = CN_PROMPT_COPY;
-    showBanner(box, c.msg, c.go, url, c.dismiss, c.close);
-  }
-
-  function showLangPrompt(box, target, url) {
-    var key = target.path.slice(1, -1);
-    var c = COPY[key];
-    if (!c) return;
-    showBanner(box, c.msg.replace(/\{lang\}/g, c.name), c.go, url, c.dismiss, c.close);
+    return targetPath + rest + search;
   }
 
   async function init() {
@@ -240,22 +213,34 @@
       clearTimeout(timer);
       if (res.ok) {
         var data = await res.json();
-        var raw = data && data.eo && data.eo.geo && data.eo.geo.countryCodeAlpha2;
+        var raw = data && data.geo && data.geo.countryCodeAlpha2;
         cc = raw ? String(raw).toUpperCase() : null;
       }
     } catch (e) { /* geo failed */ }
 
+    if (!cc) return;
+
     var box = createBanner();
 
     if (cc === "CN" && !isCnDomain) {
-      showCnPrompt(box, buildCnUrl());
+      var c = CN_PROMPT;
+      showBanner(box, c.msg, c.go, CN_DOMAIN + window.location.pathname + window.location.search, c.dismiss, c.close);
       return;
     }
 
-    var target = cc ? findTargetByCountry(cc) : null;
-    if (!target) target = pickTargetByBrowser();
-    if (target && !window.location.pathname.startsWith(target.path)) {
-      showLangPrompt(box, target, buildLangUrl(target.path));
+    var targetPath = findTargetByCountry(cc);
+    if (!targetPath || isOnPath(targetPath)) return;
+
+    var url = buildTargetUrl(targetPath);
+
+    if (targetPath === "/") {
+      var e = EN_PROMPT;
+      showBanner(box, e.msg, e.go, url, e.dismiss, e.close);
+    } else {
+      var key = targetPath.slice(1, -1);
+      var t = COPY[key];
+      if (!t) return;
+      showBanner(box, t.msg.replace(/\{lang\}/g, t.name), t.go, url, t.dismiss, t.close);
     }
   }
 
