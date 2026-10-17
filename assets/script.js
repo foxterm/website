@@ -14,6 +14,7 @@
   const LS_KEY = "foxterm.langPrompt.dismissed";
   const SS_KEY = "foxterm.langPrompt.session";
   const CN_DOMAIN = "https://foxterm.cn";
+  const INTL_DOMAIN = "https://foxterm.app";
 
   let dismissed = false;
   try {
@@ -48,6 +49,13 @@
     go: "前往 foxterm.cn",
     dismiss: "不再提示",
     close: "关闭",
+  };
+
+  const INTL_PROMPT = {
+    msg: "You are currently on the China domain. Switch to the international site for a better experience?",
+    go: "Go to foxterm.app",
+    dismiss: "Don't show again",
+    close: "Close",
   };
 
   const EN_PROMPT = {
@@ -225,6 +233,12 @@
     if (cc === "CN" && !isCnDomain) {
       var c = CN_PROMPT;
       showBanner(box, c.msg, c.go, CN_DOMAIN + window.location.pathname + window.location.search, c.dismiss, c.close);
+      return;
+    }
+
+    if (cc !== "CN" && isCnDomain) {
+      var d = INTL_PROMPT;
+      showBanner(box, d.msg, d.go, INTL_DOMAIN + window.location.pathname + window.location.search, d.dismiss, d.close);
       return;
     }
 
