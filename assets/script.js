@@ -20,28 +20,51 @@
   try {
     dismissed =
       !!sessionStorage.getItem(SS_KEY) || !!localStorage.getItem(LS_KEY);
-  } catch (e) { /* storage unavailable */ }
+  } catch (e) {
+    /* storage unavailable */
+  }
   if (dismissed) return;
 
   const hostname = window.location.hostname;
   const isCnDomain = hostname.endsWith(".cn");
 
   const LANG_PATHS = [
-    "/", "/zh-hans/", "/zh-hant/", "/ja/", "/de/",
-    "/ru/", "/es/", "/fr/", "/ko/", "/pt-br/",
+    "/",
+    "/zh-hans/",
+    "/zh-hant/",
+    "/ja/",
+    "/de/",
+    "/ru/",
+    "/es/",
+    "/fr/",
+    "/ko/",
+    "/pt-br/",
   ];
 
   const COUNTRY_LANG = {
-    CN: "/zh-hans/", TW: "/zh-hant/", HK: "/zh-hant/", MO: "/zh-hant/",
-    SG: "/zh-hans/", MY: "/zh-hans/",
+    CN: "/zh-hans/",
+    TW: "/zh-hant/",
+    HK: "/zh-hant/",
+    MO: "/zh-hant/",
+    SG: "/zh-hans/",
+    MY: "/zh-hans/",
     JP: "/ja/",
-    DE: "/de/", AT: "/de/", CH: "/de/",
-    RU: "/ru/", BY: "/ru/",
+    DE: "/de/",
+    AT: "/de/",
+    CH: "/de/",
+    RU: "/ru/",
+    BY: "/ru/",
     ES: "/es/",
     FR: "/fr/",
     KR: "/ko/",
-    BR: "/pt-br/", PT: "/pt-br/",
-    US: "/", GB: "/", AU: "/", CA: "/", NZ: "/", IE: "/",
+    BR: "/pt-br/",
+    PT: "/pt-br/",
+    US: "/",
+    GB: "/",
+    AU: "/",
+    CA: "/",
+    NZ: "/",
+    IE: "/",
   };
 
   const CN_PROMPT = {
@@ -132,7 +155,7 @@
   };
 
   function createBanner() {
-    var box = document.createElement("div");
+    const box = document.createElement("div");
     box.id = "lang-prompt";
     box.className = "lang-prompt";
     box.setAttribute("role", "dialog");
@@ -141,27 +164,27 @@
     box.hidden = true;
     box.innerHTML =
       '<div class="lang-prompt-card">' +
-        '<span class="fox-logo-icon lang-prompt-logo" aria-hidden="true"></span>' +
-        '<p id="lang-prompt-msg" class="lang-prompt-msg"></p>' +
-        '<div class="lang-prompt-actions">' +
-          '<a id="lang-prompt-go" class="lang-prompt-btn lang-prompt-btn-primary" href="#"></a>' +
-          '<button id="lang-prompt-dismiss" type="button" class="lang-prompt-btn lang-prompt-btn-ghost"></button>' +
-        '</div>' +
-        '<button id="lang-prompt-close" type="button" class="lang-prompt-close" aria-label="Close">' +
-          '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">' +
-            '<path d="M6 6l12 12M18 6L6 18"></path>' +
-          '</svg>' +
-        '</button>' +
-      '</div>';
+      '<span class="fox-logo-icon lang-prompt-logo" aria-hidden="true"></span>' +
+      '<p id="lang-prompt-msg" class="lang-prompt-msg"></p>' +
+      '<div class="lang-prompt-actions">' +
+      '<a id="lang-prompt-go" class="lang-prompt-btn lang-prompt-btn-primary" href="#"></a>' +
+      '<button id="lang-prompt-dismiss" type="button" class="lang-prompt-btn lang-prompt-btn-ghost"></button>' +
+      "</div>" +
+      '<button id="lang-prompt-close" type="button" class="lang-prompt-close" aria-label="Close">' +
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">' +
+      '<path d="M6 6l12 12M18 6L6 18"></path>' +
+      "</svg>" +
+      "</button>" +
+      "</div>";
     document.body.appendChild(box);
     return box;
   }
 
   function showBanner(box, msg, goText, goHref, dismissText, closeLabel) {
-    var msgEl = document.getElementById("lang-prompt-msg");
-    var goEl = document.getElementById("lang-prompt-go");
-    var dismissEl = document.getElementById("lang-prompt-dismiss");
-    var closeEl = document.getElementById("lang-prompt-close");
+    const msgEl = document.getElementById("lang-prompt-msg");
+    const goEl = document.getElementById("lang-prompt-go");
+    const dismissEl = document.getElementById("lang-prompt-dismiss");
+    const closeEl = document.getElementById("lang-prompt-close");
     if (!msgEl || !goEl || !dismissEl || !closeEl) return;
     msgEl.textContent = msg;
     goEl.textContent = goText;
@@ -169,20 +192,28 @@
     dismissEl.textContent = dismissText;
     closeEl.setAttribute("aria-label", closeLabel);
     dismissEl.addEventListener("click", function () {
-      try { localStorage.setItem(LS_KEY, "1"); } catch (e) { /* ignore */ }
+      try {
+        localStorage.setItem(LS_KEY, "1");
+      } catch (e) {
+        /* ignore */
+      }
       box.hidden = true;
     });
     closeEl.addEventListener("click", function () {
-      try { sessionStorage.setItem(SS_KEY, "1"); } catch (e) { /* ignore */ }
+      try {
+        sessionStorage.setItem(SS_KEY, "1");
+      } catch (e) {
+        /* ignore */
+      }
       box.hidden = true;
     });
     box.hidden = false;
   }
 
   function findTargetByCountry(cc) {
-    var path = COUNTRY_LANG[cc];
+    const path = COUNTRY_LANG[cc];
     if (!path) return null;
-    for (var i = 0; i < LANG_PATHS.length; i++) {
+    for (let i = 0; i < LANG_PATHS.length; i++) {
       if (LANG_PATHS[i] === path) return path;
     }
     return null;
@@ -190,18 +221,20 @@
 
   function isOnPath(path) {
     if (path === "/") {
-      return window.location.pathname === "/" ||
+      return (
+        window.location.pathname === "/" ||
         window.location.pathname === "/index.html" ||
-        !/^\/[a-z]{2}(?:-[a-z]{2,})?\//.test(window.location.pathname);
+        !/^\/[a-z]{2}(?:-[a-z]{2,})?\//.test(window.location.pathname)
+      );
     }
     return window.location.pathname.startsWith(path);
   }
 
   function buildTargetUrl(targetPath) {
-    var pathname = window.location.pathname;
-    var search = window.location.search;
-    var match = pathname.match(/^\/([a-z]{2}(?:-[a-z]{2,})?)\//);
-    var rest;
+    const pathname = window.location.pathname;
+    const search = window.location.search;
+    const match = pathname.match(/^\/([a-z]{2}(?:-[a-z]{2,})?)\//);
+    let rest;
     if (match) {
       rest = pathname.slice(match[0].length);
     } else if (pathname === "/" || pathname === "/index.html") {
@@ -213,48 +246,73 @@
   }
 
   async function init() {
-    var cc = null;
+    let cc = null;
     try {
-      var ctrl = new AbortController();
-      var timer = setTimeout(function () { ctrl.abort(); }, 3000);
-      var res = await fetch("/geo", { signal: ctrl.signal });
+      const ctrl = new AbortController();
+      const timer = setTimeout(function () {
+        ctrl.abort();
+      }, 3000);
+      const res = await fetch("/geo", { signal: ctrl.signal });
       clearTimeout(timer);
       if (res.ok) {
-        var data = await res.json();
-        var raw = data && data.geo && data.geo.countryCodeAlpha2;
+        const data = await res.json();
+        const raw = data && data.geo && data.geo.countryCodeAlpha2;
         cc = raw ? String(raw).toUpperCase() : null;
       }
-    } catch (e) { /* geo failed */ }
+    } catch (e) {
+      /* geo failed */
+    }
 
     if (!cc) return;
 
-    var box = createBanner();
+    const box = createBanner();
 
     if (cc === "CN" && !isCnDomain) {
-      var c = CN_PROMPT;
-      showBanner(box, c.msg, c.go, CN_DOMAIN + window.location.pathname + window.location.search, c.dismiss, c.close);
+      const c = CN_PROMPT;
+      showBanner(
+        box,
+        c.msg,
+        c.go,
+        CN_DOMAIN + window.location.pathname + window.location.search,
+        c.dismiss,
+        c.close,
+      );
       return;
     }
 
     if (cc !== "CN" && isCnDomain) {
-      var d = INTL_PROMPT;
-      showBanner(box, d.msg, d.go, INTL_DOMAIN + window.location.pathname + window.location.search, d.dismiss, d.close);
+      const d = INTL_PROMPT;
+      showBanner(
+        box,
+        d.msg,
+        d.go,
+        INTL_DOMAIN + window.location.pathname + window.location.search,
+        d.dismiss,
+        d.close,
+      );
       return;
     }
 
-    var targetPath = findTargetByCountry(cc);
+    const targetPath = findTargetByCountry(cc);
     if (!targetPath || isOnPath(targetPath)) return;
 
-    var url = buildTargetUrl(targetPath);
+    const url = buildTargetUrl(targetPath);
 
     if (targetPath === "/") {
-      var e = EN_PROMPT;
+      const e = EN_PROMPT;
       showBanner(box, e.msg, e.go, url, e.dismiss, e.close);
     } else {
-      var key = targetPath.slice(1, -1);
-      var t = COPY[key];
+      const key = targetPath.slice(1, -1);
+      const t = COPY[key];
       if (!t) return;
-      showBanner(box, t.msg.replace(/\{lang\}/g, t.name), t.go, url, t.dismiss, t.close);
+      showBanner(
+        box,
+        t.msg.replace(/\{lang\}/g, t.name),
+        t.go,
+        url,
+        t.dismiss,
+        t.close,
+      );
     }
   }
 
