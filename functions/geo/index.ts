@@ -4,12 +4,9 @@ export function onRequest({ request }: CloudFunctionContext) {
   // @ts-ignore
   const eo = request!.eo;
 
-  return new Response(
-    JSON.stringify(eo),
-    {
-      headers: {
-        "content-type": "application/json; charset=UTF-8",
-      },
+  return new Response(JSON.stringify(eo), {
+    headers: {
+      "content-type": "application/json; charset=UTF-8",
     },
-  );
+  });
 }

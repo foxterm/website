@@ -39,15 +39,23 @@
   ];
 
   const COUNTRY_LANG = {
-    CN: "/zh-hans/", TW: "/zh-hant/", HK: "/zh-hant/", MO: "/zh-hant/",
-    SG: "/zh-hans/", MY: "/zh-hans/",
+    CN: "/zh-hans/",
+    TW: "/zh-hant/",
+    HK: "/zh-hant/",
+    MO: "/zh-hant/",
+    SG: "/zh-hans/",
+    MY: "/zh-hans/",
     JP: "/ja/",
-    DE: "/de/", AT: "/de/", CH: "/de/",
-    RU: "/ru/", BY: "/ru/",
+    DE: "/de/",
+    AT: "/de/",
+    CH: "/de/",
+    RU: "/ru/",
+    BY: "/ru/",
     ES: "/es/",
     FR: "/fr/",
     KR: "/ko/",
-    BR: "/pt-br/", PT: "/pt-br/",
+    BR: "/pt-br/",
+    PT: "/pt-br/",
   };
 
   function pickTargetByBrowser() {
@@ -55,7 +63,9 @@
       ? navigator.languages
       : [navigator.language]) || ["en"];
     for (let i = 0; i < locales.length; i++) {
-      const raw = String(locales[i] || "").toLowerCase().replace(/_/g, "-");
+      const raw = String(locales[i] || "")
+        .toLowerCase()
+        .replace(/_/g, "-");
       for (let j = 0; j < TARGETS.length; j++) {
         const t = TARGETS[j];
         for (let k = 0; k < t.langs.length; k++) {
@@ -97,12 +107,20 @@
     closeEl.setAttribute("aria-label", copy.close);
 
     dismissEl.addEventListener("click", () => {
-      try { localStorage.setItem(LS_KEY, "1"); } catch (e) { /* ignore */ }
+      try {
+        localStorage.setItem(LS_KEY, "1");
+      } catch (e) {
+        /* ignore */
+      }
       box.hidden = true;
     });
 
     closeEl.addEventListener("click", () => {
-      try { sessionStorage.setItem(SS_KEY, "1"); } catch (e) { /* ignore */ }
+      try {
+        sessionStorage.setItem(SS_KEY, "1");
+      } catch (e) {
+        /* ignore */
+      }
       box.hidden = true;
     });
 
