@@ -184,7 +184,8 @@
       clearTimeout(timer);
       if (res.ok) {
         const data = await res.json();
-        const cc = data && data.eo && data.eo.geo && data.eo.geo.countryCodeAlpha2;
+        const raw = data && data.eo && data.eo.geo && data.eo.geo.countryCodeAlpha2;
+        const cc = raw ? String(raw).toUpperCase() : null;
         if (cc) target = findTargetByCountry(cc);
       }
     } catch (e) {
