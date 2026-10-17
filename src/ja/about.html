@@ -1,0 +1,809 @@
+<!doctype html>
+<html lang="ja" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- SEO Primary Meta Tags - Japanese -->
+    <title>FoxTerm について | あなたをリスペクトするターミナルクライアント</title>
+    <meta
+      name="description"
+      content="FoxTerm はネイティブな macOS / iOS 向け SSH、SFTP、VNC、Docker クライアントです。Swift と C で構築。無料ダウンロード、Pro はサブスクリプションまたはアクティベーションコード。テレメトリゼロ。"
+    />
+    <meta
+      name="keywords"
+      content="FoxTerm について, SSH クライアント, ターミナルエミュレータ, macOS SSH, iOS ターミナル, Swift SSH クライアント, ネイティブターミナル, セキュアターミナル, FoxTerm のストーリー"
+    />
+    <meta name="author" content="FoxTerm" />
+    <meta
+      name="robots"
+      content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="language" content="日本語" />
+    <meta name="revisit-after" content="30 days" />
+
+    <!-- Canonical & Alternate Hreflang Tags -->
+    <link rel="canonical" href="https://foxterm.app/ja/about" />
+    <link rel="alternate" hreflang="en" href="https://foxterm.app/about" />
+    <link
+      rel="alternate"
+      hreflang="zh-Hans"
+      href="https://foxterm.app/zh-hans/about"
+    />
+    <link
+      rel="alternate"
+      hreflang="zh-Hant"
+      href="https://foxterm.app/zh-hant/about"
+    />
+    <link rel="alternate" hreflang="ja" href="https://foxterm.app/ja/about" />
+    <link rel="alternate" hreflang="de" href="https://foxterm.app/de/about" />
+    <link rel="alternate" hreflang="ru" href="https://foxterm.app/ru/about" />
+    <link rel="alternate" hreflang="es" href="https://foxterm.app/es/about" />
+    <link rel="alternate" hreflang="fr" href="https://foxterm.app/fr/about" />
+    <link rel="alternate" hreflang="ko" href="https://foxterm.app/ko/about" />
+    <link
+      rel="alternate"
+      hreflang="pt-BR"
+      href="https://foxterm.app/pt-br/about"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://foxterm.app/about"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta
+      property="og:locale:alternate"
+      content="en_US, zh_CN, zh_TW, de_DE, ru_RU, es_ES, fr_FR, ko_KR, pt_BR"
+    />
+    <meta property="og:title" content="FoxTerm について | あなたをリスペクトするターミナルクライアント" />
+    <meta
+      property="og:description"
+      content="ネイティブ macOS / iOS SSH クライアント。Swift と C で構築。無料ダウンロード、Pro はサブスクリプションまたはアクティベーションコード。テレメトリゼロ。"
+    />
+    <meta property="og:url" content="https://foxterm.app/ja/about" />
+    <meta property="og:site_name" content="FoxTerm" />
+    <meta property="og:image" content="/assets/apple-touch-icon.png" />
+
+    <!-- Favicons & Manifest -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="manifest" href="/assets/site.webmanifest" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon-32x32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/apple-touch-icon.png"
+    />
+    <link rel="stylesheet" href="/assets/tailwind.min.css" />
+    <link rel="stylesheet" href="/assets/style.css" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "FoxTerm について",
+        "url": "https://foxterm.app/ja/about",
+        "inLanguage": "ja-JP",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "FoxTerm",
+          "url": "https://foxterm.app/ja/"
+        },
+        "description": "FoxTerm のストーリー — macOS と iOS のためのネイティブ SSH、SFTP、VNC、Docker クライアント。",
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "ホーム",
+              "item": "https://foxterm.app/ja/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "概要",
+              "item": "https://foxterm.app/ja/about"
+            }
+          ]
+        }
+      }
+    </script>
+  </head>
+
+  <body
+    class="bg-zinc-950 text-zinc-100 font-sans antialiased selection:bg-fox-500 selection:text-white overflow-x-hidden"
+  >
+    <!-- Ambient Background Lighting -->
+    <div class="fixed inset-0 w-full h-full pointer-events-none z-0">
+      <div
+        class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-[1200px] h-[600px] bg-fox-500/15 blur-[140px] md:blur-[180px] rounded-full z-0 transform-gpu translate-z-0"
+      ></div>
+      <div
+        class="absolute top-1/3 -right-20 w-[400px] h-[400px] bg-fox-500/10 blur-[150px] rounded-full z-0 transform-gpu translate-z-0"
+      ></div>
+      <div
+        class="absolute inset-0 w-full h-full opacity-20 bg-code-grid [mask-image:radial-gradient(ellipse_at_center,black_20%,transparent_80%)] [-webkit-mask-image:radial-gradient(ellipse_at_center,black_20%,transparent_80%)]"
+      ></div>
+    </div>
+
+    <!-- Navigation -->
+    <header
+      class="sticky top-0 z-50 w-full bg-zinc-950/60 backdrop-blur-xl border-b border-white/[0.06]"
+    >
+      <nav
+        class="max-w-4xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between relative z-20"
+      >
+        <a
+          href="/ja/"
+          class="flex items-center space-x-3 group focus:outline-none"
+        >
+          <div
+            class="relative flex-shrink-0 flex items-center justify-center cursor-default"
+          >
+            <span
+              class="fox-logo-icon text-xl text-fox-500 transition-all duration-300 group-hover:drop-shadow-[0_0_8px_rgba(255,104,0,0.6)]"
+            ></span>
+          </div>
+          <span
+            class="text-base font-bold tracking-tight text-white flex items-center gap-1.5 group-hover:text-fox-400 transition-colors"
+          >
+            FoxTerm
+          </span>
+        </a>
+        <div class="flex items-center space-x-3">
+          <div class="lang-switcher">
+            <details class="lang-dd">
+              <summary class="lang-dd-btn" aria-label="言語">
+                <svg
+                  class="lang-dd-globe"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="9"></circle>
+                  <path
+                    stroke-linecap="round"
+                    d="M3.6 9h16.8M3.6 15h16.8M12 3a13.5 13.5 0 0 1 0 18a13.5 13.5 0 0 1 0-18"
+                  ></path>
+                </svg>
+                <span class="lang-dd-current">日本語</span>
+                <span class="lang-dd-caret" aria-hidden="true"></span>
+              </summary>
+              <ul class="lang-dd-menu">
+                <li>
+                  <a
+                    class="lang-dd-item"
+                    href="/about"
+                    lang="en"
+                    hreflang="en"
+                    >English</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="lang-dd-item"
+                    href="/zh-hans/about"
+                    lang="zh-Hans"
+                    hreflang="zh-Hans"
+                    >简体中文</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="lang-dd-item"
+                    href="/zh-hant/about"
+                    lang="zh-Hant"
+                    hreflang="zh-Hant"
+                    >繁體中文</a
+                  >
+                </li>
+                <li>
+                  <span class="lang-dd-item lang-dd-active" aria-current="true"
+                    >日本語</span
+                  >
+                </li>
+                <li>
+                  <a
+                    class="lang-dd-item"
+                    href="/de/about"
+                    lang="de"
+                    hreflang="de"
+                    >Deutsch</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="lang-dd-item"
+                    href="/ru/about"
+                    lang="ru"
+                    hreflang="ru"
+                    >Русский</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="lang-dd-item"
+                    href="/es/about"
+                    lang="es"
+                    hreflang="es"
+                    >Español</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="lang-dd-item"
+                    href="/fr/about"
+                    lang="fr"
+                    hreflang="fr"
+                    >Français</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="lang-dd-item"
+                    href="/ko/about"
+                    lang="ko"
+                    hreflang="ko"
+                    >한국어</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="lang-dd-item"
+                    href="/pt-br/about"
+                    lang="pt-BR"
+                    hreflang="pt-BR"
+                    >Português (Brasil)</a
+                  >
+                </li>
+              </ul>
+            </details>
+          </div>
+          <a
+            href="/ja/"
+            class="h-8 px-3.5 text-[11px] font-semibold rounded-lg bg-fox-500 hover:bg-fox-600 border border-fox-400/30 text-white transition-all duration-200 flex items-center justify-center shadow-[0_0_15px_rgba(255,94,0,0.25)] active:scale-95 backdrop-blur-md"
+          >
+            ホームに戻る
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
+      <!-- Hero -->
+      <div class="mb-14 text-left">
+        <div
+          class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-fox-500/10 border border-fox-500/20 text-fox-500 text-xs font-mono font-medium mb-6"
+        >
+          <span
+            class="w-1.5 h-1.5 rounded-full bg-fox-500 animate-pulse"
+          ></span>
+          <span>SWIFT · C · 妥協ゼロ</span>
+        </div>
+        <h1
+          class="text-3xl sm:text-5xl font-extrabold tracking-tight mb-5 text-white"
+        >
+          ソフトウェアは <br /><span class="orange-gradient-text"
+            >速く、プライベートで、長持ちするべき。</span
+          >
+        </h1>
+        <p class="text-zinc-400 text-base sm:text-lg leading-relaxed max-w-2xl">
+          FoxTerm は macOS と iOS のためのネイティブターミナルクライアントです。Electron も、Web ラッパーも、テレメトリもありません —— Swift と C
+          が本来の役割を果たしているだけです。
+        </p>
+      </div>
+
+      <!-- The Origin Story -->
+      <section class="mb-16">
+        <div
+          class="p-6 sm:p-10 rounded-3xl bg-zinc-900/50 border border-zinc-800 backdrop-blur-xl relative overflow-hidden shadow-2xl"
+        >
+          <div
+            class="absolute -right-10 -bottom-10 w-64 h-64 bg-fox-500/10 blur-[90px] rounded-full pointer-events-none"
+          ></div>
+
+          <div
+            class="text-fox-500 font-mono font-bold text-xs mb-4 tracking-widest"
+          >
+            01 / FoxTerm の理由
+          </div>
+          <h2 class="text-xl sm:text-2xl font-bold text-white mb-4">
+            既存のツールが十分ではなかった。だから自分で書いた。
+          </h2>
+          <div class="space-y-4 text-zinc-300 text-sm sm:text-base leading-relaxed">
+            <p>
+              SSH
+              はインフラが稼働するインターフェースです。深夜のデプロイ、サーバーのデバッグ、問題の修正 ——
+              すべてここで行われます。試したクライアントはどれも 2004
+              年から進化していないか、ネイティブでべき機能にサブスクリプションを課していました。
+            </p>
+            <p>
+              FoxTerm
+              は個人的なツールとして始まりました —— macOS と iOS
+              のデザイン言語を本当に尊重し、ネイティブフレームワークで動作し、ホームに通信しないターミナルクライアント。それは共有する価値のあるものになりました。
+            </p>
+            <p class="text-zinc-400 italic border-l-2 border-fox-500/40 pl-4">
+              テレメトリなし。アカウントなし。ペイウォールの裏に隠れた機能制限なし。
+              仕事をこなして、邪魔にならないツール。それだけです。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Philosophy Grid -->
+      <section class="mb-16">
+        <div
+          class="text-fox-500 font-mono font-bold text-xs mb-6 tracking-widest"
+        >
+          02 / エンジニアリング原則
+        </div>
+        <h2 class="text-xl sm:text-2xl font-bold text-white mb-8">
+          FoxTerm が基づくもの —— そして決して妥協しないもの。
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div
+            class="p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800/70 backdrop-blur-xl group hover:border-fox-500/40 hover:-translate-y-0.5 hover:shadow-[0_0_24px_-8px_rgba(255,104,0,0.35)] transition-all duration-300"
+          >
+            <div
+              class="w-10 h-10 rounded-xl bg-fox-500/10 border border-fox-500/25 flex items-center justify-center text-fox-500 mb-4 shadow-[0_0_15px_rgba(255,104,0,0.15)]"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="font-bold text-white text-sm mb-2">ネイティブファースト</h3>
+            <p class="text-xs text-zinc-400 leading-relaxed">
+              Swift と C —— Electron でも Web
+              ラッパーでもありません。FoxTerm は AppKit と UIKit
+              と直接対話するため、ブラウザタブから移植されたのではなく、Mac と
+              iPhone に生まれついたような感触です。
+            </p>
+          </div>
+
+          <div
+            class="p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800/70 backdrop-blur-xl group hover:border-fox-500/40 hover:-translate-y-0.5 hover:shadow-[0_0_24px_-8px_rgba(255,104,0,0.35)] transition-all duration-300"
+          >
+            <div
+              class="w-10 h-10 rounded-xl bg-fox-500/10 border border-fox-500/25 flex items-center justify-center text-fox-500 mb-4 shadow-[0_0_15px_rgba(255,104,0,0.15)]"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M16.5 10.5V6.75a4.5 4.5 0 00-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="font-bold text-white text-sm mb-2">
+              アーキテクチャによるプライバシー
+            </h3>
+            <p class="text-xs text-zinc-400 leading-relaxed">
+              テレメトリゼロ。接続データ、鍵、セッション履歴がデバイスから出ることはありません。鍵は利用可能な場合
+              Secure Enclave に保存されます —— どこかのクラウドサーバーではなく。
+            </p>
+          </div>
+
+          <div
+            class="p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800/70 backdrop-blur-xl group hover:border-fox-500/40 hover:-translate-y-0.5 hover:shadow-[0_0_24px_-8px_rgba(255,104,0,0.35)] transition-all duration-300"
+          >
+            <div
+              class="w-10 h-10 rounded-xl bg-fox-500/10 border border-fox-500/25 flex items-center justify-center text-fox-500 mb-4 shadow-[0_0_15px_rgba(255,104,0,0.15)]"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="font-bold text-white text-sm mb-2">パフォーマンス</h3>
+            <p class="text-xs text-zinc-400 leading-relaxed">
+              コールドlaunch 400 ms 未満。ネイティブフレームレートでのターミナルレンダリング。JavaScript
+              エンジンのオーバーヘッドも、起動スプラッシュスクリーンも、人為的な遅延もありません。
+            </p>
+          </div>
+
+          <div
+            class="p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800/70 backdrop-blur-xl group hover:border-fox-500/40 hover:-translate-y-0.5 hover:shadow-[0_0_24px_-8px_rgba(255,104,0,0.35)] transition-all duration-300"
+          >
+            <div
+              class="w-10 h-10 rounded-xl bg-fox-500/10 border border-fox-500/25 flex items-center justify-center text-fox-500 mb-4 shadow-[0_0_15px_rgba(255,104,0,0.15)]"
+            >
+              <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+            </div>
+            <h3 class="font-bold text-white text-sm mb-2">長持ちする設計</h3>
+            <p class="text-xs text-zinc-400 leading-relaxed">
+              ダウンロードだけで全機能を利用可能。Pro はノード制限を解除 — App Store サブスクリプションまたはワンタイム activation code で。必須機能をロックせず、不自然な tier もなし。
+              Mac、iPhone、iPad をカバー。アップデートは製品が良くなり続けるから提供されるのであって、更新日が近づいているからではありません。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tech Stack -->
+      <section class="mb-16">
+        <div
+          class="text-fox-500 font-mono font-bold text-xs mb-6 tracking-widest"
+        >
+          03 / フードの下
+        </div>
+        <h2 class="text-xl sm:text-2xl font-bold text-white mb-8">
+          スタック —— なぜなら重要だから。
+        </h2>
+
+        <div
+          class="p-6 sm:p-8 rounded-3xl bg-zinc-900/50 border border-zinc-800 backdrop-blur-xl relative overflow-hidden shadow-2xl"
+        >
+          <div
+            class="absolute -left-10 -top-10 w-64 h-64 bg-fox-500/8 blur-[90px] rounded-full pointer-events-none"
+          ></div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-5">
+            <div>
+              <div
+                class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest mb-1"
+              >
+                言語
+              </div>
+              <div class="text-sm text-white font-semibold">Swift · C</div>
+            </div>
+            <div>
+              <div
+                class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest mb-1"
+              >
+                プロトコル
+              </div>
+              <div class="text-sm text-white font-semibold">
+                SSH · SFTP · VNC · Docker
+              </div>
+            </div>
+            <div>
+              <div
+                class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest mb-1"
+              >
+                セキュリティ
+              </div>
+              <div class="text-sm text-white font-semibold">
+                Secure Enclave · Keychain · App Sandbox
+              </div>
+            </div>
+            <div>
+              <div
+                class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest mb-1"
+              >
+                プラットフォーム
+              </div>
+              <div class="text-sm text-white font-semibold">
+                macOS 13+ · iOS 16+ · iPadOS
+              </div>
+            </div>
+            <div>
+              <div
+                class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest mb-1"
+              >
+                配信
+              </div>
+              <div class="text-sm text-white font-semibold">
+                Mac App Store · Apple Notarized
+              </div>
+            </div>
+            <div>
+              <div
+                class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest mb-1"
+              >
+                価格
+              </div>
+              <div class="text-sm text-white font-semibold">
+                無料 · Pro サブスクリプションまたはアクティベーションコード
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- The Developer -->
+      <section class="mb-16">
+        <div
+          class="text-fox-500 font-mono font-bold text-xs mb-6 tracking-widest"
+        >
+          04 / 開発者
+        </div>
+
+        <div
+          class="p-6 sm:p-10 rounded-3xl bg-zinc-900/50 border border-zinc-800 backdrop-blur-xl relative overflow-hidden shadow-2xl"
+        >
+          <div
+            class="absolute -right-10 -bottom-10 w-64 h-64 bg-fox-500/10 blur-[90px] rounded-full pointer-events-none"
+          ></div>
+
+          <div class="space-y-4 text-zinc-300 text-sm sm:text-base leading-relaxed">
+            <p>
+              私は Swift、Go、React で作業するソフトウェアエンジニアです。FoxTerm
+              は最もこだわっているプロダクトです ——
+              すべてのコードは、自分が毎日使うツールに求める基準と同じで書かれています。
+            </p>
+            <p>
+              FoxTerm 以外にも、厳選された受託プロジェクトを引き受けています ——
+              技術が重要で、基準が高い仕事。そのレベルの attention
+              に値するものを作っているなら、<a
+                href="/ja/contact"
+                class="text-fox-500 hover:text-fox-400 underline underline-offset-2 transition-colors"
+                >お気軽に</a
+              >。
+            </p>
+          </div>
+
+          <!-- Stats Row -->
+          <div
+            class="grid grid-cols-3 gap-4 mt-8 pt-8 border-t border-zinc-800/60"
+          >
+            <div class="text-center">
+              <div
+                class="text-2xl sm:text-3xl font-extrabold text-white mb-1"
+              >
+                5
+              </div>
+              <div
+                class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest"
+              >
+                プロトコル
+              </div>
+            </div>
+            <div class="text-center">
+              <div
+                class="text-2xl sm:text-3xl font-extrabold text-white mb-1"
+              >
+                2
+              </div>
+              <div
+                class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest"
+              >
+                言語
+              </div>
+            </div>
+            <div class="text-center">
+              <div
+                class="text-2xl sm:text-3xl font-extrabold text-white mb-1"
+              >
+                0
+              </div>
+              <div
+                class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest"
+              >
+                テレメトリ
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="mb-12">
+        <div
+          class="p-6 sm:p-8 rounded-3xl bg-zinc-900/50 border border-zinc-800 backdrop-blur-xl relative overflow-hidden shadow-2xl text-center"
+        >
+          <div
+            class="absolute -right-10 -bottom-10 w-64 h-64 bg-fox-500/10 blur-[90px] rounded-full pointer-events-none"
+          ></div>
+          <h2 class="text-xl sm:text-2xl font-bold text-white mb-3 relative z-10">
+            FoxTerm を試す
+          </h2>
+          <p
+            class="text-zinc-400 text-sm leading-relaxed mb-6 max-w-md mx-auto relative z-10"
+          >
+            全機能無料でダウンロード可能。Pro は App Store サブスクリプションまたはアクティベーションコードでノード制限を解除。
+          </p>
+          <div
+            class="flex flex-col sm:flex-row items-center justify-center gap-3 relative z-10"
+          >
+            <a
+              href="https://apps.apple.com/app/foxterm/id6741786686"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="px-6 py-3 rounded-xl bg-fox-500 hover:bg-fox-600 border border-fox-400/30 text-white font-semibold text-sm transition-all duration-300 shadow-[0_0_20px_rgba(255,94,0,0.3)] hover:shadow-[0_0_28px_rgba(255,94,0,0.5)] active:scale-95 flex items-center gap-2"
+            >
+              <svg
+                class="w-4 h-4"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"
+                ></path>
+              </svg>
+              <span>App Store でダウンロード</span>
+            </a>
+            <a
+              href="/ja/contact"
+              class="px-6 py-3 rounded-xl bg-zinc-800/60 hover:bg-zinc-700/60 border border-zinc-700/50 text-zinc-200 font-semibold text-sm transition-all duration-200 active:scale-95"
+            >
+              お問い合わせ
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer
+      class="max-w-4xl mx-auto px-6 py-8 border-t border-zinc-900 text-center text-xs text-zinc-500"
+    >
+      <div class="flex flex-col items-center justify-center gap-2.5">
+        <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+          <p>
+            &copy; 2026 FoxTerm.
+            <span id="host-info">Hosted on Tencent Makers.</span>
+          </p>
+          <span class="hidden sm:inline text-zinc-800">|</span>
+          <a
+            href="/ja/"
+            class="no-underline hover:text-fox-500 transition-colors"
+            >ホーム</a
+          >
+          <span class="hidden sm:inline text-zinc-800">|</span>
+          <a
+            href="/ja/privacy"
+            class="no-underline hover:text-fox-500 transition-colors"
+            >プライバシーポリシー</a
+          >
+          <span class="hidden sm:inline text-zinc-800">|</span>
+          <a
+            href="/ja/terms"
+            class="no-underline hover:text-fox-500 transition-colors"
+            >利用規約</a
+          >
+          <span class="hidden sm:inline text-zinc-800">|</span>
+          <a
+            href="https://github.com/foxterm"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="no-underline hover:text-fox-500 transition-colors"
+            >GitHub</a
+          >
+          <span class="hidden sm:inline text-zinc-800">|</span>
+          <a
+            href="https://blog.foxterm.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="no-underline hover:text-fox-500 transition-colors"
+            >Blog</a
+          >
+        </div>
+        <div
+          class="flex flex-wrap items-center justify-center gap-2 text-zinc-500"
+        >
+          <a
+            class="is-cn no-underline inline-flex items-center gap-1 hover:text-fox-500 transition-colors"
+            href="https://beian.miit.gov.cn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              class="w-3.5 h-3.5 opacity-70"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
+              ></path>
+            </svg>
+            <span>蜀ICP备2024075062号</span>
+          </a>
+          <span class="sm:inline text-zinc-800 is-cn">|</span>
+          <span class="text-[11px] text-zinc-600">
+            中国ミラー:
+            <a
+              href="https://foxterm.cn"
+              class="no-underline hover:text-zinc-400"
+              >foxterm.cn</a
+            >
+            | グローバル:
+            <a
+              href="https://foxterm.app"
+              class="no-underline hover:text-zinc-400"
+              >foxterm.app</a
+            >
+          </span>
+        </div>
+
+        <!-- Security & Trust Badges -->
+        <div
+          class="flex flex-wrap items-center justify-center gap-2.5 pt-2 border-t border-zinc-900"
+        >
+          <img
+            src="https://img.shields.io/badge/APPLE-NOTARIZED_%26_SIGNED-161618?style=flat-square&amp;logo=apple&amp;logoColor=fff&amp;labelColor=0d0d0e"
+            alt="Apple Notarized"
+            class="h-6 opacity-70 hover:opacity-100 transition-opacity duration-200"
+          />
+          <img
+            src="https://img.shields.io/badge/KEYCHAIN-SECURE_ENCLAVE-161618?style=flat-square&amp;logo=apple&amp;logoColor=fff&amp;labelColor=0d0d0e"
+            alt="Secure Enclave"
+            class="h-6 opacity-70 hover:opacity-100 transition-opacity duration-200"
+          />
+          <img
+            src="https://img.shields.io/badge/SECURITY-APP_SANDBOX-161618?style=flat-square&amp;logo=apple&amp;logoColor=fff&amp;labelColor=0d0d0e"
+            alt="App Sandbox"
+            class="h-6 opacity-70 hover:opacity-100 transition-opacity duration-200"
+          />
+          <img
+            src="https://img.shields.io/badge/PRIVACY-ZERO_TELEMETRY-161618?style=flat-square&amp;logo=apple&amp;logoColor=fff&amp;labelColor=0d0d0e"
+            alt="Zero Telemetry"
+            class="h-6 opacity-70 hover:opacity-100 transition-opacity duration-200"
+          />
+          <img
+            src="https://img.shields.io/badge/ENGINE-NATIVE_SWIFT_%26_C-161618?style=flat-square&amp;logo=swift&amp;logoColor=fff&amp;labelColor=0d0d0e"
+            alt="Native Swift & C"
+            class="h-6 opacity-70 hover:opacity-100 transition-opacity duration-200"
+          />
+          <img
+            src="https://img.shields.io/badge/SAST_SCAN-0_CVE_PASSED-161618?style=flat-square&amp;logo=github&amp;logoColor=fff&amp;labelColor=0d0d0e"
+            alt="SAST Passed"
+            class="h-6 opacity-70 hover:opacity-100 transition-opacity duration-200"
+          />
+        </div>
+      </div>
+    </footer>
+
+    <script src="/assets/script.js"></script>
+  </body>
+</html>

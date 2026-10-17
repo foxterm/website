@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "node build.js",
+    "build": "npm run build:css && node build.js",
     "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./assets/tailwind.min.css --minify",
     "prettier": "prettier . --write"
   },
