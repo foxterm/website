@@ -9,22 +9,21 @@
   );
 })();
 
-/* ===== Language Detection Banner (English root page only) ===== */
+/* ===== Language Detection Banner (JS-injected) ===== */
 (function () {
-  const pathname = window.location.pathname.replace(/\/+$/, "") || "/";
-  if (pathname !== "/" && pathname !== "/index.html") return;
-
   const LS_KEY = "foxterm.langPrompt.dismissed";
   const SS_KEY = "foxterm.langPrompt.session";
+  const CN_DOMAIN = "https://foxterm.cn";
 
   let dismissed = false;
   try {
     dismissed =
       !!sessionStorage.getItem(SS_KEY) || !!localStorage.getItem(LS_KEY);
-  } catch (e) {
-    /* storage unavailable — still show the banner */
-  }
+  } catch (e) { /* storage unavailable */ }
   if (dismissed) return;
+
+  const hostname = window.location.hostname;
+  const isCnDomain = hostname.endsWith(".cn");
 
   const TARGETS = [
     { path: "/zh-hant/", langs: ["zh-hant", "zh-tw", "zh-hk", "zh-mo"] },
@@ -39,93 +38,23 @@
   ];
 
   const COUNTRY_LANG = {
-    CN: "/zh-hans/",
-    TW: "/zh-hant/",
-    HK: "/zh-hant/",
-    MO: "/zh-hant/",
-    SG: "/zh-hans/",
-    MY: "/zh-hans/",
+    CN: "/zh-hans/", TW: "/zh-hant/", HK: "/zh-hant/", MO: "/zh-hant/",
+    SG: "/zh-hans/", MY: "/zh-hans/",
     JP: "/ja/",
-    DE: "/de/",
-    AT: "/de/",
-    CH: "/de/",
-    RU: "/ru/",
-    BY: "/ru/",
+    DE: "/de/", AT: "/de/", CH: "/de/",
+    RU: "/ru/", BY: "/ru/",
     ES: "/es/",
     FR: "/fr/",
     KR: "/ko/",
-    BR: "/pt-br/",
-    PT: "/pt-br/",
+    BR: "/pt-br/", PT: "/pt-br/",
   };
 
-  function pickTargetByBrowser() {
-    const locales = (navigator.languages && navigator.languages.length
-      ? navigator.languages
-      : [navigator.language]) || ["en"];
-    for (let i = 0; i < locales.length; i++) {
-      const raw = String(locales[i] || "")
-        .toLowerCase()
-        .replace(/_/g, "-");
-      for (let j = 0; j < TARGETS.length; j++) {
-        const t = TARGETS[j];
-        for (let k = 0; k < t.langs.length; k++) {
-          const code = t.langs[k];
-          if (raw === code || raw.indexOf(code + "-") === 0) return t;
-        }
-      }
-    }
-    return null;
-  }
-
-  function findTargetByCountry(cc) {
-    const path = COUNTRY_LANG[cc];
-    if (!path) return null;
-    for (let i = 0; i < TARGETS.length; i++) {
-      if (TARGETS[i].path === path) return TARGETS[i];
-    }
-    return null;
-  }
-
-  function showBanner(target) {
-    const box = document.getElementById("lang-prompt");
-    if (!box) return;
-
-    const key = target.path.slice(1, -1);
-    const copy = COPY[key];
-    if (!copy) return;
-
-    const msgEl = document.getElementById("lang-prompt-msg");
-    const goEl = document.getElementById("lang-prompt-go");
-    const dismissEl = document.getElementById("lang-prompt-dismiss");
-    const closeEl = document.getElementById("lang-prompt-close");
-    if (!msgEl || !goEl || !dismissEl || !closeEl) return;
-
-    msgEl.textContent = copy.msg.replace(/\{lang\}/g, copy.name);
-    goEl.textContent = copy.go;
-    goEl.href = target.path;
-    dismissEl.textContent = copy.dismiss;
-    closeEl.setAttribute("aria-label", copy.close);
-
-    dismissEl.addEventListener("click", () => {
-      try {
-        localStorage.setItem(LS_KEY, "1");
-      } catch (e) {
-        /* ignore */
-      }
-      box.hidden = true;
-    });
-
-    closeEl.addEventListener("click", () => {
-      try {
-        sessionStorage.setItem(SS_KEY, "1");
-      } catch (e) {
-        /* ignore */
-      }
-      box.hidden = true;
-    });
-
-    box.hidden = false;
-  }
+  const CN_PROMPT_COPY = {
+    msg: "检测到您来自中国大陆，是否访问中国大陆域名以获得更好体验？",
+    go: "前往 foxterm.cn",
+    dismiss: "不再提示",
+    close: "关闭",
+  };
 
   const COPY = {
     "zh-hans": {
@@ -193,24 +122,134 @@
     },
   };
 
+  function createBanner() {
+    const box = document.createElement("div");
+    box.id = "lang-prompt";
+    box.className = "lang-prompt";
+    box.setAttribute("role", "dialog");
+    box.setAttribute("aria-live", "polite");
+    box.setAttribute("aria-label", "Language suggestion");
+    box.hidden = true;
+
+    box.innerHTML =
+      '<div class="lang-prompt-card">' +
+        '<span class="fox-logo-icon lang-prompt-logo" aria-hidden="true"></span>' +
+        '<p id="lang-prompt-msg" class="lang-prompt-msg"></p>' +
+        '<div class="lang-prompt-actions">' +
+          '<a id="lang-prompt-go" class="lang-prompt-btn lang-prompt-btn-primary" href="#"></a>' +
+          '<button id="lang-prompt-dismiss" type="button" class="lang-prompt-btn lang-prompt-btn-ghost"></button>' +
+        '</div>' +
+        '<button id="lang-prompt-close" type="button" class="lang-prompt-close" aria-label="Close">' +
+          '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">' +
+            '<path d="M6 6l12 12M18 6L6 18"></path>' +
+          '</svg>' +
+        '</button>' +
+      '</div>';
+
+    document.body.appendChild(box);
+    return box;
+  }
+
+  function showBanner(box, msg, goText, goHref, dismissText, closeLabel) {
+    var msgEl = document.getElementById("lang-prompt-msg");
+    var goEl = document.getElementById("lang-prompt-go");
+    var dismissEl = document.getElementById("lang-prompt-dismiss");
+    var closeEl = document.getElementById("lang-prompt-close");
+    if (!msgEl || !goEl || !dismissEl || !closeEl) return;
+
+    msgEl.textContent = msg;
+    goEl.textContent = goText;
+    goEl.href = goHref;
+    dismissEl.textContent = dismissText;
+    closeEl.setAttribute("aria-label", closeLabel);
+
+    dismissEl.addEventListener("click", function () {
+      try { localStorage.setItem(LS_KEY, "1"); } catch (e) { /* ignore */ }
+      box.hidden = true;
+    });
+    closeEl.addEventListener("click", function () {
+      try { sessionStorage.setItem(SS_KEY, "1"); } catch (e) { /* ignore */ }
+      box.hidden = true;
+    });
+
+    box.hidden = false;
+  }
+
+  function pickTargetByBrowser() {
+    var locales = (navigator.languages && navigator.languages.length
+      ? navigator.languages
+      : [navigator.language]) || ["en"];
+    for (var i = 0; i < locales.length; i++) {
+      var raw = String(locales[i] || "").toLowerCase().replace(/_/g, "-");
+      for (var j = 0; j < TARGETS.length; j++) {
+        var t = TARGETS[j];
+        for (var k = 0; k < t.langs.length; k++) {
+          var code = t.langs[k];
+          if (raw === code || raw.indexOf(code + "-") === 0) return t;
+        }
+      }
+    }
+    return null;
+  }
+
+  function findTargetByCountry(cc) {
+    var path = COUNTRY_LANG[cc];
+    if (!path) return null;
+    for (var i = 0; i < TARGETS.length; i++) {
+      if (TARGETS[i].path === path) return TARGETS[i];
+    }
+    return null;
+  }
+
+  function buildCnUrl() {
+    return CN_DOMAIN + window.location.pathname + window.location.search;
+  }
+
+  function buildLangUrl(targetPath) {
+    var pathname = window.location.pathname;
+    var match = pathname.match(/^\/([a-z]{2}(?:-[a-z]{2,})?)\//);
+    if (match) {
+      return targetPath + pathname.slice(match[0].length) + window.location.search;
+    }
+    return targetPath + (pathname === "/" ? "" : pathname) + window.location.search;
+  }
+
+  function showCnPrompt(box, url) {
+    var c = CN_PROMPT_COPY;
+    showBanner(box, c.msg, c.go, url, c.dismiss, c.close);
+  }
+
+  function showLangPrompt(box, target, url) {
+    var key = target.path.slice(1, -1);
+    var c = COPY[key];
+    if (!c) return;
+    showBanner(box, c.msg.replace(/\{lang\}/g, c.name), c.go, url, c.dismiss, c.close);
+  }
+
   async function init() {
-    let target = null;
+    var cc = null;
     try {
-      const ctrl = new AbortController();
-      const timer = setTimeout(() => ctrl.abort(), 3000);
-      const res = await fetch("/geo", { signal: ctrl.signal });
+      var ctrl = new AbortController();
+      var timer = setTimeout(function () { ctrl.abort(); }, 3000);
+      var res = await fetch("/geo", { signal: ctrl.signal });
       clearTimeout(timer);
       if (res.ok) {
-        const data = await res.json();
-        const raw = data && data.geo && data.geo.countryCodeAlpha2;
-        const cc = raw ? String(raw).toUpperCase() : null;
-        if (cc) target = findTargetByCountry(cc);
+        var data = await res.json();
+        var raw = data && data.eo && data.eo.geo && data.eo.geo.countryCodeAlpha2;
+        cc = raw ? String(raw).toUpperCase() : null;
       }
-    } catch (e) {
-      /* geo failed — fall through to browser language */
+    } catch (e) { /* geo failed */ }
+
+    var box = createBanner();
+
+    if (cc === "CN" && !isCnDomain) {
+      showCnPrompt(box, buildCnUrl());
+      return;
     }
+
+    var target = cc ? findTargetByCountry(cc) : null;
     if (!target) target = pickTargetByBrowser();
-    if (target) showBanner(target);
+    if (target) showLangPrompt(box, target, buildLangUrl(target.path));
   }
 
   init();
