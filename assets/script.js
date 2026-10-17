@@ -208,10 +208,15 @@
   function buildLangUrl(targetPath) {
     var pathname = window.location.pathname;
     var match = pathname.match(/^\/([a-z]{2}(?:-[a-z]{2,})?)\//);
+    var rest;
     if (match) {
-      return targetPath + pathname.slice(match[0].length) + window.location.search;
+      rest = pathname.slice(match[0].length);
+    } else if (pathname.charAt(0) === "/") {
+      rest = pathname.slice(1);
+    } else {
+      rest = pathname;
     }
-    return targetPath + (pathname === "/" ? "" : pathname) + window.location.search;
+    return targetPath + rest + window.location.search;
   }
 
   function showCnPrompt(box, url) {
@@ -249,7 +254,9 @@
 
     var target = cc ? findTargetByCountry(cc) : null;
     if (!target) target = pickTargetByBrowser();
-    if (target) showLangPrompt(box, target, buildLangUrl(target.path));
+    if (target && !window.location.pathname.startsWith(target.path)) {
+      showLangPrompt(box, target, buildLangUrl(target.path));
+    }
   }
 
   init();
