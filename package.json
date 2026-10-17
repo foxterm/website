@@ -5,13 +5,16 @@
     "prettier": "prettier . --write"
   },
   "devDependencies": {
+    "@edgeone/types": "^1.0.2",
     "@tailwindcss/cli": "^4.3.3",
+    "@types/node": "^26.6.5",
     "autoprefixer": "^10.6.1",
     "clean-css": "^5.3.3",
     "html-minifier-terser": "^7.2.0",
     "postcss": "^8.5.29",
     "prettier": "^3.9.10",
     "tailwindcss": "^4.3.3",
-    "terser": "^5.51.2"
+    "terser": "^5.51.2",
+    "typescript": "^7.0.2"
   }
 }
