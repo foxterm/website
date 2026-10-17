@@ -11,8 +11,8 @@
 
 /* ===== Language Detection Banner (English root page only) ===== */
 (function () {
-  const pathname = window.location.pathname.replace(/\/+$/, "") || "/";
-  if (pathname !== "/" && pathname !== "/index.html") return;
+  // const pathname = window.location.pathname.replace(/\/+$/, "") || "/";
+  // if (pathname !== "/" && pathname !== "/index.html") return;
 
   const LS_KEY = "foxterm.langPrompt.dismissed";
   const SS_KEY = "foxterm.langPrompt.session";
