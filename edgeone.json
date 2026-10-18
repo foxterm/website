@@ -7,8 +7,8 @@
       "statusCode": 301
     },
     {
-      "source": "/zh/:path*",
-      "destination": "/zh-hans/:path*",
+      "source": "/zh/:path",
+      "destination": "/zh-hans/:path",
       "statusCode": 301
     },
     {
@@ -17,8 +17,8 @@
       "statusCode": 301
     },
     {
-      "source": "/zh-cn/:path*",
-      "destination": "/zh-hans/:path*",
+      "source": "/zh-cn/:path",
+      "destination": "/zh-hans/:path",
       "statusCode": 301
     },
     {
@@ -27,8 +27,8 @@
       "statusCode": 301
     },
     {
-      "source": "/zh-tw/:path*",
-      "destination": "/zh-hant/:path*",
+      "source": "/zh-tw/:path",
+      "destination": "/zh-hant/:path",
       "statusCode": 301
     },
     {
@@ -37,8 +37,8 @@
       "statusCode": 301
     },
     {
-      "source": "/zh-hk/:path*",
-      "destination": "/zh-hant/:path*",
+      "source": "/zh-hk/:path",
+      "destination": "/zh-hant/:path",
       "statusCode": 301
     }
   ]
