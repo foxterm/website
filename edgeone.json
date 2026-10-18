@@ -1,0 +1,45 @@
+{
+  "buildCommand": "npm run build",
+  "redirects": [
+    {
+      "source": "/zh",
+      "destination": "/zh-hans",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh/:path*",
+      "destination": "/zh-hans/:path*",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh-cn",
+      "destination": "/zh-hans",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh-cn/:path*",
+      "destination": "/zh-hans/:path*",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh-tw",
+      "destination": "/zh-hant",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh-tw/:path*",
+      "destination": "/zh-hant/:path*",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh-hk",
+      "destination": "/zh-hant",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh-hk/:path*",
+      "destination": "/zh-hant/:path*",
+      "statusCode": 301
+    }
+  ]
+}
