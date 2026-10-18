@@ -143,7 +143,7 @@
                   "@type": "Offer",
                   "name": "FoxTerm Pro — Edição Notarizada (Código de Ativação)",
                   "category": "DirectLicense",
-                  "description": "Build direta, assinada e notarizada para macOS desbloqueada por código de ativação comprado em pay.foxterm.app; Nós ilimitados; o código também ativa o app iOS automaticamente"
+                  "description": "Build direta, assinada e notarizada para macOS desbloqueada por código de ativação comprado em pay.foxterm.app; Nós ilimitados; o código de ativação aplica-se apenas à edição notarizada para macOS"
                 }
               ]
             },
@@ -235,10 +235,10 @@
               },
               {
                 "@type": "Question",
-                "name": "Como a assinatura FoxTerm Pro funciona no Mac e no iPhone/iPad?",
+                "name": "Como a edição App Store funciona entre dispositivos?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "A versão gratuita inclui todos os recursos; apenas o número de nós (servidores) é limitado. Assinar o FoxTerm Pro remove esse teto para nós ilimitados e libera simultaneamente todos os seus dispositivos Apple autorizados (macOS e iOS/iPadOS) sob um único Apple ID, com sincronização de configurações fluida pelo seu contêiner privado do iCloud."
+                  "text": "A versão gratuita inclui todos os recursos; apenas o número de nós (servidores) é limitado. Assinar o FoxTerm Pro remove esse teto para nós ilimitados. A edição App Store desbloqueia simultaneamente macOS e iOS/iPadOS via Universal Purchase sob um único Apple ID. A edição notarizada é exclusiva para macOS e não inclui ativação para iOS; a sincronização de configurações é fluida pelo seu contêiner privado do iCloud."
                 }
               },
               {
@@ -294,7 +294,7 @@
                 "name": "Como obtenho o Pro no macOS e como funciona a ativação no iOS?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Existem duas formas de obter o Pro no macOS. A edição Mac App Store é uma assinatura mensal ou anual cobrada pela Apple, gerenciada nas configurações de assinatura do seu Apple ID, com renovações e reembolsos tratados pela Apple. A edição notarizada é uma build direta e assinada para macOS desbloqueada com um código de ativação comprado em pay.foxterm.app. Qualquer que seja a edição para Mac escolhida, o app iOS é ativado automaticamente; o app iOS em si é grátis na App Store."
+                  "text": "Existem duas formas de obter o Pro no macOS. A edição Mac App Store é uma assinatura mensal ou anual cobrada pela Apple, gerenciada nas configurações de assinatura do seu Apple ID, com renovações e reembolsos tratados pela Apple; essa edição desbloqueia o iOS via Universal Purchase. A edição notarizada é uma build direta e assinada para macOS desbloqueada com um código de ativação comprado em pay.foxterm.app, sendo exclusiva para macOS. O app iOS é grátis na App Store e só se desbloqueia automaticamente quando o Pro é ativado pela edição Mac App Store."
                 }
               }
             ]
@@ -3091,8 +3091,9 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
               Duas formas de desbloquear o Pro no macOS
             </h3>
             <p class="text-xs sm:text-sm text-zinc-400">
-              Ambas as edições para Mac ativam automaticamente o app iOS —
-              obtenha o Pro uma vez e use no Mac, iPhone e iPad.
+              A edição App Store (macOS + iOS) é regida pelas políticas da Apple
+              e desbloqueia o iOS via Universal Purchase; a edição notarizada é
+              exclusiva para macOS — códigos de ativação não incluem o iOS.
             </p>
           </div>
 
@@ -3164,8 +3165,8 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
                   um código de ativação comprado diretamente em pay.foxterm.app
                 </li>
                 <li class="flex items-start gap-2.5">
-                  <span class="text-emerald-400 mt-0.5">✓</span>Seu código
-                  também ativa o app iOS automaticamente
+                  <span class="text-emerald-400 mt-0.5">✓</span>Exclusivo para
+                  macOS — independente da edição App Store
                 </li>
               </ul>
               <a
@@ -3183,9 +3184,9 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
             class="text-center text-[11px] sm:text-xs text-zinc-500 mt-6 max-w-2xl mx-auto"
           >
             O app iOS é grátis na App Store e se desbloqueia automaticamente
-            quando o Pro está ativo em qualquer uma das edições para Mac. Perfis
-            de conexão e configurações sincronizam entre dispositivos pelo seu
-            contêiner privado do iCloud.
+            quando o Pro é ativado pela edição App Store. Perfis de conexão e
+            configurações sincronizam entre dispositivos pelo seu contêiner
+            privado do iCloud.
           </p>
         </div>
       </section>
@@ -3408,12 +3409,14 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
                 <strong class="text-zinc-200">edição Mac App Store</strong> é
                 uma assinatura mensal ou anual cobrada pela Apple — gerencie ou
                 cancele nas configurações de assinatura do seu Apple ID, e
-                renovações e reembolsos são tratados pela Apple. A
+                renovações e reembolsos são tratados pela Apple; essa edição
+                desbloqueia o iOS automaticamente via Universal Purchase. A
                 <strong class="text-zinc-200">edição notarizada</strong> é uma
                 build direta e assinada para macOS que você desbloqueia com um
-                código de ativação comprado em pay.foxterm.app. Qualquer que
-                seja a edição para Mac que escolher, o app iOS é ativado
-                automaticamente; o app iOS em si é grátis na App Store.
+                código de ativação comprado em pay.foxterm.app, sendo exclusiva
+                para macOS — o código de ativação não inclui o iOS. O app iOS é
+                grátis na App Store e só se desbloqueia automaticamente quando o
+                Pro é ativado pela edição Mac App Store.
               </p>
             </div>
           </div>
@@ -3436,7 +3439,7 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
             class="text-xs sm:text-base text-zinc-400 mb-6 sm:mb-8 max-w-lg mx-auto"
           >
             Mac · iPhone · iPad — todos os recursos são grátis para começar, e o
-            Pro desbloqueia em todos os seus dispositivos.
+            Pro na edição App Store desbloqueia no Mac e nos dispositivos iOS.
           </p>
           <div
             class="flex flex-col sm:flex-row items-center justify-center gap-3"
@@ -3488,8 +3491,9 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
               rel="noopener noreferrer"
               class="text-fox-500 hover:underline"
               >pay.foxterm.app</a
-            >. Qualquer que seja a edição para Mac que escolher, o app iOS é
-            ativado automaticamente.
+            >. Os códigos de ativação aplicam-se apenas à edição notarizada para
+            macOS; o app iOS se desbloqueia automaticamente apenas pela edição
+            App Store.
           </p>
 
           <!-- System Requirements -->
@@ -3548,7 +3552,7 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
       <div class="flex flex-col items-center justify-center gap-2.5">
         <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
           <p>
-            &copy; 2026 FoxTerm.
+            &copy; <span data-copyright-year="2026">2026</span> FoxTerm.
             <span id="host-info">Hospedado na Tencent Makers.</span>
           </p>
           <span class="hidden sm:inline text-zinc-800">|</span>
@@ -3604,7 +3608,7 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
             class="no-underline hover:text-fox-500 transition-colors"
             >Blog</a
           >
-        <span class="hidden sm:inline text-zinc-800">|</span>
+          <span class="hidden sm:inline text-zinc-800">|</span>
           <a
             href="https://security.foxterm.app/"
             target="_blank"

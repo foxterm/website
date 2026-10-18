@@ -143,7 +143,7 @@
                   "@type": "Offer",
                   "name": "FoxTerm Pro — Édition notariée (code d'activation)",
                   "category": "DirectLicense",
-                  "description": "Build macOS direct, signé et notarié, déverrouillé par un code d'activation acheté sur pay.foxterm.app ; nœuds illimités ; le code active aussi l'app iOS automatiquement"
+                  "description": "Build macOS direct, signé et notarié, déverrouillé par un code d'activation acheté sur pay.foxterm.app ; nœuds illimités ; le code d'activation s'applique uniquement à l'édition notariée macOS"
                 }
               ]
             },
@@ -294,7 +294,7 @@
                 "name": "Comment obtenir Pro sur macOS, et comment l'activation iOS fonctionne-t-elle ?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Il existe deux façons d'obtenir Pro sur macOS. L'édition Mac App Store est un abonnement mensuel ou annuel facturé par Apple, géré dans vos réglages d'abonnement Apple ID, les renouvellements et remboursements étant gérés par Apple. L'édition notariée est un build macOS direct et signé, déverrouillé avec un code d'activation acheté sur pay.foxterm.app. Quelle que soit l'édition Mac choisie, l'app iOS est activée automatiquement ; l'app iOS elle-même est gratuite sur l'App Store."
+                  "text": "Il existe deux façons d'obtenir Pro sur macOS. L'édition App Store (macOS + iOS) est un abonnement mensuel ou annuel facturé par Apple, géré dans vos réglages d'abonnement Apple ID ; les renouvellements et remboursements sont régis par les politiques d'Apple. Cette édition active automatiquement l'app iOS via l'Achat universel. L'édition notariée est un build macOS indépendant, déverrouillé avec un code d'activation acheté sur pay.foxterm.app — elle ne concerne que macOS et n'inclut pas l'activation iOS. L'app iOS est gratuite sur l'App Store et se déverrouille automatiquement uniquement via l'édition App Store."
                 }
               }
             ]
@@ -3098,8 +3098,10 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
               Deux façons de déverrouiller Pro sur macOS
             </h3>
             <p class="text-xs sm:text-sm text-zinc-400">
-              Les deux éditions Mac activent automatiquement l'app iOS — obtenez
-              Pro une fois et utilisez-le sur Mac, iPhone et iPad.
+              L'édition App Store (macOS + iOS) est régie par les politiques
+              Apple et se déverrouille via l'Achat universel ; l'édition
+              notariée concerne uniquement macOS, les codes d'activation
+              n'incluent pas iOS.
             </p>
           </div>
 
@@ -3171,8 +3173,8 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
                   pay.foxterm.app
                 </li>
                 <li class="flex items-start gap-2.5">
-                  <span class="text-emerald-400 mt-0.5">✓</span>Votre code
-                  active aussi l'app iOS automatiquement
+                  <span class="text-emerald-400 mt-0.5">✓</span>macOS uniquement
+                  — indépendant de l'édition App Store
                 </li>
               </ul>
               <a
@@ -3189,10 +3191,10 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
           <p
             class="text-center text-[11px] sm:text-xs text-zinc-500 mt-6 max-w-2xl mx-auto"
           >
-            L'app iOS est gratuite sur l'App Store et se déverrouille dès que
-            Pro est actif sur l'une ou l'autre édition Mac. Les profils de
-            connexion et la configuration se synchronisent entre appareils via
-            votre conteneur iCloud privé.
+            L'app iOS est gratuite sur l'App Store et se déverrouille
+            automatiquement lorsque Pro est activé via l'édition App Store. Les
+            profils de connexion et la configuration se synchronisent entre
+            appareils via votre conteneur iCloud privé.
           </p>
         </div>
       </section>
@@ -3258,7 +3260,8 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
             >
               <span class="text-fox-500 font-mono flex-shrink-0">Q:</span>
               Quelle est la différence entre la version gratuite et Pro ?
-              Comment l'abonnement Pro fonctionne-t-il sur tous les appareils ?
+              Comment l'édition App Store fonctionne-t-elle sur tous les
+              appareils ?
             </h3>
             <div class="text-xs sm:text-sm text-zinc-400 leading-relaxed pl-6">
               <p>
@@ -3272,9 +3275,16 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
                 entièrement déverrouillée. La seule limite est le nombre de
                 <strong class="text-zinc-200">nœuds (serveurs)</strong> que vous
                 pouvez gérer. L'abonnement FoxTerm Pro lève cette limite pour
-                des nœuds illimités, et un seul abonnement déverrouille
-                simultanément les clients macOS et iOS/iPadOS sous un même Apple
-                ID, avec synchronisation chiffrée de la configuration via votre
+                des nœuds illimités. L'<strong class="text-zinc-200"
+                  >édition App Store</strong
+                >
+                déverrouille simultanément les clients macOS et iOS/iPadOS via
+                l'Achat universel sous un même Apple ID. L'<strong
+                  class="text-zinc-200"
+                  >édition notariée</strong
+                >
+                est un build macOS autonome, indépendant de l'édition App Store.
+                La configuration se synchronise entre appareils via votre
                 conteneur iCloud personnel.
               </p>
             </div>
@@ -3417,16 +3427,20 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
               <p>
                 Il existe deux façons d'obtenir Pro sur macOS. L'<strong
                   class="text-zinc-200"
-                  >édition Mac App Store</strong
+                  >édition App Store</strong
                 >
-                est un abonnement mensuel ou annuel facturé par Apple — gérez-le
-                ou annulez-le dans vos réglages d'abonnement Apple ID, et les
-                renouvellements et remboursements sont gérés par Apple.
-                L'<strong class="text-zinc-200">édition notariée</strong> est un
-                build macOS direct et signé que vous déverrouillez avec un code
-                d'activation acheté sur pay.foxterm.app. Quelle que soit
-                l'édition Mac choisie, l'app iOS est activée automatiquement ;
-                l'app iOS elle-même est gratuite sur l'App Store.
+                (macOS + iOS) est un abonnement mensuel ou annuel facturé par
+                Apple — gérez-le ou annulez-le dans vos réglages d'abonnement
+                Apple ID, et les renouvellements et remboursements sont régis
+                par les politiques d'Apple. Cette édition active automatiquement
+                l'app iOS via l'Achat universel. L'<strong class="text-zinc-200"
+                  >édition notariée</strong
+                >
+                est un build macOS direct et signé que vous déverrouillez avec
+                un code d'activation acheté sur pay.foxterm.app — elle ne
+                concerne que macOS et le code d'activation n'inclut pas
+                l'activation iOS. L'app iOS est gratuite sur l'App Store et se
+                déverrouille automatiquement uniquement via l'édition App Store.
               </p>
             </div>
           </div>
@@ -3451,7 +3465,7 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
             class="text-xs sm:text-base text-zinc-400 mb-6 sm:mb-8 max-w-lg mx-auto"
           >
             Mac · iPhone · iPad — chaque fonctionnalité est gratuite au début,
-            et Pro se déverrouille sur tous vos appareils.
+            et Pro sur l'édition App Store se déverrouille sur Mac et iOS.
           </p>
           <div
             class="flex flex-col sm:flex-row items-center justify-center gap-3"
@@ -3503,8 +3517,9 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
               rel="noopener noreferrer"
               class="text-fox-500 hover:underline"
               >pay.foxterm.app</a
-            >. Quelle que soit l'édition Mac choisie, l'app iOS est activée
-            automatiquement.
+            >. Les codes d'activation s'appliquent uniquement à l'édition
+            notariée macOS ; l'app iOS se déverrouille automatiquement
+            uniquement via l'édition App Store.
           </p>
 
           <!-- System Requirements -->
@@ -3563,7 +3578,7 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
       <div class="flex flex-col items-center justify-center gap-2.5">
         <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
           <p>
-            &copy; 2026 FoxTerm.
+            &copy; <span data-copyright-year="2026">2026</span> FoxTerm.
             <span id="host-info">Hosted on Tencent Makers.</span>
           </p>
           <span class="hidden sm:inline text-zinc-800">|</span>
@@ -3619,7 +3634,7 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
             class="no-underline hover:text-fox-500 transition-colors"
             >Blog</a
           >
-        <span class="hidden sm:inline text-zinc-800">|</span>
+          <span class="hidden sm:inline text-zinc-800">|</span>
           <a
             href="https://security.foxterm.app/"
             target="_blank"

@@ -143,7 +143,7 @@
                   "@type": "Offer",
                   "name": "FoxTerm Pro — 公证版（激活码）",
                   "category": "DirectLicense",
-                  "description": "直接分发的已签名、已公证 macOS 构建，通过在 pay.foxterm.app 购买的激活码解锁；节点数量不限；该激活码同样自动激活 iOS 应用"
+                  "description": "直接分发的已签名、已公证 macOS 构建，通过在 pay.foxterm.app 购买的激活码解锁；节点数量不限；激活码仅适用于 macOS 公证版"
                 }
               ]
             },
@@ -294,7 +294,7 @@
                 "name": "如何在 macOS 上获取 Pro，iOS 又如何激活？",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "在 macOS 上获取 Pro 有两种方式。Mac App Store 版是由 Apple 按月或按年扣费的订阅，可在 Apple ID 订阅设置中管理或取消，续订与退款由 Apple 处理。公证版是直接分发的已签名 macOS 构建，通过在 pay.foxterm.app 购买的激活码解锁。无论选择哪种 Mac 版本，iOS 应用都会自动激活；iOS 应用本身可在 App Store 免费下载。"
+                  "text": "在 macOS 上获取 Pro 有两种方式。Mac App Store 版是由 Apple 按月或按年扣费的订阅，受苹果规则约束，通过 Universal Purchase 自动激活 iOS 应用，可在 Apple ID 订阅设置中管理或取消，续订与退款由 Apple 处理。公证版是直接分发的已签名 macOS 构建，通过在 pay.foxterm.app 购买的激活码解锁，仅适用于 macOS，不附带 iOS 激活。iOS 应用本身可在 App Store 免费下载，仅在通过 App Store 版激活后自动解锁。"
                 }
               }
             ]
@@ -3013,8 +3013,8 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
               在 macOS 上解锁 Pro 的两种方式
             </h3>
             <p class="text-xs sm:text-sm text-zinc-400">
-              两种 Mac 版本都会自动激活 iOS 应用——一次获取 Pro，即可在
-              Mac、iPhone 与 iPad 上使用。
+              App Store 版（macOS + iOS）受苹果规则约束，通过 Universal Purchase
+              同步解锁；公证版仅适用于 macOS，激活码不附带 iOS。
             </p>
           </div>
 
@@ -3084,8 +3084,8 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
                   pay.foxterm.app 直接购买的激活码解锁
                 </li>
                 <li class="flex items-start gap-2.5">
-                  <span class="text-emerald-400 mt-0.5">✓</span>该激活码同样自动
-                  激活 iOS 应用
+                  <span class="text-emerald-400 mt-0.5">✓</span>仅适用于
+                  macOS，独立于 App Store 版
                 </li>
               </ul>
               <a
@@ -3102,8 +3102,8 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
           <p
             class="text-center text-[11px] sm:text-xs text-zinc-500 mt-6 max-w-2xl mx-auto"
           >
-            iOS 应用可在 App Store 免费下载，任一种 Mac 版本激活 Pro
-            后即自行解锁。连接配置与设置通过你的私有 iCloud 容器跨设备同步。
+            iOS 应用可在 App Store 免费下载，通过 App Store 版激活 Pro
+            后自动解锁。连接配置与设置通过你的私有 iCloud 容器跨设备同步。
           </p>
         </div>
       </section>
@@ -3163,7 +3163,7 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
               class="text-base sm:text-lg font-bold text-white mb-2 flex items-start gap-2.5"
             >
               <span class="text-fox-500 font-mono flex-shrink-0">问:</span>
-              免费版与 Pro 有什么区别？Pro 订阅如何跨设备使用？
+              免费版与 Pro 有什么区别？App Store 版如何跨设备使用？
             </h3>
             <div class="text-xs sm:text-sm text-zinc-400 leading-relaxed pl-6">
               <p>
@@ -3175,9 +3175,10 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
                 <strong class="text-zinc-200">Docker 与 Podman</strong>
                 管理，全部功能完整开放。唯一的限制是可管理的
                 <strong class="text-zinc-200">节点（服务器）</strong>数量。订阅
-                FoxTerm Pro 即可解除该限制、管理无限节点；同一 Apple ID 下的
-                macOS 与 iOS/iPadOS 客户端同时解锁，配置通过你的私有 iCloud
-                容器加密同步。
+                FoxTerm Pro 即可解除该限制、管理无限节点；App Store 版（macOS +
+                iOS）通过 Universal Purchase 在同一 Apple ID
+                下同时解锁，配置通过你的私有 iCloud 容器加密同步。公证版为独立的
+                macOS 版本，激活码仅适用于 macOS。
               </p>
             </div>
           </div>
@@ -3298,12 +3299,13 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
               <p>
                 在 macOS 上获取 Pro 有两种方式。
                 <strong class="text-zinc-200">Mac App Store 版</strong>是由
-                Apple 按月或按年扣费的订阅——可在 Apple ID
+                Apple 按月或按年扣费的订阅，受苹果规则约束，通过 Universal
+                Purchase 自动激活 iOS 应用——可在 Apple ID
                 订阅设置中管理或取消，续订与退款由 Apple 处理。
                 <strong class="text-zinc-200">公证版</strong>
                 是直接分发的已签名 macOS 构建，通过在 pay.foxterm.app
-                购买的激活码解锁。无论选择哪种 Mac 版本，iOS
-                应用都会自动激活；iOS 应用本身可在 App Store 免费下载。
+                购买的激活码解锁，仅适用于 macOS，不附带 iOS 激活；iOS
+                应用本身可在 App Store 免费下载。
               </p>
             </div>
           </div>
@@ -3327,8 +3329,8 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
           <p
             class="text-xs sm:text-base text-zinc-400 mb-6 sm:mb-8 max-w-lg mx-auto"
           >
-            Mac · iPhone · iPad——所有功能免费开始使用，Pro
-            可在你所有设备上解锁。
+            Mac · iPhone · iPad——所有功能免费开始使用，App Store 版 Pro 可在 Mac
+            与 iOS 设备上解锁。
           </p>
           <div
             class="flex flex-col sm:flex-row items-center justify-center gap-3"
@@ -3380,7 +3382,8 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
               class="text-fox-500 hover:underline"
               >pay.foxterm.app</a
             >
-            获取激活码解锁 Pro。无论选择哪种 Mac 版本，iOS 应用都会自动激活。
+            获取激活码解锁 Pro。激活码仅适用于 macOS 公证版，iOS 应用仅在通过
+            App Store 版激活后自动解锁。
           </p>
 
           <!-- System Requirements -->
@@ -3439,7 +3442,8 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
       <div class="flex flex-col items-center justify-center gap-2.5">
         <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
           <p>
-            &copy; 2026 FoxTerm (橙狐终端).
+            &copy; <span data-copyright-year="2026">2026</span> FoxTerm
+            (橙狐终端).
             <span id="host-info">由 Tencent Makers 托管。</span>
           </p>
           <span class="hidden sm:inline text-zinc-800">|</span>
@@ -3495,7 +3499,7 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
             class="no-underline hover:text-fox-500 transition-colors"
             >Blog</a
           >
-        <span class="hidden sm:inline text-zinc-800">|</span>
+          <span class="hidden sm:inline text-zinc-800">|</span>
           <a
             href="https://security.foxterm.app/"
             target="_blank"

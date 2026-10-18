@@ -143,7 +143,7 @@
                   "@type": "Offer",
                   "name": "FoxTerm Pro — 公認版（アクティベーションコード）",
                   "category": "DirectLicense",
-                  "description": "pay.foxterm.app で購入したアクティベーションコードでアンロックする、署名・公認済みの macOS ビルド。ノード数無制限。コードで iOS アプリも自動的にアクティベート"
+                  "description": "pay.foxterm.app で購入したアクティベーションコードでアンロックする、署名・公認済みの macOS ビルド。ノード数無制限。アクティベーションコードは macOS 公認版にのみ適用されます"
                 }
               ]
             },
@@ -294,7 +294,7 @@
                 "name": "macOS で Pro を入手するにはどうすればよいですか？iOS のアクティベーションはどのように機能しますか？",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "macOS で Pro を入手するには2つの方法があります。Mac App Store エディションは、Apple 経由の月額または年額のサブスクリプションです。Apple ID のサブスクリプション設定で管理・キャンセルでき、更新と返金は Apple が処理します。公認版は、pay.foxterm.app で購入したアクティベーションコードでアンロックする、直接配布の署名済み macOS ビルドです。どちらの Mac エディションを選んでも、iOS アプリは自動的にアクティベートされます。iOS アプリ自体は App Store で無料です。"
+                  "text": "macOS で Pro を入手するには2つの方法があります。Mac App Store エディションは、Apple 経由の月額または年額のサブスクリプションで、Apple のポリシーに準拠します。Apple ID のサブスクリプション設定で管理・キャンセルでき、更新と返金は Apple が処理します。Universal Purchase により、同じ Apple ID の macOS と iOS アプリの両方が自動的にアンロックされます。公認版は、pay.foxterm.app で購入したアクティベーションコードでアンロックする、直接配布の署名済み macOS ビルドです。公認版は macOS のみ対象で、iOS のアクティベーションは含まれません。iOS アプリ自体は App Store で無料ですが、Pro 機能がアンロックされるのは App Store エディション経由のみです。"
                 }
               }
             ]
@@ -3059,9 +3059,9 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
               macOS で Pro をアンロックする2つの方法
             </h3>
             <p class="text-xs sm:text-sm text-zinc-400">
-              どちらの Mac エディションでも iOS
-              アプリが自動的にアクティベートされます——Pro を
-              一度入手すれば、Mac、iPhone、iPad で利用可能。
+              App Store 版（macOS + iOS）は Apple のポリシーに準拠し、Universal
+              Purchase で iOS もアンロック。公認版は macOS
+              のみで、アクティベーションコードに iOS は含まれません。
             </p>
           </div>
 
@@ -3131,8 +3131,8 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
                   で購入したアクティベーションコードでアンロック
                 </li>
                 <li class="flex items-start gap-2.5">
-                  <span class="text-emerald-400 mt-0.5">✓</span>そのコードで iOS
-                  アプリも自動的にアクティベート
+                  <span class="text-emerald-400 mt-0.5">✓</span>macOS のみ — App
+                  Store 版とは独立
                 </li>
               </ul>
               <a
@@ -3149,9 +3149,8 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
           <p
             class="text-center text-[11px] sm:text-xs text-zinc-500 mt-6 max-w-2xl mx-auto"
           >
-            iOS アプリは App Store で無料で入手でき、どちらの Mac エディションで
-            Pro
-            が有効化されても自動的にアンロックされます。接続プロファイルと設定は、プライベート
+            iOS アプリは App Store で無料で入手でき、App Store 版で Pro
+            が有効化されると自動的にアンロックされます。接続プロファイルと設定は、プライベート
             iCloud コンテナ経由でデバイス間で同期されます。
           </p>
         </div>
@@ -3216,8 +3215,8 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
               class="text-base sm:text-lg font-bold text-white mb-2 flex items-start gap-2.5"
             >
               <span class="text-fox-500 font-mono flex-shrink-0">Q:</span>
-              無料版と Pro の違いは何ですか？Pro
-              のサブスクリプションはデバイス間でどのように機能しますか？
+              無料版と Pro の違いは何ですか？App Store
+              版のサブスクリプションはデバイス間でどのように機能しますか？
             </h3>
             <div class="text-xs sm:text-sm text-zinc-400 leading-relaxed pl-6">
               <p>
@@ -3235,9 +3234,12 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
                   class="text-zinc-200"
                   >ノード （サーバー）</strong
                 >の数です。FoxTerm Pro
-                に加入するとその上限が外れ、ノード数は無制限になります。また、ひとつのサブスクリプションで、同じ
-                Apple ID の macOS と iOS / iPadOS
-                クライアントの両方を同時にご利用いただけ、個人の iCloud
+                に加入するとその上限が外れ、ノード数は無制限になります。App
+                Store 版の場合、ひとつのサブスクリプションで Universal Purchase
+                により macOS と iOS / iPadOS
+                クライアントの両方が同時にアンロックされます。公認版は macOS
+                のみのスタンドアロンで、iOS
+                は含まれません。いずれの場合も、個人の iCloud
                 コンテナ経由で設定を暗号化して同期します。
               </p>
             </div>
@@ -3371,14 +3373,20 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
                 macOS で Pro を入手するには2つの方法があります。<strong
                   class="text-zinc-200"
                   >Mac App Store エディション</strong
-                >は、Apple 経由の月額または年額のサブスクリプションです。Apple
-                ID のサブスクリプション設定で管理・キャンセルでき、更新と返金は
-                Apple が処理します。<strong class="text-zinc-200">公認版</strong
+                >は、Apple 経由の月額または年額のサブスクリプションで、Apple
+                のポリシーに準拠します。Apple ID
+                のサブスクリプション設定で管理・キャンセルでき、更新と返金は
+                Apple が処理します。Universal Purchase により、同じ Apple ID の
+                macOS と iOS アプリの両方が自動的にアンロックされます。<strong
+                  class="text-zinc-200"
+                  >公認版</strong
                 >は、pay.foxterm.app
                 で購入したアクティベーションコードでアンロックする、直接配布の署名済み
-                macOS ビルドです。どちらの Mac エディションを選んでも、iOS
-                アプリは自動的にアクティベートされます。iOS アプリ自体は App
-                Store で無料です。
+                macOS ビルドです。公認版は macOS
+                のみ対象で、アクティベーションコードに iOS
+                のアクティベーションは含まれません。iOS アプリ自体は App Store
+                で無料ですが、Pro 機能がアンロックされるのは App Store
+                エディション経由のみです。
               </p>
             </div>
           </div>
@@ -3402,8 +3410,8 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
           <p
             class="text-xs sm:text-base text-zinc-400 mb-6 sm:mb-8 max-w-lg mx-auto"
           >
-            Mac · iPhone · iPad — すべての機能は無料で始められ、Pro
-            はすべてのデバイスでアンロックされます。
+            Mac · iPhone · iPad — すべての機能は無料で始められ、Pro は App Store
+            版で Mac と iOS デバイスにアンロックされます。
           </p>
           <div
             class="flex flex-col sm:flex-row items-center justify-center gap-3"
@@ -3456,8 +3464,9 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
               class="text-fox-500 hover:underline"
               >pay.foxterm.app</a
             >
-            のアクティベーションコードでアンロックします。どちらの Mac
-            エディションを選んでも、iOS アプリは自動的にアクティベートされます。
+            のアクティベーションコードでアンロックします。アクティベーションコードは
+            macOS 公認版にのみ適用され、iOS アプリのアンロックは App Store
+            版経由のみです。
           </p>
 
           <!-- System Requirements -->
@@ -3516,7 +3525,7 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
       <div class="flex flex-col items-center justify-center gap-2.5">
         <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
           <p>
-            &copy; 2026 FoxTerm.
+            &copy; <span data-copyright-year="2026">2026</span> FoxTerm.
             <span id="host-info">Hosted on Tencent Makers.</span>
           </p>
           <span class="hidden sm:inline text-zinc-800">|</span>
@@ -3572,7 +3581,7 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
             class="no-underline hover:text-fox-500 transition-colors"
             >Blog</a
           >
-        <span class="hidden sm:inline text-zinc-800">|</span>
+          <span class="hidden sm:inline text-zinc-800">|</span>
           <a
             href="https://security.foxterm.app/"
             target="_blank"

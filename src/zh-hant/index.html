@@ -140,7 +140,7 @@
                   "@type": "Offer",
                   "name": "FoxTerm Pro — 公證版（啟用碼）",
                   "category": "DirectLicense",
-                  "description": "直接散佈的已簽署、已公證 macOS 建構，透過在 pay.foxterm.app 購買的啟用碼解鎖；節點數量不限；該啟用碼同樣自動啟用 iOS app"
+                  "description": "直接散佈的已簽署、已公證 macOS 建構，透過在 pay.foxterm.app 購買的啟用碼解鎖；節點數量不限；啟用碼僅適用於 macOS 公證版"
                 }
               ]
             },
@@ -291,7 +291,7 @@
                 "name": "如何在 macOS 上取得 Pro，iOS 又如何啟用？",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "在 macOS 上取得 Pro 有兩種方式。Mac App Store 版是由 Apple 按月或按年扣費的訂閱，可在 Apple ID 訂閱設定中管理或取消，續訂與退款由 Apple 處理。公證版是直接散佈的已簽署 macOS 建構，透過在 pay.foxterm.app 購買的啟用碼解鎖。無論選擇哪種 Mac 版本，iOS app 都會自動啟用；iOS app 本身可在 App Store 免費下載。"
+                  "text": "在 macOS 上取得 Pro 有兩種方式。Mac App Store 版是由 Apple 按月或按年扣費的訂閱，可在 Apple ID 訂閱設定中管理或取消，續訂與退款由 Apple 處理；此版本透過 Universal Purchase 同時解鎖 iOS，iOS app 受 Apple 政策約束。公證版是直接散佈的已簽署 macOS 建構，透過在 pay.foxterm.app 購買的啟用碼解鎖，僅適用於 macOS，不包含 iOS 啟用。iOS app 本身可在 App Store 免費下載，僅在透過 App Store 版啟用 Pro 後才會自動解鎖。"
                 }
               }
             ]
@@ -3010,8 +3010,8 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
               在 macOS 上解鎖 Pro 的兩種方式
             </h3>
             <p class="text-xs sm:text-sm text-zinc-400">
-              兩種 Mac 版本都會自動啟用 iOS app——一次取得 Pro，即可在
-              Mac、iPhone 與 iPad 上使用。
+              App Store 版（macOS + iOS）受蘋果規則約束，透過 Universal Purchase
+              同步解鎖；公證版僅適用於 macOS，啟用碼不附帶 iOS。
             </p>
           </div>
 
@@ -3081,8 +3081,8 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
                   pay.foxterm.app 直接購買的啟用碼解鎖
                 </li>
                 <li class="flex items-start gap-2.5">
-                  <span class="text-emerald-400 mt-0.5">✓</span>該啟用碼同樣自動
-                  啟用 iOS app
+                  <span class="text-emerald-400 mt-0.5">✓</span>僅適用於
+                  macOS，獨立於 App Store 版
                 </li>
               </ul>
               <a
@@ -3099,8 +3099,8 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
           <p
             class="text-center text-[11px] sm:text-xs text-zinc-500 mt-6 max-w-2xl mx-auto"
           >
-            iOS app 可在 App Store 免費下載，任一種 Mac 版本啟用 Pro
-            後即自行解鎖。連線設定與組態透過你的私有 iCloud 容器跨裝置同步。
+            iOS 應用可在 App Store 免費下載，透過 App Store 版啟用 Pro
+            後自動解鎖。連線設定與組態透過你的私有 iCloud 容器跨裝置同步。
           </p>
         </div>
       </section>
@@ -3159,7 +3159,7 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
               class="text-base sm:text-lg font-bold text-white mb-2 flex items-start gap-2.5"
             >
               <span class="text-fox-500 font-mono flex-shrink-0">Q:</span>
-              免費版與 Pro 有什麼差別？Pro 訂閱如何跨裝置使用？
+              免費版與 Pro 有什麼差別？App Store 版如何跨裝置使用？
             </h3>
             <div class="text-xs sm:text-sm text-zinc-400 leading-relaxed pl-6">
               <p>
@@ -3170,10 +3170,10 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
                 >、即時監控以及
                 <strong class="text-zinc-200">Docker 與 Podman</strong>
                 管理，全部功能完整開放。唯一的限制是可管理的
-                <strong class="text-zinc-200">節點（伺服器）</strong>數量。訂閱
-                FoxTerm Pro 即可解除該限制、管理無限節點；同一 Apple ID 下的
-                macOS 與 iOS/iPadOS 用戶端同時解鎖，設定透過你的私有 iCloud
-                Container 加密同步。
+                <strong class="text-zinc-200">節點（伺服器）</strong>數量。App
+                Store 版透過 Universal Purchase 同時解鎖 macOS 與
+                iOS/iPadOS；公證版為獨立 macOS 版本，啟用碼僅適用於
+                macOS。設定透過你的私有 iCloud Container 加密同步。
               </p>
             </div>
           </div>
@@ -3296,11 +3296,13 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
                 在 macOS 上取得 Pro 有兩種方式。
                 <strong class="text-zinc-200">Mac App Store 版</strong>是由
                 Apple 按月或按年扣費的訂閱——可在 Apple ID
-                訂閱設定中管理或取消，續訂與退款由 Apple 處理。
+                訂閱設定中管理或取消，續訂與退款由 Apple 處理；此版本透過
+                Universal Purchase 同時解鎖 iOS，iOS app 受 Apple 政策約束。
                 <strong class="text-zinc-200">公證版</strong>
                 是直接散佈的已簽署 macOS 建構，透過在 pay.foxterm.app
-                購買的啟用碼解鎖。無論選擇哪種 Mac 版本，iOS app
-                都會自動啟用；iOS app 本身可在 App Store 免費下載。
+                購買的啟用碼解鎖，僅適用於 macOS，啟用碼不包含 iOS 啟用。iOS app
+                本身可在 App Store 免費下載，僅在透過 App Store 版啟用 Pro
+                後才會自動解鎖。
               </p>
             </div>
           </div>
@@ -3324,7 +3326,8 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
           <p
             class="text-xs sm:text-base text-zinc-400 mb-6 sm:mb-8 max-w-lg mx-auto"
           >
-            Mac · iPhone · iPad。一次下載橫跨所有平台——免費使用。
+            Mac · iPhone · iPad——所有功能免費開始使用，App Store 版 Pro 可在 Mac
+            與 iOS 設備上解鎖。
           </p>
           <div
             class="flex flex-col sm:flex-row items-center justify-center gap-3"
@@ -3376,7 +3379,8 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
               class="text-fox-500 hover:underline"
               >pay.foxterm.app</a
             >
-            取得啟用碼解鎖 Pro。無論選擇哪種 Mac 版本，iOS app 都會自動啟用。
+            取得啟用碼解鎖 Pro。啟用碼僅適用於 macOS 公證版，iOS 應用僅在透過
+            App Store 版啟用後自動解鎖。
           </p>
 
           <!-- System Requirements -->
@@ -3435,7 +3439,7 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
       <div class="flex flex-col items-center justify-center gap-2.5">
         <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
           <p>
-            &copy; 2026 FoxTerm.
+            &copy; <span data-copyright-year="2026">2026</span> FoxTerm.
             <span id="host-info">Hosted on Tencent Makers.</span>
           </p>
           <span class="hidden sm:inline text-zinc-800">|</span>
@@ -3491,7 +3495,7 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
             class="no-underline hover:text-fox-500 transition-colors"
             >Blog</a
           >
-        <span class="hidden sm:inline text-zinc-800">|</span>
+          <span class="hidden sm:inline text-zinc-800">|</span>
           <a
             href="https://security.foxterm.app/"
             target="_blank"

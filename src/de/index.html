@@ -143,7 +143,7 @@
                   "@type": "Offer",
                   "name": "FoxTerm Pro — Notarized Edition (Activation Code)",
                   "category": "DirectLicense",
-                  "description": "Direkter, signierter und notarisierter macOS-Build, freigeschaltet mit einem Aktivierungscode von pay.foxterm.app; unbegrenzte Nodes; der Code aktiviert auch die iOS-App automatisch"
+                  "description": "Direkter, signierter und notarisierter macOS-Build, freigeschaltet mit einem Aktivierungscode von pay.foxterm.app; unbegrenzte Nodes; der Aktivierungscode gilt nur für die macOS Notarized Edition"
                 }
               ]
             },
@@ -294,7 +294,7 @@
                 "name": "Wie erhalte ich Pro auf macOS und wie funktioniert die iOS-Aktivierung?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Es gibt zwei Wege, Pro auf macOS zu erhalten. Die Mac App Store Edition ist ein monatliches oder jährliches Abo, das von Apple abgerechnet wird; verwalten oder kündigen in deinen Apple-ID-Abo-Einstellungen, Verlängerungen und Erstattungen übernimmt Apple. Die Notarized Edition ist ein direkter, signierter macOS-Build, den du mit einem Aktivierungscode freischaltest, den du bei pay.foxterm.app erwirbst. Welche Mac-Edition du auch wählst, die iOS-App wird automatisch aktiviert; die iOS-App selbst ist im App Store kostenlos."
+                  "text": "Es gibt zwei Wege, Pro auf macOS zu erhalten. Die Mac App Store Edition ist ein monatliches oder jährliches Abo, das von Apple abgerechnet wird und den Apple-Richtlinien unterliegt; verwalten oder kündigen in deinen Apple-ID-Abo-Einstellungen, Verlängerungen und Erstattungen übernimmt Apple. Sie aktiviert die iOS-App automatisch über Universal Purchase. Die Notarized Edition ist ein eigenständiger macOS-Build, der nur für macOS gilt und keine iOS-Aktivierung beinhaltet — schalte sie mit einem Aktivierungscode von pay.foxterm.app frei. Die iOS-App selbst ist im App Store kostenlos und schaltet sich nur automatisch frei, wenn Pro über die App Store Edition aktiv ist."
                 }
               }
             ]
@@ -3093,8 +3093,9 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
               Zwei Wege, Pro auf macOS freizuschalten
             </h3>
             <p class="text-xs sm:text-sm text-zinc-400">
-              Beide Mac-Editionen aktivieren die iOS-App automatisch — hol dir
-              Pro einmal und nutze es auf Mac, iPhone und iPad.
+              App-Store-Edition (macOS + iOS) unterliegt den Apple-Richtlinien
+              und schaltet über Universal Purchase frei; Notarized Edition nur
+              für macOS — Aktivierungscodes gelten nicht für iOS.
             </p>
           </div>
 
@@ -3166,8 +3167,8 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
                   erworben
                 </li>
                 <li class="flex items-start gap-2.5">
-                  <span class="text-emerald-400 mt-0.5">✓</span>Dein Code
-                  aktiviert auch die iOS-App automatisch
+                  <span class="text-amber-400 mt-0.5">~</span>Nur macOS —
+                  unabhängig von der App-Store-Edition
                 </li>
               </ul>
               <a
@@ -3184,8 +3185,8 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
           <p
             class="text-center text-[11px] sm:text-xs text-zinc-500 mt-6 max-w-2xl mx-auto"
           >
-            Die iOS-App ist im App Store kostenlos und schaltet sich selbst
-            frei, sobald Pro auf einer der beiden Mac-Editionen aktiv ist.
+            Die iOS-App ist im App Store kostenlos und schaltet sich automatisch
+            frei, sobald Pro über die App-Store-Edition aktiv ist.
             Verbindungsprofile und Konfiguration werden geräteübergreifend über
             deinen privaten iCloud-Container synchronisiert.
           </p>
@@ -3252,7 +3253,7 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
             >
               <span class="text-fox-500 font-mono flex-shrink-0">Q:</span>
               Was ist der Unterschied zwischen der kostenlosen Version und Pro?
-              Wie funktioniert das Pro-Abo geräteübergreifend?
+              Wie funktioniert die App-Store-Edition geräteübergreifend?
             </h3>
             <div class="text-xs sm:text-sm text-zinc-400 leading-relaxed pl-6">
               <p>
@@ -3267,11 +3268,14 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
                 ist die Anzahl der
                 <strong class="text-zinc-200">Nodes (Server)</strong>, die du
                 verwalten kannst. Ein FoxTerm-Pro-Abo hebt dieses Limit für
-                unbegrenzte Nodes auf, und ein einziges Abo schaltet
-                gleichzeitig sowohl macOS- als auch iOS/iPadOS-Clients unter
-                derselben Apple-ID frei, mit verschlüsselter
+                unbegrenzte Nodes auf. Die
+                <strong class="text-zinc-200">App-Store-Edition</strong>
+                schaltet macOS und iOS/iPadOS gleichzeitig über Universal
+                Purchase unter derselben Apple-ID frei, mit verschlüsselter
                 Konfigurationssynchronisierung über deinen persönlichen
-                iCloud-Container.
+                iCloud-Container. Die
+                <strong class="text-zinc-200">Notarized Edition</strong> ist ein
+                eigenständiger macOS-Build und gilt nur für macOS.
               </p>
             </div>
           </div>
@@ -3410,15 +3414,16 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
                 Es gibt zwei Wege, Pro auf macOS zu erhalten. Die
                 <strong class="text-zinc-200">Mac App Store Edition</strong> ist
                 ein monatliches oder jährliches Abo, das von Apple abgerechnet
-                wird — verwalte oder kündige es in deinen
-                Apple-ID-Abo-Einstellungen, Verlängerungen und Erstattungen
-                übernimmt Apple. Die
+                wird und den Apple-Richtlinien unterliegt — verwalte oder
+                kündige es in deinen Apple-ID-Abo-Einstellungen, Verlängerungen
+                und Erstattungen übernimmt Apple. Sie aktiviert die iOS-App
+                automatisch über Universal Purchase. Die
                 <strong class="text-zinc-200">Notarized Edition</strong> ist ein
-                direkter, signierter macOS-Build, den du mit einem
-                Aktivierungscode freischaltest, den du bei pay.foxterm.app
-                erwirbst. Welche Mac-Edition du auch wählst, die iOS-App wird
-                automatisch aktiviert; die iOS-App selbst ist im App Store
-                kostenlos.
+                eigenständiger macOS-Build, der nur für macOS gilt und keine
+                iOS-Aktivierung beinhaltet — schalte sie mit einem
+                Aktivierungscode frei, den du bei pay.foxterm.app erwirbst. Die
+                iOS-App selbst ist im App Store kostenlos und schaltet sich nur
+                automatisch frei, wenn Pro über die App Store Edition aktiv ist.
               </p>
             </div>
           </div>
@@ -3443,7 +3448,7 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
             class="text-xs sm:text-base text-zinc-400 mb-6 sm:mb-8 max-w-lg mx-auto"
           >
             Mac · iPhone · iPad — jede Funktion ist kostenlos zum Start, und Pro
-            gilt geräteübergreifend auf all deinen Geräten.
+            schaltet über die App-Store-Edition auf Mac- und iOS-Geräten frei.
           </p>
           <div
             class="flex flex-col sm:flex-row items-center justify-center gap-3"
@@ -3496,8 +3501,9 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
               rel="noopener noreferrer"
               class="text-fox-500 hover:underline"
               >pay.foxterm.app</a
-            >frei. Welche Mac-Edition du auch wählst, die iOS-App wird
-            automatisch aktiviert.
+            >frei. Aktivierungscodes gelten nur für die macOS Notarized Edition;
+            die iOS-App schaltet sich nur automatisch über die App Store Edition
+            frei.
           </p>
 
           <!-- System Requirements -->
@@ -3556,7 +3562,7 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
       <div class="flex flex-col items-center justify-center gap-2.5">
         <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
           <p>
-            &copy; 2026 FoxTerm.
+            &copy; <span data-copyright-year="2026">2026</span> FoxTerm.
             <span id="host-info">Hosted on Tencent Makers.</span>
           </p>
           <span class="hidden sm:inline text-zinc-800">|</span>
@@ -3612,7 +3618,7 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
             class="no-underline hover:text-fox-500 transition-colors"
             >Blog</a
           >
-        <span class="hidden sm:inline text-zinc-800">|</span>
+          <span class="hidden sm:inline text-zinc-800">|</span>
           <a
             href="https://security.foxterm.app/"
             target="_blank"

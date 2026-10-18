@@ -9,6 +9,16 @@
   );
 })();
 
+/* ===== Dynamic Copyright Year ===== */
+(function () {
+  const START = 2026;
+  const NOW = new Date().getFullYear();
+  const label = NOW > START ? START + "\u2013" + NOW : String(START);
+  document.querySelectorAll("[data-copyright-year]").forEach(function (el) {
+    el.textContent = label;
+  });
+})();
+
 /* ===== Language / Domain Detection Banner (JS-injected) ===== */
 (function () {
   const LS_KEY = "foxterm.langPrompt.dismissed";

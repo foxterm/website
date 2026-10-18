@@ -143,7 +143,7 @@
                   "@type": "Offer",
                   "name": "FoxTerm Pro — Notarized Edition (Activation Code)",
                   "category": "DirectLicense",
-                  "description": "Самостоятельная подписанная и нотаризованная сборка для macOS, открываемая активационным кодом, купленным на pay.foxterm.app; безлимитные узлы; код также автоматически активирует приложение iOS"
+                  "description": "Самостоятельная подписанная и нотаризованная сборка для macOS, открываемая активационным кодом, купленным на pay.foxterm.app; безлимитные узлы; активационный код действует только для нотаризованной редакции macOS"
                 }
               ]
             },
@@ -294,7 +294,7 @@
                 "name": "Как получить Pro на macOS и как работает активация на iOS?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Есть два способа получить Pro на macOS. Редакция Mac App Store — это ежемесячная или ежегодная подписка, оплачиваемая Apple: управлять ею или отменить её можно в настройках подписок вашего Apple ID, а продления и возвраты обрабатывает Apple. Нотаризованная редакция — это самостоятельная подписанная сборка для macOS, которую вы открываете активационным кодом, купленным на pay.foxterm.app. Какую бы редакцию для Mac вы ни выбрали, приложение iOS активируется автоматически; само приложение iOS бесплатно в App Store."
+                  "text": "Есть два способа получить Pro на macOS. Редакция Mac App Store — это ежемесячная или ежегодная подписка, оплачиваемая Apple: управлять ею или отменить её можно в настройках подписок вашего Apple ID, а продления и возвраты обрабатывает Apple. Эта редакция подчиняется политикам Apple и через Universal Purchase автоматически активирует приложение iOS на том же Apple ID. Нотаризованная редакция — это самостоятельная сборка только для macOS, которую вы открываете активационным кодом, купленным на pay.foxterm.app; она не включает активацию iOS. Само приложение iOS бесплатно в App Store и автоматически разблокируется только при наличии редакции Mac App Store."
                 }
               }
             ]
@@ -3096,8 +3096,9 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
               Два способа открыть Pro на macOS
             </h3>
             <p class="text-xs sm:text-sm text-zinc-400">
-              Обе редакции для Mac автоматически активируют приложение iOS —
-              купите Pro один раз и пользуйтесь на Mac, iPhone и iPad.
+              Редакция App Store (macOS + iOS) подчиняется политикам Apple и
+              разблокирует iOS через Universal Purchase; нотаризованная редакция
+              — только macOS, активационные коды не включают активацию iOS.
             </p>
           </div>
 
@@ -3167,8 +3168,8 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
                   активационным кодом, купленным напрямую на pay.foxterm.app
                 </li>
                 <li class="flex items-start gap-2.5">
-                  <span class="text-emerald-400 mt-0.5">✓</span>Код также
-                  автоматически активирует приложение iOS
+                  <span class="text-emerald-400 mt-0.5">✓</span>Только macOS —
+                  независима от редакции App Store
                 </li>
               </ul>
               <a
@@ -3185,8 +3186,8 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
           <p
             class="text-center text-[11px] sm:text-xs text-zinc-500 mt-6 max-w-2xl mx-auto"
           >
-            Приложение iOS бесплатно в App Store и открывается само, как только
-            Pro активен в любой из редакций для Mac. Профили подключений и
+            Приложение iOS бесплатно в App Store и автоматически разблокируется
+            при активации Pro через редакцию App Store. Профили подключений и
             конфигурация синхронизируются между устройствами через ваш приватный
             контейнер iCloud.
           </p>
@@ -3255,8 +3256,8 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
               class="text-base sm:text-lg font-bold text-white mb-2 flex items-start gap-2.5"
             >
               <span class="text-fox-500 font-mono flex-shrink-0">Q:</span>
-              Чем бесплатная версия отличается от Pro? Как Pro-подписка работает
-              на разных устройствах?
+              Чем бесплатная версия отличается от Pro? Как редакция App Store
+              работает на разных устройствах?
             </h3>
             <div class="text-xs sm:text-sm text-zinc-400 leading-relaxed pl-6">
               <p>
@@ -3269,10 +3270,14 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
                 <strong class="text-zinc-200">Docker и Podman</strong>.
                 Единственное ограничение — число
                 <strong class="text-zinc-200">узлов (серверов)</strong>,
-                которыми вы управляете. Подписка FoxTerm Pro снимает этот лимит
-                и одновременно открывает клиенты macOS и iOS/iPadOS под одним
-                Apple ID, с зашифрованной синхронизацией конфигурации через ваш
-                личный контейнер iCloud.
+                которыми вы управляете. Подписка FoxTerm Pro снимает этот лимит.
+                Редакция App Store разблокирует macOS и iOS/iPadOS через
+                Universal Purchase под одним Apple ID; управление подпиской и
+                возвраты — через Apple. Нотаризованная редакция — это
+                самостоятельная сборка только для macOS, открываемая
+                активационным кодом; она не включает активацию iOS. В обеих
+                редакциях конфигурация синхронизируется через ваш приватный
+                контейнер iCloud.
               </p>
             </div>
           </div>
@@ -3406,13 +3411,15 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
                 <strong class="text-zinc-200">Редакция Mac App Store</strong> —
                 это ежемесячная или ежегодная подписка, оплачиваемая Apple:
                 управлять ею или отменить её можно в настройках подписок вашего
-                Apple ID, а продления и возвраты обрабатывает Apple.
+                Apple ID, а продления и возвраты обрабатывает Apple. Эта
+                редакция подчиняется политикам Apple и через Universal Purchase
+                автоматически активирует приложение iOS на том же Apple ID.
                 <strong class="text-zinc-200">Нотаризованная редакция</strong> —
-                это самостоятельная подписанная сборка для macOS, которую вы
-                открываете активационным кодом, купленным на pay.foxterm.app.
-                Какую бы редакцию для Mac вы ни выбрали, приложение iOS
-                активируется автоматически; само приложение iOS бесплатно в App
-                Store.
+                это самостоятельная сборка только для macOS, которую вы
+                открываете активационным кодом, купленным на pay.foxterm.app;
+                она не включает активацию iOS. Само приложение iOS бесплатно в
+                App Store и автоматически разблокируется только при наличии
+                редакции Mac App Store.
               </p>
             </div>
           </div>
@@ -3437,7 +3444,8 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
             class="text-xs sm:text-base text-zinc-400 mb-6 sm:mb-8 max-w-lg mx-auto"
           >
             Mac · iPhone · iPad — все функции доступны бесплатно с самого
-            начала, а Pro открывается на всех ваших устройствах.
+            начала, а Pro в редакции App Store разблокирует Mac и
+            iOS-устройства.
           </p>
           <div
             class="flex flex-col sm:flex-row items-center justify-center gap-3"
@@ -3490,8 +3498,9 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
               rel="noopener noreferrer"
               class="text-fox-500 hover:underline"
               >pay.foxterm.app</a
-            >. Какую бы редакцию для Mac вы ни выбрали, приложение iOS
-            активируется автоматически.
+            >. Активационные коды действуют только для нотаризованной редакции
+            macOS; приложение iOS автоматически разблокируется только через
+            редакцию App Store.
           </p>
 
           <!-- System Requirements -->
@@ -3550,7 +3559,7 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
       <div class="flex flex-col items-center justify-center gap-2.5">
         <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
           <p>
-            &copy; 2026 FoxTerm.
+            &copy; <span data-copyright-year="2026">2026</span> FoxTerm.
             <span id="host-info">Hosted on Tencent Makers.</span>
           </p>
           <span class="hidden sm:inline text-zinc-800">|</span>
@@ -3606,7 +3615,7 @@ MM    $MMMMM      NM       MMMMMMMM     M      M
             class="no-underline hover:text-fox-500 transition-colors"
             >Blog</a
           >
-        <span class="hidden sm:inline text-zinc-800">|</span>
+          <span class="hidden sm:inline text-zinc-800">|</span>
           <a
             href="https://security.foxterm.app/"
             target="_blank"
