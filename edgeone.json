@@ -22,6 +22,16 @@
       "statusCode": 301
     },
     {
+      "source": "/zh-sg",
+      "destination": "/zh-hans",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh-sg/:path",
+      "destination": "/zh-hans/:path",
+      "statusCode": 301
+    },
+    {
       "source": "/zh-tw",
       "destination": "/zh-hant",
       "statusCode": 301
@@ -38,6 +48,16 @@
     },
     {
       "source": "/zh-hk/:path",
+      "destination": "/zh-hant/:path",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh-mo",
+      "destination": "/zh-hant",
+      "statusCode": 301
+    },
+    {
+      "source": "/zh-mo/:path",
       "destination": "/zh-hant/:path",
       "statusCode": 301
     }
