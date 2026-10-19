@@ -60,26 +60,5 @@
                 <enclosure url="https://github.com/foxterm/FoxTerm/releases/download/v1.0.3/FoxTerm2022610170351-2022610151910.delta" sparkle:deltaFrom="2022610151910" length="1301050" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="975840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="9jCebVfiPDRvfiXUz6Z61OslKhwygkaQNCwK+15gX7tHC6HcEHtiFF8qCawJHQGKY7I5mqK/yR1LLKSnQGKFDw=="/>
             </sparkle:deltas>
         </item>
-        <item>
-            <title>1.0.1</title>
-            <pubDate>Sat, 17 Oct 2026 03:19:16 +0800</pubDate>
-            <link>https://foxterm.app/</link>
-            <sparkle:version>2022610170233</sparkle:version>
-            <sparkle:shortVersionString>1.0.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/foxterm/FoxTerm/releases/download/v1.0.1/FoxTerm-1.0.1.dmg" length="28478005" type="application/octet-stream" sparkle:edSignature="TSrMH929MJYInZM8CWFpXYlA4kKHRmUe9XeZ1kfsd6nFsX4IglyOh91DVIHsIvCHUuQY+L2EjcuxGDupBkg/Cg=="/>
-            <sparkle:deltas>
-                <enclosure url="https://github.com/foxterm/FoxTerm/releases/download/v1.0.1/FoxTerm2022610170233-2022610151910.delta" sparkle:deltaFrom="2022610151910" length="1301570" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="975840" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="Z9u4cIggXwvDI1OIGX625VVfeKusr7nwkf1/FqwAEimjsDlJ7Ibrn//hbyAGTvhPGJLh7utjElDQM2nBCHh2Dw=="/>
-            </sparkle:deltas>
-        </item>
-        <item>
-            <title>1.0.0</title>
-            <pubDate>Fri, 16 Oct 2026 07:09:34 +0800</pubDate>
-            <link>https://foxterm.app/</link>
-            <sparkle:version>2022610151910</sparkle:version>
-            <sparkle:shortVersionString>1.0.0</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/foxterm/FoxTerm/releases/download/v1.0.0/FoxTerm-1.0.0.dmg" length="28464904" type="application/octet-stream" sparkle:edSignature="kTgeb+1flEiuNiia2mKU1K8Q0qSar6HssZmL0uXHPfpCcIHCUbHFaPZy+Sh1f2pqV3veIEda+fKl02Jo4KJQDA=="/>
-        </item>
     </channel>
 </rss>
