@@ -329,3 +329,18 @@ input[type="button"],
     font-size: 10px;
   }
 }
+
+/* Skeleton shimmer placeholder */
+.ft-skeleton {
+  background: linear-gradient(110deg, #18181b 30%, #27272a 45%, #18181b 60%);
+  background-size: 200% 100%;
+  animation: ft-shimmer 1.8s ease-in-out infinite;
+}
+@keyframes ft-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}

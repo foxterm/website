@@ -369,4 +369,11 @@
     });
   });
   activate("ssh");
+
+  /* Preload all mockup screenshots so tab switches are instant */
+  var imgRoot = "/assets/macos/";
+  ["ssh.png", "sftp.png", "vnc.png", "docker.png"].forEach(function (src) {
+    var img = new Image();
+    img.src = imgRoot + src;
+  });
 })();

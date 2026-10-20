@@ -639,48 +639,68 @@
 
           <!-- ===== SSH Panel ===== -->
           <div data-ft-panel="ssh" class="ft-panel ft-panel-active">
-            <div class="bg-zinc-950/90">
+            <div class="relative bg-zinc-950/90 aspect-[16/10]">
+              <div class="ft-skeleton absolute inset-0"></div>
               <img
                 src="/assets/macos/ssh.png"
                 alt="FoxTerm SSH Terminal"
-                class="w-full h-auto block"
-                loading="lazy"
+                class="w-full h-full object-contain block opacity-0 transition-opacity duration-300"
+                loading="eager"
+                onload="
+                  this.style.opacity = '1';
+                  this.previousElementSibling.style.display = 'none';
+                "
               />
             </div>
           </div>
 
           <!-- ===== SFTP Panel ===== -->
           <div data-ft-panel="sftp" class="ft-panel">
-            <div class="bg-zinc-950/90">
+            <div class="relative bg-zinc-950/90 aspect-[16/10]">
+              <div class="ft-skeleton absolute inset-0"></div>
               <img
                 src="/assets/macos/sftp.png"
                 alt="FoxTerm SFTP File Transfer"
-                class="w-full h-auto block"
+                class="w-full h-full object-contain block opacity-0 transition-opacity duration-300"
                 loading="lazy"
+                onload="
+                  this.style.opacity = '1';
+                  this.previousElementSibling.style.display = 'none';
+                "
               />
             </div>
           </div>
 
           <!-- ===== VNC Panel ===== -->
           <div data-ft-panel="vnc" class="ft-panel">
-            <div class="bg-zinc-950/90">
+            <div class="relative bg-zinc-950/90 aspect-[16/10]">
+              <div class="ft-skeleton absolute inset-0"></div>
               <img
                 src="/assets/macos/vnc.png"
                 alt="FoxTerm VNC Remote Desktop"
-                class="w-full h-auto block"
+                class="w-full h-full object-contain block opacity-0 transition-opacity duration-300"
                 loading="lazy"
+                onload="
+                  this.style.opacity = '1';
+                  this.previousElementSibling.style.display = 'none';
+                "
               />
             </div>
           </div>
 
           <!-- ===== Docker Panel ===== -->
           <div data-ft-panel="docker" class="ft-panel">
-            <div class="bg-zinc-950/90">
+            <div class="relative bg-zinc-950/90 aspect-[16/10]">
+              <div class="ft-skeleton absolute inset-0"></div>
               <img
                 src="/assets/macos/docker.png"
                 alt="FoxTerm Docker Container Management"
-                class="w-full h-auto block"
+                class="w-full h-full object-contain block opacity-0 transition-opacity duration-300"
                 loading="lazy"
+                onload="
+                  this.style.opacity = '1';
+                  this.previousElementSibling.style.display = 'none';
+                "
               />
             </div>
           </div>
