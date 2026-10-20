@@ -1,9 +1,0 @@
-@import "tailwindcss";
-@source "./*.html";
-@source "./*/*.html";
-@theme {
-  --color-fox-400: #ff8000;
-  --color-fox-500: #ff5e00;
-  --color-fox-600: #e03e00;
-  --color-fox-700: #c42a00;
-}
