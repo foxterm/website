@@ -1,72 +1,31 @@
 {
   "404": {
     "nav": {
-      "logo": [
-        "FoxTerm"
-      ],
-      "backToHome": [
-        "Back to Home"
-      ]
+      "logo": ["FoxTerm"],
+      "backToHome": ["Back to Home"]
     },
     "content": {
-      "title": [
-        "Page Not Found"
-      ],
+      "title": ["Page Not Found"],
       "lede": [
         "The page you are looking for does not exist or has been moved."
       ],
-      "links": [
-        [
-          "Back to Home"
-        ],
-        [
-          "Contact Support"
-        ]
-      ]
+      "links": [["Back to Home"], ["Contact Support"]]
     },
     "footer": {
-      "copyright": [
-        " FoxTerm.",
-        "Hosted on Tencent Makers."
-      ],
+      "copyright": [" FoxTerm.", "Hosted on Tencent Makers."],
       "links": [
-        [
-          "About"
-        ],
-        [
-          "Contact Us"
-        ],
-        [
-          "Privacy Policy"
-        ],
-        [
-          "Terms of Service"
-        ],
-        [
-          "Purchase Verifier"
-        ],
-        [
-          "Purchase Verifier"
-        ],
-        [
-          "GitHub"
-        ],
-        [
-          "Blog"
-        ],
-        [
-          "Security Intel"
-        ]
+        ["About"],
+        ["Contact Us"],
+        ["Privacy Policy"],
+        ["Terms of Service"],
+        ["Purchase Verifier"],
+        ["Purchase Verifier"],
+        ["GitHub"],
+        ["Blog"],
+        ["Security Intel"]
       ],
-      "icp": [
-        "蜀ICP备2024075062号"
-      ],
-      "mirror": [
-        "CN Mirror:",
-        " | Global:",
-        "foxterm.cn",
-        "foxterm.app"
-      ]
+      "icp": ["蜀ICP备2024075062号"],
+      "mirror": ["CN Mirror:", " | Global:", "foxterm.cn", "foxterm.app"]
     }
   },
   "_meta": {
@@ -201,110 +160,55 @@
   },
   "index": {
     "nav": {
-      "logo": [
-        "FoxTerm"
-      ],
+      "logo": ["FoxTerm"],
       "links": [
-        [
-          "Features"
-        ],
-        [
-          "Use Cases"
-        ],
-        [
-          "Architecture"
-        ],
-        [
-          "Security"
-        ],
-        [
-          "Pricing"
-        ],
-        [
-          "FAQ"
-        ]
+        ["Features"],
+        ["Use Cases"],
+        ["Architecture"],
+        ["Security"],
+        ["Pricing"],
+        ["FAQ"]
       ],
       "langAria": "Language",
-      "langCurrent": [
-        "English"
-      ],
-      "getApp": [
-        "Get App"
-      ]
+      "langCurrent": ["English"],
+      "getApp": ["Get App"]
     },
     "hero": {
       "badge": [
         "100% Native for Apple Platforms · Zero Telemetry · Universal Purchase"
       ],
-      "title": [
-        "Master Your Infrastructure with",
-        "FoxTerm"
-      ],
-      "tags": [
-        [
-          "SSH"
-        ],
-        [
-          "VNC"
-        ],
-        [
-          "SFTP"
-        ],
-        [
-          "Docker"
-        ],
-        [
-          "Podman"
-        ]
-      ],
+      "title": ["Master Your Infrastructure with", "FoxTerm"],
+      "tags": [["SSH"], ["VNC"], ["SFTP"], ["Docker"], ["Podman"]],
       "subtitle": [
         "The all-in-one native terminal for macOS and iOS. SSH, SFTP, Metal-accelerated VNC, real-time Linux monitoring, and visual Docker/Podman management — secure, blazingly fast, and ready the instant you launch it."
       ],
       "cta": [
         {
           "alt": "Download on Apple App Store",
-          "caption": [
-            "App Store Universal"
-          ],
-          "label": [
-            "Download for macOS & iOS"
-          ]
+          "caption": ["App Store Universal"],
+          "label": ["Download for macOS & iOS"]
         }
       ]
     },
     "trust": {
       "items": [
         {
-          "value": [
-            "4-in-1"
-          ],
-          "body": [
-            "SSH · SFTP · VNC & containers in a single window"
-          ]
+          "value": ["4-in-1"],
+          "body": ["SSH · SFTP · VNC & containers in a single window"]
         },
         {
-          "body": [
-            "Credentials & keys stay on your device"
-          ]
+          "body": ["Credentials & keys stay on your device"]
         },
         {
-          "body": [
-            "Telemetry, analytics, or third-party trackers"
-          ]
+          "body": ["Telemetry, analytics, or third-party trackers"]
         },
         {
-          "body": [
-            "Apple ID unlocks Mac, iPhone & iPad together"
-          ]
+          "body": ["Apple ID unlocks Mac, iPhone & iPad together"]
         }
       ]
     },
     "architecture": {
-      "title": [
-        "Engineered for Performance.",
-        ".",
-        "Crafted for Clarity"
-      ],
+      "title": ["Engineered for Performance.", ".", "Crafted for Clarity"],
       "lede": [
         "No web wrappers, no bloat. FoxTerm pairs minimalist industrial design with uncompromising native rendering performance."
       ],
@@ -327,87 +231,58 @@
           ]
         },
         {
-          "title": [
-            "Geometric Precision",
-            "02 / HIERARCHY"
-          ],
+          "title": ["Geometric Precision", "02 / HIERARCHY"],
           "body": [
             "Clean low-poly geometric facets that eliminate visual noise, offering a sharp, distraction-free developer workspace.",
             "Rich contrast shading crafted for dark mode environments."
           ]
         },
         {
-          "title": [
-            "Unified Workflow",
-            "03 / STABILITY"
-          ],
+          "title": ["Unified Workflow", "03 / STABILITY"],
           "body": [
             "Unifies remote shell, file transfer, GUI desktop, and container management into a single cohesive interface.",
             "Interlocking geometry mirroring secure network protocols."
           ]
         },
         {
-          "title": [
-            "04 / EFFICIENCY"
-          ],
+          "title": ["04 / EFFICIENCY"],
           "body": [
             "Converging lines focusing complexity into effortless workflows."
           ]
         },
         {
-          "badge": [
-            "GUIDE MESH: ON",
-            "RENDER: TTF FONT",
-            "⬇ TTF",
-            "⬇ SVG"
-          ]
+          "badge": ["GUIDE MESH: ON", "RENDER: TTF FONT", "⬇ TTF", "⬇ SVG"]
         }
       ],
-      "badge": [
-        " VECTOR GEOMETRY & ICONOGRAPHY",
-        "TYPE: ICON FONT"
-      ]
+      "badge": [" VECTOR GEOMETRY & ICONOGRAPHY", "TYPE: ICON FONT"]
     },
     "security": {
-      "badge": [
-        "Zero-Trust Security Architecture"
-      ],
-      "title": [
-        "Localized Encryption,",
-        "Complete Data Sovereignty"
-      ],
+      "badge": ["Zero-Trust Security Architecture"],
+      "title": ["Localized Encryption,", "Complete Data Sovereignty"],
       "lede": [
         "Your server keys are your core assets. FoxTerm enforces strict zero-telemetry with 100% localized encryption and hardware isolation."
       ],
       "cards": [
         {
-          "badge": [
-            "01 / ZERO TELEMETRY"
-          ],
+          "badge": ["01 / ZERO TELEMETRY"],
           "body": [
             "Zero telemetry or activity tracking. Connection logs never leave your local environment."
           ]
         },
         {
-          "badge": [
-            "02 / SECURE ENCLAVE"
-          ],
+          "badge": ["02 / SECURE ENCLAVE"],
           "body": [
             "Leverages Apple Keychain & Secure Enclave hardware isolation for private key storage."
           ]
         },
         {
-          "badge": [
-            "03 / NATIVE CRYPTO"
-          ],
+          "badge": ["03 / NATIVE CRYPTO"],
           "body": [
             "Powered by C-native engines with full support for Ed25519 and modern cipher suites."
           ]
         },
         {
-          "badge": [
-            "04 / ICLOUD SYNC"
-          ],
+          "badge": ["04 / ICLOUD SYNC"],
           "body": [
             "Seamless config synchronization exclusively via your private, encrypted iCloud container."
           ]
@@ -415,75 +290,49 @@
       ]
     },
     "features": {
-      "title": [
-        "Comprehensive Capabilities"
-      ],
+      "title": ["Comprehensive Capabilities"],
       "lede": [
         "Everything modern server management needs, unified in one workflow."
       ],
       "cards": [
         {
-          "badge": [
-            "SSH"
-          ],
-          "title": [
-            "High-Performance SSH"
-          ],
+          "badge": ["SSH"],
+          "title": ["High-Performance SSH"],
           "body": [
             "Supports Ed25519 keys, split-pane tabs, command snippets, and intelligent auto-reconnection with millisecond response times."
           ]
         },
         {
-          "badge": [
-            "MON"
-          ],
-          "title": [
-            "Real-Time Telemetry"
-          ],
+          "badge": ["MON"],
+          "title": ["Real-Time Telemetry"],
           "body": [
             "Active visualization for CPU, memory, disk I/O, network throughput, and GPU/VRAM metrics."
           ]
         },
         {
-          "badge": [
-            "SFTP"
-          ],
-          "title": [
-            "SFTP File Transfer"
-          ],
+          "badge": ["SFTP"],
+          "title": ["SFTP File Transfer"],
           "body": [
             "Drag-and-drop file transfers, in-app editor, and permission controls."
           ]
         },
         {
-          "badge": [
-            "VNC"
-          ],
-          "title": [
-            "Metal-Accelerated VNC"
-          ],
+          "badge": ["VNC"],
+          "title": ["Metal-Accelerated VNC"],
           "body": [
             "Hardware-accelerated VNC engine for smooth remote desktop access, tuned for touch and gestures."
           ]
         },
         {
-          "badge": [
-            "CTL"
-          ],
-          "title": [
-            "Container Orchestration"
-          ],
+          "badge": ["CTL"],
+          "title": ["Container Orchestration"],
           "body": [
             "Visual dashboard for containers, images, and volumes, supporting Rootless runtimes and live log streaming."
           ]
         },
         {
-          "badge": [
-            "iOS"
-          ],
-          "title": [
-            "Universal Purchase"
-          ],
+          "badge": ["iOS"],
+          "title": ["Universal Purchase"],
           "body": [
             "One subscription covers both macOS and iOS/iPadOS; every feature is free with only a node cap — go Pro to unlock unlimited nodes."
           ]
@@ -491,57 +340,36 @@
       ]
     },
     "useCases": {
-      "badge": [
-        "Built for the Way You Work"
-      ],
-      "title": [
-        "One Toolkit for Every",
-        "Remote Workflow"
-      ],
+      "badge": ["Built for the Way You Work"],
+      "title": ["One Toolkit for Every", "Remote Workflow"],
       "lede": [
         "From on-call production triage to weekend homelab tinkering, FoxTerm adapts to the way you manage machines."
       ],
       "cards": [
         {
-          "badge": [
-            "OPS"
-          ],
-          "title": [
-            "SRE & DevOps On-Call"
-          ],
+          "badge": ["OPS"],
+          "title": ["SRE & DevOps On-Call"],
           "body": [
             "Open a session in seconds, tail container logs, and read live CPU, memory and disk I/O before a blip becomes an outage."
           ]
         },
         {
-          "badge": [
-            "LAB"
-          ],
-          "title": [
-            "Homelab & Self-Hosters"
-          ],
+          "badge": ["LAB"],
+          "title": ["Homelab & Self-Hosters"],
           "body": [
             "Run routers, NAS devices, and Docker/Podman stacks from your Mac or phone — no jump host, no cloud gateway, no middleman."
           ]
         },
         {
-          "badge": [
-            "NET"
-          ],
-          "title": [
-            "Network & Edge Engineers"
-          ],
+          "badge": ["NET"],
+          "title": ["Network & Edge Engineers"],
           "body": [
             "Reach OpenWrt, IoT, and remote edge gear over SSH, SFTP, and smooth Metal VNC — even over an unreliable cellular link."
           ]
         },
         {
-          "badge": [
-            "MOB"
-          ],
-          "title": [
-            "Mobile-First Admins"
-          ],
+          "badge": ["MOB"],
+          "title": ["Mobile-First Admins"],
           "body": [
             "Drive a full terminal, transfer files, and restart a container from iPhone or iPad with native touch, gestures, and shortcuts."
           ]
@@ -549,212 +377,98 @@
       ]
     },
     "comparison": {
-      "title": [
-        "Architectural Superiority"
-      ],
+      "title": ["Architectural Superiority"],
       "lede": [
         "FoxTerm versus legacy CLI tools and cloud-dependent SaaS apps."
       ],
       "table": {
         "head": [
-          [
-            "Dimension"
-          ],
-          [
-            "FoxTerm"
-          ],
-          [
-            "Traditional CLI Tools"
-          ],
-          [
-            "Cloud-Sync SaaS Apps"
-          ]
+          ["Dimension"],
+          ["FoxTerm"],
+          ["Traditional CLI Tools"],
+          ["Cloud-Sync SaaS Apps"]
         ],
         "rows": [
           [
-            [
-              "Privacy & Telemetry"
-            ],
-            [
-              "✓ 100% Local / Zero Telemetry"
-            ],
-            [
-              "✓ Local Only"
-            ],
-            [
-              "✗ Centralized Cloud Sync"
-            ]
+            ["Privacy & Telemetry"],
+            ["✓ 100% Local / Zero Telemetry"],
+            ["✓ Local Only"],
+            ["✗ Centralized Cloud Sync"]
           ],
           [
-            [
-              "Key Protection"
-            ],
-            [
-              "✓ Secure Enclave Hardware"
-            ],
-            [
-              "~ Plain File System"
-            ],
-            [
-              "✗ Third-Party Cloud Servers"
-            ]
+            ["Key Protection"],
+            ["✓ Secure Enclave Hardware"],
+            ["~ Plain File System"],
+            ["✗ Third-Party Cloud Servers"]
           ],
           [
-            [
-              "Container UI"
-            ],
-            [
-              "✓ Native Docker & Podman GUI"
-            ],
-            [
-              "✗ CLI Only"
-            ],
-            [
-              "~ Basic Log Viewer"
-            ]
+            ["Container UI"],
+            ["✓ Native Docker & Podman GUI"],
+            ["✗ CLI Only"],
+            ["~ Basic Log Viewer"]
           ],
           [
-            [
-              "Render Engine"
-            ],
-            [
-              "✓ Native Swift & Metal"
-            ],
-            [
-              "~ Basic Text Rendering"
-            ],
-            [
-              "✗ Electron Heavy Wrapper"
-            ]
+            ["Render Engine"],
+            ["✓ Native Swift & Metal"],
+            ["~ Basic Text Rendering"],
+            ["✗ Electron Heavy Wrapper"]
           ],
           [
-            [
-              "Universal Platform"
-            ],
-            [
-              "✓ macOS + iOS Universal"
-            ],
-            [
-              "✗ Desktop / Mobile Split"
-            ],
-            [
-              "~ Separate Purchases"
-            ]
+            ["Universal Platform"],
+            ["✓ macOS + iOS Universal"],
+            ["✗ Desktop / Mobile Split"],
+            ["~ Separate Purchases"]
           ]
         ]
       }
     },
     "pricing": {
-      "badge": [
-        "Simple, Honest Pricing"
-      ],
-      "title": [
-        "Every Feature Is Free."
-      ],
+      "badge": ["Simple, Honest Pricing"],
+      "title": ["Every Feature Is Free."],
       "pro": {
-        "price": [
-          [
-            "Pro Just Lifts the Limit.",
-            "Unlimited"
-          ],
-          [
-            "nodes"
-          ]
-        ],
-        "title": [
-          "FoxTerm Pro"
-        ],
-        "tag": [
-          "Recommended"
-        ],
-        "lede": [
-          "Everything in Free, with the node cap removed"
-        ],
+        "price": [["Pro Just Lifts the Limit.", "Unlimited"], ["nodes"]],
+        "title": ["FoxTerm Pro"],
+        "tag": ["Recommended"],
+        "lede": ["Everything in Free, with the node cap removed"],
         "items": [
-          [
-            "Every feature in the Free build"
-          ],
-          [
-            "Unlimited nodes (servers) for growing fleets"
-          ],
-          [
-            "Universal on macOS + iOS/iPadOS with one Apple ID"
-          ],
-          [
-            "All future Pro enhancements"
-          ],
-          [
-            "Priority support, straight from the developer"
-          ]
+          ["Every feature in the Free build"],
+          ["Unlimited nodes (servers) for growing fleets"],
+          ["Universal on macOS + iOS/iPadOS with one Apple ID"],
+          ["All future Pro enhancements"],
+          ["Priority support, straight from the developer"]
         ],
-        "button": [
-          "See How to Get Pro"
-        ]
+        "button": ["See How to Get Pro"]
       },
       "lede": [
         "Free includes every capability — SSH, SFTP, VNC, live telemetry, and containers — with only a cap on the number of nodes. Pro removes that cap for larger fleets, across all your devices."
       ],
       "free": {
-        "title": [
-          "Free"
-        ],
-        "tag": [
-          "No card required"
-        ],
-        "lede": [
-          "Every feature, a capped number of nodes"
-        ],
+        "title": ["Free"],
+        "tag": ["No card required"],
+        "lede": ["Every feature, a capped number of nodes"],
         "items": [
-          [
-            "Full SSH terminal with split panes, tabs, and snippets"
-          ],
-          [
-            "SFTP transfers, Metal VNC, and real-time telemetry"
-          ],
-          [
-            "Visual Docker & Podman management"
-          ],
-          [
-            "Secure Enclave keys, zero telemetry, iCloud sync"
-          ],
-          [
-            "Capped number of nodes (servers)"
-          ]
+          ["Full SSH terminal with split panes, tabs, and snippets"],
+          ["SFTP transfers, Metal VNC, and real-time telemetry"],
+          ["Visual Docker & Podman management"],
+          ["Secure Enclave keys, zero telemetry, iCloud sync"],
+          ["Capped number of nodes (servers)"]
         ],
-        "button": [
-          "Download Free"
-        ]
+        "button": ["Download Free"]
       },
       "options": {
         "0": {
-          "label": [
-            "Option 1 · Subscription"
-          ],
-          "title": [
-            "Mac App Store Edition"
-          ],
+          "label": ["Option 1 · Subscription"],
+          "title": ["Mac App Store Edition"],
           "items": [
-            [
-              "Monthly or yearly subscription, billed by Apple"
-            ],
-            [
-              "Universal Purchase — activates macOS and iOS automatically"
-            ],
-            [
-              "Cancel anytime; renewals and refunds handled by Apple"
-            ]
+            ["Monthly or yearly subscription, billed by Apple"],
+            ["Universal Purchase — activates macOS and iOS automatically"],
+            ["Cancel anytime; renewals and refunds handled by Apple"]
           ],
-          "button": [
-            "View on the App Store"
-          ]
+          "button": ["View on the App Store"]
         },
         "1": {
-          "label": [
-            "Option 2 · Activation code"
-          ],
-          "title": [
-            "Notarized Edition for macOS"
-          ],
+          "label": ["Option 2 · Activation code"],
+          "title": ["Notarized Edition for macOS"],
           "items": [
             [
               "Direct, signed and notarized macOS build — no App Store required"
@@ -762,17 +476,11 @@
             [
               "Unlock with an activation code purchased directly at pay.foxterm.app"
             ],
-            [
-              "macOS only — independent from the App Store edition"
-            ]
+            ["macOS only — independent from the App Store edition"]
           ],
-          "button": [
-            "Get an Activation Code"
-          ]
+          "button": ["Get an Activation Code"]
         },
-        "title": [
-          "Two ways to unlock Pro on macOS"
-        ],
+        "title": ["Two ways to unlock Pro on macOS"],
         "subtitle": [
           "The App Store edition (macOS + iOS) is governed by Apple's policies and unlocks via Universal Purchase; the notarized edition applies to macOS only — activation codes do not include iOS."
         ],
@@ -782,21 +490,14 @@
       }
     },
     "faq": {
-      "badge": [
-        "Frequently Asked Questions"
-      ],
-      "title": [
-        "Everything You Need to Know About",
-        "FoxTerm"
-      ],
+      "badge": ["Frequently Asked Questions"],
+      "title": ["Everything You Need to Know About", "FoxTerm"],
       "lede": [
         "Security, Pro licensing, and native performance — explained plainly."
       ],
       "items": [
         {
-          "q": [
-            " What is FoxTerm and what core features does it offer?"
-          ],
+          "q": [" What is FoxTerm and what core features does it offer?"],
           "answer": [
             "FoxTerm is an all-in-one, privacy-first server management application built natively for macOS and iOS. It unifies high-performance",
             ",",
@@ -852,17 +553,13 @@
           ]
         },
         {
-          "q": [
-            " Which platforms and operating systems are supported?"
-          ],
+          "q": [" Which platforms and operating systems are supported?"],
           "answer": [
             "FoxTerm is built natively for Apple platforms: it runs on macOS 14.0 or later and iOS/iPadOS 17.0 or later, including iPhone and iPad, with a single Universal Purchase unlocking every device. There is no Windows, Android, or Linux desktop build — FoxTerm is engineered exclusively for the native Apple stack."
           ]
         },
         {
-          "q": [
-            " Which protocols and authentication methods are supported?"
-          ],
+          "q": [" Which protocols and authentication methods are supported?"],
           "answer": [
             "FoxTerm supports SSH, SFTP, and VNC connections, and manages Docker and Podman engines over SSH. It ships with modern ciphers and key types such as Ed25519, split-pane terminal sessions, command snippets, drag-and-drop SFTP transfers, and visual management of containers, images, and volumes."
           ]
@@ -888,35 +585,20 @@
           ]
         }
       ],
-      "qPrefix": [
-        "Q:",
-        "Q:",
-        "Q:",
-        "Q:",
-        "Q:",
-        "Q:",
-        "Q:",
-        "Q:"
-      ]
+      "qPrefix": ["Q:", "Q:", "Q:", "Q:", "Q:", "Q:", "Q:", "Q:"]
     },
     "download": {
-      "title": [
-        "Download FoxTerm and Connect in Seconds"
-      ],
+      "title": ["Download FoxTerm and Connect in Seconds"],
       "subtitle": [
         "Mac · iPhone · iPad — every feature is free to start; Pro on the App Store edition unlocks across Mac and iOS devices."
       ],
       "buttons": [
         {
           "alt": "Download on App Store",
-          "label": [
-            "Get it on the App Store"
-          ]
+          "label": ["Get it on the App Store"]
         },
         {
-          "label": [
-            "Notarized Edition for macOS"
-          ]
+          "label": ["Notarized Edition for macOS"]
         }
       ],
       "note": [
@@ -926,82 +608,38 @@
       ],
       "reqs": [
         {
-          "label": [
-            "macOS"
-          ],
-          "value": [
-            "14.0 Sonoma or later"
-          ]
+          "label": ["macOS"],
+          "value": ["14.0 Sonoma or later"]
         },
         {
-          "label": [
-            "iOS / iPadOS"
-          ],
-          "value": [
-            "17.0 or later"
-          ]
+          "label": ["iOS / iPadOS"],
+          "value": ["17.0 or later"]
         },
         {
-          "label": [
-            "Licensing"
-          ],
-          "value": [
-            "App Store or activation code"
-          ]
+          "label": ["Licensing"],
+          "value": ["App Store or activation code"]
         },
         {
-          "label": [
-            "Trust"
-          ],
-          "value": [
-            "Notarized, signed & sandboxed"
-          ]
+          "label": ["Trust"],
+          "value": ["Notarized, signed & sandboxed"]
         }
       ]
     },
     "footer": {
-      "copyright": [
-        " FoxTerm.",
-        "Hosted on Tencent Makers."
-      ],
+      "copyright": [" FoxTerm.", "Hosted on Tencent Makers."],
       "links": [
-        [
-          "About"
-        ],
-        [
-          "Contact Us"
-        ],
-        [
-          "Privacy Policy"
-        ],
-        [
-          "Terms of Service"
-        ],
-        [
-          "Purchase Verifier"
-        ],
-        [
-          "Purchase Verifier"
-        ],
-        [
-          "GitHub"
-        ],
-        [
-          "Blog"
-        ],
-        [
-          "Security Intel"
-        ]
+        ["About"],
+        ["Contact Us"],
+        ["Privacy Policy"],
+        ["Terms of Service"],
+        ["Purchase Verifier"],
+        ["Purchase Verifier"],
+        ["GitHub"],
+        ["Blog"],
+        ["Security Intel"]
       ],
-      "icp": [
-        "蜀ICP备2024075062号"
-      ],
-      "mirror": [
-        "CN Mirror:",
-        " | Global:",
-        "foxterm.cn",
-        "foxterm.app"
-      ],
+      "icp": ["蜀ICP备2024075062号"],
+      "mirror": ["CN Mirror:", " | Global:", "foxterm.cn", "foxterm.app"],
       "badges": [
         {
           "alt": "Apple Notarized"
@@ -1026,36 +664,21 @@
   },
   "about": {
     "nav": {
-      "logo": [
-        "FoxTerm"
-      ],
+      "logo": ["FoxTerm"],
       "langAria": "Language",
-      "langCurrent": [
-        "English"
-      ],
-      "backToHome": [
-        "Back to Home"
-      ]
+      "langCurrent": ["English"],
+      "backToHome": ["Back to Home"]
     },
     "content": {
-      "badge": [
-        "SWIFT · C · ZERO COMPROMISE"
-      ],
-      "title": [
-        "Software should be",
-        "fast, private, and built to last."
-      ],
+      "badge": ["SWIFT · C · ZERO COMPROMISE"],
+      "title": ["Software should be", "fast, private, and built to last."],
       "lede": [
         "FoxTerm is a native terminal client for macOS and iOS. No Electron, no web wrappers, no telemetry — just Swift and C doing exactly what they were designed to do."
       ],
       "sections": [
         {
-          "label": [
-            "01 / WHY FOXTERM"
-          ],
-          "title": [
-            "The tools weren't good enough. So I wrote one."
-          ],
+          "label": ["01 / WHY FOXTERM"],
+          "title": ["The tools weren't good enough. So I wrote one."],
           "body": [
             "SSH is the interface infrastructure runs on. It's where late-night deploys happen, where servers get debugged, where things get fixed. Every client I tried either felt stuck in 2004 or charged a subscription for features that should be native.",
             "FoxTerm started as a personal tool — a terminal client that actually respects the macOS and iOS design language, runs on native frameworks, and doesn't phone home. It turned into something worth sharing.",
@@ -1063,32 +686,22 @@
           ]
         },
         {
-          "label": [
-            "02 / ENGINEERING PRINCIPLES"
-          ],
+          "label": ["02 / ENGINEERING PRINCIPLES"],
           "title": [
             "What FoxTerm is built on — and what it will never compromise."
           ],
           "subsections": [
             {
-              "title": [
-                "Native First"
-              ]
+              "title": ["Native First"]
             },
             {
-              "title": [
-                "Privacy by Architecture"
-              ]
+              "title": ["Privacy by Architecture"]
             },
             {
-              "title": [
-                "Performance"
-              ]
+              "title": ["Performance"]
             },
             {
-              "title": [
-                "Built to Last"
-              ]
+              "title": ["Built to Last"]
             }
           ],
           "body": [
@@ -1099,147 +712,76 @@
           ]
         },
         {
-          "label": [
-            "03 / UNDER THE HOOD"
-          ],
-          "title": [
-            "The stack — because it matters."
-          ],
+          "label": ["03 / UNDER THE HOOD"],
+          "title": ["The stack — because it matters."],
           "specs": [
             {
-              "label": [
-                "Languages"
-              ],
-              "value": [
-                "Swift · C"
-              ]
+              "label": ["Languages"],
+              "value": ["Swift · C"]
             },
             {
-              "label": [
-                "Protocols"
-              ],
-              "value": [
-                "SSH · SFTP · VNC · Docker"
-              ]
+              "label": ["Protocols"],
+              "value": ["SSH · SFTP · VNC · Docker"]
             },
             {
-              "label": [
-                "Security"
-              ],
-              "value": [
-                "Secure Enclave · Keychain · App Sandbox"
-              ]
+              "label": ["Security"],
+              "value": ["Secure Enclave · Keychain · App Sandbox"]
             },
             {
-              "label": [
-                "Platforms"
-              ],
-              "value": [
-                "macOS 14+ · iOS 17+ · iPadOS"
-              ]
+              "label": ["Platforms"],
+              "value": ["macOS 14+ · iOS 17+ · iPadOS"]
             },
             {
-              "label": [
-                "Distribution"
-              ],
-              "value": [
-                "Mac App Store · Apple Notarized"
-              ]
+              "label": ["Distribution"],
+              "value": ["Mac App Store · Apple Notarized"]
             },
             {
-              "label": [
-                "Pricing"
-              ],
-              "value": [
-                "Free · Pro Subscription or Activation Code"
-              ]
+              "label": ["Pricing"],
+              "value": ["Free · Pro Subscription or Activation Code"]
             }
           ]
         },
         {
-          "label": [
-            "04 / THE DEVELOPER"
-          ],
+          "label": ["04 / THE DEVELOPER"],
           "body": [
             "I'm a software engineer working in Swift, Go, and React. FoxTerm is the product I care most about — every line of code is written with the same standard I'd expect from tools I use every day.",
             "Beyond FoxTerm, I take on select commissioned projects — work where craft matters and the bar is high. If you're building something that deserves that level of attention,",
             "."
           ],
-          "links": [
-            [
-              "let's talk"
-            ]
-          ],
+          "links": [["let's talk"]],
           "specs": [
             {
-              "label": [
-                "Protocols"
-              ]
+              "label": ["Protocols"]
             },
             {
-              "label": [
-                "Languages"
-              ]
+              "label": ["Languages"]
             },
             {
-              "label": [
-                "Telemetry"
-              ]
+              "label": ["Telemetry"]
             }
           ]
         },
         {
-          "title": [
-            "Try FoxTerm"
-          ],
+          "title": ["Try FoxTerm"],
           "body": [
             "Free to download with all features. Pro unlocks unlimited nodes via App Store subscription or activation code."
           ],
-          "links": [
-            [
-              "Download on the App Store"
-            ],
-            [
-              "Get in touch"
-            ]
-          ]
+          "links": [["Download on the App Store"], ["Get in touch"]]
         }
       ]
     },
     "footer": {
-      "copyright": [
-        " FoxTerm.",
-        "Hosted on Tencent Makers."
-      ],
+      "copyright": [" FoxTerm.", "Hosted on Tencent Makers."],
       "links": [
-        [
-          "Home"
-        ],
-        [
-          "Privacy Policy"
-        ],
-        [
-          "Terms of Service"
-        ],
-        [
-          "GitHub"
-        ],
-        [
-          "Blog"
-        ],
-        [
-          "Security Intel"
-        ]
+        ["Home"],
+        ["Privacy Policy"],
+        ["Terms of Service"],
+        ["GitHub"],
+        ["Blog"],
+        ["Security Intel"]
       ],
-      "icp": [
-        "蜀ICP备2024075062号"
-      ],
-      "mirror": [
-        "CN Mirror:",
-        " | Global:",
-        "foxterm.cn",
-        "foxterm.app"
-      ],
+      "icp": ["蜀ICP备2024075062号"],
+      "mirror": ["CN Mirror:", " | Global:", "foxterm.cn", "foxterm.app"],
       "badges": [
         {
           "alt": "Apple Notarized"
@@ -1264,38 +806,22 @@
   },
   "contact": {
     "nav": {
-      "logo": [
-        "FoxTerm"
-      ],
+      "logo": ["FoxTerm"],
       "langAria": "Language",
-      "langCurrent": [
-        "English"
-      ],
-      "backToHome": [
-        "Back to Home"
-      ]
+      "langCurrent": ["English"],
+      "backToHome": ["Back to Home"]
     },
     "content": {
-      "badge": [
-        "INDIE CRAFTSMANSHIP · DIRECT LINE"
-      ],
-      "title": [
-        "Direct Line to the",
-        "Core Architect"
-      ],
+      "badge": ["INDIE CRAFTSMANSHIP · DIRECT LINE"],
+      "title": ["Direct Line to the", "Core Architect"],
       "lede": [
         "FoxTerm is independently engineered with uncompromised precision. No corporate bureaucracy, no AI support bots, no canned templates.",
         "Every line of code is crafted by an independent engineer, and every email goes straight to the developer behind the engine. Got a bug report, performance insight, or an ambitious feature request? Drop a message directly."
       ],
       "sections": {
         "0": {
-          "badge": [
-            "Commission Work · SELECT ENGAGEMENTS"
-          ],
-          "title": [
-            "Hand your project to",
-            "the engineer behind FoxTerm"
-          ],
+          "badge": ["Commission Work · SELECT ENGAGEMENTS"],
+          "title": ["Hand your project to", "the engineer behind FoxTerm"],
           "body": [
             "Every line of FoxTerm was written by one independent engineer — your project gets the same standard: no subcontracting, no templates, no “good enough” code. I only take on projects worth going deep on, and I own the result.",
             "Modern web frontends, product-grade interfaces with complex interactions",
@@ -1321,86 +847,47 @@
           ],
           "specs": [
             {
-              "label": [
-                "UI & Cross-Platform"
-              ],
-              "value": [
-                "React",
-                "React Native"
-              ]
+              "label": ["UI & Cross-Platform"],
+              "value": ["React", "React Native"]
             },
             {
-              "label": [
-                "APIs & Systems"
-              ],
-              "value": [
-                "Go",
-                "PHP"
-              ]
+              "label": ["APIs & Systems"],
+              "value": ["Go", "PHP"]
             },
             {
-              "label": [
-                "Performance & Embedded"
-              ],
-              "value": [
-                "Swift",
-                "C"
-              ]
+              "label": ["Performance & Embedded"],
+              "value": ["Swift", "C"]
             },
             {
-              "label": [
-                "Project Work · Commission"
-              ]
+              "label": ["Project Work · Commission"]
             }
           ],
-          "links": [
-            [
-              "foxterm@icloud.com"
-            ],
-            [
-              "Start a project"
-            ]
-          ]
+          "links": [["foxterm@icloud.com"], ["Start a project"]]
         },
         "-1": {
           "specs": [
             {
-              "label": [
-                "Support & Developer Inquiry"
-              ]
+              "label": ["Support & Developer Inquiry"]
             }
           ]
         }
       },
-      "links": [
-        [
-          "support@foxterm.app"
-        ],
-        [
-          "Send Email"
-        ]
-      ],
+      "links": [["support@foxterm.app"], ["Send Email"]],
       "cards": [
         {
-          "title": [
-            "01 / BUG REPORTS"
-          ],
+          "title": ["01 / BUG REPORTS"],
           "body": [
             "Include your macOS / iOS system version, connection protocol (SSH, SFTP, VNC, Docker), and steps to reproduce."
           ]
         },
         {
-          "title": [
-            "02 / FEATURE REQUESTS"
-          ],
+          "title": ["02 / FEATURE REQUESTS"],
           "body": [
             "Have an idea for terminal emulation, custom fonts, or container tools? We prioritize geek-driven workflows."
           ]
         },
         {
-          "title": [
-            "03 / BILLING & PRO"
-          ],
+          "title": ["03 / BILLING & PRO"],
           "body": [
             "Need help with Apple ID Universal Purchase or Pro node limit verification? Reaching out with your receipt ID helps."
           ]
@@ -1408,42 +895,18 @@
       ]
     },
     "footer": {
-      "copyright": [
-        " FoxTerm.",
-        "Hosted on Tencent Makers."
-      ],
+      "copyright": [" FoxTerm.", "Hosted on Tencent Makers."],
       "links": [
-        [
-          "Home"
-        ],
-        [
-          "About"
-        ],
-        [
-          "Privacy Policy"
-        ],
-        [
-          "Terms of Service"
-        ],
-        [
-          "GitHub"
-        ],
-        [
-          "Blog"
-        ],
-        [
-          "Security Intel"
-        ]
+        ["Home"],
+        ["About"],
+        ["Privacy Policy"],
+        ["Terms of Service"],
+        ["GitHub"],
+        ["Blog"],
+        ["Security Intel"]
       ],
-      "icp": [
-        "蜀ICP备2024075062号"
-      ],
-      "mirror": [
-        "CN Mirror:",
-        " | Global:",
-        "foxterm.cn",
-        "foxterm.app"
-      ],
+      "icp": ["蜀ICP备2024075062号"],
+      "mirror": ["CN Mirror:", " | Global:", "foxterm.cn", "foxterm.app"],
       "badges": [
         {
           "alt": "Apple Notarized"
@@ -1468,31 +931,17 @@
   },
   "privacy": {
     "nav": {
-      "logo": [
-        "FoxTerm"
-      ],
+      "logo": ["FoxTerm"],
       "langAria": "Language",
-      "langCurrent": [
-        "English"
-      ],
-      "backToHome": [
-        "Back to Home"
-      ]
+      "langCurrent": ["English"],
+      "backToHome": ["Back to Home"]
     },
     "content": {
-      "badge": [
-        "Legal Document"
-      ],
-      "title": [
-        "Privacy Policy"
-      ],
-      "lede": [
-        "Last updated: October 2026"
-      ],
+      "badge": ["Legal Document"],
+      "title": ["Privacy Policy"],
+      "lede": ["Last updated: October 2026"],
       "commitment": {
-        "title": [
-          "Our Commitment: Zero Telemetry"
-        ],
+        "title": ["Our Commitment: Zero Telemetry"],
         "body": [
           "FoxTerm is built on the principle that your server infrastructure, credentials, and workflows belong exclusively to you. We operate under a strict",
           " and do not collect, transmit, or store any of your operational data on external servers.",
@@ -1501,34 +950,22 @@
       },
       "sections": [
         {
-          "title": [
-            "1. Data We Collect"
-          ],
+          "title": ["1. Data We Collect"],
           "body": [
             "FoxTerm collects absolutely no telemetry data. Specifically:"
           ],
           "items": [
-            [
-              "No analytics, usage tracking, or behavior monitoring"
-            ],
-            [
-              "No crash reports sent to third-party servers by default"
-            ],
-            [
-              "No connection logs, command history, or session metadata"
-            ],
-            [
-              "No IP addresses, hostnames, or server fingerprints transmitted"
-            ],
+            ["No analytics, usage tracking, or behavior monitoring"],
+            ["No crash reports sent to third-party servers by default"],
+            ["No connection logs, command history, or session metadata"],
+            ["No IP addresses, hostnames, or server fingerprints transmitted"],
             [
               "No SSH keys, passwords, or authentication credentials ever leave your device"
             ]
           ]
         },
         {
-          "title": [
-            "2. Local Data Storage & Encryption"
-          ],
+          "title": ["2. Local Data Storage & Encryption"],
           "body": [
             "All sensitive data is stored exclusively on your device using Apple's native security frameworks:"
           ],
@@ -1548,9 +985,7 @@
           ]
         },
         {
-          "title": [
-            "3. Network Communications"
-          ],
+          "title": ["3. Network Communications"],
           "body": [
             "FoxTerm establishes direct peer-to-peer connections exclusively to servers that you explicitly configure:"
           ],
@@ -1564,18 +999,12 @@
             [
               "App Store transactions are processed entirely by Apple; we do not receive or store payment information"
             ],
-            [
-              "No third-party analytics SDKs are embedded in the application"
-            ]
+            ["No third-party analytics SDKs are embedded in the application"]
           ]
         },
         {
-          "title": [
-            "4. iCloud Sync"
-          ],
-          "body": [
-            "When you enable iCloud configuration sync:"
-          ],
+          "title": ["4. iCloud Sync"],
+          "body": ["When you enable iCloud configuration sync:"],
           "items": [
             [
               "Synced data is stored exclusively in your personal iCloud account, not on our servers"
@@ -1594,19 +1023,13 @@
           ]
         },
         {
-          "title": [
-            "5. App Store Receipt Validation"
-          ],
+          "title": ["5. App Store Receipt Validation"],
           "body": [
             "For Pro subscription status verification, FoxTerm may communicate with Apple's App Store servers to validate your subscription entitlement. This communication:"
           ],
           "items": [
-            [
-              "Is handled through standard Apple StoreKit APIs"
-            ],
-            [
-              "Contains only your Apple transaction receipt identifiers"
-            ],
+            ["Is handled through standard Apple StoreKit APIs"],
+            ["Contains only your Apple transaction receipt identifiers"],
             [
               "Does not include any of your server data, credentials, or usage information"
             ],
@@ -1616,9 +1039,7 @@
           ]
         },
         {
-          "title": [
-            "6. Third-Party Services"
-          ],
+          "title": ["6. Third-Party Services"],
           "body": [
             "FoxTerm does not integrate with any third-party analytics, advertising, or data collection services. The only external services interacted with are:"
           ],
@@ -1632,74 +1053,40 @@
           ]
         },
         {
-          "title": [
-            "7. Children's Privacy"
-          ],
+          "title": ["7. Children's Privacy"],
           "body": [
             "FoxTerm does not knowingly collect any personal information from children under the age of 13 (or applicable age in your jurisdiction). The app is a professional developer tool designed for use by technical professionals."
           ]
         },
         {
-          "title": [
-            "8. Changes to This Policy"
-          ],
+          "title": ["8. Changes to This Policy"],
           "body": [
             "We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. Any changes will be posted on this page with an updated revision date. We recommend reviewing this policy periodically."
           ]
         },
         {
-          "title": [
-            "9. Contact Us"
-          ],
+          "title": ["9. Contact Us"],
           "body": [
             "If you have any questions or concerns about this Privacy Policy or our data practices, please contact us at",
             "."
           ],
-          "links": [
-            [
-              "admin@foxterm.app"
-            ]
-          ]
+          "links": [["admin@foxterm.app"]]
         }
       ]
     },
     "footer": {
-      "copyright": [
-        " FoxTerm.",
-        "Hosted on Tencent Makers."
-      ],
+      "copyright": [" FoxTerm.", "Hosted on Tencent Makers."],
       "links": [
-        [
-          "Home"
-        ],
-        [
-          "About"
-        ],
-        [
-          "Contact Us"
-        ],
-        [
-          "Terms of Service"
-        ],
-        [
-          "GitHub"
-        ],
-        [
-          "Blog"
-        ],
-        [
-          "Security Intel"
-        ]
+        ["Home"],
+        ["About"],
+        ["Contact Us"],
+        ["Terms of Service"],
+        ["GitHub"],
+        ["Blog"],
+        ["Security Intel"]
       ],
-      "icp": [
-        "蜀ICP备2024075062号"
-      ],
-      "mirror": [
-        "CN Mirror:",
-        " | Global:",
-        "foxterm.cn",
-        "foxterm.app"
-      ],
+      "icp": ["蜀ICP备2024075062号"],
+      "mirror": ["CN Mirror:", " | Global:", "foxterm.cn", "foxterm.app"],
       "badges": [
         {
           "alt": "Apple Notarized"
@@ -1724,33 +1111,21 @@
   },
   "terms": {
     "nav": {
-      "logo": [
-        "FoxTerm"
-      ],
+      "logo": ["FoxTerm"],
       "langAria": "Language",
-      "langCurrent": [
-        "English"
-      ],
-      "backToHome": [
-        "Back to Home"
-      ]
+      "langCurrent": ["English"],
+      "backToHome": ["Back to Home"]
     },
     "content": {
-      "badge": [
-        "Legal Document"
-      ],
-      "title": [
-        "Terms of Service"
-      ],
+      "badge": ["Legal Document"],
+      "title": ["Terms of Service"],
       "lede": [
         "Last updated: October 2026",
         "Please read these Terms of Service (\"Terms\", \"Terms of Service\") carefully before using the FoxTerm application (the \"App\") operated by FoxTerm (\"us\", \"we\", or \"our\"). Your access to and use of the App is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all users and others who access or use the App."
       ],
       "sections": [
         {
-          "title": [
-            "1. License Grant"
-          ],
+          "title": ["1. License Grant"],
           "body": [
             "Subject to these Terms, we grant you a limited, non-exclusive, non-transferable, revocable license to:"
           ],
@@ -1767,17 +1142,13 @@
           ]
         },
         {
-          "title": [
-            "2. Universal Purchase"
-          ],
+          "title": ["2. Universal Purchase"],
           "body": [
             "FoxTerm supports Apple Universal Purchase. A single purchase or subscription unlocks the full application on all compatible platforms (macOS and iOS) associated with your Apple ID. Your subscription will automatically renew through your Apple ID account unless canceled at least 24 hours before the end of the current period."
           ]
         },
         {
-          "title": [
-            "3. Pro Subscriptions and Licenses"
-          ],
+          "title": ["3. Pro Subscriptions and Licenses"],
           "body": [
             "FoxTerm Pro and the free tier deliver an identical feature set. The only difference is the number of nodes (servers) you can manage: the free tier caps node count, while FoxTerm Pro removes that cap for unlimited nodes. You can upgrade or cancel at any time without affecting your saved connection profiles.",
             "Pro is also available for the notarized macOS edition, which is distributed directly rather than through the App Store. This edition is unlocked by an activation code (license key) sold at pay.foxterm.app. An activation code grants the same Pro capabilities as the subscription and applies to the macOS notarized edition only; it does not include iOS activation. Activation-code licenses are provided directly by FoxTerm; any purchase-specific terms shown at the time of sale (such as license duration and device scope) apply in addition to these Terms."
@@ -1804,12 +1175,8 @@
           ]
         },
         {
-          "title": [
-            "4. Acceptable Use"
-          ],
-          "body": [
-            "You agree not to use the App to:"
-          ],
+          "title": ["4. Acceptable Use"],
+          "body": ["You agree not to use the App to:"],
           "items": [
             [
               "Violate any applicable local, state, national, or international law or regulation"
@@ -1817,32 +1184,24 @@
             [
               "Gain unauthorized access to computer systems, networks, or data you do not have permission to access"
             ],
-            [
-              "Distribute malware, ransomware, or other malicious code"
-            ],
+            ["Distribute malware, ransomware, or other malicious code"],
             [
               "Perform denial-of-service attacks or other disruptive activities"
             ],
             [
               "Reverse engineer, decompile, disassemble, or attempt to derive the source code of the App, except as permitted by applicable law"
             ],
-            [
-              "Remove, alter, or obscure any copyright or proprietary notices"
-            ]
+            ["Remove, alter, or obscure any copyright or proprietary notices"]
           ]
         },
         {
-          "title": [
-            "5. Intellectual Property"
-          ],
+          "title": ["5. Intellectual Property"],
           "body": [
             "The App, including all content, features, functionality, source code, graphics, design, logos, and icons is the exclusive property of FoxTerm and is protected by international copyright, trademark, and other intellectual property laws. You may not reproduce, distribute, modify, create derivative works of, publicly display, or exploit any portion of the App without our explicit written permission."
           ]
         },
         {
-          "title": [
-            "6. Third-Party Servers & Content"
-          ],
+          "title": ["6. Third-Party Servers & Content"],
           "body": [
             "The App is a client tool that connects you to servers and infrastructure under your control or for which you have authorized access. We are not responsible for:"
           ],
@@ -1859,9 +1218,7 @@
           ]
         },
         {
-          "title": [
-            "7. Disclaimer of Warranties"
-          ],
+          "title": ["7. Disclaimer of Warranties"],
           "body": [
             "THE APP IS PROVIDED \"AS IS\" AND \"AS AVAILABLE\" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT. We do not warrant that:"
           ],
@@ -1869,102 +1226,60 @@
             [
               "The App will function uninterrupted, secure, or available at any particular time or location"
             ],
-            [
-              "Any errors or defects will be corrected"
-            ],
-            [
-              "The App is free of viruses or other harmful components"
-            ],
+            ["Any errors or defects will be corrected"],
+            ["The App is free of viruses or other harmful components"],
             [
               "Results of using the App will meet your requirements or expectations"
             ]
           ]
         },
         {
-          "title": [
-            "8. Limitation of Liability"
-          ],
+          "title": ["8. Limitation of Liability"],
           "body": [
             "IN NO EVENT SHALL FOXTERM BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING WITHOUT LIMITATION LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, RESULTING FROM YOUR ACCESS TO OR USE OF OR INABILITY TO ACCESS OR USE THE APP."
           ]
         },
         {
-          "title": [
-            "9. Termination"
-          ],
+          "title": ["9. Termination"],
           "body": [
             "We may terminate or suspend your license to use the App immediately, without prior notice or liability, for any reason, including without limitation if you breach these Terms. Upon termination, your right to use the App will cease immediately. Provisions that by their nature should survive termination shall survive, including ownership provisions, warranty disclaimers, indemnity, and limitations of liability."
           ]
         },
         {
-          "title": [
-            "10. Changes to Terms"
-          ],
+          "title": ["10. Changes to Terms"],
           "body": [
             "We reserve the right, at our sole discretion, to modify or replace these Terms at any time. We will provide reasonable notice of any material changes. Your continued use of the App following the posting of revised Terms constitutes acceptance of those changes."
           ]
         },
         {
-          "title": [
-            "11. Governing Law"
-          ],
+          "title": ["11. Governing Law"],
           "body": [
             "These Terms shall be governed by and construed in accordance with the laws of the jurisdiction in which we operate, without regard to its conflict of law provisions."
           ]
         },
         {
-          "title": [
-            "12. Contact Us"
-          ],
+          "title": ["12. Contact Us"],
           "body": [
             "If you have any questions about these Terms, please contact us at",
             "."
           ],
-          "links": [
-            [
-              "admin@foxterm.app"
-            ]
-          ]
+          "links": [["admin@foxterm.app"]]
         }
       ]
     },
     "footer": {
-      "copyright": [
-        " FoxTerm.",
-        "Hosted on Tencent Makers."
-      ],
+      "copyright": [" FoxTerm.", "Hosted on Tencent Makers."],
       "links": [
-        [
-          "Home"
-        ],
-        [
-          "About"
-        ],
-        [
-          "Contact Us"
-        ],
-        [
-          "Privacy Policy"
-        ],
-        [
-          "GitHub"
-        ],
-        [
-          "Blog"
-        ],
-        [
-          "Security Intel"
-        ]
+        ["Home"],
+        ["About"],
+        ["Contact Us"],
+        ["Privacy Policy"],
+        ["GitHub"],
+        ["Blog"],
+        ["Security Intel"]
       ],
-      "icp": [
-        "蜀ICP备2024075062号"
-      ],
-      "mirror": [
-        "CN Mirror:",
-        " | Global:",
-        "foxterm.cn",
-        "foxterm.app"
-      ],
+      "icp": ["蜀ICP备2024075062号"],
+      "mirror": ["CN Mirror:", " | Global:", "foxterm.cn", "foxterm.app"],
       "badges": [
         {
           "alt": "Apple Notarized"

@@ -30,7 +30,8 @@ const server = http.createServer((req, res) => {
     // 目录请求 → 该目录的 index.html；无扩展名路径 → 补 .html（clean URL 如 /zh-hans/about）
     const dir = fs.existsSync(file) && fs.statSync(file).isDirectory();
     if (dir) file = path.join(file, "index.html");
-    else if (!path.extname(p) && fs.existsSync(file + ".html")) file = file + ".html";
+    else if (!path.extname(p) && fs.existsSync(file + ".html"))
+      file = file + ".html";
     if (!fs.existsSync(file)) {
       res.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" });
       res.end("404 Not Found");
@@ -38,11 +39,17 @@ const server = http.createServer((req, res) => {
     }
   }
   const ext = path.extname(file).toLowerCase();
-  res.writeHead(200, { "Content-Type": MIME[ext] || "application/octet-stream" });
+  res.writeHead(200, {
+    "Content-Type": MIME[ext] || "application/octet-stream",
+  });
   fs.createReadStream(file).pipe(res);
 });
 
 server.listen(PORT, () => {
-  console.log(`预览: http://localhost:${PORT}/ （${OUT.split(path.sep).pop()}/ 目录）`);
-  console.log(`  英文: http://localhost:${PORT}/  | 中文: http://localhost:${PORT}/zh-hans/`);
+  console.log(
+    `预览: http://localhost:${PORT}/ （${OUT.split(path.sep).pop()}/ 目录）`,
+  );
+  console.log(
+    `  英文: http://localhost:${PORT}/  | 中文: http://localhost:${PORT}/zh-hans/`,
+  );
 });

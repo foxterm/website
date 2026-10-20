@@ -116,111 +116,53 @@
   },
   "index": {
     "nav": {
-      "logo": [
-        "FoxTerm"
-      ],
+      "logo": ["FoxTerm"],
       "links": [
-        [
-          "功能"
-        ],
-        [
-          "使用场景"
-        ],
-        [
-          "架构"
-        ],
-        [
-          "安全"
-        ],
-        [
-          "定价"
-        ],
-        [
-          "常见问题"
-        ]
+        ["功能"],
+        ["使用场景"],
+        ["架构"],
+        ["安全"],
+        ["定价"],
+        ["常见问题"]
       ],
       "langAria": "语言",
-      "langCurrent": [
-        "简体中文"
-      ],
-      "getApp": [
-        "获取应用"
-      ]
+      "langCurrent": ["简体中文"],
+      "getApp": ["获取应用"]
     },
     "hero": {
-      "badge": [
-        "100% 原生 Apple 平台 · 零遥测 · Universal Purchase"
-      ],
-      "title": [
-        "用",
-        "FoxTerm (橙狐终端)",
-        " 从容掌控你的基础设施"
-      ],
-      "tags": [
-        [
-          "SSH"
-        ],
-        [
-          "VNC"
-        ],
-        [
-          "SFTP"
-        ],
-        [
-          "Docker"
-        ],
-        [
-          "Podman"
-        ]
-      ],
+      "badge": ["100% 原生 Apple 平台 · 零遥测 · Universal Purchase"],
+      "title": ["用", "FoxTerm (橙狐终端)", " 从容掌控你的基础设施"],
+      "tags": [["SSH"], ["VNC"], ["SFTP"], ["Docker"], ["Podman"]],
       "subtitle": [
         "面向 macOS 与 iOS 的一体化原生终端。SSH、SFTP、Metal 加速 VNC、实时 Linux 监控与可视化 Docker/Podman 管理——安全、极速， 打开即用。"
       ],
       "cta": [
         {
           "alt": "在 Apple App Store 下载",
-          "caption": [
-            "App Store 通用购买"
-          ],
-          "label": [
-            "下载 macOS 与 iOS 版本"
-          ]
+          "caption": ["App Store 通用购买"],
+          "label": ["下载 macOS 与 iOS 版本"]
         }
       ]
     },
     "trust": {
       "items": [
         {
-          "value": [
-            "4-in-1"
-          ],
-          "body": [
-            "SSH · SFTP · VNC 与容器，尽收一个窗口"
-          ]
+          "value": ["4-in-1"],
+          "body": ["SSH · SFTP · VNC 与容器，尽收一个窗口"]
         },
         {
-          "body": [
-            "凭据与密钥只留在你的设备上"
-          ]
+          "body": ["凭据与密钥只留在你的设备上"]
         },
         {
-          "body": [
-            "遥测、分析与第三方追踪程序"
-          ]
+          "body": ["遥测、分析与第三方追踪程序"]
         },
         {
-          "body": [
-            "一个 Apple ID 同时解锁 Mac、iPhone 与 iPad"
-          ]
+          "body": ["一个 Apple ID 同时解锁 Mac、iPhone 与 iPad"]
         }
       ]
     },
     "architecture": {
-      "title": [
-        "性能至臻。",
-        "。",
-        "清晰至简"
-      ],
+      "title": ["性能至臻。", "。", "清晰至简"],
       "lede": [
         "没有 Web 套壳，没有冗余臃肿。FoxTerm (橙狐终端) 把极简的工业设计与毫不妥协的原生渲染性能合二为一。"
       ],
@@ -243,163 +185,92 @@
           ]
         },
         {
-          "title": [
-            "几何精度",
-            "02 / 视觉层级"
-          ],
+          "title": ["几何精度", "02 / 视觉层级"],
           "body": [
             "干净的低多边形切面消除视觉噪声，呈现锐利、无干扰的开发者工作区。",
             "丰富的对比阴影，为深色模式环境而打磨。"
           ]
         },
         {
-          "title": [
-            "统一工作流",
-            "03 / 稳固结构"
-          ],
+          "title": ["统一工作流", "03 / 稳固结构"],
           "body": [
             "把远程 Shell、文件传输、图形桌面与容器管理整合进同一个连贯的界面。",
             "相互咬合的几何结构，呼应安全网络协议。"
           ]
         },
         {
-          "title": [
-            "04 / 高效汇聚"
-          ],
-          "body": [
-            "汇聚的线条，把复杂收束为毫不费力的工作流。"
-          ]
+          "title": ["04 / 高效汇聚"],
+          "body": ["汇聚的线条，把复杂收束为毫不费力的工作流。"]
         },
         {
-          "badge": [
-            "参考网格：开",
-            "渲染：TTF 字体",
-            "⬇ TTF",
-            "⬇ SVG"
-          ]
+          "badge": ["参考网格：开", "渲染：TTF 字体", "⬇ TTF", "⬇ SVG"]
         }
       ],
-      "badge": [
-        " 矢量几何与图标体系",
-        "类型：图标字体"
-      ]
+      "badge": [" 矢量几何与图标体系", "类型：图标字体"]
     },
     "security": {
-      "badge": [
-        "零信任安全架构"
-      ],
-      "title": [
-        "本地加密，",
-        "数据完全自主"
-      ],
+      "badge": ["零信任安全架构"],
+      "title": ["本地加密，", "数据完全自主"],
       "lede": [
         "你的服务器密钥就是你的核心资产。FoxTerm (橙狐终端) 严格执行零遥测，配合 100% 本地加密与硬件隔离。"
       ],
       "cards": [
         {
-          "badge": [
-            "01 / 零遥测"
-          ],
-          "body": [
-            "零遥测、零行为追踪。连接日志永远不会离开你的本地环境。"
-          ]
+          "badge": ["01 / 零遥测"],
+          "body": ["零遥测、零行为追踪。连接日志永远不会离开你的本地环境。"]
         },
         {
-          "badge": [
-            "02 / 安全隔区"
-          ],
-          "body": [
-            "借助 Apple 钥匙串与安全隔区硬件隔离存储私钥。"
-          ]
+          "badge": ["02 / 安全隔区"],
+          "body": ["借助 Apple 钥匙串与安全隔区硬件隔离存储私钥。"]
         },
         {
-          "badge": [
-            "03 / 原生加密"
-          ],
-          "body": [
-            "由 C 语言原生引擎驱动，完整支持 Ed25519 与现代加密套件。"
-          ]
+          "badge": ["03 / 原生加密"],
+          "body": ["由 C 语言原生引擎驱动，完整支持 Ed25519 与现代加密套件。"]
         },
         {
-          "badge": [
-            "04 / 云端同步"
-          ],
-          "body": [
-            "配置仅通过你私有的加密 iCloud 容器无缝同步。"
-          ]
+          "badge": ["04 / 云端同步"],
+          "body": ["配置仅通过你私有的加密 iCloud 容器无缝同步。"]
         }
       ]
     },
     "features": {
-      "title": [
-        "完整能力"
-      ],
-      "lede": [
-        "现代服务器管理所需的一切，统一在同一个工作流中。"
-      ],
+      "title": ["完整能力"],
+      "lede": ["现代服务器管理所需的一切，统一在同一个工作流中。"],
       "cards": [
         {
-          "badge": [
-            "SSH"
-          ],
-          "title": [
-            "高性能 SSH"
-          ],
+          "badge": ["SSH"],
+          "title": ["高性能 SSH"],
           "body": [
             "支持 Ed25519 密钥、分屏标签页、命令片段与毫秒级智能自动重连。"
           ]
         },
         {
-          "badge": [
-            "MON"
-          ],
-          "title": [
-            "实时监控"
-          ],
-          "body": [
-            "实时可视化 CPU、内存、磁盘 I/O、网络吞吐与 GPU/VRAM 指标。"
-          ]
+          "badge": ["MON"],
+          "title": ["实时监控"],
+          "body": ["实时可视化 CPU、内存、磁盘 I/O、网络吞吐与 GPU/VRAM 指标。"]
         },
         {
-          "badge": [
-            "SFTP"
-          ],
-          "title": [
-            "SFTP 文件传输"
-          ],
-          "body": [
-            "支持拖拽传输、内置编辑器与权限控制。"
-          ]
+          "badge": ["SFTP"],
+          "title": ["SFTP 文件传输"],
+          "body": ["支持拖拽传输、内置编辑器与权限控制。"]
         },
         {
-          "badge": [
-            "VNC"
-          ],
-          "title": [
-            "Metal 加速 VNC"
-          ],
+          "badge": ["VNC"],
+          "title": ["Metal 加速 VNC"],
           "body": [
             "硬件加速 VNC 引擎，远程桌面流畅顺滑，并针对触控与手势做了专门调校。"
           ]
         },
         {
-          "badge": [
-            "CTL"
-          ],
-          "title": [
-            "容器编排"
-          ],
+          "badge": ["CTL"],
+          "title": ["容器编排"],
           "body": [
             "容器、镜像与数据卷的可视化面板，支持无根模式运行时与实时日志流式输出。"
           ]
         },
         {
-          "badge": [
-            "iOS"
-          ],
-          "title": [
-            "全平台通用"
-          ],
+          "badge": ["iOS"],
+          "title": ["全平台通用"],
           "body": [
             "一次订阅同时覆盖 macOS 与 iOS/iPadOS；全部功能免费，仅节点数受限——升级 Pro 即可解锁无限节点。"
           ]
@@ -407,57 +278,36 @@
       ]
     },
     "useCases": {
-      "badge": [
-        "为你的工作方式而生"
-      ],
-      "title": [
-        "一套工具包，搞定所有",
-        "远程工作流"
-      ],
+      "badge": ["为你的工作方式而生"],
+      "title": ["一套工具包，搞定所有", "远程工作流"],
       "lede": [
         "从值班时的线上故障排查，到周末折腾家庭实验室，FoxTerm (橙狐终端) 都能适配你管理机器的方式。"
       ],
       "cards": [
         {
-          "badge": [
-            "OPS"
-          ],
-          "title": [
-            "SRE 与 DevOps 值班"
-          ],
+          "badge": ["OPS"],
+          "title": ["SRE 与 DevOps 值班"],
           "body": [
             "几秒钟打开会话，实时追踪容器日志，在一次抖动演变成故障之前看清 CPU、内存与磁盘 I/O 的实时数据。"
           ]
         },
         {
-          "badge": [
-            "LAB"
-          ],
-          "title": [
-            "家庭实验室与自托管玩家"
-          ],
+          "badge": ["LAB"],
+          "title": ["家庭实验室与自托管玩家"],
           "body": [
             "从 Mac 或手机操控路由器、NAS 设备与 Docker/Podman 技术栈——不需要跳板机、不需要云网关、没有中间人。"
           ]
         },
         {
-          "badge": [
-            "NET"
-          ],
-          "title": [
-            "网络与边缘工程师"
-          ],
+          "badge": ["NET"],
+          "title": ["网络与边缘工程师"],
           "body": [
             "通过 SSH、SFTP 与流畅的 Metal VNC 连接 OpenWrt、IoT 与远程边缘设备——即使在不稳定的移动网络下也能胜任。"
           ]
         },
         {
-          "badge": [
-            "MOB"
-          ],
-          "title": [
-            "移动优先管理员"
-          ],
+          "badge": ["MOB"],
+          "title": ["移动优先管理员"],
           "body": [
             "在 iPhone 或 iPad 上用原生触控、手势与快捷键，操作完整终端、传输文件、重启容器。"
           ]
@@ -465,230 +315,104 @@
       ]
     },
     "comparison": {
-      "title": [
-        "架构优势"
-      ],
-      "lede": [
-        "FoxTerm (橙狐终端) 对比传统 CLI 工具与依赖云端的 SaaS 应用。"
-      ],
+      "title": ["架构优势"],
+      "lede": ["FoxTerm (橙狐终端) 对比传统 CLI 工具与依赖云端的 SaaS 应用。"],
       "table": {
         "head": [
-          [
-            "维度"
-          ],
-          [
-            "FoxTerm (橙狐终端)"
-          ],
-          [
-            "传统 CLI 工具"
-          ],
-          [
-            "云同步 SaaS 应用"
-          ]
+          ["维度"],
+          ["FoxTerm (橙狐终端)"],
+          ["传统 CLI 工具"],
+          ["云同步 SaaS 应用"]
         ],
         "rows": [
           [
-            [
-              "隐私与遥测"
-            ],
-            [
-              "✓ 100% 本地 / 零遥测"
-            ],
-            [
-              "✓ 仅本地"
-            ],
-            [
-              "✗ 中心化云同步"
-            ]
+            ["隐私与遥测"],
+            ["✓ 100% 本地 / 零遥测"],
+            ["✓ 仅本地"],
+            ["✗ 中心化云同步"]
           ],
           [
-            [
-              "密钥保护"
-            ],
-            [
-              "✓ 安全隔区硬件防护"
-            ],
-            [
-              "~ 普通文件系统"
-            ],
-            [
-              "✗ 第三方云服务器"
-            ]
+            ["密钥保护"],
+            ["✓ 安全隔区硬件防护"],
+            ["~ 普通文件系统"],
+            ["✗ 第三方云服务器"]
           ],
           [
-            [
-              "容器界面"
-            ],
-            [
-              "✓ 原生 Docker 与 Podman 图形界面"
-            ],
-            [
-              "✗ 仅命令行"
-            ],
-            [
-              "~ 基础日志查看器"
-            ]
+            ["容器界面"],
+            ["✓ 原生 Docker 与 Podman 图形界面"],
+            ["✗ 仅命令行"],
+            ["~ 基础日志查看器"]
           ],
           [
-            [
-              "渲染引擎"
-            ],
-            [
-              "✓ 原生 Swift 与 Metal"
-            ],
-            [
-              "~ 基础文本渲染"
-            ],
-            [
-              "✗ Electron 重型套壳"
-            ]
+            ["渲染引擎"],
+            ["✓ 原生 Swift 与 Metal"],
+            ["~ 基础文本渲染"],
+            ["✗ Electron 重型套壳"]
           ],
           [
-            [
-              "通用平台"
-            ],
-            [
-              "✓ macOS + iOS 通用"
-            ],
-            [
-              "✗ 桌面/移动分离"
-            ],
-            [
-              "~ 分别购买"
-            ]
+            ["通用平台"],
+            ["✓ macOS + iOS 通用"],
+            ["✗ 桌面/移动分离"],
+            ["~ 分别购买"]
           ]
         ]
       }
     },
     "pricing": {
-      "badge": [
-        "简单、坦诚的定价"
-      ],
-      "title": [
-        "所有功能免费。"
-      ],
+      "badge": ["简单、坦诚的定价"],
+      "title": ["所有功能免费。"],
       "pro": {
-        "price": [
-          [
-            "Pro 只解除节点上限。",
-            "无限"
-          ],
-          [
-            "节点"
-          ]
-        ],
-        "title": [
-          "FoxTerm Pro"
-        ],
-        "tag": [
-          "推荐"
-        ],
-        "lede": [
-          "包含免费版全部能力，并解除节点上限"
-        ],
+        "price": [["Pro 只解除节点上限。", "无限"], ["节点"]],
+        "title": ["FoxTerm Pro"],
+        "tag": ["推荐"],
+        "lede": ["包含免费版全部能力，并解除节点上限"],
         "items": [
-          [
-            "免费版构建中的全部功能"
-          ],
-          [
-            "为不断扩大的机群提供无限节点 （服务器）"
-          ],
-          [
-            "一个 Apple ID，通用 macOS + iOS/iPadOS"
-          ],
-          [
-            "未来所有 Pro 增强功能"
-          ],
-          [
-            "由开发者直接提供的 优先支持"
-          ]
+          ["免费版构建中的全部功能"],
+          ["为不断扩大的机群提供无限节点 （服务器）"],
+          ["一个 Apple ID，通用 macOS + iOS/iPadOS"],
+          ["未来所有 Pro 增强功能"],
+          ["由开发者直接提供的 优先支持"]
         ],
-        "button": [
-          "查看如何获取 Pro"
-        ]
+        "button": ["查看如何获取 Pro"]
       },
       "lede": [
         "免费版包含全部能力——SSH、SFTP、VNC、实时遥测与容器——仅对节点数量设上限。Pro 为更大的机群解除该限制，并覆盖你所有设备。"
       ],
       "free": {
-        "title": [
-          "免费版"
-        ],
-        "tag": [
-          "无需绑定卡片"
-        ],
-        "lede": [
-          "全部功能，节点数量设上限"
-        ],
+        "title": ["免费版"],
+        "tag": ["无需绑定卡片"],
+        "lede": ["全部功能，节点数量设上限"],
         "items": [
-          [
-            "完整 SSH 终端， 支持分屏、标签页与命令片段"
-          ],
-          [
-            "SFTP 传输、 Metal VNC 与实时遥测"
-          ],
-          [
-            "可视化 Docker 与 Podman 管理"
-          ],
-          [
-            "Secure Enclave 密钥、零遥测、iCloud 同步"
-          ],
-          [
-            "节点（服务器） 数量设上限"
-          ]
+          ["完整 SSH 终端， 支持分屏、标签页与命令片段"],
+          ["SFTP 传输、 Metal VNC 与实时遥测"],
+          ["可视化 Docker 与 Podman 管理"],
+          ["Secure Enclave 密钥、零遥测、iCloud 同步"],
+          ["节点（服务器） 数量设上限"]
         ],
-        "button": [
-          "免费下载"
-        ]
+        "button": ["免费下载"]
       },
       "options": {
         "0": {
-          "label": [
-            "OPTION 1 · SUBSCRIPTION"
-          ],
-          "title": [
-            "Mac App Store 版"
-          ],
+          "label": ["OPTION 1 · SUBSCRIPTION"],
+          "title": ["Mac App Store 版"],
           "items": [
-            [
-              "由 Apple 按月或按年扣费的订阅"
-            ],
-            [
-              "Universal Purchase——自动激活 macOS 与 iOS"
-            ],
-            [
-              "随时取消； 续订与退款由 Apple 处理"
-            ]
+            ["由 Apple 按月或按年扣费的订阅"],
+            ["Universal Purchase——自动激活 macOS 与 iOS"],
+            ["随时取消； 续订与退款由 Apple 处理"]
           ],
-          "button": [
-            "在 App Store 查看"
-          ]
+          "button": ["在 App Store 查看"]
         },
         "1": {
-          "label": [
-            "OPTION 2 · ACTIVATION CODE"
-          ],
-          "title": [
-            "macOS 公证版"
-          ],
+          "label": ["OPTION 2 · ACTIVATION CODE"],
+          "title": ["macOS 公证版"],
           "items": [
-            [
-              "直接分发的已签名、 已公证 macOS 构建——无需 App Store"
-            ],
-            [
-              "使用在 pay.foxterm.app 直接购买的激活码解锁"
-            ],
-            [
-              "仅适用于 macOS，独立于 App Store 版"
-            ]
+            ["直接分发的已签名、 已公证 macOS 构建——无需 App Store"],
+            ["使用在 pay.foxterm.app 直接购买的激活码解锁"],
+            ["仅适用于 macOS，独立于 App Store 版"]
           ],
-          "button": [
-            "获取激活码"
-          ]
+          "button": ["获取激活码"]
         },
-        "title": [
-          "在 macOS 上解锁 Pro 的两种方式"
-        ],
+        "title": ["在 macOS 上解锁 Pro 的两种方式"],
         "subtitle": [
           "App Store 版（macOS + iOS）受苹果规则约束，通过 Universal Purchase 同步解锁；公证版仅适用于 macOS，激活码不附带 iOS。"
         ],
@@ -698,22 +422,12 @@
       }
     },
     "faq": {
-      "badge": [
-        "常见问题"
-      ],
-      "title": [
-        "关于",
-        "FoxTerm (橙狐终端)",
-        "，你想知道的一切"
-      ],
-      "lede": [
-        "安全、Pro 授权与原生性能——一次讲清楚。"
-      ],
+      "badge": ["常见问题"],
+      "title": ["关于", "FoxTerm (橙狐终端)", "，你想知道的一切"],
+      "lede": ["安全、Pro 授权与原生性能——一次讲清楚。"],
       "items": [
         {
-          "q": [
-            " FoxTerm (橙狐终端) 是什么？它提供哪些核心功能？"
-          ],
+          "q": [" FoxTerm (橙狐终端) 是什么？它提供哪些核心功能？"],
           "answer": [
             "FoxTerm (橙狐终端) 是一款为 macOS 与 iOS 原生打造的一体化、隐私优先的服务器管理应用。它整合了高性能的",
             "、",
@@ -729,9 +443,7 @@
           ]
         },
         {
-          "q": [
-            " 免费版与 Pro 有什么区别？App Store 版如何跨设备使用？"
-          ],
+          "q": [" 免费版与 Pro 有什么区别？App Store 版如何跨设备使用？"],
           "answer": [
             "免费版并非功能阉割的演示版——从",
             "、",
@@ -747,9 +459,7 @@
           ]
         },
         {
-          "q": [
-            " FoxTerm (橙狐终端) 如何保护我的服务器密钥与连接凭据？"
-          ],
+          "q": [" FoxTerm (橙狐终端) 如何保护我的服务器密钥与连接凭据？"],
           "answer": [
             "FoxTerm (橙狐终端) 严格执行",
             "，数据 100% 本地加密。服务器凭据与 SSH 私钥被硬件隔离在 Apple",
@@ -759,9 +469,7 @@
           ]
         },
         {
-          "q": [
-            " FoxTerm (橙狐终端) 与基于 Electron 的终端客户端有什么不同？"
-          ],
+          "q": [" FoxTerm (橙狐终端) 与基于 Electron 的终端客户端有什么不同？"],
           "answer": [
             "FoxTerm (橙狐终端) 不是 Electron 套壳。它从零开始采用",
             " 构建，启动近乎瞬时、资源占用极低，并针对 iOS 做了原生优化。",
@@ -769,17 +477,13 @@
           ]
         },
         {
-          "q": [
-            " 支持哪些平台与操作系统？"
-          ],
+          "q": [" 支持哪些平台与操作系统？"],
           "answer": [
             "FoxTerm (橙狐终端) 为 Apple 平台原生打造：运行于 macOS 14.0 及以上、iOS/iPadOS 17.0 及以上，覆盖 iPhone 与 iPad，一次 Universal Purchase 解锁所有设备。没有 Windows、Android 或 Linux 桌面版本——FoxTerm (橙狐终端) 仅为 Apple 原生技术栈而设计。"
           ]
         },
         {
-          "q": [
-            " 支持哪些协议与认证方式？"
-          ],
+          "q": [" 支持哪些协议与认证方式？"],
           "answer": [
             "FoxTerm (橙狐终端) 支持 SSH、SFTP 与 VNC 连接，并通过 SSH 管理 Docker 与 Podman 引擎。内置现代加密算法与 Ed25519 等密钥类型、分屏终端会话、命令片段、拖拽式 SFTP 传输，以及容器、镜像与数据卷的可视化管理。"
           ]
@@ -793,9 +497,7 @@
           ]
         },
         {
-          "q": [
-            " 如何在 macOS 上获取 Pro，iOS 又如何激活？"
-          ],
+          "q": [" 如何在 macOS 上获取 Pro，iOS 又如何激活？"],
           "answer": [
             "在 macOS 上获取 Pro 有两种方式。",
             "是由 Apple 按月或按年扣费的订阅，受苹果规则约束，通过 Universal Purchase 自动激活 iOS 应用——可在 Apple ID 订阅设置中管理或取消，续订与退款由 Apple 处理。",
@@ -805,35 +507,20 @@
           ]
         }
       ],
-      "qPrefix": [
-        "问:",
-        "问:",
-        "问:",
-        "问:",
-        "问:",
-        "问:",
-        "问:",
-        "问:"
-      ]
+      "qPrefix": ["问:", "问:", "问:", "问:", "问:", "问:", "问:", "问:"]
     },
     "download": {
-      "title": [
-        "下载 FoxTerm (橙狐终端)，秒速连接"
-      ],
+      "title": ["下载 FoxTerm (橙狐终端)，秒速连接"],
       "subtitle": [
         "Mac · iPhone · iPad——所有功能免费开始使用，App Store 版 Pro 可在 Mac 与 iOS 设备上解锁。"
       ],
       "buttons": [
         {
           "alt": "在 App Store 获取",
-          "label": [
-            "前往 App Store 下载"
-          ]
+          "label": ["前往 App Store 下载"]
         },
         {
-          "label": [
-            "公证版下载（macOS）"
-          ]
+          "label": ["公证版下载（macOS）"]
         }
       ],
       "note": [
@@ -843,82 +530,38 @@
       ],
       "reqs": [
         {
-          "label": [
-            "macOS"
-          ],
-          "value": [
-            "14.0 Sonoma 及以上"
-          ]
+          "label": ["macOS"],
+          "value": ["14.0 Sonoma 及以上"]
         },
         {
-          "label": [
-            "iOS / iPadOS"
-          ],
-          "value": [
-            "17.0 及以上"
-          ]
+          "label": ["iOS / iPadOS"],
+          "value": ["17.0 及以上"]
         },
         {
-          "label": [
-            "Licensing"
-          ],
-          "value": [
-            "App Store 或激活码授权"
-          ]
+          "label": ["Licensing"],
+          "value": ["App Store 或激活码授权"]
         },
         {
-          "label": [
-            "Trust"
-          ],
-          "value": [
-            "已公证、已签名、沙盒运行"
-          ]
+          "label": ["Trust"],
+          "value": ["已公证、已签名、沙盒运行"]
         }
       ]
     },
     "footer": {
-      "copyright": [
-        " FoxTerm (橙狐终端).",
-        "由 Tencent Makers 托管。"
-      ],
+      "copyright": [" FoxTerm (橙狐终端).", "由 Tencent Makers 托管。"],
       "links": [
-        [
-          "关于"
-        ],
-        [
-          "联系我们"
-        ],
-        [
-          "隐私政策"
-        ],
-        [
-          "服务条款"
-        ],
-        [
-          "购买凭证核验"
-        ],
-        [
-          "购买凭证核验"
-        ],
-        [
-          "GitHub"
-        ],
-        [
-          "Blog"
-        ],
-        [
-          "Security Intel"
-        ]
+        ["关于"],
+        ["联系我们"],
+        ["隐私政策"],
+        ["服务条款"],
+        ["购买凭证核验"],
+        ["购买凭证核验"],
+        ["GitHub"],
+        ["Blog"],
+        ["Security Intel"]
       ],
-      "icp": [
-        "蜀ICP备2024075062号"
-      ],
-      "mirror": [
-        "中国镜像：",
-        " | 全球官网：",
-        "foxterm.cn",
-        "foxterm.app"
-      ],
+      "icp": ["蜀ICP备2024075062号"],
+      "mirror": ["中国镜像：", " | 全球官网：", "foxterm.cn", "foxterm.app"],
       "badges": [
         {
           "alt": "Apple Notarized"
@@ -943,36 +586,21 @@
   },
   "about": {
     "nav": {
-      "logo": [
-        "FoxTerm"
-      ],
+      "logo": ["FoxTerm"],
       "langAria": "语言",
-      "langCurrent": [
-        "简体中文"
-      ],
-      "backToHome": [
-        "返回首页"
-      ]
+      "langCurrent": ["简体中文"],
+      "backToHome": ["返回首页"]
     },
     "content": {
-      "badge": [
-        "SWIFT · C · 绝不妥协"
-      ],
-      "title": [
-        "软件应该",
-        "快速、私密、经久耐用。"
-      ],
+      "badge": ["SWIFT · C · 绝不妥协"],
+      "title": ["软件应该", "快速、私密、经久耐用。"],
       "lede": [
         "FoxTerm (橙狐终端) 是一款面向 macOS 与 iOS 的原生终端客户端。没有 Electron，没有 Web 包装，没有遥测 —— 只有 Swift 和 C 在做它们最擅长的事。"
       ],
       "sections": [
         {
-          "label": [
-            "01 / 为什么选择 FoxTerm"
-          ],
-          "title": [
-            "现有的工具不够好，所以我写了一个。"
-          ],
+          "label": ["01 / 为什么选择 FoxTerm"],
+          "title": ["现有的工具不够好，所以我写了一个。"],
           "body": [
             "SSH 是基础设施运行的界面。深夜部署、服务器调试、紧急修复，都在这里完成。我试过的每一个客户端，要么停留在 2004 年的感觉，要么对本该原生的功能收取订阅费。",
             "FoxTerm 最初只是一个个人工具 —— 一个真正尊重 macOS 和 iOS 设计语言、运行在原生框架上、不会悄悄回传数据的终端客户端。后来发现，它值得被更多人使用。",
@@ -980,32 +608,20 @@
           ]
         },
         {
-          "label": [
-            "02 / 工程原则"
-          ],
-          "title": [
-            "FoxTerm 的基石 —— 也是绝不退让的底线。"
-          ],
+          "label": ["02 / 工程原则"],
+          "title": ["FoxTerm 的基石 —— 也是绝不退让的底线。"],
           "subsections": [
             {
-              "title": [
-                "原生优先"
-              ]
+              "title": ["原生优先"]
             },
             {
-              "title": [
-                "架构级隐私"
-              ]
+              "title": ["架构级隐私"]
             },
             {
-              "title": [
-                "极致性能"
-              ]
+              "title": ["极致性能"]
             },
             {
-              "title": [
-                "经久耐用"
-              ]
+              "title": ["经久耐用"]
             }
           ],
           "body": [
@@ -1016,147 +632,76 @@
           ]
         },
         {
-          "label": [
-            "03 / 底层架构"
-          ],
-          "title": [
-            "技术栈 —— 因为它很重要。"
-          ],
+          "label": ["03 / 底层架构"],
+          "title": ["技术栈 —— 因为它很重要。"],
           "specs": [
             {
-              "label": [
-                "编程语言"
-              ],
-              "value": [
-                "Swift · C"
-              ]
+              "label": ["编程语言"],
+              "value": ["Swift · C"]
             },
             {
-              "label": [
-                "支持协议"
-              ],
-              "value": [
-                "SSH · SFTP · VNC · Docker"
-              ]
+              "label": ["支持协议"],
+              "value": ["SSH · SFTP · VNC · Docker"]
             },
             {
-              "label": [
-                "安全机制"
-              ],
-              "value": [
-                "Secure Enclave · Keychain · App Sandbox"
-              ]
+              "label": ["安全机制"],
+              "value": ["Secure Enclave · Keychain · App Sandbox"]
             },
             {
-              "label": [
-                "支持平台"
-              ],
-              "value": [
-                "macOS 14+ · iOS 17+ · iPadOS"
-              ]
+              "label": ["支持平台"],
+              "value": ["macOS 14+ · iOS 17+ · iPadOS"]
             },
             {
-              "label": [
-                "分发渠道"
-              ],
-              "value": [
-                "Mac App Store · Apple 公证签名"
-              ]
+              "label": ["分发渠道"],
+              "value": ["Mac App Store · Apple 公证签名"]
             },
             {
-              "label": [
-                "定价模式"
-              ],
-              "value": [
-                "免费 · Pro 订阅或激活码"
-              ]
+              "label": ["定价模式"],
+              "value": ["免费 · Pro 订阅或激活码"]
             }
           ]
         },
         {
-          "label": [
-            "04 / 开发者"
-          ],
+          "label": ["04 / 开发者"],
           "body": [
             "我是一名使用 Swift、Go 和 React 的软件工程师。FoxTerm 是我最在意的产品 —— 每一行代码都按照我对日常工具的期望标准来编写。",
             "除 FoxTerm 之外，我也承接精选委托项目 —— 那些讲究工艺、标准高的工作。如果你正在做值得这种专注度的事情，",
             "。"
           ],
-          "links": [
-            [
-              "聊聊吧"
-            ]
-          ],
+          "links": [["聊聊吧"]],
           "specs": [
             {
-              "label": [
-                "种协议"
-              ]
+              "label": ["种协议"]
             },
             {
-              "label": [
-                "种语言"
-              ]
+              "label": ["种语言"]
             },
             {
-              "label": [
-                "遥测"
-              ]
+              "label": ["遥测"]
             }
           ]
         },
         {
-          "title": [
-            "试试 FoxTerm"
-          ],
+          "title": ["试试 FoxTerm"],
           "body": [
             "免费下载即可使用全部功能。Pro 通过 App Store 订阅或激活码解锁无限节点。"
           ],
-          "links": [
-            [
-              "在 App Store 下载"
-            ],
-            [
-              "联系我们"
-            ]
-          ]
+          "links": [["在 App Store 下载"], ["联系我们"]]
         }
       ]
     },
     "footer": {
-      "copyright": [
-        " FoxTerm (橙狐终端).",
-        "由 Tencent Makers 托管。"
-      ],
+      "copyright": [" FoxTerm (橙狐终端).", "由 Tencent Makers 托管。"],
       "links": [
-        [
-          "首页"
-        ],
-        [
-          "隐私政策"
-        ],
-        [
-          "服务条款"
-        ],
-        [
-          "GitHub"
-        ],
-        [
-          "Blog"
-        ],
-        [
-          "Security Intel"
-        ]
+        ["首页"],
+        ["隐私政策"],
+        ["服务条款"],
+        ["GitHub"],
+        ["Blog"],
+        ["Security Intel"]
       ],
-      "icp": [
-        "蜀ICP备2024075062号"
-      ],
-      "mirror": [
-        "中国镜像：",
-        " | 全球官网：",
-        "foxterm.cn",
-        "foxterm.app"
-      ],
+      "icp": ["蜀ICP备2024075062号"],
+      "mirror": ["中国镜像：", " | 全球官网：", "foxterm.cn", "foxterm.app"],
       "badges": [
         {
           "alt": "Apple Notarized"
@@ -1181,38 +726,22 @@
   },
   "contact": {
     "nav": {
-      "logo": [
-        "FoxTerm"
-      ],
+      "logo": ["FoxTerm"],
       "langAria": "语言",
-      "langCurrent": [
-        "简体中文"
-      ],
-      "backToHome": [
-        "返回首页"
-      ]
+      "langCurrent": ["简体中文"],
+      "backToHome": ["返回首页"]
     },
     "content": {
-      "badge": [
-        "独立匠心 · 直达通道"
-      ],
-      "title": [
-        "直连",
-        "核心架构师"
-      ],
+      "badge": ["独立匠心 · 直达通道"],
+      "title": ["直连", "核心架构师"],
       "lede": [
         "FoxTerm (橙狐终端) 由独立工程师精心打造，毫不妥协。没有企业流程，没有 AI 客服机器人，没有模板化回复。",
         "每一行代码都出自一位独立工程师之手，每一封邮件都会直达引擎背后的开发者。遇到 bug、性能问题，或有大胆的功能想法？直接来信。"
       ],
       "sections": {
         "0": {
-          "badge": [
-            "承接合作 · SELECT ENGAGEMENTS"
-          ],
-          "title": [
-            "把项目交给",
-            "做 FoxTerm 的人"
-          ],
+          "badge": ["承接合作 · SELECT ENGAGEMENTS"],
+          "title": ["把项目交给", "做 FoxTerm 的人"],
           "body": [
             "FoxTerm 的每一行代码都出自一位独立工程师之手，你的项目也会得到同一条标准：不转包、不套模板、不交付“能跑就行”的代码。只承接值得深挖的工程，直接对结果负责。",
             "现代 Web 前端，交互复杂的产品级界面",
@@ -1238,86 +767,47 @@
           ],
           "specs": [
             {
-              "label": [
-                "Application"
-              ],
-              "value": [
-                "React",
-                "React Native"
-              ]
+              "label": ["Application"],
+              "value": ["React", "React Native"]
             },
             {
-              "label": [
-                "Backend & Services"
-              ],
-              "value": [
-                "Go",
-                "PHP"
-              ]
+              "label": ["Backend & Services"],
+              "value": ["Go", "PHP"]
             },
             {
-              "label": [
-                "Systems & Native"
-              ],
-              "value": [
-                "Swift",
-                "C"
-              ]
+              "label": ["Systems & Native"],
+              "value": ["Swift", "C"]
             },
             {
-              "label": [
-                "项目合作 · 委托开发"
-              ]
+              "label": ["项目合作 · 委托开发"]
             }
           ],
-          "links": [
-            [
-              "foxterm@icloud.com"
-            ],
-            [
-              "洽谈项目"
-            ]
-          ]
+          "links": [["foxterm@icloud.com"], ["洽谈项目"]]
         },
         "-1": {
           "specs": [
             {
-              "label": [
-                "支持与开发者咨询"
-              ]
+              "label": ["支持与开发者咨询"]
             }
           ]
         }
       },
-      "links": [
-        [
-          "support@foxterm.app"
-        ],
-        [
-          "发送邮件"
-        ]
-      ],
+      "links": [["support@foxterm.app"], ["发送邮件"]],
       "cards": [
         {
-          "title": [
-            "01 / Bug 反馈"
-          ],
+          "title": ["01 / Bug 反馈"],
           "body": [
             "请附上你的 macOS / iOS 系统版本、连接协议（SSH、SFTP、VNC、Docker）以及复现步骤。"
           ]
         },
         {
-          "title": [
-            "02 / 功能建议"
-          ],
+          "title": ["02 / 功能建议"],
           "body": [
             "对终端模拟、自定义字体或容器工具有想法？我们优先考虑极客驱动的工作流。"
           ]
         },
         {
-          "title": [
-            "03 / 账单与 Pro"
-          ],
+          "title": ["03 / 账单与 Pro"],
           "body": [
             "需要 Apple ID Universal Purchase 或 Pro 节点限额核验方面的帮助？来信附上收据 ID 会更高效。"
           ]
@@ -1325,42 +815,18 @@
       ]
     },
     "footer": {
-      "copyright": [
-        " FoxTerm (橙狐终端).",
-        "由 Tencent Makers 托管。"
-      ],
+      "copyright": [" FoxTerm (橙狐终端).", "由 Tencent Makers 托管。"],
       "links": [
-        [
-          "首页"
-        ],
-        [
-          "关于"
-        ],
-        [
-          "隐私政策"
-        ],
-        [
-          "服务条款"
-        ],
-        [
-          "GitHub"
-        ],
-        [
-          "Blog"
-        ],
-        [
-          "Security Intel"
-        ]
+        ["首页"],
+        ["关于"],
+        ["隐私政策"],
+        ["服务条款"],
+        ["GitHub"],
+        ["Blog"],
+        ["Security Intel"]
       ],
-      "icp": [
-        "蜀ICP备2024075062号"
-      ],
-      "mirror": [
-        "中国镜像：",
-        " | 全球官网：",
-        "foxterm.cn",
-        "foxterm.app"
-      ],
+      "icp": ["蜀ICP备2024075062号"],
+      "mirror": ["中国镜像：", " | 全球官网：", "foxterm.cn", "foxterm.app"],
       "badges": [
         {
           "alt": "Apple Notarized"
@@ -1385,31 +851,17 @@
   },
   "privacy": {
     "nav": {
-      "logo": [
-        "FoxTerm"
-      ],
+      "logo": ["FoxTerm"],
       "langAria": "语言",
-      "langCurrent": [
-        "简体中文"
-      ],
-      "backToHome": [
-        "返回首页"
-      ]
+      "langCurrent": ["简体中文"],
+      "backToHome": ["返回首页"]
     },
     "content": {
-      "badge": [
-        "法律文件"
-      ],
-      "title": [
-        "隐私政策"
-      ],
-      "lede": [
-        "最后更新：2026 年 10 月"
-      ],
+      "badge": ["法律文件"],
+      "title": ["隐私政策"],
+      "lede": ["最后更新：2026 年 10 月"],
       "commitment": {
-        "title": [
-          "我们的承诺：零遥测"
-        ],
+        "title": ["我们的承诺：零遥测"],
         "body": [
           "FoxTerm (橙狐终端) 的立足点是：你的服务器基础设施、凭据与工作流完全属于你自己。我们严格执行",
           "，不在外部服务器上收集、传输或存储你的任何运行数据。",
@@ -1418,34 +870,18 @@
       },
       "sections": [
         {
-          "title": [
-            "1. 我们收集的数据"
-          ],
-          "body": [
-            "FoxTerm (橙狐终端) 完全不收集任何遥测数据。具体包括："
-          ],
+          "title": ["1. 我们收集的数据"],
+          "body": ["FoxTerm (橙狐终端) 完全不收集任何遥测数据。具体包括："],
           "items": [
-            [
-              "不做任何分析、使用追踪或行为监控"
-            ],
-            [
-              "默认不向第三方服务器发送崩溃报告"
-            ],
-            [
-              "不记录连接日志、命令历史或会话元数据"
-            ],
-            [
-              "不传输 IP 地址、主机名或服务器指纹"
-            ],
-            [
-              "SSH 密钥、密码与认证凭据永远不会离开你的设备"
-            ]
+            ["不做任何分析、使用追踪或行为监控"],
+            ["默认不向第三方服务器发送崩溃报告"],
+            ["不记录连接日志、命令历史或会话元数据"],
+            ["不传输 IP 地址、主机名或服务器指纹"],
+            ["SSH 密钥、密码与认证凭据永远不会离开你的设备"]
           ]
         },
         {
-          "title": [
-            "2. 本地数据存储与加密"
-          ],
+          "title": ["2. 本地数据存储与加密"],
           "body": [
             "所有敏感数据均通过 Apple 原生安全框架，仅存储在你的设备上："
           ],
@@ -1465,158 +901,90 @@
           ]
         },
         {
-          "title": [
-            "3. 网络通信"
-          ],
-          "body": [
-            "FoxTerm (橙狐终端) 仅与你明确配置的服务器建立点对点直连："
-          ],
+          "title": ["3. 网络通信"],
+          "body": ["FoxTerm (橙狐终端) 仅与你明确配置的服务器建立点对点直连："],
           "items": [
             [
               "所有连接（SSH、VNC、SFTP、Docker/Podman）均由你的设备直连你的服务器"
             ],
-            [
-              "我们不为你的流量架设任何代理服务器、中继或中转服务"
-            ],
-            [
-              "App Store 交易完全由 Apple 处理；我们不接收或存储支付信息"
-            ],
-            [
-              "应用内不嵌入任何第三方分析 SDK"
-            ]
+            ["我们不为你的流量架设任何代理服务器、中继或中转服务"],
+            ["App Store 交易完全由 Apple 处理；我们不接收或存储支付信息"],
+            ["应用内不嵌入任何第三方分析 SDK"]
           ]
         },
         {
-          "title": [
-            "4. iCloud 同步"
-          ],
-          "body": [
-            "当你开启 iCloud 配置同步时："
-          ],
+          "title": ["4. iCloud 同步"],
+          "body": ["当你开启 iCloud 配置同步时："],
           "items": [
-            [
-              "同步数据仅存储在你个人的 iCloud 账户中，不上传至我们的服务器"
-            ],
-            [
-              "同步传输完全由 Apple 的 CloudKit 基础设施管理并加密"
-            ],
+            ["同步数据仅存储在你个人的 iCloud 账户中，不上传至我们的服务器"],
+            ["同步传输完全由 Apple 的 CloudKit 基础设施管理并加密"],
             [
               "私钥",
               "通过 iCloud 同步；它们始终隔离在每台设备的 Secure Enclave 中",
               "绝不"
             ],
-            [
-              "你可随时通过应用内设置或系统的 iCloud 设置关闭同步"
-            ]
+            ["你可随时通过应用内设置或系统的 iCloud 设置关闭同步"]
           ]
         },
         {
-          "title": [
-            "5. App Store 收据校验"
-          ],
+          "title": ["5. App Store 收据校验"],
           "body": [
             "为校验 Pro 订阅状态，FoxTerm (橙狐终端) 可能会与 Apple 的 App Store 服务器通信以验证你的订阅权益。该通信："
           ],
           "items": [
-            [
-              "通过标准的 Apple StoreKit API 完成"
-            ],
-            [
-              "仅包含你的 Apple 交易收据标识"
-            ],
-            [
-              "不包含任何你的服务器数据、凭据或使用信息"
-            ],
+            ["通过标准的 Apple StoreKit API 完成"],
+            ["仅包含你的 Apple 交易收据标识"],
+            ["不包含任何你的服务器数据、凭据或使用信息"],
             [
               "在你的设备与 Apple 之间直接进行；FoxTerm (橙狐终端) 后端服务器不记录、不存储这些请求"
             ]
           ]
         },
         {
-          "title": [
-            "6. 第三方服务"
-          ],
+          "title": ["6. 第三方服务"],
           "body": [
             "FoxTerm (橙狐终端) 不集成任何第三方分析、广告或数据采集服务。唯一会交互的外部服务包括："
           ],
           "items": [
-            [
-              "Apple App Store 与 CloudKit 服务（受 Apple 隐私政策约束）"
-            ],
-            [
-              "你明确配置并直连的 SSH、VNC、SFTP、Docker/Podman 服务器"
-            ]
+            ["Apple App Store 与 CloudKit 服务（受 Apple 隐私政策约束）"],
+            ["你明确配置并直连的 SSH、VNC、SFTP、Docker/Podman 服务器"]
           ]
         },
         {
-          "title": [
-            "7. 儿童隐私"
-          ],
+          "title": ["7. 儿童隐私"],
           "body": [
             "FoxTerm (橙狐终端) 不会在知情情况下收集 13 岁以下（或你所在司法辖区适用年龄）儿童的任何个人信息。本应用是面向技术专业人士的开发者工具。"
           ]
         },
         {
-          "title": [
-            "8. 政策变更"
-          ],
+          "title": ["8. 政策变更"],
           "body": [
             "我们可能会不时更新本隐私政策，以反映实践或法律要求的变化。任何变更都会在此页面公布，并更新修订日期。建议你定期查阅本政策。"
           ]
         },
         {
-          "title": [
-            "9. 联系我们"
-          ],
+          "title": ["9. 联系我们"],
           "body": [
             "如果你对本隐私政策或我们的数据实践有任何疑问或顾虑，请通过",
             " 与我们联系。"
           ],
-          "links": [
-            [
-              "admin@foxterm.app"
-            ]
-          ]
+          "links": [["admin@foxterm.app"]]
         }
       ]
     },
     "footer": {
-      "copyright": [
-        " FoxTerm (橙狐终端).",
-        "由 Tencent Makers 托管。"
-      ],
+      "copyright": [" FoxTerm (橙狐终端).", "由 Tencent Makers 托管。"],
       "links": [
-        [
-          "首页"
-        ],
-        [
-          "关于"
-        ],
-        [
-          "联系我们"
-        ],
-        [
-          "服务条款"
-        ],
-        [
-          "GitHub"
-        ],
-        [
-          "Blog"
-        ],
-        [
-          "Security Intel"
-        ]
+        ["首页"],
+        ["关于"],
+        ["联系我们"],
+        ["服务条款"],
+        ["GitHub"],
+        ["Blog"],
+        ["Security Intel"]
       ],
-      "icp": [
-        "蜀ICP备2024075062号"
-      ],
-      "mirror": [
-        "中国镜像：",
-        " | 全球官网：",
-        "foxterm.cn",
-        "foxterm.app"
-      ],
+      "icp": ["蜀ICP备2024075062号"],
+      "mirror": ["中国镜像：", " | 全球官网：", "foxterm.cn", "foxterm.app"],
       "badges": [
         {
           "alt": "Apple Notarized"
@@ -1641,33 +1009,21 @@
   },
   "terms": {
     "nav": {
-      "logo": [
-        "FoxTerm"
-      ],
+      "logo": ["FoxTerm"],
       "langAria": "语言",
-      "langCurrent": [
-        "简体中文"
-      ],
-      "backToHome": [
-        "返回首页"
-      ]
+      "langCurrent": ["简体中文"],
+      "backToHome": ["返回首页"]
     },
     "content": {
-      "badge": [
-        "法律文件"
-      ],
-      "title": [
-        "服务条款"
-      ],
+      "badge": ["法律文件"],
+      "title": ["服务条款"],
       "lede": [
         "最后更新：2026 年 10 月",
         "在使用 FoxTerm (橙狐终端) 应用（以下简称\"本应用\"，由 FoxTerm (橙狐终端) 运营，下称\"我们\"）之前，请仔细阅读本服务条款（以下简称\"本条款\"）。你对本应用的访问与使用，即表示你接受并遵守本条款。本条款适用于所有访问或使用本应用的用户。"
       ],
       "sections": [
         {
-          "title": [
-            "1. 授权许可"
-          ],
+          "title": ["1. 授权许可"],
           "body": [
             "在遵守本条款的前提下，我们授予你一项有限、非独占、不可转让、可撤销的许可，允许你："
           ],
@@ -1678,210 +1034,119 @@
             [
               "出于个人或商业服务器管理目的使用本应用的免费版（免费版包含全部功能，仅节点数量受限）"
             ],
-            [
-              "在订阅保持有效且正常状态期间，访问并使用 FoxTerm Pro 订阅功能"
-            ]
+            ["在订阅保持有效且正常状态期间，访问并使用 FoxTerm Pro 订阅功能"]
           ]
         },
         {
-          "title": [
-            "2. 通用购买（Universal Purchase）"
-          ],
+          "title": ["2. 通用购买（Universal Purchase）"],
           "body": [
             "FoxTerm (橙狐终端) 支持 Apple Universal Purchase。一次购买或订阅即可解锁与你 Apple ID 关联的所有兼容平台（macOS 与 iOS）上的完整应用。你的订阅将通过 Apple ID 账户自动续订，除非你在当前周期结束前至少 24 小时取消。"
           ]
         },
         {
-          "title": [
-            "3. Pro 订阅与许可"
-          ],
+          "title": ["3. Pro 订阅与许可"],
           "body": [
             "FoxTerm Pro 与免费版提供完全相同的功能。唯一区别在于可管理的节点（服务器）数量：免费版限制节点数，FoxTerm Pro 解除该限制、节点数量不限。你可随时升级或取消，已保存的连接配置不受影响。",
             "公证版 macOS 同样提供 Pro：该版本直接分发，不经过 App Store。它通过在 pay.foxterm.app 销售的激活码（许可证密钥）解锁。激活码授予与订阅相同的 Pro 能力，仅适用于 macOS 公证版，不附带 iOS 激活。激活码许可由 FoxTerm 直接提供；销售时展示的任何购买专属条款（如许可期限与设备范围）在本条款之外一并适用。"
           ],
           "items": [
-            [
-              "订阅按购买时选择的周期（按月或按年）循环计费"
-            ],
-            [
-              "款项将在购买确认时从你的 Apple ID 账户扣除"
-            ],
-            [
-              "订阅自动续订，除非在当前周期结束前至少 24 小时取消"
-            ],
-            [
-              "我们将在当前周期结束前 24 小时内从你的账户扣除续订费用"
-            ],
-            [
-              "购买后你可在 Apple ID 账户设置中管理或取消订阅"
-            ],
+            ["订阅按购买时选择的周期（按月或按年）循环计费"],
+            ["款项将在购买确认时从你的 Apple ID 账户扣除"],
+            ["订阅自动续订，除非在当前周期结束前至少 24 小时取消"],
+            ["我们将在当前周期结束前 24 小时内从你的账户扣除续订费用"],
+            ["购买后你可在 Apple ID 账户设置中管理或取消订阅"],
             [
               "对于未用完的订阅周期，我们不提供退款；所有账单与退款事宜均由 Apple 按 App Store 政策处理"
             ]
           ]
         },
         {
-          "title": [
-            "4. 可接受使用"
-          ],
-          "body": [
-            "你同意不会将本应用用于以下行为："
-          ],
+          "title": ["4. 可接受使用"],
+          "body": ["你同意不会将本应用用于以下行为："],
           "items": [
-            [
-              "违反任何适用的地方、州、国家或国际法律法规"
-            ],
-            [
-              "未经授权访问你无权访问的计算机系统、网络或数据"
-            ],
-            [
-              "分发恶意软件、勒索软件或其他恶意代码"
-            ],
-            [
-              "实施拒绝服务攻击或其他破坏性活动"
-            ],
+            ["违反任何适用的地方、州、国家或国际法律法规"],
+            ["未经授权访问你无权访问的计算机系统、网络或数据"],
+            ["分发恶意软件、勒索软件或其他恶意代码"],
+            ["实施拒绝服务攻击或其他破坏性活动"],
             [
               "对本应用进行反向工程、反编译、反汇编，或试图获取其源代码，适用法律允许的情形除外"
             ],
-            [
-              "移除、篡改或遮盖任何版权或专有声明"
-            ]
+            ["移除、篡改或遮盖任何版权或专有声明"]
           ]
         },
         {
-          "title": [
-            "5. 知识产权"
-          ],
+          "title": ["5. 知识产权"],
           "body": [
             "本应用的全部内容、功能、源代码、图形、设计、标识与图标，均为 FoxTerm (橙狐终端) 的专有财产，并受国际版权、商标及其他知识产权法律保护。未经我们明确书面许可，你不得复制、分发、修改本应用的任何部分、创作衍生作品、公开展示或以其他方式加以利用。"
           ]
         },
         {
-          "title": [
-            "6. 第三方服务器与内容"
-          ],
+          "title": ["6. 第三方服务器与内容"],
           "body": [
             "本应用是一款客户端工具，用于连接由你控制、或你已获授权访问的服务器与基础设施。我们不对以下事项负责："
           ],
           "items": [
-            [
-              "你所连接的第三方服务器的内容、安全性、可用性或运行状态"
-            ],
-            [
-              "你通过本应用在远程服务器或基础设施上采取的任何操作"
-            ],
-            [
-              "因你使用本应用导致的数据丢失或系统损坏"
-            ]
+            ["你所连接的第三方服务器的内容、安全性、可用性或运行状态"],
+            ["你通过本应用在远程服务器或基础设施上采取的任何操作"],
+            ["因你使用本应用导致的数据丢失或系统损坏"]
           ]
         },
         {
-          "title": [
-            "7. 免责声明"
-          ],
+          "title": ["7. 免责声明"],
           "body": [
             "本应用按\"现状\"和\"可用\"基础提供，不提供任何明示或默示的担保，包括但不限于对适销性、特定用途适用性、所有权与不侵权的默示担保。我们不担保："
           ],
           "items": [
-            [
-              "本应用在任何特定时间或地点都能不中断、安全或可用地运行"
-            ],
-            [
-              "任何错误或缺陷都会被纠正"
-            ],
-            [
-              "本应用不含病毒或其他有害组件"
-            ],
-            [
-              "使用本应用的结果能满足你的要求或期望"
-            ]
+            ["本应用在任何特定时间或地点都能不中断、安全或可用地运行"],
+            ["任何错误或缺陷都会被纠正"],
+            ["本应用不含病毒或其他有害组件"],
+            ["使用本应用的结果能满足你的要求或期望"]
           ]
         },
         {
-          "title": [
-            "8. 责任限制"
-          ],
+          "title": ["8. 责任限制"],
           "body": [
             "在任何情况下，FoxTerm (橙狐终端) 均不对因你访问、使用或无法访问、使用本应用而导致的任何间接、附带、特殊、后果性或惩罚性损害承担责任，包括但不限于利润、数据、使用、商誉或其他无形利益的损失。"
           ]
         },
         {
-          "title": [
-            "9. 终止"
-          ],
+          "title": ["9. 终止"],
           "body": [
             "出于任何原因，包括但不限于你违反本条款，我们可立即终止或暂停你使用本应用的许可，无需事先通知或承担责任。终止后，你使用本应用的权利即刻停止。按其性质应在终止后继续有效的条款（包括所有权条款、免责声明、赔偿与责任限制）将继续有效。"
           ]
         },
         {
-          "title": [
-            "10. 条款变更"
-          ],
+          "title": ["10. 条款变更"],
           "body": [
             "我们保留自行决定随时修改或替换本条款的权利。对任何实质性变更，我们会提供合理通知。在修订条款发布后继续使用本应用，即表示你接受这些变更。"
           ]
         },
         {
-          "title": [
-            "11. 适用法律"
-          ],
+          "title": ["11. 适用法律"],
           "body": [
             "本条款受我们运营所在司法辖区的法律管辖并据其解释，不考虑其法律冲突规则。"
           ]
         },
         {
-          "title": [
-            "12. 联系我们"
-          ],
-          "body": [
-            "如果你对本条款有任何疑问，请通过",
-            " 与我们联系。"
-          ],
-          "links": [
-            [
-              "admin@foxterm.app"
-            ]
-          ]
+          "title": ["12. 联系我们"],
+          "body": ["如果你对本条款有任何疑问，请通过", " 与我们联系。"],
+          "links": [["admin@foxterm.app"]]
         }
       ]
     },
     "footer": {
-      "copyright": [
-        " FoxTerm (橙狐终端).",
-        "由 Tencent Makers 托管。"
-      ],
+      "copyright": [" FoxTerm (橙狐终端).", "由 Tencent Makers 托管。"],
       "links": [
-        [
-          "首页"
-        ],
-        [
-          "关于"
-        ],
-        [
-          "联系我们"
-        ],
-        [
-          "隐私政策"
-        ],
-        [
-          "GitHub"
-        ],
-        [
-          "Blog"
-        ],
-        [
-          "Security Intel"
-        ]
+        ["首页"],
+        ["关于"],
+        ["联系我们"],
+        ["隐私政策"],
+        ["GitHub"],
+        ["Blog"],
+        ["Security Intel"]
       ],
-      "icp": [
-        "蜀ICP备2024075062号"
-      ],
-      "mirror": [
-        "中国镜像：",
-        " | 全球官网：",
-        "foxterm.cn",
-        "foxterm.app"
-      ],
+      "icp": ["蜀ICP备2024075062号"],
+      "mirror": ["中国镜像：", " | 全球官网：", "foxterm.cn", "foxterm.app"],
       "badges": [
         {
           "alt": "Apple Notarized"

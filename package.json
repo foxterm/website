@@ -10,7 +10,8 @@
     "sync": "node scripts/extract.js --sync",
     "add-lang": "node scripts/add-lang.js",
     "serve": "node scripts/serve.js",
-    "check": "node scripts/check.js"
+    "check": "node scripts/check.js",
+    "prettier": "prettier . --write"
   },
   "dependencies": {
     "ejs": "^3.1.10"
@@ -20,6 +21,7 @@
     "clean-css": "^5.3.3",
     "html-minifier-terser": "^7.2.0",
     "parse5": "^7.2.1",
+    "prettier": "3.9.10",
     "tailwindcss": "^4.3.3",
     "terser": "^5.51.2"
   }

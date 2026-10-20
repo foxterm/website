@@ -22,21 +22,33 @@ const PARTIALS = {
   head: fs.readFileSync(path.join(TPL, "partials", "head.ejs"), "utf8"),
   nav: fs.readFileSync(path.join(TPL, "partials", "nav.ejs"), "utf8"),
   footer: fs.readFileSync(path.join(TPL, "partials", "footer.ejs"), "utf8"),
-  langSwitcher: fs.readFileSync(path.join(TPL, "partials", "langSwitcher.ejs"), "utf8"),
+  langSwitcher: fs.readFileSync(
+    path.join(TPL, "partials", "langSwitcher.ejs"),
+    "utf8",
+  ),
 };
 
 const packs = {};
-for (const [code] of LANGS) packs[code] = JSON.parse(fs.readFileSync(path.join(ROOT, "i18n", code + ".json"), "utf8"));
+for (const [code] of LANGS)
+  packs[code] = JSON.parse(
+    fs.readFileSync(path.join(ROOT, "i18n", code + ".json"), "utf8"),
+  );
 
-const LAST_MOD = CFG.site.lastmod === "auto" ? new Date().toISOString().slice(0, 10) : CFG.site.lastmod;
+const LAST_MOD =
+  CFG.site.lastmod === "auto"
+    ? new Date().toISOString().slice(0, 10)
+    : CFG.site.lastmod;
 
 function flatten(obj, prefix = "", out = {}) {
   if (Array.isArray(obj)) {
-    obj.forEach((v, i) => { if (v !== null && v !== undefined) flatten(v, `${prefix}.${i}`, out); });
+    obj.forEach((v, i) => {
+      if (v !== null && v !== undefined) flatten(v, `${prefix}.${i}`, out);
+    });
     return out;
   }
   if (obj && typeof obj === "object") {
-    for (const k of Object.keys(obj)) flatten(obj[k], prefix ? `${prefix}.${k}` : k, out);
+    for (const k of Object.keys(obj))
+      flatten(obj[k], prefix ? `${prefix}.${k}` : k, out);
     return out;
   }
   if (prefix) out[prefix] = obj;
@@ -61,7 +73,8 @@ function renderPage(langCode, pageName) {
   const enFlat = flatten(enPack[pageName] || {});
   const flat = flatten(pack[pageName] || {});
   const t = {};
-  for (const k of Object.keys(enFlat)) t[k] = flat[k] !== undefined ? flat[k] : enFlat[k];
+  for (const k of Object.keys(enFlat))
+    t[k] = flat[k] !== undefined ? flat[k] : enFlat[k];
   // 语言独有的扩展 key（如正文多余片段的 hero.title.2）也要可渲染
   for (const k of Object.keys(flat)) if (!(k in t)) t[k] = flat[k];
 
@@ -69,17 +82,25 @@ function renderPage(langCode, pageName) {
   const pageRel = pageName === "index" ? "" : cfg.path;
   const baseUrl = CFG.site.baseUrl.replace(/\/$/, "");
   const canonicalUrl = baseUrl + urlPath(lang.dir, pageRel);
-  const ogLocales = LANGS.filter(([c]) => c !== langCode).map(([, l]) => l.locale).join(", ");
+  const ogLocales = LANGS.filter(([c]) => c !== langCode)
+    .map(([, l]) => l.locale)
+    .join(", ");
 
   // 站内链接语言化：/about → /zh-hans/about，/ → /zh-hans/；外链/锚点/协议相对链接不变
   const localizeHref = (h) => {
-    if (!h || h.startsWith("#") || h.startsWith("//") || /^https?:/i.test(h)) return h;
+    if (!h || h.startsWith("#") || h.startsWith("//") || /^https?:/i.test(h))
+      return h;
     return urlPath(lang.dir, h === "/" ? "" : h);
   };
-  const navCfg = { ...(pageName === "index" ? CFG.nav.index : CFG.nav.legal), type: pageName === "index" ? "index" : "legal" };
+  const navCfg = {
+    ...(pageName === "index" ? CFG.nav.index : CFG.nav.legal),
+    type: pageName === "index" ? "index" : "legal",
+  };
   navCfg.cta = { ...navCfg.cta, href: localizeHref(navCfg.cta.href) };
   navCfg.logoHref = urlPath(lang.dir, "");
-  const footerLinks = (CFG.footer.links[pageName] || CFG.footer.links.index).map((l) => ({
+  const footerLinks = (
+    CFG.footer.links[pageName] || CFG.footer.links.index
+  ).map((l) => ({
     ...l,
     href: localizeHref(l.href),
   }));
@@ -137,9 +158,19 @@ async function minifyInlineJs(html) {
   });
   for (const b of blocks) {
     const typeAttr = /\btype\s*=\s*"([^"]*)"/.exec(b.attrs);
-    if (typeAttr && typeAttr[1] !== "text/javascript" && typeAttr[1] !== "application/javascript") continue; // ld+json 等原样
-    const { code } = await terserMinify(b.code, { compress: { defaults: true } });
-    html = html.replace(`<script${b.attrs}>${b.code}</script>`, `<script${b.attrs}>${code}</script>`);
+    if (
+      typeAttr &&
+      typeAttr[1] !== "text/javascript" &&
+      typeAttr[1] !== "application/javascript"
+    )
+      continue; // ld+json 等原样
+    const { code } = await terserMinify(b.code, {
+      compress: { defaults: true },
+    });
+    html = html.replace(
+      `<script${b.attrs}>${b.code}</script>`,
+      `<script${b.attrs}>${code}</script>`,
+    );
   }
   return html;
 }
@@ -166,13 +197,15 @@ function cleanOut() {
 function copyStatic() {
   for (const f of CFG.site.copyFiles) {
     let src = path.join(PUB, f);
-    if (!fs.existsSync(src) && fs.existsSync(path.join(PUB, "assets", f))) src = path.join(PUB, "assets", f);
+    if (!fs.existsSync(src) && fs.existsSync(path.join(PUB, "assets", f)))
+      src = path.join(PUB, "assets", f);
     if (fs.existsSync(src)) fs.copyFileSync(src, path.join(OUT, f));
     else console.warn(`  [skip] 素材不存在: ${f}`);
   }
   for (const d of CFG.site.copyDirs) {
     const src = path.join(PUB, d);
-    if (fs.existsSync(src)) fs.cpSync(src, path.join(OUT, d), { recursive: true });
+    if (fs.existsSync(src))
+      fs.cpSync(src, path.join(OUT, d), { recursive: true });
     else console.warn(`  [skip] 素材目录不存在: ${d}`);
   }
 }
@@ -181,15 +214,26 @@ function copyStatic() {
 function buildTailwind() {
   if (!CFG.site.tailwind || !CFG.site.tailwind.input) return false;
   const inCss = path.join(ROOT, CFG.site.tailwind.input);
-  if (!fs.existsSync(inCss)) { console.warn("  [skip] input.css 不存在"); return false; }
+  if (!fs.existsSync(inCss)) {
+    console.warn("  [skip] input.css 不存在");
+    return false;
+  }
   const outCss = path.join(OUT, CFG.site.tailwind.output);
   fs.mkdirSync(path.dirname(outCss), { recursive: true });
   try {
-    execSync(`npx @tailwindcss/cli -i "${inCss}" -o "${outCss}" --minify`, { stdio: "pipe", cwd: ROOT });
-    console.log(`- tailwind: ${CFG.site.tailwind.input} → ${CFG.site.tailwind.output} (${Math.round(fs.statSync(outCss).size / 1024)} KB)`);
+    execSync(`npx @tailwindcss/cli -i "${inCss}" -o "${outCss}" --minify`, {
+      stdio: "pipe",
+      cwd: ROOT,
+    });
+    console.log(
+      `- tailwind: ${CFG.site.tailwind.input} → ${CFG.site.tailwind.output} (${Math.round(fs.statSync(outCss).size / 1024)} KB)`,
+    );
     return true;
   } catch (e) {
-    console.warn("  [skip] tailwind 编译失败（保留素材内旧产物）:", e.message.split("\n")[0]);
+    console.warn(
+      "  [skip] tailwind 编译失败（保留素材内旧产物）:",
+      e.message.split("\n")[0],
+    );
     return false;
   }
 }
@@ -201,9 +245,15 @@ function buildSitemap() {
     if (!cfg.sitemap) continue;
     for (const [code, lang] of LANGS) {
       const pageRel = pageName === "index" ? "" : cfg.path;
-      const loc = CFG.site.baseUrl.replace(/\/$/, "") + urlPath(lang.dir, pageRel);
-      const alternates = LANGS.map(([, l]) => `      <xhtml:link rel="alternate" hreflang="${l.hreflang}" href="${CFG.site.baseUrl.replace(/\/$/, "") + urlPath(l.dir, pageRel)}" />`);
-      alternates.push(`      <xhtml:link rel="alternate" hreflang="x-default" href="${CFG.site.baseUrl.replace(/\/$/, "") + urlPath(CFG.langs[CFG.site.defaultLang].dir, pageRel)}" />`);
+      const loc =
+        CFG.site.baseUrl.replace(/\/$/, "") + urlPath(lang.dir, pageRel);
+      const alternates = LANGS.map(
+        ([, l]) =>
+          `      <xhtml:link rel="alternate" hreflang="${l.hreflang}" href="${CFG.site.baseUrl.replace(/\/$/, "") + urlPath(l.dir, pageRel)}" />`,
+      );
+      alternates.push(
+        `      <xhtml:link rel="alternate" hreflang="x-default" href="${CFG.site.baseUrl.replace(/\/$/, "") + urlPath(CFG.langs[CFG.site.defaultLang].dir, pageRel)}" />`,
+      );
       urls.push(`  <url>
     <loc>${loc}</loc>
     <lastmod>${LAST_MOD}</lastmod>
@@ -240,14 +290,22 @@ async function main() {
   for (const [pageName, cfg] of PAGES) {
     for (const [code] of LANGS) {
       if (code !== CFG.site.defaultLang && !cfg.localized) continue; // 404 仅英文
-      const dir = path.join(OUT, CFG.langs[code].dir === "/" ? "" : CFG.langs[code].dir);
+      const dir = path.join(
+        OUT,
+        CFG.langs[code].dir === "/" ? "" : CFG.langs[code].dir,
+      );
       fs.mkdirSync(dir, { recursive: true });
-      const outFile = pageName === "index" ? path.join(dir, "index.html") : path.join(dir, pageName + ".html");
-      jobs.push((async () => {
-        const html = await minifyHtml(renderPage(code, pageName));
-        fs.writeFileSync(outFile, await minifyInlineJs(html));
-        count++;
-      })());
+      const outFile =
+        pageName === "index"
+          ? path.join(dir, "index.html")
+          : path.join(dir, pageName + ".html");
+      jobs.push(
+        (async () => {
+          const html = await minifyHtml(renderPage(code, pageName));
+          fs.writeFileSync(outFile, await minifyInlineJs(html));
+          count++;
+        })(),
+      );
     }
   }
   await Promise.all(jobs);
@@ -259,7 +317,10 @@ async function main() {
   fs.writeFileSync(path.join(OUT, "robots.txt"), buildRobots());
 
   // 3) 压缩 out 内的 JS / CSS（script.js 等素材；tailwind 产物已 minified，跳过）
-  for (const f of CFG.site.minifyJs || ["assets/script.js", "assets/tailwind.min.js"]) {
+  for (const f of CFG.site.minifyJs || [
+    "assets/script.js",
+    "assets/tailwind.min.js",
+  ]) {
     const file = path.join(OUT, f);
     if (fs.existsSync(file)) minifyAssetJs(file);
   }
@@ -268,10 +329,19 @@ async function main() {
     if (fs.existsSync(file)) minifyAssetCss(file);
   }
 
-  console.log(`build 完成: ${count} 个 HTML 页面（已 minify + 内联 JS terser）→ ${CFG.site.outputDir || "out"}/`);
-  console.log(`- 素材复制: ${CFG.site.copyFiles.join(", ")} + ${CFG.site.copyDirs.join(", ")} → out/`);
-  console.log(`- sitemap.xml（${(LANGS.length * PAGES.filter(([, c]) => c.sitemap).length)} 条 URL）、robots.txt`);
+  console.log(
+    `build 完成: ${count} 个 HTML 页面（已 minify + 内联 JS terser）→ ${CFG.site.outputDir || "out"}/`,
+  );
+  console.log(
+    `- 素材复制: ${CFG.site.copyFiles.join(", ")} + ${CFG.site.copyDirs.join(", ")} → out/`,
+  );
+  console.log(
+    `- sitemap.xml（${LANGS.length * PAGES.filter(([, c]) => c.sitemap).length} 条 URL）、robots.txt`,
+  );
   console.log(`- lastmod: ${LAST_MOD}`);
 }
 
-main().catch((e) => { console.error("build 失败:", e); process.exit(1); });
+main().catch((e) => {
+  console.error("build 失败:", e);
+  process.exit(1);
+});

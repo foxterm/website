@@ -1,1 +1,309 @@
-!function(){const t=window.location.hostname.endsWith(".cn");document.querySelectorAll(t?".is-cn":".is-intl").forEach(t=>t.style.setProperty("display","inline-flex","important"))}(),function(){const t=2026,e=(new Date).getFullYear(),n=e>t?t+"–"+e:String(t);document.querySelectorAll("[data-copyright-year]").forEach(function(t){t.textContent=n})}(),function(){const t="foxterm.langPrompt.dismissed",e="foxterm.langPrompt.session";let n=!1;try{n=!!sessionStorage.getItem(e)||!!localStorage.getItem(t)}catch(t){}if(n)return;const o=window.location.hostname.endsWith(".cn"),a=["/","/zh-hans/","/zh-hant/","/ja/","/de/","/ru/","/es/","/fr/","/ko/","/pt-br/"],s={CN:"/zh-hans/",TW:"/zh-hant/",HK:"/zh-hant/",MO:"/zh-hant/",SG:"/zh-hans/",MY:"/zh-hans/",JP:"/ja/",DE:"/de/",AT:"/de/",CH:"/de/",RU:"/ru/",BY:"/ru/",ES:"/es/",FR:"/fr/",KR:"/ko/",BR:"/pt-br/",PT:"/pt-br/",US:"/",GB:"/",AU:"/",CA:"/",NZ:"/",IE:"/"},i={msg:"检测到您来自中国大陆，是否访问中国大陆域名以获得更好体验？",go:"前往 foxterm.cn",dismiss:"不再提示",close:"关闭"},r={msg:"You are currently on the China domain. Switch to the international site for a better experience?",go:"Go to foxterm.app",dismiss:"Don't show again",close:"Close"},l={msg:"Your region recommends the English version. Would you like to switch?",go:"Go to English version",dismiss:"Don't show again",close:"Close"},c={"zh-hans":{name:"简体中文",msg:"检测到您当前所在地区推荐使用{lang}版本，是否切换？",go:"前往简体中文版",dismiss:"不再提示",close:"关闭"},"zh-hant":{name:"繁體中文",msg:"偵測到您目前所在地區推薦使用{lang}版本，是否切換？",go:"前往繁體中文版",dismiss:"不再提示",close:"關閉"},ja:{name:"日本語",msg:"お住まいの地域では{lang}版が推奨されています。切り替えますか？",go:"日本語版へ",dismiss:"今後表示しない",close:"閉じる"},de:{name:"Deutsch",msg:"Für Ihren Standort wird die {lang}-Version empfohlen. Möchten Sie wechseln?",go:"Zur deutschen Version",dismiss:"Nicht mehr anzeigen",close:"Schließen"},ru:{name:"Русский",msg:"Для вашего региона рекомендуется {lang}-версия. Переключить?",go:"Перейти на русскую версию",dismiss:"Больше не показывать",close:"Закрыть"},es:{name:"Español",msg:"Para tu región recomendamos la versión en {lang}. ¿Deseas cambiar?",go:"Ir a la versión en español",dismiss:"No volver a mostrar",close:"Cerrar"},fr:{name:"Français",msg:"Pour votre région, la version en {lang} est recommandée. Voulez-vous changer ?",go:"Passer à la version française",dismiss:"Ne plus afficher",close:"Fermer"},ko:{name:"한국어",msg:"현재 지역에서는 {lang} 버전이 권장됩니다. 전환하시겠습니까?",go:"한국어 버전으로",dismiss:"다시 표시하지 않음",close:"닫기"},"pt-br":{name:"Português",msg:"Para sua região, recomendamos a versão em {lang}. Deseja mudar?",go:"Ir para a versão em português",dismiss:"Não mostrar novamente",close:"Fechar"}};function m(n,o,a,s,i,r){const l=document.getElementById("lang-prompt-msg"),c=document.getElementById("lang-prompt-go"),m=document.getElementById("lang-prompt-dismiss"),g=document.getElementById("lang-prompt-close");l&&c&&m&&g&&(l.textContent=o,c.textContent=a,c.href=s,m.textContent=i,g.setAttribute("aria-label",r),m.addEventListener("click",function(){try{localStorage.setItem(t,"1")}catch(t){}n.hidden=!0}),g.addEventListener("click",function(){try{sessionStorage.setItem(e,"1")}catch(t){}n.hidden=!0}),n.hidden=!1)}!async function(){let t=null;try{const e=new AbortController,n=setTimeout(function(){e.abort()},3e3),o=await fetch("/geo",{signal:e.signal});if(clearTimeout(n),o.ok){const e=await o.json(),n=e&&e.geo&&e.geo.countryCodeAlpha2;t=n?String(n).toUpperCase():null}}catch(t){}if(!t)return;const e=function(){const t=document.createElement("div");return t.id="lang-prompt",t.className="lang-prompt",t.setAttribute("role","dialog"),t.setAttribute("aria-live","polite"),t.setAttribute("aria-label","Language suggestion"),t.hidden=!0,t.innerHTML='<div class="lang-prompt-card"><span class="fox-logo-icon lang-prompt-logo" aria-hidden="true"></span><p id="lang-prompt-msg" class="lang-prompt-msg"></p><div class="lang-prompt-actions"><a id="lang-prompt-go" class="lang-prompt-btn lang-prompt-btn-primary" href="#"></a><button id="lang-prompt-dismiss" type="button" class="lang-prompt-btn lang-prompt-btn-ghost"></button></div><button id="lang-prompt-close" type="button" class="lang-prompt-close" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button></div>',document.body.appendChild(t),t}();if("CN"===t&&!o){const t=i;return void m(e,t.msg,t.go,"https://foxterm.cn"+window.location.pathname+window.location.search,t.dismiss,t.close)}if("CN"!==t&&o){const t=r;return void m(e,t.msg,t.go,"https://foxterm.app"+window.location.pathname+window.location.search,t.dismiss,t.close)}const n=function(t){const e=s[t];if(!e)return null;for(let t=0;t<a.length;t++)if(a[t]===e)return e;return null}(t);if(!n||("/"===(g=n)?"/"===window.location.pathname||"/index.html"===window.location.pathname||!/^\/[a-z]{2}(?:-[a-z]{2,})?\//.test(window.location.pathname):window.location.pathname.startsWith(g)))return;var g;const d=function(t){const e=window.location.pathname,n=window.location.search,o=e.match(/^\/([a-z]{2}(?:-[a-z]{2,})?)\//);let a;return a=o?e.slice(o[0].length):"/"===e||"/index.html"===e?"":e.slice(1),t+a+n}(n);if("/"===n){const t=l;m(e,t.msg,t.go,d,t.dismiss,t.close)}else{const t=n.slice(1,-1),o=c[t];if(!o)return;m(e,o.msg.replace(/\{lang\}/g,o.name),o.go,d,o.dismiss,o.close)}}()}(),function(){const t=document.getElementById("ft-mockup");if(!t)return;const e=t.querySelectorAll("[data-ft-tab]"),n=t.querySelectorAll("[data-ft-panel]"),o=t.querySelectorAll("[data-ft-bar]"),a=document.getElementById("ft-win-title");function s(t){e.forEach(function(e){const n=e.getAttribute("data-ft-tab")===t;e.classList.toggle("ft-tab-active",n),e.classList.toggle("ft-tab-idle",!n)}),n.forEach(function(e){e.classList.toggle("ft-panel-active",e.getAttribute("data-ft-panel")===t)}),o.forEach(function(e){e.classList.toggle("ft-bar-active",e.getAttribute("data-ft-bar")===t)}),a&&e.forEach(function(e){e.getAttribute("data-ft-tab")===t&&(a.textContent=e.getAttribute("data-ft-title"))})}e.forEach(function(t){t.addEventListener("click",function(){s(t.getAttribute("data-ft-tab"))})}),s("ssh");["ssh.png","sftp.png","vnc.png","docker.png"].forEach(function(t){(new Image).src="/assets/macos/"+t})}();
+(!(function () {
+  const t = window.location.hostname.endsWith(".cn");
+  document
+    .querySelectorAll(t ? ".is-cn" : ".is-intl")
+    .forEach((t) => t.style.setProperty("display", "inline-flex", "important"));
+})(),
+  (function () {
+    const t = 2026,
+      e = new Date().getFullYear(),
+      n = e > t ? t + "–" + e : String(t);
+    document.querySelectorAll("[data-copyright-year]").forEach(function (t) {
+      t.textContent = n;
+    });
+  })(),
+  (function () {
+    const t = "foxterm.langPrompt.dismissed",
+      e = "foxterm.langPrompt.session";
+    let n = !1;
+    try {
+      n = !!sessionStorage.getItem(e) || !!localStorage.getItem(t);
+    } catch (t) {}
+    if (n) return;
+    const o = window.location.hostname.endsWith(".cn"),
+      a = [
+        "/",
+        "/zh-hans/",
+        "/zh-hant/",
+        "/ja/",
+        "/de/",
+        "/ru/",
+        "/es/",
+        "/fr/",
+        "/ko/",
+        "/pt-br/",
+      ],
+      s = {
+        CN: "/zh-hans/",
+        TW: "/zh-hant/",
+        HK: "/zh-hant/",
+        MO: "/zh-hant/",
+        SG: "/zh-hans/",
+        MY: "/zh-hans/",
+        JP: "/ja/",
+        DE: "/de/",
+        AT: "/de/",
+        CH: "/de/",
+        RU: "/ru/",
+        BY: "/ru/",
+        ES: "/es/",
+        FR: "/fr/",
+        KR: "/ko/",
+        BR: "/pt-br/",
+        PT: "/pt-br/",
+        US: "/",
+        GB: "/",
+        AU: "/",
+        CA: "/",
+        NZ: "/",
+        IE: "/",
+      },
+      i = {
+        msg: "检测到您来自中国大陆，是否访问中国大陆域名以获得更好体验？",
+        go: "前往 foxterm.cn",
+        dismiss: "不再提示",
+        close: "关闭",
+      },
+      r = {
+        msg: "You are currently on the China domain. Switch to the international site for a better experience?",
+        go: "Go to foxterm.app",
+        dismiss: "Don't show again",
+        close: "Close",
+      },
+      l = {
+        msg: "Your region recommends the English version. Would you like to switch?",
+        go: "Go to English version",
+        dismiss: "Don't show again",
+        close: "Close",
+      },
+      c = {
+        "zh-hans": {
+          name: "简体中文",
+          msg: "检测到您当前所在地区推荐使用{lang}版本，是否切换？",
+          go: "前往简体中文版",
+          dismiss: "不再提示",
+          close: "关闭",
+        },
+        "zh-hant": {
+          name: "繁體中文",
+          msg: "偵測到您目前所在地區推薦使用{lang}版本，是否切換？",
+          go: "前往繁體中文版",
+          dismiss: "不再提示",
+          close: "關閉",
+        },
+        ja: {
+          name: "日本語",
+          msg: "お住まいの地域では{lang}版が推奨されています。切り替えますか？",
+          go: "日本語版へ",
+          dismiss: "今後表示しない",
+          close: "閉じる",
+        },
+        de: {
+          name: "Deutsch",
+          msg: "Für Ihren Standort wird die {lang}-Version empfohlen. Möchten Sie wechseln?",
+          go: "Zur deutschen Version",
+          dismiss: "Nicht mehr anzeigen",
+          close: "Schließen",
+        },
+        ru: {
+          name: "Русский",
+          msg: "Для вашего региона рекомендуется {lang}-версия. Переключить?",
+          go: "Перейти на русскую версию",
+          dismiss: "Больше не показывать",
+          close: "Закрыть",
+        },
+        es: {
+          name: "Español",
+          msg: "Para tu región recomendamos la versión en {lang}. ¿Deseas cambiar?",
+          go: "Ir a la versión en español",
+          dismiss: "No volver a mostrar",
+          close: "Cerrar",
+        },
+        fr: {
+          name: "Français",
+          msg: "Pour votre région, la version en {lang} est recommandée. Voulez-vous changer ?",
+          go: "Passer à la version française",
+          dismiss: "Ne plus afficher",
+          close: "Fermer",
+        },
+        ko: {
+          name: "한국어",
+          msg: "현재 지역에서는 {lang} 버전이 권장됩니다. 전환하시겠습니까?",
+          go: "한국어 버전으로",
+          dismiss: "다시 표시하지 않음",
+          close: "닫기",
+        },
+        "pt-br": {
+          name: "Português",
+          msg: "Para sua região, recomendamos a versão em {lang}. Deseja mudar?",
+          go: "Ir para a versão em português",
+          dismiss: "Não mostrar novamente",
+          close: "Fechar",
+        },
+      };
+    function m(n, o, a, s, i, r) {
+      const l = document.getElementById("lang-prompt-msg"),
+        c = document.getElementById("lang-prompt-go"),
+        m = document.getElementById("lang-prompt-dismiss"),
+        g = document.getElementById("lang-prompt-close");
+      l &&
+        c &&
+        m &&
+        g &&
+        ((l.textContent = o),
+        (c.textContent = a),
+        (c.href = s),
+        (m.textContent = i),
+        g.setAttribute("aria-label", r),
+        m.addEventListener("click", function () {
+          try {
+            localStorage.setItem(t, "1");
+          } catch (t) {}
+          n.hidden = !0;
+        }),
+        g.addEventListener("click", function () {
+          try {
+            sessionStorage.setItem(e, "1");
+          } catch (t) {}
+          n.hidden = !0;
+        }),
+        (n.hidden = !1));
+    }
+    !(async function () {
+      let t = null;
+      try {
+        const e = new AbortController(),
+          n = setTimeout(function () {
+            e.abort();
+          }, 3e3),
+          o = await fetch("/geo", { signal: e.signal });
+        if ((clearTimeout(n), o.ok)) {
+          const e = await o.json(),
+            n = e && e.geo && e.geo.countryCodeAlpha2;
+          t = n ? String(n).toUpperCase() : null;
+        }
+      } catch (t) {}
+      if (!t) return;
+      const e = (function () {
+        const t = document.createElement("div");
+        return (
+          (t.id = "lang-prompt"),
+          (t.className = "lang-prompt"),
+          t.setAttribute("role", "dialog"),
+          t.setAttribute("aria-live", "polite"),
+          t.setAttribute("aria-label", "Language suggestion"),
+          (t.hidden = !0),
+          (t.innerHTML =
+            '<div class="lang-prompt-card"><span class="fox-logo-icon lang-prompt-logo" aria-hidden="true"></span><p id="lang-prompt-msg" class="lang-prompt-msg"></p><div class="lang-prompt-actions"><a id="lang-prompt-go" class="lang-prompt-btn lang-prompt-btn-primary" href="#"></a><button id="lang-prompt-dismiss" type="button" class="lang-prompt-btn lang-prompt-btn-ghost"></button></div><button id="lang-prompt-close" type="button" class="lang-prompt-close" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button></div>'),
+          document.body.appendChild(t),
+          t
+        );
+      })();
+      if ("CN" === t && !o) {
+        const t = i;
+        return void m(
+          e,
+          t.msg,
+          t.go,
+          "https://foxterm.cn" +
+            window.location.pathname +
+            window.location.search,
+          t.dismiss,
+          t.close,
+        );
+      }
+      if ("CN" !== t && o) {
+        const t = r;
+        return void m(
+          e,
+          t.msg,
+          t.go,
+          "https://foxterm.app" +
+            window.location.pathname +
+            window.location.search,
+          t.dismiss,
+          t.close,
+        );
+      }
+      const n = (function (t) {
+        const e = s[t];
+        if (!e) return null;
+        for (let t = 0; t < a.length; t++) if (a[t] === e) return e;
+        return null;
+      })(t);
+      if (
+        !n ||
+        ("/" === (g = n)
+          ? "/" === window.location.pathname ||
+            "/index.html" === window.location.pathname ||
+            !/^\/[a-z]{2}(?:-[a-z]{2,})?\//.test(window.location.pathname)
+          : window.location.pathname.startsWith(g))
+      )
+        return;
+      var g;
+      const d = (function (t) {
+        const e = window.location.pathname,
+          n = window.location.search,
+          o = e.match(/^\/([a-z]{2}(?:-[a-z]{2,})?)\//);
+        let a;
+        return (
+          (a = o
+            ? e.slice(o[0].length)
+            : "/" === e || "/index.html" === e
+              ? ""
+              : e.slice(1)),
+          t + a + n
+        );
+      })(n);
+      if ("/" === n) {
+        const t = l;
+        m(e, t.msg, t.go, d, t.dismiss, t.close);
+      } else {
+        const t = n.slice(1, -1),
+          o = c[t];
+        if (!o) return;
+        m(e, o.msg.replace(/\{lang\}/g, o.name), o.go, d, o.dismiss, o.close);
+      }
+    })();
+  })(),
+  (function () {
+    const t = document.getElementById("ft-mockup");
+    if (!t) return;
+    const e = t.querySelectorAll("[data-ft-tab]"),
+      n = t.querySelectorAll("[data-ft-panel]"),
+      o = t.querySelectorAll("[data-ft-bar]"),
+      a = document.getElementById("ft-win-title");
+    function s(t) {
+      (e.forEach(function (e) {
+        const n = e.getAttribute("data-ft-tab") === t;
+        (e.classList.toggle("ft-tab-active", n),
+          e.classList.toggle("ft-tab-idle", !n));
+      }),
+        n.forEach(function (e) {
+          e.classList.toggle(
+            "ft-panel-active",
+            e.getAttribute("data-ft-panel") === t,
+          );
+        }),
+        o.forEach(function (e) {
+          e.classList.toggle(
+            "ft-bar-active",
+            e.getAttribute("data-ft-bar") === t,
+          );
+        }),
+        a &&
+          e.forEach(function (e) {
+            e.getAttribute("data-ft-tab") === t &&
+              (a.textContent = e.getAttribute("data-ft-title"));
+          }));
+    }
+    (e.forEach(function (t) {
+      t.addEventListener("click", function () {
+        s(t.getAttribute("data-ft-tab"));
+      });
+    }),
+      s("ssh"));
+    ["ssh.png", "sftp.png", "vnc.png", "docker.png"].forEach(function (t) {
+      new Image().src = "/assets/macos/" + t;
+    });
+  })());
