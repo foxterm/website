@@ -261,7 +261,7 @@
       const ctrl = new AbortController();
       const timer = setTimeout(function () {
         ctrl.abort();
-      }, 3000);
+      }, 1000);
       const res = await fetch("https://foxterm.cn/geo", { signal: ctrl.signal });
       clearTimeout(timer);
       if (res.ok) {
