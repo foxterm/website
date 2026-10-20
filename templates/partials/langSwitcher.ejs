@@ -19,13 +19,11 @@
       <span class="lang-dd-caret" aria-hidden="true"></span>
     </summary>
     <ul class="lang-dd-menu">
+      <% for (const l of langs) { %>
       <li>
-        <span class="lang-dd-item lang-dd-active" aria-current="true"
-          ><%= lang.label %></span
-        >
-      </li>
-      <% for (const l of langs) { if (l.code === lang.code) continue; %>
-      <li>
+        <% if (l.code === lang.code) { %>
+        <span class="lang-dd-item lang-dd-active" aria-current="true"><%= l.label %></span>
+        <% } else { %>
         <a
           class="lang-dd-item"
           href="<%= urlPath(l.dir, pageRel) %>"
@@ -33,6 +31,7 @@
           hreflang="<%= l.hreflang %>"
           ><%= l.label %></a
         >
+        <% } %>
       </li>
       <% } %>
     </ul>
