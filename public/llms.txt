@@ -1,0 +1,49 @@
+# FoxTerm
+
+> FoxTerm is a native macOS and iOS terminal and server management application. It is an all-in-one SSH, SFTP, VNC, Docker, and Podman client built with Swift, Metal hardware acceleration, and C-native libraries. It emphasizes zero telemetry, privacy-first architecture, and Apple Secure Enclave key protection.
+
+## Main Pages
+
+- [Homepage](https://foxterm.app/): Landing page covering features, use cases, architecture, security model, pricing, FAQ, and download links.
+- [About](https://foxterm.app/about): Engineering philosophy, tech stack details, and developer background.
+- [Contact](https://foxterm.app/contact): Support email, project commission inquiries, and bug report guidance.
+- [Privacy Policy](https://foxterm.app/privacy): Zero-telemetry policy, local encryption details, and data sovereignty commitments.
+- [Terms of Service](https://foxterm.app/terms): Licensing, acceptable use, subscription terms, and disclaimers.
+
+## Product Features
+
+- **SSH Client**: Ed25519 key support, split-pane tabs, command snippets, auto-reconnect, session management.
+- **SFTP File Transfer**: Drag-and-drop file transfer, built-in editor, POSIX permission controls.
+- **VNC Remote Desktop**: Metal-accelerated rendering, touch and gesture support, full remote desktop experience.
+- **Real-Time Telemetry**: Live monitoring of CPU, memory, disk I/O, network, GPU, and VRAM usage.
+- **Container Orchestration**: Visual dashboard for Docker and Podman, rootless support, live log streaming, one-click exec shell.
+- **Universal Purchase**: One Apple ID unlocks both macOS and iOS/iPadOS editions.
+- **Zero Telemetry**: No analytics, no activity tracking, no connection logs collected.
+- **Secure Enclave**: Private keys stored in Apple Keychain with hardware-level isolation.
+- **iCloud Sync**: Encrypted configuration sync via private iCloud container.
+
+## Pricing
+
+- **Free Edition**: All features included, limited number of managed nodes.
+- **FoxTerm Pro**: Unlimited nodes. Available as App Store subscription (macOS + iOS, Universal Purchase) or Notarized Edition activation code (macOS only, purchased via pay.foxterm.app).
+
+## Technical Details
+
+- **Languages**: Swift and C. No Electron, no web wrappers.
+- **Rendering**: Metal GPU acceleration for terminal and VNC.
+- **Crypto**: Native Ed25519 via libssh and OpenSSL.
+- **Minimum Requirements**: macOS 14+ for Mac, iOS 17+ for iPhone and iPad.
+- **Protocols**: SSH, SFTP, VNC, Docker API, Podman API.
+
+## Localization
+
+The site is available in 10 languages: English, Simplified Chinese, Traditional Chinese, Japanese, German, Russian, French, Spanish, Korean, and Brazilian Portuguese. Each language has a URL prefix (e.g., `/zh-hans/`, `/ja/`, `/de/`).
+
+## Links
+
+- [App Store](https://apps.apple.com/us/app/foxterm/id6760452891): Download FoxTerm for macOS and iOS.
+- [GitHub](https://github.com/foxterm): Source code organization and releases.
+- [Blog](https://blog.foxterm.app/): Technical articles and product updates.
+- [Security](https://security.foxterm.app/): Security intelligence and vulnerability information.
+- [Notarized Edition Purchase](https://pay.foxterm.app/): Buy activation code for the notarized macOS edition.
+- [China Mirror](https://foxterm.cn): Chinese mainland mirror of the website.
