@@ -107,7 +107,7 @@ function renderPage(langCode, pageName) {
 
   const locals = {
     t,
-    lang,
+    lang: { ...lang, code: langCode },
     langs: langsList,
     baseUrl,
     pageRel,
