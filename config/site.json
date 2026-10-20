@@ -1,0 +1,423 @@
+{
+  "site": {
+    "baseUrl": "https://foxterm.app",
+    "defaultLang": "en",
+    "urlStyle": "clean",
+    "brand": "FoxTerm",
+    "lastmod": "auto",
+    "staticRoot": "public",
+    "copyFiles": [
+      "favicon.ico",
+      "appcast.xml",
+      "eb06668f88f4a52451a8076a0b0b1110.txt",
+      "GeoLite2-Country.mmdb"
+    ],
+    "copyDirs": [
+      "assets"
+    ],
+    "outputDir": "out",
+    "tailwind": {
+      "input": "input.css",
+      "output": "assets/tailwind.min.css"
+    },
+    "minifyJs": [
+      "assets/script.js",
+      "assets/tailwind.min.js"
+    ],
+    "minifyCss": [
+      "assets/style.css"
+    ]
+  },
+  "meta": {
+    "ogType": "website",
+    "ogSiteName": "FoxTerm",
+    "ogImage": "/assets/apple-touch-icon.png",
+    "ogImageWidth": "180",
+    "ogImageHeight": "180",
+    "twitterCard": "summary_large_image",
+    "twitterImage": "/assets/apple-touch-icon.png",
+    "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+    "googlebot": "index, follow",
+    "revisitAfter": "7 days",
+    "manifest": "/assets/site.webmanifest",
+    "favicon": "/favicon.ico",
+    "css": [
+      "/assets/tailwind.min.css",
+      "/assets/style.css"
+    ],
+    "script": "/assets/script.js"
+  },
+  "langs": {
+    "en": {
+      "dir": "/",
+      "htmlLang": "en",
+      "label": "English",
+      "locale": "en_US",
+      "hreflang": "en"
+    },
+    "zh-hans": {
+      "dir": "/zh-hans/",
+      "htmlLang": "zh-Hans",
+      "label": "简体中文",
+      "locale": "zh_CN",
+      "hreflang": "zh-Hans"
+    },
+    "zh-hant": {
+      "dir": "/zh-hant/",
+      "htmlLang": "zh-Hant",
+      "label": "繁體中文",
+      "locale": "zh_TW",
+      "hreflang": "zh-Hant"
+    },
+    "ja": {
+      "dir": "/ja/",
+      "htmlLang": "ja",
+      "label": "日本語",
+      "locale": "ja_JP",
+      "hreflang": "ja"
+    },
+    "de": {
+      "dir": "/de/",
+      "htmlLang": "de",
+      "label": "Deutsch",
+      "locale": "de_DE",
+      "hreflang": "de"
+    },
+    "ru": {
+      "dir": "/ru/",
+      "htmlLang": "ru",
+      "label": "Русский",
+      "locale": "ru_RU",
+      "hreflang": "ru"
+    },
+    "fr": {
+      "dir": "/fr/",
+      "htmlLang": "fr",
+      "label": "Français",
+      "locale": "fr_FR",
+      "hreflang": "fr"
+    },
+    "es": {
+      "dir": "/es/",
+      "htmlLang": "es",
+      "label": "Español",
+      "locale": "es_ES",
+      "hreflang": "es"
+    },
+    "ko": {
+      "dir": "/ko/",
+      "htmlLang": "ko",
+      "label": "한국어",
+      "locale": "ko_KR",
+      "hreflang": "ko"
+    },
+    "pt-br": {
+      "dir": "/pt-br/",
+      "htmlLang": "pt-BR",
+      "label": "Português (Brasil)",
+      "locale": "pt_BR",
+      "hreflang": "pt-BR"
+    }
+  },
+  "pages": {
+    "index": {
+      "path": "/",
+      "changefreq": "weekly",
+      "priority": 0.9,
+      "enPriority": 1.0,
+      "sitemap": true,
+      "localized": true
+    },
+    "about": {
+      "path": "/about",
+      "changefreq": "monthly",
+      "priority": 0.6,
+      "enPriority": 0.7,
+      "sitemap": true,
+      "localized": true
+    },
+    "contact": {
+      "path": "/contact",
+      "changefreq": "monthly",
+      "priority": 0.6,
+      "enPriority": 0.6,
+      "sitemap": true,
+      "localized": true
+    },
+    "privacy": {
+      "path": "/privacy",
+      "changefreq": "monthly",
+      "priority": 0.4,
+      "enPriority": 0.5,
+      "sitemap": true,
+      "localized": true
+    },
+    "terms": {
+      "path": "/terms",
+      "changefreq": "monthly",
+      "priority": 0.4,
+      "enPriority": 0.5,
+      "sitemap": true,
+      "localized": true
+    },
+    "404": {
+      "path": "/404",
+      "sitemap": false,
+      "localized": false
+    }
+  },
+  "nav": {
+    "index": {
+      "container": "max-w-7xl",
+      "logoSize": "text-2xl",
+      "links": [
+        {
+          "href": "#features"
+        },
+        {
+          "href": "#use-cases"
+        },
+        {
+          "href": "#architecture"
+        },
+        {
+          "href": "#security"
+        },
+        {
+          "href": "#pricing"
+        },
+        {
+          "href": "#faq"
+        }
+      ],
+      "cta": {
+        "href": "#download",
+        "labelKey": "nav.getApp.0",
+        "style": "index"
+      }
+    },
+    "legal": {
+      "container": "max-w-4xl",
+      "logoSize": "text-xl",
+      "links": [],
+      "cta": {
+        "href": "/",
+        "labelKey": "nav.backToHome.0",
+        "style": "legal"
+      }
+    }
+  },
+  "footer": {
+    "links": {
+      "index": [
+        {
+          "href": "/about",
+          "key": "footer.links.0.0",
+          "sep": true
+        },
+        {
+          "href": "/contact",
+          "key": "footer.links.1.0",
+          "sep": true
+        },
+        {
+          "href": "/privacy",
+          "key": "footer.links.2.0",
+          "sep": true
+        },
+        {
+          "href": "/terms",
+          "key": "footer.links.3.0",
+          "sep": true
+        },
+        {
+          "href": "https://receipt.foxterm.app",
+          "key": "footer.links.4.0",
+          "cls": "is-intl",
+          "sep": true,
+          "target": true
+        },
+        {
+          "href": "https://receipt.foxterm.cn",
+          "key": "footer.links.5.0",
+          "cls": "is-cn",
+          "sep": false,
+          "target": true
+        },
+        {
+          "href": "https://github.com/foxterm",
+          "key": "footer.links.6.0",
+          "sep": true,
+          "target": true
+        },
+        {
+          "href": "https://blog.foxterm.app/",
+          "key": "footer.links.7.0",
+          "sep": true,
+          "target": true
+        },
+        {
+          "href": "https://security.foxterm.app/",
+          "key": "footer.links.8.0",
+          "sep": true,
+          "target": true
+        }
+      ],
+      "about": [
+        {
+          "href": "/",
+          "key": "footer.links.0.0",
+          "sep": true
+        },
+        {
+          "href": "/privacy",
+          "key": "footer.links.1.0",
+          "sep": true
+        },
+        {
+          "href": "/terms",
+          "key": "footer.links.2.0",
+          "sep": true
+        },
+        {
+          "href": "https://github.com/foxterm",
+          "key": "footer.links.3.0",
+          "sep": true,
+          "target": true
+        },
+        {
+          "href": "https://blog.foxterm.app/",
+          "key": "footer.links.4.0",
+          "sep": true,
+          "target": true
+        },
+        {
+          "href": "https://security.foxterm.app/",
+          "key": "footer.links.5.0",
+          "sep": true,
+          "target": true
+        }
+      ],
+      "contact": [
+        {
+          "href": "/",
+          "key": "footer.links.0.0",
+          "sep": true
+        },
+        {
+          "href": "/about",
+          "key": "footer.links.1.0",
+          "sep": true
+        },
+        {
+          "href": "/privacy",
+          "key": "footer.links.2.0",
+          "sep": true
+        },
+        {
+          "href": "/terms",
+          "key": "footer.links.3.0",
+          "sep": true
+        },
+        {
+          "href": "https://github.com/foxterm",
+          "key": "footer.links.4.0",
+          "sep": true,
+          "target": true
+        },
+        {
+          "href": "https://blog.foxterm.app/",
+          "key": "footer.links.5.0",
+          "sep": true,
+          "target": true
+        },
+        {
+          "href": "https://security.foxterm.app/",
+          "key": "footer.links.6.0",
+          "sep": true,
+          "target": true
+        }
+      ],
+      "terms": [
+        {
+          "href": "/",
+          "key": "footer.links.0.0",
+          "sep": true
+        },
+        {
+          "href": "/about",
+          "key": "footer.links.1.0",
+          "sep": true
+        },
+        {
+          "href": "/contact",
+          "key": "footer.links.2.0",
+          "sep": true
+        },
+        {
+          "href": "/privacy",
+          "key": "footer.links.3.0",
+          "sep": true
+        },
+        {
+          "href": "https://github.com/foxterm",
+          "key": "footer.links.4.0",
+          "sep": true,
+          "target": true
+        },
+        {
+          "href": "https://blog.foxterm.app/",
+          "key": "footer.links.5.0",
+          "sep": true,
+          "target": true
+        },
+        {
+          "href": "https://security.foxterm.app/",
+          "key": "footer.links.6.0",
+          "sep": true,
+          "target": true
+        }
+      ],
+      "privacy": [
+        {
+          "href": "/",
+          "key": "footer.links.0.0",
+          "sep": true
+        },
+        {
+          "href": "/about",
+          "key": "footer.links.1.0",
+          "sep": true
+        },
+        {
+          "href": "/contact",
+          "key": "footer.links.2.0",
+          "sep": true
+        },
+        {
+          "href": "/terms",
+          "key": "footer.links.3.0",
+          "sep": true
+        },
+        {
+          "href": "https://github.com/foxterm",
+          "key": "footer.links.4.0",
+          "sep": true,
+          "target": true
+        },
+        {
+          "href": "https://blog.foxterm.app/",
+          "key": "footer.links.5.0",
+          "sep": true,
+          "target": true
+        },
+        {
+          "href": "https://security.foxterm.app/",
+          "key": "footer.links.6.0",
+          "sep": true,
+          "target": true
+        }
+      ]
+    }
+  }
+}

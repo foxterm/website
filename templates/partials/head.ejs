@@ -1,0 +1,51 @@
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="<%= seo.viewport || "width=device-width, initial-scale=1" %>" />
+
+    <!-- SEO Primary Meta Tags -->
+    <title><%= seo.title %></title>
+    <meta name="description" content="<%= seo.description %>" />
+    <% if (seo.keywords) { %><meta name="keywords" content="<%= seo.keywords %>" /><% } %>
+    <meta name="author" content="<%= seo.author %>" />
+    <meta name="robots" content="<%= seo.robots %>" />
+    <meta name="googlebot" content="<%= seo.googlebot %>" />
+    <meta name="language" content="<%= seo.language %>" />
+    <meta name="revisit-after" content="<%= seo["revisit-after"] %>" />
+
+    <!-- Canonical & Alternate Hreflang Tags -->
+    <link rel="canonical" href="<%= canonicalUrl %>" />
+    <% for (const l of langs) { %>
+    <link rel="alternate" hreflang="<%= l.hreflang %>" href="<%= baseUrl + urlPath(l.dir, pageRel) %>" />
+    <% } %>
+    <link rel="alternate" hreflang="x-default" href="<%= baseUrl + urlPath(defaultDir, pageRel) %>" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="<%= seo["og:type"] %>" />
+    <meta property="og:locale" content="<%= seo["og:locale"] %>" />
+    <meta property="og:locale:alternate" content="<%= ogLocales %>" />
+    <meta property="og:title" content="<%= seo["og:title"] %>" />
+    <meta property="og:description" content="<%= seo["og:description"] %>" />
+    <meta property="og:url" content="<%= canonicalUrl %>" />
+    <meta property="og:site_name" content="<%= seo["og:site_name"] %>" />
+    <meta property="og:image" content="<%= seo["og:image"] %>" />
+    <meta property="og:image:width" content="<%= seo["og:image:width"] %>" />
+    <meta property="og:image:height" content="<%= seo["og:image:height"] %>" />
+    <meta property="og:image:alt" content="<%= seo["og:image:alt"] %>" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="<%= seo["twitter:card"] %>" />
+    <meta name="twitter:title" content="<%= seo["twitter:title"] %>" />
+    <meta name="twitter:description" content="<%= seo["twitter:description"] %>" />
+    <meta name="twitter:image" content="<%= seo["twitter:image"] %>" />
+    <meta name="twitter:image:alt" content="<%= seo["twitter:image:alt"] %>" />
+
+    <!-- Favicons & Manifest -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="manifest" href="/assets/site.webmanifest" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="stylesheet" href="/assets/tailwind.min.css" />
+    <link rel="stylesheet" href="/assets/style.css" />
+
+    <!-- Structured Data (Schema.org JSON-LD) -->
+    <script type="application/ld+json"><%- seo.jsonld %></script>

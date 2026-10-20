@@ -17,12 +17,12 @@ jobs:
 
       - name: Download GeoLite2 file
         run: |
-          curl -L -o GeoLite2-Country.mmdb https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-Country.mmdb
+          curl -L -o public/GeoLite2-Country.mmdb https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-Country.mmdb
 
       - name: Check for changes
         id: git_status
         run: |
-          git add GeoLite2-Country.mmdb
+          git add public/GeoLite2-Country.mmdb
           if git diff --staged --quiet; then
             echo "changed=false" >> $GITHUB_OUTPUT
           else
@@ -45,5 +45,5 @@ jobs:
 #           tag_name: v${{ github.run_number }}
 #           name: "GeoLite2 Update ${{ github.run_number }}"
 #           body: "Auto-updated GeoLite2-Country database from P3TERX/GeoLite.mmdb"
-#           files: GeoLite2-Country.mmdb
+#           files: public/GeoLite2-Country.mmdb
 #           make_latest: true

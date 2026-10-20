@@ -1,0 +1,1907 @@
+{
+  "_meta": {
+    "lang": "zh-hant",
+    "label": "繁體中文",
+    "updated": "2026-10-20"
+  },
+  "_seo": {
+    "index": {
+      "viewport": "width=device-width, initial-scale=1",
+      "title": "FoxTerm - macOS 與 iOS 上的 SSH、VNC、SFTP、Docker 與 Podman 終端機用戶端 | 終端機應用程式",
+      "description": "FoxTerm 是一款隱私優先、高效能的 macOS 與 iOS 原生終端機應用程式。內建極速 SSH、SFTP、Metal 加速 VNC、即時 Linux 系統監控，以及視覺化 Docker/Podman 管理。零遙測，支援 Universal Purchase。",
+      "keywords": "macOS SSH 用戶端, Mac SFTP 用戶端, iOS VNC 用戶端, Docker 管理, Podman 管理, macOS 終端機應用程式, iOS SSH 用戶端, Mac 遠端桌面, 伺服器管理工具, Mac 終端機模擬器, 原生 SSH 用戶端, Metal 加速終端機",
+      "author": "FoxTerm",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "googlebot": "index, follow",
+      "language": "繁體中文",
+      "revisit-after": "7 days",
+      "og:type": "website",
+      "og:locale": "zh_TW",
+      "og:locale:alternate": "en_US, zh_CN, ja_JP, de_DE, ru_RU, es_ES, fr_FR, ko_KR, pt_BR",
+      "og:title": "FoxTerm | macOS 與 iOS 上的 Universal SSH、VNC、SFTP、Docker 終端機",
+      "og:description": "重新定義你的基礎建設操控方式。FoxTerm 把 SSH、SFTP、VNC 與容器管理整合在一起，零遙測，原生 Swift 與 Metal 效能。",
+      "og:url": "https://foxterm.app/zh-hant/",
+      "og:site_name": "FoxTerm",
+      "og:image": "/assets/apple-touch-icon.png",
+      "og:image:width": "180",
+      "og:image:height": "180",
+      "og:image:alt": "FoxTerm - macOS 與 iOS 原生終端機應用程式",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "FoxTerm - macOS 與 iOS 新一代終端機",
+      "twitter:description": "用 FoxTerm 掌控你的雲端基礎建設。Mac 與 iOS 一次購買通用，零遙測，原生效能。",
+      "twitter:image": "/assets/apple-touch-icon.png",
+      "twitter:image:alt": "FoxTerm 終端機應用程式",
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"SoftwareApplication\",\"name\":\"FoxTerm\",\"operatingSystem\":\"macOS 14+, iOS 17+\",\"applicationCategory\":\"DeveloperApplication\",\"applicationSubCategory\":\"TerminalEmulator\",\"softwareRequirements\":\"需要 macOS 14.0 或以上版本、iOS 17.0 或以上版本。\",\"offers\":{\"@type\":\"AggregateOffer\",\"priceCurrency\":\"USD\",\"offerCount\":\"3\",\"offers\":[{\"@type\":\"Offer\",\"name\":\"FoxTerm Free\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"全部功能免費開放，僅對節點（伺服器）數量設上限\"},{\"@type\":\"Offer\",\"name\":\"FoxTerm Pro 訂閱\",\"category\":\"Subscription\",\"description\":\"節點數量不限，功能集與免費版完全一致\"},{\"@type\":\"Offer\",\"name\":\"FoxTerm Pro — 公證版（啟用碼）\",\"category\":\"DirectLicense\",\"description\":\"直接散佈的已簽署、已公證 macOS 建構，透過在 pay.foxterm.app 購買的啟用碼解鎖；節點數量不限；啟用碼僅適用於 macOS 公證版\"}]},\"description\":\"為 macOS 與 iOS 打造的通用 SSH、VNC、SFTP、Docker 與 Podman 管理應用程式，零遙測，原生 Swift/Metal 效能。\",\"downloadUrl\":\"https://apps.apple.com/us/app/foxterm/id6760452891\",\"featureList\":\"高效能 SSH 終端機, SFTP 檔案管理員, Metal 加速 VNC 遠端桌面, 即時系統監控, Docker 與 Podman 容器管理, macOS 與 iOS Universal Purchase, 零遙測隱私保護, Apple Secure Enclave 金鑰保護\",\"screenshot\":\"/assets/og-image.png\",\"softwareVersion\":\"1.2.0\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}},{\"@type\":\"WebSite\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app/zh-hant/\",\"inLanguage\":\"zh-Hant\",\"potentialAction\":{\"@type\":\"SearchAction\",\"target\":\"https://foxterm.app/?q={search_term_string}\",\"query-input\":\"required name=search_term_string\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"首頁\",\"item\":\"https://foxterm.app/zh-hant/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"功能\",\"item\":\"https://foxterm.app/zh-hant/#features\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"使用情境\",\"item\":\"https://foxterm.app/zh-hant/#use-cases\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"架構\",\"item\":\"https://foxterm.app/zh-hant/#architecture\"},{\"@type\":\"ListItem\",\"position\":5,\"name\":\"安全\",\"item\":\"https://foxterm.app/zh-hant/#security\"},{\"@type\":\"ListItem\",\"position\":6,\"name\":\"定價\",\"item\":\"https://foxterm.app/zh-hant/#pricing\"},{\"@type\":\"ListItem\",\"position\":7,\"name\":\"常見問題\",\"item\":\"https://foxterm.app/zh-hant/#faq\"},{\"@type\":\"ListItem\",\"position\":8,\"name\":\"下載\",\"item\":\"https://foxterm.app/zh-hant/#download\"}]},{\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"FoxTerm 是什麼？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm 是一款為 macOS 與 iOS 原生打造的一體化、隱私優先的伺服器管理應用程式。它將高效能 SSH 終端機、SFTP 檔案管理、Metal 加速 VNC 遠端桌面、Linux 系統監控以及視覺化 Docker/Podman 容器控制整合在一起。\"}},{\"@type\":\"Question\",\"name\":\"FoxTerm Pro 訂閱如何在 Mac 與 iPhone/iPad 之間通用？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"免費版包含全部功能，僅對節點（伺服器）數量設上限。訂閱 FoxTerm Pro 即可解除該限制、管理無限節點，並在同一 Apple ID 下同時解鎖你授權的所有 Apple 裝置（macOS 與 iOS/iPadOS），設定透過你的私有 iCloud Container 無縫同步。\"}},{\"@type\":\"Question\",\"name\":\"FoxTerm 如何保護伺服器憑證與金鑰？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm 嚴格執行零遙測政策，資料 100% 本地加密。伺服器憑證、密碼與 SSH 私鑰被隔離在 Apple 硬體 Keychain 與 Secure Enclave 內部，絕不收集、代理或向第三方伺服器傳送任何連線紀錄或敏感使用者資料。\"}},{\"@type\":\"Question\",\"name\":\"FoxTerm 可以不用命令列管理 Docker 與 Podman 容器嗎？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"可以。FoxTerm Pro 內建視覺化面板，用於管理 Docker 與 Podman 的容器、映像檔與磁碟區。它支援 Rootless 容器、即時日誌串流，並可在圖形介面內一鍵開啟 Exec Shell。\"}},{\"@type\":\"Question\",\"name\":\"FoxTerm 與基於 Electron 的終端機用戶端有什麼不同？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm 不是 Electron 外殼。它從零開始使用原生 Swift、Metal 硬體加速以及 C 語言原生函式庫（OpenSSL、libssh、libvncclient）打造，啟動近乎瞬時、資源占用極低，並針對 iOS 做了原生最佳化。\"}},{\"@type\":\"Question\",\"name\":\"支援哪些平台與作業系統？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm 為 Apple 平台原生打造：運行於 macOS 14.0 及以上、iOS/iPadOS 17.0 及以上，覆蓋 iPhone 與 iPad。一次 Universal Purchase 解鎖所有裝置。沒有 Windows、Android 或 Linux 桌面版本。\"}},{\"@type\":\"Question\",\"name\":\"支援哪些協定與認證方式？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm 支援 SSH、SFTP 與 VNC 連線，並透過 SSH 管理 Docker 與 Podman 引擎。它支援現代加密演算法與 Ed25519 等金鑰類型、分割畫面終端機工作階段、命令片段、拖曳式 SFTP 傳輸，以及容器、映像檔與磁碟區的視覺化管理。\"}},{\"@type\":\"Question\",\"name\":\"FoxTerm 會收集資料或透過它的伺服器中繼我的連線嗎？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"不會。FoxTerm 從你的裝置直連你自己的伺服器，絕不代理流量。它嚴格執行零遙測政策，沒有分析、活動追蹤或連線日誌。憑證與金鑰在裝置端加密，並隔離在 Apple Keychain 與 Secure Enclave 內部。\"}},{\"@type\":\"Question\",\"name\":\"如何在 macOS 上取得 Pro，iOS 又如何啟用？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"在 macOS 上取得 Pro 有兩種方式。Mac App Store 版是由 Apple 按月或按年扣費的訂閱，可在 Apple ID 訂閱設定中管理或取消，續訂與退款由 Apple 處理；此版本透過 Universal Purchase 同時解鎖 iOS，iOS app 受 Apple 政策約束。公證版是直接散佈的已簽署 macOS 建構，透過在 pay.foxterm.app 購買的啟用碼解鎖，僅適用於 macOS，不包含 iOS 啟用。iOS app 本身可在 App Store 免費下載，僅在透過 App Store 版啟用 Pro 後才會自動解鎖。\"}}]}]}"
+    },
+    "about": {
+      "viewport": "width=device-width, initial-scale=1",
+      "title": "關於 FoxTerm | 尊重你的終端機用戶端",
+      "description": "FoxTerm 是一款原生 macOS 與 iOS 的 SSH、SFTP、VNC 及 Docker 用戶端。使用 Swift 和 C 編寫。免費下載，Pro 支援訂閱或啟動碼。零遙測。",
+      "keywords": "FoxTerm 關於, SSH 用戶端, 終端機模擬器, macOS SSH, iOS 終端機, Swift SSH 用戶端, 原生終端機, 安全終端機, FoxTerm 故事",
+      "author": "FoxTerm",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "googlebot": "index, follow",
+      "language": "繁體中文",
+      "revisit-after": "30 days",
+      "og:type": "website",
+      "og:locale": "zh_TW",
+      "og:locale:alternate": "en_US, zh_CN, ja_JP, de_DE, ru_RU, es_ES, fr_FR, ko_KR, pt_BR",
+      "og:title": "關於 FoxTerm | 尊重你的終端機用戶端",
+      "og:description": "原生 macOS 與 iOS SSH 用戶端。Swift 與 C 打造。免費下載，Pro 支援訂閱或啟動碼。零遙測。",
+      "og:url": "https://foxterm.app/zh-hant/about",
+      "og:site_name": "FoxTerm",
+      "og:image": "/assets/apple-touch-icon.png",
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"AboutPage\",\"name\":\"關於 FoxTerm\",\"url\":\"https://foxterm.app/zh-hant/about\",\"inLanguage\":\"zh-Hant\",\"isPartOf\":{\"@type\":\"WebSite\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app/zh-hant/\"},\"description\":\"FoxTerm 的故事 —— 一款面向 macOS 與 iOS 的原生 SSH、SFTP、VNC 及 Docker 用戶端。\",\"breadcrumb\":{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"首頁\",\"item\":\"https://foxterm.app/zh-hant/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"關於\",\"item\":\"https://foxterm.app/zh-hant/about\"}]}}"
+    },
+    "contact": {
+      "viewport": "width=device-width, initial-scale=1",
+      "title": "聯絡我們與專案合作 - FoxTerm | 直達開發者",
+      "description": "直達 FoxTerm 核心架構師：產品支援、Bug 回報，或承接 React、React Native、Go、Swift 等專案開發委託，獨立工程師親自交付。",
+      "keywords": "FoxTerm 聯絡, FoxTerm 支援, SSH 用戶端支援, 開發者回饋, 終端機說明中心, 專案合作, 接案, React 開發, React Native 開發, Go 開發, Swift 開發",
+      "author": "FoxTerm",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "googlebot": "index, follow",
+      "language": "繁體中文",
+      "revisit-after": "30 days",
+      "og:type": "website",
+      "og:locale": "zh_TW",
+      "og:locale:alternate": "en_US, zh_CN, ja_JP, de_DE, ru_RU, es_ES, fr_FR, ko_KR, pt_BR",
+      "og:title": "聯絡我們 - FoxTerm",
+      "og:description": "直達核心架構師。產品支援、Bug 回報，或承接值得深挖的專案。",
+      "og:url": "https://foxterm.app/zh-hant/contact",
+      "og:site_name": "FoxTerm",
+      "og:image": "/assets/apple-touch-icon.png",
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"ContactPage\",\"name\":\"聯絡我們 - FoxTerm\",\"url\":\"https://foxterm.app/zh-hant/contact\",\"inLanguage\":\"zh-Hant\",\"isPartOf\":{\"@type\":\"WebSite\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app/zh-hant/\"},\"description\":\"FoxTerm 使用者直達核心開發者的支援頁面。\",\"breadcrumb\":{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"首頁\",\"item\":\"https://foxterm.app/zh-hant/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"聯絡我們\",\"item\":\"https://foxterm.app/zh-hant/contact\"}]}}"
+    },
+    "privacy": {
+      "viewport": "width=device-width, initial-scale=1",
+      "title": "隱私權政策 - FoxTerm | 隱私優先的終端機應用程式",
+      "description": "FoxTerm 隱私權政策。了解我們如何透過零遙測政策、本地加密、Apple Secure Enclave 金鑰儲存與完全的資料自主來保護你的資料。",
+      "keywords": "FoxTerm 隱私, 零遙測, 終端機隱私, SSH 安全, 資料保護, Secure Enclave 加密",
+      "author": "FoxTerm",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "googlebot": "index, follow",
+      "language": "繁體中文",
+      "revisit-after": "30 days",
+      "og:type": "website",
+      "og:locale": "zh_TW",
+      "og:locale:alternate": "en_US, zh_CN, ja_JP, de_DE, ru_RU, es_ES, fr_FR, ko_KR, pt_BR",
+      "og:title": "隱私權政策 - FoxTerm",
+      "og:description": "零遙測、本地加密，讓你的伺服器管理資料完全自主。",
+      "og:url": "https://foxterm.app/zh-hant/privacy",
+      "og:site_name": "FoxTerm",
+      "og:image": "/assets/apple-touch-icon.png",
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"name\":\"隱私權政策 - FoxTerm\",\"url\":\"https://foxterm.app/zh-hant/privacy\",\"inLanguage\":\"zh-Hant\",\"isPartOf\":{\"@type\":\"WebSite\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app/zh-hant/\"},\"description\":\"FoxTerm 隱私權政策，說明零遙測保護、本地加密與使用者資料完全自主。\",\"breadcrumb\":{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"首頁\",\"item\":\"https://foxterm.app/zh-hant/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"隱私權政策\",\"item\":\"https://foxterm.app/zh-hant/privacy\"}]}}"
+    },
+    "terms": {
+      "viewport": "width=device-width, initial-scale=1",
+      "title": "服務條款 - FoxTerm",
+      "description": "FoxTerm 服務條款。了解 FoxTerm SSH/VNC/SFTP 用戶端的授權許可、可接受使用範圍、訂閱條款與免責聲明。",
+      "keywords": "FoxTerm 服務條款, EULA, 授權合約, App Store 條款, 訂閱條款",
+      "author": "FoxTerm",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "googlebot": "index, follow",
+      "language": "繁體中文",
+      "revisit-after": "30 days",
+      "og:type": "website",
+      "og:locale": "zh_TW",
+      "og:locale:alternate": "en_US, zh_CN, ja_JP, de_DE, ru_RU, es_ES, fr_FR, ko_KR, pt_BR",
+      "og:title": "服務條款 - FoxTerm",
+      "og:description": "FoxTerm 的服務條款與終端使用者授權合約。",
+      "og:url": "https://foxterm.app/zh-hant/terms",
+      "og:site_name": "FoxTerm",
+      "og:image": "/assets/apple-touch-icon.png",
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"name\":\"服務條款 - FoxTerm\",\"url\":\"https://foxterm.app/zh-hant/terms\",\"inLanguage\":\"zh-Hant\",\"isPartOf\":{\"@type\":\"WebSite\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app/zh-hant/\"},\"description\":\"FoxTerm 服務條款，說明授權條款、可接受使用範圍、訂閱與法律免責聲明。\",\"breadcrumb\":{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"首頁\",\"item\":\"https://foxterm.app/zh-hant/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"服務條款\",\"item\":\"https://foxterm.app/zh-hant/terms\"}]}}"
+    }
+  },
+  "index": {
+    "nav": {
+      "logo": [
+        "FoxTerm"
+      ],
+      "links": [
+        [
+          "功能"
+        ],
+        [
+          "使用情境"
+        ],
+        [
+          "架構"
+        ],
+        [
+          "安全"
+        ],
+        [
+          "定價"
+        ],
+        [
+          "常見問題"
+        ]
+      ],
+      "langAria": "語言",
+      "langCurrent": [
+        "繁體中文"
+      ],
+      "getApp": [
+        "取得 App"
+      ]
+    },
+    "hero": {
+      "badge": [
+        "100% 原生 Apple 平台 · 零遙測 · Universal Purchase"
+      ],
+      "title": [
+        "用",
+        "FoxTerm",
+        " 從容掌控你的基礎建設"
+      ],
+      "tags": [
+        [
+          "SSH"
+        ],
+        [
+          "VNC"
+        ],
+        [
+          "SFTP"
+        ],
+        [
+          "Docker"
+        ],
+        [
+          "Podman"
+        ]
+      ],
+      "subtitle": [
+        "面向 macOS 與 iOS 的一體化原生終端機。SSH、SFTP、Metal 加速 VNC、即時 Linux 監控與視覺化 Docker/Podman 管理——安全、極速， 開啟即用。"
+      ],
+      "cta": [
+        {
+          "alt": "在 Apple App Store 下載",
+          "caption": [
+            "App Store 通用購買"
+          ],
+          "label": [
+            "下載 macOS 與 iOS 版本"
+          ]
+        }
+      ]
+    },
+    "trust": {
+      "items": [
+        {
+          "value": [
+            "4-in-1"
+          ],
+          "body": [
+            "SSH · SFTP · VNC 與容器，盡收一個視窗"
+          ]
+        },
+        {
+          "body": [
+            "憑證與金鑰只留在你的裝置上"
+          ]
+        },
+        {
+          "body": [
+            "遙測、分析與第三方追蹤程式"
+          ]
+        },
+        {
+          "body": [
+            "一個 Apple ID 同時解鎖 Mac、iPhone 與 iPad"
+          ]
+        }
+      ]
+    },
+    "architecture": {
+      "title": [
+        "性能至臻。",
+        "。",
+        "清晰至簡"
+      ],
+      "lede": [
+        "沒有 Web 外殼，沒有冗餘臃腫。FoxTerm 把極簡的工業設計與毫不妥協的原生渲染效能合而為一。"
+      ],
+      "cards": [
+        {
+          "title": [
+            "原生效能",
+            "由銳利切面定義，",
+            "為",
+            "而生。",
+            "敏捷",
+            "01 / 銳利邊緣"
+          ],
+          "body": [
+            "基於 Swift 與 Metal 加速打造，指令輸入近乎零延遲，畫面渲染流暢跟手。",
+            "品牌標誌採用低多面體幾何設計，以俐落、精確的向量切面取代複雜曲線，象徵精準與速度。",
+            "這一設計語言正是我們軟體哲學的寫照：",
+            "零臃腫、純原生執行、效率最大化。",
+            "乾淨的向量線條，凸顯終端機即刻回應的手感。"
+          ]
+        },
+        {
+          "title": [
+            "幾何精度",
+            "02 / 層級"
+          ],
+          "body": [
+            "乾淨的低多面體切面消除視覺噪音，呈現銳利、無干擾的開發者工作區。",
+            "豐富的對比陰影，為深色模式環境而打磨。"
+          ]
+        },
+        {
+          "title": [
+            "統一工作流",
+            "03 / 穩定"
+          ],
+          "body": [
+            "把遠端 Shell、檔案傳輸、圖形桌面與容器管理整合進同一個連貫的介面。",
+            "相互咬合的幾何結構，呼應安全網路協定。"
+          ]
+        },
+        {
+          "title": [
+            "04 / 高效"
+          ],
+          "body": [
+            "匯聚的線條，把複雜收束為毫不費力的工作流。"
+          ]
+        },
+        {
+          "badge": [
+            "參考網格：開",
+            "渲染：TTF 字型",
+            "⬇ TTF",
+            "⬇ SVG"
+          ]
+        }
+      ],
+      "badge": [
+        " 向量幾何與圖示體系",
+        "類型：圖示字型"
+      ]
+    },
+    "security": {
+      "badge": [
+        "零信任安全架構"
+      ],
+      "title": [
+        "本地加密，",
+        "資料完全自主"
+      ],
+      "lede": [
+        "你的伺服器金鑰就是你的核心資產。FoxTerm 嚴格執行零遙測，搭配 100% 本地加密與硬體隔離。"
+      ],
+      "cards": [
+        {
+          "badge": [
+            "01 / 零遙測"
+          ],
+          "body": [
+            "零遙測、零行為追蹤。連線紀錄永遠不會離開你的本地環境。"
+          ]
+        },
+        {
+          "badge": [
+            "02 / 安全隔區"
+          ],
+          "body": [
+            "藉由 Apple Keychain 與 Secure Enclave 硬體隔離儲存私鑰。"
+          ]
+        },
+        {
+          "badge": [
+            "03 / 原生加密"
+          ],
+          "body": [
+            "由 C 語言原生引擎驅動，完整支援 Ed25519 與現代加密套件。"
+          ]
+        },
+        {
+          "badge": [
+            "04 / ICLOUD 同步"
+          ],
+          "body": [
+            "設定僅透過你私有的加密 iCloud Container 無縫同步。"
+          ]
+        }
+      ]
+    },
+    "features": {
+      "title": [
+        "完整能力"
+      ],
+      "lede": [
+        "現代伺服器管理所需的一切，統一在同一個工作流中。"
+      ],
+      "cards": [
+        {
+          "badge": [
+            "SSH"
+          ],
+          "title": [
+            "高效能 SSH"
+          ],
+          "body": [
+            "支援 Ed25519 金鑰、分割畫面分頁、指令片段與毫秒級智慧自動重連。"
+          ]
+        },
+        {
+          "badge": [
+            "MON"
+          ],
+          "title": [
+            "即時監控"
+          ],
+          "body": [
+            "即時視覺化 CPU、記憶體、磁碟 I/O、網路傳輸量與 GPU/VRAM 指標。"
+          ]
+        },
+        {
+          "badge": [
+            "SFTP"
+          ],
+          "title": [
+            "SFTP 檔案傳輸"
+          ],
+          "body": [
+            "支援拖曳傳輸、內建編輯器與權限控制。"
+          ]
+        },
+        {
+          "badge": [
+            "VNC"
+          ],
+          "title": [
+            "Metal 加速 VNC"
+          ],
+          "body": [
+            "硬體加速 VNC 引擎，遠端桌面流暢順手，並針對觸控與手勢做了專門調校。"
+          ]
+        },
+        {
+          "badge": [
+            "CTL"
+          ],
+          "title": [
+            "容器編排"
+          ],
+          "body": [
+            "容器、映像檔與磁碟區的視覺化面板，支援 Rootless 執行階段與即時日誌串流。"
+          ]
+        },
+        {
+          "badge": [
+            "iOS"
+          ],
+          "title": [
+            "全平台通用"
+          ],
+          "body": [
+            "一次訂閱同時涵蓋 macOS 與 iOS/iPadOS；全部功能免費，僅節點數受限——升級 Pro 即可解鎖無限節點。"
+          ]
+        }
+      ]
+    },
+    "useCases": {
+      "badge": [
+        "為你的工作方式而生"
+      ],
+      "title": [
+        "一套工具包，搞定所有",
+        "遠端工作流"
+      ],
+      "lede": [
+        "從值班時的線上故障排查，到周末折騰家庭實驗室，FoxTerm 都能適應你管理機器的方式。"
+      ],
+      "cards": [
+        {
+          "badge": [
+            "OPS"
+          ],
+          "title": [
+            "SRE 與 DevOps 值班"
+          ],
+          "body": [
+            "幾秒鐘開啟工作階段，即時追蹤容器日誌，在一次抖動演變成故障之前看清 CPU、記憶體與磁碟 I/O 的即時數據。"
+          ]
+        },
+        {
+          "badge": [
+            "LAB"
+          ],
+          "title": [
+            "家庭實驗室與自我託管玩家"
+          ],
+          "body": [
+            "從 Mac 或手機操控路由器、NAS 設備與 Docker/Podman 技術棧——不需要跳板主機、不需要雲端閘道、沒有中間人。"
+          ]
+        },
+        {
+          "badge": [
+            "NET"
+          ],
+          "title": [
+            "網路與邊緣工程師"
+          ],
+          "body": [
+            "透過 SSH、SFTP 與流暢的 Metal VNC 連接 OpenWrt、IoT 與遠端邊緣設備——即使在不穩定的行動網路下也能勝任。"
+          ]
+        },
+        {
+          "badge": [
+            "MOB"
+          ],
+          "title": [
+            "行動優先管理員"
+          ],
+          "body": [
+            "在 iPhone 或 iPad 上用原生觸控、手勢與快速鍵，操作完整終端機、傳輸檔案、重啟容器。"
+          ]
+        }
+      ]
+    },
+    "comparison": {
+      "title": [
+        "架構優勢"
+      ],
+      "lede": [
+        "FoxTerm 對比傳統 CLI 工具與依賴雲端的 SaaS 應用程式。"
+      ],
+      "table": {
+        "head": [
+          [
+            "維度"
+          ],
+          [
+            "FoxTerm"
+          ],
+          [
+            "傳統 CLI 工具"
+          ],
+          [
+            "雲端同步 SaaS 應用程式"
+          ]
+        ],
+        "rows": [
+          [
+            [
+              "隱私與遙測"
+            ],
+            [
+              "✓ 100% 本地 / 零遙測"
+            ],
+            [
+              "✓ 僅本地"
+            ],
+            [
+              "✗ 集中式雲端同步"
+            ]
+          ],
+          [
+            [
+              "金鑰保護"
+            ],
+            [
+              "✓ Secure Enclave 硬體"
+            ],
+            [
+              "~ 一般檔案系統"
+            ],
+            [
+              "✗ 第三方雲端伺服器"
+            ]
+          ],
+          [
+            [
+              "容器介面"
+            ],
+            [
+              "✓ 原生 Docker 與 Podman GUI"
+            ],
+            [
+              "✗ 僅命令列"
+            ],
+            [
+              "~ 基本日誌檢視器"
+            ]
+          ],
+          [
+            [
+              "渲染引擎"
+            ],
+            [
+              "✓ 原生 Swift 與 Metal"
+            ],
+            [
+              "~ 基本文字渲染"
+            ],
+            [
+              "✗ Electron 重型外殼"
+            ]
+          ],
+          [
+            [
+              "通用平台"
+            ],
+            [
+              "✓ macOS + iOS 通用"
+            ],
+            [
+              "✗ 桌面/行動分離"
+            ],
+            [
+              "~ 分別購買"
+            ]
+          ]
+        ]
+      }
+    },
+    "pricing": {
+      "badge": [
+        "簡單、誠懇的定價"
+      ],
+      "title": [
+        "所有功能免費。"
+      ],
+      "pro": {
+        "price": [
+          [
+            "Pro 只解除節點上限。",
+            "無限"
+          ],
+          [
+            "節點"
+          ]
+        ],
+        "title": [
+          "FoxTerm Pro"
+        ],
+        "tag": [
+          "推薦"
+        ],
+        "lede": [
+          "包含免費版全部能力，並解除節點上限"
+        ],
+        "items": [
+          [
+            "免費版建構中的全部功能"
+          ],
+          [
+            "為不斷擴大的機群提供無限節點 （伺服器）"
+          ],
+          [
+            "一個 Apple ID，通用 macOS + iOS/iPadOS"
+          ],
+          [
+            "未來所有 Pro 增強功能"
+          ],
+          [
+            "由開發者直接提供的 優先支援"
+          ]
+        ],
+        "button": [
+          "See How to Get Pro"
+        ]
+      },
+      "lede": [
+        "免費版包含全部能力——SSH、SFTP、VNC、即時遙測與容器——僅對節點數量設上限。Pro 為更大的機群解除該限制，並覆蓋你所有裝置。"
+      ],
+      "free": {
+        "title": [
+          "免費版"
+        ],
+        "tag": [
+          "不需綁定卡片"
+        ],
+        "lede": [
+          "全部功能，節點數量設上限"
+        ],
+        "items": [
+          [
+            "完整 SSH 終端機， 支援分割畫面、分頁與指令片段"
+          ],
+          [
+            "SFTP 傳輸、 Metal VNC 與即時遙測"
+          ],
+          [
+            "視覺化 Docker 與 Podman 管理"
+          ],
+          [
+            "Secure Enclave 金鑰、零遙測、iCloud 同步"
+          ],
+          [
+            "節點（伺服器） 數量設上限"
+          ]
+        ],
+        "button": [
+          "免費下載"
+        ]
+      },
+      "options": {
+        "0": {
+          "label": [
+            "OPTION 1 · SUBSCRIPTION"
+          ],
+          "title": [
+            "Mac App Store Edition"
+          ],
+          "items": [
+            [
+              "由 Apple 按月或按年扣費的訂閱"
+            ],
+            [
+              "Universal Purchase——自動啟用 macOS 與 iOS"
+            ],
+            [
+              "隨時取消； 續訂與退款由 Apple 處理"
+            ]
+          ],
+          "button": [
+            "View on the App Store"
+          ]
+        },
+        "1": {
+          "label": [
+            "OPTION 2 · ACTIVATION CODE"
+          ],
+          "title": [
+            "Notarized Edition for macOS"
+          ],
+          "items": [
+            [
+              "直接散佈的已簽署、 已公證 macOS 建構——無需 App Store"
+            ],
+            [
+              "使用在 pay.foxterm.app 直接購買的啟用碼解鎖"
+            ],
+            [
+              "僅適用於 macOS，獨立於 App Store 版"
+            ]
+          ],
+          "button": [
+            "Get an Activation Code"
+          ]
+        },
+        "title": [
+          "在 macOS 上解鎖 Pro 的兩種方式"
+        ],
+        "subtitle": [
+          "App Store 版（macOS + iOS）受蘋果規則約束，透過 Universal Purchase 同步解鎖；公證版僅適用於 macOS，啟用碼不附帶 iOS。"
+        ],
+        "footnote": [
+          "iOS 應用可在 App Store 免費下載，透過 App Store 版啟用 Pro 後自動解鎖。連線設定與組態透過你的私有 iCloud 容器跨裝置同步。"
+        ]
+      }
+    },
+    "faq": {
+      "badge": [
+        "常見問題"
+      ],
+      "title": [
+        "關於",
+        "FoxTerm",
+        "，你想知道的一切"
+      ],
+      "lede": [
+        "安全、Pro 授權與原生效能——一次講清楚。"
+      ],
+      "items": [
+        {
+          "q": [
+            " FoxTerm 是什麼？它提供哪些核心功能？"
+          ],
+          "answer": [
+            "FoxTerm 是一款為 macOS 與 iOS 原生打造的一體化、隱私優先的伺服器管理應用程式。它整合了高效能的",
+            "、",
+            "、",
+            "、",
+            "，以及視覺化的",
+            "。",
+            "SSH 終端機",
+            "SFTP 檔案管理",
+            "Metal 加速 VNC 遠端桌面",
+            "即時系統監控",
+            "Docker 與 Podman 容器控制"
+          ]
+        },
+        {
+          "q": [
+            " 免費版與 Pro 有什麼差別？App Store 版如何跨裝置使用？"
+          ],
+          "answer": [
+            "免費版並非功能殘缺的演示版——從",
+            "、",
+            " 到",
+            "、即時監控以及",
+            " 管理，全部功能完整開放。唯一的限制是可管理的",
+            "數量。App Store 版透過 Universal Purchase 同時解鎖 macOS 與 iOS/iPadOS；公證版為獨立 macOS 版本，啟用碼僅適用於 macOS。設定透過你的私有 iCloud Container 加密同步。",
+            "SSH 終端機",
+            "SFTP",
+            "Metal 加速 VNC",
+            "Docker 與 Podman",
+            "節點（伺服器）"
+          ]
+        },
+        {
+          "q": [
+            " FoxTerm 如何保護我的伺服器金鑰與連線憑證？"
+          ],
+          "answer": [
+            "FoxTerm 嚴格執行",
+            "，資料 100% 本地加密。伺服器憑證與 SSH 私鑰被硬體隔離在 Apple",
+            " 內部，資料絕不會傳送到第三方伺服器。",
+            "零遙測政策",
+            "Secure Enclave 與 Keychain"
+          ]
+        },
+        {
+          "q": [
+            " FoxTerm 與基於 Electron 的終端機用戶端有什麼不同？"
+          ],
+          "answer": [
+            "FoxTerm 不是 Electron 外殼。它從零開始採用",
+            " 打造，啟動近乎瞬時、資源占用極低，並針對 iOS 做了原生最佳化。",
+            "原生 Swift、Metal 硬體加速以及 C 語言原生函式庫（OpenSSL、libssh、libvncclient）"
+          ]
+        },
+        {
+          "q": [
+            " 支援哪些平台與作業系統？"
+          ],
+          "answer": [
+            "FoxTerm 為 Apple 平台原生打造：執行於 macOS 14.0 及以上、iOS/iPadOS 17.0 及以上，涵蓋 iPhone 與 iPad，一次 Universal Purchase 解鎖所有裝置。沒有 Windows、Android 或 Linux 桌面版本——FoxTerm 僅為 Apple 原生技術棧而設計。"
+          ]
+        },
+        {
+          "q": [
+            " 支援哪些通訊協定與驗證方式？"
+          ],
+          "answer": [
+            "FoxTerm 支援 SSH、SFTP 與 VNC 連線，並透過 SSH 管理 Docker 與 Podman 引擎。內建現代加密演算法與 Ed25519 等金鑰類型、分割畫面終端機工作階段、指令片段、拖曳式 SFTP 傳輸，以及容器、映像檔與磁碟區的視覺化管理。"
+          ]
+        },
+        {
+          "q": [
+            " FoxTerm 會收集資料，或透過它的伺服器中繼我的連線嗎？"
+          ],
+          "answer": [
+            "不會。FoxTerm 從你的裝置直連你自己的伺服器，絕不代理流量。它嚴格執行零遙測政策——沒有分析、沒有活動追蹤、沒有連線日誌。憑證與私鑰在裝置端加密，並隔離在 Apple Keychain 與 Secure Enclave 內部。"
+          ]
+        },
+        {
+          "q": [
+            " 如何在 macOS 上取得 Pro，iOS 又如何啟用？"
+          ],
+          "answer": [
+            "在 macOS 上取得 Pro 有兩種方式。",
+            "是由 Apple 按月或按年扣費的訂閱——可在 Apple ID 訂閱設定中管理或取消，續訂與退款由 Apple 處理；此版本透過 Universal Purchase 同時解鎖 iOS，iOS app 受 Apple 政策約束。",
+            " 是直接散佈的已簽署 macOS 建構，透過在 pay.foxterm.app 購買的啟用碼解鎖，僅適用於 macOS，啟用碼不包含 iOS 啟用。iOS app 本身可在 App Store 免費下載，僅在透過 App Store 版啟用 Pro 後才會自動解鎖。",
+            "Mac App Store 版",
+            "公證版"
+          ]
+        }
+      ],
+      "qPrefix": [
+        "Q:",
+        "Q:",
+        "Q:",
+        "Q:",
+        "Q:",
+        "Q:",
+        "Q:",
+        "Q:"
+      ]
+    },
+    "download": {
+      "title": [
+        "下載 FoxTerm"
+      ],
+      "subtitle": [
+        "Mac · iPhone · iPad——所有功能免費開始使用，App Store 版 Pro 可在 Mac 與 iOS 設備上解鎖。"
+      ],
+      "buttons": [
+        {
+          "alt": "在 App Store 取得",
+          "label": [
+            "前往 App Store 下載"
+          ]
+        },
+        {
+          "label": [
+            "公證版下載（macOS）"
+          ]
+        }
+      ],
+      "note": [
+        "公證版建構已簽署、已公證，可在 App Store 之外直接安裝——前往",
+        " 取得啟用碼解鎖 Pro。啟用碼僅適用於 macOS 公證版，iOS 應用僅在透過 App Store 版啟用後自動解鎖。",
+        "pay.foxterm.app"
+      ],
+      "reqs": [
+        {
+          "label": [
+            "macOS"
+          ],
+          "value": [
+            "14.0 Sonoma 及以上"
+          ]
+        },
+        {
+          "label": [
+            "iOS / iPadOS"
+          ],
+          "value": [
+            "17.0 及以上"
+          ]
+        },
+        {
+          "label": [
+            "Licensing"
+          ],
+          "value": [
+            "App Store 或啟用碼授權"
+          ]
+        },
+        {
+          "label": [
+            "Trust"
+          ],
+          "value": [
+            "已公證、已簽署、沙盒執行"
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "copyright": [
+        " FoxTerm.",
+        "Hosted on Tencent Makers."
+      ],
+      "links": [
+        [
+          "關於"
+        ],
+        [
+          "聯絡我們"
+        ],
+        [
+          "隱私權政策"
+        ],
+        [
+          "服務條款"
+        ],
+        [
+          "購買憑證驗證"
+        ],
+        [
+          "購買憑證驗證"
+        ],
+        [
+          "GitHub"
+        ],
+        [
+          "Blog"
+        ],
+        [
+          "Security Intel"
+        ]
+      ],
+      "icp": [
+        "蜀ICP备2024075062号"
+      ],
+      "mirror": [
+        "中國鏡像：",
+        " | 全球官網：",
+        "foxterm.cn",
+        "foxterm.app"
+      ],
+      "badges": [
+        {
+          "alt": "Apple Notarized"
+        },
+        {
+          "alt": "Secure Enclave"
+        },
+        {
+          "alt": "App Sandbox"
+        },
+        {
+          "alt": "Zero Telemetry"
+        },
+        {
+          "alt": "Native Swift & C"
+        },
+        {
+          "alt": "SAST Passed"
+        }
+      ]
+    }
+  },
+  "about": {
+    "nav": {
+      "logo": [
+        "FoxTerm"
+      ],
+      "langAria": "語言",
+      "langCurrent": [
+        "繁體中文"
+      ],
+      "backToHome": [
+        "返回首頁"
+      ]
+    },
+    "content": {
+      "badge": [
+        "SWIFT · C · 絕不妥協"
+      ],
+      "title": [
+        "軟體應該",
+        "快速、私密、經久耐用。"
+      ],
+      "lede": [
+        "FoxTerm 是一款面向 macOS 與 iOS 的原生終端機用戶端。沒有 Electron，沒有 Web 包裝，沒有遙測 —— 只有 Swift 和 C 在做它們最擅長的事。"
+      ],
+      "sections": [
+        {
+          "label": [
+            "01 / 為什麼選擇 FoxTerm"
+          ],
+          "title": [
+            "現有的工具不夠好，所以我寫了一個。"
+          ],
+          "body": [
+            "SSH 是基礎設施運作的介面。深夜部署、伺服器除錯、緊急修復，都在這裡完成。我試過的每一個用戶端，要么停留在 2004 年的感覺，要么對本該原生的功能收取訂閱費。",
+            "FoxTerm 最初只是一個個人工具 —— 一個真正尊重 macOS 和 iOS 設計語言、運行在原生框架上、不會悄悄回傳資料的終端機用戶端。後來發現，它值得被更多人使用。",
+            "沒有遙測，沒有帳號，沒有藏在付費牆後面的功能門檻。只是一個做好本职工作的工具。"
+          ]
+        },
+        {
+          "label": [
+            "02 / 工程原則"
+          ],
+          "title": [
+            "FoxTerm 的基石 —— 也是絕不退讓的底線。"
+          ],
+          "subsections": [
+            {
+              "title": [
+                "原生優先"
+              ]
+            },
+            {
+              "title": [
+                "架構級隱私"
+              ]
+            },
+            {
+              "title": [
+                "極致效能"
+              ]
+            },
+            {
+              "title": [
+                "經久耐用"
+              ]
+            }
+          ],
+          "body": [
+            "Swift 和 C —— 不是 Electron，不是 Web 包裝。FoxTerm 直接對話 AppKit 和 UIKit，感覺像是天生就在你的 Mac 和 iPhone 上，而不是從瀏覽器分頁移植過來的。",
+            "零遙測。連線資料、金鑰和作業階段歷史永遠不會離開裝置。金鑰在可用時存放在 Secure Enclave 中 —— 而不是某個雲端伺服器上。",
+            "冷啟動低於 400 毫秒。終端機渲染以原生幀率運行。沒有 JavaScript 引擎開銷，沒有啟動閃屏，沒有人為延遲。",
+            "免費下載即可使用全部功能。Pro 版解鎖無限節點——支援 App Store 訂閱或一次性啟動碼。沒有功能閹割，沒有人爲分級。 iPad。更新是因為產品在不斷變好 —— 不是因為續費日期臨近。"
+          ]
+        },
+        {
+          "label": [
+            "03 / 底層架構"
+          ],
+          "title": [
+            "技術棧 —— 因為它很重要。"
+          ],
+          "specs": [
+            {
+              "label": [
+                "程式語言"
+              ],
+              "value": [
+                "Swift · C"
+              ]
+            },
+            {
+              "label": [
+                "支援協定"
+              ],
+              "value": [
+                "SSH · SFTP · VNC · Docker"
+              ]
+            },
+            {
+              "label": [
+                "安全機制"
+              ],
+              "value": [
+                "Secure Enclave · Keychain · App Sandbox"
+              ]
+            },
+            {
+              "label": [
+                "支援平台"
+              ],
+              "value": [
+                "macOS 14+ · iOS 17+ · iPadOS"
+              ]
+            },
+            {
+              "label": [
+                "發行管道"
+              ],
+              "value": [
+                "Mac App Store · Apple 公證簽名"
+              ]
+            },
+            {
+              "label": [
+                "定價模式"
+              ],
+              "value": [
+                "免費 · Pro 訂閱或啓動碼"
+              ]
+            }
+          ]
+        },
+        {
+          "label": [
+            "04 / 開發者"
+          ],
+          "body": [
+            "我是一名使用 Swift、Go 和 React 的軟體工程師。FoxTerm 是我最在意的產品 —— 每一行程式碼都按照我對日常工具的期望標準來編寫。",
+            "除 FoxTerm 之外，我也承接精選委託專案 —— 那些講究工藝、標準高的工作。如果你正在做值得這種專注度的事情，",
+            "。"
+          ],
+          "links": [
+            [
+              "聊聊吧"
+            ]
+          ],
+          "specs": [
+            {
+              "label": [
+                "種協定"
+              ]
+            },
+            {
+              "label": [
+                "種語言"
+              ]
+            },
+            {
+              "label": [
+                "遙測"
+              ]
+            }
+          ]
+        },
+        {
+          "title": [
+            "試試 FoxTerm"
+          ],
+          "body": [
+            "免費下載即可使用全部功能。Pro 透過 App Store 訂閱或啟動碼解鎖無限節點。"
+          ],
+          "links": [
+            [
+              "在 App Store 下載"
+            ],
+            [
+              "聯絡我們"
+            ]
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "copyright": [
+        " FoxTerm.",
+        "Hosted on Tencent Makers."
+      ],
+      "links": [
+        [
+          "首頁"
+        ],
+        [
+          "隱私權政策"
+        ],
+        [
+          "服務條款"
+        ],
+        [
+          "GitHub"
+        ],
+        [
+          "Blog"
+        ],
+        [
+          "Security Intel"
+        ]
+      ],
+      "icp": [
+        "蜀ICP备2024075062号"
+      ],
+      "mirror": [
+        "中國鏡像：",
+        " | 全球官網：",
+        "foxterm.cn",
+        "foxterm.app"
+      ],
+      "badges": [
+        {
+          "alt": "Apple Notarized"
+        },
+        {
+          "alt": "Secure Enclave"
+        },
+        {
+          "alt": "App Sandbox"
+        },
+        {
+          "alt": "Zero Telemetry"
+        },
+        {
+          "alt": "Native Swift & C"
+        },
+        {
+          "alt": "SAST Passed"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "nav": {
+      "logo": [
+        "FoxTerm"
+      ],
+      "langAria": "語言",
+      "langCurrent": [
+        "繁體中文"
+      ],
+      "backToHome": [
+        "返回首頁"
+      ]
+    },
+    "content": {
+      "badge": [
+        "獨立匠心 · 直達通道"
+      ],
+      "title": [
+        "直連",
+        "核心架構師"
+      ],
+      "lede": [
+        "FoxTerm 由獨立工程師精心打造，毫不妥協。沒有企業流程，沒有 AI 客服機器人，沒有模板化回覆。",
+        "每一行程式碼都出自一位獨立工程師之手，每一封信件都會直達引擎背後的開發者。遇到 bug、效能問題，或有大膽的功能點子？直接來信。"
+      ],
+      "sections": {
+        "0": {
+          "badge": [
+            "承接合作 · SELECT ENGAGEMENTS"
+          ],
+          "title": [
+            "把專案交給",
+            "做 FoxTerm 的人"
+          ],
+          "body": [
+            "FoxTerm 的每一行程式碼都出自一位獨立工程師之手，你的專案也會得到同一條標準：不轉包、不套模板、不交付「能跑就好」的程式碼。只承接值得深挖的工程，直接對結果負責。",
+            "現代 Web 前端，互動複雜的產品級介面",
+            "iOS / Android 跨端，一套程式碼雙端交付",
+            "高併發服務、API、雲原生與開發者工具鏈",
+            "Web 業務系統、CMS 與快速落地的服務端",
+            "Apple 生態原生開發：macOS / iOS",
+            "效能關鍵路徑、底層模組與嵌入式",
+            "郵件簡述專案背景、目標與時間預期，越具體越好。",
+            "48 小時內回覆技術方案與明確報價，不含糊。",
+            "Git 分階段交付，程式碼可審查、可稽核、可交接。",
+            "交付後保留合理的維護期間，不甩手、不消失。",
+            "合作原則：先說清楚，再做。方案不合適我會直說——不浪費你的時間，也不辜負你的信任。"
+          ],
+          "label": [
+            "01 / 應用層",
+            "02 / 服務層",
+            "03 / 系統層",
+            "01 / 來信",
+            "02 / 方案",
+            "03 / 開發",
+            "04 / 維護"
+          ],
+          "specs": [
+            {
+              "label": [
+                "Application"
+              ],
+              "value": [
+                "React",
+                "React Native"
+              ]
+            },
+            {
+              "label": [
+                "Backend & Services"
+              ],
+              "value": [
+                "Go",
+                "PHP"
+              ]
+            },
+            {
+              "label": [
+                "Systems & Native"
+              ],
+              "value": [
+                "Swift",
+                "C"
+              ]
+            },
+            {
+              "label": [
+                "專案合作 · 委託開發"
+              ]
+            }
+          ],
+          "links": [
+            [
+              "foxterm@icloud.com"
+            ],
+            [
+              "洽談專案"
+            ]
+          ]
+        },
+        "-1": {
+          "specs": [
+            {
+              "label": [
+                "支援與開發者諮詢"
+              ]
+            }
+          ]
+        }
+      },
+      "links": [
+        [
+          "support@foxterm.app"
+        ],
+        [
+          "發送郵件"
+        ]
+      ],
+      "cards": [
+        {
+          "title": [
+            "01 / Bug 回報"
+          ],
+          "body": [
+            "請附上你的 macOS / iOS 系統版本、連線協定（SSH、SFTP、VNC、Docker）以及重現步驟。"
+          ]
+        },
+        {
+          "title": [
+            "02 / 功能建議"
+          ],
+          "body": [
+            "對終端機模擬、自訂字型或容器工具有想法？我們優先考慮極客驅動的工作流。"
+          ]
+        },
+        {
+          "title": [
+            "03 / 帳單與 Pro"
+          ],
+          "body": [
+            "需要 Apple ID Universal Purchase 或 Pro 節點額度驗證方面的協助？來信附上收據 ID 會更有效率。"
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "copyright": [
+        " FoxTerm.",
+        "Hosted on Tencent Makers."
+      ],
+      "links": [
+        [
+          "首頁"
+        ],
+        [
+          "關於"
+        ],
+        [
+          "隱私權政策"
+        ],
+        [
+          "服務條款"
+        ],
+        [
+          "GitHub"
+        ],
+        [
+          "Blog"
+        ],
+        [
+          "Security Intel"
+        ]
+      ],
+      "icp": [
+        "蜀ICP备2024075062号"
+      ],
+      "mirror": [
+        "中國鏡像：",
+        " | 全球官網：",
+        "foxterm.cn",
+        "foxterm.app"
+      ],
+      "badges": [
+        {
+          "alt": "Apple Notarized"
+        },
+        {
+          "alt": "Secure Enclave"
+        },
+        {
+          "alt": "App Sandbox"
+        },
+        {
+          "alt": "Zero Telemetry"
+        },
+        {
+          "alt": "Native Swift & C"
+        },
+        {
+          "alt": "SAST Passed"
+        }
+      ]
+    }
+  },
+  "privacy": {
+    "nav": {
+      "logo": [
+        "FoxTerm"
+      ],
+      "langAria": "語言",
+      "langCurrent": [
+        "繁體中文"
+      ],
+      "backToHome": [
+        "返回首頁"
+      ]
+    },
+    "content": {
+      "badge": [
+        "法律文件"
+      ],
+      "title": [
+        "隱私權政策"
+      ],
+      "lede": [
+        "最後更新：2026 年 10 月"
+      ],
+      "commitment": {
+        "title": [
+          "我們的承諾：零遙測"
+        ],
+        "body": [
+          "FoxTerm 的立足點是：你的伺服器基礎建設、憑證與工作流完全屬於你自己。我們嚴格執行",
+          "，不在外部伺服器上收集、傳輸或儲存任何你的營運資料。",
+          "零遙測政策"
+        ]
+      },
+      "sections": [
+        {
+          "title": [
+            "1. 我們收集的資料"
+          ],
+          "body": [
+            "FoxTerm 完全不收集任何遙測資料。具體包括："
+          ],
+          "items": [
+            [
+              "不做任何分析、使用追蹤或行為監控"
+            ],
+            [
+              "預設不向第三方伺服器傳送當機報告"
+            ],
+            [
+              "不記錄連線紀錄、指令歷史或工作階段中繼資料"
+            ],
+            [
+              "不傳輸 IP 位址、主機名稱或伺服器指紋"
+            ],
+            [
+              "SSH 金鑰、密碼與驗證憑證永遠不會離開你的裝置"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "2. 本地資料儲存與加密"
+          ],
+          "body": [
+            "所有敏感資料均透過 Apple 原生安全架構，僅儲存在你的裝置上："
+          ],
+          "items": [
+            [
+              "在裝置支援時，SSH 私鑰由裝置的 Secure Enclave 硬體加密並保護",
+              "Secure Enclave 保護："
+            ],
+            [
+              "憑證與密碼儲存在你本地的 iCloud Keychain 中，由 Apple 硬體加密保護",
+              "Keychain 隔離："
+            ],
+            [
+              "連線設定檔與選項儲存在裝置本地；iCloud 同步僅透過你的私有 iCloud Container 進行，由 Apple 端對端加密",
+              "本地設定："
+            ]
+          ]
+        },
+        {
+          "title": [
+            "3. 網路通訊"
+          ],
+          "body": [
+            "FoxTerm 僅與你明確設定的伺服器建立點對點直連："
+          ],
+          "items": [
+            [
+              "所有連線（SSH、VNC、SFTP、Docker/Podman）均由你的裝置直連你的伺服器"
+            ],
+            [
+              "我們不為你的流量營運任何代理伺服器、中繼站或仲介服務"
+            ],
+            [
+              "App Store 交易完全由 Apple 處理；我們不接收或儲存付款資訊"
+            ],
+            [
+              "應用程式內不嵌入任何第三方分析 SDK"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "4. iCloud 同步"
+          ],
+          "body": [
+            "當你開啟 iCloud 設定同步時："
+          ],
+          "items": [
+            [
+              "同步資料僅儲存在你個人的 iCloud 帳號中，不上傳至我們的伺服器"
+            ],
+            [
+              "同步傳輸完全由 Apple 的 CloudKit 基礎建設管理並加密"
+            ],
+            [
+              "私鑰",
+              "透過 iCloud 同步；它們始終隔離在每台裝置的 Secure Enclave 中",
+              "絕不"
+            ],
+            [
+              "你可隨時透過應用程式內設定或系統 iCloud 偏好關閉同步"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "5. App Store 收據驗證"
+          ],
+          "body": [
+            "為驗證 Pro 訂閱狀態，FoxTerm 可能會與 Apple 的 App Store 伺服器通訊以驗證你的訂閱權益。該通訊："
+          ],
+          "items": [
+            [
+              "透過標準的 Apple StoreKit API 完成"
+            ],
+            [
+              "僅包含你的 Apple 交易收據識別碼"
+            ],
+            [
+              "不包含任何你的伺服器資料、憑證或使用資訊"
+            ],
+            [
+              "在你的裝置與 Apple 之間直接進行；FoxTerm 後端伺服器不記錄、不儲存這些請求"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "6. 第三方服務"
+          ],
+          "body": [
+            "FoxTerm 不整合任何第三方分析、廣告或資料收集服務。唯一會互動的外部服務包括："
+          ],
+          "items": [
+            [
+              "Apple App Store 與 CloudKit 服務（受 Apple 隱私權政策規範）"
+            ],
+            [
+              "你明確設定並直連的 SSH、VNC、SFTP、Docker/Podman 伺服器"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "7. 兒童隱私"
+          ],
+          "body": [
+            "FoxTerm 不會在知情情況下收集未滿 13 歲（或你所在司法管轄區之適用年齡）兒童的任何個人資料。本應用程式是為技術專業人士設計的開發者工具。"
+          ]
+        },
+        {
+          "title": [
+            "8. 政策變更"
+          ],
+          "body": [
+            "我們可能會不時更新本隱私權政策，以反映實務或法律要求的變化。任何變更都會在此頁面公布，並更新修訂日期。建議你定期查閱本政策。"
+          ]
+        },
+        {
+          "title": [
+            "9. 聯絡我們"
+          ],
+          "body": [
+            "如果你對本隱私權政策或我們的資料實務有任何疑問或疑慮，請透過",
+            " 與我們聯絡。"
+          ],
+          "links": [
+            [
+              "admin@foxterm.app"
+            ]
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "copyright": [
+        " FoxTerm.",
+        "Hosted on Tencent Makers."
+      ],
+      "links": [
+        [
+          "首頁"
+        ],
+        [
+          "關於"
+        ],
+        [
+          "聯絡我們"
+        ],
+        [
+          "服務條款"
+        ],
+        [
+          "GitHub"
+        ],
+        [
+          "Blog"
+        ],
+        [
+          "Security Intel"
+        ]
+      ],
+      "icp": [
+        "蜀ICP备2024075062号"
+      ],
+      "mirror": [
+        "中國鏡像：",
+        " | 全球官網：",
+        "foxterm.cn",
+        "foxterm.app"
+      ],
+      "badges": [
+        {
+          "alt": "Apple Notarized"
+        },
+        {
+          "alt": "Secure Enclave"
+        },
+        {
+          "alt": "App Sandbox"
+        },
+        {
+          "alt": "Zero Telemetry"
+        },
+        {
+          "alt": "Native Swift & C"
+        },
+        {
+          "alt": "SAST Passed"
+        }
+      ]
+    }
+  },
+  "terms": {
+    "nav": {
+      "logo": [
+        "FoxTerm"
+      ],
+      "langAria": "語言",
+      "langCurrent": [
+        "繁體中文"
+      ],
+      "backToHome": [
+        "返回首頁"
+      ]
+    },
+    "content": {
+      "badge": [
+        "法律文件"
+      ],
+      "title": [
+        "服務條款"
+      ],
+      "lede": [
+        "最後更新：2026 年 10 月",
+        "在使用 FoxTerm 應用程式（以下簡稱「本應用程式」，由 FoxTerm 營運，下稱「我們」）之前，請仔細閱讀本服務條款（以下簡稱「本條款」）。你對本應用程式的存取與使用，即表示你接受並遵守本條款。本條款適用於所有存取或使用本應用程式的使用者。"
+      ],
+      "sections": [
+        {
+          "title": [
+            "1. 授權許可"
+          ],
+          "body": [
+            "在遵守本條款的前提下，我們授予你一項有限、非獨占、不可轉讓、可撤銷的許可，允許你："
+          ],
+          "items": [
+            [
+              "按照 Apple App Store 服務條款，在你擁有或控制的個人 Apple 裝置（macOS 與 iOS）上下載、安裝並使用本應用程式"
+            ],
+            [
+              "出於個人或商業伺服器管理目的使用本應用程式的免費版（免費版包含全部功能，僅節點數量受限）"
+            ],
+            [
+              "在訂閱保持有效且狀態正常期間，存取並使用 FoxTerm Pro 訂閱功能"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "2. Universal Purchase"
+          ],
+          "body": [
+            "FoxTerm 支援 Apple Universal Purchase。一次購買或訂閱即可解鎖與你 Apple ID 關聯的所有相容平台（macOS 與 iOS）上的完整應用程式。你的訂閱將透過 Apple ID 帳號自動續訂，除非你在當前週期結束前至少 24 小時取消。"
+          ]
+        },
+        {
+          "title": [
+            "3. Pro 訂閱與許可"
+          ],
+          "body": [
+            "FoxTerm Pro 與免費版提供完全相同的功能集。唯一差別在於可管理的節點（伺服器）數量：免費版限制節點數，FoxTerm Pro 解除該限制、節點數量不限。你可隨時升級或取消，已儲存的連線設定檔不受影響。",
+            "公證版 macOS 同樣提供 Pro：該版本直接散佈，不經過 App Store。它透過在 pay.foxterm.app 銷售的啟用碼（許可證金鑰）解鎖。啟用碼授予與訂閱相同的 Pro 能力，僅適用於 macOS 公證版，不附帶 iOS 啟用。啟用碼許可由 FoxTerm 直接提供；銷售時展示的任何購買專屬條款（如許可期限與裝置範圍）在本條款之外一併適用。"
+          ],
+          "items": [
+            [
+              "訂閱依購買時選擇的週期（按月或按年）循環計費"
+            ],
+            [
+              "款項將在購買確認時從你的 Apple ID 帳號扣除"
+            ],
+            [
+              "訂閱自動續訂，除非在當前週期結束前至少 24 小時取消"
+            ],
+            [
+              "我們將在當前週期結束前 24 小時內從你的帳號扣除續訂費用"
+            ],
+            [
+              "購買後你可在 Apple ID 帳號設定中管理或取消訂閱"
+            ],
+            [
+              "對於未用完的訂閱週期，我們不提供退款；所有帳單與退款事宜均由 Apple 依 App Store 政策處理"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "4. 可接受使用"
+          ],
+          "body": [
+            "你同意不會將本應用程式用於以下行為："
+          ],
+          "items": [
+            [
+              "違反任何適用的地方、州、國家或國際法律法規"
+            ],
+            [
+              "未經授權存取你無權存取的電腦系統、網路或資料"
+            ],
+            [
+              "散佈惡意軟體、勒索軟體或其他惡意程式碼"
+            ],
+            [
+              "實施阻斷服務攻擊或其他破壞性活動"
+            ],
+            [
+              "對本應用程式進行反向工程、反編譯、反組譯，或試圖取得其原始碼，適用法律允許的情形除外"
+            ],
+            [
+              "移除、篡改或遮蓋任何版權或專有聲明"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "5. 智慧財產權"
+          ],
+          "body": [
+            "本應用程式的全部內容、功能、原始碼、圖形、設計、標誌與圖示，均為 FoxTerm 的專有財產，並受國際版權、商標及其他智慧財產權法律保護。未經我們明確書面許可，你不得重製、散佈、修改本應用程式的任何部分，或為其創作衍生作品、公開展示，或以其他方式加以利用。"
+          ]
+        },
+        {
+          "title": [
+            "6. 第三方伺服器與內容"
+          ],
+          "body": [
+            "本應用程式是一款用戶端工具，用於連接由你控制、或你已獲授權存取的伺服器與基礎建設。我們不對以下事項負責："
+          ],
+          "items": [
+            [
+              "你所連接的第三方伺服器的內容、安全性、可用性或執行狀態"
+            ],
+            [
+              "你透過本應用程式在遠端伺服器或基礎建設上採取的任何操作"
+            ],
+            [
+              "因你使用本應用程式導致的資料遺失或系統損壞"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "7. 擔保免責"
+          ],
+          "body": [
+            "本應用程式按「現狀」與「可用」基礎提供，不提供任何明示或默示的擔保，包括但不限於對適銷性、特定用途適用性、所有權與不侵權的默示擔保。我們不擔保："
+          ],
+          "items": [
+            [
+              "本應用程式在任何特定時間或地點都能不中斷、安全或可用地執行"
+            ],
+            [
+              "任何錯誤或缺陷都會被修正"
+            ],
+            [
+              "本應用程式不含病毒或其他有害元件"
+            ],
+            [
+              "使用本應用程式的結果能滿足你的要求或期望"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "8. 責任限制"
+          ],
+          "body": [
+            "在任何情況下，FoxTerm 均不對因你存取、使用或無法存取、使用本應用程式而導致的任何間接、附帶、特殊、後果性或懲罰性損害承擔責任，包括但不限於利潤、資料、使用、商譽或其他無形利益的損失。"
+          ]
+        },
+        {
+          "title": [
+            "9. 終止"
+          ],
+          "body": [
+            "出於任何原因，包括但不限於你違反本條款，我們可立即終止或暫停你使用本應用程式的許可，無需事先通知或承擔責任。終止後，你使用本應用程式的權利即刻停止。依其性質應在終止後繼續有效的條款（包括所有權條款、免責聲明、賠償與責任限制）將繼續有效。"
+          ]
+        },
+        {
+          "title": [
+            "10. 條款變更"
+          ],
+          "body": [
+            "我們保留自行決定隨時修改或取代本條款的權利。對任何實質變更，我們會提供合理通知。在修訂條款發布後繼續使用本應用程式，即表示你接受這些變更。"
+          ]
+        },
+        {
+          "title": [
+            "11. 適用法律"
+          ],
+          "body": [
+            "本條款受我們營運所在司法管轄區的法律管轄並據其解釋，不考慮其法律衝突規範。"
+          ]
+        },
+        {
+          "title": [
+            "12. 聯絡我們"
+          ],
+          "body": [
+            "如果你對本條款有任何疑問，請透過",
+            " 與我們聯絡。"
+          ],
+          "links": [
+            [
+              "admin@foxterm.app"
+            ]
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "copyright": [
+        " FoxTerm.",
+        "Hosted on Tencent Makers."
+      ],
+      "links": [
+        [
+          "首頁"
+        ],
+        [
+          "關於"
+        ],
+        [
+          "聯絡我們"
+        ],
+        [
+          "隱私權政策"
+        ],
+        [
+          "GitHub"
+        ],
+        [
+          "Blog"
+        ],
+        [
+          "Security Intel"
+        ]
+      ],
+      "icp": [
+        "蜀ICP备2024075062号"
+      ],
+      "mirror": [
+        "中國鏡像：",
+        " | 全球官網：",
+        "foxterm.cn",
+        "foxterm.app"
+      ],
+      "badges": [
+        {
+          "alt": "Apple Notarized"
+        },
+        {
+          "alt": "Secure Enclave"
+        },
+        {
+          "alt": "App Sandbox"
+        },
+        {
+          "alt": "Zero Telemetry"
+        },
+        {
+          "alt": "Native Swift & C"
+        },
+        {
+          "alt": "SAST Passed"
+        }
+      ]
+    }
+  }
+}

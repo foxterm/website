@@ -1,0 +1,1907 @@
+{
+  "_meta": {
+    "lang": "ja",
+    "label": "日本語",
+    "updated": "2026-10-20"
+  },
+  "_seo": {
+    "index": {
+      "viewport": "width=device-width, initial-scale=1",
+      "title": "FoxTerm - macOS / iOS 向け SSH・VNC・SFTP・Docker・Podman クライアント | ターミナルアプリ",
+      "description": "FoxTerm は、プライバシーを最重視した高性能な macOS / iOS 向けターミナルアプリです。超高速 SSH、SFTP、Metal 加速 VNC、リアルタイムな Linux テレメトリ、Docker / Podman の視覚的な管理を備えています。テレメトリはゼロ。Universal Purchase 対応。",
+      "keywords": "SSH クライアント macOS, SFTP クライアント Mac, VNC クライアント iOS, Docker 管理, Podman 管理, macOS ターミナルアプリ, iOS SSH クライアント, リモートデスクトップ Mac, サーバー管理ツール, ターミナルエミュレータ Mac, ネイティブ SSH クライアント, Metal 加速ターミナル",
+      "author": "FoxTerm",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "googlebot": "index, follow",
+      "language": "日本語",
+      "revisit-after": "7 days",
+      "og:type": "website",
+      "og:locale": "ja_JP",
+      "og:locale:alternate": "en_US, zh_CN, zh_TW, de_DE, ru_RU, es_ES, fr_FR, ko_KR, pt_BR",
+      "og:title": "FoxTerm | macOS / iOS 向けユニバーサル SSH・VNC・SFTP・Docker",
+      "og:description": "インフラの制御を再定義する。FoxTerm は SSH、SFTP、VNC、コンテナ管理をテレメトリゼロでひとつに統合。ネイティブ Swift & Metal の性能。",
+      "og:url": "https://foxterm.app/ja/",
+      "og:site_name": "FoxTerm",
+      "og:image": "/assets/apple-touch-icon.png",
+      "og:image:width": "180",
+      "og:image:height": "180",
+      "og:image:alt": "FoxTerm - macOS / iOS 向けネイティブターミナルアプリ",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "FoxTerm - macOS / iOS 向けの次世代ターミナル",
+      "twitter:description": "FoxTerm でクラウドインフラを自在に。Mac と iOS をカバーする Universal Purchase。テレメトリゼロ。ネイティブ性能。",
+      "twitter:image": "/assets/apple-touch-icon.png",
+      "twitter:image:alt": "FoxTerm ターミナルアプリ",
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"SoftwareApplication\",\"name\":\"FoxTerm\",\"operatingSystem\":\"macOS 14+, iOS 17+\",\"applicationCategory\":\"DeveloperApplication\",\"applicationSubCategory\":\"TerminalEmulator\",\"softwareRequirements\":\"macOS 14.0 以降、iOS 17.0 以降が必要です。\",\"offers\":{\"@type\":\"AggregateOffer\",\"priceCurrency\":\"USD\",\"offerCount\":\"3\",\"offers\":[{\"@type\":\"Offer\",\"name\":\"FoxTerm 無料\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"すべての機能が無料で利用可能。ノード（サーバー）数のみに上限があります\"},{\"@type\":\"Offer\",\"name\":\"FoxTerm Pro — Mac App Store サブスクリプション\",\"category\":\"Subscription\",\"description\":\"Apple 経由の月額または年額サブスクリプション。ノード数無制限。Universal Purchase で iOS アプリも自動的にアクティベート\"},{\"@type\":\"Offer\",\"name\":\"FoxTerm Pro — 公認版（アクティベーションコード）\",\"category\":\"DirectLicense\",\"description\":\"pay.foxterm.app で購入したアクティベーションコードでアンロックする、署名・公認済みの macOS ビルド。ノード数無制限。アクティベーションコードは macOS 公認版にのみ適用されます\"}]},\"description\":\"macOS と iOS 向けのユニバーサル SSH、VNC、SFTP、Docker、Podman 管理アプリ。テレメトリゼロ、ネイティブ Swift / Metal 性能。\",\"downloadUrl\":\"https://apps.apple.com/us/app/foxterm/id6760452891\",\"featureList\":\"高速 SSH ターミナル, SFTP ファイルマネージャー, Metal 加速 VNC リモートデスクトップ, リアルタイムシステムテレメトリ監視, Docker & Podman コンテナ管理, macOS / iOS 向け Universal Purchase, テレメトリゼロのプライバシー保護, Apple Secure Enclave による鍵保護\",\"screenshot\":\"/assets/og-image.png\",\"softwareVersion\":\"1.2.0\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}},{\"@type\":\"WebSite\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app/ja/\",\"inLanguage\":\"ja-JP\",\"potentialAction\":{\"@type\":\"SearchAction\",\"target\":\"https://foxterm.app/?q={search_term_string}\",\"query-input\":\"required name=search_term_string\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://foxterm.app/ja/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"機能\",\"item\":\"https://foxterm.app/ja/#features\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"使用事例\",\"item\":\"https://foxterm.app/ja/#use-cases\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"アーキテクチャ\",\"item\":\"https://foxterm.app/ja/#architecture\"},{\"@type\":\"ListItem\",\"position\":5,\"name\":\"セキュリティ\",\"item\":\"https://foxterm.app/ja/#security\"},{\"@type\":\"ListItem\",\"position\":6,\"name\":\"料金\",\"item\":\"https://foxterm.app/ja/#pricing\"},{\"@type\":\"ListItem\",\"position\":7,\"name\":\"FAQ\",\"item\":\"https://foxterm.app/ja/#faq\"},{\"@type\":\"ListItem\",\"position\":8,\"name\":\"ダウンロード\",\"item\":\"https://foxterm.app/ja/#download\"}]},{\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"FoxTerm とは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm は、macOS と iOS のためにネイティブに構築された、オールインワンでプライバシー重視のサーバー管理アプリです。高性能な SSH ターミナルアクセス、SFTP ファイル管理、Metal 加速 VNC リモートデスクトップ、Linux システムテレメトリ、視覚的な Docker / Podman コンテナ制御をひとつに統合します。\"}},{\"@type\":\"Question\",\"name\":\"FoxTerm Pro のサブスクリプションは、Mac と iPhone / iPad 間でどのように機能しますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"無料版はすべての機能を含み、ノード（サーバー）の数のみ上限があります。FoxTerm Pro に加入するとその上限が外れてノード数は無制限になり、ひとつの Apple ID のもと、認可されたすべての Apple デバイス（macOS と iOS / iPadOS）で同時にご利用いただけます。設定は、専用の iCloud コンテナ経由でシームレスに同期されます。\"}},{\"@type\":\"Question\",\"name\":\"FoxTerm はサーバーの認証情報と鍵をどのように保護しますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm は、100% ローカルでのデータ暗号化による厳格なテレメトリゼロのポリシーで動作しています。サーバーの認証情報、パスワード、SSH の秘密鍵は、Apple のハードウェア Keychain と Secure Enclave 内に隔離されています。接続ログや機密ユーザーデータが収集、プロキシ、サードパーティのサーバーへ送られることは一切ありません。\"}},{\"@type\":\"Question\",\"name\":\"FoxTerm はコマンドラインなしで Docker と Podman のコンテナを管理できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい。FoxTerm Pro には、Docker と Podman のコンテナ、イメージ、ボリュームを管理するための視覚的ダッシュボードが組み込まれています。Rootless コンテナ、リアルタイムのログストリーミング、GUI 内でのワンクリック Exec Shell 連携をサポートしています。\"}},{\"@type\":\"Question\",\"name\":\"FoxTerm は Electron ベースのターミナルクライアントと何が違いますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm は Electron のラッパーではありません。ネイティブ Swift、Metal のハードウェア加速、C ネイティブのライブラリ（OpenSSL、libssh、libvncclient）を使ってゼロから設計されており、瞬時に近い起動、極めて低いリソース使用、iOS 向けのネイティブ最適化を実現しています。\"}},{\"@type\":\"Question\",\"name\":\"どのプラットフォームに対応していますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm は Apple プラットフォームのためにネイティブに構築されています。macOS 14.0 以降、iOS/iPadOS 17.0 以降で動作し、iPhone と iPad に対応、ひとつの Universal Purchase ですべてのデバイスがアンロックされます。Windows、Android、Linux デスクトップ版はありません。\"}},{\"@type\":\"Question\",\"name\":\"どのプロトコルと認証方式に対応していますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm は SSH、SFTP、VNC 接続に対応し、SSH 経由で Docker と Podman エンジンを管理します。Ed25519 などの最新の暗号と鍵タイプ、分割ペーターミナルセッション、コマンドスニペット、ドラッグ＆ドロップ SFTP 転送、コンテナ・イメージ・ボリュームの視覚的管理を搭載しています。\"}},{\"@type\":\"Question\",\"name\":\"FoxTerm はデータを収集したり、接続をサーバー経由でルーティングしたりしますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"いいえ。FoxTerm はデバイスから直接サーバーに接続し、トラフィックをプロキシすることはありません。厳格なテレメトリゼロのポリシーを適用し、分析、アクティビティ追跡、接続ログは一切ありません。認証情報と秘密鍵はデバイス上で暗号化され、Apple Keychain と Secure Enclave 内に隔離されています。\"}},{\"@type\":\"Question\",\"name\":\"macOS で Pro を入手するにはどうすればよいですか？iOS のアクティベーションはどのように機能しますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"macOS で Pro を入手するには2つの方法があります。Mac App Store エディションは、Apple 経由の月額または年額のサブスクリプションで、Apple のポリシーに準拠します。Apple ID のサブスクリプション設定で管理・キャンセルでき、更新と返金は Apple が処理します。Universal Purchase により、同じ Apple ID の macOS と iOS アプリの両方が自動的にアンロックされます。公認版は、pay.foxterm.app で購入したアクティベーションコードでアンロックする、直接配布の署名済み macOS ビルドです。公認版は macOS のみ対象で、iOS のアクティベーションは含まれません。iOS アプリ自体は App Store で無料ですが、Pro 機能がアンロックされるのは App Store エディション経由のみです。\"}}]}]}"
+    },
+    "about": {
+      "viewport": "width=device-width, initial-scale=1",
+      "title": "FoxTerm について | あなたをリスペクトするターミナルクライアント",
+      "description": "FoxTerm はネイティブな macOS / iOS 向け SSH、SFTP、VNC、Docker クライアントです。Swift と C で構築。無料ダウンロード、Pro はサブスクリプションまたはアクティベーションコード。テレメトリゼロ。",
+      "keywords": "FoxTerm について, SSH クライアント, ターミナルエミュレータ, macOS SSH, iOS ターミナル, Swift SSH クライアント, ネイティブターミナル, セキュアターミナル, FoxTerm のストーリー",
+      "author": "FoxTerm",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "googlebot": "index, follow",
+      "language": "日本語",
+      "revisit-after": "30 days",
+      "og:type": "website",
+      "og:locale": "ja_JP",
+      "og:locale:alternate": "en_US, zh_CN, zh_TW, de_DE, ru_RU, es_ES, fr_FR, ko_KR, pt_BR",
+      "og:title": "FoxTerm について | あなたをリスペクトするターミナルクライアント",
+      "og:description": "ネイティブ macOS / iOS SSH クライアント。Swift と C で構築。無料ダウンロード、Pro はサブスクリプションまたはアクティベーションコード。テレメトリゼロ。",
+      "og:url": "https://foxterm.app/ja/about",
+      "og:site_name": "FoxTerm",
+      "og:image": "/assets/apple-touch-icon.png",
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"AboutPage\",\"name\":\"FoxTerm について\",\"url\":\"https://foxterm.app/ja/about\",\"inLanguage\":\"ja-JP\",\"isPartOf\":{\"@type\":\"WebSite\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app/ja/\"},\"description\":\"FoxTerm のストーリー — macOS と iOS のためのネイティブ SSH、SFTP、VNC、Docker クライアント。\",\"breadcrumb\":{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://foxterm.app/ja/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"概要\",\"item\":\"https://foxterm.app/ja/about\"}]}}"
+    },
+    "contact": {
+      "viewport": "width=device-width, initial-scale=1",
+      "title": "お問い合わせと受託開発 - FoxTerm | 開発者への直通",
+      "description": "FoxTerm のコアアーキテクトへ直通：製品サポート、バグ報告、または React / React Native / Go / Swift などの受託開発。独立系エンジニアが直接お届けします。",
+      "keywords": "FoxTerm お問い合わせ, FoxTerm サポート, SSH クライアント サポート, 開発者フィードバック, ターミナル ヘルプセンター, 受託開発, React 開発, React Native 開発, Go 開発, Swift 開発",
+      "author": "FoxTerm",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "googlebot": "index, follow",
+      "language": "日本語",
+      "revisit-after": "30 days",
+      "og:type": "website",
+      "og:locale": "ja_JP",
+      "og:locale:alternate": "en_US, zh_CN, zh_TW, de_DE, ru_RU, es_ES, fr_FR, ko_KR, pt_BR",
+      "og:title": "お問い合わせ - FoxTerm",
+      "og:description": "コアアーキテクトへの直通回線。製品サポート、バグ報告、または深掘りする価値のあるプロジェクト。",
+      "og:url": "https://foxterm.app/ja/contact",
+      "og:site_name": "FoxTerm",
+      "og:image": "/assets/apple-touch-icon.png",
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"ContactPage\",\"name\":\"お問い合わせ - FoxTerm\",\"url\":\"https://foxterm.app/ja/contact\",\"inLanguage\":\"ja-JP\",\"isPartOf\":{\"@type\":\"WebSite\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app/ja/\"},\"description\":\"FoxTerm のユーザーがコア開発者へ直接連絡するためのサポートページ。\",\"breadcrumb\":{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://foxterm.app/ja/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"お問い合わせ\",\"item\":\"https://foxterm.app/ja/contact\"}]}}"
+    },
+    "privacy": {
+      "viewport": "width=device-width, initial-scale=1",
+      "title": "プライバシーポリシー - FoxTerm | プライバシー重視のターミナルアプリ",
+      "description": "FoxTerm のプライバシーポリシー。テレメトリゼロのポリシー、ローカル暗号化、Apple Secure Enclave での鍵保管、完全なデータ主権によるデータ保護の方法をご確認ください。",
+      "keywords": "FoxTerm プライバシー, テレメトリゼロ, ターミナル プライバシー, SSH セキュリティ, データ保護, Secure Enclave 暗号化",
+      "author": "FoxTerm",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "googlebot": "index, follow",
+      "language": "日本語",
+      "revisit-after": "30 days",
+      "og:type": "website",
+      "og:locale": "ja_JP",
+      "og:locale:alternate": "en_US, zh_CN, zh_TW, de_DE, ru_RU, es_ES, fr_FR, ko_KR, pt_BR",
+      "og:title": "プライバシーポリシー - FoxTerm",
+      "og:description": "テレメトリゼロ、ローカル暗号化、サーバー管理のための完全なデータ主権。",
+      "og:url": "https://foxterm.app/ja/privacy",
+      "og:site_name": "FoxTerm",
+      "og:image": "/assets/apple-touch-icon.png",
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"name\":\"プライバシーポリシー - FoxTerm\",\"url\":\"https://foxterm.app/ja/privacy\",\"inLanguage\":\"ja-JP\",\"isPartOf\":{\"@type\":\"WebSite\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app/ja/\"},\"description\":\"FoxTerm のプライバシーポリシー。テレメトリゼロの保護、ローカル暗号化、ユーザーデータの完全な主権を概説します。\",\"breadcrumb\":{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://foxterm.app/ja/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"プライバシーポリシー\",\"item\":\"https://foxterm.app/ja/privacy\"}]}}"
+    },
+    "terms": {
+      "viewport": "width=device-width, initial-scale=1",
+      "title": "利用規約 - FoxTerm",
+      "description": "FoxTerm の利用規約。FoxTerm の SSH / VNC / SFTP クライアントを利用するためのライセンス、適切な使用、サブスクリプション条件、免責事項をご確認ください。",
+      "keywords": "FoxTerm 利用規約, EULA, ライセンス契約, App Store 規約, サブスクリプション規約",
+      "author": "FoxTerm",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "googlebot": "index, follow",
+      "language": "日本語",
+      "revisit-after": "30 days",
+      "og:type": "website",
+      "og:locale": "ja_JP",
+      "og:locale:alternate": "en_US, zh_CN, zh_TW, de_DE, ru_RU, es_ES, fr_FR, ko_KR, pt_BR",
+      "og:title": "利用規約 - FoxTerm",
+      "og:description": "FoxTerm の利用規約およびエンドユーザーライセンス契約。",
+      "og:url": "https://foxterm.app/ja/terms",
+      "og:site_name": "FoxTerm",
+      "og:image": "/assets/apple-touch-icon.png",
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"name\":\"利用規約 - FoxTerm\",\"url\":\"https://foxterm.app/ja/terms\",\"inLanguage\":\"ja-JP\",\"isPartOf\":{\"@type\":\"WebSite\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app/ja/\"},\"description\":\"FoxTerm の利用規約。ライセンス条項、適切な使用、サブスクリプション、法的免責事項を概説します。\",\"breadcrumb\":{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://foxterm.app/ja/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"利用規約\",\"item\":\"https://foxterm.app/ja/terms\"}]}}"
+    }
+  },
+  "index": {
+    "nav": {
+      "logo": [
+        "FoxTerm"
+      ],
+      "links": [
+        [
+          "機能"
+        ],
+        [
+          "使用事例"
+        ],
+        [
+          "アーキテクチャ"
+        ],
+        [
+          "セキュリティ"
+        ],
+        [
+          "料金"
+        ],
+        [
+          "FAQ"
+        ]
+      ],
+      "langAria": "言語",
+      "langCurrent": [
+        "日本語"
+      ],
+      "getApp": [
+        "アプリを入手"
+      ]
+    },
+    "hero": {
+      "badge": [
+        "100% Apple プラットフォームネイティブ · ゼロテレメトリ · Universal Purchase"
+      ],
+      "title": [
+        "インフラを完全に掌控する",
+        "FoxTerm"
+      ],
+      "tags": [
+        [
+          "SSH"
+        ],
+        [
+          "VNC"
+        ],
+        [
+          "SFTP"
+        ],
+        [
+          "Docker"
+        ],
+        [
+          "Podman"
+        ]
+      ],
+      "subtitle": [
+        "macOS と iOS のためのオールインワンネイティブターミナル。SSH、SFTP、Metal 加速 VNC、リアルタイム Linux モニタリング、そして視覚的な Docker / Podman 管理——安全で非常に高速、起動した瞬間から使えます。"
+      ],
+      "cta": [
+        {
+          "alt": "Apple App Store でダウンロード",
+          "caption": [
+            "Universal Purchase 対応"
+          ],
+          "label": [
+            "macOS / iOS 向けダウンロード"
+          ]
+        }
+      ]
+    },
+    "trust": {
+      "items": [
+        {
+          "value": [
+            "4-in-1"
+          ],
+          "body": [
+            "SSH · SFTP · VNC & コンテナを1つのウィンドウで"
+          ]
+        },
+        {
+          "body": [
+            "認証情報と鍵はデバイス内に保持"
+          ]
+        },
+        {
+          "body": [
+            "テレメトリ、分析、サードパーティトラッカー"
+          ]
+        },
+        {
+          "body": [
+            "Apple ID で Mac、iPhone、iPad を一括アンロック"
+          ]
+        }
+      ]
+    },
+    "architecture": {
+      "title": [
+        "性能を極める。",
+        "。",
+        "明快さを研ぎ澄ます"
+      ],
+      "lede": [
+        "Web ラッパーも、余分な機能もありません。FoxTerm は、ミニマルな工業デザインと妥協のない ネイティブ描画性能を両立しています。"
+      ],
+      "cards": [
+        {
+          "title": [
+            "ネイティブ性能",
+            "シャープなファセットで定義される。",
+            "俊敏性のための",
+            "。",
+            "設計",
+            "01 / シャープエッジ"
+          ],
+          "body": [
+            "Swift と Metal 加速を基盤に構築され、遅延ほぼゼロのコマンド入力と滑らかな画面 描画を実現します。",
+            "ブランドマークはローポリゴンの幾何学デザインを採用し、複雑な曲線を、 精密に計算されたベクターのファセットへと置き換えています。それは精確さと速度を象徴しています。",
+            "このデザイン言語は、私たちのソフトウェア哲学をそのまま映し出しています。",
+            "余分なものを排し、純粋なネイティブ実行と最大の 効率を。",
+            "ターミナルの即時応答性を強調する、クリーンなベクターライン。"
+          ]
+        },
+        {
+          "title": [
+            "幾何学的な精緻さ",
+            "02 / 階層表現"
+          ],
+          "body": [
+            "クリーンなローポリゴンの幾何学的ファセットが視覚的ノイズを排除し、鋭く、邪魔をしない 開発者ワークスペースを提供します。",
+            "ダークモード環境のために作り込まれた、豊かなコントラストの陰影。"
+          ]
+        },
+        {
+          "title": [
+            "統一されたワークフロー",
+            "03 / 安定性"
+          ],
+          "body": [
+            "リモートシェル、ファイル転送、GUI デスクトップ、コンテナ管理をひとつの 一貫したインターフェースに統合します。",
+            "安全なネットワークプロトコルを思わせる、かみ合う幾何学構造。"
+          ]
+        },
+        {
+          "title": [
+            "04 / 効率性"
+          ],
+          "body": [
+            "複雑さを収束させ、手間のないワークフローへと導く、収束するライン。"
+          ]
+        },
+        {
+          "badge": [
+            "ガイドメッシュ: ON",
+            "レンダリング: TTF フォント",
+            "⬇ TTF",
+            "⬇ SVG"
+          ]
+        }
+      ],
+      "badge": [
+        " ベクター幾何 & アイコン表現",
+        "種別: アイコンフォント"
+      ]
+    },
+    "security": {
+      "badge": [
+        "ゼロトラストのセキュリティアーキテクチャ"
+      ],
+      "title": [
+        "ローカル暗号化、",
+        "完全なデータ主権"
+      ],
+      "lede": [
+        "サーバーの鍵は、あなたの最も重要な資産です。FoxTerm は、100% ローカルでの暗号化とハードウェア隔離により、テレメトリを一切行いません。"
+      ],
+      "cards": [
+        {
+          "badge": [
+            "01 / テレメトリゼロ"
+          ],
+          "body": [
+            "テレメトリや活動追跡は一切なし。接続ログがローカル環境から外に出ることはありません。"
+          ]
+        },
+        {
+          "badge": [
+            "02 / セキュアエンクレーブ"
+          ],
+          "body": [
+            "Apple Keychain と Secure Enclave のハードウェア隔離を活用し、秘密鍵を保管します。"
+          ]
+        },
+        {
+          "badge": [
+            "03 / ネイティブ暗号"
+          ],
+          "body": [
+            "C ネイティブのエンジンを搭載し、Ed25519 と最新の暗号スイートを完全サポート。"
+          ]
+        },
+        {
+          "badge": [
+            "04 / ICLOUD 同期"
+          ],
+          "body": [
+            "設定の同期は、専用の暗号化された iCloud コンテナ経由でのみシームレスに行われます。"
+          ]
+        }
+      ]
+    },
+    "features": {
+      "title": [
+        "充実の機能群"
+      ],
+      "lede": [
+        "現代のサーバー管理に必要なすべてを、ひとつのワークフローに統合。"
+      ],
+      "cards": [
+        {
+          "badge": [
+            "SSH"
+          ],
+          "title": [
+            "高速 SSH"
+          ],
+          "body": [
+            "Ed25519 鍵、分割ペインのタブ、コマンドスニペット、ミリ秒単位の応答による賢い自動再接続をサポート。"
+          ]
+        },
+        {
+          "badge": [
+            "MON"
+          ],
+          "title": [
+            "リアルタイム監視"
+          ],
+          "body": [
+            "CPU、メモリ、ディスク I/O、ネットワークスループット、GPU / VRAM メトリクスをアクティブに可視化。"
+          ]
+        },
+        {
+          "badge": [
+            "SFTP"
+          ],
+          "title": [
+            "SFTP ファイル転送"
+          ],
+          "body": [
+            "ドラッグ＆ドロップのファイル転送、アプリ内エディタ、権限制御を備えています。"
+          ]
+        },
+        {
+          "badge": [
+            "VNC"
+          ],
+          "title": [
+            "Metal 加速 VNC"
+          ],
+          "body": [
+            "滑らかなリモートデスクトップアクセスのためのハードウェア加速 VNC エンジン。タッチとジェスチャー向けに調整済み。"
+          ]
+        },
+        {
+          "badge": [
+            "CTL"
+          ],
+          "title": [
+            "コンテナ管理"
+          ],
+          "body": [
+            "コンテナ、イメージ、ボリュームのための視覚的ダッシュボード。Rootless ランタイムとリアルタイムのログストリーミングをサポート。"
+          ]
+        },
+        {
+          "badge": [
+            "iOS"
+          ],
+          "title": [
+            "ユニバーサル購入"
+          ],
+          "body": [
+            "ひとつのサブスクリプションで macOS と iOS / iPadOS の両方をカバー。すべての機能は無料で、ノード数の 上限のみ適用されます。Pro にアップグレードすると、ノード数が無制限になります。"
+          ]
+        }
+      ]
+    },
+    "useCases": {
+      "badge": [
+        "働き方に対応"
+      ],
+      "title": [
+        "すべての",
+        "リモートワークフロー",
+        " に一つのツールキット"
+      ],
+      "lede": [
+        "本番環境のオンコール対応から週末のホームラボまで、FoxTerm はあなたのマシン管理スタイルに適応します。"
+      ],
+      "cards": [
+        {
+          "badge": [
+            "OPS"
+          ],
+          "title": [
+            "SRE & DevOps オンコール"
+          ],
+          "body": [
+            "数秒でセッションを開き、コンテナログを追跡し、障害が発生する前に CPU、メモリ、ディスク I/O のリアルタイム状態を確認できます。"
+          ]
+        },
+        {
+          "badge": [
+            "LAB"
+          ],
+          "title": [
+            "ホームラボ & セルフホスティング"
+          ],
+          "body": [
+            "ルーター、NAS デバイス、Docker / Podman スタックを Mac や iPhone から直接操作——ジャンプホストもクラウドゲートウェイも不要。"
+          ]
+        },
+        {
+          "badge": [
+            "NET"
+          ],
+          "title": [
+            "ネットワーク & エッジエンジニア"
+          ],
+          "body": [
+            "OpenWrt、IoT、リモートエッジ機器に SSH、SFTP、そして滑らかな Metal VNC でアクセス——不安定なセルラー回線でも快適に。"
+          ]
+        },
+        {
+          "badge": [
+            "MOB"
+          ],
+          "title": [
+            "モバイルファーストの管理者"
+          ],
+          "body": [
+            "iPhone や iPad からネイティブタッチ、ジェスチャー、ショートカットで フルターミナル操作、ファイル転送、コンテナ再起動を。"
+          ]
+        }
+      ]
+    },
+    "comparison": {
+      "title": [
+        "圧倒的なアーキテクチャ"
+      ],
+      "lede": [
+        "FoxTerm と、従来の CLI ツール、クラウド依存の SaaS アプリとの比較。"
+      ],
+      "table": {
+        "head": [
+          [
+            "項目"
+          ],
+          [
+            "FoxTerm"
+          ],
+          [
+            "従来の CLI ツール"
+          ],
+          [
+            "クラウド同期型 SaaS アプリ"
+          ]
+        ],
+        "rows": [
+          [
+            [
+              "プライバシー & テレメトリ"
+            ],
+            [
+              "✓ 100% ローカル / テレメトリゼロ"
+            ],
+            [
+              "✓ ローカルのみ"
+            ],
+            [
+              "✗ 集中型クラウド同期"
+            ]
+          ],
+          [
+            [
+              "鍵の保護"
+            ],
+            [
+              "✓ Secure Enclave ハードウェア"
+            ],
+            [
+              "~ 平文のファイルシステム"
+            ],
+            [
+              "✗ サードパーティのクラウドサーバー"
+            ]
+          ],
+          [
+            [
+              "コンテナ UI"
+            ],
+            [
+              "✓ ネイティブ Docker & Podman GUI"
+            ],
+            [
+              "✗ CLI コマンドラインのみ"
+            ],
+            [
+              "~ 基本的なログビューア"
+            ]
+          ],
+          [
+            [
+              "描画エンジン"
+            ],
+            [
+              "✓ ネイティブ Swift & Metal"
+            ],
+            [
+              "~ 基本的なテキスト描画"
+            ],
+            [
+              "✗ 重量級 Electron ラッパー"
+            ]
+          ],
+          [
+            [
+              "ユニバーサルプラットフォーム"
+            ],
+            [
+              "✓ macOS + iOS ユニバーサル"
+            ],
+            [
+              "✗ デスクトップ / モバイルで分離"
+            ],
+            [
+              "~ 購入が別々"
+            ]
+          ]
+        ]
+      }
+    },
+    "pricing": {
+      "badge": [
+        "シンプルで正直な価格設定"
+      ],
+      "title": [
+        "すべての機能は無料。"
+      ],
+      "pro": {
+        "price": [
+          [
+            "Pro は制限を取り除くだけ。",
+            "無制限"
+          ],
+          [
+            "ノード"
+          ]
+        ],
+        "title": [
+          "FoxTerm Pro"
+        ],
+        "tag": [
+          "おすすめ"
+        ],
+        "lede": [
+          "無料版の全機能に加え、ノード数上限を撤廃"
+        ],
+        "items": [
+          [
+            "無料版の全機能"
+          ],
+          [
+            "成長するフリートに対応する無制限ノード（サーバー）"
+          ],
+          [
+            "ひとつの Apple ID で macOS + iOS / iPadOS に対応"
+          ],
+          [
+            "将来の Pro 機能強化をすべて含む"
+          ],
+          [
+            "開発者からの優先サポート"
+          ]
+        ],
+        "button": [
+          "Pro の入手方法を見る"
+        ]
+      },
+      "lede": [
+        "無料版には SSH、SFTP、VNC、ライブテレメトリ、コンテナ管理などすべての機能が含まれ、ノード数のみに上限があります。Pro はその上限を取り払い、より大規模なフリートをすべてのデバイスで管理できます。"
+      ],
+      "free": {
+        "title": [
+          "無料"
+        ],
+        "tag": [
+          "カード不要"
+        ],
+        "lede": [
+          "全機能・ノード数上限あり"
+        ],
+        "items": [
+          [
+            "分割ペイン、タブ、スニペット付き フル SSH ターミナル"
+          ],
+          [
+            "SFTP 転送、Metal VNC、リアルタイムテレメトリ"
+          ],
+          [
+            "視覚的な Docker & Podman 管理"
+          ],
+          [
+            "Secure Enclave 鍵、テレメトリゼロ、iCloud 同期"
+          ],
+          [
+            "ノード（サーバー）数の上限あり"
+          ]
+        ],
+        "button": [
+          "無料版をダウンロード"
+        ]
+      },
+      "options": {
+        "0": {
+          "label": [
+            "OPTION 1 · サブスクリプション"
+          ],
+          "title": [
+            "Mac App Store エディション"
+          ],
+          "items": [
+            [
+              "Apple 経由の月額または年額サブスクリプション"
+            ],
+            [
+              "Universal Purchase — macOS と iOS を自動的にアクティベート"
+            ],
+            [
+              "いつでもキャンセル可能、更新と返金は Apple が処理"
+            ]
+          ],
+          "button": [
+            "App Store で見る"
+          ]
+        },
+        "1": {
+          "label": [
+            "OPTION 2 · アクティベーションコード"
+          ],
+          "title": [
+            "macOS 公認版"
+          ],
+          "items": [
+            [
+              "直接配布の署名・公認済み macOS ビルド——App Store 不要"
+            ],
+            [
+              "pay.foxterm.app で購入したアクティベーションコードでアンロック"
+            ],
+            [
+              "macOS のみ — App Store 版とは独立"
+            ]
+          ],
+          "button": [
+            "アクティベーションコードを取得"
+          ]
+        },
+        "title": [
+          "macOS で Pro をアンロックする2つの方法"
+        ],
+        "subtitle": [
+          "App Store 版（macOS + iOS）は Apple のポリシーに準拠し、Universal Purchase で iOS もアンロック。公認版は macOS のみで、アクティベーションコードに iOS は含まれません。"
+        ],
+        "footnote": [
+          "iOS アプリは App Store で無料で入手でき、App Store 版で Pro が有効化されると自動的にアンロックされます。接続プロファイルと設定は、プライベート iCloud コンテナ経由でデバイス間で同期されます。"
+        ]
+      }
+    },
+    "faq": {
+      "badge": [
+        "よくある質問"
+      ],
+      "title": [
+        " について知っておくべきすべてのこと",
+        "FoxTerm"
+      ],
+      "lede": [
+        "セキュリティ、Pro ライセンス、ネイティブ性能——平易に説明します。"
+      ],
+      "items": [
+        {
+          "q": [
+            " FoxTerm とは何ですか？主な機能は何ですか？"
+          ],
+          "answer": [
+            "FoxTerm は、macOS と iOS のためにネイティブに構築された、オールインワンでプライバシー重視のサーバー管理アプリです。高性能な",
+            "、",
+            "、",
+            "、",
+            "、視覚的な",
+            "をひとつに統合します。",
+            "SSH ターミナル アクセス",
+            "SFTP ファイル管理",
+            "Metal 加速の VNC リモートデスクトップ",
+            "リアルタイムのシステムテレメトリ",
+            "Docker & Podman コンテナ制御"
+          ]
+        },
+        {
+          "q": [
+            " 無料版と Pro の違いは何ですか？App Store 版のサブスクリプションはデバイス間でどのように機能しますか？"
+          ],
+          "answer": [
+            "無料版は機能制限デモではありません。",
+            "や",
+            "、",
+            "、リアルタイム テレメトリ、",
+            " 管理に至るまで、すべての機能を完全に ご利用いただけます。唯一の制限は、管理できる",
+            "の数です。FoxTerm Pro に加入するとその上限が外れ、ノード数は無制限になります。App Store 版の場合、ひとつのサブスクリプションで Universal Purchase により macOS と iOS / iPadOS クライアントの両方が同時にアンロックされます。公認版は macOS のみのスタンドアロンで、iOS は含まれません。いずれの場合も、個人の iCloud コンテナ経由で設定を暗号化して同期します。",
+            "SSH ターミナル",
+            "SFTP",
+            "Metal 加速 VNC",
+            "Docker & Podman",
+            "ノード （サーバー）"
+          ]
+        },
+        {
+          "q": [
+            " FoxTerm はサーバーの鍵や接続認証情報をどのように保護しますか？"
+          ],
+          "answer": [
+            "FoxTerm は、100% ローカルでのデータ暗号化による厳格な",
+            "で動作しています。サーバーの認証情報と SSH の秘密鍵は、Apple",
+            " 内にハードウェア隔離され、サードパーティのサーバーへデータが送られることは一切ありません。",
+            "テレメトリゼロのポリシー",
+            "Secure Enclave と Keychain"
+          ]
+        },
+        {
+          "q": [
+            " FoxTerm は Electron ベースのターミナルクライアントと何が違いますか？"
+          ],
+          "answer": [
+            "FoxTerm は Electron のラッパーではありません。",
+            "を使ってゼロから設計されており、瞬時に近い起動、極めて低いリソース 使用、iOS 向けのネイティブ最適化を実現しています。",
+            "ネイティブ Swift、Metal のハードウェア加速、C ネイティブのライブラリ （OpenSSL、libssh、libvncclient）"
+          ]
+        },
+        {
+          "q": [
+            " どのプラットフォームに対応していますか？"
+          ],
+          "answer": [
+            "FoxTerm は Apple プラットフォームのためにネイティブに構築されています。macOS 14.0 以降、iOS / iPadOS 17.0 以降で動作し、iPhone と iPad に対応、ひとつの Universal Purchase ですべてのデバイスがアンロックされます。Windows、Android、Linux デスクトップ版はありません——FoxTerm はネイティブ Apple スタック専用に設計されています。"
+          ]
+        },
+        {
+          "q": [
+            " どのプロトコルと認証方式に対応していますか？"
+          ],
+          "answer": [
+            "FoxTerm は SSH、SFTP、VNC 接続に対応し、SSH 経由で Docker と Podman エンジンを管理します。Ed25519 などの最新の暗号と鍵タイプ、分割ペインターミナルセッション、コマンドスニペット、ドラッグ＆ドロップ SFTP 転送、コンテナ・イメージ・ボリュームの視覚的管理を搭載しています。"
+          ]
+        },
+        {
+          "q": [
+            " FoxTerm はデータを収集したり、接続をサーバー経由でルーティングしたりしますか？"
+          ],
+          "answer": [
+            "いいえ。FoxTerm はデバイスから直接サーバーに接続し、トラフィックをプロキシすることはありません。厳格なテレメトリゼロのポリシーを適用し、分析、アクティビティ追跡、接続ログは一切ありません。認証情報と秘密鍵はデバイス上で暗号化され、Apple Keychain と Secure Enclave 内に隔離されています。"
+          ]
+        },
+        {
+          "q": [
+            " macOS で Pro を入手するにはどうすればよいですか？iOS のアクティベーションはどのように機能しますか？"
+          ],
+          "answer": [
+            "macOS で Pro を入手するには2つの方法があります。",
+            "は、Apple 経由の月額または年額のサブスクリプションで、Apple のポリシーに準拠します。Apple ID のサブスクリプション設定で管理・キャンセルでき、更新と返金は Apple が処理します。Universal Purchase により、同じ Apple ID の macOS と iOS アプリの両方が自動的にアンロックされます。",
+            "は、pay.foxterm.app で購入したアクティベーションコードでアンロックする、直接配布の署名済み macOS ビルドです。公認版は macOS のみ対象で、アクティベーションコードに iOS のアクティベーションは含まれません。iOS アプリ自体は App Store で無料ですが、Pro 機能がアンロックされるのは App Store エディション経由のみです。",
+            "Mac App Store エディション",
+            "公認版"
+          ]
+        }
+      ],
+      "qPrefix": [
+        "Q:",
+        "Q:",
+        "Q:",
+        "Q:",
+        "Q:",
+        "Q:",
+        "Q:",
+        "Q:"
+      ]
+    },
+    "download": {
+      "title": [
+        "FoxTerm をダウンロードして、数秒で接続"
+      ],
+      "subtitle": [
+        "Mac · iPhone · iPad — すべての機能は無料で始められ、Pro は App Store 版で Mac と iOS デバイスにアンロックされます。"
+      ],
+      "buttons": [
+        {
+          "alt": "App Store でダウンロード",
+          "label": [
+            "App Store で入手"
+          ]
+        },
+        {
+          "label": [
+            "macOS 公認版"
+          ]
+        }
+      ],
+      "note": [
+        "公認ビルドは署名・公認済みで、App Store 外でも直接インストールできます。Pro は",
+        " のアクティベーションコードでアンロックします。アクティベーションコードは macOS 公認版にのみ適用され、iOS アプリのアンロックは App Store 版経由のみです。",
+        "pay.foxterm.app"
+      ],
+      "reqs": [
+        {
+          "label": [
+            "macOS"
+          ],
+          "value": [
+            "14.0 Sonoma 以降"
+          ]
+        },
+        {
+          "label": [
+            "iOS / iPadOS"
+          ],
+          "value": [
+            "17.0 以降"
+          ]
+        },
+        {
+          "label": [
+            "ライセンス"
+          ],
+          "value": [
+            "App Store またはアクティベーションコード"
+          ]
+        },
+        {
+          "label": [
+            "信頼"
+          ],
+          "value": [
+            "公認・署名・サンドボックス済み"
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "copyright": [
+        " FoxTerm.",
+        "Hosted on Tencent Makers."
+      ],
+      "links": [
+        [
+          "概要"
+        ],
+        [
+          "お問い合わせ"
+        ],
+        [
+          "プライバシーポリシー"
+        ],
+        [
+          "利用規約"
+        ],
+        [
+          "領収書の検証"
+        ],
+        [
+          "領収書の検証"
+        ],
+        [
+          "GitHub"
+        ],
+        [
+          "Blog"
+        ],
+        [
+          "Security Intel"
+        ]
+      ],
+      "icp": [
+        "蜀ICP备2024075062号"
+      ],
+      "mirror": [
+        "中国ミラー:",
+        " | グローバル:",
+        "foxterm.cn",
+        "foxterm.app"
+      ],
+      "badges": [
+        {
+          "alt": "Apple Notarized"
+        },
+        {
+          "alt": "Secure Enclave"
+        },
+        {
+          "alt": "App Sandbox"
+        },
+        {
+          "alt": "Zero Telemetry"
+        },
+        {
+          "alt": "Native Swift & C"
+        },
+        {
+          "alt": "SAST Passed"
+        }
+      ]
+    }
+  },
+  "about": {
+    "nav": {
+      "logo": [
+        "FoxTerm"
+      ],
+      "langAria": "言語",
+      "langCurrent": [
+        "日本語"
+      ],
+      "backToHome": [
+        "ホームに戻る"
+      ]
+    },
+    "content": {
+      "badge": [
+        "SWIFT · C · 妥協ゼロ"
+      ],
+      "title": [
+        "ソフトウェアは",
+        "速く、プライベートで、長持ちするべき。"
+      ],
+      "lede": [
+        "FoxTerm は macOS と iOS のためのネイティブターミナルクライアントです。Electron も、Web ラッパーも、テレメトリもありません —— Swift と C が本来の役割を果たしているだけです。"
+      ],
+      "sections": [
+        {
+          "label": [
+            "01 / FoxTerm の理由"
+          ],
+          "title": [
+            "既存のツールが十分ではなかった。だから自分で書いた。"
+          ],
+          "body": [
+            "SSH はインフラが稼働するインターフェースです。深夜のデプロイ、サーバーのデバッグ、問題の修正 —— すべてここで行われます。試したクライアントはどれも 2004 年から進化していないか、ネイティブでべき機能にサブスクリプションを課していました。",
+            "FoxTerm は個人的なツールとして始まりました —— macOS と iOS のデザイン言語を本当に尊重し、ネイティブフレームワークで動作し、ホームに通信しないターミナルクライアント。それは共有する価値のあるものになりました。",
+            "テレメトリなし。アカウントなし。ペイウォールの裏に隠れた機能制限なし。 仕事をこなして、邪魔にならないツール。それだけです。"
+          ]
+        },
+        {
+          "label": [
+            "02 / エンジニアリング原則"
+          ],
+          "title": [
+            "FoxTerm が基づくもの —— そして決して妥協しないもの。"
+          ],
+          "subsections": [
+            {
+              "title": [
+                "ネイティブファースト"
+              ]
+            },
+            {
+              "title": [
+                "アーキテクチャによるプライバシー"
+              ]
+            },
+            {
+              "title": [
+                "パフォーマンス"
+              ]
+            },
+            {
+              "title": [
+                "長持ちする設計"
+              ]
+            }
+          ],
+          "body": [
+            "Swift と C —— Electron でも Web ラッパーでもありません。FoxTerm は AppKit と UIKit と直接対話するため、ブラウザタブから移植されたのではなく、Mac と iPhone に生まれついたような感触です。",
+            "テレメトリゼロ。接続データ、鍵、セッション履歴がデバイスから出ることはありません。鍵は利用可能な場合 Secure Enclave に保存されます —— どこかのクラウドサーバーではなく。",
+            "コールドlaunch 400 ms 未満。ネイティブフレームレートでのターミナルレンダリング。JavaScript エンジンのオーバーヘッドも、起動スプラッシュスクリーンも、人為的な遅延もありません。",
+            "ダウンロードだけで全機能を利用可能。Pro はノード制限を解除 — App Store サブスクリプションまたはワンタイム activation code で。必須機能をロックせず、不自然な tier もなし。 Mac、iPhone、iPad をカバー。アップデートは製品が良くなり続けるから提供されるのであって、更新日が近づいているからではありません。"
+          ]
+        },
+        {
+          "label": [
+            "03 / フードの下"
+          ],
+          "title": [
+            "スタック —— なぜなら重要だから。"
+          ],
+          "specs": [
+            {
+              "label": [
+                "言語"
+              ],
+              "value": [
+                "Swift · C"
+              ]
+            },
+            {
+              "label": [
+                "プロトコル"
+              ],
+              "value": [
+                "SSH · SFTP · VNC · Docker"
+              ]
+            },
+            {
+              "label": [
+                "セキュリティ"
+              ],
+              "value": [
+                "Secure Enclave · Keychain · App Sandbox"
+              ]
+            },
+            {
+              "label": [
+                "プラットフォーム"
+              ],
+              "value": [
+                "macOS 14+ · iOS 17+ · iPadOS"
+              ]
+            },
+            {
+              "label": [
+                "配信"
+              ],
+              "value": [
+                "Mac App Store · Apple Notarized"
+              ]
+            },
+            {
+              "label": [
+                "価格"
+              ],
+              "value": [
+                "無料 · Pro サブスクリプションまたはアクティベーションコード"
+              ]
+            }
+          ]
+        },
+        {
+          "label": [
+            "04 / 開発者"
+          ],
+          "body": [
+            "私は Swift、Go、React で作業するソフトウェアエンジニアです。FoxTerm は最もこだわっているプロダクトです —— すべてのコードは、自分が毎日使うツールに求める基準と同じで書かれています。",
+            "FoxTerm 以外にも、厳選された受託プロジェクトを引き受けています —— 技術が重要で、基準が高い仕事。そのレベルの attention に値するものを作っているなら、",
+            "。"
+          ],
+          "links": [
+            [
+              "お気軽に"
+            ]
+          ],
+          "specs": [
+            {
+              "label": [
+                "プロトコル"
+              ]
+            },
+            {
+              "label": [
+                "言語"
+              ]
+            },
+            {
+              "label": [
+                "テレメトリ"
+              ]
+            }
+          ]
+        },
+        {
+          "title": [
+            "FoxTerm を試す"
+          ],
+          "body": [
+            "全機能無料でダウンロード可能。Pro は App Store サブスクリプションまたはアクティベーションコードでノード制限を解除。"
+          ],
+          "links": [
+            [
+              "App Store でダウンロード"
+            ],
+            [
+              "お問い合わせ"
+            ]
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "copyright": [
+        " FoxTerm.",
+        "Hosted on Tencent Makers."
+      ],
+      "links": [
+        [
+          "ホーム"
+        ],
+        [
+          "プライバシーポリシー"
+        ],
+        [
+          "利用規約"
+        ],
+        [
+          "GitHub"
+        ],
+        [
+          "Blog"
+        ],
+        [
+          "Security Intel"
+        ]
+      ],
+      "icp": [
+        "蜀ICP备2024075062号"
+      ],
+      "mirror": [
+        "中国ミラー:",
+        " | グローバル:",
+        "foxterm.cn",
+        "foxterm.app"
+      ],
+      "badges": [
+        {
+          "alt": "Apple Notarized"
+        },
+        {
+          "alt": "Secure Enclave"
+        },
+        {
+          "alt": "App Sandbox"
+        },
+        {
+          "alt": "Zero Telemetry"
+        },
+        {
+          "alt": "Native Swift & C"
+        },
+        {
+          "alt": "SAST Passed"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "nav": {
+      "logo": [
+        "FoxTerm"
+      ],
+      "langAria": "言語",
+      "langCurrent": [
+        "日本語"
+      ],
+      "backToHome": [
+        "ホームに戻る"
+      ]
+    },
+    "content": {
+      "badge": [
+        "インディー職人のこだわり · 直通回線"
+      ],
+      "title": [
+        "コアアーキテクトへの",
+        "直通回線"
+      ],
+      "lede": [
+        "FoxTerm は、妥協のない精緻さで独立して設計されています。企業の官僚手続きも、AI のサポートボットも、定型文のテンプレートもありません。",
+        "コードの一行一行が独立したエンジニアによって作られており、すべてのメールはエンジンの背後にいる開発者へ直接届きます。バグ報告、性能の気づき、野心的な機能要望があれば、そのままメッセージをお送りください。"
+      ],
+      "sections": {
+        "0": {
+          "badge": [
+            "受託開発 · SELECT ENGAGEMENTS"
+          ],
+          "title": [
+            "プロジェクトは",
+            "FoxTerm を作った人",
+            "へ"
+          ],
+          "body": [
+            "FoxTerm のすべてのコードは、一人の独立系エンジニアが手がけています。あなたのプロジェクトにも同じ基準を適用します——丸投げなし、テンプレートなし、「動けば十分」のコードは渡しません。深く掘り下げる価値のある仕事だけを引き受け、結果に責任を持ちます。",
+            "モダン Web フロントエンド、複雑なインタラクションのプロダクト UI",
+            "iOS / Android クロスプラットフォーム、1 コードベースで両 OS へ展開",
+            "高並行サービス、API、クラウドネイティブと開発ツールチェーン",
+            "Web 業務システム、CMS、迅速に立ち上げられるサーバーサイド",
+            "Apple エコシステムのネイティブ開発：macOS / iOS",
+            "パフォーマンスが重要なパス、低レイヤーモジュール、組み込み",
+            "プロジェクトの背景・目標・スケジュールをメールで簡潔に。具体的なほど良いです。",
+            "48 時間以内に技術提案と明確な見積もりを返します。曖昧にしません。",
+            "Git で段階的に納品。コードはレビュー・監査・引き継ぎが可能です。",
+            "納品後も合理的な保守期間を確保します。放置しません。",
+            "仕事の進め方：まず話してから作ります。プロジェクトが適切でない場合は、率直にお伝えします。あなたに合わない仕事を引き受けるより、正直に本当のことをお伝えしたいからです。"
+          ],
+          "label": [
+            "01 / アプリケーション層",
+            "02 / サービス層",
+            "03 / システム層",
+            "01 / 問い合わせ",
+            "02 / 提案",
+            "03 / 開発",
+            "04 / 保守"
+          ],
+          "specs": [
+            {
+              "label": [
+                "Application"
+              ],
+              "value": [
+                "React",
+                "React Native"
+              ]
+            },
+            {
+              "label": [
+                "Backend & Services"
+              ],
+              "value": [
+                "Go",
+                "PHP"
+              ]
+            },
+            {
+              "label": [
+                "Systems & Native"
+              ],
+              "value": [
+                "Swift",
+                "C"
+              ]
+            },
+            {
+              "label": [
+                "プロジェクト受託 · 開発委託"
+              ]
+            }
+          ],
+          "links": [
+            [
+              "foxterm@icloud.com"
+            ],
+            [
+              "相談する"
+            ]
+          ]
+        },
+        "-1": {
+          "specs": [
+            {
+              "label": [
+                "サポート & 開発者への問い合わせ"
+              ]
+            }
+          ]
+        }
+      },
+      "links": [
+        [
+          "support@foxterm.app"
+        ],
+        [
+          "メールを送る"
+        ]
+      ],
+      "cards": [
+        {
+          "title": [
+            "01 / バグ報告"
+          ],
+          "body": [
+            "macOS / iOS のシステムバージョン、接続プロトコル（SSH、SFTP、VNC、Docker）、再現手順を記載してください。"
+          ]
+        },
+        {
+          "title": [
+            "02 / 機能要望"
+          ],
+          "body": [
+            "ターミナルエミュレーション、カスタムフォント、コンテナツールのアイデアがありますか？ギークのこだわるワークフローを優先します。"
+          ]
+        },
+        {
+          "title": [
+            "03 / 課金 & Pro"
+          ],
+          "body": [
+            "Apple ID の Universal Purchase や Pro のノード上限の確認でお困りですか？領収書 ID を添えてご連絡ください。"
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "copyright": [
+        " FoxTerm.",
+        "Hosted on Tencent Makers."
+      ],
+      "links": [
+        [
+          "ホーム"
+        ],
+        [
+          "概要"
+        ],
+        [
+          "プライバシーポリシー"
+        ],
+        [
+          "利用規約"
+        ],
+        [
+          "GitHub"
+        ],
+        [
+          "Blog"
+        ],
+        [
+          "Security Intel"
+        ]
+      ],
+      "icp": [
+        "蜀ICP备2024075062号"
+      ],
+      "mirror": [
+        "中国ミラー:",
+        " | グローバル:",
+        "foxterm.cn",
+        "foxterm.app"
+      ],
+      "badges": [
+        {
+          "alt": "Apple Notarized"
+        },
+        {
+          "alt": "Secure Enclave"
+        },
+        {
+          "alt": "App Sandbox"
+        },
+        {
+          "alt": "Zero Telemetry"
+        },
+        {
+          "alt": "Native Swift & C"
+        },
+        {
+          "alt": "SAST Passed"
+        }
+      ]
+    }
+  },
+  "privacy": {
+    "nav": {
+      "logo": [
+        "FoxTerm"
+      ],
+      "langAria": "言語",
+      "langCurrent": [
+        "日本語"
+      ],
+      "backToHome": [
+        "ホームに戻る"
+      ]
+    },
+    "content": {
+      "badge": [
+        "法的文書"
+      ],
+      "title": [
+        "プライバシーポリシー"
+      ],
+      "lede": [
+        "最終更新：2026年10月"
+      ],
+      "commitment": {
+        "title": [
+          "私たちの約束：テレメトリゼロ"
+        ],
+        "body": [
+          "FoxTerm は、あなたのサーバーインフラ、認証情報、ワークフローがあなただけのものであるという原則のもとで構築されています。私たちは厳格な",
+          "を運用しており、外部サーバー上であなたの運用データを収集、送信、保存することはありません。",
+          "テレメトリゼロのポリシー"
+        ]
+      },
+      "sections": [
+        {
+          "title": [
+            "1. 収集するデータ"
+          ],
+          "body": [
+            "FoxTerm はテレメトリデータを一切収集しません。具体的には："
+          ],
+          "items": [
+            [
+              "分析、使用状況の追跡、行動モニタリングは一切なし"
+            ],
+            [
+              "クラッシュレポートをデフォルトでサードパーティのサーバーへ送信しない"
+            ],
+            [
+              "接続ログ、コマンド履歴、セッションのメタデータは一切なし"
+            ],
+            [
+              "IP アドレス、ホスト名、サーバーのフィンガープリントを送信しない"
+            ],
+            [
+              "SSH の鍵、パスワード、認証情報がデバイスから外に出ることは一切ない"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "2. ローカルデータの保存と暗号化"
+          ],
+          "body": [
+            "すべての機密データは、Apple のネイティブセキュリティフレームワークを使い、専らあなたのデバイス上に保存されます："
+          ],
+          "items": [
+            [
+              "SSH の秘密鍵は、利用可能な場合、デバイスの Secure Enclave ハードウェアによって暗号化・保護されます",
+              "Secure Enclave による保護："
+            ],
+            [
+              "認証情報とパスワードはローカルの iCloud Keychain に保存され、Apple のハードウェア暗号化で暗号化されます",
+              "Keychain の隔離："
+            ],
+            [
+              "接続プロファイルと設定はデバイス上にローカル保存されます。iCloud 同期は、Apple によってエンドツーエンドで暗号化された、あなた専用の iCloud コンテナ経由でのみ行われます",
+              "ローカル設定："
+            ]
+          ]
+        },
+        {
+          "title": [
+            "3. ネットワーク通信"
+          ],
+          "body": [
+            "FoxTerm は、あなたが明示的に設定したサーバーに対してのみ、直接ピアツーピア接続を確立します："
+          ],
+          "items": [
+            [
+              "すべての接続（SSH、VNC、SFTP、Docker / Podman）は、デバイスからあなたのサーバーへ直接行われます"
+            ],
+            [
+              "あなたのトラフィックのためのプロキシサーバー、リレー、中継サービスは運用していません"
+            ],
+            [
+              "App Store の取引は Apple によって完全に処理され、私たちは支払い情報を受け取ったり保存したりしません"
+            ],
+            [
+              "アプリにサードパーティの分析 SDK は組み込まれていません"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "4. iCloud 同期"
+          ],
+          "body": [
+            "iCloud での設定同期を有効にした場合："
+          ],
+          "items": [
+            [
+              "同期されたデータは、専らあなた個人の iCloud アカウントに保存され、私たちのサーバーには保存されません"
+            ],
+            [
+              "同期の通信は、Apple の CloudKit インフラストラクチャによって完全に管理・暗号化されます"
+            ],
+            [
+              "秘密鍵が iCloud 経由で同期されることは",
+              "。各デバイスの Secure Enclave に隔離されたままです",
+              "一切ありません"
+            ],
+            [
+              "iCloud 同期は、アプリの設定またはシステムの iCloud 環境設定から、いつでも無効にできます"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "5. App Store 領収書検証"
+          ],
+          "body": [
+            "Pro サブスクリプションの有効性を確認するため、FoxTerm は Apple の App Store サーバーと通信することがあります。この通信は："
+          ],
+          "items": [
+            [
+              "標準的な Apple の StoreKit API 経由で処理されます"
+            ],
+            [
+              "あなたの Apple の取引領収書の識別子のみを含みます"
+            ],
+            [
+              "あなたのサーバーデータ、認証情報、使用情報は一切含みません"
+            ],
+            [
+              "デバイスと Apple の間で直接処理されます。FoxTerm のバックエンドサーバーはこれらのリクエストをログに記録したり保存したりしません"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "6. サードパーティのサービス"
+          ],
+          "body": [
+            "FoxTerm は、サードパーティの分析、広告、データ収集サービスとは連携していません。連携する外部サービスは以下のみです："
+          ],
+          "items": [
+            [
+              "Apple App Store および CloudKit のサービス（Apple のプライバシーポリシーに準じます）"
+            ],
+            [
+              "あなたが明示的に設定し、直接接続する SSH、VNC、SFTP、Docker / Podman のサーバー"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "7. お子様のプライバシー"
+          ],
+          "body": [
+            "FoxTerm は、13 歳未満（またはお住まいの地域の適用年齢未満）のお子様の個人情報を意図的に収集することはありません。本アプリは、技術者が業務で使用するプロフェッショナルな開発者向けツールです。"
+          ]
+        },
+        {
+          "title": [
+            "8. 本ポリシーの変更"
+          ],
+          "body": [
+            "私たちは、私たちの運用や法的要件の変更を反映するために、このプライバシーポリシーを随時更新することがあります。変更はすべて、改訂日を更新した上でこのページに掲載されます。定期的に本ポリシーをご確認いただくことをお勧めします。"
+          ]
+        },
+        {
+          "title": [
+            "9. お問い合わせ"
+          ],
+          "body": [
+            "本プライバシーポリシーや私たちのデータ運用についてご質問やご懸念がある場合は、",
+            " までご連絡ください。"
+          ],
+          "links": [
+            [
+              "admin@foxterm.app"
+            ]
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "copyright": [
+        " FoxTerm.",
+        "Hosted on Tencent Makers."
+      ],
+      "links": [
+        [
+          "ホーム"
+        ],
+        [
+          "お問い合わせ"
+        ],
+        [
+          "概要"
+        ],
+        [
+          "利用規約"
+        ],
+        [
+          "GitHub"
+        ],
+        [
+          "Blog"
+        ],
+        [
+          "Security Intel"
+        ]
+      ],
+      "icp": [
+        "蜀ICP备2024075062号"
+      ],
+      "mirror": [
+        "中国ミラー:",
+        " | グローバル:",
+        "foxterm.cn",
+        "foxterm.app"
+      ],
+      "badges": [
+        {
+          "alt": "Apple Notarized"
+        },
+        {
+          "alt": "Secure Enclave"
+        },
+        {
+          "alt": "App Sandbox"
+        },
+        {
+          "alt": "Zero Telemetry"
+        },
+        {
+          "alt": "Native Swift & C"
+        },
+        {
+          "alt": "SAST Passed"
+        }
+      ]
+    }
+  },
+  "terms": {
+    "nav": {
+      "logo": [
+        "FoxTerm"
+      ],
+      "langAria": "言語",
+      "langCurrent": [
+        "日本語"
+      ],
+      "backToHome": [
+        "ホームに戻る"
+      ]
+    },
+    "content": {
+      "badge": [
+        "法的文書"
+      ],
+      "title": [
+        "利用規約"
+      ],
+      "lede": [
+        "最終更新：2026年10月",
+        "FoxTerm（当社「私たち」）が運営する FoxTerm アプリケーション（以下「本アプリ」）をご利用になる前に、本利用規約（以下「本規約」）をよくお読みください。本アプリへのアクセスおよび使用は、本規約への同意と遵守を条件とします。本規約は、本アプリにアクセスまたは使用するすべてのユーザーに適用されます。"
+      ],
+      "sections": [
+        {
+          "title": [
+            "1. ライセンスの許諾"
+          ],
+          "body": [
+            "本規約に従い、当社は以下を行うための、限定的、非独占的、譲渡不可、取消可能なライセンスを許諾します："
+          ],
+          "items": [
+            [
+              "あなたが所有または管理する個人の Apple デバイス（macOS および iOS）に、Apple の App Store 利用規約に従って本アプリをダウンロード、インストール、使用すること"
+            ],
+            [
+              "個人または業務のサーバー管理目的で本アプリの無料版を使用すること（無料版はすべての機能を含み、ノード数のみ上限があります）"
+            ],
+            [
+              "サブスクリプションが有効かつ良好な状態である限り、Pro のサブスクリプション機能にアクセスし使用すること"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "2. Universal Purchase"
+          ],
+          "body": [
+            "FoxTerm は Apple の Universal Purchase に対応しています。ひとつの購入またはサブスクリプションで、あなたの Apple ID に紐付くすべての対応プラットフォーム（macOS および iOS）で本アプリの全機能をご利用になれます。サブスクリプションは、現在の期間の終了の 24 時間以上前にキャンセルしない限り、Apple ID アカウント経由で自動的に更新されます。"
+          ]
+        },
+        {
+          "title": [
+            "3. Pro サブスクリプションとライセンス"
+          ],
+          "body": [
+            "FoxTerm Pro と無料版は、同一の機能セットを提供します。唯一の違いは、管理できるノード（サーバー）の数です。無料版はノード数を制限し、FoxTerm Pro はその制限を外し、ノード数が無制限になります。保存済みの接続プロファイルに影響を与えることなく、いつでもアップグレードやキャンセルが可能です。",
+            "Pro は、App Store を介さず直接配布される macOS 公認版でもご利用いただけます。このエディションは、pay.foxterm.app で購入したアクティベーションコード（ライセンスキー）でアンロックされます。アクティベーションコードはサブスクリプションと同じ Pro 機能を提供しますが、macOS 公認版にのみ適用され、iOS のアクティベーションは含まれません。アクティベーションコードのライセンスは FoxTerm が直接提供し、購入時に表示されるライセンス期間やデバイス範囲などの購入固有の条件が、本規約に追加して適用されます。"
+          ],
+          "items": [
+            [
+              "サブスクリプションは、購入時に選択された頻度（月額または年額）で定期的に課金されます"
+            ],
+            [
+              "お支払いは、購入確定時に Apple ID アカウントに請求されます"
+            ],
+            [
+              "サブスクリプションは、現在の期間の終了の 24 時間以上前にキャンセルしない限り自動的に更新されます"
+            ],
+            [
+              "アカウントには、現在の期間が終了する 24 時間以内に更新料金が請求されます"
+            ],
+            [
+              "購入後は Apple ID アカウントの設定でサブスクリプションの管理とキャンセルが可能です"
+            ],
+            [
+              "当社は、サブスクリプションの一部期間に対する返金を行いません。すべての課金および返金に関する事項は、App Store のポリシーに従い、Apple のみが対応します"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "4. 適切な使用"
+          ],
+          "body": [
+            "以下の目的で本アプリを使用しないことに同意するものとします："
+          ],
+          "items": [
+            [
+              "適用される地域、州、国、国際の法令や規制に違反すること"
+            ],
+            [
+              "アクセスする権限のないコンピュータシステム、ネットワーク、データに不正にアクセスすること"
+            ],
+            [
+              "マルウェア、ランサムウェア、その他の悪意のあるコードを配布すること"
+            ],
+            [
+              "サービス拒否攻撃やその他の妨害的な活動を行うこと"
+            ],
+            [
+              "適用法で認められる場合を除き、本アプリのリバースエンジニアリング、逆コンパイル、逆アセンブル、またはソースコードの導出を試みること"
+            ],
+            [
+              "著作権または所有権に関する通知を削除、変更、不明瞭にすること"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "5. 知的財産"
+          ],
+          "body": [
+            "本アプリは、すべてのコンテンツ、機能、機能性、ソースコード、グラフィック、デザイン、ロゴ、アイコンを含み、FoxTerm の独占的な財産であり、国際的な著作権、商標、その他の知的財産法によって保護されています。当社の明示的な書面による許可なく、本アプリの一部を複製、配布、改変、二次的著作物の作成、公開表示、または利用することはできません。"
+          ]
+        },
+        {
+          "title": [
+            "6. サードパーティのサーバーとコンテンツ"
+          ],
+          "body": [
+            "本アプリは、あなたが管理するか、アクセスを許可されたサーバーやインフラストラクチャへ接続するためのクライアントツールです。当社は以下について責任を負いません："
+          ],
+          "items": [
+            [
+              "接続先のサードパーティのサーバーのコンテンツ、セキュリティ、可用性、運用"
+            ],
+            [
+              "リモートサーバーやインフラ上で本アプリを使用してあなたが行う一切の行為"
+            ],
+            [
+              "本アプリの使用に起因するデータの損失またはシステムの損害"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "7. 保証の否認"
+          ],
+          "body": [
+            "本アプリは、明示または黙示を問わず、商品性、特定目的への適合性、権原、非侵害の黙示保証を含むがこれらに限られない、一切の保証なしに「現状有姿」および「利用可能な状態」で提供されます。当社は以下を保証しません："
+          ],
+          "items": [
+            [
+              "本アプリが、中断されず、安全に、または特定の時間や場所で利用可能であること"
+            ],
+            [
+              "誤りや欠陥が修正されること"
+            ],
+            [
+              "本アプリにウイルスやその他の有害な構成要素が含まれないこと"
+            ],
+            [
+              "本アプリの使用結果があなたの要件や期待を満たすこと"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "8. 責任の制限"
+          ],
+          "body": [
+            "当社は、いかなる場合においても、本アプリへのアクセスもしくは使用、またはアクセスもしくは使用の不能から生じる、利益、データ、使用、営業権、その他の無形の損失を含むがこれらに限られない、間接的、偶発的、特別、結果的、または懲罰的損害について責任を負わないものとします。"
+          ]
+        },
+        {
+          "title": [
+            "9. 終了"
+          ],
+          "body": [
+            "当社は、あなたが本規約に違反した場合を含むがこれらに限られない、いかなる理由においても、事前の通知なく、また責任を負うことなく、本アプリの使用ライセンスを直ちに終了または停止することができます。終了時には、本アプリを使用するあなたの権利は直ちに停止します。所有権に関する規定、保証の否認、補償、責任の制限など、性質上、終了後も存続すべき規定は存続します。"
+          ]
+        },
+        {
+          "title": [
+            "10. 本規約の変更"
+          ],
+          "body": [
+            "当社は、独自の裁量により、いつでも本規約を変更または置き換える権利を留保します。重要な変更については、合理的な通知を行います。改訂された本規約の掲載後も本アプリの使用を継続することは、それらの変更への同意とみなされます。"
+          ]
+        },
+        {
+          "title": [
+            "11. 準拠法"
+          ],
+          "body": [
+            "本規約は、抵触法に関する規定を適用せず、当社が拠点を置く法域の法律に準拠し、それに従って解釈されるものとします。"
+          ]
+        },
+        {
+          "title": [
+            "12. お問い合わせ"
+          ],
+          "body": [
+            "本規約についてご質問がある場合は、",
+            " までご連絡ください。"
+          ],
+          "links": [
+            [
+              "admin@foxterm.app"
+            ]
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "copyright": [
+        " FoxTerm.",
+        "Hosted on Tencent Makers."
+      ],
+      "links": [
+        [
+          "ホーム"
+        ],
+        [
+          "お問い合わせ"
+        ],
+        [
+          "概要"
+        ],
+        [
+          "プライバシーポリシー"
+        ],
+        [
+          "GitHub"
+        ],
+        [
+          "Blog"
+        ],
+        [
+          "Security Intel"
+        ]
+      ],
+      "icp": [
+        "蜀ICP备2024075062号"
+      ],
+      "mirror": [
+        "中国ミラー:",
+        " | グローバル:",
+        "foxterm.cn",
+        "foxterm.app"
+      ],
+      "badges": [
+        {
+          "alt": "Apple Notarized"
+        },
+        {
+          "alt": "Secure Enclave"
+        },
+        {
+          "alt": "App Sandbox"
+        },
+        {
+          "alt": "Zero Telemetry"
+        },
+        {
+          "alt": "Native Swift & C"
+        },
+        {
+          "alt": "SAST Passed"
+        }
+      ]
+    }
+  }
+}

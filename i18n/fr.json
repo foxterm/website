@@ -1,0 +1,1905 @@
+{
+  "_meta": {
+    "lang": "fr",
+    "label": "Français",
+    "updated": "2026-10-20"
+  },
+  "_seo": {
+    "index": {
+      "viewport": "width=device-width, initial-scale=1",
+      "title": "FoxTerm - Client SSH, VNC, SFTP, Docker & Podman pour macOS & iOS | Application Terminal",
+      "description": "FoxTerm est une application terminal hautement performante et respectueuse de la vie privée pour macOS et iOS. SSH ultra-rapide, SFTP, VNC accéléré par Metal, télémétrie Linux en temps réel et gestion visuelle de Docker/Podman. Zéro télémétrie. Achat universel.",
+      "keywords": "client SSH macOS, client SFTP Mac, client VNC iOS, gestion Docker, gestion Podman, application terminal macOS, client SSH iOS, bureau distant Mac, outil d'administration serveur, émulateur terminal Mac, client SSH natif, terminal accéléré Metal",
+      "author": "FoxTerm",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "googlebot": "index, follow",
+      "language": "Français",
+      "revisit-after": "7 days",
+      "og:type": "website",
+      "og:locale": "fr_FR",
+      "og:locale:alternate": "en_US, zh_CN, zh_TW, ja_JP, de_DE, ru_RU, es_ES, ko_KR, pt_BR",
+      "og:title": "FoxTerm | SSH, VNC, SFTP, Docker universels pour macOS & iOS",
+      "og:description": "Redéfinissez votre contrôle de l'infrastructure. FoxTerm réunit SSH, SFTP, VNC et gestion de conteneurs sans télémétrie. Performance native Swift & Metal.",
+      "og:url": "https://foxterm.app/fr/",
+      "og:site_name": "FoxTerm",
+      "og:image": "/assets/apple-touch-icon.png",
+      "og:image:width": "180",
+      "og:image:height": "180",
+      "og:image:alt": "FoxTerm - Application Terminal native pour macOS & iOS",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "FoxTerm - Terminal nouvelle génération pour macOS & iOS",
+      "twitter:description": "Maîtrisez votre infrastructure cloud avec FoxTerm. Achat universel pour Mac et iOS. Zéro télémétrie. Performance native.",
+      "twitter:image": "/assets/apple-touch-icon.png",
+      "twitter:image:alt": "Application Terminal FoxTerm",
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"SoftwareApplication\",\"name\":\"FoxTerm\",\"operatingSystem\":\"macOS 14+, iOS 17+\",\"applicationCategory\":\"DeveloperApplication\",\"applicationSubCategory\":\"TerminalEmulator\",\"softwareRequirements\":\"Nécessite macOS 14.0 ou version ultérieure, iOS 17.0 ou version ultérieure.\",\"offers\":{\"@type\":\"AggregateOffer\",\"priceCurrency\":\"USD\",\"offerCount\":\"3\",\"offers\":[{\"@type\":\"Offer\",\"name\":\"FoxTerm Free\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"Toutes les fonctionnalités débloquées gratuitement ; seul le nombre de nœuds (serveurs) est plafonné\"},{\"@type\":\"Offer\",\"name\":\"FoxTerm Pro — Abonnement Mac App Store\",\"category\":\"Subscription\",\"description\":\"Abonnement mensuel ou annuel facturé par Apple ; nœuds illimités ; Universal Purchase active automatiquement l'app iOS\"},{\"@type\":\"Offer\",\"name\":\"FoxTerm Pro — Édition notariée (code d'activation)\",\"category\":\"DirectLicense\",\"description\":\"Build macOS direct, signé et notarié, déverrouillé par un code d'activation acheté sur pay.foxterm.app ; nœuds illimités ; le code d'activation s'applique uniquement à l'édition notariée macOS\"}]},\"description\":\"Application universelle de gestion SSH, VNC, SFTP, Docker et Podman pour macOS et iOS, zéro télémétrie et performance native Swift/Metal.\",\"downloadUrl\":\"https://apps.apple.com/us/app/foxterm/id6760452891\",\"featureList\":\"Terminal SSH haute performance, gestionnaire de fichiers SFTP, bureau distant VNC accéléré Metal, supervision de la télémétrie système en temps réel, gestion de conteneurs Docker & Podman, Achat universel pour macOS & iOS, protection de la vie privée sans télémétrie, protection des clés Apple Secure Enclave\",\"screenshot\":\"/assets/og-image.png\",\"softwareVersion\":\"1.2.0\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}},{\"@type\":\"WebSite\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app/fr/\",\"inLanguage\":\"fr-FR\",\"potentialAction\":{\"@type\":\"SearchAction\",\"target\":\"https://foxterm.app/?q={search_term_string}\",\"query-input\":\"required name=search_term_string\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https://foxterm.app/fr/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Fonctionnalités\",\"item\":\"https://foxterm.app/fr/#features\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Cas d'usage\",\"item\":\"https://foxterm.app/fr/#use-cases\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Architecture\",\"item\":\"https://foxterm.app/fr/#architecture\"},{\"@type\":\"ListItem\",\"position\":5,\"name\":\"Sécurité\",\"item\":\"https://foxterm.app/fr/#security\"},{\"@type\":\"ListItem\",\"position\":6,\"name\":\"Tarifs\",\"item\":\"https://foxterm.app/fr/#pricing\"},{\"@type\":\"ListItem\",\"position\":7,\"name\":\"FAQ\",\"item\":\"https://foxterm.app/fr/#faq\"},{\"@type\":\"ListItem\",\"position\":8,\"name\":\"Téléchargement\",\"item\":\"https://foxterm.app/fr/#download\"}]},{\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Qu'est-ce que FoxTerm ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm est une application d'administration de serveurs tout-en-un, respectueuse de la vie privée, développée nativement pour macOS et iOS. Elle réunit l'accès terminal SSH haute performance, la gestion de fichiers SFTP, le bureau distant VNC accéléré par Metal, la télémétrie système Linux et le contrôle visuel des conteneurs Docker/Podman.\"}},{\"@type\":\"Question\",\"name\":\"Comment l'abonnement FoxTerm Pro fonctionne-t-il sur Mac et iPhone/iPad ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"La version gratuite inclut toutes les fonctionnalités ; seul le nombre de nœuds (serveurs) est plafonné. L'abonnement FoxTerm Pro lève cette limite pour des nœuds illimités, et déverrouille simultanément tous vos appareils Apple autorisés (macOS et iOS/iPadOS) sous un seul Apple ID, avec synchronisation fluide de la configuration via votre conteneur iCloud privé.\"}},{\"@type\":\"Question\",\"name\":\"Comment FoxTerm protège-t-il les identifiants et clés serveur ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm applique une politique stricte de zéro télémétrie avec chiffrement localisé à 100 %. Les identifiants serveur, mots de passe et clés privées SSH sont isolés au sein du Keychain matériel Apple et du Secure Enclave. Aucun journal de connexion ni donnée utilisateur sensible n'est jamais collecté, relayé ou envoyé à des serveurs tiers.\"}},{\"@type\":\"Question\",\"name\":\"FoxTerm peut-il gérer les conteneurs Docker et Podman sans ligne de commande ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Oui. FoxTerm Pro fournit un tableau de bord visuel intégré pour gérer les conteneurs, images et volumes Docker et Podman. Il prend en charge les conteneurs Rootless, le streaming de journaux en temps réel et l'intégration Exec Shell en un clic directement dans l'interface graphique.\"}},{\"@type\":\"Question\",\"name\":\"En quoi FoxTerm se distingue-t-il des clients terminaux basés sur Electron ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm n'est pas un wrapper Electron. Il a été conçu de zéro avec Swift natif, accélération matérielle Metal et des bibliothèques natives C (OpenSSL, libssh, libvncclient), pour offrir un démarrage quasi instantané, une consommation de ressources ultra-faible et une optimisation native sur iOS.\"}},{\"@type\":\"Question\",\"name\":\"Quelles plates-formes et systèmes d'exploitation sont pris en charge ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm est conçu nativement pour les plates-formes Apple : macOS 14.0 ou version ultérieure et iOS/iPadOS 17.0 ou version ultérieure, y compris iPhone et iPad. Un seul Universal Purchase déverrouille l'app sur chaque appareil. Il n'existe aucun build Windows, Android ou Linux de bureau.\"}},{\"@type\":\"Question\",\"name\":\"Quels protocoles et méthodes d'authentification sont pris en charge ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm prend en charge les connexions SSH, SFTP et VNC, et gère les moteurs Docker et Podman via SSH. Il prend en charge des chiffrements modernes et des types de clés tels qu'Ed25519, des sessions terminal à volets divisés, des extraits de commandes, des transferts SFTP par glisser-déposer et la gestion visuelle des conteneurs, images et volumes.\"}},{\"@type\":\"Question\",\"name\":\"FoxTerm collecte-t-il des données ou route-t-il mes connexions par ses serveurs ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Non. FoxTerm se connecte directement depuis votre appareil à vos propres serveurs et ne relaie jamais le trafic. Il applique une politique stricte de zéro télémétrie, sans analytique, suivi d'activité ni journal de connexion. Les identifiants et clés sont chiffrés sur l'appareil et isolés dans le Keychain Apple et le Secure Enclave.\"}},{\"@type\":\"Question\",\"name\":\"Comment obtenir Pro sur macOS, et comment l'activation iOS fonctionne-t-elle ?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Il existe deux façons d'obtenir Pro sur macOS. L'édition App Store (macOS + iOS) est un abonnement mensuel ou annuel facturé par Apple, géré dans vos réglages d'abonnement Apple ID ; les renouvellements et remboursements sont régis par les politiques d'Apple. Cette édition active automatiquement l'app iOS via l'Achat universel. L'édition notariée est un build macOS indépendant, déverrouillé avec un code d'activation acheté sur pay.foxterm.app — elle ne concerne que macOS et n'inclut pas l'activation iOS. L'app iOS est gratuite sur l'App Store et se déverrouille automatiquement uniquement via l'édition App Store.\"}}]}]}"
+    },
+    "about": {
+      "viewport": "width=device-width, initial-scale=1",
+      "title": "À propos de FoxTerm | Un client terminal qui vous respecte",
+      "description": "FoxTerm est un client natif macOS & iOS pour SSH, SFTP, VNC et Docker. Écrit en Swift et C. Téléchargement gratuit, Pro par abonnement ou code d'activation. Zéro télémétrie.",
+      "keywords": "FoxTerm à propos, client SSH, émulateur de terminal, macOS SSH, terminal iOS, client SSH Swift, terminal natif, terminal sécurisé, histoire FoxTerm",
+      "author": "FoxTerm",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "googlebot": "index, follow",
+      "language": "Français",
+      "revisit-after": "30 days",
+      "og:type": "website",
+      "og:locale": "fr_FR",
+      "og:locale:alternate": "en_US, zh_CN, zh_TW, ja_JP, de_DE, ru_RU, es_ES, ko_KR, pt_BR",
+      "og:title": "À propos de FoxTerm | Un client terminal qui vous respecte",
+      "og:description": "Client SSH natif macOS & iOS. Swift et C. Téléchargement gratuit, Pro par abonnement ou code d'activation. Zéro télémétrie.",
+      "og:url": "https://foxterm.app/fr/about",
+      "og:site_name": "FoxTerm",
+      "og:image": "/assets/apple-touch-icon.png",
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"AboutPage\",\"name\":\"À propos de FoxTerm\",\"url\":\"https://foxterm.app/fr/about\",\"inLanguage\":\"fr-FR\",\"isPartOf\":{\"@type\":\"WebSite\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app/fr/\"},\"description\":\"L'histoire derrière FoxTerm — un client natif SSH, SFTP, VNC et Docker pour macOS et iOS.\",\"breadcrumb\":{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https://foxterm.app/fr/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"À propos\",\"item\":\"https://foxterm.app/fr/about\"}]}}"
+    },
+    "contact": {
+      "viewport": "width=device-width, initial-scale=1",
+      "title": "Contact et prestation - FoxTerm | Ligne directe avec le développeur",
+      "description": "Ligne directe avec l'architecte en chef de FoxTerm : support produit, signalement de bugs — ou développement sur commande en React, React Native, Go, Swift et plus, réalisé personnellement par un ingénieur indépendant.",
+      "keywords": "contact FoxTerm, support FoxTerm, support client SSH, retour développeur, centre d'aide terminal, prestation, développement React, développement React Native, développement Go, développement Swift",
+      "author": "FoxTerm",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "googlebot": "index, follow",
+      "language": "Français",
+      "revisit-after": "30 days",
+      "og:type": "website",
+      "og:locale": "fr_FR",
+      "og:locale:alternate": "en_US, zh_CN, zh_TW, ja_JP, de_DE, ru_RU, es_ES, ko_KR, pt_BR",
+      "og:title": "Contact - FoxTerm",
+      "og:description": "Ligne directe avec l'architecte en chef. Support produit, signalement de bugs — ou des projets qui valent la peine d'être bien faits.",
+      "og:url": "https://foxterm.app/fr/contact",
+      "og:site_name": "FoxTerm",
+      "og:image": "/assets/apple-touch-icon.png",
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"ContactPage\",\"name\":\"Contact - FoxTerm\",\"url\":\"https://foxterm.app/fr/contact\",\"inLanguage\":\"fr-FR\",\"isPartOf\":{\"@type\":\"WebSite\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app/fr/\"},\"description\":\"Page de support direct pour les utilisateurs de FoxTerm afin de contacter le développeur en chef.\",\"breadcrumb\":{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https://foxterm.app/fr/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Contact\",\"item\":\"https://foxterm.app/fr/contact\"}]}}"
+    },
+    "privacy": {
+      "viewport": "width=device-width, initial-scale=1",
+      "title": "Politique de confidentialité - FoxTerm | Application terminal respectueuse de la vie privée",
+      "description": "Politique de confidentialité FoxTerm. Découvrez comment nous protégeons vos données grâce à une politique zéro télémétrie, au chiffrement local, au stockage des clés dans le Secure Enclave d'Apple et à la souveraineté totale des données.",
+      "keywords": "confidentialité FoxTerm, zéro télémétrie, confidentialité terminal, sécurité SSH, protection des données, chiffrement Secure Enclave",
+      "author": "FoxTerm",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "googlebot": "index, follow",
+      "language": "Français",
+      "revisit-after": "30 days",
+      "og:type": "website",
+      "og:locale": "fr_FR",
+      "og:locale:alternate": "en_US, zh_CN, zh_TW, ja_JP, de_DE, ru_RU, es_ES, ko_KR, pt_BR",
+      "og:title": "Politique de confidentialité - FoxTerm",
+      "og:description": "Zéro télémétrie, chiffrement local, souveraineté totale des données pour votre gestion de serveurs.",
+      "og:url": "https://foxterm.app/fr/privacy",
+      "og:site_name": "FoxTerm",
+      "og:image": "/assets/apple-touch-icon.png",
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"name\":\"Politique de confidentialité - FoxTerm\",\"url\":\"https://foxterm.app/fr/privacy\",\"inLanguage\":\"fr-FR\",\"isPartOf\":{\"@type\":\"WebSite\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app/fr/\"},\"description\":\"Politique de confidentialité FoxTerm : protection zéro télémétrie, chiffrement local et souveraineté totale des données utilisateur.\",\"breadcrumb\":{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https://foxterm.app/fr/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Politique de confidentialité\",\"item\":\"https://foxterm.app/fr/privacy\"}]}}"
+    },
+    "terms": {
+      "viewport": "width=device-width, initial-scale=1",
+      "title": "Conditions d'utilisation - FoxTerm",
+      "description": "Conditions d'utilisation de FoxTerm. Licence, usage acceptable, abonnement et avertissements pour le client SSH/VNC/SFTP FoxTerm.",
+      "keywords": "conditions d'utilisation FoxTerm, CLUF, contrat de licence, conditions App Store, abonnement",
+      "author": "FoxTerm",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "googlebot": "index, follow",
+      "language": "Français",
+      "revisit-after": "30 days",
+      "og:type": "website",
+      "og:locale": "fr_FR",
+      "og:locale:alternate": "en_US, zh_CN, zh_TW, ja_JP, de_DE, ru_RU, es_ES, ko_KR, pt_BR",
+      "og:title": "Conditions d'utilisation - FoxTerm",
+      "og:description": "Conditions d'utilisation et contrat de licence utilisateur final pour FoxTerm.",
+      "og:url": "https://foxterm.app/fr/terms",
+      "og:site_name": "FoxTerm",
+      "og:image": "/assets/apple-touch-icon.png",
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"name\":\"Conditions d'utilisation - FoxTerm\",\"url\":\"https://foxterm.app/fr/terms\",\"inLanguage\":\"fr-FR\",\"isPartOf\":{\"@type\":\"WebSite\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app/fr/\"},\"description\":\"Conditions d'utilisation de FoxTerm : licence, usage acceptable, abonnements et avertissements légaux.\",\"breadcrumb\":{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Accueil\",\"item\":\"https://foxterm.app/fr/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Conditions d'utilisation\",\"item\":\"https://foxterm.app/fr/terms\"}]}}"
+    }
+  },
+  "index": {
+    "nav": {
+      "logo": [
+        "FoxTerm"
+      ],
+      "links": [
+        [
+          "Fonctionnalités"
+        ],
+        [
+          "Cas d'usage"
+        ],
+        [
+          "Architecture"
+        ],
+        [
+          "Sécurité"
+        ],
+        [
+          "Tarifs"
+        ],
+        [
+          "FAQ"
+        ]
+      ],
+      "langAria": "Langue",
+      "langCurrent": [
+        "Français"
+      ],
+      "getApp": [
+        "Télécharger"
+      ]
+    },
+    "hero": {
+      "badge": [
+        "100 % natif pour les plates-formes Apple · Zéro télémétrie · Universal Purchase"
+      ],
+      "title": [
+        "Maîtrisez votre infrastructure avec",
+        "FoxTerm"
+      ],
+      "tags": [
+        [
+          "SSH"
+        ],
+        [
+          "VNC"
+        ],
+        [
+          "SFTP"
+        ],
+        [
+          "Docker"
+        ],
+        [
+          "Podman"
+        ]
+      ],
+      "subtitle": [
+        "Le terminal natif tout-en-un pour macOS et iOS. SSH, SFTP, VNC accéléré par Metal, supervision Linux en temps réel et gestion visuelle Docker/Podman — sécurisé, ultra-rapide, et prêt dès que vous le lancez."
+      ],
+      "cta": [
+        {
+          "alt": "Télécharger sur l'App Store Apple",
+          "caption": [
+            "Achat universel App Store"
+          ],
+          "label": [
+            "Télécharger pour macOS & iOS"
+          ]
+        }
+      ]
+    },
+    "trust": {
+      "items": [
+        {
+          "value": [
+            "4-in-1"
+          ],
+          "body": [
+            "SSH · SFTP · VNC & conteneurs dans une seule fenêtre"
+          ]
+        },
+        {
+          "body": [
+            "Identifiants et clés restent sur votre appareil"
+          ]
+        },
+        {
+          "body": [
+            "Télémétrie, analytique ou traceurs tiers"
+          ]
+        },
+        {
+          "body": [
+            "Un Apple ID déverrouille Mac, iPhone & iPad ensemble"
+          ]
+        }
+      ]
+    },
+    "architecture": {
+      "title": [
+        "Performance, perfectionnée.",
+        ".",
+        "Clarté, simplifiée"
+      ],
+      "lede": [
+        "Pas de wrappers web, pas de surcharge. FoxTerm allie un design industriel minimaliste à une performance de rendu native sans compromis."
+      ],
+      "cards": [
+        {
+          "title": [
+            "Performance native",
+            "Défini par des facettes nettes.",
+            "Conçu pour l'",
+            ".",
+            "agilité",
+            "01 / BORDS NETS"
+          ],
+          "body": [
+            "Construit sur Swift et l'accélération Metal pour offrir une saisie de commande quasi instantanée et un rendu d'écran fluide.",
+            "La marque adopte un design géométrique low-poly, remplaçant les courbes complexes par des facettes vectorielles calculées qui symbolisent précision et vélocité.",
+            "Ce langage de design reflète directement notre philosophie logicielle :",
+            "Zéro surcharge, exécution native pure et efficacité maximale.",
+            "Lignes vectorielles épurées qui soulignent la réactivité immédiate du terminal."
+          ]
+        },
+        {
+          "title": [
+            "Précision géométrique",
+            "02 / HIÉRARCHIE"
+          ],
+          "body": [
+            "Des facettes géométriques low-poly épurées qui éliminent le bruit visuel, pour un espace de travail développeur net et sans distraction.",
+            "Ombrages contrastés riches, pensés pour les environnements en mode sombre."
+          ]
+        },
+        {
+          "title": [
+            "Flux de travail unifié",
+            "03 / STABILITÉ"
+          ],
+          "body": [
+            "Réunit shell distant, transfert de fichiers, bureau GUI et gestion de conteneurs dans une interface unique et cohérente.",
+            "Géométries emboîtées qui font écho aux protocoles réseau sécurisés."
+          ]
+        },
+        {
+          "title": [
+            "04 / EFFICACITÉ"
+          ],
+          "body": [
+            "Lignes convergentes qui concentrent la complexité en flux de travail fluides."
+          ]
+        },
+        {
+          "badge": [
+            "GRILLE DE REPÈRE : ACTIVE",
+            "RENDU : POLICE TTF",
+            "⬇ TTF",
+            "⬇ SVG"
+          ]
+        }
+      ],
+      "badge": [
+        " GÉOMÉTRIE VECTORIELLE & ICONOGRAPHIE",
+        "TYPE : POLICE D'ICÔNES"
+      ]
+    },
+    "security": {
+      "badge": [
+        "Architecture de sécurité zéro confiance"
+      ],
+      "title": [
+        "Chiffrement localisé,",
+        "Souveraineté totale des données"
+      ],
+      "lede": [
+        "Vos clés serveur sont vos actifs essentiels. FoxTerm applique une politique stricte de zéro télémétrie avec chiffrement localisé à 100 % et isolation matérielle."
+      ],
+      "cards": [
+        {
+          "badge": [
+            "01 / ZÉRO TÉLÉMÉTRIE"
+          ],
+          "body": [
+            "Aucune télémétrie ni suivi d'activité. Les journaux de connexion ne quittent jamais votre environnement local."
+          ]
+        },
+        {
+          "badge": [
+            "02 / COFFRE FORT MATÉRIEL"
+          ],
+          "body": [
+            "S'appuie sur l'isolation matérielle Apple Keychain & Secure Enclave pour le stockage des clés privées."
+          ]
+        },
+        {
+          "badge": [
+            "03 / CRYPTO NATIF"
+          ],
+          "body": [
+            "Propulsé par des moteurs natifs C avec prise en charge complète d'Ed25519 et des suites de chiffrement modernes."
+          ]
+        },
+        {
+          "badge": [
+            "04 / SYNCHRO ICLOUD"
+          ],
+          "body": [
+            "Synchronisation fluide de la configuration exclusivement via votre conteneur iCloud privé et chiffré."
+          ]
+        }
+      ]
+    },
+    "features": {
+      "title": [
+        "Capacités complètes"
+      ],
+      "lede": [
+        "Tout ce dont la gestion de serveur moderne a besoin, réuni dans un seul flux de travail."
+      ],
+      "cards": [
+        {
+          "badge": [
+            "SSH"
+          ],
+          "title": [
+            "SSH haute performance"
+          ],
+          "body": [
+            "Prend en charge les clés Ed25519, onglets séparés, extraits de commandes et reconnexion automatique intelligente avec des temps de réponse en millisecondes."
+          ]
+        },
+        {
+          "badge": [
+            "MON"
+          ],
+          "title": [
+            "Télémétrie en temps réel"
+          ],
+          "body": [
+            "Visualisation active du CPU, de la mémoire, des E/S disque, du débit réseau et des métriques GPU/VRAM."
+          ]
+        },
+        {
+          "badge": [
+            "SFTP"
+          ],
+          "title": [
+            "Transfert de fichiers SFTP"
+          ],
+          "body": [
+            "Transfert de fichiers par glisser-déposer, éditeur intégré et contrôle des permissions."
+          ]
+        },
+        {
+          "badge": [
+            "VNC"
+          ],
+          "title": [
+            "VNC accéléré Metal"
+          ],
+          "body": [
+            "Moteur VNC accéléré matériellement pour un accès bureau distant fluide, optimisé pour le tactile et les gestes."
+          ]
+        },
+        {
+          "badge": [
+            "CTL"
+          ],
+          "title": [
+            "Orchestration de conteneurs"
+          ],
+          "body": [
+            "Tableau de bord visuel pour les conteneurs, images et volumes, avec prise en charge des runtimes Rootless et du streaming de journaux en direct."
+          ]
+        },
+        {
+          "badge": [
+            "iOS"
+          ],
+          "title": [
+            "Achat universel"
+          ],
+          "body": [
+            "Un abonnement couvre à la fois macOS et iOS/iPadOS ; chaque fonctionnalité est gratuite, avec une limite de nœuds uniquement — passez en Pro pour des nœuds illimités."
+          ]
+        }
+      ]
+    },
+    "useCases": {
+      "badge": [
+        "Conçu pour votre façon de travailler"
+      ],
+      "title": [
+        "Une boîte à outils pour chaque",
+        "flux de travail à distance"
+      ],
+      "lede": [
+        "Du triage en production lors des astreintes au bricolage le week-end dans votre homelab, FoxTerm s'adapte à votre façon de gérer les machines."
+      ],
+      "cards": [
+        {
+          "badge": [
+            "OPS"
+          ],
+          "title": [
+            "SRE & DevOps en astreinte"
+          ],
+          "body": [
+            "Ouvrez une session en quelques secondes, suivez les journaux des conteneurs et lisez les valeurs CPU, mémoire et disque en direct avant qu'un pépin ne devienne une panne."
+          ]
+        },
+        {
+          "badge": [
+            "LAB"
+          ],
+          "title": [
+            "Homelab & auto-hébergeurs"
+          ],
+          "body": [
+            "Pilotez des routeurs, des NAS et des piles Docker/Podman depuis votre Mac ou votre téléphone — sans jump host, sans passerelle cloud, sans intermédiaire."
+          ]
+        },
+        {
+          "badge": [
+            "NET"
+          ],
+          "title": [
+            "Ingénieurs réseau & edge"
+          ],
+          "body": [
+            "Accédez à OpenWrt, à l'IoT et aux équipements edge distants via SSH, SFTP et un VNC Metal fluide — même sur une liaison cellulaire instable."
+          ]
+        },
+        {
+          "badge": [
+            "MOB"
+          ],
+          "title": [
+            "Admins orientés mobile"
+          ],
+          "body": [
+            "Pilotez un terminal complet, transférez des fichiers et redémarrez un conteneur depuis iPhone ou iPad avec le tactile natif, les gestes et les raccourcis."
+          ]
+        }
+      ]
+    },
+    "comparison": {
+      "title": [
+        "Supériorité architecturale"
+      ],
+      "lede": [
+        "FoxTerm face aux outils CLI traditionnels et aux apps SaaS dépendantes du cloud."
+      ],
+      "table": {
+        "head": [
+          [
+            "Dimension"
+          ],
+          [
+            "FoxTerm"
+          ],
+          [
+            "Outils CLI traditionnels"
+          ],
+          [
+            "Apps SaaS avec synchronisation cloud"
+          ]
+        ],
+        "rows": [
+          [
+            [
+              "Confidentialité & télémétrie"
+            ],
+            [
+              "✓ 100 % local / Zéro télémétrie"
+            ],
+            [
+              "✓ Local uniquement"
+            ],
+            [
+              "✗ Synchronisation cloud centralisée"
+            ]
+          ],
+          [
+            [
+              "Protection des clés"
+            ],
+            [
+              "✓ Matériel Secure Enclave"
+            ],
+            [
+              "~ Système de fichiers simple"
+            ],
+            [
+              "✗ Serveurs cloud tiers"
+            ]
+          ],
+          [
+            [
+              "UI des conteneurs"
+            ],
+            [
+              "✓ GUI native Docker & Podman"
+            ],
+            [
+              "✗ Ligne de commande CLI uniquement"
+            ],
+            [
+              "~ Lecteur de journaux basique"
+            ]
+          ],
+          [
+            [
+              "Moteur de rendu"
+            ],
+            [
+              "✓ Swift & Metal natifs"
+            ],
+            [
+              "~ Rendu de texte basique"
+            ],
+            [
+              "✗ Wrapper Electron lourd"
+            ]
+          ],
+          [
+            [
+              "Plateforme universelle"
+            ],
+            [
+              "✓ macOS + iOS universel"
+            ],
+            [
+              "✗ Bureau/mobile séparés"
+            ],
+            [
+              "~ Achats séparés"
+            ]
+          ]
+        ]
+      }
+    },
+    "pricing": {
+      "badge": [
+        "Des prix simples et honnêtes"
+      ],
+      "title": [
+        "Chaque fonctionnalité est gratuite."
+      ],
+      "pro": {
+        "price": [
+          [
+            "Pro lève seulement la limite.",
+            "Illimité"
+          ],
+          [
+            "nœuds"
+          ]
+        ],
+        "title": [
+          "FoxTerm Pro"
+        ],
+        "tag": [
+          "Recommandé"
+        ],
+        "lede": [
+          "Tout ce qu'il y a dans la version gratuite, sans le plafond de nœuds"
+        ],
+        "items": [
+          [
+            "Toutes les fonctionnalités de la version gratuite"
+          ],
+          [
+            "Nœuds illimités (serveurs) pour les flottes en croissance"
+          ],
+          [
+            "Universal sur macOS + iOS/iPadOS avec un seul Apple ID"
+          ],
+          [
+            "Toutes les futures améliorations Pro"
+          ],
+          [
+            "Support prioritaire, directement par le développeur"
+          ]
+        ],
+        "button": [
+          "Voir comment obtenir Pro"
+        ]
+      },
+      "lede": [
+        "La version gratuite inclut toutes les capacités — SSH, SFTP, VNC, télémétrie en direct et conteneurs — avec seulement un plafond sur le nombre de nœuds. Pro lève ce plafond pour les grandes flottes, sur tous vos appareils."
+      ],
+      "free": {
+        "title": [
+          "Gratuit"
+        ],
+        "tag": [
+          "Aucune carte requise"
+        ],
+        "lede": [
+          "Chaque fonctionnalité, un nombre limité de nœuds"
+        ],
+        "items": [
+          [
+            "Terminal SSH complet avec volets divisés, onglets et extraits de commandes"
+          ],
+          [
+            "Transferts SFTP, VNC Metal et télémétrie en temps réel"
+          ],
+          [
+            "Gestion visuelle Docker & Podman"
+          ],
+          [
+            "Clés Secure Enclave, zéro télémétrie, synchronisation iCloud"
+          ],
+          [
+            "Nombre limité de nœuds (serveurs)"
+          ]
+        ],
+        "button": [
+          "Télécharger gratuitement"
+        ]
+      },
+      "options": {
+        "0": {
+          "label": [
+            "Option 1 · Abonnement"
+          ],
+          "title": [
+            "Édition Mac App Store"
+          ],
+          "items": [
+            [
+              "Abonnement mensuel ou annuel, facturé par Apple"
+            ],
+            [
+              "Universal Purchase — active macOS et iOS automatiquement"
+            ],
+            [
+              "Annulable à tout moment ; les renouvellements et remboursements sont gérés par Apple"
+            ]
+          ],
+          "button": [
+            "Voir sur l'App Store"
+          ]
+        },
+        "1": {
+          "label": [
+            "Option 2 · Code d'activation"
+          ],
+          "title": [
+            "Édition notariée pour macOS"
+          ],
+          "items": [
+            [
+              "Build macOS direct, signé et notarié — sans App Store requis"
+            ],
+            [
+              "Déverrouillez avec un code d'activation acheté directement sur pay.foxterm.app"
+            ],
+            [
+              "macOS uniquement — indépendant de l'édition App Store"
+            ]
+          ],
+          "button": [
+            "Obtenir un code d'activation"
+          ]
+        },
+        "title": [
+          "Deux façons de déverrouiller Pro sur macOS"
+        ],
+        "subtitle": [
+          "L'édition App Store (macOS + iOS) est régie par les politiques Apple et se déverrouille via l'Achat universel ; l'édition notariée concerne uniquement macOS, les codes d'activation n'incluent pas iOS."
+        ],
+        "footnote": [
+          "L'app iOS est gratuite sur l'App Store et se déverrouille automatiquement lorsque Pro est activé via l'édition App Store. Les profils de connexion et la configuration se synchronisent entre appareils via votre conteneur iCloud privé."
+        ]
+      }
+    },
+    "faq": {
+      "badge": [
+        "Questions fréquentes"
+      ],
+      "title": [
+        "Tout ce qu'il faut savoir sur",
+        "FoxTerm"
+      ],
+      "lede": [
+        "Sécurité, licence Pro et performance native — expliqués simplement."
+      ],
+      "items": [
+        {
+          "q": [
+            " Qu'est-ce que FoxTerm et quelles sont ses fonctionnalités clés ?"
+          ],
+          "answer": [
+            "FoxTerm est une application d'administration de serveurs tout-en-un, respectueuse de la vie privée, développée nativement pour macOS et iOS. Elle réunit l'",
+            ", la",
+            ", le",
+            ", la",
+            " et le contrôle visuel des conteneurs",
+            ".",
+            "accès terminal SSH haute performance",
+            "gestion de fichiers SFTP",
+            "bureau distant VNC accéléré par Metal",
+            "télémétrie système en temps réel",
+            "Docker & Podman"
+          ]
+        },
+        {
+          "q": [
+            " Quelle est la différence entre la version gratuite et Pro ? Comment l'édition App Store fonctionne-t-elle sur tous les appareils ?"
+          ],
+          "answer": [
+            "La version gratuite n'est pas une démo bridée — chaque capacité, du",
+            " et du",
+            " au",
+            ", à la télémétrie en temps réel et à la gestion de",
+            ", est entièrement déverrouillée. La seule limite est le nombre de",
+            " que vous pouvez gérer. L'abonnement FoxTerm Pro lève cette limite pour des nœuds illimités. L'",
+            "édition App Store déverrouille simultanément les clients macOS et iOS/iPadOS via l'Achat universel sous un même Apple ID. L' édition notariée est un build macOS autonome, indépendant de l'édition App Store. La configuration se synchronise entre appareils via votre conteneur iCloud personnel.",
+            "SFTP",
+            "VNC accéléré par Metal",
+            "Docker & Podman",
+            "nœuds (serveurs)"
+          ]
+        },
+        {
+          "q": [
+            " Comment FoxTerm sécurise-t-il mes clés serveur et mes identifiants de connexion ?"
+          ],
+          "answer": [
+            "FoxTerm applique une",
+            " avec chiffrement localisé à 100 %. Les identifiants serveur et les clés privées SSH sont isolés matériellement au sein du",
+            " d'Apple, sans aucune donnée envoyée à des serveurs tiers.",
+            "politique stricte de zéro télémétrie",
+            "Secure Enclave et du Keychain"
+          ]
+        },
+        {
+          "q": [
+            " En quoi FoxTerm se distingue-t-il des clients terminaux basés sur Electron ?"
+          ],
+          "answer": [
+            "FoxTerm n'est pas un wrapper Electron. Il a été conçu de zéro avec",
+            ", pour offrir un démarrage quasi instantané, une consommation de ressources ultra-faible et une optimisation native sur iOS.",
+            "Swift natif, accélération matérielle Metal et des bibliothèques natives C (OpenSSL, libssh, libvncclient)"
+          ]
+        },
+        {
+          "q": [
+            " Quelles plates-formes et systèmes d'exploitation sont pris en charge ?"
+          ],
+          "answer": [
+            "FoxTerm est conçu nativement pour les plates-formes Apple : il fonctionne sur macOS 14.0 ou version ultérieure et iOS/iPadOS 17.0 ou version ultérieure, y compris iPhone et iPad, avec un seul Universal Purchase déverrouillant chaque appareil. Il n'existe aucun build Windows, Android ou Linux de bureau — FoxTerm est développé exclusivement pour la pile native Apple."
+          ]
+        },
+        {
+          "q": [
+            " Quels protocoles et méthodes d'authentification sont pris en charge ?"
+          ],
+          "answer": [
+            "FoxTerm prend en charge les connexions SSH, SFTP et VNC, et gère les moteurs Docker et Podman via SSH. Il est livré avec des chiffrements modernes et des types de clés tels qu'Ed25519, des sessions terminal à volets divisés, des extraits de commandes, des transferts SFTP par glisser-déposer et la gestion visuelle des conteneurs, images et volumes."
+          ]
+        },
+        {
+          "q": [
+            " FoxTerm collecte-t-il des données ou route-t-il mes connexions par ses serveurs ?"
+          ],
+          "answer": [
+            "Non. FoxTerm se connecte directement depuis votre appareil à vos propres serveurs et ne relaie jamais votre trafic. Il applique une politique stricte de zéro télémétrie — aucune analytique, aucun suivi d'activité et aucun journal de connexion. Les identifiants et clés privées sont chiffrés sur l'appareil et isolés dans le Keychain Apple et le Secure Enclave."
+          ]
+        },
+        {
+          "q": [
+            " Comment obtenir Pro sur macOS, et comment l'activation iOS fonctionne-t-elle ?"
+          ],
+          "answer": [
+            "Il existe deux façons d'obtenir Pro sur macOS. L'",
+            " (macOS + iOS) est un abonnement mensuel ou annuel facturé par Apple — gérez-le ou annulez-le dans vos réglages d'abonnement Apple ID, et les renouvellements et remboursements sont régis par les politiques d'Apple. Cette édition active automatiquement l'app iOS via l'Achat universel. L'",
+            " est un build macOS direct et signé que vous déverrouillez avec un code d'activation acheté sur pay.foxterm.app — elle ne concerne que macOS et le code d'activation n'inclut pas l'activation iOS. L'app iOS est gratuite sur l'App Store et se déverrouille automatiquement uniquement via l'édition App Store.",
+            "édition App Store",
+            "édition notariée"
+          ]
+        }
+      ],
+      "qPrefix": [
+        "Q:",
+        "Q:",
+        "Q:",
+        "Q:",
+        "Q:",
+        "Q:",
+        "Q:",
+        "Q:"
+      ]
+    },
+    "download": {
+      "title": [
+        "Téléchargez FoxTerm et connectez-vous en quelques secondes"
+      ],
+      "subtitle": [
+        "Mac · iPhone · iPad — chaque fonctionnalité est gratuite au début, et Pro sur l'édition App Store se déverrouille sur Mac et iOS."
+      ],
+      "buttons": [
+        {
+          "alt": "Obtenir sur l'App Store",
+          "label": [
+            "Obtenir sur l'App Store"
+          ]
+        },
+        {
+          "label": [
+            "Édition notariée pour macOS"
+          ]
+        }
+      ],
+      "note": [
+        "Le build notarié est signé, notarié et s'installe directement hors de l'App Store — déverrouillez Pro avec un code d'activation sur",
+        ". Les codes d'activation s'appliquent uniquement à l'édition notariée macOS ; l'app iOS se déverrouille automatiquement uniquement via l'édition App Store.",
+        "pay.foxterm.app"
+      ],
+      "reqs": [
+        {
+          "label": [
+            "macOS"
+          ],
+          "value": [
+            "14.0 Sonoma ou version ultérieure"
+          ]
+        },
+        {
+          "label": [
+            "iOS / iPadOS"
+          ],
+          "value": [
+            "17.0 ou version ultérieure"
+          ]
+        },
+        {
+          "label": [
+            "Licensing"
+          ],
+          "value": [
+            "App Store ou code d'activation"
+          ]
+        },
+        {
+          "label": [
+            "Trust"
+          ],
+          "value": [
+            "Notarié, signé & sandboxé"
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "copyright": [
+        " FoxTerm.",
+        "Hosted on Tencent Makers."
+      ],
+      "links": [
+        [
+          "À propos"
+        ],
+        [
+          "Contact"
+        ],
+        [
+          "Confidentialité"
+        ],
+        [
+          "Conditions d'utilisation"
+        ],
+        [
+          "Vérificateur d'achat"
+        ],
+        [
+          "Vérificateur d'achat"
+        ],
+        [
+          "GitHub"
+        ],
+        [
+          "Blog"
+        ],
+        [
+          "Security Intel"
+        ]
+      ],
+      "icp": [
+        "蜀ICP备2024075062号"
+      ],
+      "mirror": [
+        "Miroir CN :",
+        " | Mondial :",
+        "foxterm.cn",
+        "foxterm.app"
+      ],
+      "badges": [
+        {
+          "alt": "Apple Notarized"
+        },
+        {
+          "alt": "Secure Enclave"
+        },
+        {
+          "alt": "App Sandbox"
+        },
+        {
+          "alt": "Zero Telemetry"
+        },
+        {
+          "alt": "Native Swift & C"
+        },
+        {
+          "alt": "SAST Passed"
+        }
+      ]
+    }
+  },
+  "about": {
+    "nav": {
+      "logo": [
+        "FoxTerm"
+      ],
+      "langAria": "Langue",
+      "langCurrent": [
+        "Français"
+      ],
+      "backToHome": [
+        "Retour à l'accueil"
+      ]
+    },
+    "content": {
+      "badge": [
+        "SWIFT · C · ZÉRO COMPROMIS"
+      ],
+      "title": [
+        "Le logiciel devrait être",
+        "rapide, privé et conçu pour durer."
+      ],
+      "lede": [
+        "FoxTerm est un client terminal natif pour macOS et iOS. Pas d'Electron, pas de wrappers web, pas de télémétrie — juste Swift et C qui font exactement ce pour quoi ils ont été conçus."
+      ],
+      "sections": [
+        {
+          "label": [
+            "01 / POURQUOI FOXTERM"
+          ],
+          "title": [
+            "Les outils n'étaient pas à la hauteur. Alors j'en ai écrit un."
+          ],
+          "body": [
+            "SSH est l'interface sur laquelle tourne l'infrastructure. C'est là que se font les déploiements tard le soir, que les serveurs sont débogués, que les choses sont réparées. Chaque client que j'ai essayé donnait l'impression d'être resté bloqué en 2004 ou facturait un abonnement pour des fonctionnalités qui devraient être natives.",
+            "FoxTerm a commencé comme un outil personnel — un client terminal qui respecte réellement le langage de conception de macOS et iOS, tourne sur des frameworks natifs et ne téléphone pas à la maison. C'est devenu quelque chose qui méritait d'être partagé.",
+            "Pas de télémétrie. Pas de comptes. Pas de portes de fonctionnalités cachées derrière des paywalls. Juste un outil qui fait le travail et s'efface."
+          ]
+        },
+        {
+          "label": [
+            "02 / PRINCIPES D'INGÉNIERIE"
+          ],
+          "title": [
+            "Ce sur quoi FoxTerm est construit — et ce qui ne fera jamais de compromis."
+          ],
+          "subsections": [
+            {
+              "title": [
+                "Natif en premier"
+              ]
+            },
+            {
+              "title": [
+                "Confidentialité par architecture"
+              ]
+            },
+            {
+              "title": [
+                "Performance"
+              ]
+            },
+            {
+              "title": [
+                "Conçu pour durer"
+              ]
+            }
+          ],
+          "body": [
+            "Swift et C — pas Electron, pas de wrapper web. FoxTerm communique directement avec AppKit et UIKit, pour donner l'impression d'être né sur votre Mac et votre iPhone, pas porté depuis un onglet de navigateur.",
+            "Zéro télémétrie. Les données de connexion, les clés et l'historique des sessions ne quittent jamais l'appareil. Les clés résident dans le Secure Enclave lorsque c'est disponible — pas sur un serveur cloud quelque part.",
+            "Démarrage à froid en moins de 400 ms. Rendu terminal aux fréquences d'images natives. Pas de surcharge de moteur JavaScript, pas d'écrans de démarrage, pas de délais artificiels.",
+            "Téléchargement gratuit avec toutes les fonctionnalités. Pro lève la limite de nœuds — via abonnement App Store ou code d'activation unique. Aucun essentiel bloqué, pas de niveaux artificiels. iPad. Les mises à jour arrivent parce que le produit s'améliore — pas parce qu'une date de renouvellement approche."
+          ]
+        },
+        {
+          "label": [
+            "03 / SOUS LE CAPOT"
+          ],
+          "title": [
+            "La stack — parce que ça compte."
+          ],
+          "specs": [
+            {
+              "label": [
+                "Langages"
+              ],
+              "value": [
+                "Swift · C"
+              ]
+            },
+            {
+              "label": [
+                "Protocoles"
+              ],
+              "value": [
+                "SSH · SFTP · VNC · Docker"
+              ]
+            },
+            {
+              "label": [
+                "Sécurité"
+              ],
+              "value": [
+                "Secure Enclave · Keychain · App Sandbox"
+              ]
+            },
+            {
+              "label": [
+                "Plates-formes"
+              ],
+              "value": [
+                "macOS 14+ · iOS 17+ · iPadOS"
+              ]
+            },
+            {
+              "label": [
+                "Distribution"
+              ],
+              "value": [
+                "Mac App Store · Notarié Apple"
+              ]
+            },
+            {
+              "label": [
+                "Tarification"
+              ],
+              "value": [
+                "Gratuit · Abonnement Pro ou code d'activation"
+              ]
+            }
+          ]
+        },
+        {
+          "label": [
+            "04 / LE DÉVELOPPEUR"
+          ],
+          "body": [
+            "Je suis ingénieur logiciel travaillant avec Swift, Go et React. FoxTerm est le produit qui me tient le plus à cœur — chaque ligne de code est écrite avec le même standard que j'attends des outils que j'utilise chaque jour.",
+            "En dehors de FoxTerm, je prends des projets sur commande sélectionnés — des travaux où l'artisanat compte et où le niveau est élevé. Si vous construisez quelque chose qui mérite ce niveau d'attention,",
+            "."
+          ],
+          "links": [
+            [
+              "parlons-en"
+            ]
+          ],
+          "specs": [
+            {
+              "label": [
+                "Protocoles"
+              ]
+            },
+            {
+              "label": [
+                "Langages"
+              ]
+            },
+            {
+              "label": [
+                "Télémétrie"
+              ]
+            }
+          ]
+        },
+        {
+          "title": [
+            "Essayer FoxTerm"
+          ],
+          "body": [
+            "Téléchargement gratuit avec toutes les fonctionnalités. Pro lève la limite de nœuds via abonnement App Store ou code d'activation."
+          ],
+          "links": [
+            [
+              "Télécharger sur l'App Store"
+            ],
+            [
+              "Nous contacter"
+            ]
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "copyright": [
+        " FoxTerm.",
+        "Hosted on Tencent Makers."
+      ],
+      "links": [
+        [
+          "Accueil"
+        ],
+        [
+          "Confidentialité"
+        ],
+        [
+          "Conditions d'utilisation"
+        ],
+        [
+          "GitHub"
+        ],
+        [
+          "Blog"
+        ],
+        [
+          "Security Intel"
+        ]
+      ],
+      "icp": [
+        "蜀ICP备2024075062号"
+      ],
+      "mirror": [
+        "Miroir CN :",
+        " | Mondial :",
+        "foxterm.cn",
+        "foxterm.app"
+      ],
+      "badges": [
+        {
+          "alt": "Apple Notarized"
+        },
+        {
+          "alt": "Secure Enclave"
+        },
+        {
+          "alt": "App Sandbox"
+        },
+        {
+          "alt": "Zero Telemetry"
+        },
+        {
+          "alt": "Native Swift & C"
+        },
+        {
+          "alt": "SAST Passed"
+        }
+      ]
+    }
+  },
+  "contact": {
+    "nav": {
+      "logo": [
+        "FoxTerm"
+      ],
+      "langAria": "Langue",
+      "langCurrent": [
+        "Français"
+      ],
+      "backToHome": [
+        "Retour à l'accueil"
+      ]
+    },
+    "content": {
+      "badge": [
+        "ARTISANAT INDÉPENDANT · LIGNE DIRECTE"
+      ],
+      "title": [
+        "Ligne directe avec l'",
+        "architecte en chef"
+      ],
+      "lede": [
+        "FoxTerm est développé en indépendant avec une précision sans compromis. Pas de bureaucratie d'entreprise, pas de robots de support IA, pas de modèles tout faits.",
+        "Chaque ligne de code est travaillée par un ingénieur indépendant, et chaque e-mail arrive directement jusqu'au développeur derrière le moteur. Vous avez un bug à signaler, une observation de performance ou une fonctionnalité ambitieuse à proposer ? Écrivez-nous directement."
+      ],
+      "sections": {
+        "0": {
+          "badge": [
+            "Prestation sur commande · SELECT ENGAGEMENTS"
+          ],
+          "title": [
+            "Confiez votre projet à",
+            "la personne qui a créé FoxTerm"
+          ],
+          "body": [
+            "Chaque ligne de FoxTerm a été écrite par un ingénieur indépendant — votre projet recevra la même exigence : ni sous-traitance, ni gabarit, ni code « qui fonctionne à peine ». Je n'accepte que des projets qui méritent d'être approfondis, et j'assume le résultat.",
+            "Front-ends web modernes, interfaces produit aux interactions complexes",
+            "Multiplateforme iOS / Android : un seul code pour deux plateformes",
+            "Services haute concurrence, API, cloud-native et outils pour développeurs",
+            "Systèmes métier web, CMS et backends rapides à déployer",
+            "Développement natif dans l'écosystème Apple : macOS / iOS",
+            "Sections critiques pour la performance, modules bas niveau et systèmes embarqués",
+            "Décrivez brièvement le contexte, les objectifs et le calendrier. Plus c'est précis, mieux c'est.",
+            "Réponse sous 48 h avec solution technique et devis clair. Sans détour.",
+            "Livraison par étapes via Git ; code révisable, auditable et prêt à transmettre.",
+            "Fenêtre de maintenance raisonnable après la livraison. Je ne disparais pas.",
+            "Mon principe : on clarifie d'abord, on construit ensuite. Si la solution ne convient pas, je le dis franchement — je ne gaspille pas votre temps et je ne trahis pas votre confiance."
+          ],
+          "label": [
+            "01 / Applications",
+            "02 / Backend et Services",
+            "03 / Systèmes et Natif",
+            "01 / Contact",
+            "02 / Proposition",
+            "03 / Développement",
+            "04 / Maintenance"
+          ],
+          "specs": [
+            {
+              "label": [
+                "Application"
+              ],
+              "value": [
+                "React",
+                "React Native"
+              ]
+            },
+            {
+              "label": [
+                "Backend & Services"
+              ],
+              "value": [
+                "Go",
+                "PHP"
+              ]
+            },
+            {
+              "label": [
+                "Systems & Native"
+              ],
+              "value": [
+                "Swift",
+                "C"
+              ]
+            },
+            {
+              "label": [
+                "Projet · Prestation"
+              ]
+            }
+          ],
+          "links": [
+            [
+              "foxterm@icloud.com"
+            ],
+            [
+              "Discuter d'un projet"
+            ]
+          ]
+        },
+        "-1": {
+          "specs": [
+            {
+              "label": [
+                "Support & demande développeur"
+              ]
+            }
+          ]
+        }
+      },
+      "links": [
+        [
+          "support@foxterm.app"
+        ],
+        [
+          "Envoyer un e-mail"
+        ]
+      ],
+      "cards": [
+        {
+          "title": [
+            "01 / SIGNALEMENTS DE BUGS"
+          ],
+          "body": [
+            "Indiquez votre version de macOS / iOS, le protocole de connexion (SSH, SFTP, VNC, Docker) et les étapes pour reproduire le problème."
+          ]
+        },
+        {
+          "title": [
+            "02 / DEMANDES DE FONCTIONNALITÉS"
+          ],
+          "body": [
+            "Une idée pour l'émulation de terminal, des polices personnalisées ou des outils de conteneurs ? Nous priorisons les flux de travail portés par les passionnés."
+          ]
+        },
+        {
+          "title": [
+            "03 / FACTURATION & PRO"
+          ],
+          "body": [
+            "Besoin d'aide pour l'Achat universel via Apple ID ou la vérification de la limite de nœuds Pro ? Votre identifiant de reçu accélère le traitement."
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "copyright": [
+        " FoxTerm.",
+        "Hosted on Tencent Makers."
+      ],
+      "links": [
+        [
+          "Accueil"
+        ],
+        [
+          "À propos"
+        ],
+        [
+          "Confidentialité"
+        ],
+        [
+          "Conditions d'utilisation"
+        ],
+        [
+          "GitHub"
+        ],
+        [
+          "Blog"
+        ],
+        [
+          "Security Intel"
+        ]
+      ],
+      "icp": [
+        "蜀ICP备2024075062号"
+      ],
+      "mirror": [
+        "Miroir CN :",
+        " | Mondial :",
+        "foxterm.cn",
+        "foxterm.app"
+      ],
+      "badges": [
+        {
+          "alt": "Apple Notarized"
+        },
+        {
+          "alt": "Secure Enclave"
+        },
+        {
+          "alt": "App Sandbox"
+        },
+        {
+          "alt": "Zero Telemetry"
+        },
+        {
+          "alt": "Native Swift & C"
+        },
+        {
+          "alt": "SAST Passed"
+        }
+      ]
+    }
+  },
+  "privacy": {
+    "nav": {
+      "logo": [
+        "FoxTerm"
+      ],
+      "langAria": "Langue",
+      "langCurrent": [
+        "Français"
+      ],
+      "backToHome": [
+        "Retour à l'accueil"
+      ]
+    },
+    "content": {
+      "badge": [
+        "Document juridique"
+      ],
+      "title": [
+        "Politique de confidentialité"
+      ],
+      "lede": [
+        "Dernière mise à jour : octobre 2026"
+      ],
+      "commitment": {
+        "title": [
+          "Notre engagement : zéro télémétrie"
+        ],
+        "body": [
+          "FoxTerm repose sur le principe que votre infrastructure serveur, vos identifiants et vos flux de travail vous appartiennent exclusivement. Nous appliquons une",
+          " et ne collectons, ne transmettons ni ne stockons aucune de vos données opérationnelles sur des serveurs externes.",
+          "politique stricte de zéro télémétrie"
+        ]
+      },
+      "sections": [
+        {
+          "title": [
+            "1. Données que nous collectons"
+          ],
+          "body": [
+            "FoxTerm ne collecte absolument aucune donnée de télémétrie. Plus précisément :"
+          ],
+          "items": [
+            [
+              "Aucune analyse, suivi d'utilisation ou surveillance du comportement"
+            ],
+            [
+              "Aucun rapport de crash envoyé par défaut à des serveurs tiers"
+            ],
+            [
+              "Aucun journal de connexion, historique de commandes ou métadonnée de session"
+            ],
+            [
+              "Aucune adresse IP, aucun nom d'hôte ni empreinte de serveur transmis"
+            ],
+            [
+              "Aucune clé SSH, aucun mot de passe ni identifiant d'authentification ne quitte votre appareil"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "2. Stockage local des données et chiffrement"
+          ],
+          "body": [
+            "Toutes les données sensibles sont stockées exclusivement sur votre appareil, via les frameworks de sécurité natifs d'Apple :"
+          ],
+          "items": [
+            [
+              " les clés privées SSH sont chiffrées et protégées par le matériel Secure Enclave de votre appareil, lorsqu'il est disponible",
+              "Protection Secure Enclave :"
+            ],
+            [
+              " les identifiants et mots de passe sont stockés dans votre Keychain iCloud local, chiffrés par le chiffrement matériel d'Apple",
+              "Isolation Keychain :"
+            ],
+            [
+              " les profils de connexion et les réglages sont stockés localement sur votre appareil ; la synchronisation iCloud passe uniquement par votre conteneur iCloud privé, chiffré de bout en bout par Apple",
+              "Configuration locale :"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "3. Communications réseau"
+          ],
+          "body": [
+            "FoxTerm établit des connexions directes pair à pair exclusivement vers les serveurs que vous configurez explicitement :"
+          ],
+          "items": [
+            [
+              "Toutes les connexions (SSH, VNC, SFTP, Docker/Podman) vont directement de votre appareil à vos serveurs"
+            ],
+            [
+              "Nous n'exploitons aucun serveur proxy, relais ou service intermédiaire pour votre trafic"
+            ],
+            [
+              "Les transactions sur l'App Store sont entièrement traitées par Apple ; nous ne recevons ni ne stockons d'informations de paiement"
+            ],
+            [
+              "Aucun SDK d'analyse tiers n'est intégré à l'application"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "4. Synchronisation iCloud"
+          ],
+          "body": [
+            "Lorsque vous activez la synchronisation de la configuration iCloud :"
+          ],
+          "items": [
+            [
+              "Les données synchronisées sont stockées exclusivement dans votre compte iCloud personnel, et non sur nos serveurs"
+            ],
+            [
+              "Le transport de synchronisation est entièrement géré et chiffré par l'infrastructure CloudKit d'Apple"
+            ],
+            [
+              "Les clés privées ne sont",
+              " synchronisées via iCloud ; elles restent isolées dans le Secure Enclave de chaque appareil",
+              "jamais"
+            ],
+            [
+              "Vous pouvez désactiver la synchronisation iCloud à tout moment dans les réglages de l'application ou dans les préférences iCloud système"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "5. Validation des reçus App Store"
+          ],
+          "body": [
+            "Pour vérifier le statut de l'abonnement Pro, FoxTerm peut communiquer avec les serveurs de l'App Store d'Apple afin de valider votre éligibilité. Cette communication :"
+          ],
+          "items": [
+            [
+              "Passe par les API StoreKit standard d'Apple"
+            ],
+            [
+              "Ne contient que les identifiants de vos reçus de transaction Apple"
+            ],
+            [
+              "N'inclut aucune donnée de vos serveurs, identifiants ou informations d'utilisation"
+            ],
+            [
+              "Est traitée directement entre votre appareil et Apple ; les serveurs backend de FoxTerm ne journalisent ni ne stockent ces requêtes"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "6. Services tiers"
+          ],
+          "body": [
+            "FoxTerm ne s'intègre à aucun service tiers d'analyse, de publicité ou de collecte de données. Les seuls services externes contactés sont :"
+          ],
+          "items": [
+            [
+              "L'App Store Apple et les services CloudKit (régis par la politique de confidentialité d'Apple)"
+            ],
+            [
+              "Les serveurs SSH, VNC, SFTP, Docker/Podman que vous configurez explicitement et auxquels vous vous connectez directement"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "7. Confidentialité des enfants"
+          ],
+          "body": [
+            "FoxTerm ne collecte sciemment aucune information personnelle d'enfants de moins de 13 ans (ou de l'âge applicable dans votre juridiction). L'application est un outil professionnel pour développeurs, conçu pour des utilisateurs techniques."
+          ]
+        },
+        {
+          "title": [
+            "8. Modifications de cette politique"
+          ],
+          "body": [
+            "Nous pouvons mettre à jour cette politique de confidentialité de temps à autre afin de refléter l'évolution de nos pratiques ou des exigences légales. Toute modification sera publiée sur cette page avec une date de révision mise à jour. Nous vous recommandons de consulter cette politique périodiquement."
+          ]
+        },
+        {
+          "title": [
+            "9. Nous contacter"
+          ],
+          "body": [
+            "Pour toute question ou préoccupation concernant cette politique de confidentialité ou nos pratiques, écrivez-nous à",
+            "."
+          ],
+          "links": [
+            [
+              "admin@foxterm.app"
+            ]
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "copyright": [
+        " FoxTerm.",
+        "Hosted on Tencent Makers."
+      ],
+      "links": [
+        [
+          "Accueil"
+        ],
+        [
+          "À propos"
+        ],
+        [
+          "Contact"
+        ],
+        [
+          "Conditions d'utilisation"
+        ],
+        [
+          "GitHub"
+        ],
+        [
+          "Blog"
+        ],
+        [
+          "Security Intel"
+        ]
+      ],
+      "icp": [
+        "蜀ICP备2024075062号"
+      ],
+      "mirror": [
+        "Miroir CN :",
+        " | Mondial :",
+        "foxterm.cn",
+        "foxterm.app"
+      ],
+      "badges": [
+        {
+          "alt": "Apple Notarized"
+        },
+        {
+          "alt": "Secure Enclave"
+        },
+        {
+          "alt": "App Sandbox"
+        },
+        {
+          "alt": "Zero Telemetry"
+        },
+        {
+          "alt": "Native Swift & C"
+        },
+        {
+          "alt": "SAST Passed"
+        }
+      ]
+    }
+  },
+  "terms": {
+    "nav": {
+      "logo": [
+        "FoxTerm"
+      ],
+      "langAria": "Langue",
+      "langCurrent": [
+        "Français"
+      ],
+      "backToHome": [
+        "Acheter Pro Retour à l'accueil"
+      ]
+    },
+    "content": {
+      "badge": [
+        "Document juridique"
+      ],
+      "title": [
+        "Conditions d'utilisation"
+      ],
+      "lede": [
+        "Dernière mise à jour : octobre 2026",
+        "Veuillez lire attentivement les présentes conditions d'utilisation (« Conditions », « Conditions d'utilisation ») avant d'utiliser l'application FoxTerm (l'« Application ») exploitée par FoxTerm (« nous », « notre »). Votre accès et votre utilisation de l'Application sont conditionnés par votre acceptation et votre respect des présentes Conditions. Elles s'appliquent à tous les utilisateurs et à toute personne qui accède à l'Application ou l'utilise."
+      ],
+      "sections": [
+        {
+          "title": [
+            "1. Concession de licence"
+          ],
+          "body": [
+            "Sous réserve des présentes Conditions, nous vous accordons une licence limitée, non exclusive, non transférable et révocable pour :"
+          ],
+          "items": [
+            [
+              "Télécharger, installer et utiliser l'Application sur vos appareils Apple personnels (macOS et iOS) que vous possédez ou contrôlez, conformément aux conditions d'utilisation de l'App Store Apple"
+            ],
+            [
+              "Utiliser la version gratuite de l'Application pour l'administration de serveurs, à des fins personnelles ou professionnelles (la version gratuite inclut toutes les fonctionnalités ; seul le nombre de nœuds est plafonné)"
+            ],
+            [
+              "Accéder aux fonctionnalités de l'abonnement Pro et les utiliser tant que votre abonnement reste actif et en règle"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "2. Achat universel"
+          ],
+          "body": [
+            "FoxTerm prend en charge l'Achat universel d'Apple. Un seul achat ou abonnement déverrouille l'intégralité de l'Application sur toutes les plateformes compatibles (macOS et iOS) associées à votre Apple ID. Votre abonnement sera renouvelé automatiquement via votre compte Apple ID, sauf annulation au moins 24 heures avant la fin de la période en cours."
+          ]
+        },
+        {
+          "title": [
+            "3. Abonnements Pro et Licences"
+          ],
+          "body": [
+            "FoxTerm Pro et la version gratuite offrent un jeu de fonctionnalités identique. La seule différence réside dans le nombre de nœuds (serveurs) que vous pouvez gérer : la version gratuite plafonne le nombre de nœuds, tandis que FoxTerm Pro lève cette limite pour des nœuds illimités. Vous pouvez passer à Pro ou annuler à tout moment sans affecter vos profils de connexion enregistrés.",
+            "Pro est également disponible pour l'édition notariée macOS, distribuée directement plutôt que via l'App Store. Cette édition est déverrouillée par un code d'activation (clé de licence) vendu sur pay.foxterm.app. Un code d'activation accorde les mêmes fonctionnalités Pro que l'abonnement, mais s'applique uniquement à l'édition notariée macOS ; il n'inclut pas l'activation iOS. Les licences par code d'activation sont fournies directement par FoxTerm ; toute condition spécifique à l'achat affichée au moment de la vente (comme la durée de la licence et le périmètre d'appareils) s'applique en complément des présents Termes."
+          ],
+          "items": [
+            [
+              "Les abonnements sont facturés de manière récurrente (mensuelle ou annuelle), comme choisi lors de l'achat"
+            ],
+            [
+              "Le paiement est débité de votre compte Apple ID lors de la confirmation de l'achat"
+            ],
+            [
+              "L'abonnement est renouvelé automatiquement, sauf annulation au moins 24 heures avant la fin de la période en cours"
+            ],
+            [
+              "Votre compte sera débité du renouvellement dans les 24 heures précédant la fin de la période en cours"
+            ],
+            [
+              "Vous pouvez gérer et annuler vos abonnements dans les réglages de votre compte Apple ID après l'achat"
+            ],
+            [
+              "Nous ne remboursons pas les périodes d'abonnement partielles ; toute facturation et tout remboursement sont traités exclusivement par Apple, conformément aux politiques de l'App Store"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "4. Usage acceptable"
+          ],
+          "body": [
+            "Vous vous engagez à ne pas utiliser l'Application pour :"
+          ],
+          "items": [
+            [
+              "Enfreindre une loi ou réglementation locale, étatique, nationale ou internationale applicable"
+            ],
+            [
+              "Obtenir un accès non autorisé à des systèmes informatiques, réseaux ou données auxquels vous n'avez pas la permission d'accéder"
+            ],
+            [
+              "Distribuer des logiciels malveillants, rançongiciels ou tout autre code malveillant"
+            ],
+            [
+              "Mener des attaques par déni de service ou toute autre activité perturbatrice"
+            ],
+            [
+              "Faire de l'ingénierie inverse, décompiler, désassembler ou tenter de dériver le code source de l'Application, sauf autorisation par la loi applicable"
+            ],
+            [
+              "Retirer, altérer ou masquer tout avis de copyright ou de propriété"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "5. Propriété intellectuelle"
+          ],
+          "body": [
+            "L'Application, y compris l'ensemble de son contenu, de ses fonctionnalités, de son code source, de ses graphismes, de son design, de ses logos et de ses icônes, est la propriété exclusive de FoxTerm et est protégée par les lois internationales sur le droit d'auteur, les marques et autres droits de propriété intellectuelle. Vous ne pouvez reproduire, distribuer, modifier, créer des œuvres dérivées, afficher publiquement ou exploiter toute partie de l'Application sans notre autorisation écrite expresse."
+          ]
+        },
+        {
+          "title": [
+            "6. Serveurs et contenu tiers"
+          ],
+          "body": [
+            "L'Application est un outil client qui vous connecte à des serveurs et infrastructures sous votre contrôle ou pour lesquels vous avez obtenu une autorisation d'accès. Nous ne sommes pas responsables de :"
+          ],
+          "items": [
+            [
+              "Du contenu, de la sécurité, de la disponibilité ou du fonctionnement des serveurs tiers auxquels vous vous connectez"
+            ],
+            [
+              "De toute action que vous menez à l'aide de l'Application sur des serveurs ou infrastructures distants"
+            ],
+            [
+              "De la perte de données ou des dommages aux systèmes résultant de votre utilisation de l'Application"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "7. Exclusion de garanties"
+          ],
+          "body": [
+            "L'APPLICATION EST FOURNIE « EN L'ÉTAT » ET « SELON DISPONIBILITÉ », SANS AUCUNE GARANTIE, EXPRESSE OU IMPLICITE, Y COMPRIS MAIS SANS S'Y LIMITER LES GARANTIES IMPLICITES DE QUALITÉ MARCHANDE, D'ADÉQUATION À UN USAGE PARTICULIER, DE TITRE ET DE NON-CONTREFAÇON. Nous ne garantissons pas que :"
+          ],
+          "items": [
+            [
+              "L'Application fonctionnera de manière ininterrompue, sécurisée ou disponible à un moment ou en un lieu donné"
+            ],
+            [
+              "Toute erreur ou défectuosité sera corrigée"
+            ],
+            [
+              "L'Application est exempte de virus ou d'autres composants nuisibles"
+            ],
+            [
+              "Les résultats de l'utilisation de l'Application répondront à vos besoins ou attentes"
+            ]
+          ]
+        },
+        {
+          "title": [
+            "8. Limitation de responsabilité"
+          ],
+          "body": [
+            "EN AUCUN CAS FOXTERM NE SAURAIT ÊTRE TENU RESPONSABLE DE DOMMAGES INDIRECTS, ACCESSOIRES, SPÉCIAUX, CONSÉCUTIFS OU PUNITIFS, Y COMPRIS MAIS SANS S'Y LIMITER LA PERTE DE PROFITS, DE DONNÉES, D'USAGE, DE CLIENTÈLE OU D'AUTRES PERTES IMMATÉRIELLES, RÉSULTANT DE VOTRE ACCÈS À L'APPLICATION, DE VOTRE UTILISATION OU DE VOTRE INCAPACITÉ À Y ACCÉDER OU À L'UTILISER."
+          ]
+        },
+        {
+          "title": [
+            "9. Résiliation"
+          ],
+          "body": [
+            "Nous pouvons résilier ou suspendre immédiatement votre licence d'utilisation de l'Application, sans préavis ni responsabilité, pour tout motif, y compris, sans limitation, si vous enfreignez les présentes Conditions. Dès la résiliation, votre droit d'utiliser l'Application prend fin immédiatement. Les dispositions qui, par leur nature, doivent survivre à la résiliation survivent, y compris les dispositions relatives à la propriété, les exclusions de garantie, l'indemnisation et les limitations de responsabilité."
+          ]
+        },
+        {
+          "title": [
+            "10. Modifications des Conditions"
+          ],
+          "body": [
+            "Nous nous réservons le droit, à notre seule discrétion, de modifier ou de remplacer les présentes Conditions à tout moment. Nous fournirons un préavis raisonnable de tout changement substantiel. Votre utilisation continue de l'Application après la publication des Conditions révisées vaut acceptation de ces modifications."
+          ]
+        },
+        {
+          "title": [
+            "11. Droit applicable"
+          ],
+          "body": [
+            "Les présentes Conditions sont régies et interprétées conformément aux lois de la juridiction dans laquelle nous exerçons nos activités, sans égard à ses dispositions en matière de conflits de lois."
+          ]
+        },
+        {
+          "title": [
+            "12. Nous contacter"
+          ],
+          "body": [
+            "Pour toute question concernant les présentes Conditions, écrivez-nous à",
+            "."
+          ],
+          "links": [
+            [
+              "admin@foxterm.app"
+            ]
+          ]
+        }
+      ]
+    },
+    "footer": {
+      "copyright": [
+        " FoxTerm.",
+        "Hosted on Tencent Makers."
+      ],
+      "links": [
+        [
+          "Accueil"
+        ],
+        [
+          "À propos"
+        ],
+        [
+          "Contact"
+        ],
+        [
+          "Confidentialité"
+        ],
+        [
+          "GitHub"
+        ],
+        [
+          "Blog"
+        ],
+        [
+          "Security Intel"
+        ]
+      ],
+      "icp": [
+        "蜀ICP备2024075062号"
+      ],
+      "mirror": [
+        "Miroir CN :",
+        " | Mondial :",
+        "foxterm.cn",
+        "foxterm.app"
+      ],
+      "badges": [
+        {
+          "alt": "Apple Notarized"
+        },
+        {
+          "alt": "Secure Enclave"
+        },
+        {
+          "alt": "App Sandbox"
+        },
+        {
+          "alt": "Zero Telemetry"
+        },
+        {
+          "alt": "Native Swift & C"
+        },
+        {
+          "alt": "SAST Passed"
+        }
+      ]
+    }
+  }
+}

@@ -1,20 +1,26 @@
 {
+  "name": "foxterm-sitegen",
+  "version": "1.0.0",
+  "private": true,
+  "description": "FoxTerm 官网静态生成器：EJS 模板 × 语言包（i18n）→ 生成多语言纯 HTML，输出到 out/，并生成 sitemap.xml / robots.txt 等 SEO 文件",
+  "type": "commonjs",
   "scripts": {
-    "build": "npm run build:css && npm run prettier && node build.js",
-    "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./assets/tailwind.min.css --minify",
-    "prettier": "prettier . --write"
+    "build": "node scripts/build.js",
+    "extract": "node scripts/extract.js",
+    "sync": "node scripts/extract.js --sync",
+    "add-lang": "node scripts/add-lang.js",
+    "serve": "node scripts/serve.js",
+    "check": "node scripts/check.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10"
   },
   "devDependencies": {
-    "@edgeone/types": "^1.0.2",
     "@tailwindcss/cli": "^4.3.3",
-    "@types/node": "^26.6.5",
-    "autoprefixer": "^10.6.1",
     "clean-css": "^5.3.3",
     "html-minifier-terser": "^7.2.0",
-    "postcss": "^8.5.29",
-    "prettier": "^3.9.10",
+    "parse5": "^7.2.1",
     "tailwindcss": "^4.3.3",
-    "terser": "^5.51.2",
-    "typescript": "^7.0.2"
+    "terser": "^5.51.2"
   }
 }

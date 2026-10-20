@@ -1,0 +1,51 @@
+<header
+  class="sticky top-0 z-50 w-full bg-zinc-950/60 backdrop-blur-xl border-b border-white/[0.06] transition-all duration-300"
+>
+  <nav
+    class="<%= navCfg.container %> mx-auto px-4 sm:px-6 h-16 flex items-center justify-between relative z-20"
+  >
+    <a
+      href="/"
+      class="flex items-center space-x-3 group focus:outline-none"
+    >
+      <div
+        class="relative flex-shrink-0 flex items-center justify-center cursor-default"
+      >
+        <span
+          class="fox-logo-icon <%= navCfg.logoSize %> text-fox-500 transition-all duration-300 group-hover:drop-shadow-[0_0_8px_rgba(255,104,0,0.6)]"
+        ></span>
+      </div>
+      <span
+        class="text-base font-bold tracking-tight text-white flex items-center gap-1.5 group-hover:text-fox-400 transition-colors"
+      >
+        <%= t["nav.logo.0"] %>
+      </span>
+    </a>
+
+    <% if (navCfg.type === "index") { %>
+    <!-- Clean Navigation Links -->
+    <div
+      class="hidden md:flex items-center space-x-8 text-xs font-medium tracking-wide text-zinc-400"
+    >
+      <% for (const [i, l] of navCfg.links.entries()) { %>
+      <a href="<%= l.href %>" class="hover:text-white transition-colors"
+        ><%= t["nav.links." + i + ".0"] %></a
+      >
+      <% } %>
+    </div>
+    <% } %>
+
+    <div class="flex items-center space-x-3">
+      <%- langSwitcher %>
+      <a
+        href="<%= navCfg.cta.href %>"
+        class="relative h-8 px-3.5 text-[11px] font-semibold rounded-lg bg-fox-500 hover:bg-fox-600 border border-fox-400/30 text-white transition-all duration-200 flex items-center justify-center shadow-[0_0_15px_rgba(255,94,0,0.25)] hover:shadow-[0_0_20px_rgba(255,94,0,0.4)] active:scale-95 overflow-hidden backdrop-blur-md"
+      >
+        <div
+          class="absolute inset-x-0 top-0 h-px bg-white/30 pointer-events-none"
+        ></div>
+        <span class="relative z-10"><%= t[navCfg.cta.labelKey] %></span>
+      </a>
+    </div>
+  </nav>
+</header>

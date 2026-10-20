@@ -11,7 +11,7 @@ set -euo pipefail
 KEY="eb06668f88f4a52451a8076a0b0b1110"
 HOST="foxterm.app"
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
-SITEMAP="${SCRIPT_DIR}/src/sitemap.xml"
+SITEMAP="${SCRIPT_DIR}/out/sitemap.xml"
 PAYLOAD="/tmp/indexnow_payload.json"
 
 if [ ! -f "$SITEMAP" ]; then
