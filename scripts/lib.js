@@ -4,7 +4,7 @@ const path = require("path");
 const parse5 = require("parse5");
 
 const ROOT = path.join(__dirname, "..");
-const SRC = path.resolve(process.env.SITEGEN_SRC || ROOT, process.env.SITEGEN_SRC ? "." : "../src");
+const SRC = path.resolve(process.env.SITEGEN_SRC || path.join(ROOT, "src"));
 
 function readConfig() {
   return JSON.parse(fs.readFileSync(path.join(ROOT, "config", "site.json"), "utf8"));

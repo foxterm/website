@@ -71,6 +71,19 @@ function renderPage(langCode, pageName) {
   const canonicalUrl = baseUrl + urlPath(lang.dir, pageRel);
   const ogLocales = LANGS.filter(([c]) => c !== langCode).map(([, l]) => l.locale).join(", ");
 
+  // 站内链接语言化：/about → /zh-hans/about，/ → /zh-hans/；外链/锚点/协议相对链接不变
+  const localizeHref = (h) => {
+    if (!h || h.startsWith("#") || h.startsWith("//") || /^https?:/i.test(h)) return h;
+    return urlPath(lang.dir, h === "/" ? "" : h);
+  };
+  const navCfg = { ...(pageName === "index" ? CFG.nav.index : CFG.nav.legal), type: pageName === "index" ? "index" : "legal" };
+  navCfg.cta = { ...navCfg.cta, href: localizeHref(navCfg.cta.href) };
+  navCfg.logoHref = urlPath(lang.dir, "");
+  const footerLinks = (CFG.footer.links[pageName] || CFG.footer.links.index).map((l) => ({
+    ...l,
+    href: localizeHref(l.href),
+  }));
+
   const locals = {
     t,
     lang,
@@ -82,8 +95,8 @@ function renderPage(langCode, pageName) {
     ogLocales,
     seo: pack._seo[pageName] || {},
     meta: CFG.meta,
-    navCfg: { ...(pageName === "index" ? CFG.nav.index : CFG.nav.legal), type: pageName === "index" ? "index" : "legal" },
-    footerLinks: CFG.footer.links[pageName] || CFG.footer.links.index,
+    navCfg,
+    footerLinks,
     defaultDir: CFG.langs[CFG.site.defaultLang].dir,
     htmlLang: lang.htmlLang,
   };
