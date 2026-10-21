@@ -8,18 +8,12 @@ export function onRequest({ request }: CloudFunctionContext) {
   const allowedOriginRegex =
     /^https:\/\/([a-z0-9-]+\.)*(foxterm\.app|foxterm\.cn)$/i;
 
-  let allowOriginValue = "";
-
-  if (allowedOriginRegex.test(origin)) {
-    allowOriginValue = origin;
-  }
-
   const headers: Record<string, string> = {
-    "content-type": "application/json; charset=UTF-8",
+    "Content-Type": "application/json; charset=UTF-8",
   };
 
-  if (allowOriginValue) {
-    headers["Access-Control-Allow-Origin"] = allowOriginValue;
+  if (allowedOriginRegex.test(origin)) {
+    headers["Access-Control-Allow-Origin"] = origin;
   }
 
   return new Response(JSON.stringify(eo), {
