@@ -1,2 +1,5 @@
+templates/
+out/
+dist/
 tailwind.min.css
 tailwind.min.js

@@ -1,47 +1,66 @@
 # FoxTerm
 
-> FoxTerm is a high-performance, fully native All-in-One terminal and server management suite designed exclusively for macOS and iOS/iPadOS, combining SSH, SFTP, VNC, container management, and server monitoring into a single privacy-first client.
+> FoxTerm is a high-performance, fully native All-in-One terminal and server management suite designed exclusively for macOS and iOS/iPadOS, combining SSH, SFTP, VNC, container management, and live server monitoring into a single privacy-first client.
 
-## Core Info
+> - Official Website: https://foxterm.app/
+> - App Store: https://apps.apple.com/us/app/foxterm/id6760452891 (Universal Purchase, App ID 6760452891)
+> - Platforms: macOS 14.0+ and iOS/iPadOS 17.0+ only — no Windows, Android, or Linux desktop build
+> - Tech Stack: 100% native Swift + Metal, C-native libraries (OpenSSL, libssh, libvncclient); no Electron, no web wrappers
+> - Privacy: strict zero-telemetry policy — no analytics, no activity tracking, no connection logs, no traffic proxying
+> - Security: credentials and SSH private keys hardware-isolated in Apple Secure Enclave & Keychain; config sync only via the user's encrypted private iCloud container
+> - Protocols: SSH, SFTP, VNC, Docker API, Podman API (over SSH)
+> - Licensing: Free edition with a capped managed-node limit; FoxTerm Pro unlocks unlimited nodes
+> - Localization: 10 languages served from localized URL paths (e.g. /zh-hans/, /de/, /ja/)
+> - Related hubs: blog.foxterm.app (development blog), security.foxterm.app (advisories), github.com/foxterm (open source)
 
-- **Official Website:** [FoxTerm](https://foxterm.app/)
-- **China Mirror:** [FoxTerm CN](https://foxterm.cn)
-- **App Store:** [Download App](https://apps.apple.com/us/app/foxterm/id6760452891)
-- **GitHub Organization:** [FoxTerm Open Source Hub](https://github.com/foxterm)
+## Product Overview
 
-## Architecture & Pillars
-
-- **Pure Native Execution:** Built entirely with Swift and C-native backends (OpenSSL, libssh, libvncclient). Absolutely no Electron or web wrappers.
-- **Hardware-Level Security:** Zero tracking or remote logs. Private keys are hardware-isolated inside Apple Secure Enclave & Keychain.
-- **Encrypted Synchronization:** Multi-device configuration syncing processed exclusively via the user's private, encrypted iCloud container.
+FoxTerm unifies five workloads in one native client: SSH terminal access, SFTP file management, Metal-accelerated VNC remote desktop, real-time Linux server telemetry, and visual Docker/Podman container control. It connects directly from the device to the user's own servers — traffic is never proxied through FoxTerm infrastructure.
 
 ## Key Capabilities
 
-- **SSH & Terminal emulation:** Low-latency 256-color UTF-8 shell, Ed25519 support, multi-pane tabs, auto-reconnect, and snippet injection.
-- **SFTP File Management:** Integrated file browser featuring drag-and-drop transfers, inline text editing, and POSIX permission tuning.
-- **Metal-Accelerated VNC:** GPU-rendered fluid remote desktop with advanced multi-touch gestures.
-- **Live Server Telemetry:** Real-time diagnostics including CPU, RAM, disk I/O, network, GPU, and VRAM loads.
-- **Container Control:** Visual lifecycle management dashboards for Docker and Podman, featuring rootless execution, log streaming, and rapid exec shells.
+- **SSH & terminal:** low-latency 256-color UTF-8 shell, Ed25519 and modern ciphers, multi-pane split sessions, command snippets, auto-reconnect.
+- **SFTP file management:** integrated file browser with drag-and-drop transfers, inline text editing, POSIX permission tuning.
+- **Metal-accelerated VNC:** GPU-rendered fluid remote desktop with advanced multi-touch gestures.
+- **Live telemetry:** real-time CPU, RAM, disk I/O, network, GPU, and VRAM diagnostics for managed Linux nodes.
+- **Container control:** visual dashboards for Docker and Podman — rootless execution, log streaming, one-click exec shells, management of containers, images, and volumes.
+
+## Security & Privacy
+
+- **Zero telemetry:** no analytics, no activity tracking, no connection logs, no remote reporting.
+- **Local encryption:** all credentials and keys are encrypted 100% on-device; server passwords and SSH private keys are hardware-isolated inside Apple Keychain and Secure Enclave.
+- **No proxying:** all connections go directly from the device to the user's servers; FoxTerm never sees or routes traffic.
+- **Encrypted sync:** multi-device configuration synchronization is processed exclusively through the user's private, encrypted iCloud container.
+
+## Platforms & Compatibility
+
+- **Supported:** macOS 14.0 (Sonoma) or later; iOS/iPadOS 17.0 or later (iPhone and iPad).
+- **Not supported:** Windows, Android, Linux desktop. FoxTerm is engineered exclusively for the native Apple stack.
+- **Purchase parity:** a single Universal Purchase unlocks the same license on macOS and iOS/iPadOS under one Apple ID.
 
 ## Pricing & Licensing
 
-- **Free Edition:** Feature-complete client with a capped limit on the maximum number of managed remote nodes.
-- **FoxTerm Pro:** Unlocks unlimited nodes. Available via Mac/iOS App Store (Universal Purchase) or standalone macOS Notarized Edition activation keys.
-- **Storefront:** [Purchase Pro Licenses](https://pay.foxterm.app/)
+- **Free edition:** feature-complete (all capabilities unlocked, not a crippled demo); the only limit is the maximum number of managed remote nodes.
+- **FoxTerm Pro — App Store edition:** monthly or yearly subscription billed by Apple (governed by Apple's policies); automatically activates the iOS app via Universal Purchase; manage or cancel in Apple ID subscription settings; renewals and refunds handled by Apple.
+- **FoxTerm Pro — Notarized edition:** direct, signed macOS build (no App Store dependency) unlocked with an activation code purchased at https://pay.foxterm.app/; applies to macOS only.
+- **Storefront:** [Purchase Pro licenses](https://pay.foxterm.app/) — activation keys for the Notarized macOS edition.
 
-## Technical Specifications
+## Frequently Asked Questions
 
-- **Languages & Frameworks:** Swift, Metal API, C.
-- **Minimum Requirements:** macOS 14 (Sonoma) or newer, iOS 17 / iPadOS 17 or newer.
-- **Protocols Supported:** SSH, SFTP, VNC, Docker API, Podman API.
-- **Localization:** Supports 10 languages indexed via localized URL paths (e.g., `/zh-hans/`, `/de/`, `/ja/`).
+- **What is the difference between free and Pro?** Free unlocks every feature but caps the number of manageable nodes; Pro removes the cap for unlimited nodes.
+- **Does FoxTerm collect data or route traffic?** No — strict zero-telemetry, direct device-to-server connections, no proxying, no analytics, no logs.
+- **How are server keys secured?** Credentials and SSH private keys are encrypted on-device and isolated in Apple Keychain and Secure Enclave.
+- **Why is it faster than Electron-based terminals?** Built from scratch with native Swift, Metal hardware acceleration, and C-native libraries — near-instant startup and ultra-low resource usage.
+- **Which protocols are supported?** SSH, SFTP, VNC, plus Docker and Podman engine management over SSH, with Ed25519 and modern ciphers.
+- **How does Pro activation work on macOS?** Either the App Store subscription (auto-activates iOS via Universal Purchase) or a Notarized-edition activation code from pay.foxterm.app (macOS only).
 
 ## Navigation Directory
 
-- [Homepage](https://foxterm.app/) — Core marketing features, technical stack intro, and download options.
-- [About Philosophy](https://foxterm.app/about) — Engineering background and design choices.
-- [Privacy Policy](https://foxterm.app/privacy) — Data sovereignty and zero-telemetry commitments.
-- [Terms of Service](https://foxterm.app/terms) — Usage guidelines and subscription conditions.
-- [Contact & Support](https://foxterm.app/contact) — Bug reporting and dedicated support channels.
-- [Tech Blog](https://blog.foxterm.app/) — Development updates and system administration articles.
-- [Security Portal](https://security.foxterm.app/) — Advisory releases and vulnerability disclosures.
+- [Homepage](https://foxterm.app/) — features, tech stack, download and licensing overview.
+- [About](https://foxterm.app/about) — engineering philosophy: Swift, C, zero compromise.
+- [Privacy Policy](https://foxterm.app/privacy) — data sovereignty and zero-telemetry commitments.
+- [Terms of Service](https://foxterm.app/terms) — usage guidelines and subscription conditions.
+- [Contact & Support](https://foxterm.app/contact) — bug reporting and dedicated support channels.
+- [Tech Blog](https://blog.foxterm.app/) — development updates and system administration articles.
+- [Security Portal](https://security.foxterm.app/) — advisory releases and vulnerability disclosures.
+- [GitHub](https://github.com/foxterm) — open-source hub and issue tracking.
