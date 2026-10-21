@@ -1,1 +1,76 @@
-<svg width='160' height='140' viewBox='0 0 160 140' xmlns='http://www.w3.org/2000/svg'><style>text { font-family: monospace, Courier, 'Courier New'; font-size: 13px; font-weight: bold; fill: #ff6800; text-anchor: middle; }</style><!-- F: 01000110 --><text x='10' y='20'>0</text><text x='30' y='20'>1</text><text x='50' y='20'>0</text><text x='70' y='20'>0</text><text x='90' y='20'>0</text><text x='110' y='20'>1</text><text x='130' y='20'>1</text><text x='150' y='20'>0</text><!-- o: 01101111 --><text x='10' y='40'>0</text><text x='30' y='40'>1</text><text x='50' y='40'>1</text><text x='70' y='40'>0</text><text x='90' y='40'>1</text><text x='110' y='40'>1</text><text x='130' y='40'>1</text><text x='150' y='40'>1</text><!-- x: 01111000 --><text x='10' y='60'>0</text><text x='30' y='60'>1</text><text x='50' y='60'>1</text><text x='70' y='60'>1</text><text x='90' y='60'>1</text><text x='110' y='60'>0</text><text x='130' y='60'>0</text><text x='150' y='60'>0</text><!-- T: 01010100 --><text x='10' y='80'>0</text><text x='30' y='80'>1</text><text x='50' y='80'>0</text><text x='70' y='80'>1</text><text x='90' y='80'>0</text><text x='110' y='80'>1</text><text x='130' y='80'>0</text><text x='150' y='80'>0</text><!-- e: 01100101 --><text x='10' y='100'>0</text><text x='30' y='100'>1</text><text x='50' y='100'>1</text><text x='70' y='100'>0</text><text x='90' y='100'>0</text><text x='110' y='100'>1</text><text x='130' y='100'>0</text><text x='150' y='100'>1</text><!-- r: 01110010 --><text x='10' y='120'>0</text><text x='30' y='120'>1</text><text x='50' y='120'>1</text><text x='70' y='120'>1</text><text x='90' y='120'>0</text><text x='110' y='120'>0</text><text x='130' y='120'>1</text><text x='150' y='120'>0</text><!-- m: 01101101 --><text x='10' y='140'>0</text><text x='30' y='140'>1</text><text x='50' y='140'>1</text><text x='70' y='140'>0</text><text x='90' y='140'>1</text><text x='110' y='140'>1</text><text x='130' y='140'>0</text><text x='150' y='140'>1</text></svg>
+<svg  width='160' height='140' viewBox="0 0 160 140" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <path id="char-circle" d="M-0.003,-10.144C1.118,-10.144 1.973,-9.673 2.561,-8.731C3.149,-7.79 3.444,-6.521 3.444,-4.926C3.444,-3.326 3.149,-2.056 2.561,-1.114C1.973,-0.172 1.118,0.298 -0.003,0.298C-1.12,0.298 -1.974,-0.172 -2.564,-1.114C-3.155,-2.056 -3.45,-3.326 -3.45,-4.926C-3.45,-6.521 -3.155,-7.79 -2.564,-8.731C-1.974,-9.673 -1.12,-10.144 -0.003,-10.144ZM-1.927,-2.818L1.482,-8.157C1.266,-8.55 1.033,-8.816 0.781,-8.953C0.529,-9.091 0.268,-9.16 -0.003,-9.16C-0.71,-9.16 -1.247,-8.767 -1.615,-7.982C-1.984,-7.197 -2.168,-6.202 -2.168,-4.996C-2.168,-4.721 -2.159,-4.424 -2.142,-4.107C-2.125,-3.79 -2.053,-3.36 -1.927,-2.818ZM1.907,-6.982L-1.476,-1.612C-1.294,-1.303 -1.084,-1.072 -0.847,-0.917C-0.61,-0.763 -0.346,-0.686 -0.054,-0.686C0.75,-0.686 1.321,-1.135 1.66,-2.034C1.998,-2.934 2.168,-3.931 2.168,-5.027C2.168,-5.704 2.081,-6.356 1.907,-6.982Z" style="fill:rgb(255,104,0);fill-rule:nonzero;"/>
+        <path id="char-line" d="M-0.295,-0.984L-0.295,-8.588C-0.651,-8.305 -0.996,-8.064 -1.33,-7.865C-1.664,-7.666 -2.123,-7.463 -2.707,-7.255L-2.707,-8.322C-1.781,-8.715 -0.976,-9.225 -0.295,-9.852L0.885,-9.852L0.885,-0.984L3.253,-0.984L3.253,0L-2.707,0L-2.707,-0.984L-0.295,-0.984Z" style="fill:rgb(255,104,0);fill-rule:nonzero;"/>
+    </defs>
+
+    <!-- Row 20 -->
+    <use href="#char-circle" x="10" y="20" />
+    <use href="#char-line"   x="30" y="20" />
+    <use href="#char-circle" x="50" y="20" />
+    <use href="#char-circle" x="70" y="20" />
+    <use href="#char-circle" x="90" y="20" />
+    <use href="#char-line"   x="110" y="20" />
+    <use href="#char-line"   x="130" y="20" />
+    <use href="#char-circle" x="150" y="20" />
+
+    <!-- Row 40 -->
+    <use href="#char-circle" x="10" y="40" />
+    <use href="#char-line"   x="30" y="40" />
+    <use href="#char-line"   x="50" y="40" />
+    <use href="#char-circle" x="70" y="40" />
+    <use href="#char-line"   x="90" y="40" />
+    <use href="#char-line"   x="110" y="40" />
+    <use href="#char-line"   x="130" y="40" />
+    <use href="#char-line"   x="150" y="40" />
+
+    <!-- Row 60 -->
+    <use href="#char-circle" x="10" y="60" />
+    <use href="#char-line"   x="30" y="60" />
+    <use href="#char-line"   x="50" y="60" />
+    <use href="#char-line"   x="70" y="60" />
+    <use href="#char-line"   x="90" y="60" />
+    <use href="#char-circle" x="110" y="60" />
+    <use href="#char-circle" x="130" y="60" />
+    <use href="#char-circle" x="150" y="60" />
+
+    <!-- Row 80 -->
+    <use href="#char-circle" x="10" y="80" />
+    <use href="#char-line"   x="30" y="80" />
+    <use href="#char-circle" x="50" y="80" />
+    <use href="#char-line"   x="70" y="80" />
+    <use href="#char-circle" x="90" y="80" />
+    <use href="#char-line"   x="110" y="80" />
+    <use href="#char-circle" x="130" y="80" />
+    <use href="#char-circle" x="150" y="80" />
+
+    <!-- Row 100 -->
+    <use href="#char-circle" x="10" y="100" />
+    <use href="#char-line"   x="30" y="100" />
+    <use href="#char-line"   x="50" y="100" />
+    <use href="#char-circle" x="70" y="100" />
+    <use href="#char-circle" x="90" y="100" />
+    <use href="#char-line"   x="110" y="100" />
+    <use href="#char-circle" x="130" y="100" />
+    <use href="#char-line"   x="150" y="100" />
+
+    <!-- Row 120 -->
+    <use href="#char-circle" x="10" y="120" />
+    <use href="#char-line"   x="30" y="120" />
+    <use href="#char-line"   x="50" y="120" />
+    <use href="#char-line"   x="70" y="120" />
+    <use href="#char-circle" x="90" y="120" />
+    <use href="#char-circle" x="110" y="120" />
+    <use href="#char-line"   x="130" y="120" />
+    <use href="#char-circle" x="150" y="120" />
+
+    <!-- Row 140 -->
+    <use href="#char-circle" x="10" y="140" />
+    <use href="#char-line"   x="30" y="140" />
+    <use href="#char-line"   x="50" y="140" />
+    <use href="#char-circle" x="70" y="140" />
+    <use href="#char-line"   x="90" y="140" />
+    <use href="#char-line"   x="110" y="140" />
+    <use href="#char-circle" x="130" y="140" />
+    <use href="#char-line"   x="150" y="140" />
+</svg>
