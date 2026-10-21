@@ -262,7 +262,9 @@
       const timer = setTimeout(function () {
         ctrl.abort();
       }, 1000);
-      const res = await fetch("https://foxterm.cn/geo", { signal: ctrl.signal });
+      const res = await fetch("https://foxterm.cn/geo", {
+        signal: ctrl.signal,
+      });
       clearTimeout(timer);
       if (res.ok) {
         const data = await res.json();

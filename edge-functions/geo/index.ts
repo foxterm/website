@@ -5,7 +5,8 @@ export function onRequest({ request }: CloudFunctionContext) {
   const eo = request?.eo;
   const origin = request?.headers.get("origin") || "";
 
-  const allowedOriginRegex = /^https:\/\/([a-z0-9-]+\.)*(foxterm\.app|foxterm\.cn)$/i;
+  const allowedOriginRegex =
+    /^https:\/\/([a-z0-9-]+\.)*(foxterm\.app|foxterm\.cn)$/i;
 
   let allowOriginValue = "";
 
