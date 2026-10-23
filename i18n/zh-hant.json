@@ -782,7 +782,7 @@
               "label": ["專案合作 · 委託開發"]
             }
           ],
-          "links": [["foxterm@icloud.com"], ["洽談專案"]]
+          "links": [["foxterm.app@gmail.com"], ["洽談專案"]]
         },
         "-1": {
           "specs": [
@@ -792,7 +792,7 @@
           ]
         }
       },
-      "links": [["support@foxterm.app"], ["發送郵件"]],
+      "links": [["foxterm.app@gmail.com"], ["發送郵件"]],
       "cards": [
         {
           "title": ["01 / Bug 回報"],

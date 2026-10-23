@@ -829,7 +829,7 @@
               "label": ["Projeto sob encomenda · Contratação"]
             }
           ],
-          "links": [["foxterm@icloud.com"], ["Falar sobre o projeto"]]
+          "links": [["foxterm.app@gmail.com"], ["Falar sobre o projeto"]]
         },
         "-1": {
           "specs": [
@@ -839,7 +839,7 @@
           ]
         }
       },
-      "links": [["support@foxterm.app"], ["Enviar e-mail"]],
+      "links": [["foxterm.app@gmail.com"], ["Enviar e-mail"]],
       "cards": [
         {
           "title": ["01 / RELATOS DE BUGS"],

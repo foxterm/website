@@ -819,7 +819,7 @@
               "label": ["プロジェクト受託 · 開発委託"]
             }
           ],
-          "links": [["foxterm@icloud.com"], ["相談する"]]
+          "links": [["foxterm.app@gmail.com"], ["相談する"]]
         },
         "-1": {
           "specs": [
@@ -829,7 +829,7 @@
           ]
         }
       },
-      "links": [["support@foxterm.app"], ["メールを送る"]],
+      "links": [["foxterm.app@gmail.com"], ["メールを送る"]],
       "cards": [
         {
           "title": ["01 / バグ報告"],

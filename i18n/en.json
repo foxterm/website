@@ -862,7 +862,7 @@
               "label": ["Project Work · Commission"]
             }
           ],
-          "links": [["foxterm@icloud.com"], ["Start a project"]]
+          "links": [["foxterm.app@gmail.com"], ["Start a project"]]
         },
         "-1": {
           "specs": [
@@ -872,7 +872,7 @@
           ]
         }
       },
-      "links": [["support@foxterm.app"], ["Send Email"]],
+      "links": [["foxterm.app@gmail.com"], ["Send Email"]],
       "cards": [
         {
           "title": ["01 / BUG REPORTS"],

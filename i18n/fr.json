@@ -841,7 +841,7 @@
               "label": ["Projet · Prestation"]
             }
           ],
-          "links": [["foxterm@icloud.com"], ["Discuter d'un projet"]]
+          "links": [["foxterm.app@gmail.com"], ["Discuter d'un projet"]]
         },
         "-1": {
           "specs": [
@@ -851,7 +851,7 @@
           ]
         }
       },
-      "links": [["support@foxterm.app"], ["Envoyer un e-mail"]],
+      "links": [["foxterm.app@gmail.com"], ["Envoyer un e-mail"]],
       "cards": [
         {
           "title": ["01 / SIGNALEMENTS DE BUGS"],

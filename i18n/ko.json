@@ -806,7 +806,7 @@
               "label": ["프로젝트 수주 · 위탁 개발"]
             }
           ],
-          "links": [["foxterm@icloud.com"], ["프로젝트 상담"]]
+          "links": [["foxterm.app@gmail.com"], ["프로젝트 상담"]]
         },
         "-1": {
           "specs": [
@@ -816,7 +816,7 @@
           ]
         }
       },
-      "links": [["support@foxterm.app"], ["이메일 보내기"]],
+      "links": [["foxterm.app@gmail.com"], ["이메일 보내기"]],
       "cards": [
         {
           "title": ["01 / 버그 신고"],
