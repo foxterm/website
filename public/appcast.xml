@@ -9,6 +9,13 @@
             <sparkle:version>20226102232233</sparkle:version>
             <sparkle:shortVersionString>1.0.12</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                            <ul>
+                                <li>Update OpenSSL to 4.1.0</li>
+                                <li>libssh with OpenSSL 4.1.0</li>
+                                <li>libvncclient with OpenSSL 4.1.0</li>
+                            </ul>
+                        ]]></description>
             <enclosure url="https://github.com/foxterm/FoxTerm/releases/latest/download/FoxTerm-1.0.12.dmg" length="28021386" type="application/octet-stream" sparkle:edSignature="J+CVsN/OOImYvGYGtK9lylOPnXXWNzZzOBkYojKGpx85aL0Y2HmZG8oHpdimOTLgWsUiLp33s7HxnZe0XlDQDw=="/>
             <sparkle:deltas>
                 <enclosure url="https://github.com/foxterm/FoxTerm/releases/latest/download/FoxTerm20226102232233-20226102230101.delta" sparkle:deltaFrom="20226102230101" length="3192774" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="eiGKvSC2g3+ujQeSUZQawqKcjLTChtLQwudIkJ7hPJnapC8LJZ9UXOndcgo59fuJbFUAFR8Z1D0uqX8QpfhDAQ=="/>
