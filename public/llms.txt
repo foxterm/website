@@ -54,6 +54,12 @@ FoxTerm unifies five workloads in one native client: SSH terminal access, SFTP f
 - **Which protocols are supported?** SSH, SFTP, VNC, plus Docker and Podman engine management over SSH, with Ed25519 and modern ciphers.
 - **How does Pro activation work on macOS?** Either the App Store subscription (auto-activates iOS via Universal Purchase) or a Notarized-edition activation code from pay.foxterm.app (macOS only).
 
+## Contact
+
+- **Product inquiries:** foxterm.app@gmail.com
+- **Partnerships:** foxterm@icloud.com
+- **Membership services:** admin@foxterm.app
+
 ## Navigation Directory
 
 - [Homepage](https://foxterm.app/) — features, tech stack, download and licensing overview.
