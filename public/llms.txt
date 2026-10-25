@@ -56,7 +56,7 @@ FoxTerm unifies five workloads in one native client: SSH terminal access, SFTP f
 
 ## Contact
 
-- **Product inquiries:** admin@foxterm.app
+- **Product inquiries:** support@foxterm.app
 - **Partnerships:** foxterm@icloud.com
 - **Membership services:** admin@foxterm.app
 
