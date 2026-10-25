@@ -840,7 +840,7 @@
           ]
         }
       },
-      "links": [["foxterm.app@gmail.com"], ["E-Mail senden"]],
+      "links": [["admin@foxterm.app"], ["E-Mail senden"]],
       "cards": [
         {
           "title": ["01 / BUG-MELDUNGEN"],

@@ -851,7 +851,7 @@
           ]
         }
       },
-      "links": [["foxterm.app@gmail.com"], ["Envoyer un e-mail"]],
+      "links": [["admin@foxterm.app"], ["Envoyer un e-mail"]],
       "cards": [
         {
           "title": ["01 / SIGNALEMENTS DE BUGS"],

@@ -792,7 +792,7 @@
           ]
         }
       },
-      "links": [["foxterm.app@gmail.com"], ["发送邮件"]],
+      "links": [["admin@foxterm.app"], ["发送邮件"]],
       "cards": [
         {
           "title": ["01 / Bug 反馈"],

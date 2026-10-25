@@ -816,7 +816,7 @@
           ]
         }
       },
-      "links": [["foxterm.app@gmail.com"], ["이메일 보내기"]],
+      "links": [["admin@foxterm.app"], ["이메일 보내기"]],
       "cards": [
         {
           "title": ["01 / 버그 신고"],

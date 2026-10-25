@@ -845,7 +845,7 @@
           ]
         }
       },
-      "links": [["foxterm.app@gmail.com"], ["Отправить письмо"]],
+      "links": [["admin@foxterm.app"], ["Отправить письмо"]],
       "cards": [
         {
           "title": ["01 / СООБЩЕНИЯ ОБ ОШИБКАХ"],

@@ -872,7 +872,7 @@
           ]
         }
       },
-      "links": [["foxterm.app@gmail.com"], ["Send Email"]],
+      "links": [["admin@foxterm.app"], ["Send Email"]],
       "cards": [
         {
           "title": ["01 / BUG REPORTS"],

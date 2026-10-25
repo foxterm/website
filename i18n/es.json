@@ -842,7 +842,7 @@
           ]
         }
       },
-      "links": [["foxterm.app@gmail.com"], ["Enviar correo"]],
+      "links": [["admin@foxterm.app"], ["Enviar correo"]],
       "cards": [
         {
           "title": ["01 / INFORMES DE ERROR"],

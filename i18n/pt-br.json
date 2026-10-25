@@ -839,7 +839,7 @@
           ]
         }
       },
-      "links": [["foxterm.app@gmail.com"], ["Enviar e-mail"]],
+      "links": [["admin@foxterm.app"], ["Enviar e-mail"]],
       "cards": [
         {
           "title": ["01 / RELATOS DE BUGS"],

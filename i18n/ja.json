@@ -829,7 +829,7 @@
           ]
         }
       },
-      "links": [["foxterm.app@gmail.com"], ["メールを送る"]],
+      "links": [["admin@foxterm.app"], ["メールを送る"]],
       "cards": [
         {
           "title": ["01 / バグ報告"],
