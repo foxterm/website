@@ -147,7 +147,7 @@
     "trust": {
       "items": [
         {
-          "value": ["4-in-1"],
+          "value": ["5-in-1"],
           "body": ["SSH · SFTP · VNC 与容器，尽收一个窗口"]
         },
         {

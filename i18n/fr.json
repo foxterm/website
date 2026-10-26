@@ -149,7 +149,7 @@
     "trust": {
       "items": [
         {
-          "value": ["4-in-1"],
+          "value": ["5-in-1"],
           "body": ["SSH · SFTP · VNC & conteneurs dans une seule fenêtre"]
         },
         {
