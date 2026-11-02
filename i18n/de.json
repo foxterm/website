@@ -1527,7 +1527,14 @@
           "name": ["Lokal & Self-Hosted"],
           "items": ["Ollama · LM Studio · Eingebaute GGUF-Engine · Core ML"]
         }
-      ]
+      ],
+      "native": {
+        "badge": ["NATIVE ANBINDUNGEN, KEIN GENERISCHER ENDPOINT"],
+        "title": ["Jeder Anbieter hat seinen eigenen Adapter"],
+        "body": [
+          "Anthropic nutzt die Messages API, Gemini generateContent, Ollama /api/chat, und lokales GGUF läuft direkt im Prozess über llama.cpp — ganz ohne HTTP. Aggregatoren wie OpenRouter, Together AI und Replicate haben eigene Credential-Scopes und Modell-IDs; Azure-Deployments sowie die internationalen und chinesischen Endpunkte von MiniMax werden ebenfalls getrennt behandelt. Modelllisten, Thinking- und Bildgenerierungs-Funktionen sowie Standardparameter werden je Anbieter ermittelt. OpenAI- und Anthropic-kompatible Endpunkte sind eine zusätzliche Option für selbst gehostete Dienste — kein einziger Kanal, durch den alle Modelle gezwungen werden."
+        ]
+      }
     },
     "pricing": {
       "badge": ["Preise"],

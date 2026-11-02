@@ -432,6 +432,30 @@
           </div>
           <% } %>
         </div>
+
+        <div
+          class="mt-6 p-5 sm:p-7 rounded-2xl bg-sky-500/5 border border-sky-500/20 backdrop-blur-xl"
+        >
+          <div
+            class="text-[10px] font-mono text-sky-400 uppercase tracking-widest mb-3"
+          >
+            <%= t["providers.native.badge.0"] %>
+          </div>
+          <h3 class="text-base sm:text-lg font-bold text-white mb-2">
+            <%= t["providers.native.title.0"] %>
+          </h3>
+          <p class="text-xs sm:text-sm text-zinc-400 leading-relaxed mb-5">
+            <%= t["providers.native.body.0"] %>
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <% for (const label of ["Anthropic Messages", "Gemini generateContent", "Ollama /api/chat", "llama.cpp in-process", "Azure deployment", "MiniMax intl / CN", "Per-provider scopes"]) { %>
+            <span
+              class="px-2.5 py-1 rounded-lg bg-zinc-900/70 border border-zinc-800 text-[10px] font-mono text-zinc-300"
+              ><%= label %></span
+            >
+            <% } %>
+          </div>
+        </div>
       </section>
 
       <!-- Pricing Section -->

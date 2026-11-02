@@ -1396,7 +1396,14 @@
           "name": ["本地与自托管"],
           "items": ["Ollama · LM Studio · 内置 GGUF 引擎 · Core ML"]
         }
-      ]
+      ],
+      "native": {
+        "badge": ["逐家原生适配 · 不是一个通用兼容端点"],
+        "title": ["每家供应商都有自己的接入方式"],
+        "body": [
+          "Anthropic 走 Messages API，Gemini 走 generateContent，Ollama 走 /api/chat，本地 GGUF 则由 llama.cpp 在进程内直接推理，完全不发 HTTP 请求。OpenRouter、Together AI、Replicate 等聚合平台各有独立的凭据作用域与模型 ID；Azure 部署名、MiniMax 国际与中国双端点也分别处理。模型清单、思考与图片生成能力、默认参数都按供应商逐一探测。OpenAI / Anthropic 兼容端点只是接自建服务时的额外选项，并不是把所有模型硬塞进同一条通道。"
+        ]
+      }
     },
     "pricing": {
       "badge": ["定价"],

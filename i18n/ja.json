@@ -1494,7 +1494,16 @@
           "name": ["ローカル・セルフホスト"],
           "items": ["Ollama · LM Studio · 内蔵 GGUF エンジン · Core ML"]
         }
-      ]
+      ],
+      "native": {
+        "badge": [
+          "プロバイダー別のネイティブ実装 · 汎用互換エンドポイントではない"
+        ],
+        "title": ["プロバイダーごとに専用のアダプター"],
+        "body": [
+          "Anthropic は Messages API、Gemini は generateContent、Ollama は /api/chat、ローカル GGUF は llama.cpp によるプロセス内推論で、HTTP リクエストは一切発生しません。OpenRouter、Together AI、Replicate などの集約サービスもそれぞれ独立した認証スコープとモデル ID を持ち、Azure のデプロイ名や MiniMax の国際版・中国版エンドポイントも個別に扱います。モデル一覧、思考・画像生成への対応、デフォルトパラメータもプロバイダー単位で判定されます。OpenAI / Anthropic 互換エンドポイントは自前サーバー向けの追加オプションであり、すべてのモデルを 1 本の汎用パイプに押し込む設計ではありません。"
+        ]
+      }
     },
     "pricing": {
       "badge": ["料金"],
