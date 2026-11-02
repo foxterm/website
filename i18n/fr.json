@@ -1419,6 +1419,7 @@
       "logo": ["UChat AI"],
       "links": [
         ["Fonctionnalités"],
+        ["Outils"],
         ["Fournisseurs"],
         ["Tarifs"],
         ["FAQ"],
@@ -1437,7 +1438,8 @@
         ["20+ fournisseurs"],
         ["Modèles locaux"],
         ["Raisonnement"],
-        ["Images"]
+        ["Images"],
+        ["MCP & 12 outils"]
       ],
       "subtitle": [
         "UChat AI est une app de chat IA 100% native pour Mac, iPhone et iPad. Connectez-vous à OpenAI, Anthropic, Gemini, Grok et plus avec votre propre clé API — ou exécutez des modèles locaux entièrement hors ligne."
@@ -1659,6 +1661,50 @@
         },
         {
           "alt": "SAST Passed"
+        }
+      ]
+    },
+    "tools": {
+      "badge": ["AGENT & OUTILS"],
+      "title": ["Pas qu'un chat. Un agent qui agit vraiment."],
+      "lede": [
+        "UChat AI donne de vrais outils aux modèles : connectez des serveurs MCP distants, activez les outils intégrés dont vous avez besoin ou laissez le modèle piloter vos serveurs en SSH — le tout dans une seule fenêtre de chat native."
+      ],
+      "pillars": [
+        {
+          "title": ["Serveurs MCP en un clic"],
+          "body": [
+            "Ajoutez un serveur MCP en HTTP streamable : UChat AI découvre automatiquement ses outils et les propose au modèle avec les outils intégrés. En-têtes d'authentification personnalisés, activation outil par outil, import JSON et reconnexion automatique après un changement de réseau sont inclus."
+          ]
+        },
+        {
+          "title": ["12 outils intégrés, à votre main"],
+          "body": [
+            "Récupérer une URL, interroger RDAP ou les taux de change, la météo, les infos système et l'heure, résoudre une IP via la base GeoLite2 hors ligne, générer des clés, réveiller une machine sur le LAN ou faire générer une image par le modèle. Chaque outil est activé explicitement et reste dans le bac à sable de l'app."
+          ]
+        },
+        {
+          "title": ["Un vrai toolkit de terminal distant"],
+          "body": [
+            "L'outil SSH embarque une trentaine d'actions : exécuter des commandes distantes et capturer leur sortie, gérer des fichiers en SFTP, inspecter l'état du serveur et piloter des conteneurs Docker. Les identifiants restent dans la base locale : le modèle ne demande jamais de mot de passe."
+          ]
+        }
+      ],
+      "grid": {
+        "title": ["Catalogue des outils intégrés"],
+        "meta": ["12 outils · activez seulement le nécessaire"]
+      },
+      "legend": [["Local"], ["LAN"], ["En ligne"], ["Ops distant"]],
+      "loop": ["jusqu'à 8 cycles d'outils par réponse"],
+      "stats": [
+        {
+          "body": ["Cycles modèle → outil → modèle par réponse"]
+        },
+        {
+          "body": ["Actions SSH, de exec à Docker"]
+        },
+        {
+          "body": ["Outils intégrés, tous optionnels"]
         }
       ]
     }

@@ -1422,7 +1422,14 @@
   "uchat": {
     "nav": {
       "logo": ["UChat AI"],
-      "links": [["Features"], ["Providers"], ["Pricing"], ["FAQ"], ["FoxTerm"]],
+      "links": [
+        ["Features"],
+        ["Tools"],
+        ["Providers"],
+        ["Pricing"],
+        ["FAQ"],
+        ["FoxTerm"]
+      ],
       "langAria": "Language",
       "langCurrent": ["English"],
       "getApp": ["Download"]
@@ -1436,7 +1443,8 @@
         ["20+ Providers"],
         ["Local Models"],
         ["Reasoning"],
-        ["Images"]
+        ["Images"],
+        ["MCP & 12 Tools"]
       ],
       "subtitle": [
         "UChat AI is a 100% native AI chat app for Mac, iPhone and iPad. Connect OpenAI, Anthropic, Gemini, Grok and more with your own API key — or run local models entirely offline."
@@ -1654,6 +1662,50 @@
         },
         {
           "alt": "SAST Passed"
+        }
+      ]
+    },
+    "tools": {
+      "badge": ["AGENT & TOOLS"],
+      "title": ["Not Just Chat. An Agent That Gets Things Done."],
+      "lede": [
+        "UChat AI puts real tools behind the models. Connect remote MCP servers, switch on any of the 12 built-in tools, or let the model run SSH operations on your servers — all inside one native chat window."
+      ],
+      "pillars": [
+        {
+          "title": ["MCP servers, one click away"],
+          "body": [
+            "Add a streamable HTTP MCP server and UChat AI discovers its tools automatically, then hands them to the model alongside the built-in ones. Custom auth headers, per-tool switches, JSON import and automatic reconnect after network changes are all included."
+          ]
+        },
+        {
+          "title": ["12 built-in tools, on your terms"],
+          "body": [
+            "Fetch a URL, query RDAP or exchange rates, check the weather, read system info and time, resolve IPs from an offline GeoLite2 database, generate keys, wake a machine over LAN, or have the model create an image. Every tool is opt-in and stays inside the App Sandbox."
+          ]
+        },
+        {
+          "title": ["A real remote terminal toolkit"],
+          "body": [
+            "The SSH tool ships around 30 actions: run remote commands and capture their output, manage files over SFTP, inspect server status and control Docker containers. Credentials stay in the local database, so the model never has to ask for a password."
+          ]
+        }
+      ],
+      "grid": {
+        "title": ["Built-in tool catalog"],
+        "meta": ["12 tools · enable only what you need"]
+      },
+      "legend": [["Local"], ["LAN"], ["Online"], ["Remote ops"]],
+      "loop": ["up to 8 tool rounds per reply"],
+      "stats": [
+        {
+          "body": ["Model-to-tool-to-model rounds per reply"]
+        },
+        {
+          "body": ["SSH actions, from exec to Docker"]
+        },
+        {
+          "body": ["Built-in tools, all opt-in"]
         }
       ]
     }

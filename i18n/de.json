@@ -1400,7 +1400,14 @@
   "uchat": {
     "nav": {
       "logo": ["UChat AI"],
-      "links": [["Funktionen"], ["Anbieter"], ["Preise"], ["FAQ"], ["FoxTerm"]],
+      "links": [
+        ["Funktionen"],
+        ["Tools"],
+        ["Anbieter"],
+        ["Preise"],
+        ["FAQ"],
+        ["FoxTerm"]
+      ],
       "langAria": "Sprache",
       "langCurrent": ["Deutsch"],
       "getApp": ["App laden"]
@@ -1414,7 +1421,8 @@
         ["20+ Anbieter"],
         ["Lokale Modelle"],
         ["Reasoning"],
-        ["Bilder"]
+        ["Bilder"],
+        ["MCP & 12 Tools"]
       ],
       "subtitle": [
         "UChat AI ist eine zu 100% native AI-Chat-App für Mac, iPhone und iPad. Verbinde dich mit deinem eigenen API-Key mit OpenAI, Anthropic, Gemini, Grok und mehr — oder führe lokale Modelle komplett offline aus."
@@ -1634,6 +1642,50 @@
         },
         {
           "alt": "SAST Passed"
+        }
+      ]
+    },
+    "tools": {
+      "badge": ["AGENT & TOOLS"],
+      "title": ["Mehr als Chat. Ein Agent, der wirklich arbeitet."],
+      "lede": [
+        "UChat AI gibt Modellen echte Werkzeuge: entfernte MCP-Server verbinden, beliebige der 12 integrierten Tools aktivieren oder SSH-Operationen auf deinen Servern ausführen lassen — alles in einem nativen Chatfenster."
+      ],
+      "pillars": [
+        {
+          "title": ["MCP-Server mit einem Klick"],
+          "body": [
+            "Füge einen streamable-HTTP-MCP-Server hinzu und UChat AI entdeckt seine Tools automatisch und reicht sie zusammen mit den integrierten Tools an das Modell weiter. Eigene Auth-Header, Schalter pro Tool, JSON-Import und automatische Wiederverbindung nach Netzwechsel sind eingebaut."
+          ]
+        },
+        {
+          "title": ["12 integrierte Tools, nach deinen Regeln"],
+          "body": [
+            "URLs abrufen, RDAP oder Wechselkurse abfragen, Wetter, Systeminfos und Uhrzeit lesen, IPs aus einer Offline-GeoLite2-Datenbank auflösen, Schlüssel erzeugen, Geräte per LAN wecken oder Bilder vom Modell generieren lassen. Jedes Tool ist opt-in und läuft innerhalb der App-Sandbox."
+          ]
+        },
+        {
+          "title": ["Ein echtes Remote-Terminal-Toolkit"],
+          "body": [
+            "Das SSH-Tool bringt rund 30 Aktionen mit: entfernte Befehle ausführen und ihre Ausgabe erfassen, Dateien per SFTP verwalten, den Serverstatus prüfen und Docker-Container steuern. Zugangsdaten bleiben in der lokalen Datenbank — das Modell fragt nie nach einem Passwort."
+          ]
+        }
+      ],
+      "grid": {
+        "title": ["Katalog der integrierten Tools"],
+        "meta": ["12 Tools · nur aktivieren, was du brauchst"]
+      },
+      "legend": [["Lokal"], ["LAN"], ["Online"], ["Remote-Ops"]],
+      "loop": ["bis zu 8 Tool-Runden pro Antwort"],
+      "stats": [
+        {
+          "body": ["Modell→Tool→Modell-Runden pro Antwort"]
+        },
+        {
+          "body": ["SSH-Aktionen, von exec bis Docker"]
+        },
+        {
+          "body": ["Integrierte Tools, alle opt-in"]
         }
       ]
     }

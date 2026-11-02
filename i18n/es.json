@@ -1410,6 +1410,7 @@
       "logo": ["UChat AI"],
       "links": [
         ["Funciones"],
+        ["Herramientas"],
         ["Proveedores"],
         ["Precios"],
         ["FAQ"],
@@ -1428,7 +1429,8 @@
         ["20+ proveedores"],
         ["Modelos locales"],
         ["Razonamiento"],
-        ["Imágenes"]
+        ["Imágenes"],
+        ["MCP y 12 herramientas"]
       ],
       "subtitle": [
         "UChat AI es una app de chat de IA 100% nativa para Mac, iPhone y iPad. Conéctate a OpenAI, Anthropic, Gemini, Grok y más con tu propia clave API, o ejecuta modelos locales totalmente sin conexión."
@@ -1650,6 +1652,50 @@
         },
         {
           "alt": "SAST Passed"
+        }
+      ]
+    },
+    "tools": {
+      "badge": ["AGENTE Y HERRAMIENTAS"],
+      "title": ["No es solo chat. Es un agente que trabaja."],
+      "lede": [
+        "UChat AI pone herramientas reales en manos de los modelos: conecta servidores MCP remotos, activa cualquiera de las 12 herramientas integradas o deja que el modelo ejecute operaciones SSH en tus servidores — todo en una única ventana de chat nativa."
+      ],
+      "pillars": [
+        {
+          "title": ["Servidores MCP en un clic"],
+          "body": [
+            "Añade un servidor MCP por HTTP streamable y UChat AI descubre sus herramientas automáticamente y se las entrega al modelo junto con las integradas. Cabeceras de autenticación personalizadas, interruptores por herramienta, importación JSON y reconexión automática tras cambios de red, todo incluido."
+          ]
+        },
+        {
+          "title": ["12 herramientas integradas, a tu medida"],
+          "body": [
+            "Obtener una URL, consultar RDAP o tipos de cambio, el tiempo, información del sistema y la hora, resolver IP con la base GeoLite2 sin conexión, generar claves, despertar un equipo por LAN o pedir al modelo que cree una imagen. Cada herramienta se activa manualmente y se ejecuta dentro del sandbox de la app."
+          ]
+        },
+        {
+          "title": ["Un verdadero kit de terminal remoto"],
+          "body": [
+            "La herramienta SSH incluye unas 30 acciones: ejecutar comandos remotos y capturar su salida, gestionar archivos por SFTP, consultar el estado del servidor y controlar contenedores Docker. Las credenciales se guardan en la base local, así que el modelo nunca pide una contraseña."
+          ]
+        }
+      ],
+      "grid": {
+        "title": ["Catálogo de herramientas integradas"],
+        "meta": ["12 herramientas · activa solo lo que necesitas"]
+      },
+      "legend": [["Local"], ["LAN"], ["En línea"], ["Ops remoto"]],
+      "loop": ["hasta 8 rondas de herramientas por respuesta"],
+      "stats": [
+        {
+          "body": ["Ciclos modelo → herramienta → modelo por respuesta"]
+        },
+        {
+          "body": ["Acciones SSH, de exec a Docker"]
+        },
+        {
+          "body": ["Herramientas integradas, todas opcionales"]
         }
       ]
     }
