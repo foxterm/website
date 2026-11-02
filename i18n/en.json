@@ -190,7 +190,7 @@
       "twitter:description": "Every model, one native app. Free on the App Store.",
       "twitter:image": "/assets/uchat-ai.png",
       "twitter:image:alt": "UChat AI app icon",
-      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"UChat AI\",\"operatingSystem\":\"macOS 15+, iOS 17+\",\"applicationCategory\":\"UtilitiesApplication\",\"softwareRequirements\":\"Requires macOS 15.0 or later, iOS 17.0 or later.\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"Free for now. All features unlocked.\"},\"description\":\"UChat AI is a free, 100% native AI chat app for Mac, iPhone and iPad. Bring your own API key for OpenAI, Anthropic, Gemini, Grok, Kimi, MiniMax and more — or run local models offline.\",\"downloadUrl\":\"https://apps.apple.com/us/app/uchat-ai/id6503210454\",\"screenshot\":\"/assets/uchat-ai.png\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}}"
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"UChat AI\",\"operatingSystem\":\"macOS 15+, iOS 18+\",\"applicationCategory\":\"UtilitiesApplication\",\"softwareRequirements\":\"Requires macOS 15.0 or later, iOS 18.0 or later.\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"Free for now. All features unlocked.\"},\"description\":\"UChat AI is a free, 100% native AI chat app for Mac, iPhone and iPad. Bring your own API key for OpenAI, Anthropic, Gemini, Grok, Kimi, MiniMax and more — or run local models offline.\",\"downloadUrl\":\"https://apps.apple.com/us/app/uchat-ai/id6503210454\",\"screenshot\":\"/assets/uchat-ai.png\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}}"
     }
   },
   "index": {
@@ -829,7 +829,7 @@
           [
             "Zero telemetry: prompts, conversations and keys never pass through our servers"
           ],
-          ["100% native SwiftUI for macOS 15+ and iOS 17+"]
+          ["100% native SwiftUI for macOS 15+ and iOS 18+"]
         ],
         "stats": [["Accounts required"], ["Telemetry"], ["Native Swift"]],
         "cta": ["Explore UChat AI"]
@@ -1629,7 +1629,7 @@
         },
         {
           "label": ["iOS"],
-          "value": ["Requires iOS 17 or later"]
+          "value": ["Requires iOS 18 or later"]
         }
       ],
       "note": ["UChat AI shares this website's"],

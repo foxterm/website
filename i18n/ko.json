@@ -146,7 +146,7 @@
       "twitter:description": "모든 모델을 하나의 네이티브 앱으로. App Store에서 무료.",
       "twitter:image": "/assets/uchat-ai.png",
       "twitter:image:alt": "UChat AI 앱 아이콘",
-      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"UChat AI\",\"operatingSystem\":\"macOS 15+, iOS 17+\",\"applicationCategory\":\"UtilitiesApplication\",\"softwareRequirements\":\"Requires macOS 15.0 or later, iOS 17.0 or later.\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"Free for now. All features unlocked.\"},\"description\":\"UChat AI는 Mac, iPhone, iPad를 위한 100% 네이티브 AI 채팅 앱입니다. 직접 발급한 API 키로 OpenAI, Anthropic, Gemini, Grok, Kimi, MiniMax 등에 연결하거나 로컬 모델을 오프라인으로 실행하세요. 현재 무료.\",\"downloadUrl\":\"https://apps.apple.com/us/app/uchat-ai/id6503210454\",\"screenshot\":\"/assets/uchat-ai.png\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}}"
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"UChat AI\",\"operatingSystem\":\"macOS 15+, iOS 18+\",\"applicationCategory\":\"UtilitiesApplication\",\"softwareRequirements\":\"Requires macOS 15.0 or later, iOS 18.0 or later.\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"Free for now. All features unlocked.\"},\"description\":\"UChat AI는 Mac, iPhone, iPad를 위한 100% 네이티브 AI 채팅 앱입니다. 직접 발급한 API 키로 OpenAI, Anthropic, Gemini, Grok, Kimi, MiniMax 등에 연결하거나 로컬 모델을 오프라인으로 실행하세요. 현재 무료.\",\"downloadUrl\":\"https://apps.apple.com/us/app/uchat-ai/id6503210454\",\"screenshot\":\"/assets/uchat-ai.png\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}}"
     }
   },
   "index": {
@@ -765,7 +765,7 @@
           ["직접 발급한 API 키 —— 계정·구독·중개인 없이"],
           ["클라우드와 로컬 모델을 한 앱에서, OpenAI부터 Mac의 GGUF 파일까지"],
           ["제로 텔레메트리: 프롬프트·대화·키는 당사 서버를 거치지 않습니다"],
-          ["macOS 15+ 및 iOS 17+용 100% 네이티브 SwiftUI"]
+          ["macOS 15+ 및 iOS 18+용 100% 네이티브 SwiftUI"]
         ],
         "stats": [["필요한 계정"], ["텔레메트리"], ["네이티브 Swift"]],
         "cta": ["UChat AI 살펴보기"]
@@ -1544,7 +1544,7 @@
         },
         {
           "label": ["iOS"],
-          "value": ["iOS 17 이상 필요"]
+          "value": ["iOS 18 이상 필요"]
         }
       ],
       "note": ["UChat AI는 이 사이트의"],

@@ -146,7 +146,7 @@
       "twitter:description": "所有模型，一个原生应用。App Store 限时免费。",
       "twitter:image": "/assets/uchat-ai.png",
       "twitter:image:alt": "UChat AI 应用图标",
-      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"UChat AI\",\"operatingSystem\":\"macOS 15+, iOS 17+\",\"applicationCategory\":\"UtilitiesApplication\",\"softwareRequirements\":\"Requires macOS 15.0 or later, iOS 17.0 or later.\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"Free for now. All features unlocked.\"},\"description\":\"UChat AI 是一款限时免费的 100% 原生 AI 聊天应用，支持 Mac、iPhone 和 iPad。自带 API Key 连接 OpenAI、Anthropic、Gemini、Grok、Kimi、MiniMax 等，或在本地离线运行模型。\",\"downloadUrl\":\"https://apps.apple.com/us/app/uchat-ai/id6503210454\",\"screenshot\":\"/assets/uchat-ai.png\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}}"
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"UChat AI\",\"operatingSystem\":\"macOS 15+, iOS 18+\",\"applicationCategory\":\"UtilitiesApplication\",\"softwareRequirements\":\"Requires macOS 15.0 or later, iOS 18.0 or later.\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"Free for now. All features unlocked.\"},\"description\":\"UChat AI 是一款限时免费的 100% 原生 AI 聊天应用，支持 Mac、iPhone 和 iPad。自带 API Key 连接 OpenAI、Anthropic、Gemini、Grok、Kimi、MiniMax 等，或在本地离线运行模型。\",\"downloadUrl\":\"https://apps.apple.com/us/app/uchat-ai/id6503210454\",\"screenshot\":\"/assets/uchat-ai.png\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}}"
     }
   },
   "index": {
@@ -737,7 +737,7 @@
           ["自带 API Key —— 无需账号、无需订阅、没有中间商"],
           ["云端与本地模型同在一个应用，从 OpenAI 到 Mac 上的一个 GGUF 文件"],
           ["零遥测：提示词、对话与密钥都不经过我们的服务器"],
-          ["100% 原生 SwiftUI，支持 macOS 15+ 与 iOS 17+"]
+          ["100% 原生 SwiftUI，支持 macOS 15+ 与 iOS 18+"]
         ],
         "stats": [["需要账号"], ["遥测数据"], ["原生 Swift"]],
         "cta": ["了解 UChat AI"]
@@ -1474,7 +1474,7 @@
         },
         {
           "label": ["iOS"],
-          "value": ["需要 iOS 17 或更高版本"]
+          "value": ["需要 iOS 18 或更高版本"]
         }
       ],
       "note": ["UChat AI 与本站共用的"],

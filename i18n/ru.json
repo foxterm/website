@@ -146,7 +146,7 @@
       "twitter:description": "Любая модель — одно нативное приложение. Бесплатно в App Store.",
       "twitter:image": "/assets/uchat-ai.png",
       "twitter:image:alt": "Значок приложения UChat AI",
-      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"UChat AI\",\"operatingSystem\":\"macOS 15+, iOS 17+\",\"applicationCategory\":\"UtilitiesApplication\",\"softwareRequirements\":\"Requires macOS 15.0 or later, iOS 17.0 or later.\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"Free for now. All features unlocked.\"},\"description\":\"UChat AI — бесплатное 100% нативное AI-приложение для Mac, iPhone и iPad. Свой API-ключ для OpenAI, Anthropic, Gemini, Grok, Kimi, MiniMax и других — или локальные модели офлайн.\",\"downloadUrl\":\"https://apps.apple.com/us/app/uchat-ai/id6503210454\",\"screenshot\":\"/assets/uchat-ai.png\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}}"
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"UChat AI\",\"operatingSystem\":\"macOS 15+, iOS 18+\",\"applicationCategory\":\"UtilitiesApplication\",\"softwareRequirements\":\"Requires macOS 15.0 or later, iOS 18.0 or later.\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"Free for now. All features unlocked.\"},\"description\":\"UChat AI — бесплатное 100% нативное AI-приложение для Mac, iPhone и iPad. Свой API-ключ для OpenAI, Anthropic, Gemini, Grok, Kimi, MiniMax и других — или локальные модели офлайн.\",\"downloadUrl\":\"https://apps.apple.com/us/app/uchat-ai/id6503210454\",\"screenshot\":\"/assets/uchat-ai.png\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}}"
     }
   },
   "index": {
@@ -800,7 +800,7 @@
           [
             "Нулевая телеметрия: запросы, диалоги и ключи не проходят через наши серверы"
           ],
-          ["100% нативный SwiftUI для macOS 15+ и iOS 17+"]
+          ["100% нативный SwiftUI для macOS 15+ и iOS 18+"]
         ],
         "stats": [["Нужно аккаунтов"], ["Телеметрия"], ["Нативный Swift"]],
         "cta": ["Смотреть UChat AI"]
@@ -1607,7 +1607,7 @@
         },
         {
           "label": ["iOS"],
-          "value": ["Требуется iOS 17 или новее"]
+          "value": ["Требуется iOS 18 или новее"]
         }
       ],
       "note": ["UChat AI использует общие для сайта"],
