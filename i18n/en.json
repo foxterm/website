@@ -12,7 +12,7 @@
       "links": [["Back to Home"], ["Contact Support"]]
     },
     "footer": {
-      "copyright": [" FoxTerm.", "Hosted on Tencent Makers."],
+      "copyright": [" FoxTerm."],
       "links": [
         ["About"],
         ["Contact Us"],
@@ -31,7 +31,14 @@
   "_meta": {
     "lang": "en",
     "label": "English",
-    "updated": "2026-10-20"
+    "updated": "2026-11-03"
+  },
+  "_shared": {
+    "brand": {
+      "productsLabel": ["Products"],
+      "foxterm": ["FoxTerm"],
+      "uchatAI": ["UChat AI"]
+    }
   },
   "_seo": {
     "404": {
@@ -156,6 +163,34 @@
       "og:site_name": "FoxTerm",
       "og:image": "/assets/apple-touch-icon.png",
       "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"name\":\"Terms of Service - FoxTerm\",\"url\":\"https://foxterm.app/terms\",\"inLanguage\":\"en-US\",\"isPartOf\":{\"@type\":\"WebSite\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app/\"},\"description\":\"FoxTerm Terms of Service outlining license terms, acceptable use, subscriptions, and legal disclaimers.\",\"breadcrumb\":{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://foxterm.app/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Terms of Service\",\"item\":\"https://foxterm.app/terms\"}]}}"
+    },
+    "uchat": {
+      "viewport": "width=device-width, initial-scale=1",
+      "title": "UChat AI - 100% Native AI Chat for macOS & iOS | Free",
+      "description": "UChat AI is a free, 100% native AI chat app for Mac, iPhone and iPad. Bring your own API key for OpenAI, Anthropic, Gemini, Grok, Kimi, MiniMax and more — or run local models offline.",
+      "keywords": "UChat AI, native AI app, macOS AI chat, iOS AI chat, OpenAI client, Anthropic client, Gemini client, Grok client, Ollama client, LM Studio, local LLM, GGUF, bring your own key, AI chat app",
+      "author": "FoxTerm",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "googlebot": "index, follow",
+      "language": "English",
+      "revisit-after": "7 days",
+      "og:type": "website",
+      "og:locale": "en_US",
+      "og:locale:alternate": "zh_CN, zh_TW, ja_JP, de_DE, ru_RU, es_ES, fr_FR, ko_KR, pt_BR",
+      "og:title": "UChat AI | 100% Native AI Chat for macOS & iOS",
+      "og:description": "Every model, one native app. Cloud providers with your own key, or local models offline. Free on the App Store.",
+      "og:url": "https://foxterm.app/uchat",
+      "og:site_name": "FoxTerm",
+      "og:image": "/assets/uchat-ai.png",
+      "og:image:width": "512",
+      "og:image:height": "512",
+      "og:image:alt": "UChat AI app icon",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "UChat AI - Native AI Chat for macOS & iOS",
+      "twitter:description": "Every model, one native app. Free on the App Store.",
+      "twitter:image": "/assets/uchat-ai.png",
+      "twitter:image:alt": "UChat AI app icon",
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"UChat AI\",\"operatingSystem\":\"macOS 14+, iOS 17+\",\"applicationCategory\":\"UtilitiesApplication\",\"softwareRequirements\":\"Requires macOS 14.0 or later, iOS 17.0 or later.\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"Free for now. All features unlocked.\"},\"description\":\"UChat AI is a free, 100% native AI chat app for Mac, iPhone and iPad. Bring your own API key for OpenAI, Anthropic, Gemini, Grok, Kimi, MiniMax and more — or run local models offline.\",\"downloadUrl\":\"https://apps.apple.com/us/app/uchat-ai/id6503210454\",\"screenshot\":\"/assets/uchat-ai.png\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}}"
     }
   },
   "index": {
@@ -167,7 +202,8 @@
         ["Architecture"],
         ["Security"],
         ["Pricing"],
-        ["FAQ"]
+        ["FAQ"],
+        ["UChat AI"]
       ],
       "langAria": "Language",
       "langCurrent": ["English"],
@@ -626,7 +662,7 @@
       ]
     },
     "footer": {
-      "copyright": [" FoxTerm.", "Hosted on Tencent Makers."],
+      "copyright": [" FoxTerm."],
       "links": [
         ["About"],
         ["Contact Us"],
@@ -771,7 +807,7 @@
       ]
     },
     "footer": {
-      "copyright": [" FoxTerm.", "Hosted on Tencent Makers."],
+      "copyright": [" FoxTerm."],
       "links": [
         ["Home"],
         ["Privacy Policy"],
@@ -895,7 +931,7 @@
       ]
     },
     "footer": {
-      "copyright": [" FoxTerm.", "Hosted on Tencent Makers."],
+      "copyright": [" FoxTerm."],
       "links": [
         ["Home"],
         ["About"],
@@ -1075,7 +1111,7 @@
       ]
     },
     "footer": {
-      "copyright": [" FoxTerm.", "Hosted on Tencent Makers."],
+      "copyright": [" FoxTerm."],
       "links": [
         ["Home"],
         ["About"],
@@ -1268,12 +1304,251 @@
       ]
     },
     "footer": {
-      "copyright": [" FoxTerm.", "Hosted on Tencent Makers."],
+      "copyright": [" FoxTerm."],
       "links": [
         ["Home"],
         ["About"],
         ["Contact Us"],
         ["Privacy Policy"],
+        ["GitHub"],
+        ["Blog"],
+        ["Security Intel"]
+      ],
+      "icp": ["蜀ICP备2024075062号"],
+      "mirror": ["CN Mirror:", " | Global:", "foxterm.cn", "foxterm.app"],
+      "badges": [
+        {
+          "alt": "Apple Notarized"
+        },
+        {
+          "alt": "Secure Enclave"
+        },
+        {
+          "alt": "App Sandbox"
+        },
+        {
+          "alt": "Zero Telemetry"
+        },
+        {
+          "alt": "Native Swift & C"
+        },
+        {
+          "alt": "SAST Passed"
+        }
+      ]
+    }
+  },
+  "uchat": {
+    "nav": {
+      "logo": ["UChat AI"],
+      "links": [["Features"], ["Providers"], ["Pricing"], ["FAQ"], ["FoxTerm"]],
+      "langAria": "Language",
+      "langCurrent": ["English"],
+      "getApp": ["Download"]
+    },
+    "hero": {
+      "badge": ["100% Native AI App · Bring Your Own Key · Free"],
+      "logoAlt": ["UChat AI app icon"],
+      "title": ["Chat with Every Model,", "Natively"],
+      "tags": [
+        ["Native"],
+        ["20+ Providers"],
+        ["Local Models"],
+        ["Reasoning"],
+        ["Images"]
+      ],
+      "subtitle": [
+        "UChat AI is a 100% native AI chat app for Mac, iPhone and iPad. Connect OpenAI, Anthropic, Gemini, Grok and more with your own API key — or run local models entirely offline."
+      ],
+      "cta": [
+        {
+          "alt": "Download on the App Store",
+          "caption": ["App Store"],
+          "label": ["Download UChat AI"]
+        }
+      ]
+    },
+    "trust": {
+      "items": [
+        {
+          "value": ["20+"],
+          "body": ["Cloud, aggregator and local providers built in"]
+        },
+        {
+          "value": ["$0"],
+          "body": ["Free for now — no subscription required"]
+        },
+        {
+          "value": ["100%"],
+          "body": ["Native Swift, no Electron or web wrapper"]
+        },
+        {
+          "value": ["1"],
+          "body": ["One app for macOS, iPhone and iPad"]
+        }
+      ]
+    },
+    "features": {
+      "badge": ["Why UChat AI"],
+      "title": ["Every Model. One Native App."],
+      "lede": [
+        "Bring your own keys and talk to virtually any model — in the cloud or on your machine."
+      ],
+      "cards": [
+        {
+          "title": ["100% Native"],
+          "body": [
+            "Built in Swift for Apple platforms. No Electron, no web views — instant launch and a low memory footprint."
+          ]
+        },
+        {
+          "title": ["All Major Cloud Providers"],
+          "body": [
+            "OpenAI, Azure OpenAI, Anthropic, Google Gemini, xAI Grok, Mistral AI, Groq, Kimi (Moonshot) and MiniMax."
+          ]
+        },
+        {
+          "title": ["Aggregators Built In"],
+          "body": [
+            "One key for hundreds of models via OpenRouter, Together AI or Replicate."
+          ]
+        },
+        {
+          "title": ["Any Compatible Endpoint"],
+          "body": [
+            "Point UChat AI at any OpenAI- or Anthropic-compatible server — including LAN or remote addresses."
+          ]
+        },
+        {
+          "title": ["Local & Offline"],
+          "body": [
+            "Run Ollama, LM Studio or the built-in GGUF engine entirely in-process. No API key required."
+          ]
+        },
+        {
+          "title": ["Reasoning & Images"],
+          "body": [
+            "Tune thinking effort per model and generate images right in the conversation where the provider supports it."
+          ]
+        }
+      ]
+    },
+    "providers": {
+      "badge": ["Providers"],
+      "title": ["Works with the Models You Already Use"],
+      "lede": [
+        "From first-party clouds to self-hosted endpoints — switch providers in seconds."
+      ],
+      "groups": [
+        {
+          "name": ["Cloud"],
+          "items": [
+            "OpenAI · Azure OpenAI · Anthropic · Google Gemini · Grok (xAI) · Mistral AI · Groq · Kimi · MiniMax"
+          ]
+        },
+        {
+          "name": ["Aggregators"],
+          "items": ["OpenRouter · Together AI · Replicate"]
+        },
+        {
+          "name": ["Compatible Protocols"],
+          "items": ["Any OpenAI-compatible · Any Anthropic-compatible endpoint"]
+        },
+        {
+          "name": ["Local & Self-Hosted"],
+          "items": ["Ollama · LM Studio · Built-in GGUF engine · Core ML"]
+        }
+      ]
+    },
+    "pricing": {
+      "badge": ["Pricing"],
+      "title": ["Free, For Now"],
+      "lede": [
+        "Every feature is unlocked while UChat AI is in its free period. No subscription, no ads, no in-app purchases."
+      ],
+      "free": {
+        "price": ["$0"],
+        "name": ["UChat AI"],
+        "tag": ["Free"],
+        "lede": ["Full app, all providers, all updates."],
+        "items": [
+          ["All features unlocked"],
+          ["All cloud and local providers"],
+          ["No subscription or ads"]
+        ],
+        "button": ["Download Free"]
+      },
+      "note": [
+        "Pricing may change in the future — UChat AI is currently free on the App Store."
+      ]
+    },
+    "faq": {
+      "badge": ["FAQ"],
+      "title": ["Frequently Asked Questions"],
+      "lede": ["Everything you need to know about UChat AI."],
+      "items": [
+        {
+          "q": ["What is UChat AI?"],
+          "a": [
+            "UChat AI is a 100% native AI chat app for macOS, iPhone and iPad. It connects to cloud model providers with your own API key and runs local models entirely on your device."
+          ]
+        },
+        {
+          "q": ["Does it cost anything?"],
+          "a": [
+            "No. UChat AI is currently free on the App Store. Pricing may change in the future, and any change would be announced before it takes effect."
+          ]
+        },
+        {
+          "q": ["Which providers are supported?"],
+          "a": [
+            "OpenAI, Azure OpenAI, Anthropic, Google Gemini, xAI Grok, Mistral AI, Groq, Kimi and MiniMax, plus the OpenRouter, Together AI and Replicate aggregators. Any OpenAI- or Anthropic-compatible endpoint works too."
+          ]
+        },
+        {
+          "q": ["Can I use it without an API key?"],
+          "a": [
+            "Yes. Local providers — Ollama, LM Studio and the built-in GGUF engine — run entirely in-process with no API key. Ollama and LM Studio can also point at LAN or remote servers."
+          ]
+        },
+        {
+          "q": ["Where do my API keys live?"],
+          "a": [
+            "Your keys are stored on your device and used to talk directly to the provider you choose. UChat AI does not require an account."
+          ]
+        }
+      ]
+    },
+    "download": {
+      "title": ["Get UChat AI"],
+      "subtitle": ["Free on the App Store for Mac, iPhone and iPad."],
+      "button": {
+        "alt": "Download UChat AI on the App Store",
+        "label": ["Download on the App Store"]
+      },
+      "reqs": [
+        {
+          "label": ["macOS"],
+          "value": ["Requires macOS 14 or later"]
+        },
+        {
+          "label": ["iOS"],
+          "value": ["Requires iOS 17 or later"]
+        }
+      ],
+      "note": ["UChat AI shares this website's"],
+      "legal": [["Privacy Policy"], ["Terms of Service"]],
+      "legalSep": ["and"],
+      "noteEnd": ["."]
+    },
+    "footer": {
+      "copyright": [" FoxTerm."],
+      "links": [
+        ["Home"],
+        ["About"],
+        ["Contact Us"],
+        ["Privacy Policy"],
+        ["Terms of Service"],
         ["GitHub"],
         ["Blog"],
         ["Security Intel"]

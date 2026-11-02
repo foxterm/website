@@ -60,9 +60,29 @@
     </div>
 
     <!-- Security & Trust Badges -->
+    <!-- Products -->
     <div
-      class="flex flex-wrap items-center justify-center gap-2.5 pt-2 border-t border-zinc-900"
+      class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 text-zinc-500"
     >
+      <span class="text-[11px] font-mono uppercase tracking-widest"
+        ><%= t["brand.productsLabel.0"] %></span
+      >
+      <% for (const p of productLinks) { %>
+      <a
+        href="<%= p.href %>"
+        class="no-underline inline-flex items-center gap-1.5 font-semibold text-zinc-400 hover:text-fox-500 transition-colors"
+      >
+        <img
+          src="<%= p.logo %>"
+          alt=""
+          class="w-4 h-4 rounded-full ring-1 ring-white/10"
+        />
+        <span><%= t[p.key] %></span>
+      </a>
+      <% } %>
+    </div>
+
+    <div class="flex flex-wrap items-center justify-center gap-2.5 pt-2 border-t border-zinc-900">
       <img
         src="https://img.shields.io/badge/APPLE-NOTARIZED_%26_SIGNED-161618?style=flat-square&amp;logo=apple&amp;logoColor=fff&amp;labelColor=0d0d0e"
         alt="<%= t["footer.badges.0.alt"] %>"

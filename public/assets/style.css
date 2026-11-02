@@ -24,6 +24,12 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.ai-gradient-text {
+  background: linear-gradient(135deg, #38bdf8 0, #a78bfa 50%, #f472b6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .lang-switcher {
   position: relative;
   flex-shrink: 0;

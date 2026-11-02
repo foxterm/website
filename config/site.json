@@ -151,6 +151,15 @@
       "sitemap": true,
       "localized": true
     },
+    "uchat": {
+      "path": "/uchat",
+      "changefreq": "weekly",
+      "priority": 0.8,
+      "enPriority": 0.9,
+      "sitemap": true,
+      "localized": true,
+      "nav": "uchat"
+    },
     "404": {
       "path": "/404",
       "sitemap": false,
@@ -179,6 +188,9 @@
         },
         {
           "href": "#faq"
+        },
+        {
+          "href": "/uchat"
         }
       ],
       "cta": {
@@ -196,8 +208,47 @@
         "labelKey": "nav.backToHome.0",
         "style": "legal"
       }
+    },
+    "uchat": {
+      "container": "max-w-5xl",
+      "logoSize": "text-2xl",
+      "logoImage": "/assets/uchat-ai.png",
+      "links": [
+        {
+          "href": "#features"
+        },
+        {
+          "href": "#providers"
+        },
+        {
+          "href": "#pricing"
+        },
+        {
+          "href": "#faq"
+        },
+        {
+          "href": "/"
+        }
+      ],
+      "cta": {
+        "href": "#download",
+        "labelKey": "nav.getApp.0",
+        "style": "index"
+      }
     }
   },
+  "products": [
+    {
+      "href": "/",
+      "logo": "/assets/FoxTerm.svg",
+      "key": "brand.foxterm.0"
+    },
+    {
+      "href": "/uchat",
+      "logo": "/assets/uchat-ai.png",
+      "key": "brand.uchatAI.0"
+    }
+  ],
   "footer": {
     "links": {
       "index": [
@@ -406,6 +457,51 @@
           "href": "https://security.foxterm.app/",
           "key": "footer.links.6.0",
           "sep": true,
+          "target": true
+        }
+      ],
+      "uchat": [
+        {
+          "href": "/",
+          "key": "footer.links.0.0",
+          "sep": true
+        },
+        {
+          "href": "/about",
+          "key": "footer.links.1.0",
+          "sep": true
+        },
+        {
+          "href": "/contact",
+          "key": "footer.links.2.0",
+          "sep": true
+        },
+        {
+          "href": "/privacy",
+          "key": "footer.links.3.0",
+          "sep": true
+        },
+        {
+          "href": "/terms",
+          "key": "footer.links.4.0",
+          "sep": true
+        },
+        {
+          "href": "https://github.com/foxterm",
+          "key": "footer.links.5.0",
+          "sep": true,
+          "target": true
+        },
+        {
+          "href": "https://blog.foxterm.app/",
+          "key": "footer.links.6.0",
+          "sep": true,
+          "target": true
+        },
+        {
+          "href": "https://security.foxterm.app/",
+          "key": "footer.links.7.0",
+          "sep": false,
           "target": true
         }
       ]

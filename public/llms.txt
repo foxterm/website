@@ -13,6 +13,11 @@
 > - Localization: 10 languages served from localized URL paths (e.g. /zh-hans/, /de/, /ja/)
 > - Related hubs: blog.foxterm.app (development blog), security.foxterm.app (advisories), github.com/foxterm (open source)
 
+## Products
+
+- **FoxTerm** — the flagship all-in-one terminal and server management suite described on this site.
+- **UChat AI** — a 100% native AI chat app for Apple platforms (macOS 14+/iOS 17+). Bring your own API key for OpenAI, Azure OpenAI, Anthropic, Google Gemini, xAI Grok, Mistral AI, Groq, Kimi (Moonshot), MiniMax, OpenRouter, Together AI, Replicate, or any OpenAI/Anthropic-compatible endpoint — or run local models (Ollama, LM Studio, built-in GGUF engine, Core ML) entirely on-device with no API key. Free for now. App Store: https://apps.apple.com/us/app/uchat-ai/id6503210454 — Product page: https://foxterm.app/uchat
+
 ## Product Overview
 
 FoxTerm unifies five workloads in one native client: SSH terminal access, SFTP file management, Metal-accelerated VNC remote desktop, real-time Linux server telemetry, and visual Docker/Podman container control. It connects directly from the device to the user's own servers — traffic is never proxied through FoxTerm infrastructure.
@@ -67,6 +72,7 @@ FoxTerm unifies five workloads in one native client: SSH terminal access, SFTP f
 - [Privacy Policy](https://foxterm.app/privacy) — data sovereignty and zero-telemetry commitments.
 - [Terms of Service](https://foxterm.app/terms) — usage guidelines and subscription conditions.
 - [Contact & Support](https://foxterm.app/contact) — bug reporting and dedicated support channels.
+- [UChat AI](https://foxterm.app/uchat) — 100% native AI chat app for macOS 14+ and iOS 17+, free for now.
 - [Tech Blog](https://blog.foxterm.app/) — development updates and system administration articles.
 - [Security Portal](https://security.foxterm.app/) — advisory releases and vulnerability disclosures.
 - [GitHub](https://github.com/foxterm) — open-source hub and issue tracking.

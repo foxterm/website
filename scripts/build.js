@@ -77,6 +77,12 @@ function renderPage(langCode, pageName) {
     t[k] = flat[k] !== undefined ? flat[k] : enFlat[k];
   // 语言独有的扩展 key（如正文多余片段的 hero.title.2）也要可渲染
   for (const k of Object.keys(flat)) if (!(k in t)) t[k] = flat[k];
+  // 跨页面共享文案（产品名等）：页面 key 优先，缺失时回退英文
+  const enShared = flatten(enPack._shared || {});
+  const shared = flatten(pack._shared || {});
+  for (const k of Object.keys(enShared))
+    if (!(k in t)) t[k] = shared[k] !== undefined ? shared[k] : enShared[k];
+  for (const k of Object.keys(shared)) if (!(k in t)) t[k] = shared[k];
 
   const langsList = LANGS.map(([code, l]) => ({ code, ...l }));
   const pageRel = pageName === "index" ? "" : cfg.path;
@@ -92,17 +98,28 @@ function renderPage(langCode, pageName) {
       return h;
     return urlPath(lang.dir, h === "/" ? "" : h);
   };
+  // 页面可通过 pages.<name>.nav 指定导航配置（默认：index 用 index，其余用 legal）
+  const navKey = cfg.nav || (pageName === "index" ? "index" : "legal");
   const navCfg = {
-    ...(pageName === "index" ? CFG.nav.index : CFG.nav.legal),
-    type: pageName === "index" ? "index" : "legal",
+    ...CFG.nav[navKey],
+    type: navKey,
   };
   navCfg.cta = { ...navCfg.cta, href: localizeHref(navCfg.cta.href) };
+  navCfg.links = (navCfg.links || []).map((l) => ({
+    ...l,
+    href: localizeHref(l.href),
+  }));
   navCfg.logoHref = urlPath(lang.dir, "");
   const footerLinks = (
     CFG.footer.links[pageName] || CFG.footer.links.index
   ).map((l) => ({
     ...l,
     href: localizeHref(l.href),
+  }));
+  // 全站产品清单（页脚产品行）
+  const productLinks = (CFG.products || []).map((p) => ({
+    ...p,
+    href: localizeHref(p.href),
   }));
 
   const locals = {
@@ -118,6 +135,7 @@ function renderPage(langCode, pageName) {
     meta: CFG.meta,
     navCfg,
     footerLinks,
+    productLinks,
     defaultDir: CFG.langs[CFG.site.defaultLang].dir,
     htmlLang: lang.htmlLang,
   };

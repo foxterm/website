@@ -2,7 +2,14 @@
   "_meta": {
     "lang": "ru",
     "label": "Русский",
-    "updated": "2026-10-20"
+    "updated": "2026-11-03"
+  },
+  "_shared": {
+    "brand": {
+      "productsLabel": ["Продукты"],
+      "foxterm": ["FoxTerm"],
+      "uchatAI": ["UChat AI"]
+    }
   },
   "_seo": {
     "index": {
@@ -112,6 +119,34 @@
       "og:site_name": "FoxTerm",
       "og:image": "/assets/apple-touch-icon.png",
       "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"name\":\"Условия использования - FoxTerm\",\"url\":\"https://foxterm.app/ru/terms\",\"inLanguage\":\"ru-RU\",\"isPartOf\":{\"@type\":\"WebSite\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app/ru/\"},\"description\":\"Условия использования FoxTerm: лицензия, допустимое использование, подписки и юридические оговорки.\",\"breadcrumb\":{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Главная\",\"item\":\"https://foxterm.app/ru/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Условия использования\",\"item\":\"https://foxterm.app/ru/terms\"}]}}"
+    },
+    "uchat": {
+      "viewport": "width=device-width, initial-scale=1",
+      "title": "UChat AI - 100% нативный AI-чат для macOS и iOS | Бесплатно",
+      "description": "UChat AI — бесплатное 100% нативное AI-приложение для Mac, iPhone и iPad. Свой API-ключ для OpenAI, Anthropic, Gemini, Grok, Kimi, MiniMax и других — или локальные модели офлайн.",
+      "keywords": "UChat AI, нативное AI-приложение, AI-чат macOS, AI-чат iOS, клиент OpenAI, клиент Anthropic, клиент Gemini, клиент Ollama, LM Studio, локальная LLM, GGUF, свой API-ключ, AI-чат",
+      "author": "FoxTerm",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "googlebot": "index, follow",
+      "language": "Русский",
+      "revisit-after": "7 days",
+      "og:type": "website",
+      "og:locale": "ru_RU",
+      "og:locale:alternate": "zh_CN, zh_TW, ja_JP, de_DE, ru_RU, es_ES, fr_FR, ko_KR, pt_BR",
+      "og:title": "UChat AI | 100% нативный AI-чат для macOS и iOS",
+      "og:description": "Любая модель — одно нативное приложение. Облачные провайдеры со своим ключом или локальные модели офлайн. Бесплатно в App Store.",
+      "og:url": "https://foxterm.app/ru/uchat",
+      "og:site_name": "FoxTerm",
+      "og:image": "/assets/uchat-ai.png",
+      "og:image:width": "512",
+      "og:image:height": "512",
+      "og:image:alt": "Значок приложения UChat AI",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "UChat AI - нативный AI-чат для macOS и iOS",
+      "twitter:description": "Любая модель — одно нативное приложение. Бесплатно в App Store.",
+      "twitter:image": "/assets/uchat-ai.png",
+      "twitter:image:alt": "Значок приложения UChat AI",
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"UChat AI\",\"operatingSystem\":\"macOS 14+, iOS 17+\",\"applicationCategory\":\"UtilitiesApplication\",\"softwareRequirements\":\"Requires macOS 14.0 or later, iOS 17.0 or later.\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"Free for now. All features unlocked.\"},\"description\":\"UChat AI — бесплатное 100% нативное AI-приложение для Mac, iPhone и iPad. Свой API-ключ для OpenAI, Anthropic, Gemini, Grok, Kimi, MiniMax и других — или локальные модели офлайн.\",\"downloadUrl\":\"https://apps.apple.com/us/app/uchat-ai/id6503210454\",\"screenshot\":\"/assets/uchat-ai.png\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}}"
     }
   },
   "index": {
@@ -123,7 +158,8 @@
         ["Архитектура"],
         ["Безопасность"],
         ["Тарифы"],
-        ["FAQ"]
+        ["FAQ"],
+        ["UChat AI"]
       ],
       "langAria": "Язык",
       "langCurrent": ["Русский"],
@@ -596,7 +632,7 @@
       ]
     },
     "footer": {
-      "copyright": [" FoxTerm.", "Hosted on Tencent Makers."],
+      "copyright": [" FoxTerm."],
       "links": [
         ["Контакты"],
         ["О нас"],
@@ -744,7 +780,7 @@
       ]
     },
     "footer": {
-      "copyright": [" FoxTerm.", "Hosted on Tencent Makers."],
+      "copyright": [" FoxTerm."],
       "links": [
         ["Главная"],
         ["Политика конфиденциальности"],
@@ -868,7 +904,7 @@
       ]
     },
     "footer": {
-      "copyright": [" FoxTerm.", "Hosted on Tencent Makers."],
+      "copyright": [" FoxTerm."],
       "links": [
         ["Главная"],
         ["О нас"],
@@ -1052,7 +1088,7 @@
       ]
     },
     "footer": {
-      "copyright": [" FoxTerm.", "Hosted on Tencent Makers."],
+      "copyright": [" FoxTerm."],
       "links": [
         ["Главная"],
         ["О нас"],
@@ -1246,12 +1282,259 @@
       ]
     },
     "footer": {
-      "copyright": [" FoxTerm.", "Hosted on Tencent Makers."],
+      "copyright": [" FoxTerm."],
       "links": [
         ["Главная"],
         ["О нас"],
         ["Контакты"],
         ["Политика конфиденциальности"],
+        ["GitHub"],
+        ["Blog"],
+        ["Security Intel"]
+      ],
+      "icp": ["蜀ICP备2024075062号"],
+      "mirror": ["Зеркало CN:", " | Глобальный:", "foxterm.cn", "foxterm.app"],
+      "badges": [
+        {
+          "alt": "Apple Notarized"
+        },
+        {
+          "alt": "Secure Enclave"
+        },
+        {
+          "alt": "App Sandbox"
+        },
+        {
+          "alt": "Zero Telemetry"
+        },
+        {
+          "alt": "Native Swift & C"
+        },
+        {
+          "alt": "SAST Passed"
+        }
+      ]
+    }
+  },
+  "uchat": {
+    "nav": {
+      "logo": ["UChat AI"],
+      "links": [
+        ["Возможности"],
+        ["Провайдеры"],
+        ["Цены"],
+        ["FAQ"],
+        ["FoxTerm"]
+      ],
+      "langAria": "Язык",
+      "langCurrent": ["Русский"],
+      "getApp": ["Скачать"]
+    },
+    "hero": {
+      "badge": ["100% нативное AI-приложение · Свой API-ключ · Бесплатно"],
+      "logoAlt": ["Значок приложения UChat AI"],
+      "title": ["Общайтесь с любой моделью —", "нативно"],
+      "tags": [
+        ["Нативное"],
+        ["20+ провайдеров"],
+        ["Локальные модели"],
+        ["Рассуждения"],
+        ["Изображения"]
+      ],
+      "subtitle": [
+        "UChat AI — это 100% нативное AI-приложение для Mac, iPhone и iPad. Подключайтесь к OpenAI, Anthropic, Gemini, Grok и другим со своим API-ключом — или запускайте локальные модели полностью офлайн."
+      ],
+      "cta": [
+        {
+          "alt": "Скачать в App Store",
+          "caption": ["App Store"],
+          "label": ["Скачать UChat AI"]
+        }
+      ]
+    },
+    "trust": {
+      "items": [
+        {
+          "value": ["20+"],
+          "body": ["Облачные, агрегаторные и локальные провайдеры встроены"]
+        },
+        {
+          "value": ["$0"],
+          "body": ["Пока полностью бесплатно, без подписки"]
+        },
+        {
+          "value": ["100%"],
+          "body": ["Нативный Swift, без Electron и веб-оберток"]
+        },
+        {
+          "value": ["1"],
+          "body": ["Одно приложение для macOS, iPhone и iPad"]
+        }
+      ]
+    },
+    "features": {
+      "badge": ["Почему UChat AI"],
+      "title": ["Любая модель. Одно нативное приложение."],
+      "lede": [
+        "Подключайте свои ключи и общайтесь практически с любой моделью — в облаке или на вашем устройстве."
+      ],
+      "cards": [
+        {
+          "title": ["100% нативное"],
+          "body": [
+            "Создано на Swift для платформ Apple. Без Electron и веб-оберток — мгновенный запуск и минимальное потребление памяти."
+          ]
+        },
+        {
+          "title": ["Все крупные облачные провайдеры"],
+          "body": [
+            "OpenAI, Azure OpenAI, Anthropic, Google Gemini, xAI Grok, Mistral AI, Groq, Kimi (Moonshot) и MiniMax."
+          ]
+        },
+        {
+          "title": ["Встроенные агрегаторы"],
+          "body": [
+            "Один ключ — сотни моделей через OpenRouter, Together AI или Replicate."
+          ]
+        },
+        {
+          "title": ["Любые совместимые эндпоинты"],
+          "body": [
+            "Направьте UChat AI на любой сервер с протоколом OpenAI или Anthropic — включая локальную сеть и удаленные адреса."
+          ]
+        },
+        {
+          "title": ["Локально и офлайн"],
+          "body": [
+            "Ollama, LM Studio или встроенный GGUF-движок работают прямо в процессе. API-ключ не нужен."
+          ]
+        },
+        {
+          "title": ["Рассуждения и изображения"],
+          "body": [
+            "Настраивайте глубину размышлений для каждой модели и создавайте изображения прямо в чате, где это поддерживает провайдер."
+          ]
+        }
+      ]
+    },
+    "providers": {
+      "badge": ["Провайдеры"],
+      "title": ["Работает с моделями, которыми вы уже пользуетесь"],
+      "lede": [
+        "От облачных гигантов до самостоятельно размещенных эндпоинтов — переключение за секунды."
+      ],
+      "groups": [
+        {
+          "name": ["Облако"],
+          "items": [
+            "OpenAI · Azure OpenAI · Anthropic · Google Gemini · Grok (xAI) · Mistral AI · Groq · Kimi · MiniMax"
+          ]
+        },
+        {
+          "name": ["Агрегаторы"],
+          "items": ["OpenRouter · Together AI · Replicate"]
+        },
+        {
+          "name": ["Совместимые протоколы"],
+          "items": [
+            "Любой OpenAI-совместимый · Любой Anthropic-совместимый эндпоинт"
+          ]
+        },
+        {
+          "name": ["Локальные и self-hosted"],
+          "items": ["Ollama · LM Studio · Встроенный GGUF-движок · Core ML"]
+        }
+      ]
+    },
+    "pricing": {
+      "badge": ["Цены"],
+      "title": ["Пока бесплатно"],
+      "lede": [
+        "В бесплатный период открыты все функции. Без подписки, без рекламы, без встроенных покупок."
+      ],
+      "free": {
+        "price": ["$0"],
+        "name": ["UChat AI"],
+        "tag": ["Бесплатно"],
+        "lede": ["Полное приложение, все провайдеры, все обновления."],
+        "items": [
+          ["Все функции разблокированы"],
+          ["Все облачные и локальные провайдеры"],
+          ["Без подписки и рекламы"]
+        ],
+        "button": ["Скачать бесплатно"]
+      },
+      "note": [
+        "Цены могут измениться в будущем — сейчас UChat AI бесплатен в App Store."
+      ]
+    },
+    "faq": {
+      "badge": ["FAQ"],
+      "title": ["Частые вопросы"],
+      "lede": ["Все, что нужно знать о UChat AI."],
+      "items": [
+        {
+          "q": ["Что такое UChat AI?"],
+          "a": [
+            "UChat AI — это 100% нативное AI-приложение для macOS, iPhone и iPad. Оно подключается к облачным провайдерам с вашим API-ключом и запускает локальные модели прямо на устройстве."
+          ]
+        },
+        {
+          "q": ["Это платно?"],
+          "a": [
+            "Нет. Сейчас UChat AI бесплатен в App Store. Цены могут измениться в будущем; о любых изменениях будет объявлено заранее."
+          ]
+        },
+        {
+          "q": ["Какие провайдеры поддерживаются?"],
+          "a": [
+            "OpenAI, Azure OpenAI, Anthropic, Google Gemini, xAI Grok, Mistral AI, Groq, Kimi, MiniMax, а также агрегаторы OpenRouter, Together AI и Replicate. Работает и любой OpenAI- или Anthropic-совместимый эндпоинт."
+          ]
+        },
+        {
+          "q": ["Можно ли без API-ключа?"],
+          "a": [
+            "Да. Локальные провайдеры — Ollama, LM Studio и встроенный GGUF-движок — работают полностью в процессе без ключа. Ollama и LM Studio могут также указывать на серверы в локальной сети или удаленные."
+          ]
+        },
+        {
+          "q": ["Где хранятся мои API-ключи?"],
+          "a": [
+            "Ваши ключи хранятся только на вашем устройстве и используются для прямого обращения к выбранному провайдеру. Аккаунт в UChat AI не нужен."
+          ]
+        }
+      ]
+    },
+    "download": {
+      "title": ["Скачать UChat AI"],
+      "subtitle": ["Бесплатно в App Store для Mac, iPhone и iPad."],
+      "button": {
+        "alt": "Скачать UChat AI в App Store",
+        "label": ["Скачать в App Store"]
+      },
+      "reqs": [
+        {
+          "label": ["macOS"],
+          "value": ["Требуется macOS 14 или новее"]
+        },
+        {
+          "label": ["iOS"],
+          "value": ["Требуется iOS 17 или новее"]
+        }
+      ],
+      "note": ["UChat AI использует общие для сайта"],
+      "legal": [["Политику конфиденциальности"], ["Условия использования"]],
+      "legalSep": ["и"],
+      "noteEnd": ["."]
+    },
+    "footer": {
+      "copyright": [" FoxTerm."],
+      "links": [
+        ["Главная"],
+        ["Контакты"],
+        ["О нас"],
+        ["Политика конфиденциальности"],
+        ["Условия использования"],
         ["GitHub"],
         ["Blog"],
         ["Security Intel"]

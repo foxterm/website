@@ -2,7 +2,14 @@
   "_meta": {
     "lang": "ja",
     "label": "日本語",
-    "updated": "2026-10-20"
+    "updated": "2026-11-03"
+  },
+  "_shared": {
+    "brand": {
+      "productsLabel": ["製品"],
+      "foxterm": ["FoxTerm"],
+      "uchatAI": ["UChat AI"]
+    }
   },
   "_seo": {
     "index": {
@@ -112,6 +119,34 @@
       "og:site_name": "FoxTerm",
       "og:image": "/assets/apple-touch-icon.png",
       "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"name\":\"利用規約 - FoxTerm\",\"url\":\"https://foxterm.app/ja/terms\",\"inLanguage\":\"ja-JP\",\"isPartOf\":{\"@type\":\"WebSite\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app/ja/\"},\"description\":\"FoxTerm の利用規約。ライセンス条項、適切な使用、サブスクリプション、法的免責事項を概説します。\",\"breadcrumb\":{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://foxterm.app/ja/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"利用規約\",\"item\":\"https://foxterm.app/ja/terms\"}]}}"
+    },
+    "uchat": {
+      "viewport": "width=device-width, initial-scale=1",
+      "title": "UChat AI - macOS・iOS 向け 100% ネイティブ AI チャット | 無料",
+      "description": "UChat AI は macOS・iPhone・iPad 向けの 100% ネイティブ AI チャットアプリ。自分の API キーで OpenAI・Anthropic・Gemini・Grok・Kimi・MiniMax などに接続し、ローカルモデルもオフラインで実行できます。現在無料。",
+      "keywords": "UChat AI, ネイティブ AI アプリ, macOS AI チャット, iOS AI チャット, OpenAI クライアント, Anthropic クライアント, Gemini クライアント, Ollama クライアント, LM Studio, ローカル LLM, GGUF, API キー持ち込み, AI チャットアプリ",
+      "author": "FoxTerm",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "googlebot": "index, follow",
+      "language": "日本語",
+      "revisit-after": "7 days",
+      "og:type": "website",
+      "og:locale": "ja_JP",
+      "og:locale:alternate": "zh_CN, zh_TW, ja_JP, de_DE, ru_RU, es_ES, fr_FR, ko_KR, pt_BR",
+      "og:title": "UChat AI | macOS・iOS 向け 100% ネイティブ AI チャット",
+      "og:description": "すべてのモデルをひとつのネイティブアプリで。自分のキーでクラウドへ、ローカルモデルはオフラインで。App Store で無料。",
+      "og:url": "https://foxterm.app/ja/uchat",
+      "og:site_name": "FoxTerm",
+      "og:image": "/assets/uchat-ai.png",
+      "og:image:width": "512",
+      "og:image:height": "512",
+      "og:image:alt": "UChat AI アプリアイコン",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "UChat AI - ネイティブ AI チャット（macOS・iOS）",
+      "twitter:description": "すべてのモデルをひとつのネイティブアプリで。App Store で無料。",
+      "twitter:image": "/assets/uchat-ai.png",
+      "twitter:image:alt": "UChat AI アプリアイコン",
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"UChat AI\",\"operatingSystem\":\"macOS 14+, iOS 17+\",\"applicationCategory\":\"UtilitiesApplication\",\"softwareRequirements\":\"Requires macOS 14.0 or later, iOS 17.0 or later.\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"Free for now. All features unlocked.\"},\"description\":\"UChat AI は macOS・iPhone・iPad 向けの 100% ネイティブ AI チャットアプリ。自分の API キーで OpenAI・Anthropic・Gemini・Grok・Kimi・MiniMax などに接続し、ローカルモデルもオフラインで実行できます。現在無料。\",\"downloadUrl\":\"https://apps.apple.com/us/app/uchat-ai/id6503210454\",\"screenshot\":\"/assets/uchat-ai.png\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}}"
     }
   },
   "index": {
@@ -123,7 +158,8 @@
         ["アーキテクチャ"],
         ["セキュリティ"],
         ["料金"],
-        ["FAQ"]
+        ["FAQ"],
+        ["UChat AI"]
       ],
       "langAria": "言語",
       "langCurrent": ["日本語"],
@@ -583,7 +619,7 @@
       ]
     },
     "footer": {
-      "copyright": [" FoxTerm.", "Hosted on Tencent Makers."],
+      "copyright": [" FoxTerm."],
       "links": [
         ["概要"],
         ["お問い合わせ"],
@@ -728,7 +764,7 @@
       ]
     },
     "footer": {
-      "copyright": [" FoxTerm.", "Hosted on Tencent Makers."],
+      "copyright": [" FoxTerm."],
       "links": [
         ["ホーム"],
         ["プライバシーポリシー"],
@@ -852,7 +888,7 @@
       ]
     },
     "footer": {
-      "copyright": [" FoxTerm.", "Hosted on Tencent Makers."],
+      "copyright": [" FoxTerm."],
       "links": [
         ["ホーム"],
         ["概要"],
@@ -1032,7 +1068,7 @@
       ]
     },
     "footer": {
-      "copyright": [" FoxTerm.", "Hosted on Tencent Makers."],
+      "copyright": [" FoxTerm."],
       "links": [
         ["ホーム"],
         ["お問い合わせ"],
@@ -1219,12 +1255,251 @@
       ]
     },
     "footer": {
-      "copyright": [" FoxTerm.", "Hosted on Tencent Makers."],
+      "copyright": [" FoxTerm."],
       "links": [
         ["ホーム"],
         ["お問い合わせ"],
         ["概要"],
         ["プライバシーポリシー"],
+        ["GitHub"],
+        ["Blog"],
+        ["Security Intel"]
+      ],
+      "icp": ["蜀ICP备2024075062号"],
+      "mirror": ["中国ミラー:", " | グローバル:", "foxterm.cn", "foxterm.app"],
+      "badges": [
+        {
+          "alt": "Apple Notarized"
+        },
+        {
+          "alt": "Secure Enclave"
+        },
+        {
+          "alt": "App Sandbox"
+        },
+        {
+          "alt": "Zero Telemetry"
+        },
+        {
+          "alt": "Native Swift & C"
+        },
+        {
+          "alt": "SAST Passed"
+        }
+      ]
+    }
+  },
+  "uchat": {
+    "nav": {
+      "logo": ["UChat AI"],
+      "links": [["機能"], ["プロバイダ"], ["料金"], ["FAQ"], ["FoxTerm"]],
+      "langAria": "言語",
+      "langCurrent": ["日本語"],
+      "getApp": ["ダウンロード"]
+    },
+    "hero": {
+      "badge": ["100% ネイティブ AI アプリ · API キー持ち込み · 無料"],
+      "logoAlt": ["UChat AI アプリアイコン"],
+      "title": ["すべてのモデルとの対話を、", "ネイティブに"],
+      "tags": [
+        ["ネイティブ"],
+        ["20+ プロバイダ"],
+        ["ローカルモデル"],
+        ["推論制御"],
+        ["画像生成"]
+      ],
+      "subtitle": [
+        "UChat AI は Mac・iPhone・iPad 向けの 100% ネイティブ AI チャットアプリです。自分の API キーで OpenAI・Anthropic・Gemini・Grok などのクラウドプロバイダに接続できるほか、ローカルモデルを完全オフラインで実行できます。"
+      ],
+      "cta": [
+        {
+          "alt": "App Store でダウンロード",
+          "caption": ["App Store"],
+          "label": ["UChat AI をダウンロード"]
+        }
+      ]
+    },
+    "trust": {
+      "items": [
+        {
+          "value": ["20+"],
+          "body": ["クラウド・アグリゲータ・ローカルのプロバイダを内蔵"]
+        },
+        {
+          "value": ["$0"],
+          "body": ["今のところ完全無料、サブスクリプション不要"]
+        },
+        {
+          "value": ["100%"],
+          "body": ["Swift ネイティブ。Electron も WebView も不使用"]
+        },
+        {
+          "value": ["1"],
+          "body": ["macOS・iPhone・iPad を 1 アプリで"]
+        }
+      ]
+    },
+    "features": {
+      "badge": ["UChat AI の特長"],
+      "title": ["すべてのモデルを、ひとつのネイティブアプリで"],
+      "lede": [
+        "自分の API キーで、クラウドでも手元でも、ほぼすべてのモデルに接続。"
+      ],
+      "cards": [
+        {
+          "title": ["100% ネイティブ"],
+          "body": [
+            "Apple プラットフォーム向けに Swift でネイティブ構築。Electron や WebView を使わず、起動は高速、メモリ消費も最小限。"
+          ]
+        },
+        {
+          "title": ["主要クラウドプロバイダ対応"],
+          "body": [
+            "OpenAI、Azure OpenAI、Anthropic、Google Gemini、xAI Grok、Mistral AI、Groq、Kimi（Moonshot）、MiniMax に対応。"
+          ]
+        },
+        {
+          "title": ["アグリゲータ内蔵"],
+          "body": [
+            "OpenRouter・Together AI・Replicate 経由なら、1 つのキーで数百のモデルを利用可能。"
+          ]
+        },
+        {
+          "title": ["互換エンドポイント"],
+          "body": [
+            "OpenAI 互換・Anthropic 互換のサーバーなら何でも指定可能。LAN やリモートアドレスにも対応。"
+          ]
+        },
+        {
+          "title": ["ローカル & オフライン"],
+          "body": [
+            "Ollama・LM Studio・内蔵 GGUF エンジンをプロセス内で直接実行。API キー不要。"
+          ]
+        },
+        {
+          "title": ["推論 & 画像生成"],
+          "body": [
+            "モデルごとに思考（推論）の強さを調整でき、対応プロバイダなら会話の中で画像を生成。"
+          ]
+        }
+      ]
+    },
+    "providers": {
+      "badge": ["プロバイダ"],
+      "title": ["普段使っているモデルにそのまま接続"],
+      "lede": [
+        "大手クラウドからセルフホストのエンドポイントまで、数秒で切り替え。"
+      ],
+      "groups": [
+        {
+          "name": ["クラウド"],
+          "items": [
+            "OpenAI · Azure OpenAI · Anthropic · Google Gemini · Grok（xAI）· Mistral AI · Groq · Kimi · MiniMax"
+          ]
+        },
+        {
+          "name": ["アグリゲータ"],
+          "items": ["OpenRouter · Together AI · Replicate"]
+        },
+        {
+          "name": ["互換プロトコル"],
+          "items": ["OpenAI 互換 · Anthropic 互換エンドポイント"]
+        },
+        {
+          "name": ["ローカル・セルフホスト"],
+          "items": ["Ollama · LM Studio · 内蔵 GGUF エンジン · Core ML"]
+        }
+      ]
+    },
+    "pricing": {
+      "badge": ["料金"],
+      "title": ["今のところ無料"],
+      "lede": [
+        "無料期間中はすべての機能を解放。サブスクリプションも広告もアプリ内課金もありません。"
+      ],
+      "free": {
+        "price": ["$0"],
+        "name": ["UChat AI"],
+        "tag": ["無料"],
+        "lede": ["完全なアプリ、すべてのプロバイダ、継続的なアップデート。"],
+        "items": [
+          ["全機能を解放"],
+          ["すべてのクラウド・ローカルプロバイダ"],
+          ["サブスクリプション・広告なし"]
+        ],
+        "button": ["無料でダウンロード"]
+      },
+      "note": [
+        "料金は今後変更される可能性があります。現在 UChat AI は App Store で無料です。"
+      ]
+    },
+    "faq": {
+      "badge": ["FAQ"],
+      "title": ["よくある質問"],
+      "lede": ["UChat AI について知っておきたいこと。"],
+      "items": [
+        {
+          "q": ["UChat AI とは？"],
+          "a": [
+            "UChat AI は macOS・iPhone・iPad 向けの 100% ネイティブ AI チャットアプリです。自分の API キーでクラウドのモデルプロバイダに接続したり、デバイス上でローカルモデルを実行したりできます。"
+          ]
+        },
+        {
+          "q": ["料金はかかりますか？"],
+          "a": [
+            "いいえ。現在 UChat AI は App Store で無料です。料金体系は今後変更される可能性があり、その場合は事前にお知らせします。"
+          ]
+        },
+        {
+          "q": ["対応プロバイダは？"],
+          "a": [
+            "OpenAI、Azure OpenAI、Anthropic、Google Gemini、xAI Grok、Mistral AI、Groq、Kimi、MiniMax に加え、OpenRouter・Together AI・Replicate のアグリゲータ。OpenAI 互換・Anthropic 互換エンドポイントにも対応します。"
+          ]
+        },
+        {
+          "q": ["API キーなしで使えますか？"],
+          "a": [
+            "はい。ローカルプロバイダ（Ollama・LM Studio・内蔵 GGUF エンジン）はプロセス内で完全に動作し、API キーは不要です。Ollama と LM Studio は LAN やリモートサーバーにも接続できます。"
+          ]
+        },
+        {
+          "q": ["API キーはどこに保存されますか？"],
+          "a": [
+            "API キーはデバイス上にのみ保存され、選択したプロバイダとの直接通信にのみ使われます。UChat AI にアカウント登録は不要です。"
+          ]
+        }
+      ]
+    },
+    "download": {
+      "title": ["UChat AI を入手"],
+      "subtitle": ["App Store で無料。Mac・iPhone・iPad に対応。"],
+      "button": {
+        "alt": "App Store で UChat AI をダウンロード",
+        "label": ["App Store でダウンロード"]
+      },
+      "reqs": [
+        {
+          "label": ["macOS"],
+          "value": ["macOS 14 以降が必要"]
+        },
+        {
+          "label": ["iOS"],
+          "value": ["iOS 17 以降が必要"]
+        }
+      ],
+      "note": ["UChat AI は本サイト共通の"],
+      "legal": [["プライバシーポリシー"], ["利用規約"]],
+      "legalSep": ["と"],
+      "noteEnd": ["を共有します。"]
+    },
+    "footer": {
+      "copyright": [" FoxTerm."],
+      "links": [
+        ["ホーム"],
+        ["概要"],
+        ["お問い合わせ"],
+        ["プライバシーポリシー"],
+        ["利用規約"],
         ["GitHub"],
         ["Blog"],
         ["Security Intel"]

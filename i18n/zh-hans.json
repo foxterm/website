@@ -2,7 +2,14 @@
   "_meta": {
     "lang": "zh-hans",
     "label": "简体中文",
-    "updated": "2026-10-20"
+    "updated": "2026-11-03"
+  },
+  "_shared": {
+    "brand": {
+      "productsLabel": ["产品"],
+      "foxterm": ["FoxTerm"],
+      "uchatAI": ["UChat AI"]
+    }
   },
   "_seo": {
     "index": {
@@ -112,6 +119,34 @@
       "og:site_name": "FoxTerm (橙狐终端)",
       "og:image": "/assets/apple-touch-icon.png",
       "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"name\":\"服务条款 - FoxTerm (橙狐终端)\",\"url\":\"https://foxterm.app/zh-hans/terms\",\"inLanguage\":\"zh-CN\",\"isPartOf\":{\"@type\":\"WebSite\",\"name\":\"FoxTerm (橙狐终端)\",\"url\":\"https://foxterm.app/zh-hans/\"},\"description\":\"FoxTerm (橙狐终端) 服务条款，说明许可条款、可接受使用范围、订阅与法律免责声明。\",\"breadcrumb\":{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"首页\",\"item\":\"https://foxterm.app/zh-hans/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"服务条款\",\"item\":\"https://foxterm.app/zh-hans/terms\"}]}}"
+    },
+    "uchat": {
+      "viewport": "width=device-width, initial-scale=1",
+      "title": "UChat AI - 100% 原生 AI 聊天应用（macOS 与 iOS）| 免费",
+      "description": "UChat AI 是一款限时免费的 100% 原生 AI 聊天应用，支持 Mac、iPhone 和 iPad。自带 API Key 连接 OpenAI、Anthropic、Gemini、Grok、Kimi、MiniMax 等，或在本地离线运行模型。",
+      "keywords": "UChat AI, 原生 AI 应用, macOS AI 聊天, iOS AI 聊天, OpenAI 客户端, Anthropic 客户端, Gemini 客户端, Ollama 客户端, LM Studio, 本地大模型, GGUF, 自带 API Key, AI 聊天应用",
+      "author": "FoxTerm",
+      "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+      "googlebot": "index, follow",
+      "language": "简体中文",
+      "revisit-after": "7 days",
+      "og:type": "website",
+      "og:locale": "zh_CN",
+      "og:locale:alternate": "zh_CN, zh_TW, ja_JP, de_DE, ru_RU, es_ES, fr_FR, ko_KR, pt_BR",
+      "og:title": "UChat AI | 100% 原生 AI 聊天应用（macOS 与 iOS）",
+      "og:description": "所有模型，一个原生应用。自带 Key 连接云端供应商，或离线运行本地模型。App Store 限时免费。",
+      "og:url": "https://foxterm.app/zh-hans/uchat",
+      "og:site_name": "FoxTerm",
+      "og:image": "/assets/uchat-ai.png",
+      "og:image:width": "512",
+      "og:image:height": "512",
+      "og:image:alt": "UChat AI 应用图标",
+      "twitter:card": "summary_large_image",
+      "twitter:title": "UChat AI - 原生 AI 聊天应用（macOS 与 iOS）",
+      "twitter:description": "所有模型，一个原生应用。App Store 限时免费。",
+      "twitter:image": "/assets/uchat-ai.png",
+      "twitter:image:alt": "UChat AI 应用图标",
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"UChat AI\",\"operatingSystem\":\"macOS 14+, iOS 17+\",\"applicationCategory\":\"UtilitiesApplication\",\"softwareRequirements\":\"Requires macOS 14.0 or later, iOS 17.0 or later.\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"Free for now. All features unlocked.\"},\"description\":\"UChat AI 是一款限时免费的 100% 原生 AI 聊天应用，支持 Mac、iPhone 和 iPad。自带 API Key 连接 OpenAI、Anthropic、Gemini、Grok、Kimi、MiniMax 等，或在本地离线运行模型。\",\"downloadUrl\":\"https://apps.apple.com/us/app/uchat-ai/id6503210454\",\"screenshot\":\"/assets/uchat-ai.png\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}}"
     }
   },
   "index": {
@@ -123,7 +158,8 @@
         ["架构"],
         ["安全"],
         ["定价"],
-        ["常见问题"]
+        ["常见问题"],
+        ["UChat AI"]
       ],
       "langAria": "语言",
       "langCurrent": ["简体中文"],
@@ -548,7 +584,7 @@
       ]
     },
     "footer": {
-      "copyright": [" FoxTerm (橙狐终端).", "由 Tencent Makers 托管。"],
+      "copyright": [" FoxTerm (橙狐终端)."],
       "links": [
         ["关于"],
         ["联系我们"],
@@ -691,7 +727,7 @@
       ]
     },
     "footer": {
-      "copyright": [" FoxTerm (橙狐终端).", "由 Tencent Makers 托管。"],
+      "copyright": [" FoxTerm (橙狐终端)."],
       "links": [
         ["首页"],
         ["隐私政策"],
@@ -815,7 +851,7 @@
       ]
     },
     "footer": {
-      "copyright": [" FoxTerm (橙狐终端).", "由 Tencent Makers 托管。"],
+      "copyright": [" FoxTerm (橙狐终端)."],
       "links": [
         ["首页"],
         ["关于"],
@@ -973,7 +1009,7 @@
       ]
     },
     "footer": {
-      "copyright": [" FoxTerm (橙狐终端).", "由 Tencent Makers 托管。"],
+      "copyright": [" FoxTerm (橙狐终端)."],
       "links": [
         ["首页"],
         ["关于"],
@@ -1135,12 +1171,243 @@
       ]
     },
     "footer": {
-      "copyright": [" FoxTerm (橙狐终端).", "由 Tencent Makers 托管。"],
+      "copyright": [" FoxTerm (橙狐终端)."],
       "links": [
         ["首页"],
         ["关于"],
         ["联系我们"],
         ["隐私政策"],
+        ["GitHub"],
+        ["Blog"],
+        ["Security Intel"]
+      ],
+      "icp": ["蜀ICP备2024075062号"],
+      "mirror": ["中国镜像：", " | 全球官网：", "foxterm.cn", "foxterm.app"],
+      "badges": [
+        {
+          "alt": "Apple Notarized"
+        },
+        {
+          "alt": "Secure Enclave"
+        },
+        {
+          "alt": "App Sandbox"
+        },
+        {
+          "alt": "Zero Telemetry"
+        },
+        {
+          "alt": "Native Swift & C"
+        },
+        {
+          "alt": "SAST Passed"
+        }
+      ]
+    }
+  },
+  "uchat": {
+    "nav": {
+      "logo": ["UChat AI"],
+      "links": [["功能"], ["模型供应商"], ["定价"], ["常见问题"], ["FoxTerm"]],
+      "langAria": "语言",
+      "langCurrent": ["简体中文"],
+      "getApp": ["下载应用"]
+    },
+    "hero": {
+      "badge": ["100% 原生 AI 应用 · 自带 API Key · 免费"],
+      "logoAlt": ["UChat AI 应用图标"],
+      "title": ["与每一个模型对话，", "100% 原生"],
+      "tags": [
+        ["原生"],
+        ["20+ 供应商"],
+        ["本地模型"],
+        ["深度思考"],
+        ["图像生成"]
+      ],
+      "subtitle": [
+        "UChat AI 是一款 100% 原生的 AI 聊天应用，支持 Mac、iPhone 和 iPad。使用自己的 API Key 连接 OpenAI、Anthropic、Gemini、Grok 等云服务商，或在本地离线运行模型。"
+      ],
+      "cta": [
+        {
+          "alt": "在 App Store 下载",
+          "caption": ["App Store"],
+          "label": ["下载 UChat AI"]
+        }
+      ]
+    },
+    "trust": {
+      "items": [
+        {
+          "value": ["20+"],
+          "body": ["内置云厂商、聚合平台与本地模型接入"]
+        },
+        {
+          "value": ["$0"],
+          "body": ["目前完全免费，无需订阅"]
+        },
+        {
+          "value": ["100%"],
+          "body": ["Swift 原生打造，无 Electron、无网页套壳"]
+        },
+        {
+          "value": ["1"],
+          "body": ["一个应用通吃 macOS、iPhone 与 iPad"]
+        }
+      ]
+    },
+    "features": {
+      "badge": ["为什么选择 UChat AI"],
+      "title": ["所有模型，一个原生应用"],
+      "lede": ["自带 API Key，连接云端或本机上的几乎任何模型。"],
+      "cards": [
+        {
+          "title": ["100% 原生"],
+          "body": [
+            "为 Apple 平台以 Swift 原生构建，没有 Electron、没有网页套壳，启动飞快、内存占用极低。"
+          ]
+        },
+        {
+          "title": ["主流云厂商全覆盖"],
+          "body": [
+            "OpenAI、Azure OpenAI、Anthropic、Google Gemini、xAI Grok、Mistral AI、Groq、Kimi（月之暗面）、MiniMax 一应俱全。"
+          ]
+        },
+        {
+          "title": ["聚合平台内置"],
+          "body": [
+            "通过 OpenRouter、Together AI 或 Replicate，一把 Key 即可使用数百个模型。"
+          ]
+        },
+        {
+          "title": ["任意兼容端点"],
+          "body": [
+            "可将 UChat AI 指向任何 OpenAI 或 Anthropic 兼容协议的服务器，包括局域网或远程地址。"
+          ]
+        },
+        {
+          "title": ["本地与离线"],
+          "body": [
+            "在进程内直接运行 Ollama、LM Studio 或内置 GGUF 引擎，无需任何 API Key。"
+          ]
+        },
+        {
+          "title": ["思考与图像"],
+          "body": [
+            "按模型调节思考（推理）强度，并在对话中直接生成图像（视供应商支持情况）。"
+          ]
+        }
+      ]
+    },
+    "providers": {
+      "badge": ["模型供应商"],
+      "title": ["接得上你正在用的每一个模型"],
+      "lede": ["从一线云厂商到自托管端点，几秒钟即可切换。"],
+      "groups": [
+        {
+          "name": ["云厂商"],
+          "items": [
+            "OpenAI · Azure OpenAI · Anthropic · Google Gemini · Grok（xAI）· Mistral AI · Groq · Kimi · MiniMax"
+          ]
+        },
+        {
+          "name": ["聚合平台"],
+          "items": ["OpenRouter · Together AI · Replicate"]
+        },
+        {
+          "name": ["兼容协议"],
+          "items": ["任意 OpenAI 兼容 · 任意 Anthropic 兼容端点"]
+        },
+        {
+          "name": ["本地与自托管"],
+          "items": ["Ollama · LM Studio · 内置 GGUF 引擎 · Core ML"]
+        }
+      ]
+    },
+    "pricing": {
+      "badge": ["定价"],
+      "title": ["限时免费"],
+      "lede": ["免费期内所有功能全部开放，没有订阅、没有广告、没有内购。"],
+      "free": {
+        "price": ["$0"],
+        "name": ["UChat AI"],
+        "tag": ["免费"],
+        "lede": ["完整应用、全部供应商、持续更新。"],
+        "items": [
+          ["全部功能解锁"],
+          ["全部云端与本地供应商"],
+          ["无订阅、无广告"]
+        ],
+        "button": ["免费下载"]
+      },
+      "note": ["定价未来可能调整——UChat AI 目前在 App Store 限时免费。"]
+    },
+    "faq": {
+      "badge": ["常见问题"],
+      "title": ["关于 UChat AI 的常见问题"],
+      "lede": ["你想了解的，都在这里。"],
+      "items": [
+        {
+          "q": ["什么是 UChat AI？"],
+          "a": [
+            "UChat AI 是一款面向 macOS、iPhone 与 iPad 的 100% 原生 AI 聊天应用。它使用你自己的 API Key 连接云端模型供应商，也可以完全在你的设备上运行本地模型。"
+          ]
+        },
+        {
+          "q": ["需要付费吗？"],
+          "a": [
+            "不需要。UChat AI 目前在 App Store 限时免费。定价未来可能调整，如有变动会提前公布。"
+          ]
+        },
+        {
+          "q": ["支持哪些供应商？"],
+          "a": [
+            "OpenAI、Azure OpenAI、Anthropic、Google Gemini、xAI Grok、Mistral AI、Groq、Kimi、MiniMax，以及 OpenRouter、Together AI、Replicate 等聚合平台；任何 OpenAI 或 Anthropic 兼容端点同样可用。"
+          ]
+        },
+        {
+          "q": ["没有 API Key 能用吗？"],
+          "a": [
+            "可以。本地供应商——Ollama、LM Studio 与内置 GGUF 引擎——完全在进程内运行，无需任何 API Key。Ollama 与 LM Studio 还可以指向局域网或远程服务器。"
+          ]
+        },
+        {
+          "q": ["我的 API Key 存在哪里？"],
+          "a": [
+            "你的 API Key 只保存在你的设备上，并直接用于连接你所选择的供应商。UChat AI 无需注册账号。"
+          ]
+        }
+      ]
+    },
+    "download": {
+      "title": ["获取 UChat AI"],
+      "subtitle": ["App Store 限时免费，支持 Mac、iPhone 与 iPad。"],
+      "button": {
+        "alt": "在 App Store 下载 UChat AI",
+        "label": ["在 App Store 下载"]
+      },
+      "reqs": [
+        {
+          "label": ["macOS"],
+          "value": ["需要 macOS 14 或更高版本"]
+        },
+        {
+          "label": ["iOS"],
+          "value": ["需要 iOS 17 或更高版本"]
+        }
+      ],
+      "note": ["UChat AI 与本站共用的"],
+      "legal": [["隐私政策"], ["服务条款"]],
+      "legalSep": ["与"],
+      "noteEnd": ["。"]
+    },
+    "footer": {
+      "copyright": [" FoxTerm (橙狐终端)."],
+      "links": [
+        ["首页"],
+        ["关于"],
+        ["联系我们"],
+        ["隐私政策"],
+        ["服务条款"],
         ["GitHub"],
         ["Blog"],
         ["Security Intel"]
