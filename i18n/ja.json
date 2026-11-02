@@ -82,9 +82,9 @@
     },
     "privacy": {
       "viewport": "width=device-width, initial-scale=1",
-      "title": "プライバシーポリシー - FoxTerm | プライバシー重視のターミナルアプリ",
-      "description": "FoxTerm のプライバシーポリシー。テレメトリゼロのポリシー、ローカル暗号化、Apple Secure Enclave での鍵保管、完全なデータ主権によるデータ保護の方法をご確認ください。",
-      "keywords": "FoxTerm プライバシー, テレメトリゼロ, ターミナル プライバシー, SSH セキュリティ, データ保護, Secure Enclave 暗号化",
+      "title": "プライバシーポリシー - FoxTerm と UChat AI",
+      "description": "FoxTerm と UChat AI のプライバシーポリシー。テレメトリゼロ、デバイス上での暗号化、AI プロバイダー・API キー・ローカルモデルのデータ規則を説明します。",
+      "keywords": "FoxTerm プライバシー, テレメトリゼロ, ターミナル プライバシー, SSH セキュリティ, データ保護, Secure Enclave 暗号化, UChat AI",
       "author": "FoxTerm",
       "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
       "googlebot": "index, follow",
@@ -93,8 +93,8 @@
       "og:type": "website",
       "og:locale": "ja_JP",
       "og:locale:alternate": "en_US, zh_CN, zh_TW, de_DE, ru_RU, es_ES, fr_FR, ko_KR, pt_BR",
-      "og:title": "プライバシーポリシー - FoxTerm",
-      "og:description": "テレメトリゼロ、ローカル暗号化、サーバー管理のための完全なデータ主権。",
+      "og:title": "プライバシーポリシー - FoxTerm と UChat AI",
+      "og:description": "FoxTerm と UChat AI のプライバシーポリシー。テレメトリゼロ、デバイス上での暗号化、AI プロバイダー・API キー・ローカルモデルのデータ規則を説明します。",
       "og:url": "https://foxterm.app/ja/privacy",
       "og:site_name": "FoxTerm",
       "og:image": "/assets/apple-touch-icon.png",
@@ -102,9 +102,9 @@
     },
     "terms": {
       "viewport": "width=device-width, initial-scale=1",
-      "title": "利用規約 - FoxTerm",
-      "description": "FoxTerm の利用規約。FoxTerm の SSH / VNC / SFTP クライアントを利用するためのライセンス、適切な使用、サブスクリプション条件、免責事項をご確認ください。",
-      "keywords": "FoxTerm 利用規約, EULA, ライセンス契約, App Store 規約, サブスクリプション規約",
+      "title": "利用規約 - FoxTerm と UChat AI",
+      "description": "FoxTerm と UChat AI の利用規約。ライセンス、適切な使用、サブスクリプション、AI プロバイダーの責任、免責事項を説明します。",
+      "keywords": "FoxTerm 利用規約, EULA, ライセンス契約, App Store 規約, サブスクリプション規約, UChat AI",
       "author": "FoxTerm",
       "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
       "googlebot": "index, follow",
@@ -113,8 +113,8 @@
       "og:type": "website",
       "og:locale": "ja_JP",
       "og:locale:alternate": "en_US, zh_CN, zh_TW, de_DE, ru_RU, es_ES, fr_FR, ko_KR, pt_BR",
-      "og:title": "利用規約 - FoxTerm",
-      "og:description": "FoxTerm の利用規約およびエンドユーザーライセンス契約。",
+      "og:title": "利用規約 - FoxTerm と UChat AI",
+      "og:description": "FoxTerm と UChat AI の利用規約。ライセンス、適切な使用、サブスクリプション、AI プロバイダーの責任、免責事項を説明します。",
       "og:url": "https://foxterm.app/ja/terms",
       "og:site_name": "FoxTerm",
       "og:image": "/assets/apple-touch-icon.png",
@@ -146,7 +146,7 @@
       "twitter:description": "すべてのモデルをひとつのネイティブアプリで。App Store で無料。",
       "twitter:image": "/assets/uchat-ai.png",
       "twitter:image:alt": "UChat AI アプリアイコン",
-      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"UChat AI\",\"operatingSystem\":\"macOS 14+, iOS 17+\",\"applicationCategory\":\"UtilitiesApplication\",\"softwareRequirements\":\"Requires macOS 14.0 or later, iOS 17.0 or later.\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"Free for now. All features unlocked.\"},\"description\":\"UChat AI は macOS・iPhone・iPad 向けの 100% ネイティブ AI チャットアプリ。自分の API キーで OpenAI・Anthropic・Gemini・Grok・Kimi・MiniMax などに接続し、ローカルモデルもオフラインで実行できます。現在無料。\",\"downloadUrl\":\"https://apps.apple.com/us/app/uchat-ai/id6503210454\",\"screenshot\":\"/assets/uchat-ai.png\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}}"
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"UChat AI\",\"operatingSystem\":\"macOS 15+, iOS 17+\",\"applicationCategory\":\"UtilitiesApplication\",\"softwareRequirements\":\"Requires macOS 15.0 or later, iOS 17.0 or later.\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"Free for now. All features unlocked.\"},\"description\":\"UChat AI は macOS・iPhone・iPad 向けの 100% ネイティブ AI チャットアプリ。自分の API キーで OpenAI・Anthropic・Gemini・Grok・Kimi・MiniMax などに接続し、ローカルモデルもオフラインで実行できます。現在無料。\",\"downloadUrl\":\"https://apps.apple.com/us/app/uchat-ai/id6503210454\",\"screenshot\":\"/assets/uchat-ai.png\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}}"
     }
   },
   "index": {
@@ -932,7 +932,14 @@
     "content": {
       "badge": ["法的文書"],
       "title": ["プライバシーポリシー"],
-      "lede": ["最終更新：2026年10月"],
+      "lede": ["最終更新：2026年11月 · FoxTerm と UChat AI に適用"],
+      "scope": {
+        "title": ["適用範囲：FoxTerm と UChat AI"],
+        "body": [
+          "本文書は FoxTerm が公開する 2 つのアプリ、FoxTerm（ターミナル・サーバー管理）と UChat AI（ネイティブ AI チャット）に適用されます。以下では両者を「本アプリ」と呼びます。",
+          "特定の機能に関する条項は、その機能を提供するアプリにのみ適用されます。下記の付録に UChat AI の追加規定を記載します。テレメトリゼロの基本方針は両アプリに共通です。"
+        ]
+      },
       "commitment": {
         "title": ["私たちの約束：テレメトリゼロ"],
         "body": [
@@ -1065,7 +1072,25 @@
           ],
           "links": [["admin@foxterm.app"]]
         }
-      ]
+      ],
+      "ai": {
+        "title": ["付録：UChat AI のプライバシー規定"],
+        "body": ["UChat AI におけるデータの扱いを次のとおり補足します。"],
+        "items": [
+          [
+            "UChat AI はアカウント登録を必要としません。プロンプト、会話履歴、モデルの出力、添付ファイルは、あなたが選択した AI プロバイダーに送信しない限りデバイス上に留まります。"
+          ],
+          [
+            "ご自身の API キーはデバイス上にのみ保存され（利用可能な場合はシステムのキーチェーンに保管）、設定したプロバイダーへ直接送信されます。当社が受領・中継・保管することはありません。"
+          ],
+          [
+            "OpenAI、Anthropic、Google Gemini、Grok、OpenRouter、Together AI、Replicate などのクラウドプロバイダーやあらゆる互換エンドポイントを利用する場合、送信した内容は当該第三者が自らのプライバシーポリシーに基づいて処理します。当社はその処理を管理しません。"
+          ],
+          [
+            "ローカルプロバイダー（Ollama、LM Studio、内蔵 GGUF エンジン、Core ML）はデバイスのプロセス内で動作し、外部へデータを送信しません。UChat AI には分析・追跡 SDK を組み込んでいません。"
+          ]
+        ]
+      }
     },
     "footer": {
       "copyright": [" FoxTerm."],
@@ -1113,9 +1138,16 @@
       "badge": ["法的文書"],
       "title": ["利用規約"],
       "lede": [
-        "最終更新：2026年10月",
+        "最終更新：2026年11月 · FoxTerm と UChat AI に適用",
         "FoxTerm（当社「私たち」）が運営する FoxTerm アプリケーション（以下「本アプリ」）をご利用になる前に、本利用規約（以下「本規約」）をよくお読みください。本アプリへのアクセスおよび使用は、本規約への同意と遵守を条件とします。本規約は、本アプリにアクセスまたは使用するすべてのユーザーに適用されます。"
       ],
+      "scope": {
+        "title": ["適用範囲：FoxTerm と UChat AI"],
+        "body": [
+          "本文書は FoxTerm が公開する 2 つのアプリ、FoxTerm（ターミナル・サーバー管理）と UChat AI（ネイティブ AI チャット）に適用されます。以下では両者を「本アプリ」と呼びます。",
+          "特定の機能に関する条項は、その機能を提供するアプリにのみ適用されます。下記の付録に UChat AI の追加規定を記載します。テレメトリゼロの基本方針は両アプリに共通です。"
+        ]
+      },
       "sections": [
         {
           "title": ["1. ライセンスの許諾"],
@@ -1252,7 +1284,25 @@
           ],
           "links": [["admin@foxterm.app"]]
         }
-      ]
+      ],
+      "ai": {
+        "title": ["付録：UChat AI の追加規約"],
+        "body": ["以下の条項は UChat AI にのみ適用されます。"],
+        "items": [
+          [
+            "UChat AI は第三者 AI サービスのクライアントです。ご自身で API キーやエンドポイントを用意し、アカウント、キー、利用量、および選択したプロバイダーが請求する費用について責任を負います。"
+          ],
+          [
+            "第三者プロバイダー（OpenAI、Anthropic、Google Gemini、Grok、OpenRouter、Together AI、Replicate、あらゆる互換エンドポイントを含む）は独自の規約とプライバシーポリシーに従う独立したサービスです。当社はその可用性、料金、モデルの挙動、データ処理を管理しません。"
+          ],
+          [
+            "AI による出力は不正確、不完全、または不適切な場合があり、参考情報としてのみ提供されます。内容の確認、および出力に基づく判断や行為の責任は利用者にあります。"
+          ],
+          [
+            "UChat AI は現在無料ですが、将来、価格や機能が変更される可能性があります。ローカルモデルやセルフホストのエンドポイントは利用者が設定・運用するものであり、当社は責任を負いません。"
+          ]
+        ]
+      }
     },
     "footer": {
       "copyright": [" FoxTerm."],
@@ -1480,7 +1530,7 @@
       "reqs": [
         {
           "label": ["macOS"],
-          "value": ["macOS 14 以降が必要"]
+          "value": ["macOS 15 以降が必要"]
         },
         {
           "label": ["iOS"],

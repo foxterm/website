@@ -40,6 +40,40 @@
       <div
         class="prose prose-invert max-w-none space-y-8 text-zinc-300 text-sm sm:text-base leading-relaxed"
       >
+        <!-- Scope: both products -->
+        <div class="p-6 rounded-2xl bg-sky-500/10 border border-sky-500/20">
+          <div class="flex flex-wrap items-center gap-3 mb-4">
+            <span
+              class="inline-flex items-center gap-2 text-xs font-semibold text-zinc-200"
+            >
+              <img
+                src="/assets/FoxTerm.svg"
+                alt=""
+                class="w-5 h-5 rounded-full bg-white/90 p-0.5"
+              />
+              <%= t["brand.foxterm.0"] %>
+            </span>
+            <span class="text-zinc-600 text-xs">+</span>
+            <span
+              class="inline-flex items-center gap-2 text-xs font-semibold text-zinc-200"
+            >
+              <img
+                src="/assets/uchat-ai.png"
+                alt=""
+                class="w-5 h-5 rounded-full ring-1 ring-white/10"
+              />
+              <%= t["brand.uchatAI.0"] %>
+            </span>
+          </div>
+          <h2 class="text-lg font-bold text-sky-300 mb-3 mt-0">
+            <%= t["content.scope.title.0"] %>
+          </h2>
+          <p class="m-0 text-zinc-300"><%= t["content.scope.body.0"] %></p>
+          <p class="mt-3 mb-0 text-zinc-300">
+            <%= t["content.scope.body.1"] %>
+          </p>
+        </div>
+
         <div class="p-6 rounded-2xl bg-fox-500/10 border border-fox-500/20">
           <h2 class="text-lg font-bold text-fox-400 mb-3 mt-0">
             <%= t["content.commitment.title.0"] %>
@@ -184,6 +218,22 @@
             <%= t["content.sections.7.title.0"] %>
           </h2>
           <p><%= t["content.sections.7.body.0"] %></p>
+        </section>
+
+        <!-- Appendix: UChat AI -->
+        <section
+          class="p-6 rounded-2xl bg-zinc-900/40 border border-sky-500/20"
+        >
+          <h2 class="text-xl font-bold text-sky-300 mb-4 mt-0">
+            <%= t["content.ai.title.0"] %>
+          </h2>
+          <p><%= t["content.ai.body.0"] %></p>
+          <ul class="list-disc pl-6 space-y-2 text-zinc-400">
+            <li><%= t["content.ai.items.0.0"] %></li>
+            <li><%= t["content.ai.items.1.0"] %></li>
+            <li><%= t["content.ai.items.2.0"] %></li>
+            <li><%= t["content.ai.items.3.0"] %></li>
+          </ul>
         </section>
 
         <section>

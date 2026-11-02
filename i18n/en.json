@@ -126,9 +126,9 @@
     },
     "privacy": {
       "viewport": "width=device-width, initial-scale=1",
-      "title": "Privacy Policy - FoxTerm | Privacy-First Terminal App",
-      "description": "FoxTerm Privacy Policy. Learn how we protect your data with zero-telemetry policy, local encryption, Apple Secure Enclave key storage, and complete data sovereignty.",
-      "keywords": "FoxTerm privacy, zero telemetry, terminal privacy, SSH security, data protection, Secure Enclave encryption",
+      "title": "Privacy Policy - FoxTerm & UChat AI",
+      "description": "Privacy Policy for FoxTerm and UChat AI. Zero telemetry, on-device encryption, and clear rules for AI providers, API keys and local models.",
+      "keywords": "FoxTerm privacy, zero telemetry, terminal privacy, SSH security, data protection, Secure Enclave encryption, UChat AI",
       "author": "FoxTerm",
       "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
       "googlebot": "index, follow",
@@ -137,8 +137,8 @@
       "og:type": "website",
       "og:locale": "en_US",
       "og:locale:alternate": "zh_CN, zh_TW, ja_JP, de_DE, ru_RU, es_ES, fr_FR, ko_KR, pt_BR",
-      "og:title": "Privacy Policy - FoxTerm",
-      "og:description": "Zero telemetry, local encryption, complete data sovereignty for your server management.",
+      "og:title": "Privacy Policy - FoxTerm & UChat AI",
+      "og:description": "Privacy Policy for FoxTerm and UChat AI. Zero telemetry, on-device encryption, and clear rules for AI providers, API keys and local models.",
       "og:url": "https://foxterm.app/privacy",
       "og:site_name": "FoxTerm",
       "og:image": "/assets/apple-touch-icon.png",
@@ -146,9 +146,9 @@
     },
     "terms": {
       "viewport": "width=device-width, initial-scale=1",
-      "title": "Terms of Service - FoxTerm",
-      "description": "FoxTerm Terms of Service. Understand the licensing, acceptable use, subscription terms, and disclaimers for using the FoxTerm SSH/VNC/SFTP client.",
-      "keywords": "FoxTerm terms of service, EULA, license agreement, App Store terms, subscription terms",
+      "title": "Terms of Service - FoxTerm & UChat AI",
+      "description": "Terms of Service for FoxTerm and UChat AI. Licensing, acceptable use, subscriptions, AI provider responsibility and disclaimers.",
+      "keywords": "FoxTerm terms of service, EULA, license agreement, App Store terms, subscription terms, UChat AI",
       "author": "FoxTerm",
       "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
       "googlebot": "index, follow",
@@ -157,8 +157,8 @@
       "og:type": "website",
       "og:locale": "en_US",
       "og:locale:alternate": "zh_CN, zh_TW, ja_JP, de_DE, ru_RU, es_ES, fr_FR, ko_KR, pt_BR",
-      "og:title": "Terms of Service - FoxTerm",
-      "og:description": "Terms of Service and End User License Agreement for FoxTerm.",
+      "og:title": "Terms of Service - FoxTerm & UChat AI",
+      "og:description": "Terms of Service for FoxTerm and UChat AI. Licensing, acceptable use, subscriptions, AI provider responsibility and disclaimers.",
       "og:url": "https://foxterm.app/terms",
       "og:site_name": "FoxTerm",
       "og:image": "/assets/apple-touch-icon.png",
@@ -190,7 +190,7 @@
       "twitter:description": "Every model, one native app. Free on the App Store.",
       "twitter:image": "/assets/uchat-ai.png",
       "twitter:image:alt": "UChat AI app icon",
-      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"UChat AI\",\"operatingSystem\":\"macOS 14+, iOS 17+\",\"applicationCategory\":\"UtilitiesApplication\",\"softwareRequirements\":\"Requires macOS 14.0 or later, iOS 17.0 or later.\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"Free for now. All features unlocked.\"},\"description\":\"UChat AI is a free, 100% native AI chat app for Mac, iPhone and iPad. Bring your own API key for OpenAI, Anthropic, Gemini, Grok, Kimi, MiniMax and more — or run local models offline.\",\"downloadUrl\":\"https://apps.apple.com/us/app/uchat-ai/id6503210454\",\"screenshot\":\"/assets/uchat-ai.png\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}}"
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"UChat AI\",\"operatingSystem\":\"macOS 15+, iOS 17+\",\"applicationCategory\":\"UtilitiesApplication\",\"softwareRequirements\":\"Requires macOS 15.0 or later, iOS 17.0 or later.\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"Free for now. All features unlocked.\"},\"description\":\"UChat AI is a free, 100% native AI chat app for Mac, iPhone and iPad. Bring your own API key for OpenAI, Anthropic, Gemini, Grok, Kimi, MiniMax and more — or run local models offline.\",\"downloadUrl\":\"https://apps.apple.com/us/app/uchat-ai/id6503210454\",\"screenshot\":\"/assets/uchat-ai.png\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}}"
     }
   },
   "index": {
@@ -975,7 +975,14 @@
     "content": {
       "badge": ["Legal Document"],
       "title": ["Privacy Policy"],
-      "lede": ["Last updated: October 2026"],
+      "lede": ["Last updated: November 2026 · Applies to FoxTerm and UChat AI"],
+      "scope": {
+        "title": ["Scope: FoxTerm & UChat AI"],
+        "body": [
+          "This document applies to both apps published by FoxTerm: FoxTerm (terminal and server management) and UChat AI (native AI chat). Together they are referred to as the Apps.",
+          "Clauses describing a specific feature apply to the app that offers it. The appendix below sets out the additional provisions for UChat AI. The zero-telemetry commitment applies to both apps."
+        ]
+      },
       "commitment": {
         "title": ["Our Commitment: Zero Telemetry"],
         "body": [
@@ -1108,7 +1115,27 @@
           ],
           "links": [["admin@foxterm.app"]]
         }
-      ]
+      ],
+      "ai": {
+        "title": ["Appendix: UChat AI Privacy Provisions"],
+        "body": [
+          "UChat AI adds the following clarifications about data handling:"
+        ],
+        "items": [
+          [
+            "UChat AI requires no account. Your prompts, conversations, model outputs and attachments stay on your device unless you send them to an AI provider you choose."
+          ],
+          [
+            "Your own API keys are stored only on your device (in the system Keychain where available) and are sent directly to the provider you configure. We never receive, proxy or store them."
+          ],
+          [
+            "When you use a cloud provider such as OpenAI, Anthropic, Google Gemini, Grok, OpenRouter, Together AI, Replicate or any compatible endpoint, the content you send is processed by that third party under its own privacy policy. We do not control that processing."
+          ],
+          [
+            "Local providers (Ollama, LM Studio, the built-in GGUF engine and Core ML) run in-process on your device and send no data off-device. UChat AI contains no analytics or tracking SDKs."
+          ]
+        ]
+      }
     },
     "footer": {
       "copyright": [" FoxTerm."],
@@ -1156,9 +1183,16 @@
       "badge": ["Legal Document"],
       "title": ["Terms of Service"],
       "lede": [
-        "Last updated: October 2026",
+        "Last updated: November 2026 · Applies to FoxTerm and UChat AI",
         "Please read these Terms of Service (\"Terms\", \"Terms of Service\") carefully before using the FoxTerm application (the \"App\") operated by FoxTerm (\"us\", \"we\", or \"our\"). Your access to and use of the App is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all users and others who access or use the App."
       ],
+      "scope": {
+        "title": ["Scope: FoxTerm & UChat AI"],
+        "body": [
+          "This document applies to both apps published by FoxTerm: FoxTerm (terminal and server management) and UChat AI (native AI chat). Together they are referred to as the Apps.",
+          "Clauses describing a specific feature apply to the app that offers it. The appendix below sets out the additional provisions for UChat AI. The zero-telemetry commitment applies to both apps."
+        ]
+      },
       "sections": [
         {
           "title": ["1. License Grant"],
@@ -1301,7 +1335,25 @@
           ],
           "links": [["admin@foxterm.app"]]
         }
-      ]
+      ],
+      "ai": {
+        "title": ["Appendix: UChat AI Additional Terms"],
+        "body": ["The following terms apply specifically to UChat AI:"],
+        "items": [
+          [
+            "UChat AI is a client for third-party AI services. You bring your own API key or endpoint and are responsible for your account, keys, usage and any fees charged by the provider you choose."
+          ],
+          [
+            "Third-party providers (including OpenAI, Anthropic, Google Gemini, Grok, OpenRouter, Together AI, Replicate and any compatible endpoint) are independent services governed by their own terms and privacy policies. We do not control their availability, pricing, model behaviour or data handling."
+          ],
+          [
+            "AI-generated output may be inaccurate, incomplete or inappropriate and is provided for reference only. You are responsible for reviewing it and for any decisions or actions based on it."
+          ],
+          [
+            "UChat AI is free for now; pricing and features may change in the future. Local models and self-hosted endpoints are configured and operated by you, and we are not responsible for them."
+          ]
+        ]
+      }
     },
     "footer": {
       "copyright": [" FoxTerm."],
@@ -1529,7 +1581,7 @@
       "reqs": [
         {
           "label": ["macOS"],
-          "value": ["Requires macOS 14 or later"]
+          "value": ["Requires macOS 15 or later"]
         },
         {
           "label": ["iOS"],

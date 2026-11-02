@@ -82,9 +82,9 @@
     },
     "privacy": {
       "viewport": "width=device-width, initial-scale=1",
-      "title": "隐私政策 - FoxTerm (橙狐终端) | 隐私优先的终端应用",
-      "description": "FoxTerm (橙狐终端) 隐私政策。了解我们如何通过零遥测策略、本地加密、Apple Secure Enclave 密钥存储与完全的数据自主来保护你的数据。",
-      "keywords": "FoxTerm (橙狐终端) 隐私, 零遥测, 终端隐私, SSH 安全, 数据保护, Secure Enclave 加密",
+      "title": "隐私政策 - FoxTerm (橙狐终端) 与 UChat AI",
+      "description": "FoxTerm 与 UChat AI 隐私政策。零遥测、设备端加密，并明确 AI 供应商、API Key 与本地模型的数据规则。",
+      "keywords": "FoxTerm (橙狐终端) 隐私, 零遥测, 终端隐私, SSH 安全, 数据保护, Secure Enclave 加密, UChat AI",
       "author": "FoxTerm (橙狐终端)",
       "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
       "googlebot": "index, follow",
@@ -93,8 +93,8 @@
       "og:type": "website",
       "og:locale": "zh_CN",
       "og:locale:alternate": "en_US, zh_TW, ja_JP, de_DE, ru_RU, es_ES, fr_FR, ko_KR, pt_BR",
-      "og:title": "隐私政策 - FoxTerm (橙狐终端)",
-      "og:description": "零遥测、本地加密，让你的服务器管理数据完全自主。",
+      "og:title": "隐私政策 - FoxTerm (橙狐终端) 与 UChat AI",
+      "og:description": "FoxTerm 与 UChat AI 隐私政策。零遥测、设备端加密，并明确 AI 供应商、API Key 与本地模型的数据规则。",
       "og:url": "https://foxterm.app/zh-hans/privacy",
       "og:site_name": "FoxTerm (橙狐终端)",
       "og:image": "/assets/apple-touch-icon.png",
@@ -102,9 +102,9 @@
     },
     "terms": {
       "viewport": "width=device-width, initial-scale=1",
-      "title": "服务条款 - FoxTerm (橙狐终端)",
-      "description": "FoxTerm (橙狐终端) 服务条款。了解 FoxTerm (橙狐终端) SSH/VNC/SFTP 客户端的授权许可、可接受使用范围、订阅条款与免责声明。",
-      "keywords": "FoxTerm (橙狐终端) 服务条款, EULA, 许可协议, App Store 条款, 订阅条款",
+      "title": "服务条款 - FoxTerm (橙狐终端) 与 UChat AI",
+      "description": "FoxTerm 与 UChat AI 服务条款。涵盖授权许可、可接受使用、订阅、AI 供应商责任与免责声明。",
+      "keywords": "FoxTerm (橙狐终端) 服务条款, EULA, 许可协议, App Store 条款, 订阅条款, UChat AI",
       "author": "FoxTerm (橙狐终端)",
       "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
       "googlebot": "index, follow",
@@ -113,8 +113,8 @@
       "og:type": "website",
       "og:locale": "zh_CN",
       "og:locale:alternate": "en_US, zh_TW, ja_JP, de_DE, ru_RU, es_ES, fr_FR, ko_KR, pt_BR",
-      "og:title": "服务条款 - FoxTerm (橙狐终端)",
-      "og:description": "FoxTerm (橙狐终端) 的服务条款与最终用户许可协议。",
+      "og:title": "服务条款 - FoxTerm (橙狐终端) 与 UChat AI",
+      "og:description": "FoxTerm 与 UChat AI 服务条款。涵盖授权许可、可接受使用、订阅、AI 供应商责任与免责声明。",
       "og:url": "https://foxterm.app/zh-hans/terms",
       "og:site_name": "FoxTerm (橙狐终端)",
       "og:image": "/assets/apple-touch-icon.png",
@@ -146,7 +146,7 @@
       "twitter:description": "所有模型，一个原生应用。App Store 限时免费。",
       "twitter:image": "/assets/uchat-ai.png",
       "twitter:image:alt": "UChat AI 应用图标",
-      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"UChat AI\",\"operatingSystem\":\"macOS 14+, iOS 17+\",\"applicationCategory\":\"UtilitiesApplication\",\"softwareRequirements\":\"Requires macOS 14.0 or later, iOS 17.0 or later.\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"Free for now. All features unlocked.\"},\"description\":\"UChat AI 是一款限时免费的 100% 原生 AI 聊天应用，支持 Mac、iPhone 和 iPad。自带 API Key 连接 OpenAI、Anthropic、Gemini、Grok、Kimi、MiniMax 等，或在本地离线运行模型。\",\"downloadUrl\":\"https://apps.apple.com/us/app/uchat-ai/id6503210454\",\"screenshot\":\"/assets/uchat-ai.png\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}}"
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"UChat AI\",\"operatingSystem\":\"macOS 15+, iOS 17+\",\"applicationCategory\":\"UtilitiesApplication\",\"softwareRequirements\":\"Requires macOS 15.0 or later, iOS 17.0 or later.\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"Free for now. All features unlocked.\"},\"description\":\"UChat AI 是一款限时免费的 100% 原生 AI 聊天应用，支持 Mac、iPhone 和 iPad。自带 API Key 连接 OpenAI、Anthropic、Gemini、Grok、Kimi、MiniMax 等，或在本地离线运行模型。\",\"downloadUrl\":\"https://apps.apple.com/us/app/uchat-ai/id6503210454\",\"screenshot\":\"/assets/uchat-ai.png\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}}"
     }
   },
   "index": {
@@ -895,7 +895,14 @@
     "content": {
       "badge": ["法律文件"],
       "title": ["隐私政策"],
-      "lede": ["最后更新：2026 年 10 月"],
+      "lede": ["最后更新：2026 年 11 月 · 适用于 FoxTerm 与 UChat AI"],
+      "scope": {
+        "title": ["适用范围：FoxTerm 与 UChat AI"],
+        "body": [
+          "本文档适用于 FoxTerm 发布的两款应用：FoxTerm（终端与服务器管理）和 UChat AI（原生 AI 聊天），以下合称「本应用」。",
+          "涉及具体功能的条款仅适用于提供该功能的应用；下文附录列出 UChat AI 的附加约定。零遥测承诺对两款应用同样适用。"
+        ]
+      },
       "commitment": {
         "title": ["我们的承诺：零遥测"],
         "body": [
@@ -1006,7 +1013,25 @@
           ],
           "links": [["admin@foxterm.app"]]
         }
-      ]
+      ],
+      "ai": {
+        "title": ["附录：UChat AI 隐私条款"],
+        "body": ["UChat AI 就数据处理补充如下说明："],
+        "items": [
+          [
+            "UChat AI 无需注册账号。你的提示词、对话内容、模型输出与附件都保存在设备上，除非你主动将其发送给你选择的 AI 供应商。"
+          ],
+          [
+            "你自带的 API Key 仅保存在设备上（可用时存放于系统钥匙串），并直接发送给你配置的供应商。我们不会接收、代理或存储这些密钥。"
+          ],
+          [
+            "使用 OpenAI、Anthropic、Google Gemini、Grok、OpenRouter、Together AI、Replicate 等云供应商或任意兼容端点时，你发送的内容由该第三方按其隐私政策处理，我们无法控制其处理方式。"
+          ],
+          [
+            "本地供应商（Ollama、LM Studio、内置 GGUF 引擎与 Core ML）在设备进程内运行，不向外部发送任何数据。UChat AI 未嵌入任何分析或追踪 SDK。"
+          ]
+        ]
+      }
     },
     "footer": {
       "copyright": [" FoxTerm (橙狐终端)."],
@@ -1054,9 +1079,16 @@
       "badge": ["法律文件"],
       "title": ["服务条款"],
       "lede": [
-        "最后更新：2026 年 10 月",
+        "最后更新：2026 年 11 月 · 适用于 FoxTerm 与 UChat AI",
         "在使用 FoxTerm (橙狐终端) 应用（以下简称\"本应用\"，由 FoxTerm (橙狐终端) 运营，下称\"我们\"）之前，请仔细阅读本服务条款（以下简称\"本条款\"）。你对本应用的访问与使用，即表示你接受并遵守本条款。本条款适用于所有访问或使用本应用的用户。"
       ],
+      "scope": {
+        "title": ["适用范围：FoxTerm 与 UChat AI"],
+        "body": [
+          "本文档适用于 FoxTerm 发布的两款应用：FoxTerm（终端与服务器管理）和 UChat AI（原生 AI 聊天），以下合称「本应用」。",
+          "涉及具体功能的条款仅适用于提供该功能的应用；下文附录列出 UChat AI 的附加约定。零遥测承诺对两款应用同样适用。"
+        ]
+      },
       "sections": [
         {
           "title": ["1. 授权许可"],
@@ -1168,7 +1200,25 @@
           "body": ["如果你对本条款有任何疑问，请通过", " 与我们联系。"],
           "links": [["admin@foxterm.app"]]
         }
-      ]
+      ],
+      "ai": {
+        "title": ["附录：UChat AI 附加条款"],
+        "body": ["以下条款专门适用于 UChat AI："],
+        "items": [
+          [
+            "UChat AI 是第三方 AI 服务的客户端。你需要自带 API Key 或端点，并自行负责账号、密钥、用量以及所选供应商收取的费用。"
+          ],
+          [
+            "第三方供应商（包括 OpenAI、Anthropic、Google Gemini、Grok、OpenRouter、Together AI、Replicate 及任意兼容端点）均为独立服务，受其自身条款与隐私政策约束。我们不控制其可用性、定价、模型行为或数据处理。"
+          ],
+          [
+            "AI 生成内容可能不准确、不完整或不恰当，仅供参考。你有责任自行审核，并对基于此作出的任何决定或行为负责。"
+          ],
+          [
+            "UChat AI 目前免费，未来定价与功能可能调整。本地模型与自托管端点由你自行配置和运行，我们对此不承担责任。"
+          ]
+        ]
+      }
     },
     "footer": {
       "copyright": [" FoxTerm (橙狐终端)."],
@@ -1388,7 +1438,7 @@
       "reqs": [
         {
           "label": ["macOS"],
-          "value": ["需要 macOS 14 或更高版本"]
+          "value": ["需要 macOS 15 或更高版本"]
         },
         {
           "label": ["iOS"],

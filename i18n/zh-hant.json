@@ -82,9 +82,9 @@
     },
     "privacy": {
       "viewport": "width=device-width, initial-scale=1",
-      "title": "隱私權政策 - FoxTerm | 隱私優先的終端機應用程式",
-      "description": "FoxTerm 隱私權政策。了解我們如何透過零遙測政策、本地加密、Apple Secure Enclave 金鑰儲存與完全的資料自主來保護你的資料。",
-      "keywords": "FoxTerm 隱私, 零遙測, 終端機隱私, SSH 安全, 資料保護, Secure Enclave 加密",
+      "title": "隱私權政策 - FoxTerm 與 UChat AI",
+      "description": "FoxTerm 與 UChat AI 隱私權政策。零遙測、裝置端加密，並說明 AI 供應商、API Key 與本機模型的資料規則。",
+      "keywords": "FoxTerm 隱私, 零遙測, 終端機隱私, SSH 安全, 資料保護, Secure Enclave 加密, UChat AI",
       "author": "FoxTerm",
       "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
       "googlebot": "index, follow",
@@ -93,8 +93,8 @@
       "og:type": "website",
       "og:locale": "zh_TW",
       "og:locale:alternate": "en_US, zh_CN, ja_JP, de_DE, ru_RU, es_ES, fr_FR, ko_KR, pt_BR",
-      "og:title": "隱私權政策 - FoxTerm",
-      "og:description": "零遙測、本地加密，讓你的伺服器管理資料完全自主。",
+      "og:title": "隱私權政策 - FoxTerm 與 UChat AI",
+      "og:description": "FoxTerm 與 UChat AI 隱私權政策。零遙測、裝置端加密，並說明 AI 供應商、API Key 與本機模型的資料規則。",
       "og:url": "https://foxterm.app/zh-hant/privacy",
       "og:site_name": "FoxTerm",
       "og:image": "/assets/apple-touch-icon.png",
@@ -102,9 +102,9 @@
     },
     "terms": {
       "viewport": "width=device-width, initial-scale=1",
-      "title": "服務條款 - FoxTerm",
-      "description": "FoxTerm 服務條款。了解 FoxTerm SSH/VNC/SFTP 用戶端的授權許可、可接受使用範圍、訂閱條款與免責聲明。",
-      "keywords": "FoxTerm 服務條款, EULA, 授權合約, App Store 條款, 訂閱條款",
+      "title": "服務條款 - FoxTerm 與 UChat AI",
+      "description": "FoxTerm 與 UChat AI 服務條款。涵蓋授權許可、可接受使用、訂閱、AI 供應商責任與免責聲明。",
+      "keywords": "FoxTerm 服務條款, EULA, 授權合約, App Store 條款, 訂閱條款, UChat AI",
       "author": "FoxTerm",
       "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
       "googlebot": "index, follow",
@@ -113,8 +113,8 @@
       "og:type": "website",
       "og:locale": "zh_TW",
       "og:locale:alternate": "en_US, zh_CN, ja_JP, de_DE, ru_RU, es_ES, fr_FR, ko_KR, pt_BR",
-      "og:title": "服務條款 - FoxTerm",
-      "og:description": "FoxTerm 的服務條款與終端使用者授權合約。",
+      "og:title": "服務條款 - FoxTerm 與 UChat AI",
+      "og:description": "FoxTerm 與 UChat AI 服務條款。涵蓋授權許可、可接受使用、訂閱、AI 供應商責任與免責聲明。",
       "og:url": "https://foxterm.app/zh-hant/terms",
       "og:site_name": "FoxTerm",
       "og:image": "/assets/apple-touch-icon.png",
@@ -146,7 +146,7 @@
       "twitter:description": "所有模型，一個原生 App。App Store 限時免費。",
       "twitter:image": "/assets/uchat-ai.png",
       "twitter:image:alt": "UChat AI App 圖示",
-      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"UChat AI\",\"operatingSystem\":\"macOS 14+, iOS 17+\",\"applicationCategory\":\"UtilitiesApplication\",\"softwareRequirements\":\"Requires macOS 14.0 or later, iOS 17.0 or later.\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"Free for now. All features unlocked.\"},\"description\":\"UChat AI 是一款限時免費的 100% 原生 AI 聊天 App，支援 Mac、iPhone 與 iPad。自帶 API Key 連接 OpenAI、Anthropic、Gemini、Grok、Kimi、MiniMax 等，或在本機離線執行模型。\",\"downloadUrl\":\"https://apps.apple.com/us/app/uchat-ai/id6503210454\",\"screenshot\":\"/assets/uchat-ai.png\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}}"
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"UChat AI\",\"operatingSystem\":\"macOS 15+, iOS 17+\",\"applicationCategory\":\"UtilitiesApplication\",\"softwareRequirements\":\"Requires macOS 15.0 or later, iOS 17.0 or later.\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"Free for now. All features unlocked.\"},\"description\":\"UChat AI 是一款限時免費的 100% 原生 AI 聊天 App，支援 Mac、iPhone 與 iPad。自帶 API Key 連接 OpenAI、Anthropic、Gemini、Grok、Kimi、MiniMax 等，或在本機離線執行模型。\",\"downloadUrl\":\"https://apps.apple.com/us/app/uchat-ai/id6503210454\",\"screenshot\":\"/assets/uchat-ai.png\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}}"
     }
   },
   "index": {
@@ -895,7 +895,14 @@
     "content": {
       "badge": ["法律文件"],
       "title": ["隱私權政策"],
-      "lede": ["最後更新：2026 年 10 月"],
+      "lede": ["最後更新：2026 年 11 月 · 適用於 FoxTerm 與 UChat AI"],
+      "scope": {
+        "title": ["適用範圍：FoxTerm 與 UChat AI"],
+        "body": [
+          "本文件適用於 FoxTerm 發行的兩款 App：FoxTerm（終端機與伺服器管理）與 UChat AI（原生 AI 聊天），以下合稱「本 App」。",
+          "涉及特定功能的條款僅適用於提供該功能的 App；下文附錄列出 UChat AI 的附加約定。零遙測承諾對兩款 App 同樣適用。"
+        ]
+      },
       "commitment": {
         "title": ["我們的承諾：零遙測"],
         "body": [
@@ -1006,7 +1013,25 @@
           ],
           "links": [["admin@foxterm.app"]]
         }
-      ]
+      ],
+      "ai": {
+        "title": ["附錄：UChat AI 隱私權條款"],
+        "body": ["UChat AI 就資料處理補充如下說明："],
+        "items": [
+          [
+            "UChat AI 無需註冊帳號。你的提示詞、對話內容、模型輸出與附件都保存在裝置上，除非你主動將其傳送給你選擇的 AI 供應商。"
+          ],
+          [
+            "你自帶的 API Key 僅保存在裝置上（可用時存放於系統鑰匙圈），並直接傳送給你設定的供應商。我們不會接收、代理或儲存這些金鑰。"
+          ],
+          [
+            "使用 OpenAI、Anthropic、Google Gemini、Grok、OpenRouter、Together AI、Replicate 等雲端供應商或任意相容端點時，你傳送的內容由該第三方依其隱私權政策處理，我們無法控制其處理方式。"
+          ],
+          [
+            "本機供應商（Ollama、LM Studio、內建 GGUF 引擎與 Core ML）在裝置程序內執行，不向外部傳送任何資料。UChat AI 未嵌入任何分析或追蹤 SDK。"
+          ]
+        ]
+      }
     },
     "footer": {
       "copyright": [" FoxTerm."],
@@ -1054,9 +1079,16 @@
       "badge": ["法律文件"],
       "title": ["服務條款"],
       "lede": [
-        "最後更新：2026 年 10 月",
+        "最後更新：2026 年 11 月 · 適用於 FoxTerm 與 UChat AI",
         "在使用 FoxTerm 應用程式（以下簡稱「本應用程式」，由 FoxTerm 營運，下稱「我們」）之前，請仔細閱讀本服務條款（以下簡稱「本條款」）。你對本應用程式的存取與使用，即表示你接受並遵守本條款。本條款適用於所有存取或使用本應用程式的使用者。"
       ],
+      "scope": {
+        "title": ["適用範圍：FoxTerm 與 UChat AI"],
+        "body": [
+          "本文件適用於 FoxTerm 發行的兩款 App：FoxTerm（終端機與伺服器管理）與 UChat AI（原生 AI 聊天），以下合稱「本 App」。",
+          "涉及特定功能的條款僅適用於提供該功能的 App；下文附錄列出 UChat AI 的附加約定。零遙測承諾對兩款 App 同樣適用。"
+        ]
+      },
       "sections": [
         {
           "title": ["1. 授權許可"],
@@ -1168,7 +1200,25 @@
           "body": ["如果你對本條款有任何疑問，請透過", " 與我們聯絡。"],
           "links": [["admin@foxterm.app"]]
         }
-      ]
+      ],
+      "ai": {
+        "title": ["附錄：UChat AI 附加條款"],
+        "body": ["以下條款專門適用於 UChat AI："],
+        "items": [
+          [
+            "UChat AI 是第三方 AI 服務的用戶端。你需要自帶 API Key 或端點，並自行負責帳號、金鑰、用量以及所選供應商收取的費用。"
+          ],
+          [
+            "第三方供應商（包括 OpenAI、Anthropic、Google Gemini、Grok、OpenRouter、Together AI、Replicate 及任意相容端點）均為獨立服務，受其自身條款與隱私權政策約束。我們不控制其可用性、定價、模型行為或資料處理。"
+          ],
+          [
+            "AI 生成內容可能不準確、不完整或不恰當，僅供參考。你有責任自行審核，並對基於此作出的任何決定或行為負責。"
+          ],
+          [
+            "UChat AI 目前免費，未來定價與功能可能調整。本機模型與自行託管端點由你自行設定和運行，我們對此不承擔責任。"
+          ]
+        ]
+      }
     },
     "footer": {
       "copyright": [" FoxTerm."],
@@ -1388,7 +1438,7 @@
       "reqs": [
         {
           "label": ["macOS"],
-          "value": ["需要 macOS 14 或以上版本"]
+          "value": ["需要 macOS 15 或以上版本"]
         },
         {
           "label": ["iOS"],

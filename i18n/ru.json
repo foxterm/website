@@ -82,9 +82,9 @@
     },
     "privacy": {
       "viewport": "width=device-width, initial-scale=1",
-      "title": "Политика конфиденциальности - FoxTerm | Терминальное приложение с приоритетом приватности",
-      "description": "Политика конфиденциальности FoxTerm. Узнайте, как мы защищаем ваши данные: нулевая телеметрия, локальное шифрование, хранение ключей в Apple Secure Enclave и полный суверенитет данных.",
-      "keywords": "FoxTerm конфиденциальность, нулевая телеметрия, приватность терминала, безопасность SSH, защита данных, шифрование Secure Enclave",
+      "title": "Политика конфиденциальности - FoxTerm и UChat AI",
+      "description": "Политика конфиденциальности FoxTerm и UChat AI. Нулевая телеметрия, шифрование на устройстве и правила для AI-провайдеров, API-ключей и локальных моделей.",
+      "keywords": "FoxTerm конфиденциальность, нулевая телеметрия, приватность терминала, безопасность SSH, защита данных, шифрование Secure Enclave, UChat AI",
       "author": "FoxTerm",
       "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
       "googlebot": "index, follow",
@@ -93,8 +93,8 @@
       "og:type": "website",
       "og:locale": "ru_RU",
       "og:locale:alternate": "en_US, zh_CN, zh_TW, ja_JP, de_DE, es_ES, fr_FR, ko_KR, pt_BR",
-      "og:title": "Политика конфиденциальности - FoxTerm",
-      "og:description": "Нулевая телеметрия, локальное шифрование, полный суверенитет данных при управлении серверами.",
+      "og:title": "Политика конфиденциальности - FoxTerm и UChat AI",
+      "og:description": "Политика конфиденциальности FoxTerm и UChat AI. Нулевая телеметрия, шифрование на устройстве и правила для AI-провайдеров, API-ключей и локальных моделей.",
       "og:url": "https://foxterm.app/ru/privacy",
       "og:site_name": "FoxTerm",
       "og:image": "/assets/apple-touch-icon.png",
@@ -102,9 +102,9 @@
     },
     "terms": {
       "viewport": "width=device-width, initial-scale=1",
-      "title": "Условия использования - FoxTerm",
-      "description": "Условия использования FoxTerm. Лицензирование, допустимое использование, условия подписки и отказ от ответственности для клиента SSH/VNC/SFTP FoxTerm.",
-      "keywords": "FoxTerm условия использования, EULA, лицензионное соглашение, условия App Store, условия подписки",
+      "title": "Условия использования - FoxTerm и UChat AI",
+      "description": "Условия использования FoxTerm и UChat AI. Лицензирование, допустимое использование, подписки, ответственность AI-провайдеров и отказ от гарантий.",
+      "keywords": "FoxTerm условия использования, EULA, лицензионное соглашение, условия App Store, условия подписки, UChat AI",
       "author": "FoxTerm",
       "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
       "googlebot": "index, follow",
@@ -113,8 +113,8 @@
       "og:type": "website",
       "og:locale": "ru_RU",
       "og:locale:alternate": "en_US, zh_CN, zh_TW, ja_JP, de_DE, es_ES, fr_FR, ko_KR, pt_BR",
-      "og:title": "Условия использования - FoxTerm",
-      "og:description": "Условия использования и лицензионное соглашение конечного пользователя FoxTerm.",
+      "og:title": "Условия использования - FoxTerm и UChat AI",
+      "og:description": "Условия использования FoxTerm и UChat AI. Лицензирование, допустимое использование, подписки, ответственность AI-провайдеров и отказ от гарантий.",
       "og:url": "https://foxterm.app/ru/terms",
       "og:site_name": "FoxTerm",
       "og:image": "/assets/apple-touch-icon.png",
@@ -146,7 +146,7 @@
       "twitter:description": "Любая модель — одно нативное приложение. Бесплатно в App Store.",
       "twitter:image": "/assets/uchat-ai.png",
       "twitter:image:alt": "Значок приложения UChat AI",
-      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"UChat AI\",\"operatingSystem\":\"macOS 14+, iOS 17+\",\"applicationCategory\":\"UtilitiesApplication\",\"softwareRequirements\":\"Requires macOS 14.0 or later, iOS 17.0 or later.\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"Free for now. All features unlocked.\"},\"description\":\"UChat AI — бесплатное 100% нативное AI-приложение для Mac, iPhone и iPad. Свой API-ключ для OpenAI, Anthropic, Gemini, Grok, Kimi, MiniMax и других — или локальные модели офлайн.\",\"downloadUrl\":\"https://apps.apple.com/us/app/uchat-ai/id6503210454\",\"screenshot\":\"/assets/uchat-ai.png\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}}"
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@type\":\"SoftwareApplication\",\"name\":\"UChat AI\",\"operatingSystem\":\"macOS 15+, iOS 17+\",\"applicationCategory\":\"UtilitiesApplication\",\"softwareRequirements\":\"Requires macOS 15.0 or later, iOS 17.0 or later.\",\"offers\":{\"@type\":\"Offer\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"Free for now. All features unlocked.\"},\"description\":\"UChat AI — бесплатное 100% нативное AI-приложение для Mac, iPhone и iPad. Свой API-ключ для OpenAI, Anthropic, Gemini, Grok, Kimi, MiniMax и других — или локальные модели офлайн.\",\"downloadUrl\":\"https://apps.apple.com/us/app/uchat-ai/id6503210454\",\"screenshot\":\"/assets/uchat-ai.png\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}}"
     }
   },
   "index": {
@@ -948,7 +948,14 @@
     "content": {
       "badge": ["Юридический документ"],
       "title": ["Политика конфиденциальности"],
-      "lede": ["Обновлено: октябрь 2026 г."],
+      "lede": ["Обновлено: ноябрь 2026 г. · Действует для FoxTerm и UChat AI"],
+      "scope": {
+        "title": ["Область действия: FoxTerm и UChat AI"],
+        "body": [
+          "Настоящий документ распространяется на оба приложения, выпускаемые FoxTerm: FoxTerm (терминал и управление серверами) и UChat AI (нативный AI-чат). Далее они именуются «Приложения».",
+          "Положения об отдельных функциях применяются к тому приложению, которое их предоставляет. В приложении ниже приведены дополнительные условия для UChat AI. Политика нулевой телеметрии действует для обоих приложений."
+        ]
+      },
       "commitment": {
         "title": ["Наша позиция: нулевая телеметрия"],
         "body": [
@@ -1085,7 +1092,25 @@
           ],
           "links": [["admin@foxterm.app"]]
         }
-      ]
+      ],
+      "ai": {
+        "title": ["Приложение: положения о конфиденциальности UChat AI"],
+        "body": ["UChat AI уточняет обработку данных следующим образом:"],
+        "items": [
+          [
+            "UChat AI не требует учётной записи. Ваши запросы, переписка, ответы моделей и вложения остаются на устройстве, если вы не отправляете их выбранному вами AI-провайдеру."
+          ],
+          [
+            "Ваши API-ключи хранятся только на устройстве (при возможности — в системной связке ключей) и отправляются напрямую настроенному вами провайдеру. Мы не получаем, не перенаправляем и не храним их."
+          ],
+          [
+            "При использовании облачного провайдера (OpenAI, Anthropic, Google Gemini, Grok, OpenRouter, Together AI, Replicate или любого совместимого эндпоинта) отправленное вами содержимое обрабатывается этим третьим лицом согласно его политике конфиденциальности. Мы не контролируем такую обработку."
+          ],
+          [
+            "Локальные провайдеры (Ollama, LM Studio, встроенный GGUF-движок и Core ML) работают в процессе на устройстве и не передают данные вовне. В UChat AI нет аналитических или отслеживающих SDK."
+          ]
+        ]
+      }
     },
     "footer": {
       "copyright": [" FoxTerm."],
@@ -1133,9 +1158,16 @@
       "badge": ["Юридический документ"],
       "title": ["Условия использования"],
       "lede": [
-        "Обновлено: октябрь 2026 г.",
+        "Обновлено: ноябрь 2026 г. · Действует для FoxTerm и UChat AI",
         "Внимательно прочитайте настоящие Условия использования («Условия») перед использованием приложения FoxTerm («Приложение»), которым управляет FoxTerm («мы»). Ваш доступ к Приложению и его использование обусловлены вашим согласием с настоящими Условиями и их соблюдением. Условия распространяются на всех пользователей и любых лиц, получающих доступ к Приложению или использующих его."
       ],
+      "scope": {
+        "title": ["Область действия: FoxTerm и UChat AI"],
+        "body": [
+          "Настоящий документ распространяется на оба приложения, выпускаемые FoxTerm: FoxTerm (терминал и управление серверами) и UChat AI (нативный AI-чат). Далее они именуются «Приложения».",
+          "Положения об отдельных функциях применяются к тому приложению, которое их предоставляет. В приложении ниже приведены дополнительные условия для UChat AI. Политика нулевой телеметрии действует для обоих приложений."
+        ]
+      },
       "sections": [
         {
           "title": ["1. Предоставление лицензии"],
@@ -1279,7 +1311,25 @@
           "body": ["По любым вопросам об этих Условиях пишите на", "."],
           "links": [["admin@foxterm.app"]]
         }
-      ]
+      ],
+      "ai": {
+        "title": ["Приложение: дополнительные условия UChat AI"],
+        "body": ["Следующие условия применяются только к UChat AI:"],
+        "items": [
+          [
+            "UChat AI — клиент для сторонних AI-сервисов. Вы используете собственный API-ключ или эндпоинт и несёте ответственность за учётную запись, ключи, объём использования и любые сборы выбранного провайдера."
+          ],
+          [
+            "Сторонние провайдеры (OpenAI, Anthropic, Google Gemini, Grok, OpenRouter, Together AI, Replicate и совместимые эндпоинты) — независимые сервисы, регулируемые собственными условиями и политиками конфиденциальности. Мы не контролируем их доступность, цены, поведение моделей или обработку данных."
+          ],
+          [
+            "Сгенерированный AI контент может быть неточным, неполным или неуместным и предоставляется только для справки. Вы отвечаете за его проверку, а также за любые решения или действия на его основе."
+          ],
+          [
+            "Сейчас UChat AI бесплатен, но цены и функции могут измениться в будущем. Локальные модели и собственные эндпоинты настраиваются и используются вами самостоятельно, и мы за них не отвечаем."
+          ]
+        ]
+      }
     },
     "footer": {
       "copyright": [" FoxTerm."],
@@ -1515,7 +1565,7 @@
       "reqs": [
         {
           "label": ["macOS"],
-          "value": ["Требуется macOS 14 или новее"]
+          "value": ["Требуется macOS 15 или новее"]
         },
         {
           "label": ["iOS"],
