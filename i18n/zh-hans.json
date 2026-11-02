@@ -42,9 +42,9 @@
     },
     "about": {
       "viewport": "width=device-width, initial-scale=1",
-      "title": "关于 FoxTerm (橙狐终端) | 尊重你的终端客户端",
-      "description": "FoxTerm (橙狐终端) 是一款原生 macOS 与 iOS 的 SSH、SFTP、VNC 及 Docker 客户端。使用 Swift 和 C 编写。免费下载，Pro 支持订阅或激活码。零遥测。",
-      "keywords": "FoxTerm 关于, SSH 客户端, 终端模拟器, macOS SSH, iOS 终端, Swift SSH 客户端, 原生终端, 安全终端, FoxTerm 故事, 橙狐终端",
+      "title": "关于我们 | FoxTerm 与 UChat AI —— 两款原生应用，同一个标准",
+      "description": "FoxTerm（原生 SSH/SFTP/VNC 客户端）与 UChat AI（原生 AI 聊天应用）背后的故事与工程理念：Swift、零遥测、不套 Web 外壳。",
+      "keywords": "FoxTerm 关于, SSH 客户端, 终端模拟器, macOS SSH, iOS 终端, Swift SSH 客户端, 原生终端, 安全终端, FoxTerm 故事, 橙狐终端, UChat AI",
       "author": "FoxTerm (橙狐终端)",
       "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
       "googlebot": "index, follow",
@@ -53,8 +53,8 @@
       "og:type": "website",
       "og:locale": "zh_CN",
       "og:locale:alternate": "en_US, zh_TW, ja_JP, de_DE, ru_RU, es_ES, fr_FR, ko_KR, pt_BR",
-      "og:title": "关于 FoxTerm (橙狐终端) | 尊重你的终端客户端",
-      "og:description": "原生 macOS 与 iOS SSH 客户端。Swift 与 C 打造。免费下载，Pro 支持订阅或激活码。零遥测。",
+      "og:title": "关于我们 | FoxTerm 与 UChat AI —— 两款原生应用，同一个标准",
+      "og:description": "FoxTerm（原生 SSH/SFTP/VNC 客户端）与 UChat AI（原生 AI 聊天应用）背后的故事与工程理念：Swift、零遥测、不套 Web 外壳。",
       "og:url": "https://foxterm.app/zh-hans/about",
       "og:site_name": "FoxTerm (橙狐终端)",
       "og:image": "/assets/apple-touch-icon.png",
@@ -631,7 +631,7 @@
       "badge": ["SWIFT · C · 绝不妥协"],
       "title": ["软件应该", "快速、私密、经久耐用。"],
       "lede": [
-        "FoxTerm (橙狐终端) 是一款面向 macOS 与 iOS 的原生终端客户端。没有 Electron，没有 Web 包装，没有遥测 —— 只有 Swift 和 C 在做它们最擅长的事。"
+        "两款应用，同一个标准。FoxTerm 是 macOS 与 iOS 上的原生终端客户端，UChat AI 是 Mac、iPhone 与 iPad 上的原生 AI 聊天应用。两者都由 Swift 写成，不用 Electron、不套 Web 外壳、不做遥测。"
       ],
       "sections": [
         {
@@ -718,13 +718,30 @@
           ]
         },
         {
-          "title": ["试试 FoxTerm"],
+          "title": ["两款应用，都试试"],
           "body": [
-            "免费下载即可使用全部功能。Pro 通过 App Store 订阅或激活码解锁无限节点。"
+            "FoxTerm 免费即可使用全部功能，Pro 解锁无限节点；UChat AI 目前免费，所有功能全部开放。"
           ],
-          "links": [["在 App Store 下载"], ["联系我们"]]
+          "links": [["在 App Store 下载"], ["联系我们"], ["了解 UChat AI"]]
         }
-      ]
+      ],
+      "uchat": {
+        "label": ["FOXTERM 的另一款作品"],
+        "title": ["认识 UChat AI"],
+        "tagline": ["你的模型、你的密钥、你的对话，都在你的设备上。"],
+        "body": [
+          "同样的原生执念，催生了第二款应用。UChat AI 用你自己的 API Key 连接已经在用的模型供应商 —— OpenAI、Anthropic、Gemini、Grok、OpenRouter 等等，对话始终属于你。",
+          "也可以彻底不走云端：在设备上运行 Ollama、LM Studio、内置 GGUF 引擎或 Core ML 模型。没有账号，没有我们的中间服务器，也没有分析统计。只有 Swift 按你的方式直接与模型对话。"
+        ],
+        "items": [
+          ["自带 API Key —— 无需账号、无需订阅、没有中间商"],
+          ["云端与本地模型同在一个应用，从 OpenAI 到 Mac 上的一个 GGUF 文件"],
+          ["零遥测：提示词、对话与密钥都不经过我们的服务器"],
+          ["100% 原生 SwiftUI，支持 macOS 15+ 与 iOS 17+"]
+        ],
+        "stats": [["需要账号"], ["遥测数据"], ["原生 Swift"]],
+        "cta": ["了解 UChat AI"]
+      }
     },
     "footer": {
       "copyright": [" FoxTerm (橙狐终端)."],

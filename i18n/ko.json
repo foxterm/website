@@ -42,9 +42,9 @@
     },
     "about": {
       "viewport": "width=device-width, initial-scale=1",
-      "title": "FoxTerm 소개 | 사용자를 존중하는 터미널 클라이언트",
-      "description": "FoxTerm은 네이티브 macOS 및 iOS용 SSH, SFTP, VNC, Docker 클라이언트입니다. Swift와 C로 구축. 무료 다운로드, Pro는 구독 또는 활성화 코드. 텔레메트리 제로.",
-      "keywords": "FoxTerm 소개, SSH 클라이언트, 터미널 에뮬레이터, macOS SSH, iOS 터미널, Swift SSH 클라이언트, 네이티브 터미널, 보안 터미널, FoxTerm 스토리",
+      "title": "소개 | FoxTerm 및 UChat AI —— 두 네이티브 앱, 하나의 기준",
+      "description": "FoxTerm(네이티브 SSH/SFTP/VNC 클라이언트)과 UChat AI(네이티브 AI 채팅 앱) 뒤에 담긴 이야기와 엔지니어링 원칙. Swift, 제로 텔레메트리, 웹 래퍼 없음.",
+      "keywords": "FoxTerm 소개, SSH 클라이언트, 터미널 에뮬레이터, macOS SSH, iOS 터미널, Swift SSH 클라이언트, 네이티브 터미널, 보안 터미널, FoxTerm 스토리, UChat AI",
       "author": "FoxTerm",
       "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
       "googlebot": "index, follow",
@@ -53,8 +53,8 @@
       "og:type": "website",
       "og:locale": "ko_KR",
       "og:locale:alternate": "en_US, zh_CN, zh_TW, ja_JP, de_DE, ru_RU, es_ES, fr_FR, pt_BR",
-      "og:title": "FoxTerm 소개 | 사용자를 존중하는 터미널 클라이언트",
-      "og:description": "네이티브 macOS 및 iOS SSH 클라이언트. Swift와 C로 구축. 무료 다운로드, Pro는 구독 또는 활성화 코드. 텔레메트리 제로.",
+      "og:title": "소개 | FoxTerm 및 UChat AI —— 두 네이티브 앱, 하나의 기준",
+      "og:description": "FoxTerm(네이티브 SSH/SFTP/VNC 클라이언트)과 UChat AI(네이티브 AI 채팅 앱) 뒤에 담긴 이야기와 엔지니어링 원칙. Swift, 제로 텔레메트리, 웹 래퍼 없음.",
       "og:url": "https://foxterm.app/ko/about",
       "og:site_name": "FoxTerm",
       "og:image": "/assets/apple-touch-icon.png",
@@ -653,7 +653,7 @@
       "badge": ["SWIFT · C · 타협 없음"],
       "title": ["소프트웨어는", "빠르고, 프라이빗하고, 오래 가야 합니다."],
       "lede": [
-        "FoxTerm은 macOS와 iOS를 위한 네이티브 터미널 클라이언트입니다. Electron도, Web 래퍼도, 텔레메트리도 없습니다 — Swift와 C가 본연의 역할을 다할 뿐입니다."
+        "두 앱, 하나의 기준. FoxTerm은 macOS와 iOS를 위한 네이티브 터미널 클라이언트이고, UChat AI는 Mac·iPhone·iPad를 위한 네이티브 AI 채팅 앱입니다. 둘 다 Swift로 만들었으며 Electron, 웹 래퍼, 텔레메트리가 없습니다."
       ],
       "sections": [
         {
@@ -742,13 +742,34 @@
           ]
         },
         {
-          "title": ["FoxTerm 사용해 보기"],
+          "title": ["두 앱 모두 사용해 보세요"],
           "body": [
-            "무료 다운로드로 모든 기능 사용 가능. Pro는 App Store 구독 또는 활성화 코드로 노드 제한 해제."
+            "FoxTerm은 모든 기능이 무료이며 Pro가 노드 제한을 해제합니다. UChat AI는 현재 무료로 모든 기능이 열려 있습니다."
           ],
-          "links": [["App Store에서 다운로드"], ["문의하기"]]
+          "links": [
+            ["App Store에서 다운로드"],
+            ["문의하기"],
+            ["UChat AI 살펴보기"]
+          ]
         }
-      ]
+      ],
+      "uchat": {
+        "label": ["FOXTERM의 또 다른 앱"],
+        "title": ["UChat AI를 만나보세요"],
+        "tagline": ["모델도, 키도, 대화도 모두 당신의 기기 안에."],
+        "body": [
+          "네이티브에 대한 같은 집착이 두 번째 앱을 만들었습니다. UChat AI는 이미 사용 중인 모델 프로바이더(OpenAI, Anthropic, Gemini, Grok, OpenRouter 등)에 직접 발급한 API 키로 연결합니다. 대화는 언제나 당신의 것입니다.",
+          "클라우드를 완전히 건너뛸 수도 있습니다. Ollama, LM Studio, 내장 GGUF 엔진, Core ML 모델이 기기에서 실행됩니다. 계정도, 당사의 중계 서버도, 분석도 없습니다. Swift가 당신의 조건대로 모델과 대화할 뿐입니다."
+        ],
+        "items": [
+          ["직접 발급한 API 키 —— 계정·구독·중개인 없이"],
+          ["클라우드와 로컬 모델을 한 앱에서, OpenAI부터 Mac의 GGUF 파일까지"],
+          ["제로 텔레메트리: 프롬프트·대화·키는 당사 서버를 거치지 않습니다"],
+          ["macOS 15+ 및 iOS 17+용 100% 네이티브 SwiftUI"]
+        ],
+        "stats": [["필요한 계정"], ["텔레메트리"], ["네이티브 Swift"]],
+        "cta": ["UChat AI 살펴보기"]
+      }
     },
     "footer": {
       "copyright": [" FoxTerm."],

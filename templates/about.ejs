@@ -21,6 +21,8 @@
     <!-- Navigation -->
     <%- nav %>
 
+    <% const uchatLink = productLinks.find((p) => p.key === "brand.uchatAI.0") || { href: "/uchat" }; %>
+
     <!-- Main Content -->
     <main class="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
       <!-- Hero -->
@@ -284,6 +286,131 @@
         </div>
       </section>
 
+      <!-- UChat AI -->
+      <section class="mb-16">
+        <div
+          class="text-sky-400 font-mono font-bold text-xs mb-6 tracking-widest"
+        >
+          <%= t["content.uchat.label.0"] %>
+        </div>
+
+        <div
+          class="p-6 sm:p-10 rounded-3xl bg-gradient-to-br from-sky-500/10 via-violet-500/5 to-fuchsia-500/10 border border-sky-500/20 backdrop-blur-xl relative overflow-hidden shadow-2xl"
+        >
+          <div
+            class="absolute -right-16 -top-16 w-72 h-72 bg-sky-500/15 blur-[100px] rounded-full pointer-events-none"
+          ></div>
+          <div
+            class="absolute -left-16 -bottom-16 w-72 h-72 bg-fuchsia-500/10 blur-[100px] rounded-full pointer-events-none"
+          ></div>
+
+          <div
+            class="relative z-10 flex flex-col sm:flex-row items-start sm:items-center gap-5 mb-8"
+          >
+            <img
+              src="/assets/uchat-ai.png"
+              alt=""
+              class="w-16 h-16 rounded-2xl ring-1 ring-white/20 shadow-lg shadow-sky-500/20"
+            />
+            <div>
+              <h2
+                class="text-2xl sm:text-3xl font-extrabold ai-gradient-text mb-2"
+              >
+                <%= t["content.uchat.title.0"] %>
+              </h2>
+              <p class="text-sm text-zinc-300">
+                <%= t["content.uchat.tagline.0"] %>
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="relative z-10 space-y-4 text-zinc-300 text-sm sm:text-base leading-relaxed"
+          >
+            <p><%= t["content.uchat.body.0"] %></p>
+            <p><%= t["content.uchat.body.1"] %></p>
+          </div>
+
+          <div class="relative z-10 grid grid-cols-1 sm:grid-cols-2 gap-3 mt-8">
+            <% for (const i of [0, 1, 2, 3]) { %>
+            <div
+              class="flex items-start gap-3 p-4 rounded-2xl bg-zinc-950/40 border border-white/5"
+            >
+              <span
+                class="mt-0.5 flex-shrink-0 w-5 h-5 rounded-md bg-sky-500/15 border border-sky-400/25 flex items-center justify-center text-sky-300 text-[10px] font-bold"
+                >✓</span
+              >
+              <p class="text-xs text-zinc-300 leading-relaxed">
+                <%= t["content.uchat.items." + i + ".0"] %>
+              </p>
+            </div>
+            <% } %>
+          </div>
+
+          <div
+            class="relative z-10 grid grid-cols-3 gap-4 mt-8 pt-8 border-t border-white/10"
+          >
+            <div class="text-center">
+              <div class="text-2xl sm:text-3xl font-extrabold text-white mb-1">
+                0
+              </div>
+              <div
+                class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest"
+              >
+                <%= t["content.uchat.stats.0.0"] %>
+              </div>
+            </div>
+            <div class="text-center">
+              <div class="text-2xl sm:text-3xl font-extrabold text-white mb-1">
+                0
+              </div>
+              <div
+                class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest"
+              >
+                <%= t["content.uchat.stats.1.0"] %>
+              </div>
+            </div>
+            <div class="text-center">
+              <div class="text-2xl sm:text-3xl font-extrabold text-white mb-1">
+                100%
+              </div>
+              <div
+                class="text-[10px] font-mono text-zinc-500 uppercase tracking-widest"
+              >
+                <%= t["content.uchat.stats.2.0"] %>
+              </div>
+            </div>
+          </div>
+
+          <div class="relative z-10 mt-8 text-center">
+            <a
+              href="<%= uchatLink.href %>"
+              class="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-sky-500/15 hover:bg-sky-500/25 border border-sky-400/30 text-sky-200 font-semibold text-sm transition-all duration-300 shadow-[0_0_20px_rgba(56,189,248,0.2)] hover:shadow-[0_0_28px_rgba(56,189,248,0.4)] active:scale-95"
+            >
+              <img
+                src="/assets/uchat-ai.png"
+                alt=""
+                class="w-4 h-4 rounded-full ring-1 ring-white/10"
+              />
+              <span><%= t["content.uchat.cta.0"] %></span>
+              <svg
+                class="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
       <!-- The Developer -->
       <section class="mb-16">
         <div
@@ -386,7 +513,18 @@
               <span><%= t["content.sections.4.links.0.0"] %></span>
             </a>
             <a
-              href="/contact"
+              href="<%= uchatLink.href %>"
+              class="px-6 py-3 rounded-xl bg-sky-500/15 hover:bg-sky-500/25 border border-sky-400/30 text-sky-200 font-semibold text-sm transition-all duration-300 shadow-[0_0_20px_rgba(56,189,248,0.2)] hover:shadow-[0_0_28px_rgba(56,189,248,0.4)] active:scale-95 flex items-center gap-2"
+            >
+              <img
+                src="/assets/uchat-ai.png"
+                alt=""
+                class="w-4 h-4 rounded-full ring-1 ring-white/10"
+              />
+              <span><%= t["content.sections.4.links.2.0"] %></span>
+            </a>
+            <a
+              href="<%= urlPath(lang.dir, '/contact') %>"
               class="px-6 py-3 rounded-xl bg-zinc-800/60 hover:bg-zinc-700/60 border border-zinc-700/50 text-zinc-200 font-semibold text-sm transition-all duration-200 active:scale-95"
             >
               <%= t["content.sections.4.links.1.0"] %>

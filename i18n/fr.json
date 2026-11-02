@@ -42,9 +42,9 @@
     },
     "about": {
       "viewport": "width=device-width, initial-scale=1",
-      "title": "À propos de FoxTerm | Un client terminal qui vous respecte",
-      "description": "FoxTerm est un client natif macOS & iOS pour SSH, SFTP, VNC et Docker. Écrit en Swift et C. Téléchargement gratuit, Pro par abonnement ou code d'activation. Zéro télémétrie.",
-      "keywords": "FoxTerm à propos, client SSH, émulateur de terminal, macOS SSH, terminal iOS, client SSH Swift, terminal natif, terminal sécurisé, histoire FoxTerm",
+      "title": "À propos | FoxTerm & UChat AI — deux apps natives, une même exigence",
+      "description": "L'histoire et les principes d'ingénierie de FoxTerm (client SSH/SFTP/VNC natif) et d'UChat AI (app de chat IA native). Swift, zéro télémétrie, sans wrapper web.",
+      "keywords": "FoxTerm à propos, client SSH, émulateur de terminal, macOS SSH, terminal iOS, client SSH Swift, terminal natif, terminal sécurisé, histoire FoxTerm, UChat AI",
       "author": "FoxTerm",
       "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
       "googlebot": "index, follow",
@@ -53,8 +53,8 @@
       "og:type": "website",
       "og:locale": "fr_FR",
       "og:locale:alternate": "en_US, zh_CN, zh_TW, ja_JP, de_DE, ru_RU, es_ES, ko_KR, pt_BR",
-      "og:title": "À propos de FoxTerm | Un client terminal qui vous respecte",
-      "og:description": "Client SSH natif macOS & iOS. Swift et C. Téléchargement gratuit, Pro par abonnement ou code d'activation. Zéro télémétrie.",
+      "og:title": "À propos | FoxTerm & UChat AI — deux apps natives, une même exigence",
+      "og:description": "L'histoire et les principes d'ingénierie de FoxTerm (client SSH/SFTP/VNC natif) et d'UChat AI (app de chat IA native). Swift, zéro télémétrie, sans wrapper web.",
       "og:url": "https://foxterm.app/fr/about",
       "og:site_name": "FoxTerm",
       "og:image": "/assets/apple-touch-icon.png",
@@ -686,7 +686,7 @@
         "rapide, privé et conçu pour durer."
       ],
       "lede": [
-        "FoxTerm est un client terminal natif pour macOS et iOS. Pas d'Electron, pas de wrappers web, pas de télémétrie — juste Swift et C qui font exactement ce pour quoi ils ont été conçus."
+        "Deux apps, une même exigence. FoxTerm est un client terminal natif pour macOS et iOS ; UChat AI est une app de chat IA native pour Mac, iPhone et iPad. Les deux sont écrites en Swift, sans Electron, ni wrapper web, ni télémétrie."
       ],
       "sections": [
         {
@@ -777,13 +777,40 @@
           ]
         },
         {
-          "title": ["Essayer FoxTerm"],
+          "title": ["Essayez les deux apps"],
           "body": [
-            "Téléchargement gratuit avec toutes les fonctionnalités. Pro lève la limite de nœuds via abonnement App Store ou code d'activation."
+            "FoxTerm est gratuit avec toutes ses fonctions ; Pro lève la limite de nœuds. UChat AI est gratuit pour l'instant, avec toutes les fonctions débloquées."
           ],
-          "links": [["Télécharger sur l'App Store"], ["Nous contacter"]]
+          "links": [
+            ["Télécharger sur l'App Store"],
+            ["Nous contacter"],
+            ["Découvrir UChat AI"]
+          ]
         }
-      ]
+      ],
+      "uchat": {
+        "label": ["ÉGALEMENT PAR FOXTERM"],
+        "title": ["Voici UChat AI"],
+        "tagline": [
+          "Vos modèles, vos clés, vos conversations — sur votre appareil."
+        ],
+        "body": [
+          "La même exigence de natif a donné naissance à une seconde app. UChat AI se connecte aux fournisseurs de modèles que vous utilisez déjà — OpenAI, Anthropic, Gemini, Grok, OpenRouter et d'autres — avec votre propre clé API : la conversation reste la vôtre.",
+          "Ou supprimez totalement le cloud : Ollama, LM Studio, le moteur GGUF intégré et les modèles Core ML tournent sur l'appareil. Aucun compte, aucun serveur intermédiaire chez nous, aucune analyse. Juste Swift qui parle aux modèles, à vos conditions."
+        ],
+        "items": [
+          ["Votre propre clé API — ni compte, ni abonnement, ni intermédiaire"],
+          [
+            "Modèles cloud et locaux dans une seule app, d'OpenAI à un fichier GGUF sur votre Mac"
+          ],
+          [
+            "Zéro télémétrie : prompts, conversations et clés ne passent jamais par nos serveurs"
+          ],
+          ["100 % SwiftUI natif pour macOS 15+ et iOS 17+"]
+        ],
+        "stats": [["Comptes requis"], ["Télémétrie"], ["Swift natif"]],
+        "cta": ["Découvrir UChat AI"]
+      }
     },
     "footer": {
       "copyright": [" FoxTerm."],

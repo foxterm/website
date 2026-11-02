@@ -68,7 +68,7 @@ FoxTerm unifies five workloads in one native client: SSH terminal access, SFTP f
 ## Navigation Directory
 
 - [Homepage](https://foxterm.app/) — features, tech stack, download and licensing overview.
-- [About](https://foxterm.app/about) — engineering philosophy: Swift, C, zero compromise.
+- [About](https://foxterm.app/about) — the story and engineering philosophy behind both apps: FoxTerm (native terminal client) and UChat AI (native AI chat app), built in Swift with zero telemetry.
 - [Privacy Policy](https://foxterm.app/privacy) — shared by FoxTerm and UChat AI: data sovereignty, zero telemetry, plus UChat AI provisions for API keys, AI providers and local models.
 - [Terms of Service](https://foxterm.app/terms) — shared by FoxTerm and UChat AI: usage guidelines, subscriptions, plus UChat AI provisions for third-party AI services and generated output.
 - [Contact & Support](https://foxterm.app/contact) — bug reporting and dedicated support channels.
