@@ -18,21 +18,5 @@
                 <enclosure url="https://github.com/foxterm/FoxTerm/releases/latest/download/FoxTerm20261108230901-20261025013201.delta" sparkle:deltaFrom="20261025013201" length="6195398" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="ovzP6akyQrkQllJVth4z2s9YakEQfjod54aaf/k1zlkEhDQujWIerpV9Qpa8sJZkIoDbnSF7dr17hLYzVRLZDg=="/>
             </sparkle:deltas>
         </item>
-        <item>
-            <title>1.0.17</title>
-            <pubDate>Tue, 27 Oct 2026 23:17:20 +0800</pubDate>
-            <link>https://foxterm.app/</link>
-            <sparkle:version>20261027230901</sparkle:version>
-            <sparkle:shortVersionString>1.0.17</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14</sparkle:minimumSystemVersion>
-            <enclosure url="https://github.com/foxterm/FoxTerm/releases/latest/download/FoxTerm-1.0.17.dmg" length="28953722" type="application/octet-stream" sparkle:edSignature="/IyUPDdaklksPGu8KrlbAiQNPSlqDwMHKxmWXOh90wH3HvAx1ntCBe5+RrRxl3qJrMklK8fWzGNOECIdqCJDAA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://github.com/foxterm/FoxTerm/releases/latest/download/FoxTerm20261027230901-20261026010351.delta" sparkle:deltaFrom="20261026010351" length="1526914" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="/kroVuUOyzDEJ02+aIjIE4dnW+wwQEjLosB9n2xPZdb/acpUgY7UfRqgwrkj2rhxiULYoPdUkkLtpgi3RL9bDQ=="/>
-                <enclosure url="https://github.com/foxterm/FoxTerm/releases/latest/download/FoxTerm20261027230901-20261026010350.delta" sparkle:deltaFrom="20261026010350" length="1715566" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="bderrSSwZRyAH2eYapehekhl7oqVMV2lg+7gjLK58IH29WUXvWlHl0H5cdr4bOl5/i30eVcRAPWEL0ICO4v7CQ=="/>
-                <enclosure url="https://github.com/foxterm/FoxTerm/releases/latest/download/FoxTerm20261027230901-20261026010302.delta" sparkle:deltaFrom="20261026010302" length="2840706" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="DCnRmeOwkJ8e48vPHuCAahGxSgxAKSwmXXeeGCEcDlwm4HmGqPRafuDLERvJ77Qs6Ev0PuGSoLCd0mTHff9aAw=="/>
-                <enclosure url="https://github.com/foxterm/FoxTerm/releases/latest/download/FoxTerm20261027230901-20261025013201.delta" sparkle:deltaFrom="20261025013201" length="3245658" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="CE2rKxLA+5MCMTHrr10Y2BrIsOAz+Z5k4/cd+0eaKQFjYOTeNBJKL6iEVmNIj56GviUci4RDFyM2sQWZrZzzDw=="/>
-                <enclosure url="https://github.com/foxterm/FoxTerm/releases/latest/download/FoxTerm20261027230901-20226102232233.delta" sparkle:deltaFrom="20226102232233" length="3565218" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="976464" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="AFIvAtDbqdeJ7apTDsq3HBrHNYJE4BwrcLam64c2GuhzVB7RU0B5XRrCqSAfvigoTOTbutn74Wd4lBQR6eK6Cg=="/>
-            </sparkle:deltas>
-        </item>
     </channel>
 </rss>
