@@ -15,7 +15,7 @@
     "index": {
       "viewport": "width=device-width, initial-scale=1",
       "title": "FoxTerm - Cliente SSH, VNC, SFTP, Docker y Podman para macOS y iOS | App de Terminal",
-      "description": "FoxTerm es una app de terminal de alto rendimiento y respetuosa con la privacidad para macOS y iOS. SSH ultrarrápido, SFTP, VNC acelerado por Metal, telemetría Linux en tiempo real y gestión visual de Docker/Podman. Cero telemetría. Compra universal.",
+      "description": "FoxTerm es una app de terminal de alto rendimiento y respetuosa con la privacidad para macOS y iOS. SSH ultrarrápido, SFTP, VNC acelerado por Metal, telemetría Linux en tiempo real y gestión visual de Docker/Podman. Cero telemetría. Gratis en iOS.",
       "keywords": "cliente SSH macOS, cliente SFTP Mac, cliente VNC iOS, gestor Docker, gestor Podman, app terminal macOS, cliente SSH iOS, escritorio remoto Mac, herramienta administración de servidores, emulador de terminal Mac, cliente SSH nativo, terminal acelerado Metal",
       "author": "FoxTerm",
       "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
@@ -35,10 +35,10 @@
       "og:image:alt": "FoxTerm - App de terminal nativa para macOS y iOS",
       "twitter:card": "summary_large_image",
       "twitter:title": "FoxTerm - Terminal de nueva generación para macOS y iOS",
-      "twitter:description": "Domina tu infraestructura en la nube con FoxTerm. Compra universal para Mac y iOS. Cero telemetría. Rendimiento nativo.",
+      "twitter:description": "Domina tu infraestructura en la nube con FoxTerm. Pro en Mac, gratis en iPhone y iPad. Cero telemetría. Rendimiento nativo.",
       "twitter:image": "/assets/apple-touch-icon.png",
       "twitter:image:alt": "App de terminal FoxTerm",
-      "jsonld": "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"SoftwareApplication\",\"name\":\"FoxTerm\",\"operatingSystem\":\"macOS 14+, iOS 17+\",\"applicationCategory\":\"DeveloperApplication\",\"applicationSubCategory\":\"TerminalEmulator\",\"softwareRequirements\":\"Requiere macOS 14.0 o posterior, iOS 17.0 o posterior.\",\"offers\":{\"@type\":\"AggregateOffer\",\"priceCurrency\":\"USD\",\"offerCount\":\"3\",\"offers\":[{\"@type\":\"Offer\",\"name\":\"FoxTerm Free\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"Todas las funciones desbloqueadas de forma gratuita; solo se limita el número de nodos (servidores)\"},{\"@type\":\"Offer\",\"name\":\"FoxTerm Pro — Suscripción Mac App Store\",\"category\":\"Subscription\",\"description\":\"Suscripción mensual o anual facturada por Apple; Nodos ilimitados; la Compra universal activa automáticamente la app de iOS\"},{\"@type\":\"Offer\",\"name\":\"FoxTerm Pro — Edición Notarizada (Código de Activación)\",\"category\":\"DirectLicense\",\"description\":\"Compilación directa, firmada y notarizada para macOS desbloqueada mediante un código de activación comprado en pay.foxterm.app; Nodos ilimitados; el código de activación aplica únicamente a la edición notarizada para macOS\"}]},\"description\":\"Aplicación universal de gestión de SSH, VNC, SFTP, Docker y Podman para macOS y iOS, sin telemetría y con rendimiento nativo de Swift/Metal.\",\"downloadUrl\":\"https://apps.apple.com/us/app/foxterm/id6760452891\",\"featureList\":\"Terminal SSH de alto rendimiento, gestor de archivos SFTP, escritorio remoto VNC acelerado por Metal, monitorización de la telemetría del sistema en tiempo real, gestión de contenedores Docker y Podman, Compra universal para macOS y iOS, protección de la privacidad sin telemetría, protección de claves mediante Apple Secure Enclave\",\"screenshot\":\"/assets/og-image.png\",\"softwareVersion\":\"1.2.0\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}},{\"@type\":\"WebSite\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app/es/\",\"inLanguage\":\"es-ES\",\"potentialAction\":{\"@type\":\"SearchAction\",\"target\":\"https://foxterm.app/?q={search_term_string}\",\"query-input\":\"required name=search_term_string\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Inicio\",\"item\":\"https://foxterm.app/es/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Funciones\",\"item\":\"https://foxterm.app/es/#features\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Casos de uso\",\"item\":\"https://foxterm.app/es/#use-cases\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Arquitectura\",\"item\":\"https://foxterm.app/es/#architecture\"},{\"@type\":\"ListItem\",\"position\":5,\"name\":\"Seguridad\",\"item\":\"https://foxterm.app/es/#security\"},{\"@type\":\"ListItem\",\"position\":6,\"name\":\"Precios\",\"item\":\"https://foxterm.app/es/#pricing\"},{\"@type\":\"ListItem\",\"position\":7,\"name\":\"FAQ\",\"item\":\"https://foxterm.app/es/#faq\"},{\"@type\":\"ListItem\",\"position\":8,\"name\":\"Descarga\",\"item\":\"https://foxterm.app/es/#download\"}]},{\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"¿Qué es FoxTerm?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm es una aplicación de administración de servidores todo en uno, centrada en la privacidad y creada de forma nativa para macOS y iOS. Unifica el acceso por terminal SSH de alto rendimiento, la gestión de archivos SFTP, el escritorio remoto VNC acelerado por Metal, la telemetría del sistema Linux y el control visual de contenedores Docker/Podman.\"}},{\"@type\":\"Question\",\"name\":\"¿Cómo funciona la suscripción FoxTerm Pro en Mac y iPhone/iPad?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"La versión gratuita incluye todas las funciones; solo se limita el número de nodos (servidores). La suscripción a FoxTerm Pro elimina ese límite para obtener nodos ilimitados y desbloquea a la vez todos tus dispositivos Apple autorizados (macOS e iOS/iPadOS) bajo un único Apple ID, con sincronización fluida de la configuración a través de tu contenedor iCloud privado.\"}},{\"@type\":\"Question\",\"name\":\"¿Cómo protege FoxTerm las credenciales y claves de servidor?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm opera bajo una política estricta de cero telemetría con cifrado de datos localizado al 100 %. Las credenciales del servidor, las contraseñas y las claves privadas SSH quedan aisladas dentro del Keychain por hardware de Apple y del Secure Enclave. Nunca se recopilan ni se envían registros de conexión ni datos de usuario sensibles a servidores de terceros.\"}},{\"@type\":\"Question\",\"name\":\"¿Puede FoxTerm gestionar contenedores Docker y Podman sin línea de comandos?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Sí. FoxTerm Pro incluye un panel visual integrado para gestionar contenedores, imágenes y volúmenes de Docker y Podman. Es compatible con contenedores Rootless, transmisión de registros en tiempo real e integración de Exec Shell con un clic directamente en la interfaz gráfica.\"}},{\"@type\":\"Question\",\"name\":\"¿En qué se diferencia FoxTerm de los clientes de terminal basados en Electron?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm no es un wrapper de Electron. Está diseñado desde cero con Swift nativo, aceleración por hardware Metal y bibliotecas nativas de C (OpenSSL, libssh, libvncclient), para ofrecer un arranque casi instantáneo, un consumo de recursos muy bajo y una optimización nativa en iOS.\"}},{\"@type\":\"Question\",\"name\":\"¿Qué plataformas y sistemas operativos son compatibles?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm está construido de forma nativa para plataformas Apple: macOS 14.0 o posterior e iOS/iPadOS 17.0 o posterior, incluyendo iPhone y iPad. Una sola Compra universal desbloquea la app en todos los dispositivos. No existe una versión para Windows, Android ni Linux.\"}},{\"@type\":\"Question\",\"name\":\"¿Qué protocolos y métodos de autenticación son compatibles?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm soporta conexiones SSH, SFTP y VNC, y gestiona motores Docker y Podman a través de SSH. Incluye cifrados modernos y tipos de clave como Ed25519, sesiones de terminal con paneles divididos, fragmentos de comandos, transferencias SFTP con arrastrar y soltar, y gestión visual de contenedores, imágenes y volúmenes.\"}},{\"@type\":\"Question\",\"name\":\"¿FoxTerm recopila datos o enruta mis conexiones a través de sus servidores?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"No. FoxTerm se conecta directamente desde tu dispositivo a tus propios servidores y nunca proxyfica tu tráfico. Aplica una política estricta de cero telemetría, sin análisis, seguimiento de actividad ni registros de conexión. Las credenciales y claves se cifran en el dispositivo y quedan aisladas en Apple Keychain y Secure Enclave.\"}},{\"@type\":\"Question\",\"name\":\"¿Cómo obtengo Pro en macOS y cómo funciona la activación en iOS?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Hay dos formas de obtener Pro en macOS. La edición Mac App Store es una suscripción mensual o anual facturada por Apple, gestionada en los ajustes de suscripción de tu Apple ID, con renovaciones y reembolsos gestionados por Apple; esta edición activa tanto macOS como iOS mediante la Compra universal de Apple. La edición notarizada es una compilación directa y firmada para macOS que se desbloquea con un código de activación comprado en pay.foxterm.app; esta edición es exclusivamente para macOS y no incluye la activación de iOS. La app de iOS es gratuita en el App Store y solo se desbloquea automáticamente mediante la edición del App Store.\"}}]}]}"
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"SoftwareApplication\",\"name\":\"FoxTerm\",\"operatingSystem\":\"macOS 14+, iOS 17+\",\"applicationCategory\":\"DeveloperApplication\",\"applicationSubCategory\":\"TerminalEmulator\",\"softwareRequirements\":\"Requiere macOS 14.0 o posterior, iOS 17.0 o posterior.\",\"offers\":{\"@type\":\"AggregateOffer\",\"priceCurrency\":\"USD\",\"offerCount\":\"3\",\"offers\":[{\"@type\":\"Offer\",\"name\":\"FoxTerm Free\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"Todas las funciones desbloqueadas de forma gratuita; solo se limita el número de nodos (servidores)\"},{\"@type\":\"Offer\",\"name\":\"FoxTerm Pro — Suscripción Mac App Store\",\"category\":\"Subscription\",\"description\":\"Suscripción mensual o anual facturada por Apple; nodos ilimitados solo en macOS; la app de iOS es gratuita\"},{\"@type\":\"Offer\",\"name\":\"FoxTerm Pro — Edición Notarizada (Código de Activación)\",\"category\":\"DirectLicense\",\"description\":\"Compilación directa, firmada y notarizada para macOS desbloqueada mediante un código de activación comprado en pay.foxterm.app; Nodos ilimitados; el código de activación aplica únicamente a la edición notarizada para macOS\"}]},\"description\":\"Aplicación universal de gestión de SSH, VNC, SFTP, Docker y Podman para macOS y iOS, sin telemetría y con rendimiento nativo de Swift/Metal.\",\"downloadUrl\":\"https://apps.apple.com/us/app/foxterm/id6760452891\",\"featureList\":\"Terminal SSH de alto rendimiento, gestor de archivos SFTP, escritorio remoto VNC acelerado por Metal, monitorización de la telemetría del sistema en tiempo real, gestión de contenedores Docker y Podman, App de iOS gratis sin límite de nodos, protección de la privacidad sin telemetría, protección de claves mediante Apple Secure Enclave\",\"screenshot\":\"/assets/og-image.png\",\"softwareVersion\":\"1.2.0\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}},{\"@type\":\"WebSite\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app/es/\",\"inLanguage\":\"es-ES\",\"potentialAction\":{\"@type\":\"SearchAction\",\"target\":\"https://foxterm.app/?q={search_term_string}\",\"query-input\":\"required name=search_term_string\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Inicio\",\"item\":\"https://foxterm.app/es/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Funciones\",\"item\":\"https://foxterm.app/es/#features\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Casos de uso\",\"item\":\"https://foxterm.app/es/#use-cases\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"Arquitectura\",\"item\":\"https://foxterm.app/es/#architecture\"},{\"@type\":\"ListItem\",\"position\":5,\"name\":\"Seguridad\",\"item\":\"https://foxterm.app/es/#security\"},{\"@type\":\"ListItem\",\"position\":6,\"name\":\"Precios\",\"item\":\"https://foxterm.app/es/#pricing\"},{\"@type\":\"ListItem\",\"position\":7,\"name\":\"FAQ\",\"item\":\"https://foxterm.app/es/#faq\"},{\"@type\":\"ListItem\",\"position\":8,\"name\":\"Descarga\",\"item\":\"https://foxterm.app/es/#download\"}]},{\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"¿Qué es FoxTerm?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm es una aplicación de administración de servidores todo en uno, centrada en la privacidad y creada de forma nativa para macOS y iOS. Unifica el acceso por terminal SSH de alto rendimiento, la gestión de archivos SFTP, el escritorio remoto VNC acelerado por Metal, la telemetría del sistema Linux y el control visual de contenedores Docker/Podman.\"}},{\"@type\":\"Question\",\"name\":\"¿Cómo funciona la suscripción FoxTerm Pro en Mac y iPhone/iPad?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"La versión gratuita incluye todas las funciones; solo se limita el número de nodos (servidores). La suscripción a FoxTerm Pro elimina ese límite para obtener nodos ilimitados en macOS; la app de iPhone y iPad es totalmente gratis y sin límite de nodos, con sincronización fluida de la configuración a través de tu contenedor iCloud privado.\"}},{\"@type\":\"Question\",\"name\":\"¿Cómo protege FoxTerm las credenciales y claves de servidor?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm opera bajo una política estricta de cero telemetría con cifrado de datos localizado al 100 %. Las credenciales del servidor, las contraseñas y las claves privadas SSH quedan aisladas dentro del Keychain por hardware de Apple y del Secure Enclave. Nunca se recopilan ni se envían registros de conexión ni datos de usuario sensibles a servidores de terceros.\"}},{\"@type\":\"Question\",\"name\":\"¿Puede FoxTerm gestionar contenedores Docker y Podman sin línea de comandos?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Sí. FoxTerm Pro incluye un panel visual integrado para gestionar contenedores, imágenes y volúmenes de Docker y Podman. Es compatible con contenedores Rootless, transmisión de registros en tiempo real e integración de Exec Shell con un clic directamente en la interfaz gráfica.\"}},{\"@type\":\"Question\",\"name\":\"¿En qué se diferencia FoxTerm de los clientes de terminal basados en Electron?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm no es un wrapper de Electron. Está diseñado desde cero con Swift nativo, aceleración por hardware Metal y bibliotecas nativas de C (OpenSSL, libssh, libvncclient), para ofrecer un arranque casi instantáneo, un consumo de recursos muy bajo y una optimización nativa en iOS.\"}},{\"@type\":\"Question\",\"name\":\"¿Qué plataformas y sistemas operativos son compatibles?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm está construido de forma nativa para plataformas Apple: macOS 14.0 o posterior e iOS/iPadOS 17.0 o posterior, incluyendo iPhone y iPad. La app de iPhone y iPad es totalmente gratis y sin límite de nodos; Pro elimina el límite en macOS. No existe una versión para Windows, Android ni Linux.\"}},{\"@type\":\"Question\",\"name\":\"¿Qué protocolos y métodos de autenticación son compatibles?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm soporta conexiones SSH, SFTP y VNC, y gestiona motores Docker y Podman a través de SSH. Incluye cifrados modernos y tipos de clave como Ed25519, sesiones de terminal con paneles divididos, fragmentos de comandos, transferencias SFTP con arrastrar y soltar, y gestión visual de contenedores, imágenes y volúmenes.\"}},{\"@type\":\"Question\",\"name\":\"¿FoxTerm recopila datos o enruta mis conexiones a través de sus servidores?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"No. FoxTerm se conecta directamente desde tu dispositivo a tus propios servidores y nunca proxyfica tu tráfico. Aplica una política estricta de cero telemetría, sin análisis, seguimiento de actividad ni registros de conexión. Las credenciales y claves se cifran en el dispositivo y quedan aisladas en Apple Keychain y Secure Enclave.\"}},{\"@type\":\"Question\",\"name\":\"¿Cómo obtengo Pro en macOS y la app de iOS es gratis?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Hay dos formas de obtener Pro en macOS. La edición Mac App Store es una suscripción mensual o anual facturada por Apple, gestionada en los ajustes de suscripción de tu Apple ID, con renovaciones y reembolsos gestionados por Apple; esta edición desbloquea Pro solo en macOS. La edición notarizada es una compilación directa y firmada para macOS que se desbloquea con un código de activación comprado en pay.foxterm.app; esta edición es exclusivamente para macOS. La app de iPhone y iPad es totalmente gratis en el App Store, con todas las funciones y sin límite de nodos.\"}}]}]}"
     },
     "about": {
       "viewport": "width=device-width, initial-scale=1",
@@ -167,7 +167,7 @@
     },
     "hero": {
       "badge": [
-        "100% Nativo para Plataformas Apple · Cero Telemetría · Universal Purchase"
+        "100% Nativo para Plataformas Apple · Cero Telemetría · Gratis en iOS"
       ],
       "title": ["Domina tu Infraestructura con", "FoxTerm"],
       "tags": [["SSH"], ["VNC"], ["SFTP"], ["Docker"], ["Podman"]],
@@ -177,7 +177,7 @@
       "cta": [
         {
           "alt": "Descargar en el App Store de Apple",
-          "caption": ["Compra universal en App Store"],
+          "caption": ["Gratis en iPhone y iPad"],
           "label": ["Descargar para macOS y iOS"]
         }
       ]
@@ -195,7 +195,9 @@
           "body": ["Telemetría, análisis o rastreadores de terceros"]
         },
         {
-          "body": ["Apple ID desbloquea Mac, iPhone y iPad juntos"]
+          "body": [
+            "en iPhone y iPad — todas las funciones, sin límite de nodos"
+          ]
         }
       ]
     },
@@ -329,9 +331,9 @@
         },
         {
           "badge": ["iOS"],
-          "title": ["Compra universal"],
+          "title": ["Gratis en iOS"],
           "body": [
-            "Una suscripción cubre tanto macOS como iOS/iPadOS; todas las funciones son gratuitas, con solo un límite de nodos — pasa a Pro para nodos ilimitados."
+            "La app de iPhone y iPad es completamente gratis: todas las funciones, sin límite de nodos, sin suscripción ni código de activación. macOS también se descarga gratis; Pro elimina allí el límite de nodos."
           ]
         }
       ]
@@ -411,8 +413,8 @@
             ["✗ Wrapper Electron pesado"]
           ],
           [
-            ["Plataforma universal"],
-            ["✓ macOS + iOS universal"],
+            ["Cobertura de plataformas"],
+            ["✓ macOS + iOS — iOS gratis"],
             ["✗ Escritorio/móvil separados"],
             ["~ Compras separadas"]
           ]
@@ -430,19 +432,19 @@
         "items": [
           ["Todas las funciones de la versión gratuita"],
           ["Nodos ilimitados (servidores) para flotas en crecimiento"],
-          ["Universal en macOS + iOS/iPadOS con un solo Apple ID"],
+          ["Nodos ilimitados en macOS — iOS ya es gratis"],
           ["Todas las futuras mejoras Pro"],
           ["Soporte prioritario, directamente del desarrollador"]
         ],
         "button": ["Ver Cómo Obtener Pro"]
       },
       "lede": [
-        "La versión gratuita incluye todas las capacidades — SSH, SFTP, VNC, telemetría en vivo y contenedores — con solo un límite en el número de nodos. Pro elimina ese límite para flotas más grandes, en todos tus dispositivos."
+        "La versión gratuita incluye todas las capacidades — SSH, SFTP, VNC, telemetría en vivo y contenedores — solo con un límite de nodos en macOS. Pro elimina ese límite; la app de iPhone y iPad es gratis y sin límite."
       ],
       "free": {
         "title": ["Gratis"],
         "tag": ["Sin tarjeta requerida"],
-        "lede": ["Todas las funciones, número limitado de nodos"],
+        "lede": ["Todas las funciones; límite de nodos solo en macOS"],
         "items": [
           [
             "Terminal SSH completo con paneles divididos, pestañas y fragmentos"
@@ -450,7 +452,7 @@
           ["Transferencias SFTP, VNC Metal y telemetría en tiempo real"],
           ["Gestión visual de Docker & Podman"],
           ["Claves Secure Enclave, cero telemetría, sincronización iCloud"],
-          ["Número limitado de nodos (servidores)"]
+          ["Límite de nodos (servidores) solo en macOS"]
         ],
         "button": ["Descargar Gratis"]
       },
@@ -460,7 +462,7 @@
           "title": ["Edición Mac App Store"],
           "items": [
             ["Suscripción mensual o anual, facturada por Apple"],
-            ["Universal Purchase — activa macOS e iOS automáticamente"],
+            ["Desbloquea Pro solo en macOS — iOS no requiere suscripción"],
             [
               "Cancela en cualquier momento; renovaciones y reembolsos gestionados por Apple"
             ]
@@ -483,10 +485,10 @@
         },
         "title": ["Dos formas de desbloquear Pro en macOS"],
         "subtitle": [
-          "La edición del App Store (macOS + iOS) se rige por las políticas de Apple y desbloquea iOS mediante la Compra universal; la edición notarizada es solo para macOS, los códigos de activación no incluyen iOS."
+          "Ambas opciones desbloquean Pro solo en macOS; la app de iPhone y iPad es totalmente gratis en el App Store, con todas las funciones y sin límite de nodos."
         ],
         "footnote": [
-          "La app de iOS es gratuita en el App Store y se desbloquea automáticamente cuando Pro se activa mediante la edición del App Store. Los perfiles de conexión y la configuración se sincronizan entre dispositivos a través de tu contenedor iCloud privado."
+          "La app de iPhone y iPad no requiere desbloqueo. Los perfiles de conexión y la configuración se sincronizan entre Mac e iOS a través de tu contenedor iCloud privado."
         ]
       }
     },
@@ -523,7 +525,7 @@
             " hasta el",
             ", la telemetría en tiempo real y la gestión de",
             ", está completamente desbloqueada. El único límite es el número de",
-            " que puedes administrar. La suscripción a FoxTerm Pro elimina ese límite para obtener nodos ilimitados. La edición del App Store desbloquea tanto macOS como iOS/iPadOS mediante la Compra universal de Apple bajo el mismo Apple ID. La edición notarizada es una versión independiente exclusivamente para macOS. La sincronización cifrada de la configuración se realiza a través de tu contenedor iCloud personal.",
+            " que puedes administrar. La suscripción a FoxTerm Pro elimina ese límite para obtener nodos ilimitados. La app de iPhone y iPad es totalmente gratis y sin límite de nodos. La edición notarizada es una versión independiente exclusivamente para macOS. La sincronización cifrada de la configuración se realiza a través de tu contenedor iCloud personal.",
             "terminal SSH",
             "SFTP",
             "VNC acelerado por Metal",
@@ -556,7 +558,7 @@
         {
           "q": [" ¿Qué plataformas y sistemas operativos son compatibles?"],
           "answer": [
-            "FoxTerm está construido de forma nativa para plataformas Apple: funciona en macOS 14.0 o posterior e iOS/iPadOS 17.0 o posterior, incluyendo iPhone y iPad, con una sola Compra universal que desbloquea todos los dispositivos. No existe una versión para Windows, Android ni Linux — FoxTerm está diseñado exclusivamente para el stack nativo de Apple."
+            "FoxTerm está construido de forma nativa para plataformas Apple: funciona en macOS 14.0 o posterior e iOS/iPadOS 17.0 o posterior, incluyendo iPhone y iPad, con la app de iPhone y iPad totalmente gratis y sin límite de nodos, mientras que Pro elimina el límite en macOS. No existe una versión para Windows, Android ni Linux — FoxTerm está diseñado exclusivamente para el stack nativo de Apple."
           ]
         },
         {
@@ -574,13 +576,11 @@
           ]
         },
         {
-          "q": [
-            " ¿Cómo obtengo Pro en macOS y cómo funciona la activación en iOS?"
-          ],
+          "q": [" ¿Cómo obtengo Pro en macOS y la app de iOS es gratis?"],
           "answer": [
             "Hay dos formas de obtener Pro en macOS. La",
-            " es una suscripción mensual o anual facturada por Apple — puedes gestionarla o cancelarla en los ajustes de suscripción de tu Apple ID, y las renovaciones y reembolsos los gestiona Apple. Esta edición se rige por las políticas de Apple y activa automáticamente tanto macOS como iOS mediante la Compra universal. La",
-            " es una compilación directa y firmada para macOS que se desbloquea con un código de activación comprado en pay.foxterm.app; esta edición es exclusivamente para macOS y el código de activación no incluye la activación de iOS. La app de iOS es gratuita en el App Store y solo se desbloquea automáticamente mediante la edición del App Store.",
+            " es una suscripción mensual o anual facturada por Apple — puedes gestionarla o cancelarla en los ajustes de suscripción de tu Apple ID, y las renovaciones y reembolsos los gestiona Apple. Esta edición se rige por las políticas de Apple y desbloquea Pro solo en macOS. La",
+            " es una compilación directa y firmada para macOS que se desbloquea con un código de activación comprado en pay.foxterm.app; esta edición es exclusivamente para macOS. La app de iPhone y iPad es totalmente gratis en el App Store, con todas las funciones y sin límite de nodos.",
             "edición Mac App Store",
             "edición notarizada"
           ]
@@ -591,7 +591,7 @@
     "download": {
       "title": ["Descarga FoxTerm y Conéctate en Segundos"],
       "subtitle": [
-        "Mac · iPhone · iPad — todas las funciones son gratuitas para empezar, y Pro en la edición del App Store se desbloquea en Mac y dispositivos iOS."
+        "Mac · iPhone · iPad — todas las funciones son gratis; en iOS sin límite de nodos, y en macOS Pro elimina el límite."
       ],
       "buttons": [
         {
@@ -604,7 +604,7 @@
       ],
       "note": [
         "La compilación notarizada está firmada, notarizada y se instala directamente fuera del App Store — desbloquea Pro con un código de activación de",
-        ". Los códigos de activación aplican únicamente a la edición notarizada para macOS; la app de iOS se desbloquea automáticamente solo mediante la edición del App Store.",
+        ". Los códigos de activación aplican únicamente a la edición notarizada para macOS; la app de iPhone y iPad es totalmente gratis, sin suscripción ni código de activación.",
         "pay.foxterm.app"
       ],
       "reqs": [
@@ -618,7 +618,7 @@
         },
         {
           "label": ["Licencia"],
-          "value": ["App Store o código de activación"]
+          "value": ["Pro solo en macOS; iOS gratis"]
         },
         {
           "label": ["Confianza"],
@@ -924,7 +924,7 @@
         {
           "title": ["03 / FACTURACIÓN Y PRO"],
           "body": [
-            "¿Necesitas ayuda con la compra universal de Apple ID o con la verificación del límite de nodos Pro? Indícanos el ID de tu recibo para agilizar la gestión."
+            "¿Necesitas ayuda con la suscripción del App Store o con la verificación del límite de nodos Pro? Indícanos el ID de tu recibo para agilizar la gestión."
           ]
         }
       ]
@@ -1223,16 +1223,16 @@
           ]
         },
         {
-          "title": ["2. Compra universal"],
+          "title": ["2. Suscripción y compra (macOS)"],
           "body": [
-            "FoxTerm es compatible con la compra universal de Apple. Una sola compra o suscripción desbloquea la aplicación completa en todas las plataformas compatibles (macOS e iOS) asociadas a tu Apple ID. Tu suscripción se renovará automáticamente a través de tu cuenta de Apple ID, salvo que la canceles al menos 24 horas antes del final del periodo en curso."
+            "La suscripción Pro de FoxTerm se aplica únicamente a la edición de Mac App Store (macOS). Una sola suscripción desbloquea todas las capacidades Pro en el Mac asociado a tu Apple ID y se renueva automáticamente a través de tu cuenta de Apple ID, salvo que la canceles al menos 24 horas antes del final del periodo. La app de iPhone y iPad es totalmente gratis, con todas las funciones y sin límite de nodos: no requiere suscripción ni código de activación."
           ]
         },
         {
           "title": ["3. Suscripciones Pro y Licencias"],
           "body": [
             "FoxTerm Pro y el nivel gratuito ofrecen un conjunto de funciones idéntico. La única diferencia es el número de nodos (servidores) que puedes administrar: el nivel gratuito limita el número de nodos, mientras que FoxTerm Pro elimina ese límite para obtener nodos ilimitados. Puedes mejorar o cancelar en cualquier momento sin que se vean afectados tus perfiles de conexión guardados.",
-            "Pro también está disponible para la edición notarizada de macOS, que se distribuye directamente en lugar de a través del App Store. Esta edición se desbloquea con un código de activación (clave de licencia) vendido en pay.foxterm.app. Un código de activación otorga las mismas capacidades Pro que la suscripción y se aplica únicamente a la edición notarizada para macOS; no incluye la activación de iOS. Las licencias de código de activación son proporcionadas directamente por FoxTerm; cualquier término específico de compra mostrado en el momento de la venta (como la duración de la licencia y el alcance del dispositivo) se aplica además de estos Términos."
+            "Pro también está disponible para la edición notarizada de macOS, que se distribuye directamente en lugar de a través del App Store. Esta edición se desbloquea con un código de activación (clave de licencia) vendido en pay.foxterm.app. Un código de activación otorga las mismas capacidades Pro que la suscripción y se aplica únicamente a la edición notarizada para macOS; la app de iPhone y iPad es gratuita y no requiere código de activación. Las licencias de código de activación son proporcionadas directamente por FoxTerm; cualquier término específico de compra mostrado en el momento de la venta (como la duración de la licencia y el alcance del dispositivo) se aplica además de estos Términos."
           ],
           "items": [
             [

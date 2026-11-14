@@ -15,7 +15,7 @@
     "index": {
       "viewport": "width=device-width, initial-scale=1",
       "title": "FoxTerm - macOS 與 iOS 上的 SSH、VNC、SFTP、Docker 與 Podman 終端機用戶端 | 終端機應用程式",
-      "description": "FoxTerm 是一款隱私優先、高效能的 macOS 與 iOS 原生終端機應用程式。內建極速 SSH、SFTP、Metal 加速 VNC、即時 Linux 系統監控，以及視覺化 Docker/Podman 管理。零遙測，支援 Universal Purchase。",
+      "description": "FoxTerm 是一款隱私優先、高效能的 macOS 與 iOS 原生終端機應用程式。內建極速 SSH、SFTP、Metal 加速 VNC、即時 Linux 系統監控，以及視覺化 Docker/Podman 管理。零遙測，iOS 版完全免費。",
       "keywords": "macOS SSH 用戶端, Mac SFTP 用戶端, iOS VNC 用戶端, Docker 管理, Podman 管理, macOS 終端機應用程式, iOS SSH 用戶端, Mac 遠端桌面, 伺服器管理工具, Mac 終端機模擬器, 原生 SSH 用戶端, Metal 加速終端機",
       "author": "FoxTerm",
       "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
@@ -35,10 +35,10 @@
       "og:image:alt": "FoxTerm - macOS 與 iOS 原生終端機應用程式",
       "twitter:card": "summary_large_image",
       "twitter:title": "FoxTerm - macOS 與 iOS 新一代終端機",
-      "twitter:description": "用 FoxTerm 掌控你的雲端基礎建設。Mac 與 iOS 一次購買通用，零遙測，原生效能。",
+      "twitter:description": "用 FoxTerm 掌控你的雲端基礎建設。Mac 版可選 Pro，iOS 版完全免費，零遙測，原生效能。",
       "twitter:image": "/assets/apple-touch-icon.png",
       "twitter:image:alt": "FoxTerm 終端機應用程式",
-      "jsonld": "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"SoftwareApplication\",\"name\":\"FoxTerm\",\"operatingSystem\":\"macOS 14+, iOS 17+\",\"applicationCategory\":\"DeveloperApplication\",\"applicationSubCategory\":\"TerminalEmulator\",\"softwareRequirements\":\"需要 macOS 14.0 或以上版本、iOS 17.0 或以上版本。\",\"offers\":{\"@type\":\"AggregateOffer\",\"priceCurrency\":\"USD\",\"offerCount\":\"3\",\"offers\":[{\"@type\":\"Offer\",\"name\":\"FoxTerm Free\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"全部功能免費開放，僅對節點（伺服器）數量設上限\"},{\"@type\":\"Offer\",\"name\":\"FoxTerm Pro 訂閱\",\"category\":\"Subscription\",\"description\":\"節點數量不限，功能集與免費版完全一致\"},{\"@type\":\"Offer\",\"name\":\"FoxTerm Pro — 公證版（啟用碼）\",\"category\":\"DirectLicense\",\"description\":\"直接散佈的已簽署、已公證 macOS 建構，透過在 pay.foxterm.app 購買的啟用碼解鎖；節點數量不限；啟用碼僅適用於 macOS 公證版\"}]},\"description\":\"為 macOS 與 iOS 打造的通用 SSH、VNC、SFTP、Docker 與 Podman 管理應用程式，零遙測，原生 Swift/Metal 效能。\",\"downloadUrl\":\"https://apps.apple.com/us/app/foxterm/id6760452891\",\"featureList\":\"高效能 SSH 終端機, SFTP 檔案管理員, Metal 加速 VNC 遠端桌面, 即時系統監控, Docker 與 Podman 容器管理, macOS 與 iOS Universal Purchase, 零遙測隱私保護, Apple Secure Enclave 金鑰保護\",\"screenshot\":\"/assets/og-image.png\",\"softwareVersion\":\"1.2.0\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}},{\"@type\":\"WebSite\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app/zh-hant/\",\"inLanguage\":\"zh-Hant\",\"potentialAction\":{\"@type\":\"SearchAction\",\"target\":\"https://foxterm.app/?q={search_term_string}\",\"query-input\":\"required name=search_term_string\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"首頁\",\"item\":\"https://foxterm.app/zh-hant/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"功能\",\"item\":\"https://foxterm.app/zh-hant/#features\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"使用情境\",\"item\":\"https://foxterm.app/zh-hant/#use-cases\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"架構\",\"item\":\"https://foxterm.app/zh-hant/#architecture\"},{\"@type\":\"ListItem\",\"position\":5,\"name\":\"安全\",\"item\":\"https://foxterm.app/zh-hant/#security\"},{\"@type\":\"ListItem\",\"position\":6,\"name\":\"定價\",\"item\":\"https://foxterm.app/zh-hant/#pricing\"},{\"@type\":\"ListItem\",\"position\":7,\"name\":\"常見問題\",\"item\":\"https://foxterm.app/zh-hant/#faq\"},{\"@type\":\"ListItem\",\"position\":8,\"name\":\"下載\",\"item\":\"https://foxterm.app/zh-hant/#download\"}]},{\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"FoxTerm 是什麼？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm 是一款為 macOS 與 iOS 原生打造的一體化、隱私優先的伺服器管理應用程式。它將高效能 SSH 終端機、SFTP 檔案管理、Metal 加速 VNC 遠端桌面、Linux 系統監控以及視覺化 Docker/Podman 容器控制整合在一起。\"}},{\"@type\":\"Question\",\"name\":\"FoxTerm Pro 訂閱如何在 Mac 與 iPhone/iPad 之間通用？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"免費版包含全部功能，僅對節點（伺服器）數量設上限。訂閱 FoxTerm Pro 即可解除該限制、管理無限節點，並在同一 Apple ID 下同時解鎖你授權的所有 Apple 裝置（macOS 與 iOS/iPadOS），設定透過你的私有 iCloud Container 無縫同步。\"}},{\"@type\":\"Question\",\"name\":\"FoxTerm 如何保護伺服器憑證與金鑰？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm 嚴格執行零遙測政策，資料 100% 本地加密。伺服器憑證、密碼與 SSH 私鑰被隔離在 Apple 硬體 Keychain 與 Secure Enclave 內部，絕不收集、代理或向第三方伺服器傳送任何連線紀錄或敏感使用者資料。\"}},{\"@type\":\"Question\",\"name\":\"FoxTerm 可以不用命令列管理 Docker 與 Podman 容器嗎？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"可以。FoxTerm Pro 內建視覺化面板，用於管理 Docker 與 Podman 的容器、映像檔與磁碟區。它支援 Rootless 容器、即時日誌串流，並可在圖形介面內一鍵開啟 Exec Shell。\"}},{\"@type\":\"Question\",\"name\":\"FoxTerm 與基於 Electron 的終端機用戶端有什麼不同？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm 不是 Electron 外殼。它從零開始使用原生 Swift、Metal 硬體加速以及 C 語言原生函式庫（OpenSSL、libssh、libvncclient）打造，啟動近乎瞬時、資源占用極低，並針對 iOS 做了原生最佳化。\"}},{\"@type\":\"Question\",\"name\":\"支援哪些平台與作業系統？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm 為 Apple 平台原生打造：運行於 macOS 14.0 及以上、iOS/iPadOS 17.0 及以上，覆蓋 iPhone 與 iPad。一次 Universal Purchase 解鎖所有裝置。沒有 Windows、Android 或 Linux 桌面版本。\"}},{\"@type\":\"Question\",\"name\":\"支援哪些協定與認證方式？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm 支援 SSH、SFTP 與 VNC 連線，並透過 SSH 管理 Docker 與 Podman 引擎。它支援現代加密演算法與 Ed25519 等金鑰類型、分割畫面終端機工作階段、命令片段、拖曳式 SFTP 傳輸，以及容器、映像檔與磁碟區的視覺化管理。\"}},{\"@type\":\"Question\",\"name\":\"FoxTerm 會收集資料或透過它的伺服器中繼我的連線嗎？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"不會。FoxTerm 從你的裝置直連你自己的伺服器，絕不代理流量。它嚴格執行零遙測政策，沒有分析、活動追蹤或連線日誌。憑證與金鑰在裝置端加密，並隔離在 Apple Keychain 與 Secure Enclave 內部。\"}},{\"@type\":\"Question\",\"name\":\"如何在 macOS 上取得 Pro，iOS 又如何啟用？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"在 macOS 上取得 Pro 有兩種方式。Mac App Store 版是由 Apple 按月或按年扣費的訂閱，可在 Apple ID 訂閱設定中管理或取消，續訂與退款由 Apple 處理；此版本透過 Universal Purchase 同時解鎖 iOS，iOS app 受 Apple 政策約束。公證版是直接散佈的已簽署 macOS 建構，透過在 pay.foxterm.app 購買的啟用碼解鎖，僅適用於 macOS，不包含 iOS 啟用。iOS app 本身可在 App Store 免費下載，僅在透過 App Store 版啟用 Pro 後才會自動解鎖。\"}}]}]}"
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"SoftwareApplication\",\"name\":\"FoxTerm\",\"operatingSystem\":\"macOS 14+, iOS 17+\",\"applicationCategory\":\"DeveloperApplication\",\"applicationSubCategory\":\"TerminalEmulator\",\"softwareRequirements\":\"需要 macOS 14.0 或以上版本、iOS 17.0 或以上版本。\",\"offers\":{\"@type\":\"AggregateOffer\",\"priceCurrency\":\"USD\",\"offerCount\":\"3\",\"offers\":[{\"@type\":\"Offer\",\"name\":\"FoxTerm Free\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"全部功能免費開放，僅對節點（伺服器）數量設上限\"},{\"@type\":\"Offer\",\"name\":\"FoxTerm Pro 訂閱\",\"category\":\"Subscription\",\"description\":\"節點數量不限，功能集與免費版完全一致\"},{\"@type\":\"Offer\",\"name\":\"FoxTerm Pro — 公證版（啟用碼）\",\"category\":\"DirectLicense\",\"description\":\"直接散佈的已簽署、已公證 macOS 建構，透過在 pay.foxterm.app 購買的啟用碼解鎖；節點數量不限；啟用碼僅適用於 macOS 公證版\"}]},\"description\":\"為 macOS 與 iOS 打造的通用 SSH、VNC、SFTP、Docker 與 Podman 管理應用程式，零遙測，原生 Swift/Metal 效能。\",\"downloadUrl\":\"https://apps.apple.com/us/app/foxterm/id6760452891\",\"featureList\":\"高效能 SSH 終端機, SFTP 檔案管理員, Metal 加速 VNC 遠端桌面, 即時系統監控, Docker 與 Podman 容器管理, iOS 版完全免費、節點無上限, 零遙測隱私保護, Apple Secure Enclave 金鑰保護\",\"screenshot\":\"/assets/og-image.png\",\"softwareVersion\":\"1.2.0\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}},{\"@type\":\"WebSite\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app/zh-hant/\",\"inLanguage\":\"zh-Hant\",\"potentialAction\":{\"@type\":\"SearchAction\",\"target\":\"https://foxterm.app/?q={search_term_string}\",\"query-input\":\"required name=search_term_string\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"首頁\",\"item\":\"https://foxterm.app/zh-hant/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"功能\",\"item\":\"https://foxterm.app/zh-hant/#features\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"使用情境\",\"item\":\"https://foxterm.app/zh-hant/#use-cases\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"架構\",\"item\":\"https://foxterm.app/zh-hant/#architecture\"},{\"@type\":\"ListItem\",\"position\":5,\"name\":\"安全\",\"item\":\"https://foxterm.app/zh-hant/#security\"},{\"@type\":\"ListItem\",\"position\":6,\"name\":\"定價\",\"item\":\"https://foxterm.app/zh-hant/#pricing\"},{\"@type\":\"ListItem\",\"position\":7,\"name\":\"常見問題\",\"item\":\"https://foxterm.app/zh-hant/#faq\"},{\"@type\":\"ListItem\",\"position\":8,\"name\":\"下載\",\"item\":\"https://foxterm.app/zh-hant/#download\"}]},{\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"FoxTerm 是什麼？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm 是一款為 macOS 與 iOS 原生打造的一體化、隱私優先的伺服器管理應用程式。它將高效能 SSH 終端機、SFTP 檔案管理、Metal 加速 VNC 遠端桌面、Linux 系統監控以及視覺化 Docker/Podman 容器控制整合在一起。\"}},{\"@type\":\"Question\",\"name\":\"FoxTerm Pro 訂閱在 Mac 與 iPhone/iPad 上如何生效？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"免費版包含全部功能，僅對節點（伺服器）數量設上限。訂閱 FoxTerm Pro 即可在 Mac 上解除該限制、管理無限節點；iPhone 與 iPad 版完全免費、不限節點，無需訂閱。設定透過你的私有 iCloud Container 在裝置之間無縫同步。\"}},{\"@type\":\"Question\",\"name\":\"FoxTerm 如何保護伺服器憑證與金鑰？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm 嚴格執行零遙測政策，資料 100% 本地加密。伺服器憑證、密碼與 SSH 私鑰被隔離在 Apple 硬體 Keychain 與 Secure Enclave 內部，絕不收集、代理或向第三方伺服器傳送任何連線紀錄或敏感使用者資料。\"}},{\"@type\":\"Question\",\"name\":\"FoxTerm 可以不用命令列管理 Docker 與 Podman 容器嗎？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"可以。FoxTerm Pro 內建視覺化面板，用於管理 Docker 與 Podman 的容器、映像檔與磁碟區。它支援 Rootless 容器、即時日誌串流，並可在圖形介面內一鍵開啟 Exec Shell。\"}},{\"@type\":\"Question\",\"name\":\"FoxTerm 與基於 Electron 的終端機用戶端有什麼不同？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm 不是 Electron 外殼。它從零開始使用原生 Swift、Metal 硬體加速以及 C 語言原生函式庫（OpenSSL、libssh、libvncclient）打造，啟動近乎瞬時、資源占用極低，並針對 iOS 做了原生最佳化。\"}},{\"@type\":\"Question\",\"name\":\"支援哪些平台與作業系統？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm 為 Apple 平台原生打造：運行於 macOS 14.0 及以上、iOS/iPadOS 17.0 及以上，覆蓋 iPhone 與 iPad。iOS 版完全免費、不限節點，Mac 版可選升級 Pro。沒有 Windows、Android 或 Linux 桌面版本。\"}},{\"@type\":\"Question\",\"name\":\"支援哪些協定與認證方式？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm 支援 SSH、SFTP 與 VNC 連線，並透過 SSH 管理 Docker 與 Podman 引擎。它支援現代加密演算法與 Ed25519 等金鑰類型、分割畫面終端機工作階段、命令片段、拖曳式 SFTP 傳輸，以及容器、映像檔與磁碟區的視覺化管理。\"}},{\"@type\":\"Question\",\"name\":\"FoxTerm 會收集資料或透過它的伺服器中繼我的連線嗎？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"不會。FoxTerm 從你的裝置直連你自己的伺服器，絕不代理流量。它嚴格執行零遙測政策，沒有分析、活動追蹤或連線日誌。憑證與金鑰在裝置端加密，並隔離在 Apple Keychain 與 Secure Enclave 內部。\"}},{\"@type\":\"Question\",\"name\":\"如何在 macOS 上取得 Pro？iOS 需要付費嗎？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"在 macOS 上取得 Pro 有兩種方式。Mac App Store 版是由 Apple 按月或按年扣費的訂閱，可在 Apple ID 訂閱設定中管理或取消，續訂與退款由 Apple 處理；此版本僅解鎖 macOS 版 Pro；iPhone 與 iPad 版完全免費。公證版是直接散佈的已簽署 macOS 建構，透過在 pay.foxterm.app 購買的啟用碼解鎖，僅適用於 macOS。iOS app 本身可在 App Store 免費下載，全部功能且不限節點，無需訂閱或啟用碼。\"}}]}]}"
     },
     "about": {
       "viewport": "width=device-width, initial-scale=1",
@@ -166,7 +166,7 @@
       "getApp": ["取得 App"]
     },
     "hero": {
-      "badge": ["100% 原生 Apple 平台 · 零遙測 · Universal Purchase"],
+      "badge": ["100% 原生 Apple 平台 · 零遙測 · iOS 完全免費"],
       "title": ["用", "FoxTerm", " 從容掌控你的基礎建設"],
       "tags": [["SSH"], ["VNC"], ["SFTP"], ["Docker"], ["Podman"]],
       "subtitle": [
@@ -175,7 +175,7 @@
       "cta": [
         {
           "alt": "在 Apple App Store 下載",
-          "caption": ["App Store 通用購買"],
+          "caption": ["iPhone 與 iPad 免費"],
           "label": ["下載 macOS 與 iOS 版本"]
         }
       ]
@@ -193,7 +193,7 @@
           "body": ["遙測、分析與第三方追蹤程式"]
         },
         {
-          "body": ["一個 Apple ID 同時解鎖 Mac、iPhone 與 iPad"]
+          "body": ["iPhone 與 iPad 版——全部功能、不限節點"]
         }
       ]
     },
@@ -308,9 +308,9 @@
         },
         {
           "badge": ["iOS"],
-          "title": ["全平台通用"],
+          "title": ["iOS 完全免費"],
           "body": [
-            "一次訂閱同時涵蓋 macOS 與 iOS/iPadOS；全部功能免費，僅節點數受限——升級 Pro 即可解鎖無限節點。"
+            "iPhone 與 iPad 版完全免費：全部功能、不限節點數，無需訂閱或啟用碼。Mac 版同樣免費下載，升級 Pro 即可解除節點上限。"
           ]
         }
       ]
@@ -388,8 +388,8 @@
             ["✗ Electron 重型外殼"]
           ],
           [
-            ["通用平台"],
-            ["✓ macOS + iOS 通用"],
+            ["平台覆蓋"],
+            ["✓ macOS + iOS · iOS 免費"],
             ["✗ 桌面/行動分離"],
             ["~ 分別購買"]
           ]
@@ -407,25 +407,25 @@
         "items": [
           ["免費版建構中的全部功能"],
           ["為不斷擴大的機群提供無限節點 （伺服器）"],
-          ["一個 Apple ID，通用 macOS + iOS/iPadOS"],
+          ["僅解鎖 macOS 無限節點——iOS 版本就免費"],
           ["未來所有 Pro 增強功能"],
           ["由開發者直接提供的 優先支援"]
         ],
         "button": ["See How to Get Pro"]
       },
       "lede": [
-        "免費版包含全部能力——SSH、SFTP、VNC、即時遙測與容器——僅對節點數量設上限。Pro 為更大的機群解除該限制，並覆蓋你所有裝置。"
+        "免費版包含全部能力——SSH、SFTP、VNC、即時遙測與容器——Mac 版僅對節點數量設上限。Pro 為更大的機群解除該限制；iPhone 與 iPad 版完全免費、不限節點。"
       ],
       "free": {
         "title": ["免費版"],
         "tag": ["不需綁定卡片"],
-        "lede": ["全部功能，節點數量設上限"],
+        "lede": ["全部功能，Mac 版節點數量設上限"],
         "items": [
           ["完整 SSH 終端機， 支援分割畫面、分頁與指令片段"],
           ["SFTP 傳輸、 Metal VNC 與即時遙測"],
           ["視覺化 Docker 與 Podman 管理"],
           ["Secure Enclave 金鑰、零遙測、iCloud 同步"],
-          ["節點（伺服器） 數量設上限"]
+          ["Mac 版節點（伺服器）數量設上限"]
         ],
         "button": ["免費下載"]
       },
@@ -435,7 +435,7 @@
           "title": ["Mac App Store Edition"],
           "items": [
             ["由 Apple 按月或按年扣費的訂閱"],
-            ["Universal Purchase——自動啟用 macOS 與 iOS"],
+            ["僅解鎖 macOS 版 Pro；iOS 無需訂閱"],
             ["隨時取消； 續訂與退款由 Apple 處理"]
           ],
           "button": ["View on the App Store"]
@@ -452,10 +452,10 @@
         },
         "title": ["在 macOS 上解鎖 Pro 的兩種方式"],
         "subtitle": [
-          "App Store 版（macOS + iOS）受蘋果規則約束，透過 Universal Purchase 同步解鎖；公證版僅適用於 macOS，啟用碼不附帶 iOS。"
+          "兩種渠道都只解鎖 macOS 版 Pro；iPhone 與 iPad 版在 App Store 完全免費，全部功能且不限節點，無需訂閱或啟用碼。"
         ],
         "footnote": [
-          "iOS 應用可在 App Store 免費下載，透過 App Store 版啟用 Pro 後自動解鎖。連線設定與組態透過你的私有 iCloud 容器跨裝置同步。"
+          "iPhone 與 iPad 版無需解鎖即可完整使用。連線設定與組態透過你的私有 iCloud 容器在 Mac 與 iOS 裝置之間同步。"
         ]
       }
     },
@@ -488,7 +488,7 @@
             " 到",
             "、即時監控以及",
             " 管理，全部功能完整開放。唯一的限制是可管理的",
-            "數量。App Store 版透過 Universal Purchase 同時解鎖 macOS 與 iOS/iPadOS；公證版為獨立 macOS 版本，啟用碼僅適用於 macOS。設定透過你的私有 iCloud Container 加密同步。",
+            "數量。iPhone 與 iPad 版完全免費、不限節點，無需訂閱或啟用碼；公證版為獨立 macOS 版本，啟用碼僅適用於 macOS。設定透過你的私有 iCloud Container 加密同步。",
             "SSH 終端機",
             "SFTP",
             "Metal 加速 VNC",
@@ -517,7 +517,7 @@
         {
           "q": [" 支援哪些平台與作業系統？"],
           "answer": [
-            "FoxTerm 為 Apple 平台原生打造：執行於 macOS 14.0 及以上、iOS/iPadOS 17.0 及以上，涵蓋 iPhone 與 iPad，一次 Universal Purchase 解鎖所有裝置。沒有 Windows、Android 或 Linux 桌面版本——FoxTerm 僅為 Apple 原生技術棧而設計。"
+            "FoxTerm 為 Apple 平台原生打造：執行於 macOS 14.0 及以上、iOS/iPadOS 17.0 及以上，涵蓋 iPhone 與 iPad，其中 iOS 版完全免費、不限節點，Mac 版可選升級 Pro。沒有 Windows、Android 或 Linux 桌面版本——FoxTerm 僅為 Apple 原生技術棧而設計。"
           ]
         },
         {
@@ -533,11 +533,11 @@
           ]
         },
         {
-          "q": [" 如何在 macOS 上取得 Pro，iOS 又如何啟用？"],
+          "q": [" 如何在 macOS 上取得 Pro？iOS 需要付費嗎？"],
           "answer": [
             "在 macOS 上取得 Pro 有兩種方式。",
-            "是由 Apple 按月或按年扣費的訂閱——可在 Apple ID 訂閱設定中管理或取消，續訂與退款由 Apple 處理；此版本透過 Universal Purchase 同時解鎖 iOS，iOS app 受 Apple 政策約束。",
-            " 是直接散佈的已簽署 macOS 建構，透過在 pay.foxterm.app 購買的啟用碼解鎖，僅適用於 macOS，啟用碼不包含 iOS 啟用。iOS app 本身可在 App Store 免費下載，僅在透過 App Store 版啟用 Pro 後才會自動解鎖。",
+            "是由 Apple 按月或按年扣費的訂閱——可在 Apple ID 訂閱設定中管理或取消，續訂與退款由 Apple 處理；此版本僅解鎖 macOS 版 Pro，iPhone 與 iPad 版完全免費。",
+            " 是直接散佈的已簽署 macOS 建構，透過在 pay.foxterm.app 購買的啟用碼解鎖，僅適用於 macOS。iPhone 與 iPad 版可在 App Store 免費下載，無需訂閱或啟用碼。",
             "Mac App Store 版",
             "公證版"
           ]
@@ -548,7 +548,7 @@
     "download": {
       "title": ["下載 FoxTerm"],
       "subtitle": [
-        "Mac · iPhone · iPad——所有功能免費開始使用，App Store 版 Pro 可在 Mac 與 iOS 設備上解鎖。"
+        "Mac · iPhone · iPad——全部功能免費；iPhone 與 iPad 版不限節點，Mac 版可選升級 Pro 解除上限。"
       ],
       "buttons": [
         {
@@ -561,7 +561,7 @@
       ],
       "note": [
         "公證版建構已簽署、已公證，可在 App Store 之外直接安裝——前往",
-        " 取得啟用碼解鎖 Pro。啟用碼僅適用於 macOS 公證版，iOS 應用僅在透過 App Store 版啟用後自動解鎖。",
+        " 取得啟用碼解鎖 Mac 版 Pro。啟用碼僅適用於 macOS 公證版；iPhone 與 iPad 版完全免費，無需訂閱或啟用碼。",
         "pay.foxterm.app"
       ],
       "reqs": [
@@ -575,7 +575,7 @@
         },
         {
           "label": ["Licensing"],
-          "value": ["App Store 或啟用碼授權"]
+          "value": ["Pro 僅適用於 macOS；iOS 免費"]
         },
         {
           "label": ["Trust"],
@@ -862,7 +862,7 @@
         {
           "title": ["03 / 帳單與 Pro"],
           "body": [
-            "需要 Apple ID Universal Purchase 或 Pro 節點額度驗證方面的協助？來信附上收據 ID 會更有效率。"
+            "需要 App Store 訂閱或 Pro 節點額度驗證方面的協助？來信附上收據 ID 會更有效率。"
           ]
         }
       ]
@@ -1123,16 +1123,16 @@
           ]
         },
         {
-          "title": ["2. Universal Purchase"],
+          "title": ["2. 訂閱與購買（macOS）"],
           "body": [
-            "FoxTerm 支援 Apple Universal Purchase。一次購買或訂閱即可解鎖與你 Apple ID 關聯的所有相容平台（macOS 與 iOS）上的完整應用程式。你的訂閱將透過 Apple ID 帳號自動續訂，除非你在當前週期結束前至少 24 小時取消。"
+            "FoxTerm 的 Pro 訂閱僅適用於 Mac App Store 版（macOS）。一次訂閱即可在你 Apple ID 關聯的 Mac 上解鎖全部 Pro 能力。你的訂閱將透過 Apple ID 帳號自動續訂，除非你在當前週期結束前至少 24 小時取消。iPhone 與 iPad 版完全免費，包含全部功能且不限制節點數量，無需訂閱或啟用碼。"
           ]
         },
         {
           "title": ["3. Pro 訂閱與許可"],
           "body": [
             "FoxTerm Pro 與免費版提供完全相同的功能集。唯一差別在於可管理的節點（伺服器）數量：免費版限制節點數，FoxTerm Pro 解除該限制、節點數量不限。你可隨時升級或取消，已儲存的連線設定檔不受影響。",
-            "公證版 macOS 同樣提供 Pro：該版本直接散佈，不經過 App Store。它透過在 pay.foxterm.app 銷售的啟用碼（許可證金鑰）解鎖。啟用碼授予與訂閱相同的 Pro 能力，僅適用於 macOS 公證版，不附帶 iOS 啟用。啟用碼許可由 FoxTerm 直接提供；銷售時展示的任何購買專屬條款（如許可期限與裝置範圍）在本條款之外一併適用。"
+            "公證版 macOS 同樣提供 Pro：該版本直接散佈，不經過 App Store。它透過在 pay.foxterm.app 銷售的啟用碼（許可證金鑰）解鎖。啟用碼授予與訂閱相同的 Pro 能力，僅適用於 macOS 公證版；iPhone 與 iPad 版完全免費，無需啟用碼。啟用碼許可由 FoxTerm 直接提供；銷售時展示的任何購買專屬條款（如許可期限與裝置範圍）在本條款之外一併適用。"
           ],
           "items": [
             ["訂閱依購買時選擇的週期（按月或按年）循環計費"],

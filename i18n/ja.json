@@ -15,7 +15,7 @@
     "index": {
       "viewport": "width=device-width, initial-scale=1",
       "title": "FoxTerm - macOS / iOS 向け SSH・VNC・SFTP・Docker・Podman クライアント | ターミナルアプリ",
-      "description": "FoxTerm は、プライバシーを最重視した高性能な macOS / iOS 向けターミナルアプリです。超高速 SSH、SFTP、Metal 加速 VNC、リアルタイムな Linux テレメトリ、Docker / Podman の視覚的な管理を備えています。テレメトリはゼロ。Universal Purchase 対応。",
+      "description": "FoxTerm は、プライバシーを最重視した高性能な macOS / iOS 向けターミナルアプリです。超高速 SSH、SFTP、Metal 加速 VNC、リアルタイムな Linux テレメトリ、Docker / Podman の視覚的な管理を備えています。テレメトリはゼロ。iOS 版は完全無料。",
       "keywords": "SSH クライアント macOS, SFTP クライアント Mac, VNC クライアント iOS, Docker 管理, Podman 管理, macOS ターミナルアプリ, iOS SSH クライアント, リモートデスクトップ Mac, サーバー管理ツール, ターミナルエミュレータ Mac, ネイティブ SSH クライアント, Metal 加速ターミナル",
       "author": "FoxTerm",
       "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
@@ -35,10 +35,10 @@
       "og:image:alt": "FoxTerm - macOS / iOS 向けネイティブターミナルアプリ",
       "twitter:card": "summary_large_image",
       "twitter:title": "FoxTerm - macOS / iOS 向けの次世代ターミナル",
-      "twitter:description": "FoxTerm でクラウドインフラを自在に。Mac と iOS をカバーする Universal Purchase。テレメトリゼロ。ネイティブ性能。",
+      "twitter:description": "FoxTerm でクラウドインフラを自在に。Mac 版は Pro 選択可、iPhone / iPad 版は完全無料。テレメトリゼロ。ネイティブ性能。",
       "twitter:image": "/assets/apple-touch-icon.png",
       "twitter:image:alt": "FoxTerm ターミナルアプリ",
-      "jsonld": "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"SoftwareApplication\",\"name\":\"FoxTerm\",\"operatingSystem\":\"macOS 14+, iOS 17+\",\"applicationCategory\":\"DeveloperApplication\",\"applicationSubCategory\":\"TerminalEmulator\",\"softwareRequirements\":\"macOS 14.0 以降、iOS 17.0 以降が必要です。\",\"offers\":{\"@type\":\"AggregateOffer\",\"priceCurrency\":\"USD\",\"offerCount\":\"3\",\"offers\":[{\"@type\":\"Offer\",\"name\":\"FoxTerm 無料\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"すべての機能が無料で利用可能。ノード（サーバー）数のみに上限があります\"},{\"@type\":\"Offer\",\"name\":\"FoxTerm Pro — Mac App Store サブスクリプション\",\"category\":\"Subscription\",\"description\":\"Apple 経由の月額または年額サブスクリプション。ノード数無制限。Universal Purchase で iOS アプリも自動的にアクティベート\"},{\"@type\":\"Offer\",\"name\":\"FoxTerm Pro — 公認版（アクティベーションコード）\",\"category\":\"DirectLicense\",\"description\":\"pay.foxterm.app で購入したアクティベーションコードでアンロックする、署名・公認済みの macOS ビルド。ノード数無制限。アクティベーションコードは macOS 公認版にのみ適用されます\"}]},\"description\":\"macOS と iOS 向けのユニバーサル SSH、VNC、SFTP、Docker、Podman 管理アプリ。テレメトリゼロ、ネイティブ Swift / Metal 性能。\",\"downloadUrl\":\"https://apps.apple.com/us/app/foxterm/id6760452891\",\"featureList\":\"高速 SSH ターミナル, SFTP ファイルマネージャー, Metal 加速 VNC リモートデスクトップ, リアルタイムシステムテレメトリ監視, Docker & Podman コンテナ管理, macOS / iOS 向け Universal Purchase, テレメトリゼロのプライバシー保護, Apple Secure Enclave による鍵保護\",\"screenshot\":\"/assets/og-image.png\",\"softwareVersion\":\"1.2.0\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}},{\"@type\":\"WebSite\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app/ja/\",\"inLanguage\":\"ja-JP\",\"potentialAction\":{\"@type\":\"SearchAction\",\"target\":\"https://foxterm.app/?q={search_term_string}\",\"query-input\":\"required name=search_term_string\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://foxterm.app/ja/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"機能\",\"item\":\"https://foxterm.app/ja/#features\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"使用事例\",\"item\":\"https://foxterm.app/ja/#use-cases\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"アーキテクチャ\",\"item\":\"https://foxterm.app/ja/#architecture\"},{\"@type\":\"ListItem\",\"position\":5,\"name\":\"セキュリティ\",\"item\":\"https://foxterm.app/ja/#security\"},{\"@type\":\"ListItem\",\"position\":6,\"name\":\"料金\",\"item\":\"https://foxterm.app/ja/#pricing\"},{\"@type\":\"ListItem\",\"position\":7,\"name\":\"FAQ\",\"item\":\"https://foxterm.app/ja/#faq\"},{\"@type\":\"ListItem\",\"position\":8,\"name\":\"ダウンロード\",\"item\":\"https://foxterm.app/ja/#download\"}]},{\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"FoxTerm とは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm は、macOS と iOS のためにネイティブに構築された、オールインワンでプライバシー重視のサーバー管理アプリです。高性能な SSH ターミナルアクセス、SFTP ファイル管理、Metal 加速 VNC リモートデスクトップ、Linux システムテレメトリ、視覚的な Docker / Podman コンテナ制御をひとつに統合します。\"}},{\"@type\":\"Question\",\"name\":\"FoxTerm Pro のサブスクリプションは、Mac と iPhone / iPad 間でどのように機能しますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"無料版はすべての機能を含み、ノード（サーバー）の数のみ上限があります。FoxTerm Pro に加入するとその上限が外れてノード数は無制限になり、ひとつの Apple ID のもと、認可されたすべての Apple デバイス（macOS と iOS / iPadOS）で同時にご利用いただけます。設定は、専用の iCloud コンテナ経由でシームレスに同期されます。\"}},{\"@type\":\"Question\",\"name\":\"FoxTerm はサーバーの認証情報と鍵をどのように保護しますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm は、100% ローカルでのデータ暗号化による厳格なテレメトリゼロのポリシーで動作しています。サーバーの認証情報、パスワード、SSH の秘密鍵は、Apple のハードウェア Keychain と Secure Enclave 内に隔離されています。接続ログや機密ユーザーデータが収集、プロキシ、サードパーティのサーバーへ送られることは一切ありません。\"}},{\"@type\":\"Question\",\"name\":\"FoxTerm はコマンドラインなしで Docker と Podman のコンテナを管理できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい。FoxTerm Pro には、Docker と Podman のコンテナ、イメージ、ボリュームを管理するための視覚的ダッシュボードが組み込まれています。Rootless コンテナ、リアルタイムのログストリーミング、GUI 内でのワンクリック Exec Shell 連携をサポートしています。\"}},{\"@type\":\"Question\",\"name\":\"FoxTerm は Electron ベースのターミナルクライアントと何が違いますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm は Electron のラッパーではありません。ネイティブ Swift、Metal のハードウェア加速、C ネイティブのライブラリ（OpenSSL、libssh、libvncclient）を使ってゼロから設計されており、瞬時に近い起動、極めて低いリソース使用、iOS 向けのネイティブ最適化を実現しています。\"}},{\"@type\":\"Question\",\"name\":\"どのプラットフォームに対応していますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm は Apple プラットフォームのためにネイティブに構築されています。macOS 14.0 以降、iOS/iPadOS 17.0 以降で動作し、iPhone と iPad に対応、ひとつの Universal Purchase ですべてのデバイスがアンロックされます。Windows、Android、Linux デスクトップ版はありません。\"}},{\"@type\":\"Question\",\"name\":\"どのプロトコルと認証方式に対応していますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm は SSH、SFTP、VNC 接続に対応し、SSH 経由で Docker と Podman エンジンを管理します。Ed25519 などの最新の暗号と鍵タイプ、分割ペーターミナルセッション、コマンドスニペット、ドラッグ＆ドロップ SFTP 転送、コンテナ・イメージ・ボリュームの視覚的管理を搭載しています。\"}},{\"@type\":\"Question\",\"name\":\"FoxTerm はデータを収集したり、接続をサーバー経由でルーティングしたりしますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"いいえ。FoxTerm はデバイスから直接サーバーに接続し、トラフィックをプロキシすることはありません。厳格なテレメトリゼロのポリシーを適用し、分析、アクティビティ追跡、接続ログは一切ありません。認証情報と秘密鍵はデバイス上で暗号化され、Apple Keychain と Secure Enclave 内に隔離されています。\"}},{\"@type\":\"Question\",\"name\":\"macOS で Pro を入手するにはどうすればよいですか？iOS のアクティベーションはどのように機能しますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"macOS で Pro を入手するには2つの方法があります。Mac App Store エディションは、Apple 経由の月額または年額のサブスクリプションで、Apple のポリシーに準拠します。Apple ID のサブスクリプション設定で管理・キャンセルでき、更新と返金は Apple が処理します。Universal Purchase により、同じ Apple ID の macOS と iOS アプリの両方が自動的にアンロックされます。公認版は、pay.foxterm.app で購入したアクティベーションコードでアンロックする、直接配布の署名済み macOS ビルドです。公認版は macOS のみ対象で、iOS のアクティベーションは含まれません。iOS アプリ自体は App Store で無料ですが、Pro 機能がアンロックされるのは App Store エディション経由のみです。\"}}]}]}"
+      "jsonld": "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"SoftwareApplication\",\"name\":\"FoxTerm\",\"operatingSystem\":\"macOS 14+, iOS 17+\",\"applicationCategory\":\"DeveloperApplication\",\"applicationSubCategory\":\"TerminalEmulator\",\"softwareRequirements\":\"macOS 14.0 以降、iOS 17.0 以降が必要です。\",\"offers\":{\"@type\":\"AggregateOffer\",\"priceCurrency\":\"USD\",\"offerCount\":\"3\",\"offers\":[{\"@type\":\"Offer\",\"name\":\"FoxTerm 無料\",\"price\":\"0\",\"priceCurrency\":\"USD\",\"description\":\"すべての機能が無料で利用可能。ノード（サーバー）数のみに上限があります\"},{\"@type\":\"Offer\",\"name\":\"FoxTerm Pro — Mac App Store サブスクリプション\",\"category\":\"Subscription\",\"description\":\"Apple 経由の月額または年額サブスクリプション。ノード数無制限は macOS 版のみ。iOS 版は完全無料\"},{\"@type\":\"Offer\",\"name\":\"FoxTerm Pro — 公認版（アクティベーションコード）\",\"category\":\"DirectLicense\",\"description\":\"pay.foxterm.app で購入したアクティベーションコードでアンロックする、署名・公認済みの macOS ビルド。ノード数無制限。アクティベーションコードは macOS 公認版にのみ適用されます\"}]},\"description\":\"macOS と iOS 向けのユニバーサル SSH、VNC、SFTP、Docker、Podman 管理アプリ。テレメトリゼロ、ネイティブ Swift / Metal 性能。\",\"downloadUrl\":\"https://apps.apple.com/us/app/foxterm/id6760452891\",\"featureList\":\"高速 SSH ターミナル, SFTP ファイルマネージャー, Metal 加速 VNC リモートデスクトップ, リアルタイムシステムテレメトリ監視, Docker & Podman コンテナ管理, iOS 版は完全無料・ノード数無制限, テレメトリゼロのプライバシー保護, Apple Secure Enclave による鍵保護\",\"screenshot\":\"/assets/og-image.png\",\"softwareVersion\":\"1.2.0\",\"author\":{\"@type\":\"Organization\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app\"}},{\"@type\":\"WebSite\",\"name\":\"FoxTerm\",\"url\":\"https://foxterm.app/ja/\",\"inLanguage\":\"ja-JP\",\"potentialAction\":{\"@type\":\"SearchAction\",\"target\":\"https://foxterm.app/?q={search_term_string}\",\"query-input\":\"required name=search_term_string\"}},{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"ホーム\",\"item\":\"https://foxterm.app/ja/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"機能\",\"item\":\"https://foxterm.app/ja/#features\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"使用事例\",\"item\":\"https://foxterm.app/ja/#use-cases\"},{\"@type\":\"ListItem\",\"position\":4,\"name\":\"アーキテクチャ\",\"item\":\"https://foxterm.app/ja/#architecture\"},{\"@type\":\"ListItem\",\"position\":5,\"name\":\"セキュリティ\",\"item\":\"https://foxterm.app/ja/#security\"},{\"@type\":\"ListItem\",\"position\":6,\"name\":\"料金\",\"item\":\"https://foxterm.app/ja/#pricing\"},{\"@type\":\"ListItem\",\"position\":7,\"name\":\"FAQ\",\"item\":\"https://foxterm.app/ja/#faq\"},{\"@type\":\"ListItem\",\"position\":8,\"name\":\"ダウンロード\",\"item\":\"https://foxterm.app/ja/#download\"}]},{\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"FoxTerm とは何ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm は、macOS と iOS のためにネイティブに構築された、オールインワンでプライバシー重視のサーバー管理アプリです。高性能な SSH ターミナルアクセス、SFTP ファイル管理、Metal 加速 VNC リモートデスクトップ、Linux システムテレメトリ、視覚的な Docker / Podman コンテナ制御をひとつに統合します。\"}},{\"@type\":\"Question\",\"name\":\"FoxTerm Pro のサブスクリプションは、Mac と iPhone / iPad 間でどのように機能しますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"無料版はすべての機能を含み、ノード（サーバー）の数のみ上限があります。FoxTerm Pro に加入すると macOS 版の上限が外れてノード数は無制限になります。iPhone / iPad 版は完全無料でノード数の上限はなく、ひとつの Apple ID のもとそのままご利用いただけます。設定は、専用の iCloud コンテナ経由でシームレスに同期されます。\"}},{\"@type\":\"Question\",\"name\":\"FoxTerm はサーバーの認証情報と鍵をどのように保護しますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm は、100% ローカルでのデータ暗号化による厳格なテレメトリゼロのポリシーで動作しています。サーバーの認証情報、パスワード、SSH の秘密鍵は、Apple のハードウェア Keychain と Secure Enclave 内に隔離されています。接続ログや機密ユーザーデータが収集、プロキシ、サードパーティのサーバーへ送られることは一切ありません。\"}},{\"@type\":\"Question\",\"name\":\"FoxTerm はコマンドラインなしで Docker と Podman のコンテナを管理できますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"はい。FoxTerm Pro には、Docker と Podman のコンテナ、イメージ、ボリュームを管理するための視覚的ダッシュボードが組み込まれています。Rootless コンテナ、リアルタイムのログストリーミング、GUI 内でのワンクリック Exec Shell 連携をサポートしています。\"}},{\"@type\":\"Question\",\"name\":\"FoxTerm は Electron ベースのターミナルクライアントと何が違いますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm は Electron のラッパーではありません。ネイティブ Swift、Metal のハードウェア加速、C ネイティブのライブラリ（OpenSSL、libssh、libvncclient）を使ってゼロから設計されており、瞬時に近い起動、極めて低いリソース使用、iOS 向けのネイティブ最適化を実現しています。\"}},{\"@type\":\"Question\",\"name\":\"どのプラットフォームに対応していますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm は Apple プラットフォームのためにネイティブに構築されています。macOS 14.0 以降、iOS/iPadOS 17.0 以降で動作し、iPhone と iPad に対応、iOS 版は全機能・ノード数無制限の完全無料で、macOS 版は Pro で上限が外れます。Windows、Android、Linux デスクトップ版はありません。\"}},{\"@type\":\"Question\",\"name\":\"どのプロトコルと認証方式に対応していますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"FoxTerm は SSH、SFTP、VNC 接続に対応し、SSH 経由で Docker と Podman エンジンを管理します。Ed25519 などの最新の暗号と鍵タイプ、分割ペーターミナルセッション、コマンドスニペット、ドラッグ＆ドロップ SFTP 転送、コンテナ・イメージ・ボリュームの視覚的管理を搭載しています。\"}},{\"@type\":\"Question\",\"name\":\"FoxTerm はデータを収集したり、接続をサーバー経由でルーティングしたりしますか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"いいえ。FoxTerm はデバイスから直接サーバーに接続し、トラフィックをプロキシすることはありません。厳格なテレメトリゼロのポリシーを適用し、分析、アクティビティ追跡、接続ログは一切ありません。認証情報と秘密鍵はデバイス上で暗号化され、Apple Keychain と Secure Enclave 内に隔離されています。\"}},{\"@type\":\"Question\",\"name\":\"macOS で Pro を入手するにはどうすればよいですか？iOS は無料ですか？\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"macOS で Pro を入手するには2つの方法があります。Mac App Store エディションは、Apple 経由の月額または年額のサブスクリプションで、Apple のポリシーに準拠します。Apple ID のサブスクリプション設定で管理・キャンセルでき、更新と返金は Apple が処理します。Pro をアンロックするのは macOS 版のみで、iOS アプリは引き続き無料です。公認版は、pay.foxterm.app で購入したアクティベーションコードでアンロックする、直接配布の署名済み macOS ビルドです。公認版も macOS のみ対象で、アクティベーションコードは macOS 版の Pro をアンロックします。iOS アプリは App Store で完全無料で、ノード数の上限もありません。\"}}]}]}"
     },
     "about": {
       "viewport": "width=device-width, initial-scale=1",
@@ -167,7 +167,7 @@
     },
     "hero": {
       "badge": [
-        "100% Apple プラットフォームネイティブ · ゼロテレメトリ · Universal Purchase"
+        "100% Apple プラットフォームネイティブ · ゼロテレメトリ · iOS は完全無料"
       ],
       "title": ["インフラを完全に掌控する", "FoxTerm"],
       "tags": [["SSH"], ["VNC"], ["SFTP"], ["Docker"], ["Podman"]],
@@ -177,7 +177,7 @@
       "cta": [
         {
           "alt": "Apple App Store でダウンロード",
-          "caption": ["Universal Purchase 対応"],
+          "caption": ["iPhone と iPad は無料"],
           "label": ["macOS / iOS 向けダウンロード"]
         }
       ]
@@ -195,7 +195,7 @@
           "body": ["テレメトリ、分析、サードパーティトラッカー"]
         },
         {
-          "body": ["Apple ID で Mac、iPhone、iPad を一括アンロック"]
+          "body": ["iPhone / iPad 版——全機能・ノード数無制限"]
         }
       ]
     },
@@ -329,9 +329,9 @@
         },
         {
           "badge": ["iOS"],
-          "title": ["ユニバーサル購入"],
+          "title": ["iOS は完全無料"],
           "body": [
-            "ひとつのサブスクリプションで macOS と iOS / iPadOS の両方をカバー。すべての機能は無料で、ノード数の 上限のみ適用されます。Pro にアップグレードすると、ノード数が無制限になります。"
+            "iPhone / iPad 版は完全無料。すべての機能にノード数の上限はなく、サブスクリプションもアクティベーションコードも不要です。macOS 版も無料で利用でき、Pro に加入するとノード数の上限が外れます。"
           ]
         }
       ]
@@ -411,8 +411,8 @@
             ["✗ 重量級 Electron ラッパー"]
           ],
           [
-            ["ユニバーサルプラットフォーム"],
-            ["✓ macOS + iOS ユニバーサル"],
+            ["プラットフォーム展開"],
+            ["✓ macOS + iOS（iOS は無料）"],
             ["✗ デスクトップ / モバイルで分離"],
             ["~ 購入が別々"]
           ]
@@ -430,25 +430,25 @@
         "items": [
           ["無料版の全機能"],
           ["成長するフリートに対応する無制限ノード（サーバー）"],
-          ["ひとつの Apple ID で macOS + iOS / iPadOS に対応"],
+          ["macOS のノード数を無制限に。iOS はもともと無料です"],
           ["将来の Pro 機能強化をすべて含む"],
           ["開発者からの優先サポート"]
         ],
         "button": ["Pro の入手方法を見る"]
       },
       "lede": [
-        "無料版には SSH、SFTP、VNC、ライブテレメトリ、コンテナ管理などすべての機能が含まれ、ノード数のみに上限があります。Pro はその上限を取り払い、より大規模なフリートをすべてのデバイスで管理できます。"
+        "無料版には SSH、SFTP、VNC、ライブテレメトリ、コンテナ管理などすべての機能が含まれ、ノード数の上限は macOS 版にのみ適用されます。Pro はその上限を取り払い、iPhone / iPad 版はノード数無制限で完全無料です。"
       ],
       "free": {
         "title": ["無料"],
         "tag": ["カード不要"],
-        "lede": ["全機能・ノード数上限あり"],
+        "lede": ["全機能・macOS 版のみノード数に上限"],
         "items": [
           ["分割ペイン、タブ、スニペット付き フル SSH ターミナル"],
           ["SFTP 転送、Metal VNC、リアルタイムテレメトリ"],
           ["視覚的な Docker & Podman 管理"],
           ["Secure Enclave 鍵、テレメトリゼロ、iCloud 同期"],
-          ["ノード（サーバー）数の上限あり"]
+          ["macOS 版のみノード（サーバー）数に上限"]
         ],
         "button": ["無料版をダウンロード"]
       },
@@ -458,7 +458,9 @@
           "title": ["Mac App Store エディション"],
           "items": [
             ["Apple 経由の月額または年額サブスクリプション"],
-            ["Universal Purchase — macOS と iOS を自動的にアクティベート"],
+            [
+              "Pro をアンロックするのは macOS 版のみ。iOS はサブスクリプション不要"
+            ],
             ["いつでもキャンセル可能、更新と返金は Apple が処理"]
           ],
           "button": ["App Store で見る"]
@@ -475,10 +477,10 @@
         },
         "title": ["macOS で Pro をアンロックする2つの方法"],
         "subtitle": [
-          "App Store 版（macOS + iOS）は Apple のポリシーに準拠し、Universal Purchase で iOS もアンロック。公認版は macOS のみで、アクティベーションコードに iOS は含まれません。"
+          "どちらの渠道も Pro をアンロックするのは macOS 版のみです。iPhone / iPad 版は App Store で完全無料で、全機能・ノード数無制限。サブスクリプションもアクティベーションコードも不要です。"
         ],
         "footnote": [
-          "iOS アプリは App Store で無料で入手でき、App Store 版で Pro が有効化されると自動的にアンロックされます。接続プロファイルと設定は、プライベート iCloud コンテナ経由でデバイス間で同期されます。"
+          "iPhone / iPad 版はアンロック不要で全機能を利用できます。接続プロファイルと設定は、プライベート iCloud コンテナ経由で Mac と iOS デバイスの間同期されます。"
         ]
       }
     },
@@ -515,7 +517,7 @@
             "、",
             "、リアルタイム テレメトリ、",
             " 管理に至るまで、すべての機能を完全に ご利用いただけます。唯一の制限は、管理できる",
-            "の数です。FoxTerm Pro に加入するとその上限が外れ、ノード数は無制限になります。App Store 版の場合、ひとつのサブスクリプションで Universal Purchase により macOS と iOS / iPadOS クライアントの両方が同時にアンロックされます。公認版は macOS のみのスタンドアロンで、iOS は含まれません。いずれの場合も、個人の iCloud コンテナ経由で設定を暗号化して同期します。",
+            "の数です。FoxTerm Pro に加入するとその上限が外れ、ノード数は無制限になります。iPhone / iPad 版はサブスクリプション不要で、全機能・ノード数無制限の完全無料です。公認版は macOS のみのスタンドアロンで、iOS は含まれません。いずれの場合も、個人の iCloud コンテナ経由で設定を暗号化して同期します。",
             "SSH ターミナル",
             "SFTP",
             "Metal 加速 VNC",
@@ -548,7 +550,7 @@
         {
           "q": [" どのプラットフォームに対応していますか？"],
           "answer": [
-            "FoxTerm は Apple プラットフォームのためにネイティブに構築されています。macOS 14.0 以降、iOS / iPadOS 17.0 以降で動作し、iPhone と iPad に対応、ひとつの Universal Purchase ですべてのデバイスがアンロックされます。Windows、Android、Linux デスクトップ版はありません——FoxTerm はネイティブ Apple スタック専用に設計されています。"
+            "FoxTerm は Apple プラットフォームのためにネイティブに構築されています。macOS 14.0 以降、iOS / iPadOS 17.0 以降で動作し、iPhone と iPad に対応。iOS 版は全機能・ノード数無制限で完全無料、macOS 版は Pro で上限が外れます。Windows、Android、Linux デスクトップ版はありません——FoxTerm はネイティブ Apple スタック専用に設計されています。"
           ]
         },
         {
@@ -567,12 +569,12 @@
         },
         {
           "q": [
-            " macOS で Pro を入手するにはどうすればよいですか？iOS のアクティベーションはどのように機能しますか？"
+            " macOS で Pro を入手するにはどうすればよいですか？iOS は無料ですか？"
           ],
           "answer": [
             "macOS で Pro を入手するには2つの方法があります。",
-            "は、Apple 経由の月額または年額のサブスクリプションで、Apple のポリシーに準拠します。Apple ID のサブスクリプション設定で管理・キャンセルでき、更新と返金は Apple が処理します。Universal Purchase により、同じ Apple ID の macOS と iOS アプリの両方が自動的にアンロックされます。",
-            "は、pay.foxterm.app で購入したアクティベーションコードでアンロックする、直接配布の署名済み macOS ビルドです。公認版は macOS のみ対象で、アクティベーションコードに iOS のアクティベーションは含まれません。iOS アプリ自体は App Store で無料ですが、Pro 機能がアンロックされるのは App Store エディション経由のみです。",
+            "は、Apple 経由の月額または年額のサブスクリプションで、Apple のポリシーに準拠します。Apple ID のサブスクリプション設定で管理・キャンセルでき、更新と返金は Apple が処理します。Pro をアンロックするのは macOS 版のみで、iPhone / iPad 版は完全無料です。",
+            "は、pay.foxterm.app で購入したアクティベーションコードでアンロックする、直接配布の署名済み macOS ビルドです。公認版は macOS のみ対象で、アクティベーションコードは macOS 版の Pro をアンロックします。iPhone / iPad 版は App Store で完全無料です。",
             "Mac App Store エディション",
             "公認版"
           ]
@@ -583,7 +585,7 @@
     "download": {
       "title": ["FoxTerm をダウンロードして、数秒で接続"],
       "subtitle": [
-        "Mac · iPhone · iPad — すべての機能は無料で始められ、Pro は App Store 版で Mac と iOS デバイスにアンロックされます。"
+        "Mac · iPhone · iPad — すべての機能は無料。iOS 版にノード数の上限はなく、Mac 版は Pro で上限が外れます。"
       ],
       "buttons": [
         {
@@ -596,7 +598,7 @@
       ],
       "note": [
         "公認ビルドは署名・公認済みで、App Store 外でも直接インストールできます。Pro は",
-        " のアクティベーションコードでアンロックします。アクティベーションコードは macOS 公認版にのみ適用され、iOS アプリのアンロックは App Store 版経由のみです。",
+        " のアクティベーションコードでアンロックします。アクティベーションコードは macOS 公認版にのみ適用され、iPhone / iPad 版はコードもサブスクリプションも不要な完全無料です。",
         "pay.foxterm.app"
       ],
       "reqs": [
@@ -610,7 +612,7 @@
         },
         {
           "label": ["ライセンス"],
-          "value": ["App Store またはアクティベーションコード"]
+          "value": ["Pro は macOS のみ・iOS は無料"]
         },
         {
           "label": ["信頼"],
@@ -909,7 +911,7 @@
         {
           "title": ["03 / 課金 & Pro"],
           "body": [
-            "Apple ID の Universal Purchase や Pro のノード上限の確認でお困りですか？領収書 ID を添えてご連絡ください。"
+            "App Store サブスクリプションや Pro のノード上限の確認でお困りですか？領収書 ID を添えてご連絡ください。"
           ]
         }
       ]
@@ -1194,16 +1196,16 @@
           ]
         },
         {
-          "title": ["2. Universal Purchase"],
+          "title": ["2. サブスクリプションと購入（macOS）"],
           "body": [
-            "FoxTerm は Apple の Universal Purchase に対応しています。ひとつの購入またはサブスクリプションで、あなたの Apple ID に紐付くすべての対応プラットフォーム（macOS および iOS）で本アプリの全機能をご利用になれます。サブスクリプションは、現在の期間の終了の 24 時間以上前にキャンセルしない限り、Apple ID アカウント経由で自動的に更新されます。"
+            "FoxTerm の Pro サブスクリプションは Mac App Store 版（macOS）のみに適用されます。ひとつのサブスクリプションで、あなたの Apple ID に紐付く Mac の Pro 機能すべてをご利用になれ、現在の期間の終了 24 時間以上前にキャンセルしない限り Apple ID アカウント経由で自動更新されます。iPhone / iPad 版は全機能・ノード数無制限の完全無料で、サブスクリプションもアクティベーションコードも不要です。"
           ]
         },
         {
           "title": ["3. Pro サブスクリプションとライセンス"],
           "body": [
             "FoxTerm Pro と無料版は、同一の機能セットを提供します。唯一の違いは、管理できるノード（サーバー）の数です。無料版はノード数を制限し、FoxTerm Pro はその制限を外し、ノード数が無制限になります。保存済みの接続プロファイルに影響を与えることなく、いつでもアップグレードやキャンセルが可能です。",
-            "Pro は、App Store を介さず直接配布される macOS 公認版でもご利用いただけます。このエディションは、pay.foxterm.app で購入したアクティベーションコード（ライセンスキー）でアンロックされます。アクティベーションコードはサブスクリプションと同じ Pro 機能を提供しますが、macOS 公認版にのみ適用され、iOS のアクティベーションは含まれません。アクティベーションコードのライセンスは FoxTerm が直接提供し、購入時に表示されるライセンス期間やデバイス範囲などの購入固有の条件が、本規約に追加して適用されます。"
+            "Pro は、App Store を介さず直接配布される macOS 公認版でもご利用いただけます。このエディションは、pay.foxterm.app で購入したアクティベーションコード（ライセンスキー）でアンロックされます。アクティベーションコードはサブスクリプションと同じ Pro 機能を提供しますが、macOS 公認版にのみ適用されます。iPhone / iPad 版は無料で、アクティベーションコードは不要です。アクティベーションコードのライセンスは FoxTerm が直接提供し、購入時に表示されるライセンス期間やデバイス範囲などの購入固有の条件が、本規約に追加して適用されます。"
           ],
           "items": [
             [

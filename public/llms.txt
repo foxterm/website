@@ -3,13 +3,13 @@
 > FoxTerm is a high-performance, fully native All-in-One terminal and server management suite designed exclusively for macOS and iOS/iPadOS, combining SSH, SFTP, VNC, container management, and live server monitoring into a single privacy-first client.
 
 > - Official Website: https://foxterm.app/
-> - App Store: https://apps.apple.com/us/app/foxterm/id6760452891 (Universal Purchase, App ID 6760452891)
+> - App Store: https://apps.apple.com/us/app/foxterm/id6760452891 (App ID 6760452891)
 > - Platforms: macOS 14.0+ and iOS/iPadOS 17.0+ only — no Windows, Android, or Linux desktop build
 > - Tech Stack: 100% native Swift + Metal, C-native libraries (OpenSSL, libssh, libvncclient); no Electron, no web wrappers
 > - Privacy: strict zero-telemetry policy — no analytics, no activity tracking, no connection logs, no traffic proxying
 > - Security: credentials and SSH private keys hardware-isolated in Apple Secure Enclave & Keychain; config sync only via the user's encrypted private iCloud container
 > - Protocols: SSH, SFTP, VNC, Docker API, Podman API (over SSH)
-> - Licensing: Free edition with a capped managed-node limit; FoxTerm Pro unlocks unlimited nodes
+> - Licensing: Free edition with a capped managed-node limit on macOS; FoxTerm Pro unlocks unlimited nodes on macOS; the iOS/iPadOS app is completely free with every feature and no node cap
 > - Localization: 10 languages served from localized URL paths (e.g. /zh-hans/, /de/, /ja/)
 > - Related hubs: blog.foxterm.app (development blog), security.foxterm.app (advisories), github.com/foxterm (open source)
 
@@ -41,23 +41,23 @@ FoxTerm unifies five workloads in one native client: SSH terminal access, SFTP f
 
 - **Supported:** macOS 14.0 (Sonoma) or later; iOS/iPadOS 17.0 or later (iPhone and iPad).
 - **Not supported:** Windows, Android, Linux desktop. FoxTerm is engineered exclusively for the native Apple stack.
-- **Purchase parity:** a single Universal Purchase unlocks the same license on macOS and iOS/iPadOS under one Apple ID.
+- **Free on iOS:** no cross-platform purchase is needed — the iPhone and iPad app is completely free, with every feature and no node cap; Pro applies to macOS only.
 
 ## Pricing & Licensing
 
 - **Free edition:** feature-complete (all capabilities unlocked, not a crippled demo); the only limit is the maximum number of managed remote nodes.
-- **FoxTerm Pro — App Store edition:** monthly or yearly subscription billed by Apple (governed by Apple's policies); automatically activates the iOS app via Universal Purchase; manage or cancel in Apple ID subscription settings; renewals and refunds handled by Apple.
+- **FoxTerm Pro — App Store edition:** monthly or yearly subscription billed by Apple (governed by Apple's policies); removes the node cap on macOS only — the iOS app needs no subscription; manage or cancel in Apple ID subscription settings; renewals and refunds handled by Apple.
 - **FoxTerm Pro — Notarized edition:** direct, signed macOS build (no App Store dependency) unlocked with an activation code purchased at https://pay.foxterm.app/; applies to macOS only.
 - **Storefront:** [Purchase Pro licenses](https://pay.foxterm.app/) — activation keys for the Notarized macOS edition.
 
 ## Frequently Asked Questions
 
-- **What is the difference between free and Pro?** Free unlocks every feature but caps the number of manageable nodes; Pro removes the cap for unlimited nodes.
+- **What is the difference between free and Pro?** On macOS, free unlocks every feature but caps the number of manageable nodes; Pro removes the cap for unlimited nodes. The iPhone and iPad app is free with every feature and no node cap.
 - **Does FoxTerm collect data or route traffic?** No — strict zero-telemetry, direct device-to-server connections, no proxying, no analytics, no logs.
 - **How are server keys secured?** Credentials and SSH private keys are encrypted on-device and isolated in Apple Keychain and Secure Enclave.
 - **Why is it faster than Electron-based terminals?** Built from scratch with native Swift, Metal hardware acceleration, and C-native libraries — near-instant startup and ultra-low resource usage.
 - **Which protocols are supported?** SSH, SFTP, VNC, plus Docker and Podman engine management over SSH, with Ed25519 and modern ciphers.
-- **How does Pro activation work on macOS?** Either the App Store subscription (auto-activates iOS via Universal Purchase) or a Notarized-edition activation code from pay.foxterm.app (macOS only).
+- **How does Pro activation work on macOS?** Either the App Store subscription or a Notarized-edition activation code from pay.foxterm.app — both apply to macOS only. The iPhone and iPad app needs no activation at all.
 
 ## Contact
 
