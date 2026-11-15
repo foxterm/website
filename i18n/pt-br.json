@@ -1425,7 +1425,7 @@
         ["Modelos locais"],
         ["Raciocínio"],
         ["Imagens"],
-        ["MCP e 12 ferramentas"]
+        ["MCP e 12+ ferramentas"]
       ],
       "subtitle": [
         "O UChat AI é um app de chat de IA 100% nativo para Mac, iPhone e iPad. Conecte-se a OpenAI, Anthropic, Gemini, Grok e mais com a sua própria chave de API — ou execute modelos locais totalmente off-line."
@@ -1601,10 +1601,15 @@
     "download": {
       "title": ["Baixar o UChat AI"],
       "subtitle": ["Grátis na App Store para Mac, iPhone e iPad."],
-      "button": {
-        "alt": "Baixar o UChat AI na App Store",
-        "label": ["Baixar na App Store"]
-      },
+      "buttons": [
+        {
+          "alt": "Baixar o UChat AI na App Store",
+          "label": ["Baixar na App Store"]
+        },
+        {
+          "label": ["Edição notarizada para macOS"]
+        }
+      ],
       "reqs": [
         {
           "label": ["macOS"],
@@ -1659,7 +1664,7 @@
       "badge": ["AGENTE E FERRAMENTAS"],
       "title": ["Não é só chat. É um agente que trabalha."],
       "lede": [
-        "O UChat AI dá ferramentas reais aos modelos: conecte servidores MCP remotos, ative qualquer uma das 12 ferramentas integradas ou deixe o modelo executar operações SSH nos seus servidores — tudo em uma única janela de chat nativa."
+        "O UChat AI dá ferramentas reais aos modelos: conecte servidores MCP remotos, ative qualquer uma das 12+ ferramentas integradas ou deixe o modelo executar operações SSH nos seus servidores — tudo em uma única janela de chat nativa."
       ],
       "pillars": [
         {
@@ -1669,7 +1674,7 @@
           ]
         },
         {
-          "title": ["12 ferramentas integradas, do seu jeito"],
+          "title": ["12+ ferramentas integradas, do seu jeito"],
           "body": [
             "Buscar uma URL, consultar RDAP ou câmbio, ver o clima, ler informações do sistema e a hora, resolver IP com o banco GeoLite2 offline, gerar chaves, acordar um equipamento na LAN ou pedir ao modelo que gere uma imagem. Cada ferramenta é opcional e roda dentro do sandbox do app."
           ]
@@ -1683,7 +1688,7 @@
       ],
       "grid": {
         "title": ["Catálogo de ferramentas integradas"],
-        "meta": ["12 ferramentas · ative só o que precisa"]
+        "meta": ["12+ ferramentas · ative só o que precisa"]
       },
       "legend": [["Local"], ["LAN"], ["Online"], ["Ops remoto"]],
       "loop": ["até 8 rodadas de ferramentas por resposta"],

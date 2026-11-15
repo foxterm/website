@@ -1297,7 +1297,7 @@
         ["本地模型"],
         ["深度思考"],
         ["图像生成"],
-        ["MCP 与 12 个工具"]
+        ["MCP 与 12+ 个工具"]
       ],
       "subtitle": [
         "UChat AI 是一款 100% 原生的 AI 聊天应用，支持 Mac、iPhone 和 iPad。使用自己的 API Key 连接 OpenAI、Anthropic、Gemini、Grok 等云服务商，或在本地离线运行模型。"
@@ -1463,10 +1463,15 @@
     "download": {
       "title": ["获取 UChat AI"],
       "subtitle": ["App Store 限时免费，支持 Mac、iPhone 与 iPad。"],
-      "button": {
-        "alt": "在 App Store 下载 UChat AI",
-        "label": ["在 App Store 下载"]
-      },
+      "buttons": [
+        {
+          "alt": "在 App Store 下载 UChat AI",
+          "label": ["在 App Store 下载"]
+        },
+        {
+          "label": ["公证版下载（macOS）"]
+        }
+      ],
       "reqs": [
         {
           "label": ["macOS"],
@@ -1521,7 +1526,7 @@
       "badge": ["AGENT 与工具"],
       "title": ["不只是聊天，是能干活的 Agent"],
       "lede": [
-        "UChat AI 让模型真正能调用工具：连接远程 MCP 服务器、按需开启 12 个内置工具，或让模型直接在你的服务器上执行 SSH 运维 —— 全部在一个原生聊天窗口里完成。"
+        "UChat AI 让模型真正能调用工具：连接远程 MCP 服务器、按需开启 12+ 个内置工具，或让模型直接在你的服务器上执行 SSH 运维 —— 全部在一个原生聊天窗口里完成。"
       ],
       "pillars": [
         {
@@ -1531,7 +1536,7 @@
           ]
         },
         {
-          "title": ["12 个内置工具，按需开启"],
+          "title": ["12+ 个内置工具，按需开启"],
           "body": [
             "抓取网页、查询 RDAP 与汇率、查天气、读取系统信息与时间、用离线 GeoLite2 库解析 IP、生成密钥、通过局域网唤醒设备，或让模型直接出图。每个工具都需手动开启，并且只在 App 沙盒内运行。"
           ]
@@ -1545,7 +1550,7 @@
       ],
       "grid": {
         "title": ["内置工具清单"],
-        "meta": ["12 个工具 · 只开你需要的"]
+        "meta": ["12+ 个工具 · 只开你需要的"]
       },
       "legend": [["本地"], ["局域网"], ["联网"], ["远程运维"]],
       "loop": ["单次回复最多 8 轮工具循环"],

@@ -1357,7 +1357,7 @@
         ["로컬 모델"],
         ["추론 제어"],
         ["이미지 생성"],
-        ["MCP & 12개 도구"]
+        ["MCP & 12개+ 도구"]
       ],
       "subtitle": [
         "UChat AI는 Mac, iPhone, iPad를 위한 100% 네이티브 AI 채팅 앱입니다. 직접 발급한 API 키로 OpenAI, Anthropic, Gemini, Grok 등에 연결하거나, 로컬 모델을 완전히 오프라인으로 실행할 수 있습니다."
@@ -1531,10 +1531,15 @@
     "download": {
       "title": ["UChat AI 받기"],
       "subtitle": ["App Store에서 무료. Mac, iPhone, iPad 지원."],
-      "button": {
-        "alt": "App Store에서 UChat AI 다운로드",
-        "label": ["App Store에서 다운로드"]
-      },
+      "buttons": [
+        {
+          "alt": "App Store에서 UChat AI 다운로드",
+          "label": ["App Store에서 다운로드"]
+        },
+        {
+          "label": ["macOS 공증판 다운로드"]
+        }
+      ],
       "reqs": [
         {
           "label": ["macOS"],
@@ -1589,7 +1594,7 @@
       "badge": ["AGENT & TOOLS"],
       "title": ["채팅을 넘어, 실제로 일하는 에이전트"],
       "lede": [
-        "UChat AI는 모델에 실제 도구를 쥐여 줍니다. 원격 MCP 서버 연결, 12개 내장 도구의 선택적 활성화, 서버에 대한 SSH 작업까지 —— 모두 하나의 네이티브 채팅 창에서 이루어집니다."
+        "UChat AI는 모델에 실제 도구를 쥐여 줍니다. 원격 MCP 서버 연결, 12개+ 내장 도구의 선택적 활성화, 서버에 대한 SSH 작업까지 —— 모두 하나의 네이티브 채팅 창에서 이루어집니다."
       ],
       "pillars": [
         {
@@ -1599,7 +1604,7 @@
           ]
         },
         {
-          "title": ["내장 도구 12개, 필요한 것만"],
+          "title": ["내장 도구 12개+, 필요한 것만"],
           "body": [
             "URL 가져오기, RDAP·환율 조회, 날씨, 시스템 정보와 시간, 오프라인 GeoLite2 DB로 IP 조회, 키 생성, LAN을 통한 기기 깨우기, 모델의 이미지 생성이 가능합니다. 모든 도구는 직접 켜야 하며 App Sandbox 안에서만 동작합니다."
           ]
@@ -1613,7 +1618,7 @@
       ],
       "grid": {
         "title": ["내장 도구 목록"],
-        "meta": ["12개 도구 · 필요한 것만 활성화"]
+        "meta": ["12개+ 도구 · 필요한 것만 활성화"]
       },
       "legend": [["로컬"], ["LAN"], ["온라인"], ["원격 운영"]],
       "loop": ["응답당 최대 8회 도구 루프"],

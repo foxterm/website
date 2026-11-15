@@ -1445,7 +1445,7 @@
         ["Modèles locaux"],
         ["Raisonnement"],
         ["Images"],
-        ["MCP & 12 outils"]
+        ["MCP & 12+ outils"]
       ],
       "subtitle": [
         "UChat AI est une app de chat IA 100% native pour Mac, iPhone et iPad. Connectez-vous à OpenAI, Anthropic, Gemini, Grok et plus avec votre propre clé API — ou exécutez des modèles locaux entièrement hors ligne."
@@ -1623,10 +1623,15 @@
     "download": {
       "title": ["Obtenir UChat AI"],
       "subtitle": ["Gratuit sur l'App Store pour Mac, iPhone et iPad."],
-      "button": {
-        "alt": "Télécharger UChat AI sur l'App Store",
-        "label": ["Télécharger sur l'App Store"]
-      },
+      "buttons": [
+        {
+          "alt": "Télécharger UChat AI sur l'App Store",
+          "label": ["Télécharger sur l'App Store"]
+        },
+        {
+          "label": ["Édition notariée pour macOS"]
+        }
+      ],
       "reqs": [
         {
           "label": ["macOS"],
@@ -1691,7 +1696,7 @@
           ]
         },
         {
-          "title": ["12 outils intégrés, à votre main"],
+          "title": ["12+ outils intégrés, à votre main"],
           "body": [
             "Récupérer une URL, interroger RDAP ou les taux de change, la météo, les infos système et l'heure, résoudre une IP via la base GeoLite2 hors ligne, générer des clés, réveiller une machine sur le LAN ou faire générer une image par le modèle. Chaque outil est activé explicitement et reste dans le bac à sable de l'app."
           ]
@@ -1705,7 +1710,7 @@
       ],
       "grid": {
         "title": ["Catalogue des outils intégrés"],
-        "meta": ["12 outils · activez seulement le nécessaire"]
+        "meta": ["12+ outils · activez seulement le nécessaire"]
       },
       "legend": [["Local"], ["LAN"], ["En ligne"], ["Ops distant"]],
       "loop": ["jusqu'à 8 cycles d'outils par réponse"],

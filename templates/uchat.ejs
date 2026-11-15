@@ -238,8 +238,8 @@
       >
         <% const toolChips = [ ["Fetch", 2], ["GeoIP", 2], ["GeoLite2", 0], ["Weather", 2], ["RDAP", 2], ["Exchange Rate", 2], ["System Info", 0], ["Current Time", 0], ["SSH", 3], ["KeyGen", 0], ["Wake-on-LAN", 1], ["Generate Image", 2] ]; %>
         <% const chipStyles = [ "bg-emerald-500/10 border-emerald-500/25 text-emerald-300", "bg-violet-500/10 border-violet-500/25 text-violet-300", "bg-sky-500/10 border-sky-500/25 text-sky-300", "bg-fox-500/10 border-fox-500/25 text-fox-300" ]; %>
-        <% const pillarTags = ["MCP SERVERS", "12 TOOLS", "SSH OPS"]; %>
-        <% const toolStats = ["8", "30", "12"]; %>
+        <% const pillarTags = ["MCP SERVERS", "12+ TOOLS", "SSH OPS"]; %>
+        <% const toolStats = ["8", "30", "12+"]; %>
 
         <div class="text-center mb-10 sm:mb-14">
           <div
@@ -613,7 +613,9 @@
           >
             <%= t["download.subtitle.0"] %>
           </p>
-          <div class="flex items-center justify-center relative z-10">
+          <div
+            class="flex flex-col sm:flex-row items-center justify-center gap-3 relative z-10"
+          >
             <a
               href="https://apps.apple.com/us/app/uchat-ai/id6503210454"
               target="_blank"
@@ -622,10 +624,24 @@
             >
               <img
                 src="/assets/apple.svg"
-                alt="<%= t["download.button.alt"] %>"
+                alt="<%= t["download.buttons.0.alt"] %>"
                 class="w-6 h-6 flex-shrink-0 brightness-0 invert object-contain"
               />
-              <span><%= t["download.button.label.0"] %></span>
+              <span><%= t["download.buttons.0.label.0"] %></span>
+            </a>
+
+            <a
+              href="https://github.com/foxterm/UChat/releases/latest/download/UChat.dmg"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="bg-zinc-800/60 hover:bg-zinc-700/80 border border-zinc-700 hover:border-sky-500/50 text-zinc-200 hover:text-white font-semibold px-7 py-4 rounded-xl transition-all duration-300 flex items-center space-x-3 text-sm sm:text-base shadow-lg shadow-black/20"
+            >
+              <img
+                src="/assets/github.svg"
+                alt=""
+                class="w-6 h-6 flex-shrink-0 brightness-0 invert object-contain"
+              />
+              <span><%= t["download.buttons.1.label.0"] %></span>
             </a>
           </div>
 

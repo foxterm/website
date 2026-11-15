@@ -1430,7 +1430,7 @@
         ["Modelos locales"],
         ["Razonamiento"],
         ["Imágenes"],
-        ["MCP y 12 herramientas"]
+        ["MCP y 12+ herramientas"]
       ],
       "subtitle": [
         "UChat AI es una app de chat de IA 100% nativa para Mac, iPhone y iPad. Conéctate a OpenAI, Anthropic, Gemini, Grok y más con tu propia clave API, o ejecuta modelos locales totalmente sin conexión."
@@ -1608,10 +1608,15 @@
     "download": {
       "title": ["Consigue UChat AI"],
       "subtitle": ["Gratis en el App Store para Mac, iPhone y iPad."],
-      "button": {
-        "alt": "Descargar UChat AI en el App Store",
-        "label": ["Descargar en el App Store"]
-      },
+      "buttons": [
+        {
+          "alt": "Descargar UChat AI en el App Store",
+          "label": ["Descargar en el App Store"]
+        },
+        {
+          "label": ["Edición notarizada para macOS"]
+        }
+      ],
       "reqs": [
         {
           "label": ["macOS"],
@@ -1666,7 +1671,7 @@
       "badge": ["AGENTE Y HERRAMIENTAS"],
       "title": ["No es solo chat. Es un agente que trabaja."],
       "lede": [
-        "UChat AI pone herramientas reales en manos de los modelos: conecta servidores MCP remotos, activa cualquiera de las 12 herramientas integradas o deja que el modelo ejecute operaciones SSH en tus servidores — todo en una única ventana de chat nativa."
+        "UChat AI pone herramientas reales en manos de los modelos: conecta servidores MCP remotos, activa cualquiera de las 12+ herramientas integradas o deja que el modelo ejecute operaciones SSH en tus servidores — todo en una única ventana de chat nativa."
       ],
       "pillars": [
         {
@@ -1676,7 +1681,7 @@
           ]
         },
         {
-          "title": ["12 herramientas integradas, a tu medida"],
+          "title": ["12+ herramientas integradas, a tu medida"],
           "body": [
             "Obtener una URL, consultar RDAP o tipos de cambio, el tiempo, información del sistema y la hora, resolver IP con la base GeoLite2 sin conexión, generar claves, despertar un equipo por LAN o pedir al modelo que cree una imagen. Cada herramienta se activa manualmente y se ejecuta dentro del sandbox de la app."
           ]
@@ -1690,7 +1695,7 @@
       ],
       "grid": {
         "title": ["Catálogo de herramientas integradas"],
-        "meta": ["12 herramientas · activa solo lo que necesitas"]
+        "meta": ["12+ herramientas · activa solo lo que necesitas"]
       },
       "legend": [["Local"], ["LAN"], ["En línea"], ["Ops remoto"]],
       "loop": ["hasta 8 rondas de herramientas por respuesta"],
