@@ -284,7 +284,18 @@
             "Sincronização de configurações fluida exclusivamente pelo seu contêiner privado e criptografado do iCloud."
           ]
         }
-      ]
+      ],
+      "sandbox": {
+        "title": ["Cada versão roda dentro do App Sandbox"],
+        "body": [
+          "A edição da App Store e a edição notarizada são distribuídas com o App Sandbox: o FoxTerm trabalha no próprio contêiner em vez de percorrer o seu Mac, e as configurações e dados de sessão ficam onde o sistema os isola. Senhas de servidor e chaves SSH privadas nunca existem como arquivos em texto simples — ficam no chaveiro e, quando o hardware permite, seladas no Secure Enclave."
+        ],
+        "tags": [
+          ["App Sandbox"],
+          ["Chaveiro e Secure Enclave"],
+          ["Notarizada e assinada"]
+        ]
+      }
     },
     "features": {
       "title": ["Recursos Abrangentes"],
@@ -1702,6 +1713,46 @@
         {
           "body": ["Ferramentas integradas, todas opcionais"]
         }
+      ]
+    },
+    "security": {
+      "badge": ["SANDBOX E MODO DE TRABALHO"],
+      "title": ["Trancado no sandbox,", "aberto só onde você permitir."],
+      "lede": [
+        "O UChat AI roda dentro do App Sandbox da Apple em todas as plataformas e em cada versão. Ele não tem o direito de percorrer o seu Mac — o único acesso a arquivos possível são as pastas que você autorizar no Modo de Trabalho, e esse modo só existe no macOS."
+      ],
+      "pillars": [
+        {
+          "tag": ["App Sandbox"],
+          "title": ["Cada versão dentro do sandbox"],
+          "body": [
+            "A edição da App Store e a edição notarizada são compiladas com o App Sandbox. O UChat AI trabalha no próprio contêiner: não lê dados de outros apps nem toca arquivo algum fora dos limites que você definir. Sem SDK de métricas e sem envio em segundo plano."
+          ]
+        },
+        {
+          "tag": ["Modo de Trabalho · macOS"],
+          "title": ["O Modo de Trabalho abre uma única porta"],
+          "body": [
+            "Ative em Ajustes, adicione as pastas escolhidas e o modelo ganha três ferramentas do espaço de trabalho: listar diretório, ler arquivo e escrever arquivo. Sem ativar, essas ferramentas nem são registradas — não há o que chamar. No iPhone e no iPad não existe Modo de Trabalho."
+          ]
+        },
+        {
+          "tag": ["Fronteira do caminho"],
+          "title": ["Nenhum caminho sai da pasta"],
+          "body": [
+            "Antes de ler ou escrever, o UChat AI normaliza o caminho, resolve links simbólicos e confere com as raízes autorizadas. Subidas na árvore de diretórios e fugas por link simbólico são recusadas na hora. Cada conversa tem o próprio espaço de trabalho, nenhum por padrão, e remover uma pasta revoga o acesso imediatamente."
+          ]
+        }
+      ],
+      "tools": [["Listar diretório"], ["Ler arquivo"], ["Escrever arquivo"]],
+      "guarantees": [
+        ["Só pastas autorizadas"],
+        ["Checagem de links e caminhos"],
+        ["Espaço de trabalho por conversa"],
+        ["Revogação imediata"]
+      ],
+      "note": [
+        "O Modo de Trabalho é exclusivo do macOS: no iPhone e no iPad essas ferramentas nem fazem parte do app."
       ]
     }
   }

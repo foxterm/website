@@ -395,6 +395,106 @@
         </div>
       </section>
 
+      <!-- Sandbox & Work Mode Section -->
+      <section
+        id="security"
+        class="max-w-5xl mx-auto px-4 sm:px-6 py-12 sm:py-20 relative z-10"
+      >
+        <div class="text-center mb-10 sm:mb-14">
+          <div
+            class="inline-flex items-center px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono font-medium mb-4"
+          >
+            <%= t["security.badge.0"] %>
+          </div>
+          <h2 class="text-2xl sm:text-4xl font-bold mb-4">
+            <%= t["security.title.0"] %><br /><span class="ai-gradient-text"
+              ><%= t["security.title.1"] %></span
+            >
+          </h2>
+          <p
+            class="text-sm sm:text-base text-zinc-400 max-w-2xl mx-auto leading-relaxed"
+          >
+            <%= t["security.lede.0"] %>
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-4">
+          <% for (let i = 0; i < 3; i++) { %>
+          <div
+            class="p-6 rounded-2xl bg-zinc-900/50 border border-zinc-800/70 backdrop-blur-xl relative overflow-hidden hover:border-emerald-500/40 transition-all duration-300"
+          >
+            <div
+              class="absolute -right-8 -top-8 w-24 h-24 bg-emerald-500/10 blur-2xl rounded-full pointer-events-none"
+            ></div>
+            <div
+              class="text-[10px] font-mono text-emerald-400 uppercase tracking-widest mb-3 relative z-10"
+            >
+              <%= t["security.pillars." + i + ".tag.0"] %>
+            </div>
+            <h3
+              class="font-bold text-white text-sm mb-2 relative z-10"
+            >
+              <%= t["security.pillars." + i + ".title.0"] %>
+            </h3>
+            <p
+              class="text-xs text-zinc-400 leading-relaxed relative z-10"
+            >
+              <%= t["security.pillars." + i + ".body.0"] %>
+            </p>
+          </div>
+          <% } %>
+        </div>
+
+        <div
+          class="p-5 sm:p-6 rounded-2xl bg-zinc-950/60 border border-zinc-800/70 relative overflow-hidden"
+        >
+          <div
+            class="absolute -left-10 -bottom-10 w-40 h-40 bg-emerald-500/10 blur-3xl rounded-full pointer-events-none"
+          ></div>
+          <div class="relative z-10">
+            <div class="flex flex-wrap items-center gap-2 sm:gap-3 mb-5">
+              <span
+                class="px-3 py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/25 text-emerald-300 text-[10px] sm:text-xs font-mono font-bold"
+                >WORKSPACE</span
+              >
+              <% for (let i = 0; i < 3; i++) { %>
+              <span
+                class="px-3 py-1.5 rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-300 text-[10px] sm:text-xs font-mono"
+                ><%= t["security.tools." + i + ".0"] %></span
+              >
+              <% } %>
+            </div>
+            <ul
+              class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5 mb-5"
+            >
+              <% for (let i = 0; i < 4; i++) { %>
+              <li class="flex items-start gap-2 text-xs text-zinc-400">
+                <svg
+                  class="w-3.5 h-3.5 mt-0.5 text-emerald-400 flex-shrink-0"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M5 13l4 4L19 7"
+                  ></path>
+                </svg>
+                <span><%= t["security.guarantees." + i + ".0"] %></span>
+              </li>
+              <% } %>
+            </ul>
+            <p
+              class="text-[11px] sm:text-xs text-zinc-500 leading-relaxed border-t border-zinc-800/80 pt-4"
+            >
+              <%= t["security.note.0"] %>
+            </p>
+          </div>
+        </div>
+      </section>
+
       <!-- Providers Section -->
       <section
         id="providers"

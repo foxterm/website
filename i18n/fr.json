@@ -289,7 +289,18 @@
             "Synchronisation fluide de la configuration exclusivement via votre conteneur iCloud privé et chiffré."
           ]
         }
-      ]
+      ],
+      "sandbox": {
+        "title": ["Chaque version s'exécute dans la App Sandbox"],
+        "body": [
+          "La version du App Store et la version notariée sont publiées avec la capacité App Sandbox : FoxTerm travaille dans son propre conteneur au lieu de parcourir votre Mac, et ses réglages comme ses données de session restent là où le système les isole. Les mots de passe et les clés SSH privées ne sont jamais des fichiers en clair — ils vivent dans le trousseau, scellés par le Secure Enclave quand le matériel le permet."
+        ],
+        "tags": [
+          ["App Sandbox"],
+          ["Trousseau et Secure Enclave"],
+          ["Notariée et signée"]
+        ]
+      }
     },
     "features": {
       "title": ["Capacités complètes"],
@@ -1724,6 +1735,50 @@
         {
           "body": ["Outils intégrés, tous optionnels"]
         }
+      ]
+    },
+    "security": {
+      "badge": ["SANDBOX ET MODE DE TRAVAIL"],
+      "title": ["Enfermée dans la sandbox,", "ouverte là où vous décidez."],
+      "lede": [
+        "UChat AI s'exécute dans la sandbox d'Apple (App Sandbox) sur toutes les plateformes et dans toutes les versions. Elle n'a aucun droit de parcourir votre Mac : le seul accès aux fichiers qu'elle puisse obtenir est celui des dossiers que vous autorisez dans le mode de travail, et ce mode n'existe que sur macOS."
+      ],
+      "pillars": [
+        {
+          "tag": ["App Sandbox"],
+          "title": ["Chaque version est sandboxée"],
+          "body": [
+            "La version du App Store comme la version notariée sont bâties avec la capacité App Sandbox. UChat AI travaille dans son propre conteneur : elle ne lit pas les données des autres apps et ne touche aucun fichier hors des limites que vous posez. Aucun SDK de mesure dans l'app, aucune transmission en arrière-plan."
+          ]
+        },
+        {
+          "tag": ["Mode de travail · macOS"],
+          "title": ["Le mode de travail ouvre une seule porte"],
+          "body": [
+            "Activez-le dans Réglages, ajoutez les dossiers choisis, et le modèle reçoit trois outils d'espace de travail : listing de répertoire, lecture de fichier, écriture de fichier. Sans lui, ces outils ne sont même pas enregistrés, il n'y a rien à appeler. Sur iPhone et iPad, le mode de travail n'existe pas."
+          ]
+        },
+        {
+          "tag": ["Contenir les chemins"],
+          "title": ["Aucun chemin ne sort du dossier"],
+          "body": [
+            "Avant chaque lecture ou écriture, UChat AI normalise le chemin, résout les liens symboliques et le compare aux racines autorisées. Les remontées dans l'arborescence et les échappatoires par lien symbolique sont refusées net. Chaque discussion a son espace de travail, aucun par défaut, et retirer un dossier coupe l'accès immédiatement."
+          ]
+        }
+      ],
+      "tools": [
+        ["Listing de répertoire"],
+        ["Lecture de fichier"],
+        ["Écriture de fichier"]
+      ],
+      "guarantees": [
+        ["Dossiers autorisés seulement"],
+        ["Contrôle des liens et des chemins"],
+        ["Espace de travail par discussion"],
+        ["Révocation immédiate"]
+      ],
+      "note": [
+        "Le mode de travail est réservé à macOS : sur iPhone et iPad, ces outils ne font pas partie de l'app."
       ]
     }
   }

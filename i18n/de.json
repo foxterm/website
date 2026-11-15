@@ -279,7 +279,18 @@
             "Nahtlose Konfigurationssynchronisierung ausschließlich über deinen privaten, verschlüsselten iCloud-Container."
           ]
         }
-      ]
+      ],
+      "sandbox": {
+        "title": ["Jeder Build läuft in der App Sandbox"],
+        "body": [
+          "App-Store- und notarierte Fassung werden mit dem App-Sandbox-Recht ausgeliefert: FoxTerm arbeitet im eigenen Container und durchstreift nicht deinen Mac; Konfigurations- und Sitzungsdaten liegen dort, wo das System sie isoliert. Server-Passwörter und SSH-Schlüssel existieren nie als Klartext-Dateien — sie gehören in die Schlüsselbund-Datenbank und, wo die Hardware es trägt, in die Secure Enclave."
+        ],
+        "tags": [
+          ["App Sandbox"],
+          ["Schlüsselbund & Secure Enclave"],
+          ["Notarisiert & signiert"]
+        ]
+      }
     },
     "features": {
       "title": ["Umfassende Fähigkeiten"],
@@ -1697,6 +1708,53 @@
         {
           "body": ["Integrierte Tools, alle opt-in"]
         }
+      ]
+    },
+    "security": {
+      "badge": ["SANDBOX & ARBEITSMODUS"],
+      "title": [
+        "Eingeschlossen in der Sandbox,",
+        "offen nur, wo du es erlaubst."
+      ],
+      "lede": [
+        "UChat AI läuft auf jeder Plattform und in jedem Build innerhalb der App Sandbox von Apple. Es hat kein angeborenes Recht, deinen Mac zu durchsuchen — der einzige Datei-Zugriff, den es je bekommen kann, sind die Ordner, die du im Arbeitsmodus freigibst. Und den Arbeitsmodus gibt es nur auf dem Mac."
+      ],
+      "pillars": [
+        {
+          "tag": ["App Sandbox"],
+          "title": ["Jeder Build in der Sandbox"],
+          "body": [
+            "App-Store- und notarierte Fassung entstehen mit dem App-Sandbox-Recht. UChat AI arbeitet im eigenen Container und kann deshalb weder Daten anderer Apps lesen noch eine einzige Datei außerhalb deiner Grenzen anfassen. Ein Analyse-SDK gibt es nicht, ebenso wenig Übertragungen im Hintergrund."
+          ]
+        },
+        {
+          "tag": ["Arbeitsmodus · macOS"],
+          "title": ["Der Arbeitsmodus öffnet ein einziges Tor"],
+          "body": [
+            "Schalte den Arbeitsmodus in den Einstellungen ein und füge die gewünschten Ordner hinzu — dann bekommt das Modell drei Workspace-Werkzeuge: Verzeichnis auflisten, Datei lesen, Datei schreiben. Bleibt er aus, werden diese Werkzeuge gar nicht erst registriert, es gibt also nichts aufzurufen. Auf iPhone und iPad existiert kein Arbeitsmodus."
+          ]
+        },
+        {
+          "tag": ["Pfadgrenze"],
+          "title": ["Kein Pfad führt hinaus"],
+          "body": [
+            "Vor jedem Lese- oder Schreibvorgang normalisiert UChat AI den Pfad, löst Symlinks auf und prüft ihn gegen die freigegebenen Wurzeln. Traversierung nach oben und Schlupflöcher über Symlinks werden abgewiesen. Jeder Chat hat seinen eigenen Workspace — standardmäßig keinen — und entfernst du einen Ordner, ist der Zugriff sofort weg."
+          ]
+        }
+      ],
+      "tools": [
+        ["Verzeichnis auflisten"],
+        ["Datei lesen"],
+        ["Datei schreiben"]
+      ],
+      "guarantees": [
+        ["Nur freigegebene Ordner"],
+        ["Symlink- und Pfadprüfung"],
+        ["Workspace pro Chat"],
+        ["Widerruf wirkt sofort"]
+      ],
+      "note": [
+        "Der Arbeitsmodus ist macOS-exklusiv: Auf iPhone und iPad gehören die Workspace-Werkzeuge nicht zum App."
       ]
     }
   }

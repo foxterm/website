@@ -798,6 +798,54 @@
               </div>
             </div>
           </div>
+
+          <!-- App Sandbox Highlight -->
+          <div
+            class="mt-6 p-6 sm:p-8 rounded-2xl bg-zinc-950/60 border border-fox-500/25 relative overflow-hidden hover:border-fox-500/45 transition-all duration-300"
+          >
+            <div
+              class="absolute -right-12 -bottom-12 w-52 h-52 bg-fox-500/10 blur-[90px] rounded-full pointer-events-none"
+            ></div>
+            <div class="relative z-10 flex items-start gap-4 sm:gap-5">
+              <div
+                class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-fox-500/10 border border-fox-500/25 flex items-center justify-center flex-shrink-0 text-fox-500"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="min-w-0">
+                <h3
+                  class="text-white font-bold text-base sm:text-lg mb-2 leading-snug"
+                >
+                  <%= t["security.sandbox.title.0"] %>
+                </h3>
+                <p
+                  class="text-xs sm:text-sm text-zinc-400 leading-relaxed max-w-3xl mb-4"
+                >
+                  <%= t["security.sandbox.body.0"] %>
+                </p>
+                <div class="flex flex-wrap gap-2">
+                  <% for (let i = 0; i < 3; i++) { %>
+                  <span
+                    class="px-2.5 py-1 rounded-lg bg-fox-500/10 border border-fox-500/25 text-fox-300 text-[10px] sm:text-xs font-mono"
+                    ><%= t["security.sandbox.tags." + i + ".0"] %></span
+                  >
+                  <% } %>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

@@ -323,7 +323,18 @@
             "Seamless config synchronization exclusively via your private, encrypted iCloud container."
           ]
         }
-      ]
+      ],
+      "sandbox": {
+        "title": ["Every build runs inside the App Sandbox"],
+        "body": [
+          "The App Store edition and the notarized edition are both shipped with the App Sandbox entitlement: FoxTerm works inside its own container instead of roaming your Mac, and its configuration and session data live where the system isolates them. Server passwords and SSH private keys never exist as plain files — they are held in the Keychain and, where the hardware allows, sealed to the Secure Enclave."
+        ],
+        "tags": [
+          ["App Sandbox"],
+          ["Keychain & Secure Enclave"],
+          ["Notarized & signed"]
+        ]
+      }
     },
     "features": {
       "title": ["Comprehensive Capabilities"],
@@ -1717,6 +1728,46 @@
         {
           "body": ["Built-in tools, all opt-in"]
         }
+      ]
+    },
+    "security": {
+      "badge": ["SANDBOX & WORK MODE"],
+      "title": ["Locked in the Sandbox,", "Open Only Where You Allow."],
+      "lede": [
+        "UChat AI runs inside Apple's App Sandbox on every platform and in every build. It has no standing right to browse your Mac — the only file access it can ever get is the folders you grant in Work Mode, and Work Mode exists on macOS alone."
+      ],
+      "pillars": [
+        {
+          "tag": ["App Sandbox"],
+          "title": ["Sandboxed in every build"],
+          "body": [
+            "The App Store edition and the notarized edition are both built with the App Sandbox entitlement. UChat AI works inside its own container, so it cannot read other apps' data or touch a single file outside the boundaries you set. There is no analytics SDK in the app and no reporting in the background."
+          ]
+        },
+        {
+          "tag": ["Work Mode · macOS"],
+          "title": ["Work Mode opens exactly one door"],
+          "body": [
+            "Turn Work Mode on in Settings, add the folders you choose, and the model gains three workspace tools: directory listing, file read and file write. Leave it off and those tools are never even registered, so there is nothing for the model to call. On iPhone and iPad Work Mode does not exist."
+          ]
+        },
+        {
+          "tag": ["Containment"],
+          "title": ["No path escapes the folder"],
+          "body": [
+            "Before every read or write UChat AI canonicalizes the path, resolving symlinks, and checks it against the roots you authorized. Parent-directory tricks and symlink escapes are refused outright. Each chat carries its own workspace and defaults to none, and removing a folder cuts access immediately."
+          ]
+        }
+      ],
+      "tools": [["Directory listing"], ["File read"], ["File write"]],
+      "guarantees": [
+        ["Authorized folders only"],
+        ["Symlink and parent-path checks"],
+        ["Workspace per chat"],
+        ["Revocation takes effect at once"]
+      ],
+      "note": [
+        "Work Mode is macOS-only: on iPhone and iPad the workspace tools are not part of the app at all."
       ]
     }
   }
